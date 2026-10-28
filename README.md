@@ -1,5 +1,7 @@
 # PhysicsQuest
 
+[Open the app online](https://physicsquest.aurorax.chatgpt.site)
+
 Learn physics through 794 guided lessons, worked examples, numerical practice, and interactive models—from foundations to quantum physics.
 
 ## Version 0.9.0
