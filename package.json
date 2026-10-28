@@ -1,0 +1,11 @@
+{
+  "name": "physicsquest",
+  "version": "0.9.0",
+  "private": true,
+  "type": "module",
+  "description": "Original physics learning studio",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check dist/app.js && node --check dist/models.js && node --check dist/physics.js && node --check dist/practice.js && node --check dist/progress.js && node --check dist/navigation.js && node --check dist/layout.js && node --check dist/lesson-support.js && node --check dist/electromagnetism.js && node --check dist/em-model-view.js && node --check dist/waves.js && node --check dist/wave-model-view.js && node --check dist/quantum.js && node --check dist/quantum-model-view.js && node --check dist/quantum2.js && node --check dist/quantum2-model-view.js && node --check dist/quantum3.js && node --check dist/quantum3-model-view.js && node --check dist/field-models.js && node --check dist/field-model-view.js"
+  }
+}

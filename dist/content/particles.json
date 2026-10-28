@@ -1,0 +1,3758 @@
+{
+  "id": "particles",
+  "title": "Particle physics",
+  "subtitle": "A bounded introductory problem-solving path",
+  "level": "Core physics",
+  "prerequisites": [
+    "Mathematical toolkit, Quantum II, Relativity, Atomic & nuclear physics. Local mathematical bridges are taught before use; advanced topics retain their stated prerequisites."
+  ],
+  "coverage": [
+    "Particle descriptions",
+    "Standard Model map",
+    "Symmetry bridge",
+    "Relativistic processes",
+    "Rates and scattering",
+    "Electromagnetic and weak processes",
+    "Strong interaction",
+    "Mass and symmetry breaking",
+    "Experiments and inference",
+    "Particle modelling capstone"
+  ],
+  "modules": [
+    {
+      "id": "particles-01",
+      "title": "Particle descriptions",
+      "plannedLessons": 4,
+      "lessonIds": [
+        "events-are-evidence-not-little-pictures",
+        "keep-c-in-the-units",
+        "antiparticles-reverse-some-labels",
+        "a-resonance-is-short-lived"
+      ]
+    },
+    {
+      "id": "particles-02",
+      "title": "Standard Model map",
+      "plannedLessons": 4,
+      "lessonIds": [
+        "organize-quarks-and-leptons",
+        "interactions-follow-a-gauge-framework",
+        "hadrons-are-composite",
+        "separate-success-from-open-questions"
+      ]
+    },
+    {
+      "id": "particles-03",
+      "title": "Symmetry bridge",
+      "plannedLessons": 4,
+      "lessonIds": [
+        "an-invariant-survives-a-transformation",
+        "continuous-symmetry-links-to-conservation",
+        "parity-and-charge-conjugation-differ",
+        "internal-labels-are-not-directions-in-the-room"
+      ]
+    },
+    {
+      "id": "particles-04",
+      "title": "Relativistic processes",
+      "plannedLessons": 4,
+      "lessonIds": [
+        "conserve-the-whole-four-momentum",
+        "two-body-decay-fixes-rest-frame-energies",
+        "reconstruct-invariant-mass",
+        "compare-collider-and-fixed-target-energy"
+      ]
+    },
+    {
+      "id": "particles-05",
+      "title": "Rates and scattering",
+      "plannedLessons": 4,
+      "lessonIds": [
+        "lifetime-and-width-are-reciprocal",
+        "branching-fractions-divide-decay-possibilities",
+        "cross-section-measures-process-likelihood",
+        "count-expected-events"
+      ]
+    },
+    {
+      "id": "particles-06",
+      "title": "Electromagnetic and weak processes",
+      "plannedLessons": 4,
+      "lessonIds": [
+        "diagrams-organize-amplitudes",
+        "a-small-coupling-supports-an-expansion",
+        "weak-interactions-have-charged-and-neutral-channels",
+        "neutrino-flavor-can-oscillate"
+      ]
+    },
+    {
+      "id": "particles-07",
+      "title": "Strong interaction",
+      "plannedLessons": 4,
+      "lessonIds": [
+        "color-neutrality-is-a-quantum-property",
+        "add-hadron-quantum-numbers",
+        "strong-coupling-depends-on-scale",
+        "jets-connect-partons-to-measured-hadrons"
+      ]
+    },
+    {
+      "id": "particles-08",
+      "title": "Mass and symmetry breaking",
+      "plannedLessons": 4,
+      "lessonIds": [
+        "symmetry-restricts-mass-terms",
+        "the-higgs-field-and-boson-differ",
+        "infer-higgs-properties-from-channels",
+        "composite-mass-includes-interaction-energy"
+      ]
+    },
+    {
+      "id": "particles-09",
+      "title": "Experiments and inference",
+      "plannedLessons": 4,
+      "lessonIds": [
+        "curvature-measures-transverse-momentum",
+        "missing-momentum-is-an-imbalance",
+        "an-excess-needs-a-statistical-comparison",
+        "systematics-can-move-many-measurements-together"
+      ]
+    },
+    {
+      "id": "particles-10",
+      "title": "Particle modelling capstone",
+      "plannedLessons": 4,
+      "lessonIds": [
+        "reconstruct-a-synthetic-two-photon-event",
+        "audit-a-yield-estimate",
+        "reject-a-process-for-a-stated-reason",
+        "know-where-the-bridge-ends"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "events-are-evidence-not-little-pictures",
+      "title": "Events are evidence not little pictures",
+      "idea": "Detectors record interactions from which particle properties are inferred.",
+      "body": [
+        "A particle in quantum field theory is an excitation associated with a field. A detector does not photograph a tiny classical ball; it records deposited energy, tracks, timing or other interactions.",
+        "An event is a collection of measurements from one collision or decay. A particle interpretation must predict patterns across many such events, including efficiencies and backgrounds."
+      ],
+      "equation": "Prediction → detector response → measured event",
+      "terms": "→: mapping from one description to the next (no unit). The response can lose information and add uncertainty.",
+      "equationGuide": {
+        "meaning": "Detectors record interactions from which particle properties are inferred.",
+        "symbols": [
+          {
+            "symbol": "→",
+            "name": "mapping from one description to the next",
+            "unit": "no unit",
+            "description": "The response can lose information and add uncertainty."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "A charged track bends in a magnetic field.",
+          "The curvature helps infer momentum given the charge and field.",
+          "It does not by itself identify every property of the particle."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Events are evidence not little pictures",
+        "caption": "Conceptual field language; a full quantum field theory derivation is outside this introductory course.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "A charged track bends in a magnetic field."
+          },
+          {
+            "label": "Reasoning",
+            "value": "The curvature helps infer momentum given the charge and field."
+          },
+          {
+            "label": "Result",
+            "value": "It does not by itself identify every property of the particle."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Does a neutral particle leaving no charged track mean it cannot be detected?",
+        "options": [
+          "No; its interactions or missing momentum can provide evidence",
+          "Yes; every particle must leave a charged track",
+          "Yes; neutral means no interactions"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. Neutral particles can interact without leaving a primary charged track, or contribute to missing momentum.",
+          "Charged tracks are one detector signature, not a requirement for all particles.",
+          "Neutrinos and photons illustrate neutral particles with physical interactions."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why compare a model through detector response?",
+        "answer": "Measurements are not identical to ideal particle-level quantities. Resolution, acceptance and selection affect the observable pattern."
+      },
+      "limits": "Conceptual field language; a full quantum field theory derivation is outside this introductory course.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-01",
+      "prerequisiteIds": [
+        "atomic-nuclear/compare-the-models",
+        "quantum2/conserved-observables"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Event",
+          "definition": "A grouped record of measurements associated with a collision or decay."
+        }
+      ],
+      "objective": "Fields particles and measured events"
+    },
+    {
+      "id": "keep-c-in-the-units",
+      "title": "Keep c in the units",
+      "idea": "Energy, momentum and mass can share numerical scales without being the same quantity.",
+      "body": [
+        "Particle tables often use GeV for energy, GeV/c for momentum and GeV/c² for mass. A gigaelectronvolt is one billion electronvolts.",
+        "Setting c=1 is a unit convention that simplifies equations. Restore the factors when converting to SI units or comparing different physical quantities."
+      ],
+      "equation": "E² = (pc)² + (mc²)²",
+      "terms": "E, p, m: total energy, momentum magnitude, invariant mass (GeV, GeV/c, GeV/c²). All terms in the equation have energy-squared units. c: vacuum light speed (m/s). Its factors are retained here to make units explicit.",
+      "equationGuide": {
+        "meaning": "Energy, momentum and mass can share numerical scales without being the same quantity.",
+        "symbols": [
+          {
+            "symbol": "E, p, m",
+            "name": "total energy, momentum magnitude, invariant mass",
+            "unit": "GeV, GeV/c, GeV/c²",
+            "description": "All terms in the equation have energy-squared units."
+          },
+          {
+            "symbol": "c",
+            "name": "vacuum light speed",
+            "unit": "m/s",
+            "description": "Its factors are retained here to make units explicit."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Take mc²=3 GeV and pc=4 GeV.",
+          "Then E²=9+16=25 GeV².",
+          "The positive total energy is E=5 GeV."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Keep c in the units",
+        "caption": "Free-particle dispersion relation; composite invariant mass includes internal energy in its rest frame.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Take mc²=3 GeV and pc=4 GeV."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Then E²=9+16=25 GeV²."
+          },
+          {
+            "label": "Result",
+            "value": "The positive total energy is E=5 GeV."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Does a massless particle with pc=4 GeV have zero energy?",
+        "options": [
+          "No; its energy is 16 GeV",
+          "No; its energy is 4 GeV",
+          "Yes; energy always equals rest energy"
+        ],
+        "answer": 1,
+        "explanations": [
+          "16 GeV² is energy squared, not the photon energy.",
+          "Correct. For m=0 the invariant relation gives E=pc=4 GeV.",
+          "Zero rest energy does not mean zero total energy for a moving massless particle."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why is rest energy not the whole energy of a moving massive particle?",
+        "answer": "Total energy includes motion. The invariant relation distinguishes the mass-dependent rest term from momentum-dependent energy."
+      },
+      "limits": "Free-particle dispersion relation; composite invariant mass includes internal energy in its rest frame.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-01",
+      "prerequisiteIds": [
+        "particles/events-are-evidence-not-little-pictures",
+        "relativity/energy-momentum-invariant"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "GeV",
+          "definition": "Gigaelectronvolt, an energy unit equal to 10⁹ electronvolts."
+        }
+      ],
+      "practice": {
+        "prompt": "Use mc²=5 GeV and pc=12 GeV.",
+        "parts": [
+          {
+            "label": "Total energy",
+            "unit": "GeV",
+            "answer": 13,
+            "tolerance": 0.001,
+            "feedback": "Positive square root of 5²+12² is 13."
+          }
+        ],
+        "reasoning": "Positive square root of 5²+12² is 13."
+      },
+      "objective": "Units of mass momentum and energy"
+    },
+    {
+      "id": "antiparticles-reverse-some-labels",
+      "title": "Antiparticles reverse some labels",
+      "idea": "An antiparticle has the same mass as its partner but opposite additive charges.",
+      "body": [
+        "A positron is the electron antiparticle: its electric charge is positive rather than negative. Antimatter is not negative mass or matter moving with negative energy in a detector.",
+        "Neutral particles still need careful labels. Some neutral particles are their own antiparticles; others have distinct antiparticles because of other quantum numbers."
+      ],
+      "equation": "qantiparticle = −qparticle",
+      "terms": "qantiparticle, qparticle: electric charges of an antiparticle pair (e). e is the positive elementary charge unit; this relation alone does not classify every neutral particle.",
+      "equationGuide": {
+        "meaning": "An antiparticle has the same mass as its partner but opposite additive charges.",
+        "symbols": [
+          {
+            "symbol": "qantiparticle, qparticle",
+            "name": "electric charges of an antiparticle pair",
+            "unit": "e",
+            "description": "e is the positive elementary charge unit; this relation alone does not classify every neutral particle."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "An electron has charge −1 in units of e.",
+          "Its positron partner has charge +1.",
+          "Both have the same positive rest mass."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Antiparticles reverse some labels",
+        "caption": "CPT symmetry supports equal partner masses in the standard framework; neutrino self-conjugacy remains an open question.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "An electron has charge −1 in units of e."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Its positron partner has charge +1."
+          },
+          {
+            "label": "Result",
+            "value": "Both have the same positive rest mass."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "A particle is electrically neutral. Is it automatically its own antiparticle?",
+        "options": [
+          "Yes; charge is the only label",
+          "No; every neutral particle has negative mass",
+          "No; other quantum numbers can distinguish them"
+        ],
+        "answer": 2,
+        "explanations": [
+          "Electric charge is not the only particle label.",
+          "Antiparticles have positive mass, not negative mass.",
+          "Correct. Other additive quantum numbers can distinguish a neutral particle from its antiparticle."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why must a proposed annihilation conserve momentum too?",
+        "answer": "Opposite charges can cancel in total, but charge conservation is only one constraint. The complete outgoing state must also match total energy and momentum."
+      },
+      "limits": "CPT symmetry supports equal partner masses in the standard framework; neutrino self-conjugacy remains an open question.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-01",
+      "prerequisiteIds": [
+        "particles/keep-c-in-the-units"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Antiparticle",
+          "definition": "Partner state with opposite relevant additive charges and the same mass."
+        }
+      ],
+      "objective": "Antiparticles and charge conjugate labels"
+    },
+    {
+      "id": "a-resonance-is-short-lived",
+      "title": "A resonance is short lived",
+      "idea": "Unstable particles can appear as peaks in reconstructed invariant-mass distributions.",
+      "body": [
+        "A short-lived state may decay before leaving a visible track. Its existence can be inferred from a repeated pattern in its decay products.",
+        "The intrinsic resonance width relates to lifetime, but the observed peak also includes detector resolution and production dynamics. A bump alone is not automatically a new particle."
+      ],
+      "equation": "Shorter lifetime → larger intrinsic energy width",
+      "terms": "lifetime, energy width: mean decay time and intrinsic spread scale (s, GeV). The quantitative relation Γ=ħ/τ is introduced later.",
+      "equationGuide": {
+        "meaning": "Unstable particles can appear as peaks in reconstructed invariant-mass distributions.",
+        "symbols": [
+          {
+            "symbol": "lifetime, energy width",
+            "name": "mean decay time and intrinsic spread scale",
+            "unit": "s, GeV",
+            "description": "The quantitative relation Γ=ħ/τ is introduced later."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Combine candidate decay products from many events.",
+          "Plot their reconstructed invariant masses.",
+          "A localized excess may motivate a resonance model, which must be compared with background and detector effects."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "A resonance is short lived",
+        "caption": "Qualitative resonance interpretation; overlapping states and threshold effects can complicate peak shapes.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Combine candidate decay products from many events."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Plot their reconstructed invariant masses."
+          },
+          {
+            "label": "Result",
+            "value": "A localized excess may motivate a resonance model, which must be compared with background and detector effects."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "A detector has poor mass resolution. Can it broaden an observed narrow state?",
+        "options": [
+          "Yes; observed width includes response",
+          "No; every observed width is intrinsic",
+          "Yes; it changes the particle lifetime"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. Finite detector resolution spreads reconstructed masses even for an intrinsically narrow state.",
+          "Observed width combines intrinsic physics and measurement response.",
+          "A detector changes the measurement, not the intrinsic decay lifetime."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "What makes an unstable state measurable despite a tiny lifetime?",
+        "answer": "Its decay products preserve statistical information about the parent energy, momentum and quantum numbers. Repeated events reveal that pattern."
+      },
+      "limits": "Qualitative resonance interpretation; overlapping states and threshold effects can complicate peak shapes.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-01",
+      "prerequisiteIds": [
+        "particles/antiparticles-reverse-some-labels"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Resonance",
+          "definition": "An unstable state or resonant enhancement characterized through its response in a process."
+        }
+      ],
+      "objective": "Stable particles versus resonances"
+    },
+    {
+      "id": "organize-quarks-and-leptons",
+      "title": "Organize quarks and leptons",
+      "idea": "The matter fields fall into quark and lepton families with different interaction charges.",
+      "body": [
+        "Quarks carry color charge and participate in the strong interaction. Leptons do not carry color; charged leptons also interact electromagnetically, and neutrinos participate in weak interactions.",
+        "The three generations repeat charge patterns with different masses. Generation is not a stage through which one particle grows as it gets older.",
+        "The first generation contains up and down quarks, the electron and electron neutrino. The second contains charm and strange quarks, the muon and muon neutrino. The third contains top and bottom quarks, the tau and tau neutrino. Each charged-lepton name labels its associated neutrino flavor; flavor states are not the same as neutrino mass states."
+      ],
+      "equation": "Quark electric charges: +2e/3 or −e/3",
+      "terms": "e: positive elementary electric charge (C). The fractional values describe quark charges; isolated quarks are not observed as free asymptotic particles.",
+      "equationGuide": {
+        "meaning": "The matter fields fall into quark and lepton families with different interaction charges.",
+        "symbols": [
+          {
+            "symbol": "e",
+            "name": "positive elementary electric charge",
+            "unit": "C",
+            "description": "The fractional values describe quark charges; isolated quarks are not observed as free asymptotic particles."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Two up-type quarks contribute +4e/3.",
+          "One down-type quark contributes −e/3.",
+          "Together their charges sum to +e, as in a proton valence assignment."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Organize quarks and leptons",
+        "caption": "This is the Standard Model matter map; neutrino masses require extensions of the minimal original model.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Two up-type quarks contribute +4e/3."
+          },
+          {
+            "label": "Reasoning",
+            "value": "One down-type quark contributes −e/3."
+          },
+          {
+            "label": "Result",
+            "value": "Together their charges sum to +e, as in a proton valence assignment."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Does a charged lepton carry color because it has electric charge?",
+        "options": [
+          "Yes; only neutral particles lack color",
+          "No; electric charge and color are different properties",
+          "Yes; all charges are the same"
+        ],
+        "answer": 1,
+        "explanations": [
+          "Electrical neutrality does not determine color charge; neutrons are composite hadrons.",
+          "Correct. Color and electric charge are distinct interaction properties; leptons carry no color.",
+          "The Standard Model has different kinds of charge with different couplings."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why separate interaction charges from mass?",
+        "answer": "Mass sets kinematic behavior while charges determine couplings to interactions. Similar mass does not imply the same interaction pattern."
+      },
+      "limits": "This is the Standard Model matter map; neutrino masses require extensions of the minimal original model.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-02",
+      "prerequisiteIds": [
+        "particles/a-resonance-is-short-lived"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Generation",
+          "definition": "One repeated family of quark and lepton types with similar charge assignments."
+        }
+      ],
+      "objective": "Quarks leptons and generations"
+    },
+    {
+      "id": "interactions-follow-a-gauge-framework",
+      "title": "Interactions follow a gauge framework",
+      "idea": "Gauge symmetry organizes the interactions rather than describing a literal exchange of tiny ropes.",
+      "body": [
+        "The Standard Model uses electromagnetic, weak and strong gauge structures. Their associated force fields and matter couplings are constrained by this mathematical framework.",
+        "Gauge freedom includes different descriptions of the same physical situation. Observable predictions must not depend on a mere choice of description."
+      ],
+      "equation": "Same physical state + changed gauge description → same observables",
+      "terms": "gauge description, observables: redundant mathematical description and measurable quantities (not numerical units). An observable is a quantity accessible through a measurement prediction.",
+      "equationGuide": {
+        "meaning": "Gauge symmetry organizes the interactions rather than describing a literal exchange of tiny ropes.",
+        "symbols": [
+          {
+            "symbol": "gauge description, observables",
+            "name": "redundant mathematical description and measurable quantities",
+            "unit": "not numerical units",
+            "description": "An observable is a quantity accessible through a measurement prediction."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Describe an electromagnetic configuration with one allowed potential choice.",
+          "Change the potentials by a gauge transformation.",
+          "The predicted electric and magnetic fields remain unchanged."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Interactions follow a gauge framework",
+        "caption": "Conceptual bridge; local symmetry groups, quantization and renormalization require advanced mathematics and QFT.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Describe an electromagnetic configuration with one allowed potential choice."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Change the potentials by a gauge transformation."
+          },
+          {
+            "label": "Result",
+            "value": "The predicted electric and magnetic fields remain unchanged."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "A calculation predicts different measured probabilities for two equivalent gauge choices. What should be checked?",
+        "options": [
+          "A real new force from the notation change",
+          "Whether the detector knows the gauge name",
+          "An inconsistency or incomplete calculation"
+        ],
+        "answer": 2,
+        "explanations": [
+          "Changing redundant variables cannot create a new measurable force.",
+          "Detectors respond to physical fields and interactions, not a gauge label.",
+          "Correct. Equivalent gauge descriptions must give identical observable predictions."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why is gauge symmetry more than a list of mediator particles?",
+        "answer": "It constrains allowed couplings and relations among calculations. Listing particles alone does not specify a consistent interaction theory."
+      },
+      "limits": "Conceptual bridge; local symmetry groups, quantization and renormalization require advanced mathematics and QFT.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-02",
+      "prerequisiteIds": [
+        "particles/organize-quarks-and-leptons"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Gauge freedom",
+          "definition": "Redundancy in mathematical variables that leaves physical predictions unchanged."
+        }
+      ],
+      "objective": "Gauge interactions as the standard model framework"
+    },
+    {
+      "id": "hadrons-are-composite",
+      "title": "Hadrons are composite",
+      "idea": "A proton is a strong-interaction bound system rather than an elementary particle.",
+      "body": [
+        "Hadrons contain quark and gluon degrees of freedom. A valence-quark label captures important conserved quantum numbers, but not every fluctuating constituent in the full quantum state.",
+        "Baryons include three-valence-quark patterns; ordinary mesons use quark-antiquark patterns. More complicated hadronic structures also exist."
+      ],
+      "equation": "Proton valence label: uud",
+      "terms": "u, d: up and down quark flavor labels (no unit). This notation summarizes valence quantum numbers, not three static balls with no gluons.",
+      "equationGuide": {
+        "meaning": "A proton is a strong-interaction bound system rather than an elementary particle.",
+        "symbols": [
+          {
+            "symbol": "u, d",
+            "name": "up and down quark flavor labels",
+            "unit": "no unit",
+            "description": "This notation summarizes valence quantum numbers, not three static balls with no gluons."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Assign u charge +2e/3 and d charge −e/3.",
+          "For uud, add 2/3+2/3−1/3.",
+          "The proton charge is +e."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Hadrons are composite",
+        "caption": "Valence quark bookkeeping is not a precision mass or spatial-structure calculation.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Assign u charge +2e/3 and d charge −e/3."
+          },
+          {
+            "label": "Reasoning",
+            "value": "For uud, add 2/3+2/3−1/3."
+          },
+          {
+            "label": "Result",
+            "value": "The proton charge is +e."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Does the label uud mean a proton contains no gluon fields?",
+        "options": [
+          "No; gluon dynamics are essential",
+          "Yes; only the written letters exist",
+          "Yes; gluons are outside all hadrons"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. The valence label tracks net flavor content while gluon dynamics remain essential.",
+          "A valence shorthand is not a complete inventory of the quantum state.",
+          "Gluons are central to strong-interaction dynamics inside hadrons."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why can a simple valence label still be useful?",
+        "answer": "It efficiently predicts charge, baryon number and flavor quantum numbers even though the full state is dynamical and more complicated."
+      },
+      "limits": "Valence quark bookkeeping is not a precision mass or spatial-structure calculation.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-02",
+      "prerequisiteIds": [
+        "particles/interactions-follow-a-gauge-framework"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Hadron",
+          "definition": "A composite particle governed by strong-interaction dynamics."
+        }
+      ],
+      "objective": "Composite hadrons versus elementary particles"
+    },
+    {
+      "id": "separate-success-from-open-questions",
+      "title": "Separate success from open questions",
+      "idea": "A successful theory can have clearly identified limits.",
+      "body": [
+        "The Standard Model describes an enormous range of measured particle processes, but it is not a complete theory of every physical phenomenon.",
+        "Gravity, the identity of dark matter, the origin of observed neutrino masses and the cosmic matter-antimatter imbalance remain questions requiring additional explanation or extensions. A gap is not proof of one favored speculative answer."
+      ],
+      "equation": "Established prediction ≠ complete explanation of nature",
+      "terms": "≠: is not equal to (no unit). Here the symbol distinguishes two claims rather than numerical values.",
+      "equationGuide": {
+        "meaning": "A successful theory can have clearly identified limits.",
+        "symbols": [
+          {
+            "symbol": "≠",
+            "name": "is not equal to",
+            "unit": "no unit",
+            "description": "Here the symbol distinguishes two claims rather than numerical values."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "A scattering prediction agrees with measured rates.",
+          "This tests that process in its measured regime.",
+          "It does not by itself identify dark matter or quantize gravity."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Separate success from open questions",
+        "caption": "Status statements are broad scope claims, not a claim that any one speculative extension is established.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "A scattering prediction agrees with measured rates."
+          },
+          {
+            "label": "Reasoning",
+            "value": "This tests that process in its measured regime."
+          },
+          {
+            "label": "Result",
+            "value": "It does not by itself identify dark matter or quantize gravity."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "An unresolved question exists. Does that erase successful tested predictions?",
+        "options": [
+          "Yes; any alternative is equally supported",
+          "No; success and limits must both be stated",
+          "Yes; every prior prediction becomes false"
+        ],
+        "answer": 1,
+        "explanations": [
+          "Alternatives still need distinct successful tests and consistency with existing evidence.",
+          "Correct. A theory can retain successful tests while lacking a complete account of other phenomena.",
+          "An open question does not negate every validated prediction in another regime."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "How should you present a proposed new particle?",
+        "answer": "Separate the hypothesis, its testable predictions and the actual evidence. An open problem creates motivation, not automatic confirmation."
+      },
+      "limits": "Status statements are broad scope claims, not a claim that any one speculative extension is established.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-02",
+      "prerequisiteIds": [
+        "particles/hadrons-are-composite"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Beyond the Standard Model",
+          "definition": "Ideas extending the established framework to address limits or new evidence."
+        }
+      ],
+      "objective": "What the standard model does not explain"
+    },
+    {
+      "id": "an-invariant-survives-a-transformation",
+      "title": "An invariant survives a transformation",
+      "idea": "A transformation changes a description; an invariant stays the same under that change.",
+      "body": [
+        "Rotate your coordinate axes and vector components change, but the physical length does not. Lorentz transformations similarly change energy and momentum components while preserving invariant mass.",
+        "Always name the transformation. A quantity can be invariant under rotations without being unchanged under every possible physical operation."
+      ],
+      "equation": "m²c⁴ = E² − |p|²c²",
+      "terms": "m, E, p, c: invariant mass, total energy, momentum vector, light speed (GeV/c², GeV, GeV/c, m/s). The bars denote vector magnitude; all terms use consistent energy units.",
+      "equationGuide": {
+        "meaning": "A transformation changes a description; an invariant stays the same under that change.",
+        "symbols": [
+          {
+            "symbol": "m, E, p, c",
+            "name": "invariant mass, total energy, momentum vector, light speed",
+            "unit": "GeV/c², GeV, GeV/c, m/s",
+            "description": "The bars denote vector magnitude; all terms use consistent energy units."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "One frame has E=5 GeV and |p|c=4 GeV.",
+          "The invariant rest-energy square is 25−16=9 GeV².",
+          "Every inertial frame describes the same m=3 GeV/c²."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "An invariant survives a transformation",
+        "caption": "Lorentz-invariant mass uses the total four-momentum of the specified system, not unrelated measurements from different frames.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "One frame has E=5 GeV and |p|c=4 GeV."
+          },
+          {
+            "label": "Reasoning",
+            "value": "The invariant rest-energy square is 25−16=9 GeV²."
+          },
+          {
+            "label": "Result",
+            "value": "Every inertial frame describes the same m=3 GeV/c²."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "A moving observer measures larger total energy. Must the particle invariant mass grow?",
+        "options": [
+          "Yes; mass equals total energy in every frame",
+          "Yes; invariants depend on speed",
+          "No; momentum changes too"
+        ],
+        "answer": 2,
+        "explanations": [
+          "E=mc² alone applies to rest energy, not arbitrary-frame total energy.",
+          "An invariant is defined precisely to remain unchanged under these frame transformations.",
+          "Correct. E and p transform together so E²−p²c² retains the same invariant mass."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why calculate an invariant rather than comparing raw energies?",
+        "answer": "Observers can disagree on frame-dependent components while agreeing on the underlying invariant property of the same system."
+      },
+      "limits": "Lorentz-invariant mass uses the total four-momentum of the specified system, not unrelated measurements from different frames.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-03",
+      "prerequisiteIds": [
+        "particles/separate-success-from-open-questions",
+        "relativity/energy-momentum-invariant"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Invariant",
+          "definition": "A quantity unchanged under a specified class of transformations."
+        }
+      ],
+      "objective": "Transformation and invariant quantity"
+    },
+    {
+      "id": "continuous-symmetry-links-to-conservation",
+      "title": "Continuous symmetry links to conservation",
+      "idea": "A continuous symmetry of the dynamics can imply a conserved quantity.",
+      "body": [
+        "If the laws do not change when the time origin shifts, energy conservation follows under the assumptions of Noether reasoning. Spatial-translation symmetry similarly connects to momentum.",
+        "This concerns symmetry of the full dynamics, not merely a picture that looks symmetric. External time-dependent driving can transfer energy into a subsystem."
+      ],
+      "equation": "Time-translation symmetry → conserved total energy",
+      "terms": "time-translation symmetry: unchanged dynamics after shifting the time origin (no unit). The full closed system and its action must have the symmetry.",
+      "equationGuide": {
+        "meaning": "A continuous symmetry of the dynamics can imply a conserved quantity.",
+        "symbols": [
+          {
+            "symbol": "time-translation symmetry",
+            "name": "unchanged dynamics after shifting the time origin",
+            "unit": "no unit",
+            "description": "The full closed system and its action must have the symmetry."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "A closed model has no explicit time dependence in its energy operator.",
+          "Its time evolution preserves total energy expectation under the standard assumptions.",
+          "A driven subsystem may change energy because the external drive exchanges it."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Continuous symmetry links to conservation",
+        "caption": "Introductory Noether bridge, not a proof for every constrained or curved-spacetime system.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "A closed model has no explicit time dependence in its energy operator."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Its time evolution preserves total energy expectation under the standard assumptions."
+          },
+          {
+            "label": "Result",
+            "value": "A driven subsystem may change energy because the external drive exchanges it."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "A subsystem gains energy from a changing external field. Has total energy conservation failed?",
+        "options": [
+          "Not necessarily; include the source of the field",
+          "Yes; every subsystem must keep fixed energy",
+          "Yes; symmetry never permits exchanges"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. Energy gained by a subsystem can be lost by its external source.",
+          "Open subsystems exchange energy; only a complete closed account has the conservation claim.",
+          "Symmetry-based conservation permits transfers within the complete system."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why specify the system boundary?",
+        "answer": "Conservation statements apply to complete accounts of exchange. Leaving the driving source outside creates an open subsystem."
+      },
+      "limits": "Introductory Noether bridge, not a proof for every constrained or curved-spacetime system.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-03",
+      "prerequisiteIds": [
+        "particles/an-invariant-survives-a-transformation"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Continuous symmetry",
+          "definition": "A symmetry with a smoothly variable transformation parameter."
+        }
+      ],
+      "objective": "Continuous symmetry and conserved quantity"
+    },
+    {
+      "id": "parity-and-charge-conjugation-differ",
+      "title": "Parity and charge conjugation differ",
+      "idea": "Reversing space and replacing particles by antiparticles are different operations.",
+      "body": [
+        "Parity reverses spatial coordinates, like comparing a process with its inverted spatial arrangement. Charge conjugation swaps particle labels for antiparticle labels.",
+        "The weak interaction does not preserve parity, and some processes violate combined CP symmetry. A symmetry must be tested for the interaction, not assumed from an appealing mirror analogy."
+      ],
+      "equation": "P: r → −r; C: particle → antiparticle",
+      "terms": "P, C, r: parity operation, charge-conjugation operation, position vector (no unit, no unit, m). These labels denote transformations, not probability or electric charge itself.",
+      "equationGuide": {
+        "meaning": "Reversing space and replacing particles by antiparticles are different operations.",
+        "symbols": [
+          {
+            "symbol": "P, C, r",
+            "name": "parity operation, charge-conjugation operation, position vector",
+            "unit": "no unit, no unit, m",
+            "description": "These labels denote transformations, not probability or electric charge itself."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Apply P to a position x=+2 m.",
+          "Its transformed coordinate is x=−2 m.",
+          "This operation alone does not replace an electron by a positron; that is a C operation."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Parity and charge conjugation differ",
+        "caption": "Discrete-symmetry overview; CP violation needs specified processes and careful observables.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Apply P to a position x=+2 m."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Its transformed coordinate is x=−2 m."
+          },
+          {
+            "label": "Result",
+            "value": "This operation alone does not replace an electron by a positron; that is a C operation."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Does spatial inversion alone change electron charge?",
+        "options": [
+          "Yes; charge becomes zero",
+          "No; it changes spatial labels",
+          "Yes; every reflection makes antimatter"
+        ],
+        "answer": 1,
+        "explanations": [
+          "Spatial inversion does not remove an electron electric charge.",
+          "Correct. Parity reverses spatial coordinates without replacing an electron by its antiparticle.",
+          "Particle-to-antiparticle replacement is charge conjugation, a different operation."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why distinguish a transformation from a symmetry?",
+        "answer": "An operation can be mathematically defined even when the dynamics do not give the same probabilities after applying it."
+      },
+      "limits": "Discrete-symmetry overview; CP violation needs specified processes and careful observables.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-03",
+      "prerequisiteIds": [
+        "particles/continuous-symmetry-links-to-conservation"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "CP",
+          "definition": "Combined charge conjugation and parity transformation."
+        }
+      ],
+      "objective": "Discrete parity and charge operations"
+    },
+    {
+      "id": "internal-labels-are-not-directions-in-the-room",
+      "title": "Internal labels are not directions in the room",
+      "idea": "Internal quantum numbers describe how states transform in an abstract state space.",
+      "body": [
+        "Spin rotations relate to physical space, but other labels such as flavor or color belong to internal degrees of freedom. Calling color red is a mathematical label, not a visible pigment.",
+        "A representation tells how a symmetry transformation acts on a set of state components. It supplies a rule for changing the mathematical coordinates while preserving the theory structure.",
+        "The worked swap is an active internal operator: it changes the state while the chosen basis stays fixed. A passive basis change instead relabels the coordinates of the same state. Neither operation is necessarily a rotation of the detector in physical space; keep the two meanings separate."
+      ],
+      "equation": "Transformed state components = transformation matrix × original components",
+      "terms": "transformation matrix, components: linear map and state coordinates (no unit for normalized internal amplitudes). Matrix multiplication combines components according to a specified symmetry representation.",
+      "equationGuide": {
+        "meaning": "Internal quantum numbers describe how states transform in an abstract state space.",
+        "symbols": [
+          {
+            "symbol": "transformation matrix, components",
+            "name": "linear map and state coordinates",
+            "unit": "no unit for normalized internal amplitudes",
+            "description": "Matrix multiplication combines components according to a specified symmetry representation."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Use the swap matrix [[0,1],[1,0]] on the column of state components (1,0). Each inner bracket is a matrix row.",
+          "The first output is 0×1+1×0=0; the second is 1×1+0×0=1. These are row-by-column dot products.",
+          "The transformed coordinates are (0,1); this internal-state operation does not move anything one metre in the laboratory."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Internal labels are not directions in the room",
+        "caption": "Conceptual bridge; full group representations and gauge theory require linear algebra and additional study.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Represent a two-component internal state by (1,0)."
+          },
+          {
+            "label": "Reasoning",
+            "value": "A supplied swap matrix exchanges the components."
+          },
+          {
+            "label": "Result",
+            "value": "The transformed coordinates are (0,1); nothing has moved one metre in the laboratory."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Does changing an internal basis necessarily rotate the detector physically?",
+        "options": [
+          "Yes; every basis is a spatial axis",
+          "Yes; color labels are visible directions",
+          "No; internal coordinates are not laboratory position axes"
+        ],
+        "answer": 2,
+        "explanations": [
+          "Not every vector space is ordinary physical position space.",
+          "Color is an internal strong-charge label, not a visible spatial direction.",
+          "Correct. An internal basis change acts on abstract components, not laboratory coordinates."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why learn representation language before gauge calculations?",
+        "answer": "It specifies how fields transform and which combinations can form symmetry-consistent interactions, rather than treating labels as arbitrary names."
+      },
+      "limits": "Conceptual bridge; full group representations and gauge theory require linear algebra and additional study.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-03",
+      "prerequisiteIds": [
+        "particles/parity-and-charge-conjugation-differ",
+        "math/matrices"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Representation",
+          "definition": "A rule expressing symmetry operations as linear actions on a state or field space."
+        }
+      ],
+      "objective": "Internal quantum numbers and representation concept"
+    },
+    {
+      "id": "conserve-the-whole-four-momentum",
+      "title": "Conserve the whole four-momentum",
+      "idea": "Energy and all three momentum components must balance in a decay.",
+      "body": [
+        "Four-momentum packages energy and spatial momentum into one relativistic object. Conservation applies component by component in any inertial frame.",
+        "In a parent rest frame, outgoing momenta must sum to zero. Their individual energies remain positive; opposite momenta do not cancel energy."
+      ],
+      "equation": "Eparent = ΣEi; pparent = Σpi",
+      "terms": "Eparent, Ei: parent and product energies (GeV). Σ means add every product contribution. pparent, pi: parent and product momentum vectors (GeV/c). Vector components, not momentum magnitudes, are added.",
+      "equationGuide": {
+        "meaning": "Energy and all three momentum components must balance in a decay.",
+        "symbols": [
+          {
+            "symbol": "Eparent, Ei",
+            "name": "parent and product energies",
+            "unit": "GeV",
+            "description": "Σ means add every product contribution."
+          },
+          {
+            "symbol": "pparent, pi",
+            "name": "parent and product momentum vectors",
+            "unit": "GeV/c",
+            "description": "Vector components, not momentum magnitudes, are added."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "A parent at rest produces two photons of equal energy.",
+          "Their momenta must point in opposite directions.",
+          "Their energies add to the parent rest energy rather than canceling."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Conserve the whole four-momentum",
+        "caption": "Complete isolated event required; missing particles or an interacting environment change the account.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "A parent at rest produces two photons of equal energy."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Their momenta must point in opposite directions."
+          },
+          {
+            "label": "Result",
+            "value": "Their energies add to the parent rest energy rather than canceling."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Two equal-energy photons fly in the same direction. Can they be the entire decay of a parent at rest?",
+        "options": [
+          "No; their total momentum is not zero",
+          "Yes; equal energies cancel",
+          "Yes; photons carry no momentum"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. Same-direction photon momenta add, contradicting zero initial momentum.",
+          "Energies are positive and add; equal energies do not cancel momentum unless directions oppose.",
+          "Photons carry momentum of magnitude E/c."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why must vector directions be retained?",
+        "answer": "Adding magnitudes would give a nonzero sum even for opposite vectors. Conservation uses signed components in a common frame."
+      },
+      "limits": "Complete isolated event required; missing particles or an interacting environment change the account.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-04",
+      "prerequisiteIds": [
+        "particles/internal-labels-are-not-directions-in-the-room",
+        "relativity/energy-momentum-invariant"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Four-momentum",
+          "definition": "Relativistic combination of energy and three spatial momentum components."
+        }
+      ],
+      "objective": "Four-momentum in decays"
+    },
+    {
+      "id": "two-body-decay-fixes-rest-frame-energies",
+      "title": "Two-body decay fixes rest-frame energies",
+      "idea": "Two-body kinematics strongly constrains energy sharing in the parent rest frame.",
+      "body": [
+        "With only two products, momentum conservation gives equal opposite momentum magnitudes. Equal momentum does not imply equal energy if product masses differ.",
+        "For two massless products, both energies are half the parent rest energy. This simple special case makes a useful starting point before the general massive formula.",
+        "For general daughter masses, let M be parent mass and m1,m2 the daughter masses, all in GeV/c². In the parent rest frame E1=(M²+m1²−m2²)c²/(2M), E2=Mc²−E1 and p c=√[E1²−(m1c²)²]. Here E1,E2 are total energies in GeV, p is the common momentum magnitude in GeV/c, c is vacuum light speed, and √ means the nonnegative square root. The parent must satisfy M≥m1+m2; at equality there is no relative momentum. These equations come from conserving total energy and equal opposite momentum, together with each daughter energy-momentum relation.",
+        "For a fresh unequal-mass example, use rest energies Mc²=5 GeV, m1c²=3 GeV and m2c²=0. Then E1=(25+9−0)/(2×5)=3.4 GeV, E2=5−3.4=1.6 GeV and pc=√(3.4²−3²)=1.6 GeV. The daughters have different total energies but equal opposite momenta of magnitude 1.6 GeV/c."
+      ],
+      "equation": "E1=(M²+m1²−m2²)c²/(2M); E2=Mc²−E1; p c=√[E1²−(m1c²)²]",
+      "terms": "E1, E2, Mc²: two product energies and parent rest energy (GeV). The parent is at rest and the complete final state contains exactly two products; the original equal-energy example uses two massless products. M, m1, m2: parent and daughter invariant masses (GeV/c²). p: common rest-frame momentum magnitude (GeV/c). c: vacuum light speed. √: nonnegative square root. Require positive M and M≥m1+m2.",
+      "equationGuide": {
+        "meaning": "Two-body kinematics strongly constrains energy sharing in the parent rest frame.",
+        "symbols": [
+          {
+            "symbol": "E1, E2, Mc²",
+            "name": "two product energies and parent rest energy",
+            "unit": "GeV",
+            "description": "The parent is at rest and the complete final state contains exactly two products; the original equal-energy example uses two massless products."
+          },
+          {
+            "symbol": "M, m1, m2",
+            "name": "parent and daughter invariant masses",
+            "unit": "GeV/c²",
+            "description": "Parent M must be positive and at least the sum of daughter masses."
+          },
+          {
+            "symbol": "p, c, √",
+            "name": "momentum magnitude, vacuum light speed, square root",
+            "unit": "GeV/c, m/s, no unit",
+            "description": "Choose the nonnegative root; daughter momenta are equal in magnitude and opposite in direction."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Take parent rest energy 8 GeV.",
+          "Each massless product has energy 4 GeV.",
+          "Their momentum magnitudes are 4 GeV/c, in opposite directions."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Two-body decay fixes rest-frame energies",
+        "caption": "Massless two-body special case; massive daughters require the full energy-momentum solution.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Take parent rest energy 8 GeV."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Each massless product has energy 4 GeV."
+          },
+          {
+            "label": "Result",
+            "value": "Their momentum magnitudes are 4 GeV/c, in opposite directions."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Boost to a moving laboratory frame. Must the two measured energies stay equal?",
+        "options": [
+          "Yes; photon energies are invariant",
+          "No; their directions relative to the boost affect their energies",
+          "Yes; equal rest-frame energies are equal in every frame"
+        ],
+        "answer": 1,
+        "explanations": [
+          "Photon energy depends on observer frame; it is not a Lorentz invariant.",
+          "Correct. A boost Doppler-shifts the two directions differently, so equal rest-frame energies need not remain equal.",
+          "Equality of component energies is frame-dependent, unlike invariant parent mass."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why state exactly two products?",
+        "answer": "With a third product, energy can be shared continuously among additional momenta, so the simple two-body energy assignment no longer follows."
+      },
+      "limits": "Exactly two on-shell products and an isolated parent rest frame, with M>0 and M≥m1+m2. The equal-energy example is the massless special case; general daughter masses require the supplied energy-momentum formulas. Threshold equality gives zero relative momentum, not a finite phase-space rate.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-04",
+      "prerequisiteIds": [
+        "particles/conserve-the-whole-four-momentum",
+        "relativity/energy-momentum-invariant"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Rest frame",
+          "definition": "Frame in which the specified parent has zero spatial momentum."
+        }
+      ],
+      "objective": "Two-body decay in the rest frame",
+      "practice": {
+        "prompt": "A parent rest energy is 10 GeV; daughter rest energies are 6 GeV and 0. Use the general two-body formulas.",
+        "parts": [
+          {
+            "label": "Massive daughter total energy",
+            "unit": "GeV",
+            "answer": 6.8,
+            "tolerance": 0.001,
+            "feedback": "(10²+6²−0²)/(2×10)=6.8 GeV."
+          },
+          {
+            "label": "Common momentum magnitude",
+            "unit": "GeV/c",
+            "answer": 3.2,
+            "tolerance": 0.001,
+            "feedback": "√(6.8²−6²)=3.2 GeV/c, opposite for the two daughters."
+          }
+        ],
+        "reasoning": "First conserve energy with the mass-shell relation to find E1; then find the momentum from the positive square root. The massless daughter has energy 10−6.8=3.2 GeV."
+      }
+    },
+    {
+      "id": "reconstruct-invariant-mass",
+      "title": "Reconstruct invariant mass",
+      "idea": "Combine product four-momenta before calculating the parent candidate mass.",
+      "body": [
+        "The sum of measured product energies and momentum vectors defines a candidate system. Its invariant mass can reveal whether those products are compatible with a parent state.",
+        "Do not add individual rest masses and call that the system mass. Relative kinetic energy contributes to the total rest-frame energy of the combined system."
+      ],
+      "equation": "M²c⁴ = (ΣEi)² − |Σpi|²c²",
+      "terms": "M, Ei, pi: candidate invariant mass, product energy, product momentum vector (GeV/c², GeV, GeV/c). All product quantities must be expressed in the same frame. Σ, | |: sum and vector magnitude (no unit). Sum vectors first, then take the magnitude.",
+      "equationGuide": {
+        "meaning": "Combine product four-momenta before calculating the parent candidate mass.",
+        "symbols": [
+          {
+            "symbol": "M, Ei, pi",
+            "name": "candidate invariant mass, product energy, product momentum vector",
+            "unit": "GeV/c², GeV, GeV/c",
+            "description": "All product quantities must be expressed in the same frame."
+          },
+          {
+            "symbol": "Σ, | |",
+            "name": "sum and vector magnitude",
+            "unit": "no unit",
+            "description": "Sum vectors first, then take the magnitude."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Two back-to-back photons each have energy 3 GeV.",
+          "Total energy is 6 GeV and total momentum is zero.",
+          "The pair has invariant mass 6 GeV/c² even though each photon is massless."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Reconstruct invariant mass",
+        "caption": "Assumes complete accurately measured products; missing energy and detector resolution bias reconstruction.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Two back-to-back photons each have energy 3 GeV."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Total energy is 6 GeV and total momentum is zero."
+          },
+          {
+            "label": "Result",
+            "value": "The pair has invariant mass 6 GeV/c² even though each photon is massless."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Two photons of 3 GeV travel in the same direction. What is their combined invariant mass?",
+        "options": [
+          "6 GeV/c²",
+          "3 GeV/c²",
+          "Zero"
+        ],
+        "answer": 2,
+        "explanations": [
+          "6 GeV/c² was the opposite-direction case with zero total momentum.",
+          "Adding individual or partial energies does not evaluate the invariant expression.",
+          "Correct. Parallel massless momenta give total pc equal to total E, so M=0."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "How can massless constituents form a nonzero-mass system?",
+        "answer": "Opposing momenta allow a system rest frame with nonzero total energy. Invariant mass belongs to the combined four-momentum, not a sum of constituent masses."
+      },
+      "limits": "Assumes complete accurately measured products; missing energy and detector resolution bias reconstruction.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-04",
+      "prerequisiteIds": [
+        "particles/two-body-decay-fixes-rest-frame-energies",
+        "relativity/energy-momentum-invariant"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Invariant mass reconstruction",
+          "definition": "Calculation of system mass from the summed measured four-momenta."
+        }
+      ],
+      "practice": {
+        "prompt": "Two back-to-back photons each have energy 4.5 GeV.",
+        "parts": [
+          {
+            "label": "Pair invariant mass",
+            "unit": "GeV/c²",
+            "answer": 9,
+            "tolerance": 0.001,
+            "feedback": "Momentum cancels; total energy 9 GeV gives mass 9 GeV/c²."
+          }
+        ],
+        "reasoning": "Momentum cancels; total energy 9 GeV gives mass 9 GeV/c²."
+      },
+      "objective": "Invariant mass reconstruction"
+    },
+    {
+      "id": "compare-collider-and-fixed-target-energy",
+      "title": "Compare collider and fixed-target energy",
+      "idea": "The same beam energy can give very different centre-of-mass energy.",
+      "body": [
+        "Opposing equal beams can cancel their total momentum, leaving their total energy available in the CM frame. A beam striking a stationary target gives the whole system net motion.",
+        "For a beam particle and target with equal mass, the invariant energy grows only as a square root of very large fixed-target beam energy. This is a kinematic comparison, not an accelerator design."
+      ],
+      "equation": "ECM² = 2m²c⁴ + 2mc² Ebeam",
+      "terms": "ECM, Ebeam: centre-of-mass energy and total beam energy (GeV). Ebeam includes rest energy, not only kinetic energy. m, c: equal beam/target mass and light speed (GeV/c², m/s). Target is initially at rest.",
+      "equationGuide": {
+        "meaning": "The same beam energy can give very different centre-of-mass energy.",
+        "symbols": [
+          {
+            "symbol": "ECM, Ebeam",
+            "name": "centre-of-mass energy and total beam energy",
+            "unit": "GeV",
+            "description": "Ebeam includes rest energy, not only kinetic energy."
+          },
+          {
+            "symbol": "m, c",
+            "name": "equal beam/target mass and light speed",
+            "unit": "GeV/c², m/s",
+            "description": "Target is initially at rest."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Use mc²=1 GeV and total Ebeam=7 GeV.",
+          "ECM²=2+14=16 GeV².",
+          "ECM=4 GeV; two opposing 7 GeV beams instead have 14 GeV CM energy."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Compare collider and fixed-target energy",
+        "caption": "Equal-mass special case and ideal incoming particles; actual proton collisions involve constituent parton momentum fractions.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Use mc²=1 GeV and total Ebeam=7 GeV."
+          },
+          {
+            "label": "Reasoning",
+            "value": "ECM²=2+14=16 GeV²."
+          },
+          {
+            "label": "Result",
+            "value": "ECM=4 GeV; two opposing 7 GeV beams instead have 14 GeV CM energy."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "May 7 GeV of beam kinetic energy be substituted as Ebeam for a 1 GeV rest mass?",
+        "options": [
+          "No; total beam energy would be 8 GeV",
+          "Yes; total and kinetic energies are identical",
+          "Yes; rest energy is absent for moving particles"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. The formula requires total energy: 7 GeV kinetic plus 1 GeV rest gives 8 GeV.",
+          "Total energy includes rest energy for a massive beam particle.",
+          "Motion does not remove the rest-energy contribution."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why does fixed-target energy not all create new rest mass?",
+        "answer": "Some laboratory energy accompanies the unavoidable overall momentum of the final system. The invariant CM energy isolates what is available in its rest frame."
+      },
+      "limits": "Equal-mass special case and ideal incoming particles; actual proton collisions involve constituent parton momentum fractions.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-04",
+      "prerequisiteIds": [
+        "particles/reconstruct-invariant-mass",
+        "relativity/threshold-energy"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Fixed target",
+          "definition": "A collision arrangement with one target initially at rest in the laboratory."
+        }
+      ],
+      "objective": "Thresholds in fixed-target versus collider cases"
+    },
+    {
+      "id": "lifetime-and-width-are-reciprocal",
+      "title": "Lifetime and width are reciprocal",
+      "idea": "An exponential state with shorter mean lifetime has larger intrinsic energy width.",
+      "body": [
+        "A finite-lived isolated state has an intrinsic energy spread associated with its decay. The lifetime-width relation uses a specified width convention.",
+        "Laboratory flight time is dilated for a moving particle. The lifetime in the width relation is its proper mean lifetime, not the longer laboratory mean time.",
+        "Full width at half maximum means the separation in energy between the two points where the ideal resonance profile is half its peak height; it is not a half-width."
+      ],
+      "equation": "Γτ = ħ",
+      "terms": "Γ, τ, ħ: intrinsic energy full width at half maximum, proper mean lifetime, reduced Planck constant (GeV, s, GeV s). Use ħ≈6.582×10⁻²⁵ GeV s; Γ is positive.",
+      "equationGuide": {
+        "meaning": "An exponential state with shorter mean lifetime has larger intrinsic energy width.",
+        "symbols": [
+          {
+            "symbol": "Γ, τ, ħ",
+            "name": "intrinsic energy full width at half maximum, proper mean lifetime, reduced Planck constant",
+            "unit": "GeV, s, GeV s",
+            "description": "Use ħ≈6.582×10⁻²⁵ GeV s; Γ is positive."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Let τ=2×10⁻²⁴ s.",
+          "Divide 6.582×10⁻²⁵ by 2×10⁻²⁴.",
+          "Γ≈0.3291 GeV."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Lifetime and width are reciprocal",
+        "caption": "Isolated approximately exponential resonance; threshold and overlapping-state effects need more detailed models.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Let τ=2×10⁻²⁴ s."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Divide 6.582×10⁻²⁵ by 2×10⁻²⁴."
+          },
+          {
+            "label": "Result",
+            "value": "Γ≈0.3291 GeV."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "A particle is observed in a faster-moving frame. Does its intrinsic width halve because lab lifetime increases?",
+        "options": [
+          "Yes; time dilation changes decay coupling",
+          "No; Γ uses proper lifetime",
+          "Yes; intrinsic properties change with observer speed"
+        ],
+        "answer": 1,
+        "explanations": [
+          "Time dilation is kinematic and does not change the rest-frame coupling.",
+          "Correct. Intrinsic width uses proper lifetime, which does not change with observer frame.",
+          "A boost changes observed time intervals, not intrinsic resonance parameters."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why distinguish intrinsic width from observed peak width?",
+        "answer": "Detector resolution, backgrounds and line-shape effects can broaden or distort the measured distribution beyond the state intrinsic decay width."
+      },
+      "limits": "Isolated approximately exponential resonance; threshold and overlapping-state effects need more detailed models.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-05",
+      "prerequisiteIds": [
+        "particles/compare-collider-and-fixed-target-energy",
+        "relativity/four-momentum"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Decay width",
+          "definition": "An energy-scale description of an unstable state inverse proper lifetime."
+        }
+      ],
+      "practice": {
+        "prompt": "Use ħ=6.582e−25 GeV s and τ=3e−24 s.",
+        "parts": [
+          {
+            "label": "Intrinsic width",
+            "unit": "GeV",
+            "answer": 0.2194,
+            "tolerance": 0.001,
+            "feedback": "Divide the supplied reduced Planck constant by the proper lifetime."
+          }
+        ],
+        "reasoning": "Divide the supplied reduced Planck constant by the proper lifetime."
+      },
+      "objective": "Lifetime and decay width relation"
+    },
+    {
+      "id": "branching-fractions-divide-decay-possibilities",
+      "title": "Branching fractions divide decay possibilities",
+      "idea": "A branching fraction is a probability for one specified decay channel.",
+      "body": [
+        "If a particle can decay in several ways, each channel has a partial rate or width. The total is the sum over all channels.",
+        "A branching fraction belongs to decays that occur, not to the fraction of detector events successfully reconstructed. Detector efficiency is an additional factor."
+      ],
+      "equation": "Bi = Γi/Γtotal; ΣBi = 1",
+      "terms": "Bi, Γi, Γtotal: branching fraction, partial width, total width (no unit, GeV, GeV). Channels must be exclusive and the sum complete; i labels a channel.",
+      "equationGuide": {
+        "meaning": "A branching fraction is a probability for one specified decay channel.",
+        "symbols": [
+          {
+            "symbol": "Bi, Γi, Γtotal",
+            "name": "branching fraction, partial width, total width",
+            "unit": "no unit, GeV, GeV",
+            "description": "Channels must be exclusive and the sum complete; i labels a channel."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Two channels have widths 2 and 3 in the same energy unit.",
+          "Total width is 5.",
+          "Their branching fractions are 0.4 and 0.6."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Branching fractions divide decay possibilities",
+        "caption": "Fractions can have correlated uncertainties; unobserved channels may leave an experimental sum incomplete.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Two channels have widths 2 and 3 in the same energy unit."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Total width is 5."
+          },
+          {
+            "label": "Result",
+            "value": "Their branching fractions are 0.4 and 0.6."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Detection efficiency for the first channel is 0.5. Does its physical branching fraction become 0.2?",
+        "options": [
+          "Yes; detector efficiency changes the decay law",
+          "Yes; the second branching must become 0.8",
+          "No; detected fraction becomes 0.2 but branching stays 0.4"
+        ],
+        "answer": 2,
+        "explanations": [
+          "Detector efficiency does not change the particle intrinsic decay probabilities.",
+          "The other physical branching remains 0.6; missed events are detector losses.",
+          "Correct. The branching stays 0.4; multiplying by 0.5 gives a detected fraction 0.2."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why must channels be mutually exclusive for the sum rule?",
+        "answer": "Counting overlapping final-state categories twice would double-count probability. A complete partition assigns each decay to one channel."
+      },
+      "limits": "Fractions can have correlated uncertainties; unobserved channels may leave an experimental sum incomplete.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-05",
+      "prerequisiteIds": [
+        "particles/lifetime-and-width-are-reciprocal"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Branching fraction",
+          "definition": "Probability that a decay follows a specified exclusive channel."
+        }
+      ],
+      "objective": "Branching fractions"
+    },
+    {
+      "id": "cross-section-measures-process-likelihood",
+      "title": "Cross section measures process likelihood",
+      "idea": "Cross section links a specified collision process to an expected rate.",
+      "body": [
+        "A cross section depends on what final state is counted and on collision energy. It is not a universal size stamped on a particle.",
+        "Inclusive measurements count a broad family of outcomes, while exclusive measurements specify a narrower final state. Compare predictions and measurements with matching definitions."
+      ],
+      "equation": "Rate = instantaneous luminosity × cross section",
+      "terms": "Rate: expected process events per second (s⁻¹). Before detector losses unless specified otherwise. luminosity, cross section: collision exposure rate and process effective area (cm⁻²s⁻¹, cm²). Their area units cancel.",
+      "equationGuide": {
+        "meaning": "Cross section links a specified collision process to an expected rate.",
+        "symbols": [
+          {
+            "symbol": "Rate",
+            "name": "expected process events per second",
+            "unit": "s⁻¹",
+            "description": "Before detector losses unless specified otherwise."
+          },
+          {
+            "symbol": "luminosity, cross section",
+            "name": "collision exposure rate and process effective area",
+            "unit": "cm⁻²s⁻¹, cm²",
+            "description": "Their area units cancel."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Use luminosity 10³⁰ cm⁻²s⁻¹ and cross section 10⁻³⁰ cm².",
+          "Multiply the two numbers.",
+          "Expected process rate is 1 event per second."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Cross section measures process likelihood",
+        "caption": "A rate relation does not provide a scattering amplitude or account for detector selection by itself.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Use luminosity 10³⁰ cm⁻²s⁻¹ and cross section 10⁻³⁰ cm²."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Multiply the two numbers."
+          },
+          {
+            "label": "Result",
+            "value": "Expected process rate is 1 event per second."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "An analysis changes which final states it includes. Must its cross section remain identical?",
+        "options": [
+          "No; the process definition changed",
+          "Yes; cross section is only particle diameter",
+          "Yes; all collision processes have equal rates"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. Changing the included final states changes the defined process cross section.",
+          "Cross section is a process probability measure, not only a geometric diameter.",
+          "Different final states have different amplitudes and rates."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why state collision energy with a cross section?",
+        "answer": "Available channels and amplitudes depend on energy, so the same initial species can have different process probabilities at different energies."
+      },
+      "limits": "A rate relation does not provide a scattering amplitude or account for detector selection by itself.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-05",
+      "prerequisiteIds": [
+        "particles/branching-fractions-divide-decay-possibilities"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Inclusive",
+          "definition": "Counting a specified observable while summing over some unobserved final-state details."
+        }
+      ],
+      "objective": "Cross section as a rate measure"
+    },
+    {
+      "id": "count-expected-events",
+      "title": "Count expected events",
+      "idea": "Exposure, cross section, branching and efficiency multiply to give an expected signal yield.",
+      "body": [
+        "Integrated luminosity adds collision exposure over time. Multiply it by a matching cross section to estimate how many parent processes occur.",
+        "Then apply the relevant branching fraction and efficiency. The result is an expected count, not the exact next dataset and not a statistical significance."
+      ],
+      "equation": "Nexpected = Lint σ B ε",
+      "terms": "Nexpected: expected detected signal count (count). A mean prediction with uncertainties in its inputs. Lint, σ: integrated luminosity and process cross section (fb⁻¹, fb). A femtobarn is 10⁻⁴³ m²; inverse fb cancels fb. B, ε: branching fraction and total efficiency (no unit). Each lies between zero and one; do not double-count a branching fraction already included in σ.",
+      "equationGuide": {
+        "meaning": "Exposure, cross section, branching and efficiency multiply to give an expected signal yield.",
+        "symbols": [
+          {
+            "symbol": "Nexpected",
+            "name": "expected detected signal count",
+            "unit": "count",
+            "description": "A mean prediction with uncertainties in its inputs."
+          },
+          {
+            "symbol": "Lint, σ",
+            "name": "integrated luminosity and process cross section",
+            "unit": "fb⁻¹, fb",
+            "description": "A femtobarn is 10⁻⁴³ m²; inverse fb cancels fb."
+          },
+          {
+            "symbol": "B, ε",
+            "name": "branching fraction and total efficiency",
+            "unit": "no unit",
+            "description": "Each lies between zero and one; do not double-count a branching fraction already included in σ."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Use Lint=10 fb⁻¹ and σ=2 fb: expect 20 parent processes.",
+          "A branching fraction 0.25 gives 5 selected-channel decays.",
+          "Efficiency 0.8 gives 4 expected detected signal events."
+        ]
+      },
+      "visual": {
+        "type": "signal-yield",
+        "title": "Count expected events",
+        "caption": "Fixed process definition and calibrated acceptance/efficiency; expected yield is neither guaranteed count nor discovery significance. Live model: multiply integrated luminosity by production cross section, then branching fraction and selection efficiency exactly once. The result is an expected signal count, not an observed count or discovery significance. Each input convention must match the stated process.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Use Lint=10 fb⁻¹ and σ=2 fb: expect 20 parent processes."
+          },
+          {
+            "label": "Reasoning",
+            "value": "A branching fraction 0.25 gives 5 selected-channel decays."
+          },
+          {
+            "label": "Result",
+            "value": "Efficiency 0.8 gives 4 expected detected signal events."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Double luminosity with all other inputs fixed. What happens?",
+        "options": [
+          "Significance necessarily doubles",
+          "Expected signal doubles",
+          "Efficiency doubles"
+        ],
+        "answer": 1,
+        "explanations": [
+          "Significance also depends on backgrounds and statistical inference; it need not scale linearly.",
+          "Correct. The expected yield is linear in luminosity when other factors stay fixed.",
+          "More exposure does not itself alter the probability of detecting each event."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why cannot four expected signal events establish a discovery?",
+        "answer": "Evidence depends on observed data, backgrounds, uncertainty and the statistical test. A signal-yield calculation alone does not compare competing explanations."
+      },
+      "limits": "Fixed process definition and calibrated acceptance/efficiency; expected yield is neither guaranteed count nor discovery significance.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-05",
+      "prerequisiteIds": [
+        "particles/cross-section-measures-process-likelihood"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Integrated luminosity",
+          "definition": "Collision exposure accumulated over an observation interval."
+        }
+      ],
+      "practice": {
+        "prompt": "Use 20 fb⁻¹, 3 fb, branching fraction 0.5 and efficiency 0.2.",
+        "parts": [
+          {
+            "label": "Expected detected signal",
+            "unit": "count",
+            "answer": 6,
+            "tolerance": 0.001,
+            "feedback": "20×3×0.5×0.2=6; reciprocal area units cancel."
+          }
+        ],
+        "reasoning": "20×3×0.5×0.2=6; reciprocal area units cancel."
+      },
+      "objective": "Luminosity and expected event yield"
+    },
+    {
+      "id": "diagrams-organize-amplitudes",
+      "title": "Diagrams organize amplitudes",
+      "idea": "A Feynman diagram is calculation bookkeeping, not a literal movie of tiny paths.",
+      "body": [
+        "A diagram identifies interaction terms and momentum flow in an amplitude calculation. Different diagrams contributing to the same outcome can interfere.",
+        "Internal lines are not freely observed particles traveling along measurable trajectories. Treating a virtual line as an ordinary detected particle leads to mistaken energy and time stories."
+      ],
+      "equation": "Total amplitude = sum of contributing amplitudes",
+      "terms": "amplitude: complex probability amplitude (normalization-dependent). Probabilities involve the squared magnitude of the complete amplitude, not simply a count of diagrams.",
+      "equationGuide": {
+        "meaning": "A Feynman diagram is calculation bookkeeping, not a literal movie of tiny paths.",
+        "symbols": [
+          {
+            "symbol": "amplitude",
+            "name": "complex probability amplitude",
+            "unit": "normalization-dependent",
+            "description": "Probabilities involve the squared magnitude of the complete amplitude, not simply a count of diagrams."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Two alternative contributions to one outcome have amplitudes +1 and −1 in toy units.",
+          "Their sum is zero.",
+          "The resulting toy probability is zero, not 1+1."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Diagrams organize amplitudes",
+        "caption": "Introductory diagram interpretation; no full QFT calculation or virtual-particle trajectory model is supplied.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Two alternative contributions to one outcome have amplitudes +1 and −1 in toy units."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Their sum is zero."
+          },
+          {
+            "label": "Result",
+            "value": "The resulting toy probability is zero, not 1+1."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Can probabilities of indistinguishable alternatives always be added before amplitudes?",
+        "options": [
+          "Yes; diagrams are independent observed events",
+          "Yes; complex signs are decorative",
+          "No; interference can change the result"
+        ],
+        "answer": 2,
+        "explanations": [
+          "Diagrams are contributions to an amplitude, not automatically independent observed events.",
+          "Complex phases control interference and can change probabilities.",
+          "Correct. Indistinguishable alternatives require amplitude addition before taking the squared magnitude."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why does a diagram not prove a process has a large rate?",
+        "answer": "Couplings, propagators, interference and phase space determine the amplitude and rate. The drawing only organizes parts of that calculation."
+      },
+      "limits": "Introductory diagram interpretation; no full QFT calculation or virtual-particle trajectory model is supplied.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-06",
+      "prerequisiteIds": [
+        "particles/count-expected-events"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Amplitude",
+          "definition": "A complex quantity whose combined magnitude determines probabilities after proper normalization."
+        }
+      ],
+      "objective": "Vertices and diagrams as calculation bookkeeping"
+    },
+    {
+      "id": "a-small-coupling-supports-an-expansion",
+      "title": "A small coupling supports an expansion",
+      "idea": "Perturbation theory orders corrections by a small interaction parameter.",
+      "body": [
+        "When a dimensionless coupling is sufficiently small in the relevant regime, successive terms can sometimes improve a prediction. The leading term is not exact merely because it is first.",
+        "Large logarithms, thresholds or nonperturbative effects can spoil a naive small-coupling estimate. Check the behavior of the actual expansion, not just one familiar number.",
+        "For low-energy electromagnetic interactions, the fine-structure constant α (alpha) is approximately 1/137. It is a dimensionless measure of electromagnetic coupling strength. The effective α changes with probing scale, so 1/137 is not a universal high-energy value. Small α motivates many electromagnetic expansions, subject to the additional limitations just described."
+      ],
+      "equation": "Prediction ≈ leading term + correction",
+      "terms": "leading term, correction: ordered contributions in an approximation (same observable units). The correction can be positive or negative; this is not an error bound.",
+      "equationGuide": {
+        "meaning": "Perturbation theory orders corrections by a small interaction parameter.",
+        "symbols": [
+          {
+            "symbol": "leading term, correction",
+            "name": "ordered contributions in an approximation",
+            "unit": "same observable units",
+            "description": "The correction can be positive or negative; this is not an error bound."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "A toy leading prediction is 100 units.",
+          "The next calculated correction is −3 units.",
+          "The improved truncated result is 97, with further terms still uncalculated."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "A small coupling supports an expansion",
+        "caption": "Conceptual perturbation bridge; a truncated expansion is not a guaranteed convergent series.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "A toy leading prediction is 100 units."
+          },
+          {
+            "label": "Reasoning",
+            "value": "The next calculated correction is −3 units."
+          },
+          {
+            "label": "Result",
+            "value": "The improved truncated result is 97, with further terms still uncalculated."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Does a 3% first correction guarantee every later correction is below 3%?",
+        "options": [
+          "No; convergence or error control needs evidence",
+          "Yes; all series shrink automatically",
+          "Yes; percentages cannot grow"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. A small first correction alone does not prove convergence or bound later terms.",
+          "Series can be asymptotic or have enhanced higher-order contributions.",
+          "A percentage label does not impose a mathematical bound on later corrections."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why specify the energy scale for a coupling?",
+        "answer": "Effective couplings depend on the probing scale through quantum corrections. A value suitable in one regime is not automatically appropriate everywhere."
+      },
+      "limits": "Conceptual perturbation bridge; a truncated expansion is not a guaranteed convergent series.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-06",
+      "prerequisiteIds": [
+        "particles/diagrams-organize-amplitudes"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Perturbation theory",
+          "definition": "Approximation by ordered corrections around a simpler solvable description."
+        },
+        {
+          "term": "Fine-structure constant α",
+          "definition": "Dimensionless electromagnetic coupling-strength parameter, approximately 1/137 at low energy and scale dependent."
+        }
+      ],
+      "objective": "Electromagnetic coupling and perturbative limits"
+    },
+    {
+      "id": "weak-interactions-have-charged-and-neutral-channels",
+      "title": "Weak interactions have charged and neutral channels",
+      "idea": "W and Z interactions differ in electric-charge transfer.",
+      "body": [
+        "Charged-current weak interactions involve W exchange and can change a charged lepton into its neutrino partner or change quark flavor with the appropriate charge balance.",
+        "Neutral-current interactions involve Z exchange and do not transfer electric charge between the external particles in the same way. Neutral current does not mean all participating particles are electrically neutral."
+      ],
+      "equation": "Charged current: charge changes at a matter vertex",
+      "terms": "charged current, vertex: weak interaction type and local coupling in a diagram (no unit). Charge is conserved across the complete vertex including the W field.",
+      "equationGuide": {
+        "meaning": "W and Z interactions differ in electric-charge transfer.",
+        "symbols": [
+          {
+            "symbol": "charged current, vertex",
+            "name": "weak interaction type and local coupling in a diagram",
+            "unit": "no unit",
+            "description": "Charge is conserved across the complete vertex including the W field."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "An electron-related charged-current vertex can connect an electron and electron neutrino.",
+          "Their electric charges differ by one elementary charge unit.",
+          "The W contribution balances that difference in the complete interaction."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Weak interactions have charged and neutral channels",
+        "caption": "Conceptual electroweak channel map, not a calculation of weak rates or mixing factors.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "An electron-related charged-current vertex can connect an electron and electron neutrino."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Their electric charges differ by one elementary charge unit."
+          },
+          {
+            "label": "Result",
+            "value": "The W contribution balances that difference in the complete interaction."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Can an electrically charged electron participate in a neutral-current interaction?",
+        "options": [
+          "No; electrons have no weak interactions",
+          "Yes; neutral current names the interaction channel",
+          "No; only neutral particles can participate"
+        ],
+        "answer": 1,
+        "explanations": [
+          "Electrons participate in both electromagnetic and weak interactions.",
+          "Correct. Neutral current names the Z-mediated interaction, not the electric neutrality of every participant.",
+          "Charged particles such as electrons can couple to the neutral weak current."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why include the exchanged field in a vertex charge check?",
+        "answer": "External matter labels alone may change charge. The full interaction term, including the mediator, must conserve total electric charge."
+      },
+      "limits": "Conceptual electroweak channel map, not a calculation of weak rates or mixing factors.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-06",
+      "prerequisiteIds": [
+        "particles/a-small-coupling-supports-an-expansion"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Neutral current",
+          "definition": "Weak interaction mediated by the Z field without charged-current charge exchange."
+        }
+      ],
+      "objective": "Charged and neutral weak interactions"
+    },
+    {
+      "id": "neutrino-flavor-can-oscillate",
+      "title": "Neutrino flavor can oscillate",
+      "idea": "Flavor preparation and mass propagation use different quantum-state bases.",
+      "body": [
+        "A produced flavor state can be a combination of mass states. During travel, their relative phases change; a later flavor measurement can therefore have a different probability.",
+        "In a two-flavor vacuum approximation, the probability depends on distance divided by energy and on a mass-squared difference. Oscillation is not ordinary radioactive decay into another flavor."
+      ],
+      "equation": "P = sin²(2θ) sin²(1.27 Δm² L/E)",
+      "terms": "P, θ: conversion probability and mixing angle (no unit, rad). sin² means square the sine; θ is an angle. Δm², L, E: mass-squared difference, distance, neutrino energy (eV²/c⁴, km, GeV). The numeric factor 1.27 includes the specified unit conversions; use this unit convention only.",
+      "equationGuide": {
+        "meaning": "Flavor preparation and mass propagation use different quantum-state bases.",
+        "symbols": [
+          {
+            "symbol": "P, θ",
+            "name": "conversion probability and mixing angle",
+            "unit": "no unit, rad",
+            "description": "sin² means square the sine; θ is an angle."
+          },
+          {
+            "symbol": "Δm², L, E",
+            "name": "mass-squared difference, distance, neutrino energy",
+            "unit": "eV²/c⁴, km, GeV",
+            "description": "The numeric factor 1.27 includes the specified unit conversions; use this unit convention only."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Choose maximal mixing θ=π/4, where π≈3.14159.",
+          "If the second sine argument is π/2, both squared sines are one.",
+          "The two-flavor toy conversion probability reaches one."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Neutrino flavor can oscillate",
+        "caption": "Two-flavor relativistic vacuum approximation; real three-flavor mixing, matter effects and coherence limits require extensions.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Choose maximal mixing θ=π/4, where π≈3.14159."
+          },
+          {
+            "label": "Reasoning",
+            "value": "If the second sine argument is π/2, both squared sines are one."
+          },
+          {
+            "label": "Result",
+            "value": "The two-flavor toy conversion probability reaches one."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Double both L and E in this approximation. What happens to P?",
+        "options": [
+          "It necessarily doubles",
+          "It necessarily becomes zero",
+          "It stays unchanged because L/E is fixed"
+        ],
+        "answer": 2,
+        "explanations": [
+          "The formula depends on L/E, not on distance alone.",
+          "No new zero of the sine is introduced when its argument stays fixed.",
+          "Correct. Both distances and energies double, leaving their ratio and the stated phase unchanged."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why does observing oscillation imply nonidentical mass-state propagation?",
+        "answer": "A changing relative phase requires different propagation phases, associated here with a nonzero mass-squared difference. Mixing alone without phase separation would not produce this distance pattern."
+      },
+      "limits": "Two-flavor relativistic vacuum approximation; real three-flavor mixing, matter effects and coherence limits require extensions.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-06",
+      "prerequisiteIds": [
+        "particles/weak-interactions-have-charged-and-neutral-channels"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Flavor state",
+          "definition": "A neutrino state defined by its charged-current production or detection association."
+        }
+      ],
+      "objective": "Neutrino flavor and oscillation bridge"
+    },
+    {
+      "id": "color-neutrality-is-a-quantum-property",
+      "title": "Color neutrality is a quantum property",
+      "idea": "Observable hadrons are color-neutral combinations, not painted objects.",
+      "body": [
+        "Color is the name of a strong-interaction charge degree of freedom. The three color labels are internal quantum labels with no relation to visible red, green and blue light.",
+        "A physical color-singlet combination is invariant under the relevant color transformations. Simply drawing colored dots that look white is an analogy, not the mathematical test."
+      ],
+      "equation": "Color singlet → unchanged under color symmetry transformations",
+      "terms": "color singlet: symmetry-neutral combination (no unit). This is an internal-state property, not a statement of zero electric charge.",
+      "equationGuide": {
+        "meaning": "Observable hadrons are color-neutral combinations, not painted objects.",
+        "symbols": [
+          {
+            "symbol": "color singlet",
+            "name": "symmetry-neutral combination",
+            "unit": "no unit",
+            "description": "This is an internal-state property, not a statement of zero electric charge."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "A proton is electrically charged.",
+          "Its physical state is nevertheless color neutral.",
+          "Electric charge and color neutrality can coexist because they describe different interactions."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Color neutrality is a quantum property",
+        "caption": "Conceptual QCD singlet condition; a complete hadron state includes gluon and sea-quark dynamics.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "A proton is electrically charged."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Its physical state is nevertheless color neutral."
+          },
+          {
+            "label": "Result",
+            "value": "Electric charge and color neutrality can coexist because they describe different interactions."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Does a color-neutral hadron have to be electrically neutral?",
+        "options": [
+          "No; the proton is a counterexample",
+          "Yes; all charges are identical",
+          "Yes; neutral color removes electric charge"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. A proton is color neutral but has electric charge +e; these are separate properties.",
+          "Color and electric charge belong to different interaction structures.",
+          "Color neutrality does not cancel the proton electromagnetic charge."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why avoid literal color-mixing pictures?",
+        "answer": "Visible colors describe light frequencies, while QCD color is an internal quantum label. The analogy cannot replace the state transformation rule."
+      },
+      "limits": "Conceptual QCD singlet condition; a complete hadron state includes gluon and sea-quark dynamics.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-07",
+      "prerequisiteIds": [
+        "particles/neutrino-flavor-can-oscillate"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Color charge",
+          "definition": "Internal charge associated with the strong gauge interaction."
+        }
+      ],
+      "objective": "Color charge and color-neutral composites"
+    },
+    {
+      "id": "add-hadron-quantum-numbers",
+      "title": "Add hadron quantum numbers",
+      "idea": "Valence quark labels efficiently predict additive quantum numbers.",
+      "body": [
+        "A quark carries baryon number one third and an antiquark minus one third. Ordinary three-quark baryons therefore have baryon number one; quark-antiquark mesons have zero.",
+        "Electric charge adds separately. Baryon number is not the same as electric charge or total count of quarks visible in one cartoon."
+      ],
+      "equation": "Baryon number = (nq − nqbar)/3",
+      "terms": "nq, nqbar: quark and antiquark counts in valence bookkeeping (counts). The bar label means antiquark; sea pairs add zero net baryon number. baryon number: additive quantum number (no unit). Do not confuse this B with magnetic field or branching fraction.",
+      "equationGuide": {
+        "meaning": "Valence quark labels efficiently predict additive quantum numbers.",
+        "symbols": [
+          {
+            "symbol": "nq, nqbar",
+            "name": "quark and antiquark counts in valence bookkeeping",
+            "unit": "counts",
+            "description": "The bar label means antiquark; sea pairs add zero net baryon number."
+          },
+          {
+            "symbol": "baryon number",
+            "name": "additive quantum number",
+            "unit": "no unit",
+            "description": "Do not confuse this B with magnetic field or branching fraction."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "A meson valence label has one quark and one antiquark.",
+          "Their baryon numbers add to 1/3−1/3=0.",
+          "Its electric charge may still be nonzero depending on flavors."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Add hadron quantum numbers",
+        "caption": "Valence bookkeeping; baryon-number conservation has important theoretical qualifications beyond simple low-energy process checks.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "A meson valence label has one quark and one antiquark."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Their baryon numbers add to 1/3−1/3=0."
+          },
+          {
+            "label": "Result",
+            "value": "Its electric charge may still be nonzero depending on flavors."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Adding a quark-antiquark pair changes net baryon number by how much?",
+        "options": [
+          "One",
+          "Zero",
+          "Two thirds"
+        ],
+        "answer": 1,
+        "explanations": [
+          "A quark-antiquark pair is not three net quarks and adds no unit baryon number.",
+          "Correct. A quark contributes +1/3 and its antiquark −1/3, so the net change is zero.",
+          "The pair contains two objects but their signed baryon numbers cancel."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why can sea pairs appear without changing proton baryon number?",
+        "answer": "Each added pair contributes equal opposite baryon numbers. The net additive label stays fixed even when the full quantum state contains additional pairs."
+      },
+      "limits": "Valence bookkeeping; baryon-number conservation has important theoretical qualifications beyond simple low-energy process checks.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-07",
+      "prerequisiteIds": [
+        "particles/color-neutrality-is-a-quantum-property"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Baryon number",
+          "definition": "An additive label equal to one for an ordinary baryon and minus one for its antibaryon."
+        }
+      ],
+      "objective": "Quark model and hadron quantum numbers"
+    },
+    {
+      "id": "strong-coupling-depends-on-scale",
+      "title": "Strong coupling depends on scale",
+      "idea": "Short-distance weak coupling and long-distance confinement describe different regimes.",
+      "body": [
+        "At sufficiently high momentum transfer, quark and gluon interactions can often be treated with a smaller effective strong coupling. This is asymptotic freedom.",
+        "At long distances, isolated colored particles are not observed as free final states. Confinement and hadron formation require nonperturbative reasoning, not a simple extrapolation of the high-energy expansion."
+      ],
+      "equation": "Higher probing momentum scale → generally smaller strong coupling",
+      "terms": "probing momentum scale, strong coupling: resolution scale and dimensionless interaction parameter (GeV/c, no unit). The trend applies within the standard QCD scale-dependent description.",
+      "equationGuide": {
+        "meaning": "Short-distance weak coupling and long-distance confinement describe different regimes.",
+        "symbols": [
+          {
+            "symbol": "probing momentum scale, strong coupling",
+            "name": "resolution scale and dimensionless interaction parameter",
+            "unit": "GeV/c, no unit",
+            "description": "The trend applies within the standard QCD scale-dependent description."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "A short-distance scattering probes a large momentum transfer.",
+          "A perturbative quark/gluon calculation may be useful there.",
+          "Turning those partons into measured hadrons still needs additional modeling."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Strong coupling depends on scale",
+        "caption": "Qualitative QCD regimes; no claim that confinement is derived by this trend statement alone.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "A short-distance scattering probes a large momentum transfer."
+          },
+          {
+            "label": "Reasoning",
+            "value": "A perturbative quark/gluon calculation may be useful there."
+          },
+          {
+            "label": "Result",
+            "value": "Turning those partons into measured hadrons still needs additional modeling."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Does asymptotic freedom mean quarks can be pulled out as isolated free particles at long distances?",
+        "options": [
+          "Yes; smaller coupling removes confinement everywhere",
+          "Yes; every high-energy jet is one isolated quark",
+          "No; that confuses short-distance behavior with confinement"
+        ],
+        "answer": 2,
+        "explanations": [
+          "Small coupling in one probing regime does not eliminate long-distance dynamics.",
+          "A jet is a collection of hadrons, not a free isolated quark.",
+          "Correct. Asymptotic freedom concerns short distances; confinement concerns long-distance colored states."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why cannot one approximation cover both regimes equally well?",
+        "answer": "The effective expansion parameter and relevant degrees of freedom change with scale. A useful short-distance calculation can fail for long-distance bound-state structure."
+      },
+      "limits": "Qualitative QCD regimes; no claim that confinement is derived by this trend statement alone.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-07",
+      "prerequisiteIds": [
+        "particles/add-hadron-quantum-numbers"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Asymptotic freedom",
+          "definition": "Decrease of effective strong coupling at sufficiently short-distance or high-momentum scales."
+        }
+      ],
+      "objective": "Confinement versus asymptotic freedom"
+    },
+    {
+      "id": "jets-connect-partons-to-measured-hadrons",
+      "title": "Jets connect partons to measured hadrons",
+      "idea": "A jet groups nearby energy deposits into a reproducible observable.",
+      "body": [
+        "A high-energy quark or gluon can radiate and develop into many hadrons. Detectors measure those hadrons and their energy deposits, not a bare quark track.",
+        "A jet algorithm specifies how to group the deposits or reconstructed particles. The choice matters, so a prediction must use the same jet definition as the measurement."
+      ],
+      "equation": "Measured jet = defined grouping of reconstructed particles",
+      "terms": "jet definition: algorithm and parameter choices for grouping (no unit). A jet is an observable construction, not a single elementary particle.",
+      "equationGuide": {
+        "meaning": "A jet groups nearby energy deposits into a reproducible observable.",
+        "symbols": [
+          {
+            "symbol": "jet definition",
+            "name": "algorithm and parameter choices for grouping",
+            "unit": "no unit",
+            "description": "A jet is an observable construction, not a single elementary particle."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Several nearby particles carry energies 3, 4 and 5 GeV.",
+          "A specified grouping includes all three.",
+          "Their scalar energy sum is 12 GeV, though jet momentum requires vector addition."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Jets connect partons to measured hadrons",
+        "caption": "Illustrative grouping only; real jet algorithms must satisfy appropriate stability and theoretical requirements.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Several nearby particles carry energies 3, 4 and 5 GeV."
+          },
+          {
+            "label": "Reasoning",
+            "value": "A specified grouping includes all three."
+          },
+          {
+            "label": "Result",
+            "value": "Their scalar energy sum is 12 GeV, though jet momentum requires vector addition."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Can changing the grouping rule change the number of reconstructed jets?",
+        "options": [
+          "Yes; the observable definition changed",
+          "No; each quark always creates exactly one fixed jet",
+          "No; detector resolution fixes all algorithms"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. A different grouping algorithm can merge or split candidate groups differently.",
+          "Hadron radiation and grouping mean jets are not a one-to-one immutable quark list.",
+          "Resolution matters, but the algorithm is also part of the observable definition."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why distinguish hadronization from detection?",
+        "answer": "Hadronization is the physical formation of color-neutral particles; detection is the instrument response to those particles. They contribute different modeling uncertainties."
+      },
+      "limits": "Illustrative grouping only; real jet algorithms must satisfy appropriate stability and theoretical requirements.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-07",
+      "prerequisiteIds": [
+        "particles/strong-coupling-depends-on-scale"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Hadronization",
+          "definition": "Formation of color-neutral hadrons from colored quark and gluon dynamics."
+        }
+      ],
+      "objective": "Jets and hadronization as evidence models"
+    },
+    {
+      "id": "symmetry-restricts-mass-terms",
+      "title": "Symmetry restricts mass terms",
+      "idea": "A proposed term must respect the theory symmetry structure or be generated consistently.",
+      "body": [
+        "Writing a mass parameter in an equation is not always compatible with the gauge symmetries assigned to the fields. The Standard Model distinguishes different field transformation properties.",
+        "The Higgs mechanism supplies a consistent way for some masses to arise while preserving the gauge-theory framework. This is not simply adding a drag force to otherwise massless particles."
+      ],
+      "equation": "Allowed interaction terms must fit the symmetry assignments",
+      "terms": "mass term, symmetry assignment: equation contribution and field transformation rule (model-dependent). This lesson states a consistency condition, not a numerical mass formula.",
+      "equationGuide": {
+        "meaning": "A proposed term must respect the theory symmetry structure or be generated consistently.",
+        "symbols": [
+          {
+            "symbol": "mass term, symmetry assignment",
+            "name": "equation contribution and field transformation rule",
+            "unit": "model-dependent",
+            "description": "This lesson states a consistency condition, not a numerical mass formula."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Propose a term linking two fields.",
+          "Check how both fields transform under the gauge symmetries.",
+          "If the complete term fails the required invariance, the theory needs a different consistent structure."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Symmetry restricts mass terms",
+        "caption": "Conceptual electroweak bridge; full chiral gauge representations and spontaneous symmetry breaking are deferred.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Propose a term linking two fields."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Check how both fields transform under the gauge symmetries."
+          },
+          {
+            "label": "Result",
+            "value": "If the complete term fails the required invariance, the theory needs a different consistent structure."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Can any guessed mass term be inserted without checking symmetry?",
+        "options": [
+          "Yes; symmetry applies only to experiments",
+          "No; consistency constrains the allowed terms",
+          "Yes; every numerical parameter is automatically allowed"
+        ],
+        "answer": 1,
+        "explanations": [
+          "Symmetry constrains theory equations as well as their measurable consequences.",
+          "Correct. Gauge transformation properties constrain which mass and interaction terms are consistent.",
+          "Arbitrary numerical parameters cannot repair a symmetry-inconsistent term."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why is friction a poor analogy for rest mass?",
+        "answer": "Friction dissipates energy and selects a medium rest frame. Relativistic rest mass is an intrinsic property in the dispersion relation, not resistance caused by rubbing through space."
+      },
+      "limits": "Conceptual electroweak bridge; full chiral gauge representations and spontaneous symmetry breaking are deferred.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-08",
+      "prerequisiteIds": [
+        "particles/jets-connect-partons-to-measured-hadrons"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Mass term",
+          "definition": "A contribution to a field equation or Lagrangian associated with particle mass."
+        }
+      ],
+      "objective": "Mass term and symmetry constraints concept"
+    },
+    {
+      "id": "the-higgs-field-and-boson-differ",
+      "title": "The Higgs field and boson differ",
+      "idea": "The field background and a particle excitation of that field are not identical concepts.",
+      "body": [
+        "A field can have a nonzero vacuum value even when no real Higgs boson is being detected. The Higgs boson is an excitation around that vacuum configuration.",
+        "Couplings to the Higgs field give charged elementary fermions and W/Z bosons their mass terms in the Standard Model. The minimal original Standard Model does not supply the observed neutrino masses; their origin requires an extension and remains unresolved. The measured Higgs boson tests the mechanism but does not by itself explain the numerical pattern of every coupling."
+      ],
+      "equation": "Field background ≠ one detected Higgs particle",
+      "terms": "field background, excitation: vacuum configuration and disturbance around it (field-normalization dependent). The distinction is conceptual; no numerical field units are used in this lesson.",
+      "equationGuide": {
+        "meaning": "The field background and a particle excitation of that field are not identical concepts.",
+        "symbols": [
+          {
+            "symbol": "field background, excitation",
+            "name": "vacuum configuration and disturbance around it",
+            "unit": "field-normalization dependent",
+            "description": "The distinction is conceptual; no numerical field units are used in this lesson."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Imagine a field in its lowest-energy vacuum configuration.",
+          "A localized excitation can be created in a collision.",
+          "That excitation can decay while the vacuum field structure remains."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "The Higgs field and boson differ",
+        "caption": "Conceptual Standard Model mechanism; the vacuum is not a mechanical fluid causing drag.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Imagine a field in its lowest-energy vacuum configuration."
+          },
+          {
+            "label": "Reasoning",
+            "value": "A localized excitation can be created in a collision."
+          },
+          {
+            "label": "Result",
+            "value": "That excitation can decay while the vacuum field structure remains."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "If no Higgs boson is present in a room, do electron mass terms disappear?",
+        "options": [
+          "Yes; every electron must carry one Higgs boson",
+          "Yes; mass exists only at colliders",
+          "No; the vacuum field background is not a collection of visible bosons"
+        ],
+        "answer": 2,
+        "explanations": [
+          "An electron does not need to carry a detectable Higgs boson to have its mass term.",
+          "The mechanism is not switched on only during collider events.",
+          "Correct. The vacuum field structure is distinct from the presence of real Higgs excitations."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "What remains unexplained by saying a fermion couples to the Higgs?",
+        "answer": "The theory uses coupling values as inputs. Naming the mechanism does not predict why those values have their observed pattern."
+      },
+      "limits": "Conceptual Standard Model mechanism; the vacuum is not a mechanical fluid causing drag.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-08",
+      "prerequisiteIds": [
+        "particles/symmetry-restricts-mass-terms"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Higgs boson",
+          "definition": "A quantum excitation associated with the Higgs field around its vacuum state."
+        }
+      ],
+      "objective": "Higgs field and excitations"
+    },
+    {
+      "id": "infer-higgs-properties-from-channels",
+      "title": "Infer Higgs properties from channels",
+      "idea": "Observed final states test predicted production and decay patterns.",
+      "body": [
+        "A short-lived Higgs candidate is reconstructed from products such as photons or leptons, not followed as a persistent track. Each channel has distinct background and resolution.",
+        "Combining channels tests whether rates and kinematic properties fit a common model. No single excess automatically determines all couplings or the total width."
+      ],
+      "equation": "Measured channel yield ∝ production rate × branching fraction × efficiency",
+      "terms": "yield, branching fraction, efficiency: detected count and two selection factors (count, no unit, no unit). Production rate must be integrated over the observation exposure.",
+      "equationGuide": {
+        "meaning": "Observed final states test predicted production and decay patterns.",
+        "symbols": [
+          {
+            "symbol": "yield, branching fraction, efficiency",
+            "name": "detected count and two selection factors",
+            "unit": "count, no unit, no unit",
+            "description": "Production rate must be integrated over the observation exposure."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Two channels share a production source but have different branching fractions.",
+          "One also has poorer detection efficiency.",
+          "Different observed counts do not alone imply inconsistent production physics."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Infer Higgs properties from channels",
+        "caption": "Qualitative inference only; no current precision coupling fit or discovery significance is supplied.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Two channels share a production source but have different branching fractions."
+          },
+          {
+            "label": "Reasoning",
+            "value": "One also has poorer detection efficiency."
+          },
+          {
+            "label": "Result",
+            "value": "Different observed counts do not alone imply inconsistent production physics."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "A channel has fewer observed events than another. Does that directly prove a weaker production rate?",
+        "options": [
+          "No; branching, efficiency and backgrounds differ",
+          "Yes; counts alone measure production",
+          "Yes; all Higgs decay channels are equally likely"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. Different branching fractions, efficiencies and backgrounds change observed channel counts.",
+          "Raw counts conflate production with decay and detector response.",
+          "Decay channels have different probabilities and experimental sensitivities."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why combine more than one channel?",
+        "answer": "Different channels constrain different combinations of parameters and have different backgrounds. Agreement across them is a stronger consistency test."
+      },
+      "limits": "Qualitative inference only; no current precision coupling fit or discovery significance is supplied.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-08",
+      "prerequisiteIds": [
+        "particles/the-higgs-field-and-boson-differ"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Channel combination",
+          "definition": "Joint inference from several measured final-state categories."
+        }
+      ],
+      "objective": "Measured Higgs channels and inference"
+    },
+    {
+      "id": "composite-mass-includes-interaction-energy",
+      "title": "Composite mass includes interaction energy",
+      "idea": "Most proton mass is not the simple sum of valence quark rest masses.",
+      "body": [
+        "A composite system has invariant mass equal to its total rest-frame energy divided by c squared. Motion and field energy inside it contribute to that total.",
+        "The Higgs mechanism sets quark mass terms, but strong-interaction dynamics account for most ordinary nucleon mass. Saying the Higgs gives all mass hides this essential distinction."
+      ],
+      "equation": "Msystem c² = total energy in the system rest frame",
+      "terms": "Msystem, c: system invariant mass and light speed (GeV/c², m/s). Internal kinetic and interaction contributions belong to the total energy account.",
+      "equationGuide": {
+        "meaning": "Most proton mass is not the simple sum of valence quark rest masses.",
+        "symbols": [
+          {
+            "symbol": "Msystem, c",
+            "name": "system invariant mass and light speed",
+            "unit": "GeV/c², m/s",
+            "description": "Internal kinetic and interaction contributions belong to the total energy account."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Suppose a toy bound system has rest-frame energy 10 GeV.",
+          "Its invariant mass is 10 GeV/c².",
+          "That value need not equal the sum of constituent rest masses because internal energy contributes."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Composite mass includes interaction energy",
+        "caption": "Qualitative mass accounting; partitioning QCD energy into components depends on definitions and calculation scheme.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Suppose a toy bound system has rest-frame energy 10 GeV."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Its invariant mass is 10 GeV/c²."
+          },
+          {
+            "label": "Result",
+            "value": "That value need not equal the sum of constituent rest masses because internal energy contributes."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Can massless constituents in opposite directions form a system with nonzero invariant mass?",
+        "options": [
+          "No; field energy cannot contribute to inertia",
+          "Yes; the combined rest-frame energy can be nonzero",
+          "No; constituent masses must simply add"
+        ],
+        "answer": 1,
+        "explanations": [
+          "Field and internal kinetic energy contribute to total rest-frame energy.",
+          "Correct. Opposing massless momenta can sum to zero while their positive energies add.",
+          "System invariant mass is not simply the sum of constituent rest masses."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why distinguish elementary mass terms from hadron mass?",
+        "answer": "They arise at different descriptive levels. A hadron mass is a property of a strongly interacting composite state, not just a list of elementary mass parameters."
+      },
+      "limits": "Qualitative mass accounting; partitioning QCD energy into components depends on definitions and calculation scheme.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-08",
+      "prerequisiteIds": [
+        "particles/infer-higgs-properties-from-channels"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Composite mass",
+          "definition": "Invariant mass of a system including all its internal energy."
+        }
+      ],
+      "objective": "Why mass is not all generated by one mechanism"
+    },
+    {
+      "id": "curvature-measures-transverse-momentum",
+      "title": "Curvature measures transverse momentum",
+      "idea": "A charged track bends according to momentum perpendicular to the magnetic field.",
+      "body": [
+        "A magnetic field changes the direction of a moving charged particle without directly doing work on it in the ideal magnetic-only model. The curvature radius depends on transverse momentum.",
+        "The sign of bending helps infer charge sign, but radius alone gives a magnitude. Tracks nearly parallel to the field need separate treatment of their longitudinal motion."
+      ],
+      "equation": "pT [GeV/c] ≈ 0.300 |q/e| B[T] R[m]",
+      "terms": "pT, q/e: transverse momentum and charge in elementary units (GeV/c, no unit). Absolute-value bars remove the charge sign for the radius relation. B, R: uniform magnetic field magnitude and curvature radius (T, m). T means tesla; the numeric factor includes unit conversions.",
+      "equationGuide": {
+        "meaning": "A charged track bends according to momentum perpendicular to the magnetic field.",
+        "symbols": [
+          {
+            "symbol": "pT, q/e",
+            "name": "transverse momentum and charge in elementary units",
+            "unit": "GeV/c, no unit",
+            "description": "Absolute-value bars remove the charge sign for the radius relation."
+          },
+          {
+            "symbol": "B, R",
+            "name": "uniform magnetic field magnitude and curvature radius",
+            "unit": "T, m",
+            "description": "T means tesla; the numeric factor includes unit conversions."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Use |q/e|=1, B=2 T and R=1 m.",
+          "Multiply 0.300×1×2×1.",
+          "Transverse momentum is approximately 0.600 GeV/c."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Curvature measures transverse momentum",
+        "caption": "Uniform field, known charge magnitude, negligible energy loss and calibrated tracking; neutral particles do not follow this relation.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Use |q/e|=1, B=2 T and R=1 m."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Multiply 0.300×1×2×1."
+          },
+          {
+            "label": "Result",
+            "value": "Transverse momentum is approximately 0.600 GeV/c."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "At the same field and charge, radius doubles. What happens to pT?",
+        "options": [
+          "It halves",
+          "It is unchanged",
+          "It doubles"
+        ],
+        "answer": 2,
+        "explanations": [
+          "Larger radius means less curvature and larger transverse momentum.",
+          "The formula explicitly contains R, so pT changes when R changes.",
+          "Correct. The radius relation is linear in R for fixed field and charge magnitude."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why is this not automatically total momentum?",
+        "answer": "Only the perpendicular component produces circular curvature. A component parallel to the field adds helical motion without the same bending radius."
+      },
+      "limits": "Uniform field, known charge magnitude, negligible energy loss and calibrated tracking; neutral particles do not follow this relation.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-09",
+      "prerequisiteIds": [
+        "particles/composite-mass-includes-interaction-energy",
+        "relativity/energy-momentum-invariant"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Transverse momentum",
+          "definition": "Momentum component perpendicular to a specified axis or magnetic field."
+        }
+      ],
+      "practice": {
+        "prompt": "Use one elementary charge, B=1.5 T and R=2 m.",
+        "parts": [
+          {
+            "label": "Transverse momentum",
+            "unit": "GeV/c",
+            "answer": 0.9,
+            "tolerance": 0.001,
+            "feedback": "0.300×1×1.5×2=0.900 GeV/c."
+          }
+        ],
+        "reasoning": "0.300×1×1.5×2=0.900 GeV/c."
+      },
+      "objective": "Tracking curvature and momentum"
+    },
+    {
+      "id": "missing-momentum-is-an-imbalance",
+      "title": "Missing momentum is an imbalance",
+      "idea": "Missing transverse momentum summarizes an imbalance in reconstructed visible momentum.",
+      "body": [
+        "A calorimeter measures energy deposited when particles create cascades, or showers, of secondary interactions in material. A calibrated electrical or light signal estimates the deposited energy. Leakage outside the instrument, incomplete response and finite resolution can make that estimate differ from the original particle energy. Energy is a scalar; momentum has direction. Combining calibrated energy measurements with track directions helps reconstruct visible objects before calculating an imbalance.",
+        "Add the measured visible transverse momentum vectors, then reverse that sum. The result estimates unobserved transverse momentum if the initial transverse balance and detector response are understood.",
+        "Neutrinos can cause missing momentum, but so can mismeasurement, acceptance gaps and backgrounds. Missing energy is evidence to model, not a unique particle label."
+      ],
+      "equation": "pmiss,T = −Σpvisible,T",
+      "terms": "pmiss,T, pvisible,T: missing and visible transverse momentum vectors (GeV/c). T means perpendicular to the beam axis here; add signed vector components. Σ: sum over reconstructed visible objects (no unit). Avoid counting the same deposited energy twice.",
+      "equationGuide": {
+        "meaning": "Missing transverse momentum summarizes an imbalance in reconstructed visible momentum.",
+        "symbols": [
+          {
+            "symbol": "pmiss,T, pvisible,T",
+            "name": "missing and visible transverse momentum vectors",
+            "unit": "GeV/c",
+            "description": "T means perpendicular to the beam axis here; add signed vector components."
+          },
+          {
+            "symbol": "Σ",
+            "name": "sum over reconstructed visible objects",
+            "unit": "no unit",
+            "description": "Avoid counting the same deposited energy twice."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Visible x momenta are +5 and −2 GeV/c; visible y sum is zero.",
+          "Total visible transverse momentum is (+3,0) GeV/c.",
+          "Missing transverse momentum is (−3,0) GeV/c."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Missing momentum is an imbalance",
+        "caption": "Detector-level estimator with calibration and acceptance limits; not direct measurement of invisible particle mass.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Visible x momenta are +5 and −2 GeV/c; visible y sum is zero."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Total visible transverse momentum is (+3,0) GeV/c."
+          },
+          {
+            "label": "Result",
+            "value": "Missing transverse momentum is (−3,0) GeV/c."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Does a nonzero imbalance prove a new invisible particle?",
+        "options": [
+          "No; ordinary neutrinos and detector effects must be tested",
+          "Yes; known processes cannot do this",
+          "Yes; vector addition identifies the species"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. Known neutrinos, acceptance losses and mismeasurement can all produce imbalance.",
+          "Ordinary Standard Model processes can have invisible neutrinos.",
+          "A vector imbalance alone does not uniquely identify an invisible species."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why use transverse rather than full momentum at a hadron collider?",
+        "answer": "Incoming parton longitudinal momenta are not known event by event, while the initial transverse balance is much better constrained."
+      },
+      "limits": "Detector-level estimator with calibration and acceptance limits; not direct measurement of invisible particle mass.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-09",
+      "prerequisiteIds": [
+        "particles/curvature-measures-transverse-momentum"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Missing transverse momentum",
+          "definition": "Negative vector sum of reconstructed visible momenta perpendicular to the beam."
+        },
+        {
+          "term": "Calorimeter",
+          "definition": "Detector that estimates deposited particle energy from calibrated signals produced by interactions in material."
+        }
+      ],
+      "objective": "Energy measurement and missing momentum"
+    },
+    {
+      "id": "an-excess-needs-a-statistical-comparison",
+      "title": "An excess needs a statistical comparison",
+      "idea": "Observed minus expected background is not by itself a discovery significance.",
+      "body": [
+        "A background-only model predicts a distribution of possible outcomes, not one exact count. An observed excess must be compared with that distribution and its uncertainties.",
+        "A p-value is the probability, under the specified null model, of a result at least as incompatible as the one observed according to a chosen test. It is not the probability the null model is true."
+      ],
+      "equation": "Simple excess estimate = Nobserved − Nbkg",
+      "terms": "Nobserved, Nbkg: observed count and estimated background mean (counts). Their difference is an estimator, not a significance measure.",
+      "equationGuide": {
+        "meaning": "Observed minus expected background is not by itself a discovery significance.",
+        "symbols": [
+          {
+            "symbol": "Nobserved, Nbkg",
+            "name": "observed count and estimated background mean",
+            "unit": "counts",
+            "description": "Their difference is an estimator, not a significance measure."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Observe 25 events with background expectation 20.",
+          "The estimated excess is 5 events.",
+          "Its interpretation depends on counting fluctuations, background uncertainty and the test definition."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "An excess needs a statistical comparison",
+        "caption": "No Gaussian shortcut is assumed; low counts and nuisance parameters need an appropriate likelihood or exact method.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Observe 25 events with background expectation 20."
+          },
+          {
+            "label": "Reasoning",
+            "value": "The estimated excess is 5 events."
+          },
+          {
+            "label": "Result",
+            "value": "Its interpretation depends on counting fluctuations, background uncertainty and the test definition."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Does an excess of five mean a five-sigma result?",
+        "options": [
+          "Yes; backgrounds are exact integers",
+          "No; count difference and standardized evidence are different",
+          "Yes; one extra count equals one sigma"
+        ],
+        "answer": 1,
+        "explanations": [
+          "Background expectations have statistical and systematic uncertainty and need not be integers.",
+          "Correct. Five extra counts is an excess; significance requires comparison with expected fluctuations and uncertainty.",
+          "There is no universal one-count-to-one-sigma conversion."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why account for searching many mass windows?",
+        "answer": "Scanning many possibilities increases the chance of an apparently unusual fluctuation somewhere. Local and global significance answer different questions."
+      },
+      "limits": "No Gaussian shortcut is assumed; low counts and nuisance parameters need an appropriate likelihood or exact method.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-09",
+      "prerequisiteIds": [
+        "particles/missing-momentum-is-an-imbalance"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Null model",
+          "definition": "The specific reference hypothesis used to define a statistical comparison."
+        }
+      ],
+      "objective": "Signal background and statistical significance"
+    },
+    {
+      "id": "systematics-can-move-many-measurements-together",
+      "title": "Systematics can move many measurements together",
+      "idea": "Systematic uncertainty describes uncertain modeling or calibration effects, often correlated.",
+      "body": [
+        "An energy-scale calibration error can shift many reconstructed events together. More events reduce counting noise but do not automatically remove that shared uncertainty.",
+        "Model comparison should propagate nuisance parameters and correlations. Treating every systematic effect as independent noise can either exaggerate or hide uncertainty."
+      ],
+      "equation": "Measured value = modeled value + possible calibration shift",
+      "terms": "calibration shift: difference associated with an uncertain instrument response (same units as the measured quantity). A shift can have either sign and may correlate several measurements.",
+      "equationGuide": {
+        "meaning": "Systematic uncertainty describes uncertain modeling or calibration effects, often correlated.",
+        "symbols": [
+          {
+            "symbol": "calibration shift",
+            "name": "difference associated with an uncertain instrument response",
+            "unit": "same units as the measured quantity",
+            "description": "A shift can have either sign and may correlate several measurements."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "A shared energy scale may be high by 1%.",
+          "Two measured line energies can both move upward together.",
+          "Their ratio may be less affected than their absolute values."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Systematics can move many measurements together",
+        "caption": "Systematic uncertainties are model-dependent; a labeled percentage is not automatically a probability distribution.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "A shared energy scale may be high by 1%."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Two measured line energies can both move upward together."
+          },
+          {
+            "label": "Result",
+            "value": "Their ratio may be less affected than their absolute values."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Collecting four times as many events necessarily halves a fixed scale uncertainty. True?",
+        "options": [
+          "Yes; all uncertainty scales as one over square root of counts",
+          "Yes; systematic means random counting noise",
+          "No; that requires improved calibration information"
+        ],
+        "answer": 2,
+        "explanations": [
+          "The square-root-count rule describes statistical fluctuations under assumptions, not every uncertainty.",
+          "A systematic scale uncertainty differs from independent Poisson counting noise.",
+          "Correct. More events reduce counting noise but do not automatically improve a shared calibration."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why retain correlations in a combined fit?",
+        "answer": "A shared effect cannot be counted as many independent constraints. The correlation structure determines which combinations are actually well measured."
+      },
+      "limits": "Systematic uncertainties are model-dependent; a labeled percentage is not automatically a probability distribution.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-09",
+      "prerequisiteIds": [
+        "particles/an-excess-needs-a-statistical-comparison"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Nuisance parameter",
+          "definition": "An uncertain model parameter needed for inference but not the primary quantity of interest."
+        }
+      ],
+      "objective": "Systematic uncertainty and model comparison"
+    },
+    {
+      "id": "reconstruct-a-synthetic-two-photon-event",
+      "title": "Reconstruct a synthetic two-photon event",
+      "idea": "A changed geometry tests whether invariant mass is being computed from vectors.",
+      "body": [
+        "For two photons, the opening angle matters as well as their energies. Parallel photons have zero pair mass; opposite photons with the same energies have a larger mass.",
+        "Use a common frame and keep energy units consistent. This synthetic event is a kinematic exercise, not identification of a real resonance."
+      ],
+      "equation": "M²c⁴ = 2E1E2(1−cos θ)",
+      "terms": "M, E1, E2: pair invariant mass and photon energies (GeV/c², GeV, GeV). Both photons are massless. θ: opening angle between photon momenta (rad). cos is cosine; θ=π means opposite directions and π≈3.14159.",
+      "equationGuide": {
+        "meaning": "A changed geometry tests whether invariant mass is being computed from vectors.",
+        "symbols": [
+          {
+            "symbol": "M, E1, E2",
+            "name": "pair invariant mass and photon energies",
+            "unit": "GeV/c², GeV, GeV",
+            "description": "Both photons are massless."
+          },
+          {
+            "symbol": "θ",
+            "name": "opening angle between photon momenta",
+            "unit": "rad",
+            "description": "cos is cosine; θ=π means opposite directions and π≈3.14159."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Let E1=2 GeV, E2=8 GeV and θ=π.",
+          "Then M²c⁴=2×2×8×2=64 GeV².",
+          "The pair mass is 8 GeV/c²."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Reconstruct a synthetic two-photon event",
+        "caption": "Complete two-photon ideal event; measurement resolution and extra radiation are omitted.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Let E1=2 GeV, E2=8 GeV and θ=π."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Then M²c⁴=2×2×8×2=64 GeV²."
+          },
+          {
+            "label": "Result",
+            "value": "The pair mass is 8 GeV/c²."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Keep the energies but set θ=0. What is the pair mass?",
+        "options": [
+          "Zero",
+          "8 GeV/c²",
+          "10 GeV/c²"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. At θ=0, cosθ=1 and the mass-squared expression vanishes.",
+          "8 GeV/c² was the opposite-direction result, not the parallel result.",
+          "Total energy 10 GeV does not imply rest-frame energy when net momentum is nonzero."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "Why is the pair mass not always the total energy divided by c squared?",
+        "answer": "That equality holds in the pair rest frame. In a frame with nonzero total momentum, part of total energy belongs to motion of the system as a whole."
+      },
+      "limits": "Complete two-photon ideal event; measurement resolution and extra radiation are omitted.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-10",
+      "prerequisiteIds": [
+        "particles/systematics-can-move-many-measurements-together",
+        "relativity/energy-momentum-invariant"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Opening angle",
+          "definition": "Angle between the directions of two momenta."
+        }
+      ],
+      "practice": {
+        "prompt": "Two photons have energies 3 and 6 GeV at a right angle, θ=π/2.",
+        "parts": [
+          {
+            "label": "Pair invariant mass",
+            "unit": "GeV/c²",
+            "answer": 6,
+            "tolerance": 0.001,
+            "feedback": "cos(π/2)=0, so Mc²=√(2×3×6)=6 GeV."
+          }
+        ],
+        "reasoning": "cos(π/2)=0, so Mc²=√(2×3×6)=6 GeV."
+      },
+      "objective": "Reconstruct a synthetic decay event"
+    },
+    {
+      "id": "audit-a-yield-estimate",
+      "title": "Audit a yield estimate",
+      "idea": "A reliable expected count uses each probability factor exactly once.",
+      "body": [
+        "Cross sections can be quoted before or after a decay branching fraction. Read the definition before multiplying: otherwise the same probability can accidentally be applied twice.",
+        "Efficiency can also include acceptance and selection. State which losses are already included and propagate input uncertainties when making a quantitative inference."
+      ],
+      "equation": "N = Lint σchannel ε",
+      "terms": "N, Lint, σchannel, ε: expected selected count, integrated luminosity, channel cross section, efficiency (count, fb⁻¹, fb, no unit). σchannel already includes the branching fraction for this lesson.",
+      "equationGuide": {
+        "meaning": "A reliable expected count uses each probability factor exactly once.",
+        "symbols": [
+          {
+            "symbol": "N, Lint, σchannel, ε",
+            "name": "expected selected count, integrated luminosity, channel cross section, efficiency",
+            "unit": "count, fb⁻¹, fb, no unit",
+            "description": "σchannel already includes the branching fraction for this lesson."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Take Lint=50 fb⁻¹ and σchannel=0.4 fb.",
+          "There are 20 expected channel events before selection.",
+          "At ε=0.3, expect 6 selected events; do not multiply branching again."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Audit a yield estimate",
+        "caption": "Mean-yield bookkeeping only; background and uncertainties are still needed for an experimental claim.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Take Lint=50 fb⁻¹ and σchannel=0.4 fb."
+          },
+          {
+            "label": "Reasoning",
+            "value": "There are 20 expected channel events before selection."
+          },
+          {
+            "label": "Result",
+            "value": "At ε=0.3, expect 6 selected events; do not multiply branching again."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Someone multiplies another branching fraction 0.2 already included in σchannel. What happens?",
+        "options": [
+          "They overcount by a factor of five",
+          "They undercount by a factor of five",
+          "They correctly improve the estimate"
+        ],
+        "answer": 1,
+        "explanations": [
+          "An extra factor below one reduces the estimate rather than increasing it.",
+          "Correct. Multiplying the already included factor 0.2 again gives one fifth of the correct yield.",
+          "Including the same branching probability twice double-counts a loss."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "What documentation would make the estimate reproducible?",
+        "answer": "Define the process, energy, phase-space cuts, whether branching is included, luminosity units and the acceptance/efficiency convention."
+      },
+      "limits": "Mean-yield bookkeeping only; background and uncertainties are still needed for an experimental claim.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-10",
+      "prerequisiteIds": [
+        "particles/reconstruct-a-synthetic-two-photon-event"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Acceptance",
+          "definition": "Fraction of events falling inside a specified geometric or kinematic selection region."
+        }
+      ],
+      "practice": {
+        "prompt": "Use 30 fb⁻¹, channel cross section 0.5 fb and efficiency 0.4.",
+        "parts": [
+          {
+            "label": "Expected selected count",
+            "unit": "count",
+            "answer": 6,
+            "tolerance": 0.001,
+            "feedback": "30×0.5×0.4=6; channel branching is already included."
+          }
+        ],
+        "reasoning": "30×0.5×0.4=6; channel branching is already included."
+      },
+      "objective": "Estimate a count with efficiency and branching"
+    },
+    {
+      "id": "reject-a-process-for-a-stated-reason",
+      "title": "Reject a process for a stated reason",
+      "idea": "Conservation checks should name the exact failed constraint.",
+      "body": [
+        "A proposed process may fail electric charge, energy-momentum or another relevant quantum-number condition. Say which one fails and compare complete initial and final states.",
+        "Passing basic conservation does not establish an amplitude. Conversely, a missing particle in an incomplete event can make an apparently impossible proposal become consistent."
+      ],
+      "equation": "Initial total charge = final total charge",
+      "terms": "total charge: sum of signed charges of every specified participant (e). Use one complete event description, not only visible tracks.",
+      "equationGuide": {
+        "meaning": "Conservation checks should name the exact failed constraint.",
+        "symbols": [
+          {
+            "symbol": "total charge",
+            "name": "sum of signed charges of every specified participant",
+            "unit": "e",
+            "description": "Use one complete event description, not only visible tracks."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "Propose an isolated neutral parent decaying into two positive unit-charge particles and nothing else.",
+          "Final charge is +2e, while initial charge is zero.",
+          "Reject this complete proposal by charge conservation before calculating a rate."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Reject a process for a stated reason",
+        "caption": "Use interaction-specific selection rules carefully; approximate global labels are not interchangeable with exact electric charge conservation.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "Propose an isolated neutral parent decaying into two positive unit-charge particles and nothing else."
+          },
+          {
+            "label": "Reasoning",
+            "value": "Final charge is +2e, while initial charge is zero."
+          },
+          {
+            "label": "Result",
+            "value": "Reject this complete proposal by charge conservation before calculating a rate."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "Adding two neutral invisible particles repairs that charge mismatch. True?",
+        "options": [
+          "Yes; invisible always means negative charge",
+          "Yes; energy conservation replaces charge conservation",
+          "No; neutral particles cannot supply the missing negative charge"
+        ],
+        "answer": 2,
+        "explanations": [
+          "Invisible does not mean negatively charged; invisibility is a detector statement.",
+          "Energy conservation and charge conservation must both hold.",
+          "Correct. Neutral products add zero charge and cannot cancel the +2e final excess."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "What if a proposal passes charge but fails invariant-mass threshold?",
+        "answer": "It remains forbidden under the stated complete initial conditions. Conservation constraints are simultaneous, not alternatives from which to choose one."
+      },
+      "limits": "Use interaction-specific selection rules carefully; approximate global labels are not interchangeable with exact electric charge conservation.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-10",
+      "prerequisiteIds": [
+        "particles/audit-a-yield-estimate"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Constraint",
+          "definition": "A condition a proposed physical process must satisfy."
+        }
+      ],
+      "objective": "Check a proposed process against conservation laws"
+    },
+    {
+      "id": "know-where-the-bridge-ends",
+      "title": "Know where the bridge ends",
+      "idea": "Introductory particle reasoning prepares questions that a full quantum field theory can answer.",
+      "body": [
+        "You can now distinguish kinematics, rates, detector response and statistical evidence. These are complementary parts of a claim, not substitutes for one another.",
+        "Calculating amplitudes from a quantum field theory requires relativistic fields, symmetry representations, quantization, perturbation methods and renormalization. This course introduces their roles without pretending to derive the full machinery.",
+        "Bounded examples of open questions are the particle identity of dark matter, the mechanism generating neutrino masses and the origin of the cosmic matter–antimatter asymmetry. Evidence for an unexplained phenomenon is not evidence for every proposed explanation. Distinguish established observations, a model prediction and an unconfirmed candidate mechanism."
+      ],
+      "equation": "Claim = specified model + prediction + measurement comparison",
+      "terms": "model, prediction, comparison: three parts of a supported scientific statement (not numerical units). This checklist is conceptual, not an algebraic formula.",
+      "equationGuide": {
+        "meaning": "Introductory particle reasoning prepares questions that a full quantum field theory can answer.",
+        "symbols": [
+          {
+            "symbol": "model, prediction, comparison",
+            "name": "three parts of a supported scientific statement",
+            "unit": "not numerical units",
+            "description": "This checklist is conceptual, not an algebraic formula."
+          }
+        ]
+      },
+      "example": {
+        "title": "Work through a small case",
+        "steps": [
+          "A model predicts a final-state distribution.",
+          "A detector-aware calculation predicts the measured distribution.",
+          "Data and uncertainties then test the model in that regime, leaving other questions open."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Know where the bridge ends",
+        "caption": "A bounded introductory bridge, not a graduate QFT sequence, research credential or complete account of all particle physics.",
+        "items": [
+          {
+            "label": "Starting point",
+            "value": "A model predicts a final-state distribution."
+          },
+          {
+            "label": "Reasoning",
+            "value": "A detector-aware calculation predicts the measured distribution."
+          },
+          {
+            "label": "Result",
+            "value": "Data and uncertainties then test the model in that regime, leaving other questions open."
+          }
+        ]
+      },
+      "check": {
+        "prompt": "A model has an attractive name but no distinct tested prediction. Is it established by the name?",
+        "options": [
+          "No; evidence requires testable comparisons",
+          "Yes; mathematical language proves it experimentally",
+          "Yes; any open problem confirms it"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. A label or attractive idea does not substitute for distinct tested predictions.",
+          "Mathematical language alone does not establish experimental truth.",
+          "An open question motivates hypotheses but does not confirm one automatically."
+        ]
+      },
+      "apply": {
+        "title": "Explain your decision",
+        "text": "How should you continue toward QFT without skipping prerequisites?",
+        "answer": "Strengthen special relativity, linear algebra, quantum amplitudes, classical fields and symmetry reasoning, then study a structured field-theory course with explicit calculations."
+      },
+      "limits": "A bounded introductory bridge, not a graduate QFT sequence, research credential or complete account of all particle physics.",
+      "sourceIds": [
+        "particle-pdg"
+      ],
+      "moduleId": "particles-10",
+      "prerequisiteIds": [
+        "particles/reject-a-process-for-a-stated-reason"
+      ],
+      "reviewStatus": "reviewed",
+      "clarityReviewStatus": "source-reviewed",
+      "glossary": [
+        {
+          "term": "Renormalization",
+          "definition": "A framework for relating scale-dependent parameters and consistently organizing quantum-field predictions."
+        }
+      ],
+      "objective": "Separate established model from open questions and QFT prerequisites"
+    }
+  ],
+  "statusNote": "A bounded 40-lesson introductory bridge connecting particle labels, relativistic kinematics, interaction models and experimental evidence. Full quantum field theory, precision collider analyses and nonperturbative QCD remain further study. Completion marks do not certify mastery."
+}

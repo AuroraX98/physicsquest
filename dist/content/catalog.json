@@ -1,0 +1,1808 @@
+{
+  "version": "0.9.0",
+  "courses": [
+    {
+      "id": "foundations",
+      "title": "Foundations",
+      "subtitle": "The language of physical ideas",
+      "symbol": "01",
+      "status": "complete",
+      "plannedLessons": 8,
+      "prerequisites": [
+        "Arithmetic and fractions"
+      ],
+      "coverage": [
+        "Units",
+        "Scale",
+        "Equations",
+        "Vectors",
+        "Graphs",
+        "Accumulation",
+        "Uncertainty",
+        "Models"
+      ]
+    },
+    {
+      "id": "math",
+      "title": "Mathematical toolkit",
+      "subtitle": "Tools that make the ideas precise",
+      "symbol": "02",
+      "status": "complete",
+      "plannedLessons": 48,
+      "prerequisites": [
+        "Foundations; basic algebra and equation rearrangement. Toolkit practice is needed before advanced physics, not just the overview lessons."
+      ],
+      "coverage": [
+        "Geometry and trigonometry",
+        "Differentiation",
+        "Integration",
+        "Multivariable change",
+        "Vector calculus",
+        "Complex numbers",
+        "Complex exponentials",
+        "Linear algebra",
+        "Eigensystems",
+        "Inner-product spaces",
+        "Differential equations",
+        "Fourier and probability"
+      ],
+      "moduleTargets": [
+        4,
+        5,
+        5,
+        4,
+        5,
+        3,
+        3,
+        4,
+        3,
+        3,
+        5,
+        4
+      ]
+    },
+    {
+      "id": "mechanics",
+      "title": "Classical mechanics",
+      "subtitle": "A bounded introductory course in motion and interactions",
+      "symbol": "03",
+      "status": "complete",
+      "plannedLessons": 56,
+      "prerequisites": [
+        "Foundations for introductory motion concepts; Mathematical toolkit for the extended calculus, vector and rotation sequence. Each lesson links its local prerequisites."
+      ],
+      "coverage": [
+        "Position and velocity",
+        "Acceleration",
+        "Projectile motion",
+        "Net force",
+        "Free-body diagrams",
+        "Friction",
+        "Circular motion",
+        "Work and energy",
+        "Potential energy",
+        "Momentum and impulse",
+        "Collisions and centre of mass",
+        "Rotation",
+        "Torque",
+        "Angular momentum",
+        "Gravitation",
+        "Modelling capstone"
+      ],
+      "moduleTargets": [
+        3,
+        4,
+        3,
+        3,
+        4,
+        4,
+        3,
+        4,
+        4,
+        3,
+        4,
+        4,
+        3,
+        3,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "em",
+      "title": "Electricity & magnetism",
+      "subtitle": "Charges, fields and circuits",
+      "symbol": "04",
+      "status": "complete",
+      "plannedLessons": 56,
+      "prerequisites": [
+        "Foundations, Classical mechanics and Mathematical toolkit. Local links identify vectors, calculus, complex numbers and differential equations before they are used."
+      ],
+      "coverage": [
+        "Charge",
+        "Electric fields",
+        "Superposition",
+        "Flux and Gauss's law",
+        "Potential",
+        "Conductors and capacitance",
+        "Current",
+        "Resistance and DC circuits",
+        "RC dynamics",
+        "Magnetic force",
+        "Magnetic field sources",
+        "Ampere's law",
+        "Induction and Lenz's law",
+        "Inductance and LC circuits",
+        "Maxwell's equations and waves",
+        "Field-and-circuit capstone"
+      ],
+      "moduleTargets": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        3,
+        4,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "scopeNote": "A defined introductory course, not advanced field theory, a complete university laboratory sequence, electrical-safety training or proof of mastery."
+    },
+    {
+      "id": "waves",
+      "title": "Vibrations & waves",
+      "subtitle": "From repeated motion to interference",
+      "symbol": "05",
+      "status": "complete",
+      "plannedLessons": 48,
+      "prerequisites": [
+        "Mechanics and Mathematical toolkit, including trigonometry, derivatives, integrals, ODEs, complex numbers and eigenvectors; E&M for electromagnetic sections. Each lesson links its local prerequisites."
+      ],
+      "coverage": [
+        "Simple harmonic motion",
+        "Damping",
+        "Driving and resonance",
+        "Coupled oscillators",
+        "Normal modes",
+        "Travelling waves",
+        "Standing waves",
+        "Interference and beats",
+        "Fourier representation",
+        "Sound",
+        "Dispersion",
+        "Electromagnetic waves and polarization",
+        "Diffraction",
+        "Wave capstone"
+      ],
+      "moduleTargets": [
+        4,
+        3,
+        4,
+        3,
+        3,
+        4,
+        3,
+        3,
+        3,
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "scopeNote": "A defined introductory wave-model course, not a full university waves/optics or laboratory sequence. Fuller Fresnel, thin-film, imaging and material-optics work is planned in Optics."
+    },
+    {
+      "id": "thermodynamics",
+      "title": "Heat & thermodynamics",
+      "subtitle": "Energy, temperature, entropy and statistical bridges",
+      "symbol": "06",
+      "status": "complete",
+      "plannedLessons": 56,
+      "prerequisites": [
+        "Mathematical toolkit, Classical mechanics. Local mathematical bridges are taught before use; advanced topics retain their stated prerequisites."
+      ],
+      "prerequisiteCourseIds": [
+        "math",
+        "mechanics"
+      ],
+      "coverage": [
+        "Thermal quantities",
+        "Matter and state",
+        "Microscopic motion",
+        "Energy bookkeeping",
+        "Thermal processes",
+        "Heat transport",
+        "Entropy",
+        "Cycles and limits",
+        "Probability bridge",
+        "Statistical equilibrium",
+        "Phases and quantum limits",
+        "Thermal modelling capstone"
+      ],
+      "moduleTargets": [
+        4,
+        4,
+        4,
+        6,
+        5,
+        5,
+        4,
+        4,
+        4,
+        5,
+        7,
+        4
+      ],
+      "plannedModules": [
+        {
+          "id": "thermodynamics-01",
+          "title": "Thermal quantities",
+          "plannedLessons": 4,
+          "objectives": [
+            "Temperature and thermal contact",
+            "Kelvin and temperature differences",
+            "Heat versus internal energy",
+            "Equilibrium and state variables"
+          ]
+        },
+        {
+          "id": "thermodynamics-02",
+          "title": "Matter and state",
+          "plannedLessons": 4,
+          "objectives": [
+            "Pressure from force and area",
+            "Amount of substance and particle count",
+            "Ideal-gas state equation",
+            "Limits of the ideal-gas model"
+          ]
+        },
+        {
+          "id": "thermodynamics-03",
+          "title": "Microscopic motion",
+          "plannedLessons": 4,
+          "objectives": [
+            "Random molecular motion",
+            "Pressure from momentum exchange",
+            "Mean kinetic energy and temperature",
+            "Speed distributions and averages"
+          ]
+        },
+        {
+          "id": "thermodynamics-04",
+          "title": "Energy bookkeeping",
+          "plannedLessons": 6,
+          "objectives": [
+            "Internal energy versus bulk kinetic and gravitational energy",
+            "Work by expansion with a stated sign",
+            "External-pressure work versus reversible equilibrium work",
+            "Heat capacity and temperature change",
+            "First-law calculation on a fixed system",
+            "Path-dependent heat versus state energy"
+          ]
+        },
+        {
+          "id": "thermodynamics-05",
+          "title": "Thermal processes",
+          "plannedLessons": 5,
+          "objectives": [
+            "Constant-volume changes",
+            "Constant-pressure changes",
+            "Constant-pressure and constant-volume heat-capacity assumptions",
+            "Isothermal ideal-gas work",
+            "Adiabatic ideal-gas change and limits"
+          ]
+        },
+        {
+          "id": "thermodynamics-06",
+          "title": "Heat transport",
+          "plannedLessons": 5,
+          "objectives": [
+            "Steady conduction",
+            "Thermal resistance in series",
+            "Convection as an empirical transfer model",
+            "Radiative balance and emissivity",
+            "Gray-radiation and lumped empirical cooling limits"
+          ]
+        },
+        {
+          "id": "thermodynamics-07",
+          "title": "Entropy",
+          "plannedLessons": 4,
+          "objectives": [
+            "Reversible comparison paths",
+            "Entropy change from reversible heat",
+            "Entropy production in irreversible changes",
+            "System versus surroundings entropy"
+          ]
+        },
+        {
+          "id": "thermodynamics-08",
+          "title": "Cycles and limits",
+          "plannedLessons": 4,
+          "objectives": [
+            "Heat-engine energy diagram",
+            "Efficiency and Carnot bound",
+            "Refrigerators and coefficient of performance",
+            "Why equal energy transfers can differ in usefulness"
+          ]
+        },
+        {
+          "id": "thermodynamics-09",
+          "title": "Probability bridge",
+          "plannedLessons": 4,
+          "objectives": [
+            "Microstates and macrostates",
+            "Counting distinguishable arrangements",
+            "Boltzmann entropy and multiplicity",
+            "Fluctuations versus thermodynamic limits"
+          ]
+        },
+        {
+          "id": "thermodynamics-10",
+          "title": "Statistical equilibrium",
+          "plannedLessons": 5,
+          "objectives": [
+            "Thermal reservoir model",
+            "Positive-temperature domain and finite energy scales",
+            "Boltzmann weights and normalization",
+            "Partition function for a finite-level system",
+            "Mean energy and heat capacity from state weights"
+          ]
+        },
+        {
+          "id": "thermodynamics-11",
+          "title": "Phases and quantum limits",
+          "plannedLessons": 7,
+          "objectives": [
+            "Phase coexistence and latent heat",
+            "Free energy as an equilibrium criterion",
+            "Chemical potential as an exchange cost",
+            "Mean occupation versus probability",
+            "Positive-temperature Bose/Fermi chemical-potential domains",
+            "Quantum statistics entry map and classical limits",
+            "Third-law ground-state degeneracy versus unattainability"
+          ]
+        },
+        {
+          "id": "thermodynamics-12",
+          "title": "Thermal modelling capstone",
+          "plannedLessons": 4,
+          "objectives": [
+            "Select a thermal system and boundary",
+            "Combine work heat and state changes",
+            "Compare a cycle with a valid bound",
+            "Fresh multi-step thermal assessment with uncertainty"
+          ]
+        }
+      ],
+      "scopeNote": "Defined introductory problem-solving core; advanced bridges are explicitly not full graduate treatments."
+    },
+    {
+      "id": "optics",
+      "title": "Light & optics",
+      "subtitle": "Light, images, interference and detection",
+      "symbol": "07",
+      "status": "complete",
+      "plannedLessons": 48,
+      "prerequisites": [
+        "Mathematical toolkit, Electricity & magnetism, Vibrations & waves. Local mathematical bridges are taught before use; advanced topics retain their stated prerequisites."
+      ],
+      "prerequisiteCourseIds": [
+        "math",
+        "em",
+        "waves"
+      ],
+      "coverage": [
+        "Light and approximations",
+        "Reflection and refraction",
+        "Image formation",
+        "Optical systems",
+        "Polarization",
+        "Superposition and interference",
+        "Interferometers and films",
+        "Diffraction",
+        "Imaging resolution",
+        "Fourier optics bridge",
+        "Propagation and measurement",
+        "Optical modelling capstone"
+      ],
+      "moduleTargets": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "plannedModules": [
+        {
+          "id": "optics-01",
+          "title": "Light and approximations",
+          "plannedLessons": 4,
+          "objectives": [
+            "Electromagnetic light and wavelength bands",
+            "Rays versus wavefronts",
+            "Geometrical-optics validity",
+            "Intensity power and illuminated area"
+          ]
+        },
+        {
+          "id": "optics-02",
+          "title": "Reflection and refraction",
+          "plannedLessons": 4,
+          "objectives": [
+            "Reflection with an explicit normal",
+            "Snell law and refractive index",
+            "Total internal reflection",
+            "Dispersion and wavelength dependence"
+          ]
+        },
+        {
+          "id": "optics-03",
+          "title": "Image formation",
+          "plannedLessons": 4,
+          "objectives": [
+            "Real versus virtual images",
+            "Plane and curved mirrors",
+            "Thin-lens equation with sign convention",
+            "Magnification and image orientation"
+          ]
+        },
+        {
+          "id": "optics-04",
+          "title": "Optical systems",
+          "plannedLessons": 4,
+          "objectives": [
+            "Two-lens image tracing",
+            "Apertures field stops and pupils",
+            "Camera focus and depth of field limits",
+            "Eye telescope and microscope models"
+          ]
+        },
+        {
+          "id": "optics-05",
+          "title": "Polarization",
+          "plannedLessons": 4,
+          "objectives": [
+            "Transverse field components",
+            "Linear polarization and analyzer angle",
+            "Circular and elliptical polarization",
+            "Wave plates and phase delay"
+          ]
+        },
+        {
+          "id": "optics-06",
+          "title": "Superposition and interference",
+          "plannedLessons": 4,
+          "objectives": [
+            "Field addition versus intensity addition",
+            "Optical path and phase difference",
+            "Two-slit fringe spacing",
+            "Coherence and interference visibility"
+          ]
+        },
+        {
+          "id": "optics-07",
+          "title": "Interferometers and films",
+          "plannedLessons": 4,
+          "objectives": [
+            "Michelson path difference",
+            "Phase change at a reflecting interface",
+            "Thin-film constructive conditions",
+            "Fresh interference measurement with ambiguity"
+          ]
+        },
+        {
+          "id": "optics-08",
+          "title": "Diffraction",
+          "plannedLessons": 4,
+          "objectives": [
+            "Huygens construction as a wave model",
+            "Single-aperture angular spread",
+            "Double slit with finite slit width",
+            "Gratings and resolving orders"
+          ]
+        },
+        {
+          "id": "optics-09",
+          "title": "Imaging resolution",
+          "plannedLessons": 4,
+          "objectives": [
+            "Point-spread function",
+            "Diffraction-limited angular resolution",
+            "Numerical aperture and collected angles",
+            "Resolution versus sampling versus contrast"
+          ]
+        },
+        {
+          "id": "optics-10",
+          "title": "Fourier optics bridge",
+          "plannedLessons": 4,
+          "objectives": [
+            "Spatial frequency in an object",
+            "Far-field pattern and Fourier transform",
+            "Aperture filtering of spatial frequencies",
+            "Near-field versus far-field limits"
+          ]
+        },
+        {
+          "id": "optics-11",
+          "title": "Propagation and measurement",
+          "plannedLessons": 4,
+          "objectives": [
+            "Absorption and exponential attenuation",
+            "Guided propagation by boundary conditions",
+            "Detector responsivity and shot-noise bridge",
+            "Photon energy without a literal wave-particle picture"
+          ]
+        },
+        {
+          "id": "optics-12",
+          "title": "Optical modelling capstone",
+          "plannedLessons": 4,
+          "objectives": [
+            "Select ray wave or photon model",
+            "Trace an original multi-element setup",
+            "Predict a changed aperture or wavelength",
+            "Fresh quantitative optical assessment with limits"
+          ]
+        }
+      ],
+      "scopeNote": "Defined introductory problem-solving core; advanced bridges are explicitly not full graduate treatments."
+    },
+    {
+      "id": "relativity",
+      "title": "Relativity",
+      "subtitle": "Events, clocks, energy and spacetime",
+      "symbol": "08",
+      "status": "complete",
+      "plannedLessons": 40,
+      "prerequisites": [
+        "Mathematical toolkit, Classical mechanics, Electricity & magnetism. Local mathematical bridges are taught before use; advanced topics retain their stated prerequisites."
+      ],
+      "prerequisiteCourseIds": [
+        "math",
+        "mechanics",
+        "em"
+      ],
+      "coverage": [
+        "Events and clocks",
+        "Comparing measurements",
+        "Lorentz transformations",
+        "Spacetime geometry",
+        "Worldlines",
+        "Energy and momentum",
+        "Collisions and thresholds",
+        "Fields and covariance",
+        "Gravity bridge",
+        "Relativistic modelling capstone"
+      ],
+      "moduleTargets": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "plannedModules": [
+        {
+          "id": "relativity-01",
+          "title": "Events and clocks",
+          "plannedLessons": 4,
+          "objectives": [
+            "Event coordinates and reference frames",
+            "Clock synchronization procedure",
+            "Invariance of light speed",
+            "Why Galilean transformations fail for light"
+          ]
+        },
+        {
+          "id": "relativity-02",
+          "title": "Comparing measurements",
+          "plannedLessons": 4,
+          "objectives": [
+            "Proper time and moving clocks",
+            "Time dilation from a light-clock model",
+            "Length contraction and simultaneous endpoints",
+            "Relativity of simultaneity"
+          ]
+        },
+        {
+          "id": "relativity-03",
+          "title": "Lorentz transformations",
+          "plannedLessons": 4,
+          "objectives": [
+            "Lorentz factor and speed domain",
+            "Transform an event in one dimension",
+            "Inverse transformation and sign choices",
+            "Velocity addition and low-speed limit"
+          ]
+        },
+        {
+          "id": "relativity-04",
+          "title": "Spacetime geometry",
+          "plannedLessons": 4,
+          "objectives": [
+            "Spacetime diagrams with units",
+            "Invariant interval and sign convention",
+            "Timelike spacelike and null separation",
+            "Causal order versus frame-dependent simultaneity"
+          ]
+        },
+        {
+          "id": "relativity-05",
+          "title": "Worldlines",
+          "plannedLessons": 4,
+          "objectives": [
+            "Proper time along piecewise paths",
+            "Twin-clock comparison without contradiction",
+            "Relativistic Doppler shift",
+            "Acceleration and locally inertial viewpoints"
+          ]
+        },
+        {
+          "id": "relativity-06",
+          "title": "Energy and momentum",
+          "plannedLessons": 4,
+          "objectives": [
+            "Relativistic momentum",
+            "Rest energy versus kinetic energy",
+            "Energy-momentum invariant",
+            "Photons and zero rest mass"
+          ]
+        },
+        {
+          "id": "relativity-07",
+          "title": "Collisions and thresholds",
+          "plannedLessons": 4,
+          "objectives": [
+            "Four-momentum component bookkeeping",
+            "Centre-of-momentum frame",
+            "Inelastic collision and invariant mass",
+            "Threshold-energy changed case"
+          ]
+        },
+        {
+          "id": "relativity-08",
+          "title": "Fields and covariance",
+          "plannedLessons": 4,
+          "objectives": [
+            "Charge conservation and current frames",
+            "Electric and magnetic fields as frame-related descriptions",
+            "Four-vectors as transformation objects",
+            "What a Lorentz-covariant law means"
+          ]
+        },
+        {
+          "id": "relativity-09",
+          "title": "Gravity bridge",
+          "plannedLessons": 4,
+          "objectives": [
+            "Equivalence principle and local free fall",
+            "Gravitational clock shifts in a weak field",
+            "Curved spacetime and geodesics concept bridge",
+            "Limits of special relativity near gravity"
+          ]
+        },
+        {
+          "id": "relativity-10",
+          "title": "Relativistic modelling capstone",
+          "plannedLessons": 4,
+          "objectives": [
+            "Choose frame and define events",
+            "Compute a fresh clock-and-signal scenario",
+            "Solve a collision with invariant checks",
+            "Identify GR and tensor prerequisites for further study"
+          ]
+        }
+      ],
+      "scopeNote": "Defined introductory problem-solving core; advanced bridges are explicitly not full graduate treatments."
+    },
+    {
+      "id": "atomic-nuclear",
+      "title": "Atomic & nuclear physics",
+      "subtitle": "Atoms, nuclei, decays and measurement",
+      "symbol": "09",
+      "status": "complete",
+      "plannedLessons": 56,
+      "prerequisites": [
+        "Mathematical toolkit, Electricity & magnetism, Quantum II, Relativity. Local mathematical bridges are taught before use; advanced topics retain their stated prerequisites."
+      ],
+      "prerequisiteCourseIds": [
+        "math",
+        "em",
+        "quantum2",
+        "relativity"
+      ],
+      "coverage": [
+        "Atomic scales",
+        "Hydrogen structure",
+        "Angular structure",
+        "Many-electron atoms",
+        "Light and atoms",
+        "Molecules bridge",
+        "Nuclear quantities",
+        "Nuclear structure",
+        "Radioactive change",
+        "Decay mechanisms",
+        "Interactions and detection",
+        "Nuclear reactions",
+        "Fission and fusion concepts",
+        "Atomic-nuclear capstone"
+      ],
+      "moduleTargets": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "plannedModules": [
+        {
+          "id": "atomic-nuclear-01",
+          "title": "Atomic scales",
+          "plannedLessons": 4,
+          "objectives": [
+            "Atoms ions and isotopes",
+            "Energy length and frequency scales",
+            "Atomic spectra as measured transitions",
+            "Coulomb binding and model limits"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-02",
+          "title": "Hydrogen structure",
+          "plannedLessons": 4,
+          "objectives": [
+            "Quantum numbers and allowed states",
+            "Radial probability versus orbit pictures",
+            "Hydrogen energy differences",
+            "Selection-rule meaning and transition strength"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-03",
+          "title": "Angular structure",
+          "plannedLessons": 4,
+          "objectives": [
+            "Orbital angular momentum and spin",
+            "Spin-orbit coupling bridge",
+            "Magnetic splitting of levels",
+            "Fine and hyperfine structure scope"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-04",
+          "title": "Many-electron atoms",
+          "plannedLessons": 4,
+          "objectives": [
+            "Indistinguishability and Pauli filling",
+            "Screening and effective nuclear charge",
+            "Configuration and periodic trends",
+            "Why independent-electron models are approximate"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-05",
+          "title": "Light and atoms",
+          "plannedLessons": 4,
+          "objectives": [
+            "Absorption and stimulated emission",
+            "Spontaneous emission and lifetime",
+            "Line shape and broadening",
+            "Population inversion and laser model limits"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-06",
+          "title": "Molecules bridge",
+          "plannedLessons": 4,
+          "objectives": [
+            "Binding and potential curves",
+            "Born-Oppenheimer separation and caveats",
+            "Vibrational and rotational spectra",
+            "Bonding approximations and dissociation"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-07",
+          "title": "Nuclear quantities",
+          "plannedLessons": 4,
+          "objectives": [
+            "Proton neutron and mass number",
+            "Nuclear size and density scales",
+            "Mass defect and binding energy",
+            "Binding per nucleon and stability trends"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-08",
+          "title": "Nuclear structure",
+          "plannedLessons": 4,
+          "objectives": [
+            "Short-range nuclear interaction",
+            "Liquid-drop energy contributions",
+            "Shell structure and magic numbers",
+            "Spin parity and model comparison"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-09",
+          "title": "Radioactive change",
+          "plannedLessons": 4,
+          "objectives": [
+            "Decay probability and exponential survival",
+            "Half-life versus mean lifetime",
+            "Activity and sample population",
+            "Decay-chain bookkeeping"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-10",
+          "title": "Decay mechanisms",
+          "plannedLessons": 4,
+          "objectives": [
+            "Alpha decay and tunnelling model",
+            "Beta decay and missing-energy reasoning",
+            "Gamma transitions and recoil",
+            "Conservation laws in a fresh decay case"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-11",
+          "title": "Interactions and detection",
+          "plannedLessons": 4,
+          "objectives": [
+            "Ionization and energy loss",
+            "Photon attenuation and interaction channels",
+            "Counting efficiency and background",
+            "Counting uncertainty and detection limits"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-12",
+          "title": "Nuclear reactions",
+          "plannedLessons": 4,
+          "objectives": [
+            "Reaction notation and conserved numbers",
+            "Q value and energy balance",
+            "Cross section and reaction rate",
+            "Thresholds and centre-of-mass distinction"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-13",
+          "title": "Fission and fusion concepts",
+          "plannedLessons": 4,
+          "objectives": [
+            "Why some mass rearrangements release energy",
+            "Fission products and chain-reaction concept",
+            "Fusion barrier and quantum penetration",
+            "Astrophysical energy generation without engineering recipes"
+          ]
+        },
+        {
+          "id": "atomic-nuclear-14",
+          "title": "Atomic-nuclear capstone",
+          "plannedLessons": 4,
+          "objectives": [
+            "Infer transition energy from an original spectrum",
+            "Fit a simple decay record with uncertainty",
+            "Balance an original reaction and its limits",
+            "Compare nuclear and atomic model assumptions"
+          ]
+        }
+      ],
+      "scopeNote": "Defined introductory problem-solving core; advanced bridges are explicitly not full graduate treatments."
+    },
+    {
+      "id": "particles",
+      "title": "Particle physics",
+      "subtitle": "Particles, interactions and experimental evidence",
+      "symbol": "10",
+      "status": "complete",
+      "plannedLessons": 40,
+      "prerequisites": [
+        "Mathematical toolkit, Quantum II, Relativity, Atomic & nuclear physics. Local mathematical bridges are taught before use; advanced topics retain their stated prerequisites."
+      ],
+      "prerequisiteCourseIds": [
+        "math",
+        "quantum2",
+        "relativity",
+        "atomic-nuclear"
+      ],
+      "coverage": [
+        "Particle descriptions",
+        "Standard Model map",
+        "Symmetry bridge",
+        "Relativistic processes",
+        "Rates and scattering",
+        "Electromagnetic and weak processes",
+        "Strong interaction",
+        "Mass and symmetry breaking",
+        "Experiments and inference",
+        "Particle modelling capstone"
+      ],
+      "moduleTargets": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "plannedModules": [
+        {
+          "id": "particles-01",
+          "title": "Particle descriptions",
+          "plannedLessons": 4,
+          "objectives": [
+            "Fields particles and measured events",
+            "Units of mass momentum and energy",
+            "Antiparticles and charge conjugate labels",
+            "Stable particles versus resonances"
+          ]
+        },
+        {
+          "id": "particles-02",
+          "title": "Standard Model map",
+          "plannedLessons": 4,
+          "objectives": [
+            "Quarks leptons and generations",
+            "Gauge interactions as the standard model framework",
+            "Composite hadrons versus elementary particles",
+            "What the standard model does not explain"
+          ]
+        },
+        {
+          "id": "particles-03",
+          "title": "Symmetry bridge",
+          "plannedLessons": 4,
+          "objectives": [
+            "Transformation and invariant quantity",
+            "Continuous symmetry and conserved quantity",
+            "Discrete parity and charge operations",
+            "Internal quantum numbers and representation concept"
+          ]
+        },
+        {
+          "id": "particles-04",
+          "title": "Relativistic processes",
+          "plannedLessons": 4,
+          "objectives": [
+            "Four-momentum in decays",
+            "Two-body decay in the rest frame",
+            "Invariant mass reconstruction",
+            "Thresholds in fixed-target versus collider cases"
+          ]
+        },
+        {
+          "id": "particles-05",
+          "title": "Rates and scattering",
+          "plannedLessons": 4,
+          "objectives": [
+            "Lifetime and decay width relation",
+            "Branching fractions",
+            "Cross section as a rate measure",
+            "Luminosity and expected event yield"
+          ]
+        },
+        {
+          "id": "particles-06",
+          "title": "Electromagnetic and weak processes",
+          "plannedLessons": 4,
+          "objectives": [
+            "Vertices and diagrams as calculation bookkeeping",
+            "Electromagnetic coupling and perturbative limits",
+            "Charged and neutral weak interactions",
+            "Neutrino flavor and oscillation bridge"
+          ]
+        },
+        {
+          "id": "particles-07",
+          "title": "Strong interaction",
+          "plannedLessons": 4,
+          "objectives": [
+            "Color charge and color-neutral composites",
+            "Quark model and hadron quantum numbers",
+            "Confinement versus asymptotic freedom",
+            "Jets and hadronization as evidence models"
+          ]
+        },
+        {
+          "id": "particles-08",
+          "title": "Mass and symmetry breaking",
+          "plannedLessons": 4,
+          "objectives": [
+            "Mass term and symmetry constraints concept",
+            "Higgs field and excitations",
+            "Measured Higgs channels and inference",
+            "Why mass is not all generated by one mechanism"
+          ]
+        },
+        {
+          "id": "particles-09",
+          "title": "Experiments and inference",
+          "plannedLessons": 4,
+          "objectives": [
+            "Tracking curvature and momentum",
+            "Energy measurement and missing momentum",
+            "Signal background and statistical significance",
+            "Systematic uncertainty and model comparison"
+          ]
+        },
+        {
+          "id": "particles-10",
+          "title": "Particle modelling capstone",
+          "plannedLessons": 4,
+          "objectives": [
+            "Reconstruct a synthetic decay event",
+            "Estimate a count with efficiency and branching",
+            "Check a proposed process against conservation laws",
+            "Separate established model from open questions and QFT prerequisites"
+          ]
+        }
+      ],
+      "scopeNote": "Defined introductory problem-solving core; advanced bridges are explicitly not full graduate treatments."
+    },
+    {
+      "id": "materials",
+      "title": "Materials & condensed matter",
+      "subtitle": "How atomic structure becomes a measurable property",
+      "symbol": "11",
+      "status": "complete",
+      "plannedLessons": 56,
+      "prerequisites": [
+        "Mathematical toolkit, Quantum II, Heat & thermodynamics, Electricity & magnetism, Vibrations & waves. Local mathematical bridges are taught before use; advanced topics retain their stated prerequisites."
+      ],
+      "prerequisiteCourseIds": [
+        "math",
+        "quantum2",
+        "thermodynamics",
+        "em",
+        "waves"
+      ],
+      "coverage": [
+        "Structure and scales",
+        "Reciprocal geometry",
+        "Binding and elasticity",
+        "Lattice motion",
+        "Electron gas",
+        "Band formation",
+        "Conductors and insulators",
+        "Semiconductors",
+        "Junctions and devices",
+        "Optical and dielectric response",
+        "Magnetism",
+        "Superconductivity",
+        "Collective and topological bridges",
+        "Materials modelling capstone"
+      ],
+      "moduleTargets": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "plannedModules": [
+        {
+          "id": "materials-01",
+          "title": "Structure and scales",
+          "plannedLessons": 4,
+          "objectives": [
+            "Crystals amorphous matter and order",
+            "Lattice basis and unit cell",
+            "Directions planes and spacing",
+            "Defects and limits of perfect periodicity"
+          ]
+        },
+        {
+          "id": "materials-02",
+          "title": "Reciprocal geometry",
+          "plannedLessons": 4,
+          "objectives": [
+            "Waves in a periodic structure",
+            "Reciprocal vectors in a simple lattice",
+            "Bragg condition and diffraction peaks",
+            "Infer spacing from a changed scattering angle"
+          ]
+        },
+        {
+          "id": "materials-03",
+          "title": "Binding and elasticity",
+          "plannedLessons": 4,
+          "objectives": [
+            "Interatomic potential and equilibrium spacing",
+            "Bond types and electronic origin",
+            "Stress strain and elastic constants",
+            "Small-deformation limits and anisotropy"
+          ]
+        },
+        {
+          "id": "materials-04",
+          "title": "Lattice motion",
+          "plannedLessons": 4,
+          "objectives": [
+            "Coupled atomic displacements",
+            "Acoustic and optical branches",
+            "Phonon energy and occupation",
+            "Heat capacity and temperature limits"
+          ]
+        },
+        {
+          "id": "materials-05",
+          "title": "Electron gas",
+          "plannedLessons": 4,
+          "objectives": [
+            "Pauli states in a box",
+            "Density of states",
+            "Fermi energy and occupancy",
+            "Classical versus degenerate electron gas"
+          ]
+        },
+        {
+          "id": "materials-06",
+          "title": "Band formation",
+          "plannedLessons": 4,
+          "objectives": [
+            "Periodic potential and Bloch form",
+            "Nearly-free-electron gap",
+            "Tight-binding hopping model",
+            "Band width and localization limits"
+          ]
+        },
+        {
+          "id": "materials-07",
+          "title": "Conductors and insulators",
+          "plannedLessons": 4,
+          "objectives": [
+            "Filled versus partly filled bands",
+            "Fermi surface meaning",
+            "Group velocity and effective mass",
+            "Conductivity with a scattering-time model"
+          ]
+        },
+        {
+          "id": "materials-08",
+          "title": "Semiconductors",
+          "plannedLessons": 4,
+          "objectives": [
+            "Intrinsic carriers and band gap",
+            "Electrons holes and charge bookkeeping",
+            "Doping and chemical potential",
+            "Temperature dependence and limits of simple models"
+          ]
+        },
+        {
+          "id": "materials-09",
+          "title": "Junctions and devices",
+          "plannedLessons": 4,
+          "objectives": [
+            "Diffusion and drift balance",
+            "Depletion-region model",
+            "Diode bias and current direction",
+            "Photovoltaic energy conversion limits"
+          ]
+        },
+        {
+          "id": "materials-10",
+          "title": "Optical and dielectric response",
+          "plannedLessons": 4,
+          "objectives": [
+            "Polarization and dielectric response",
+            "Absorption between bands",
+            "Excitons and binding scales",
+            "Optical evidence for a material model"
+          ]
+        },
+        {
+          "id": "materials-11",
+          "title": "Magnetism",
+          "plannedLessons": 4,
+          "objectives": [
+            "Atomic moments and field response",
+            "Paramagnetic and diamagnetic limits",
+            "Exchange coupling and ordering",
+            "Domains hysteresis and temperature"
+          ]
+        },
+        {
+          "id": "materials-12",
+          "title": "Superconductivity",
+          "plannedLessons": 4,
+          "objectives": [
+            "Resistance and magnetic-field evidence",
+            "Cooper-pair concept with prerequisites",
+            "Energy gap and critical scales",
+            "What the simple superconducting model does not cover"
+          ]
+        },
+        {
+          "id": "materials-13",
+          "title": "Collective and topological bridges",
+          "plannedLessons": 4,
+          "objectives": [
+            "Order parameters and phase changes",
+            "Correlation versus independent-particle approximation",
+            "Band topology as robust global structure",
+            "Why a bridge is not many-body-theory mastery"
+          ]
+        },
+        {
+          "id": "materials-14",
+          "title": "Materials modelling capstone",
+          "plannedLessons": 4,
+          "objectives": [
+            "Read an original band-and-occupancy diagram",
+            "Combine carrier density mobility and conductivity",
+            "Compare thermal and electronic model limits",
+            "Fresh multi-step structure-to-property assessment"
+          ]
+        }
+      ],
+      "scopeNote": "Defined introductory problem-solving core; collective and topological bridges are not full graduate treatments."
+    },
+    {
+      "id": "astrophysics",
+      "title": "Astrophysics",
+      "subtitle": "From starlight and orbits to cosmic evidence",
+      "symbol": "12",
+      "status": "complete",
+      "plannedLessons": 56,
+      "prerequisites": [
+        "Mathematical toolkit, Classical mechanics, Electricity & magnetism, Vibrations & waves, Light & optics, Heat & thermodynamics, Relativity, Atomic & nuclear physics. Local mathematical bridges are taught before use; advanced topics retain their stated prerequisites."
+      ],
+      "prerequisiteCourseIds": [
+        "math",
+        "mechanics",
+        "em",
+        "waves",
+        "optics",
+        "thermodynamics",
+        "relativity",
+        "atomic-nuclear"
+      ],
+      "coverage": [
+        "Observations and scales",
+        "Light as evidence",
+        "Distances",
+        "Orbits and systems",
+        "Stars in balance",
+        "Stellar populations",
+        "Stellar evolution",
+        "Compact objects",
+        "Gas dust and star formation",
+        "Galaxies",
+        "Cosmological expansion",
+        "Thermal history",
+        "Modern messengers and limits",
+        "Astrophysical modelling capstone"
+      ],
+      "moduleTargets": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "plannedModules": [
+        {
+          "id": "astrophysics-01",
+          "title": "Observations and scales",
+          "plannedLessons": 4,
+          "objectives": [
+            "Angles sky positions and time",
+            "Astronomical distance and unit conversions",
+            "Flux luminosity and inverse-square scaling",
+            "Measurement uncertainty and selection effects"
+          ]
+        },
+        {
+          "id": "astrophysics-02",
+          "title": "Light as evidence",
+          "plannedLessons": 4,
+          "objectives": [
+            "Thermal spectra and temperature",
+            "Spectral lines and composition",
+            "Doppler shifts and motion",
+            "Extinction redshift and model degeneracy"
+          ]
+        },
+        {
+          "id": "astrophysics-03",
+          "title": "Distances",
+          "plannedLessons": 4,
+          "objectives": [
+            "Parallax geometry",
+            "Apparent versus absolute brightness",
+            "Standardizable sources and calibration",
+            "Distance-ladder uncertainty propagation"
+          ]
+        },
+        {
+          "id": "astrophysics-04",
+          "title": "Orbits and systems",
+          "plannedLessons": 4,
+          "objectives": [
+            "Kepler laws and dynamical mass",
+            "Two-body centre-of-mass motion",
+            "Transits and radial-velocity signals",
+            "Inclination and mass-radius inference limits"
+          ]
+        },
+        {
+          "id": "astrophysics-05",
+          "title": "Stars in balance",
+          "plannedLessons": 4,
+          "objectives": [
+            "Hydrostatic support",
+            "Equation of state in a star",
+            "Energy generation and luminosity",
+            "Radiative versus convective transport"
+          ]
+        },
+        {
+          "id": "astrophysics-06",
+          "title": "Stellar populations",
+          "plannedLessons": 4,
+          "objectives": [
+            "Mass temperature and luminosity trends",
+            "Hertzsprung-Russell diagrams",
+            "Stellar ages and clusters",
+            "Model dependence of stellar parameter inference"
+          ]
+        },
+        {
+          "id": "astrophysics-07",
+          "title": "Stellar evolution",
+          "plannedLessons": 4,
+          "objectives": [
+            "Hydrogen burning and fuel timescale",
+            "Expansion and late burning stages",
+            "Mass loss and remnant pathways",
+            "Why initial mass and composition matter"
+          ]
+        },
+        {
+          "id": "astrophysics-08",
+          "title": "Compact objects",
+          "plannedLessons": 4,
+          "objectives": [
+            "Degenerate pressure bridge",
+            "White-dwarf scales and limitations",
+            "Neutron stars and pulsar clocks",
+            "Black-hole horizons without a material-surface picture"
+          ]
+        },
+        {
+          "id": "astrophysics-09",
+          "title": "Gas dust and star formation",
+          "plannedLessons": 4,
+          "objectives": [
+            "Interstellar gas phases",
+            "Cooling heating and ionization",
+            "Gravitational collapse and support",
+            "Virial estimate and star-formation limits"
+          ]
+        },
+        {
+          "id": "astrophysics-10",
+          "title": "Galaxies",
+          "plannedLessons": 4,
+          "objectives": [
+            "Stellar orbits and mass profiles",
+            "Rotation curves and unseen-mass inference",
+            "Galaxy types and evolution evidence",
+            "Central black holes and accretion energy"
+          ]
+        },
+        {
+          "id": "astrophysics-11",
+          "title": "Cosmological expansion",
+          "plannedLessons": 4,
+          "objectives": [
+            "Scale factor and redshift",
+            "Hubble law in its local limit",
+            "Expansion dynamics and matter content",
+            "Distances in expanding spacetime"
+          ]
+        },
+        {
+          "id": "astrophysics-12",
+          "title": "Thermal history",
+          "plannedLessons": 4,
+          "objectives": [
+            "Cosmic background spectrum",
+            "Recombination and photon decoupling",
+            "Primordial nucleosynthesis",
+            "Early-universe assumptions and observational tests"
+          ]
+        },
+        {
+          "id": "astrophysics-13",
+          "title": "Modern messengers and limits",
+          "plannedLessons": 4,
+          "objectives": [
+            "Gravitational waves as spacetime signals",
+            "Neutrinos and cosmic-ray evidence",
+            "Lensing and mass inference",
+            "Dark matter and dark energy: evidence versus identity"
+          ]
+        },
+        {
+          "id": "astrophysics-14",
+          "title": "Astrophysical modelling capstone",
+          "plannedLessons": 4,
+          "objectives": [
+            "Infer an original star or orbit from synthetic data",
+            "Combine light travel and dynamical timescales",
+            "Compare competing explanations with uncertainties",
+            "Map further fluid GR plasma and computational prerequisites"
+          ]
+        }
+      ],
+      "scopeNote": "Defined introductory problem-solving core; advanced bridges are explicitly not full graduate treatments."
+    },
+    {
+      "id": "quantum1",
+      "title": "Quantum I",
+      "subtitle": "Probability, amplitudes and wave mechanics",
+      "symbol": "06",
+      "status": "complete",
+      "plannedLessons": 72,
+      "prerequisites": [
+        "Mathematical toolkit, Classical mechanics, Electricity & magnetism and Waves. Calculus, complex numbers, ODEs, Fourier transforms, inner products and eigenvectors are used; each lesson links local preparation. Numerical shooting and spherical/radial coordinates are bridged locally."
+      ],
+      "coverage": [
+        "Evidence that motivates quantum models",
+        "Amplitudes and the Born rule",
+        "Normalization and inner products",
+        "Superposition and ideal measurements",
+        "Time evolution and probability flow",
+        "Observables and operator reasoning",
+        "Preparation spread and uncertainty",
+        "Stationary-state boundaries and numerical checks",
+        "Hard-wall and periodic confinement",
+        "Finite square-well bound states",
+        "Reflection, transmission and tunnelling",
+        "The quantum harmonic oscillator",
+        "Free wave packets and correspondence",
+        "Three dimensions and orbital angular momentum",
+        "Hydrogen in the Coulomb approximation",
+        "Quantum-model capstones"
+      ],
+      "moduleTargets": [
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        4,
+        4,
+        5,
+        4,
+        6,
+        5,
+        3,
+        6,
+        5,
+        4
+      ],
+      "scopeNote": "A defined introductory single-particle nonrelativistic wave-mechanics course, not all quantum physics or a full university/laboratory credential."
+    },
+    {
+      "id": "quantum2",
+      "title": "Quantum II",
+      "subtitle": "States, operators and composite systems",
+      "symbol": "07",
+      "status": "complete",
+      "plannedLessons": 70,
+      "prerequisites": [
+        "Quantum I and Mathematical toolkit: complex vectors, matrix products/eigenvectors, inner products, probability and calculus. Every lesson links prior local preparation; trace/partial trace, spin half-angles, coherent-state series and rotating-frame terms are taught explicitly before use."
+      ],
+      "coverage": [
+        "State vectors and representations",
+        "Observables and their spectral structure",
+        "Ideal measurements and preparation changes",
+        "Products, uncertainty and transformations",
+        "Unitary evolution and pictures",
+        "Spin one-half and rotations",
+        "Coupling, detuning and driven two-state models",
+        "Coherent oscillator states",
+        "Combining distinguishable systems",
+        "States when outcomes or partners are unobserved",
+        "Entanglement, correlations and local information",
+        "General angular momentum and orbital rotations",
+        "Adding angular momenta",
+        "Exchange symmetry and few-particle states",
+        "State-space problem-solving checks"
+      ],
+      "moduleTargets": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        6,
+        5,
+        5,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        4
+      ],
+      "scopeNote": "A defined introductory abstract-state/spin/composite course, not exhaustive quantum mastery or a university/laboratory credential."
+    },
+    {
+      "id": "quantum3",
+      "title": "Quantum III",
+      "subtitle": "Approximation, transitions and scattering",
+      "symbol": "08",
+      "status": "complete",
+      "plannedLessons": 84,
+      "prerequisites": [
+        "Quantum II and the Mathematical toolkit. Explicit local bridges cover approximation order, Airy/delta/gauge/solid angle, continuum rates, Green/Legendre functions and Kraus maps before use. Each lesson links its precise prior preparation."
+      ],
+      "coverage": [
+        "Small static changes",
+        "Degenerate and nearly degenerate levels",
+        "Energy bounds from trial states",
+        "Slowly varying one-dimensional waves",
+        "Effective hydrogen corrections",
+        "Atomic levels in external fields",
+        "Charged motion and gauge choices",
+        "Adiabatic change and molecular separation",
+        "Weak time-dependent transitions",
+        "From discrete probabilities to rates",
+        "Light and idealized rate models",
+        "A bounded introduction to open systems",
+        "Three-dimensional scattering language",
+        "Central potentials and partial waves",
+        "The first Born approximation",
+        "Choose, test and report an approximation"
+      ],
+      "moduleTargets": [
+        6,
+        4,
+        5,
+        7,
+        5,
+        5,
+        4,
+        8,
+        6,
+        5,
+        3,
+        4,
+        6,
+        8,
+        5,
+        3
+      ],
+      "scopeNote": "A defined introductory approximation/transition/scattering course with explicitly bounded atomic and open-system examples, not all quantum methods or a university/laboratory credential."
+    }
+  ],
+  "specializations": [
+    "Thermodynamics & statistical physics",
+    "Special relativity",
+    "Quantum information",
+    "Solid-state physics",
+    "Particle physics"
+  ],
+  "sources": [
+    {
+      "id": "mechanics",
+      "title": "Classical mechanics — scope reference",
+      "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/syllabus/"
+    },
+    {
+      "id": "em",
+      "title": "Electricity and magnetism — scope reference",
+      "url": "https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/pages/class-topics/"
+    },
+    {
+      "id": "waves",
+      "title": "Vibrations and waves — prerequisites and scope",
+      "url": "https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/pages/syllabus/"
+    },
+    {
+      "id": "quantum1",
+      "title": "Quantum I — prerequisites and scope",
+      "url": "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/pages/syllabus/"
+    },
+    {
+      "id": "quantum2",
+      "title": "Quantum II — prerequisites and scope",
+      "url": "https://ocw.mit.edu/courses/8-05-quantum-physics-ii-fall-2013/pages/syllabus/"
+    },
+    {
+      "id": "quantum3",
+      "title": "Quantum III — prerequisites and scope",
+      "url": "https://ocw.mit.edu/courses/8-06-quantum-physics-iii-spring-2018/pages/syllabus/"
+    },
+    {
+      "id": "si",
+      "title": "BIPM — International System of Units",
+      "url": "https://www.bipm.org/en/publications/si-brochure"
+    },
+    {
+      "id": "math",
+      "title": "Mathematical toolkit — calculus topic reference",
+      "url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/syllabus/"
+    },
+    {
+      "id": "math-linear",
+      "title": "Linear algebra — topic reference",
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/syllabus/"
+    },
+    {
+      "id": "thermo",
+      "title": "MIT Introduction to Statistical Physics — scope and thermodynamic principles",
+      "url": "https://ocw.mit.edu/courses/res-8-010-introduction-to-statistical-physics-summer-2018/pages/lecture-notes/"
+    },
+    {
+      "id": "thermo-nist",
+      "title": "NIST — statistical thermodynamics and molecular energy levels",
+      "url": "https://cccbdb.nist.gov/thermox.asp"
+    },
+    {
+      "id": "thermo-quantum",
+      "title": "University of Cambridge — ideal quantum gases and occupation domains",
+      "url": "https://www.damtp.cam.ac.uk/user/tong/statphys/statmechhtml/S3.html"
+    },
+    {
+      "id": "optics",
+      "title": "MIT Optics — introductory scope benchmark",
+      "url": "https://ocw.mit.edu/courses/2-71-optics-spring-2009/"
+    },
+    {
+      "id": "optics-detectors",
+      "title": "Hamamatsu — photodetector response and noise terminology",
+      "url": "https://hub.hamamatsu.com/us/en/technical-notes/detector-selection/the-wits-guide-to-selecting-a-photodetector.html"
+    },
+    {
+      "id": "photon-energy",
+      "title": "NIST Atomic Spectroscopy — photon energy and spectral quantities",
+      "url": "https://physics.nist.gov/Pubs/AtSpec/node01.html"
+    },
+    {
+      "id": "relativity",
+      "title": "MIT 8.033 — relativity and spacetime scope reference",
+      "url": "https://ocw.mit.edu/courses/8-033-introduction-to-relativity-and-spacetime-physics-fall-2024/mit8_033_f24_lec_full.pdf"
+    },
+    {
+      "id": "atomic-nist",
+      "title": "NIST — Atomic Spectroscopy: terminology, levels and transitions",
+      "url": "https://physics.nist.gov/Pubs/AtSpec/node01.html"
+    },
+    {
+      "id": "particle-pdg",
+      "title": "Particle Data Group — Review of Particle Physics 2025: kinematics, interactions and inference",
+      "url": "https://pdg.lbl.gov/2025/"
+    },
+    {
+      "id": "nuclear-iaea",
+      "title": "IAEA — Nuclear Wallet Cards: nuclide properties and decay labels",
+      "url": "https://nucleus.iaea.org/Pages/nuclear-wallet-cards.aspx"
+    },
+    {
+      "id": "materials",
+      "title": "MIT Physics of Solids I — scope and prerequisites",
+      "url": "https://ocw.mit.edu/courses/8-231-physics-of-solids-i-fall-2006/pages/syllabus/"
+    },
+    {
+      "id": "materials-transport",
+      "title": "MIT Integrated Microelectronic Devices — drift and diffusion sign convention",
+      "url": "https://ocw.mit.edu/courses/6-720j-integrated-microelectronic-devices-spring-2007/089385b38dbf1f3a317ba24064aed26e_lecture18.pdf"
+    },
+    {
+      "id": "materials-topology",
+      "title": "Nobel Prize in Physics 2016 — official topology overview",
+      "url": "https://www.nobelprize.org/prizes/physics/2016/ceremony-speech/"
+    },
+    {
+      "id": "materials-topology-jqi",
+      "title": "Joint Quantum Institute — topological phases and local symmetry",
+      "url": "https://jqi.umd.edu/news/physics-nobel-honors-underpinnings-exotic-matter"
+    },
+    {
+      "id": "astro",
+      "title": "NASA — stars and stellar life cycles: subject scope",
+      "url": "https://science.nasa.gov/universe/stars/"
+    },
+    {
+      "id": "astro-distances",
+      "title": "ESA Gaia — geometric parallax and distance",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia/Parallax"
+    },
+    {
+      "id": "astro-structure",
+      "title": "Ohio State University — stellar energy generation and transport",
+      "url": "https://www.astronomy.ohio-state.edu/pogge.1/Ast162/Unit2/energy.html"
+    },
+    {
+      "id": "astro-cosmology",
+      "title": "UCLA Ned Wright — cosmological expansion and distance definitions",
+      "url": "https://www.astro.ucla.edu/~wright/cosmoall.htm"
+    },
+    {
+      "id": "astro-background",
+      "title": "ESA — cosmic eras and photon decoupling",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Cosmic_eras"
+    },
+    {
+      "id": "astro-gw",
+      "title": "LIGO — direct gravitational-wave observation educator guide",
+      "url": "https://dcc.ligo.org/public/0123/P1600015/006/LIGOEdGuide_Final.pdf"
+    },
+    {
+      "id": "astro-neutrinos",
+      "title": "IceCube — neutrinos and multi-messenger observations",
+      "url": "https://icecube.wisc.edu/science/icecube/"
+    },
+    {
+      "id": "astro-dark",
+      "title": "Chandra — evidence for cosmic acceleration and dark energy",
+      "url": "https://chandra.si.edu/xray_astro/dark_energy/"
+    }
+  ],
+  "roadmapVersion": "2.4",
+  "definedTarget": 794,
+  "scopeNote": "A finite introductory core of 794 available micro-lessons across 15 courses, not every research topic or a university qualification. Roadmap 2.4 retains the seven field objective maps and refines Thermodynamics from 48 to 56 lessons with eight explicit prerequisite/domain bridges. Advanced specializations remain beyond this bounded core."
+}

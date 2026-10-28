@@ -1,0 +1,741 @@
+{
+  "id": "foundations",
+  "title": "Foundations",
+  "subtitle": "The language of physical ideas",
+  "level": "Start here",
+  "prerequisites": [
+    "Comfort with addition, multiplication and fractions. No physics background needed."
+  ],
+  "coverage": [
+    "Units and measurement",
+    "Scale and powers of ten",
+    "Equations as relationships",
+    "Vectors and direction",
+    "Graphs and slope",
+    "Accumulation and area",
+    "Measurement uncertainty",
+    "Models and predictions"
+  ],
+  "lessons": [
+    {
+      "id": "units",
+      "title": "A number needs a unit",
+      "idea": "A measurement combines a number with the unit that number is counting.",
+      "body": [
+        "Length tells us how far it is between two points. “Three” alone is not a length: three metres and three centimetres describe different lengths. The number counts the units; the unit tells us what was counted.",
+        "In L = 240 m, L is the name we give a length, 240 is its numerical value, and m means metres. It says this length contains 240 metre-sized lengths. L is not a fixed number: another object can have another length.",
+        "One metre contains 100 centimetres. So 2.4 m = 240 cm gives two descriptions of one unchanged length. There are also 1,000 millimetres in one metre; mm means millimetre."
+      ],
+      "equation": "length = number × unit",
+      "terms": "m means metre; cm means centimetre. 1 m = 100 cm.",
+      "example": {
+        "title": "A shelf, two descriptions",
+        "steps": [
+          "A shelf is 1.8 m long.",
+          "Convert metres to centimetres: 1.8 × 100 = 180.",
+          "The shelf is 180 cm long. Nothing about the shelf changed."
+        ]
+      },
+      "visual": {
+        "type": "units",
+        "title": "Same object. Different units.",
+        "caption": "Move the length control. The two readings describe exactly the same span."
+      },
+      "check": {
+        "prompt": "A cable is 75 cm long. Which is the same length in metres?",
+        "options": [
+          "0.75 m",
+          "7.5 m",
+          "7,500 m"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Yes. Divide by 100 because each metre contains 100 centimetres.",
+          "That would be 750 cm, ten times the cable length.",
+          "Multiplying by 100 goes in the wrong direction. A larger unit needs a smaller count."
+        ]
+      },
+      "apply": {
+        "title": "Before buying a replacement",
+        "text": "A part is labelled 0.045 m wide. Your ruler uses millimetres. What width should you look for?",
+        "answer": "45 mm. One metre is 1,000 millimetres, so 0.045 × 1,000 = 45. Match the physical quantity and the unit before comparing numbers."
+      },
+      "limits": "These examples convert lengths. Area uses two length factors: one square metre is 100 cm × 100 cm = 10,000 cm². Here cm² means square centimetres. Volume uses three length factors, so its conversion is different again.",
+      "sourceIds": [
+        "si"
+      ],
+      "equationGuide": {
+        "meaning": "A length measurement tells us how many copies of a chosen length unit fit into that length.",
+        "symbols": [
+          {
+            "symbol": "length",
+            "name": "Measured length",
+            "unit": "metres, centimetres or another length unit",
+            "description": "How far between the chosen endpoints."
+          },
+          {
+            "symbol": "number",
+            "name": "Numerical value",
+            "unit": "no unit by itself",
+            "description": "The count, such as 2.4 when the unit is metre."
+          },
+          {
+            "symbol": "unit",
+            "name": "Chosen measuring amount",
+            "unit": "for example metre (m)",
+            "description": "The amount being counted; × means multiply and = means both descriptions have the same value."
+          }
+        ]
+      },
+      "glossary": [
+        {
+          "term": "Quantity",
+          "definition": "Something we can measure, such as length or time."
+        },
+        {
+          "term": "Unit",
+          "definition": "A chosen amount used for measuring, such as one metre."
+        },
+        {
+          "term": "Symbol",
+          "definition": "A short name for a quantity. Its value depends on the situation."
+        },
+        {
+          "term": "Millimetre",
+          "definition": "One thousandth of a metre. Written mm."
+        }
+      ],
+      "clarityReviewStatus": "source-reviewed",
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "scale",
+      "title": "Read very large and small numbers",
+      "idea": "Powers of ten let us write very big or tiny numbers without a long row of zeros.",
+      "body": [
+        "The small raised number is called an exponent. In 10³, it says to multiply three tens: 10 × 10 × 10 = 1,000. A zero exponent gives 10⁰ = 1.",
+        "A minus in the exponent means use the reciprocal: 10⁻³ = 1 ÷ (10 × 10 × 10) = 0.001. A reciprocal means one divided by a number. This minus sign does not make the result negative.",
+        "For a positive measurement, scientific notation uses a number at least 1 but less than 10, multiplied by a power of ten. In 3 × 10⁴ m, the number is 3 × 10,000 = 30,000 and the unit is metres. In 3 × 10⁻³ m, the result is 0.003 m, or 3 mm."
+      ],
+      "equation": "10³ = 1,000     10⁻³ = 0.001",
+      "terms": "The exponent counts powers of ten. All lengths in the model are expressed in metres.",
+      "example": {
+        "title": "A thin layer",
+        "steps": [
+          "A coating is 6 × 10⁻⁴ m thick.",
+          "10⁻⁴ m is 0.0001 m.",
+          "6 × 0.0001 m = 0.0006 m = 0.6 mm."
+        ]
+      },
+      "visual": {
+        "type": "scale",
+        "title": "Explore the exponent",
+        "caption": "This is a numerical scale, not an image of an object at its actual size."
+      },
+      "check": {
+        "prompt": "Which is larger: 2 × 10⁻³ m or 2 × 10⁻⁵ m?",
+        "options": [
+          "2 × 10⁻⁵ m",
+          "They are equal",
+          "2 × 10⁻³ m"
+        ],
+        "answer": 2,
+        "explanations": [
+          "The more negative exponent gives a smaller positive quantity here.",
+          "Their coefficients match, but their powers of ten differ by a factor of 100.",
+          "Yes. 0.002 m is 100 times larger than 0.00002 m."
+        ]
+      },
+      "apply": {
+        "title": "Check a sensor reading",
+        "text": "A sensor reports 8 × 10⁻⁶ m. A specification says 8 micrometres. Do they agree?",
+        "answer": "Yes. Micro means one millionth: 10⁻⁶ = 0.000001. Eight micrometres therefore equals 8 × 0.000001 m = 8 × 10⁻⁶ m. Both readings describe the same length."
+      },
+      "limits": "Scientific notation does not itself tell you a measurement's uncertainty or how many digits are justified.",
+      "sourceIds": [
+        "si"
+      ],
+      "equationGuide": {
+        "meaning": "Ten cubed is a thousand; ten to the minus three is one thousandth. The raised number changes the size, not the measurement’s unit.",
+        "symbols": [
+          {
+            "symbol": "10",
+            "name": "Base",
+            "unit": "unit-free",
+            "description": "The number repeatedly multiplied."
+          },
+          {
+            "symbol": "3 or −3",
+            "name": "Exponent",
+            "unit": "unit-free",
+            "description": "A positive exponent counts factors of ten; a negative one gives the reciprocal of those factors."
+          },
+          {
+            "symbol": "=",
+            "name": "Equality sign",
+            "unit": "not a quantity",
+            "description": "The expressions on each side have the same value."
+          }
+        ]
+      },
+      "glossary": [
+        {
+          "term": "Exponent",
+          "definition": "The small raised number in a power."
+        },
+        {
+          "term": "Reciprocal",
+          "definition": "One divided by a number that is not zero."
+        },
+        {
+          "term": "Micro",
+          "definition": "A prefix meaning one millionth. A micrometre is one millionth of a metre."
+        }
+      ],
+      "clarityReviewStatus": "source-reviewed",
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "relationships",
+      "title": "An equation is a relationship",
+      "idea": "An equation connects quantities so we can find whichever one is missing.",
+      "body": [
+        "If a belt moves the same distance each second, more seconds means more distance. At a steady speed of 0.4 metres per second, each second adds another 0.4 metres to the distance travelled.",
+        "The names in d = v × t are not fixed numbers. d names distance travelled, v names the constant speed, and t names elapsed time. Multiplying speed by time gives distance: 0.4 metres each second for 5 seconds gives 2 metres.",
+        "Keep time fixed and double speed: distance doubles. Keep speed fixed and halve time: distance halves. Say what stays fixed whenever you describe a change."
+      ],
+      "equation": "d = v × t",
+      "terms": "d: distance (m). v: constant speed (m/s). t: elapsed time (s).",
+      "example": {
+        "title": "A small conveyor",
+        "steps": [
+          "A belt moves at 0.4 m/s for 5 s.",
+          "d = 0.4 × 5 = 2 m.",
+          "At 0.8 m/s for the same 5 s, it would travel 4 m."
+        ]
+      },
+      "visual": {
+        "type": "relationship",
+        "title": "Change one thing at a time",
+        "caption": "Ideal constant-speed motion. The output is distance travelled, not distance from an arbitrary origin."
+      },
+      "check": {
+        "prompt": "At a fixed speed, a journey takes three times as long. How does distance change?",
+        "options": [
+          "It stays the same",
+          "It becomes three times as large",
+          "It becomes one third as large"
+        ],
+        "answer": 1,
+        "explanations": [
+          "A moving object covers more distance in more time at the same speed.",
+          "Yes. Distance is proportional to time when speed stays fixed.",
+          "That would describe an inverse relationship, not d = vt."
+        ]
+      },
+      "apply": {
+        "title": "Estimate a wait",
+        "text": "A belt must carry a box 3 m at 0.5 m/s. How long does that take?",
+        "answer": "Use the same relationship to find time: t = d ÷ v. Here t is time, d is distance and v is the constant speed. How many 0.5-metre pieces fit into 3 metres? Six. Each piece takes one second, so t = 3 m ÷ (0.5 m/s) = 6 s."
+      },
+      "limits": "This rule assumes constant speed. If speed changes, add the distances from the different parts of the trip instead of using one arbitrary speed. The mathematical toolkit later teaches integrals, a way to add continuously.",
+      "sourceIds": [
+        "mechanics"
+      ],
+      "equationGuide": {
+        "meaning": "Distance travelled equals constant speed multiplied by elapsed time.",
+        "symbols": [
+          {
+            "symbol": "d",
+            "name": "Distance travelled",
+            "unit": "metres (m)",
+            "description": "Total length of the path travelled; not necessarily distance from the starting point."
+          },
+          {
+            "symbol": "v",
+            "name": "Constant speed",
+            "unit": "metres per second (m/s)",
+            "description": "The distance added each second, staying the same throughout this interval."
+          },
+          {
+            "symbol": "t",
+            "name": "Elapsed time",
+            "unit": "seconds (s)",
+            "description": "How long the motion lasts. × means multiply."
+          }
+        ]
+      },
+      "glossary": [
+        {
+          "term": "Constant",
+          "definition": "Staying the same during the part being studied."
+        },
+        {
+          "term": "Elapsed time",
+          "definition": "Time that passes between the start and finish."
+        },
+        {
+          "term": "Rearrange",
+          "definition": "Write the same relationship to find a different quantity."
+        }
+      ],
+      "clarityReviewStatus": "source-reviewed",
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "vectors",
+      "title": "Direction changes the answer",
+      "idea": "A vector tells us both how much and which way.",
+      "body": [
+        "We often draw a vector as an arrow. Its length shows size, called magnitude; its point shows direction. A displacement arrow goes straight from the starting place to the finishing place.",
+        "Walking 4 m east and then 3 m north gives 7 m of travelled path. But the arrow from start to finish cuts diagonally across that path. These are different questions: how far you walked, and where you ended relative to the start.",
+        "Perpendicular means meeting at a right angle, like two sides of a square. For two perpendicular parts, a right-triangle rule called the Pythagorean theorem gives the arrow’s length.",
+        "A square means multiply a number by itself: x² = x × x. The square root √ asks which nonnegative number squares to the value inside. Thus √[(4 m)² + (3 m)²] = √(25 m²) = 5 m. The arrow is 5 m long, although the journey was 7 m."
+      ],
+      "equation": "|r| = √(x² + y²)",
+      "terms": "x and y are perpendicular displacement components in metres. |r| is the arrow's length, also in metres.",
+      "example": {
+        "title": "An indoor rover",
+        "steps": [
+          "The rover moves 6 m east, then 8 m north. Those directions meet at a right angle.",
+          "Path length = 6 m + 8 m = 14 m: the total distance driven.",
+          "Displacement length = √[(6 m)² + (8 m)²] = √(100 m²) = 10 m: the straight start-to-finish distance."
+        ]
+      },
+      "visual": {
+        "type": "vector",
+        "title": "Path versus displacement",
+        "caption": "East is right; north is up. The diagonal is displacement, not a second journey."
+      },
+      "check": {
+        "prompt": "You walk 3 m east, then 3 m west. What is your displacement?",
+        "options": [
+          "0 m",
+          "6 m east",
+          "3 m west"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Yes. You finish at the start, so the displacement vector is zero. The path length is 6 m.",
+          "6 m is the path length, not the final displacement.",
+          "The second motion cancels the first; the final position is the starting position."
+        ]
+      },
+      "apply": {
+        "title": "Position a sensor",
+        "text": "A sensor must move 5 cm right and 12 cm up. Is a 12 cm straight reach enough?",
+        "answer": "No. The straight start-to-finish length is √[(5 cm)² + (12 cm)²] = √(169 cm²) = 13 cm. A 12 cm reach is too short. This checks straight-line reach only and ignores physical obstacles or mounting constraints."
+      },
+      "limits": "The displayed relation is for perpendicular components in a flat plane. A vector is not fully specified by its magnitude alone.",
+      "sourceIds": [
+        "mechanics"
+      ],
+      "equationGuide": {
+        "meaning": "Square the two right-angle parts of the displacement, add them, then take the square root to find the straight arrow’s length.",
+        "symbols": [
+          {
+            "symbol": "r",
+            "name": "Displacement vector",
+            "unit": "metres (m)",
+            "description": "The directed arrow from start to finish. |r| means its nonnegative length only."
+          },
+          {
+            "symbol": "x, y",
+            "name": "Perpendicular components",
+            "unit": "metres (m)",
+            "description": "Amounts of displacement in the two right-angle directions."
+          },
+          {
+            "symbol": "² and √",
+            "name": "Square and square root",
+            "unit": "operators, not quantities",
+            "description": "Squaring multiplies a value by itself; the square root gives the nonnegative length whose square matches the result."
+          }
+        ]
+      },
+      "glossary": [
+        {
+          "term": "Vector",
+          "definition": "A quantity with size and direction."
+        },
+        {
+          "term": "Displacement",
+          "definition": "The directed change from starting place to finishing place."
+        },
+        {
+          "term": "Magnitude",
+          "definition": "The nonnegative size of a quantity, without its direction."
+        },
+        {
+          "term": "Perpendicular",
+          "definition": "Meeting at a right angle."
+        }
+      ],
+      "clarityReviewStatus": "source-reviewed",
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "graphs",
+      "title": "A graph makes change visible",
+      "idea": "A position–time graph shows where something is at each time, not the shape of its road.",
+      "body": [
+        "Time runs along the bottom of this graph, in seconds. Position runs up the side, in metres. A point pairs one time with one position. Position is measured from a chosen zero place, called the origin.",
+        "Slope is the change up the graph divided by the change across it. On a position–time graph, that is position change divided by elapsed time: average velocity over the chosen interval.",
+        "A straight rising line means constant positive velocity. A flat line means position is not changing—even if that position is far from zero. A falling line means motion toward smaller position numbers, not necessarily left in every situation."
+      ],
+      "equation": "average velocity = Δx / Δt",
+      "terms": "x names position in metres (m); t names time in seconds (s). Δ means final minus starting value. Δx is position change, Δt is elapsed time, and / means divide. Average velocity has units m/s: metres per second.",
+      "example": {
+        "title": "Read two points",
+        "steps": [
+          "At t = 1 s, x = 2 m. At t = 4 s, x = 8 m.",
+          "Δx = 8 − 2 = 6 m; Δt = 4 − 1 = 3 s.",
+          "Average velocity = 6/3 = 2 m/s."
+        ]
+      },
+      "visual": {
+        "type": "slope",
+        "title": "Tilt the position graph",
+        "caption": "This ideal straight-line graph represents constant velocity. Negative slope means motion toward decreasing x."
+      },
+      "check": {
+        "prompt": "A position–time line is horizontal at x = 7 m. What does it mean?",
+        "options": [
+          "The object moves at 7 m/s",
+          "The object accelerates",
+          "The object stays at 7 m"
+        ],
+        "answer": 2,
+        "explanations": [
+          "7 m is a position, not a velocity. The slope is zero.",
+          "A horizontal position line represents rest throughout the displayed interval.",
+          "Yes. Position does not change, so velocity is zero."
+        ]
+      },
+      "apply": {
+        "title": "Spot a pause",
+        "text": "A tracking graph rises, becomes flat for two seconds, then rises again. What happened during the flat part?",
+        "answer": "In this one-dimensional model, the tracked object stayed at the same position for two seconds. The graph alone does not explain why."
+      },
+      "limits": "Two points give average velocity over an interval. Instantaneous velocity means the rate and direction of position change at one moment. A curved graph can have a different slope at each moment; the mathematical toolkit introduces the calculus needed to find it.",
+      "sourceIds": [
+        "mechanics"
+      ],
+      "equationGuide": {
+        "meaning": "Divide the signed position change by elapsed time to find the average position change per second.",
+        "symbols": [
+          {
+            "symbol": "Δ",
+            "name": "Change sign, read delta",
+            "unit": "not a unit",
+            "description": "Final value minus starting value."
+          },
+          {
+            "symbol": "Δx",
+            "name": "Position change",
+            "unit": "metres (m)",
+            "description": "The signed change in position, not total path length."
+          },
+          {
+            "symbol": "Δt",
+            "name": "Elapsed time",
+            "unit": "seconds (s)",
+            "description": "A positive duration. Dividing metres by seconds gives velocity in m/s."
+          }
+        ]
+      },
+      "glossary": [
+        {
+          "term": "Axis",
+          "definition": "One reference line of a graph."
+        },
+        {
+          "term": "Origin",
+          "definition": "The chosen zero position."
+        },
+        {
+          "term": "Slope",
+          "definition": "Vertical change divided by horizontal change on a graph."
+        },
+        {
+          "term": "Velocity",
+          "definition": "How quickly position changes, including direction through its sign."
+        }
+      ],
+      "clarityReviewStatus": "source-reviewed",
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "accumulation",
+      "title": "Rates build up totals",
+      "idea": "Add the change from each part of a trip to find the total change.",
+      "body": [
+        "Moving 2 metres right each second for 3 seconds gives 6 metres right. The change each second is a rate. When that rate stays constant, multiply it by how long it lasts.",
+        "Choose right as positive. Velocity then has a plus sign for rightward motion and a minus sign for leftward motion. Displacement is the signed change in position; total distance counts every travelled part positively.",
+        "On a velocity–time graph, a constant velocity makes a rectangle. Its height is velocity and its width is time. Multiplying metres per second by seconds gives metres. This graph area represents displacement, not a physical floor area. Parts below zero count negatively."
+      ],
+      "equation": "Δx = v × Δt   (constant v)",
+      "terms": "v is signed velocity (m/s). Δt is interval duration (s). Δx is displacement (m).",
+      "example": {
+        "title": "A two-part trip",
+        "steps": [
+          "Choose right as positive. At +2 m/s for 3 s, displacement is (+2 m/s) × (3 s) = +6 m.",
+          "Then at −1 m/s for 2 s, displacement is (−1 m/s) × (2 s) = −2 m.",
+          "Add signed changes: +6 m − 2 m = +4 m net displacement, so the finish is 4 m right of the start. Add travelled lengths: 6 m + 2 m = 8 m distance."
+        ]
+      },
+      "visual": {
+        "type": "area",
+        "title": "A rectangle becomes a displacement",
+        "caption": "Signed rectangle area: velocity × time. For changing velocity, smaller pieces approximate the integral."
+      },
+      "check": {
+        "prompt": "A cart moves at −3 m/s for 4 s. What is its displacement?",
+        "options": [
+          "−0.75 m",
+          "−12 m",
+          "+12 m"
+        ],
+        "answer": 1,
+        "explanations": [
+          "Divide only when the relationship calls for it. Here you multiply rate by duration.",
+          "Yes. (−3 m/s) × (4 s) = −12 m; it moves toward decreasing position.",
+          "12 m is the distance travelled, but the displacement has a negative sign."
+        ]
+      },
+      "apply": {
+        "title": "Read a flow meter",
+        "text": "Water flows at a steady 2 litres per minute for 3 minutes. How much water is collected?",
+        "answer": "6 litres. The same rate-times-duration structure applies, though this rate measures volume rather than position."
+      },
+      "limits": "The simple rectangle applies only to a constant rate. The general accumulation is an integral, introduced in the mathematical toolkit.",
+      "sourceIds": [
+        "mechanics"
+      ],
+      "equationGuide": {
+        "meaning": "For constant velocity, displacement equals the signed position change each second multiplied by the number of seconds.",
+        "symbols": [
+          {
+            "symbol": "Δx",
+            "name": "Displacement",
+            "unit": "metres (m)",
+            "description": "Final position minus starting position. Δ means change."
+          },
+          {
+            "symbol": "v",
+            "name": "Constant velocity",
+            "unit": "metres per second (m/s)",
+            "description": "Signed change of position each second."
+          },
+          {
+            "symbol": "Δt",
+            "name": "Time interval",
+            "unit": "seconds (s)",
+            "description": "How long this constant-velocity part lasts."
+          }
+        ]
+      },
+      "glossary": [
+        {
+          "term": "Rate",
+          "definition": "How quickly one quantity changes compared with another, often time."
+        },
+        {
+          "term": "Net",
+          "definition": "The signed total after adding positive and negative contributions."
+        },
+        {
+          "term": "Distance",
+          "definition": "Total length of the travelled path, counted nonnegatively."
+        }
+      ],
+      "clarityReviewStatus": "source-reviewed",
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "uncertainty",
+      "title": "Measurements have a useful limit",
+      "idea": "A measurement is a best estimate, not an unlimited supply of exact digits.",
+      "body": [
+        "Stated uncertainty tells us a scale of doubt, using a method that must be explained. “20.0 ± 0.2 cm” reads “20.0 centimetres, plus or minus 0.2 centimetres”. It does not by itself guarantee the true value is between 19.8 and 20.2 cm.",
+        "Relative uncertainty compares the uncertainty with the estimate’s size. Both must use the same unit. For a 40 cm estimate and 1 cm uncertainty, the ratio is 1 cm ÷ 40 cm = 0.025. Multiply by 100 to get 2.5 percent: 2.5 parts per hundred.",
+        "Repeating measurements can reveal variation, but cannot automatically fix a common offset. Calibration means checking an instrument against a known reference. If a ruler adds 2 cm to every reading, that repeated offset is a bias."
+      ],
+      "equation": "relative uncertainty = uncertainty / |estimate|",
+      "terms": "The bars in |estimate| mean use the estimate’s size without its sign. Use matching units for uncertainty and estimate; their ratio then has no unit. Multiply by 100 to express it as a percentage. The estimate must be nonzero.",
+      "example": {
+        "title": "Compare two rulers",
+        "steps": [
+          "Length estimate: 40 cm. Stated uncertainty: 1 cm.",
+          "Relative uncertainty = 1/40 = 0.025.",
+          "That is 2.5%. State how the ±1 cm was obtained."
+        ]
+      },
+      "visual": {
+        "type": "uncertainty",
+        "title": "An estimate and its stated interval",
+        "caption": "The band shows estimate ± stated uncertainty. It is not a probability distribution or a guaranteed range."
+      },
+      "check": {
+        "prompt": "An instrument is consistently 2 cm too high. Will averaging many readings necessarily remove this bias?",
+        "options": [
+          "No; the calibration bias can remain",
+          "Yes; all errors disappear with averaging",
+          "Only if the readings have more decimal places"
+        ],
+        "answer": 0,
+        "explanations": [
+          "Correct. Repeating measurements helps reveal random variation, but a repeated offset can remain. Calibration or correction is needed to address that bias.",
+          "Averaging does not automatically correct a common offset in every reading.",
+          "More digits do not fix an inaccurate instrument."
+        ]
+      },
+      "apply": {
+        "title": "Compare two estimates carefully",
+        "text": "Two estimates have overlapping uncertainty intervals. Does that prove the quantities are exactly equal?",
+        "answer": "No. Overlap alone does not prove equality. A meaningful comparison requires the uncertainty definitions, measurement conditions and an appropriate statistical method."
+      },
+      "limits": "This lesson introduces uncertainty notation. It does not assign confidence levels or teach a full statistical error analysis.",
+      "sourceIds": [
+        "si"
+      ],
+      "equationGuide": {
+        "meaning": "Divide the stated uncertainty by the size of the estimate to compare the uncertainty with the measurement.",
+        "symbols": [
+          {
+            "symbol": "uncertainty",
+            "name": "Stated uncertainty scale",
+            "unit": "same unit as estimate",
+            "description": "An amount obtained by a stated method, not automatically a guaranteed bound."
+          },
+          {
+            "symbol": "|estimate|",
+            "name": "Nonnegative size of estimate",
+            "unit": "same unit as uncertainty",
+            "description": "The bars mean take the size without its sign. The estimate must not be zero."
+          },
+          {
+            "symbol": "relative uncertainty",
+            "name": "Ratio",
+            "unit": "no unit",
+            "description": "Matching units cancel. Multiplying the ratio by 100 gives its percentage."
+          }
+        ]
+      },
+      "glossary": [
+        {
+          "term": "Uncertainty",
+          "definition": "A stated scale of doubt in a measurement, with a method explaining what it means."
+        },
+        {
+          "term": "Calibration",
+          "definition": "Checking an instrument against a known reference."
+        },
+        {
+          "term": "Bias",
+          "definition": "A repeated offset that can remain even when many readings are averaged."
+        },
+        {
+          "term": "Percent",
+          "definition": "Parts per hundred."
+        }
+      ],
+      "clarityReviewStatus": "source-reviewed",
+      "reviewStatus": "reviewed"
+    },
+    {
+      "id": "models",
+      "title": "A model is a purposeful simplification",
+      "idea": "A model is a simplified description we use to answer a particular question.",
+      "body": [
+        "A model leaves out details that do not matter for its question. Treating a trolley as one point can help describe where it is. That same model cannot explain how its wheels turn.",
+        "An assumption is a condition we choose to use, such as constant speed. A prediction is the result we expect if those conditions hold. First ask a question, state assumptions, predict an outcome, then compare with a measurement.",
+        "If prediction and measurement disagree, investigate. The measurement may be limited, an assumption may fail, or the model may leave out something important. Do not change the observation just to protect the prediction."
+      ],
+      "equation": "question → assumptions → prediction → comparison",
+      "terms": "A model is not the object itself. Agreement in one test does not prove it works in every situation.",
+      "example": {
+        "title": "A short motion prediction",
+        "steps": [
+          "Choose forward as positive. Assume a trolley keeps moving forward at a constant velocity v = 0.6 m/s for a time t = 5 s.",
+          "Displacement Δx means final position minus starting position. Δx = v × t = (0.6 m/s) × (5 s) = +3 m: it finishes 3 m forward of its start.",
+          "If it slows on a rough patch, constant velocity was not a good assumption for that interval."
+        ]
+      },
+      "visual": {
+        "type": "concept",
+        "title": "Make the assumptions visible",
+        "caption": "These are reasoning steps, not a physical law.",
+        "items": [
+          {
+            "label": "Assume",
+            "value": "Constant velocity"
+          },
+          {
+            "label": "Predict",
+            "value": "Position change = velocity × time"
+          },
+          {
+            "label": "Test",
+            "value": "Compare a measurement"
+          }
+        ]
+      },
+      "check": {
+        "prompt": "A prediction works at low speeds but fails near the speed of light. What is the best response?",
+        "options": [
+          "Discard every successful low-speed result",
+          "Change the measurements to match the prediction",
+          "State the model's range and use a suitable theory outside it"
+        ],
+        "answer": 2,
+        "explanations": [
+          "A limited domain does not erase well-tested results inside that domain.",
+          "Evidence should test the model; it must not be altered to protect it.",
+          "Yes. A useful model can have a limited domain. Classical mechanics is an approximation, not the last word at every scale and speed."
+        ]
+      },
+      "apply": {
+        "title": "Your first modelling checklist",
+        "text": "Estimate the time to carry a box across a room. Name one assumption and one measurement that would test your estimate.",
+        "answer": "For example, assume constant walking speed. Let d be room distance in metres, v the speed in metres per second and t travel time in seconds. Then t = d ÷ v: time equals distance divided by speed. At 1 m/s across 4 m, this predicts 4 s. Measure the actual time; pauses, obstacles or changing speed may explain a mismatch."
+      },
+      "limits": "Physics models make claims about observable physical systems. Quantum theory does not establish spiritual claims or guarantee personal outcomes.",
+      "sourceIds": [
+        "mechanics"
+      ],
+      "equationGuide": {
+        "meaning": "This is a sequence of reasoning steps, not an equation: ask, state the conditions, predict, then test against an observation.",
+        "symbols": [
+          {
+            "symbol": "→",
+            "name": "Next step",
+            "unit": "not a quantity or unit",
+            "description": "The arrow means proceed to the next reasoning step, not that a physical force points this way."
+          }
+        ]
+      },
+      "glossary": [
+        {
+          "term": "Model",
+          "definition": "A simplified description made to answer a question."
+        },
+        {
+          "term": "Assumption",
+          "definition": "A condition treated as true for the calculation."
+        },
+        {
+          "term": "Prediction",
+          "definition": "An expected result if the assumptions hold."
+        },
+        {
+          "term": "Comparison",
+          "definition": "Checking a prediction against what was observed."
+        }
+      ],
+      "clarityReviewStatus": "source-reviewed",
+      "reviewStatus": "reviewed"
+    }
+  ],
+  "statusNote": "Eight introductory lessons provide a reviewed plain-language bridge into quantities, directions, graphs and models. They are not calculus or advanced problem-solving training. Source-level science and clarity checks are complete; rendered browser QA remains pending."
+}

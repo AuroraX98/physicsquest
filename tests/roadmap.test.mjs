@@ -1,0 +1,8 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+const catalog=JSON.parse(fs.readFileSync(new URL('../dist/content/catalog.json',import.meta.url)));const courses=new Map(catalog.courses.map(c=>[c.id,c]));
+test('roadmap v2.4 completes the finite794 lesson target, retaining seven explicit field maps',()=>{
+ assert.equal(catalog.roadmapVersion,'2.4');assert.equal(catalog.definedTarget,794);assert.equal(catalog.courses.reduce((n,c)=>n+c.plannedLessons,0),794);assert.equal(catalog.courses.length,15);
+ let actual=0;for(const c of catalog.courses){assert.equal(c.status,'complete',c.id);const path=new URL('../dist/content/'+c.id+'.json',import.meta.url);assert.ok(fs.existsSync(path),c.id);const data=JSON.parse(fs.readFileSync(path));assert.equal(data.lessons.length,c.plannedLessons,c.id);actual+=data.lessons.length;}
+ assert.equal(actual,794);const fields=catalog.courses.filter(c=>c.plannedModules);assert.equal(fields.length,7);assert.equal(fields.reduce((n,c)=>n+c.plannedLessons,0),352);for(const c of fields)assert.equal(c.plannedModules.reduce((n,m)=>n+m.objectives.length,0),c.plannedLessons,c.id);
+});
+test('new-field prerequisite IDs resolve without cycles and scope remains explicitly introductory',()=>{const visiting=new Set(),done=new Set();function visit(id){assert.ok(courses.has(id),id);assert.ok(!visiting.has(id),'prerequisite cycle at '+id);if(done.has(id))return;visiting.add(id);for(const p of courses.get(id).prerequisiteCourseIds??[])visit(p);visiting.delete(id);done.add(id);}for(const c of courses.values()){visit(c.id);if(c.plannedModules)assert.ok(c.scopeNote.includes('introductory'));}});
