@@ -1,0 +1,907 @@
+{
+  "version": 1,
+  "note": "Original beginner bridges. References validate standard relationships; no source prose, exercises or diagrams are adapted.",
+  "sources": [
+    {
+      "id": "fluid-statics-scope",
+      "title": "OpenStax: Fluid statics — scope reference",
+      "url": "https://openstax.org/books/college-physics-2e/pages/11-introduction-to-fluid-statics"
+    },
+    {
+      "id": "fluid-flow-scope",
+      "title": "OpenStax: Steady flow and its conditions",
+      "url": "https://openstax.org/books/college-physics-2e/pages/12-1-flow-rate-and-its-relation-to-velocity"
+    },
+    {
+      "id": "bernoulli-scope",
+      "title": "OpenStax: Bernoulli’s equation and assumptions",
+      "url": "https://openstax.org/books/college-physics-2e/pages/12-2-bernoullis-equation"
+    }
+  ],
+  "groups": [
+    {
+      "course": "foundations",
+      "title": "A useful measurement check",
+      "lessons": [
+        {
+          "id": "check-units",
+          "title": "Let units check your calculation",
+          "idea": "Units can warn you that a calculation uses the wrong relationship.",
+          "example": {
+            "title": "A toy train",
+            "steps": [
+              "A toy train moves at 2 metres per second for 4 seconds.",
+              "Multiply: (2 m/s) × (4 s) = 8 m. The seconds cancel.",
+              "The result has the unit of distance, as expected."
+            ]
+          },
+          "equation": "distance = speed × time\n(m/s) × s = m",
+          "terms": "Unit: An agreed amount used for measuring. Cancel: Matching factors above and below a division reduce to one.",
+          "limits": "This check compares kinds of quantities. It does not detect a missing unit-free factor, a wrong input, or a model used outside its conditions.",
+          "check": {
+            "prompt": "Which unit should speed multiplied by time give?",
+            "options": [
+              "Metres",
+              "Metres per second squared",
+              "Seconds"
+            ],
+            "answer": 0,
+            "explanations": [
+              "Correct. Metres per second times seconds leaves metres.",
+              "The seconds cancel; they do not become a squared divisor.",
+              "The speed contributes a distance unit that remains after the seconds cancel."
+            ]
+          },
+          "apply": {
+            "title": "Check before calculating",
+            "text": "A steady speed is 6 m/s and the time is 3 s. What distance follows?",
+            "answer": "Multiplying gives 18 m. Dividing would give units m/s², which describe acceleration, not distance."
+          },
+          "practice": {
+            "prompt": "A steady speed is 6 m/s and the time is 3 s. What distance follows?",
+            "parts": [
+              {
+                "label": "Distance",
+                "unit": "m",
+                "answer": 18,
+                "tolerance": 0.00001,
+                "feedback": "Multiply 6 m/s by 3 s. The result is 18 m."
+              }
+            ],
+            "reasoning": "Multiplying gives 18 m. Dividing would give units m/s², which describe acceleration, not distance."
+          },
+          "focus": {
+            "idea": "Units can warn you that a calculation uses the wrong relationship.",
+            "explanation": "Treat units as part of the calculation. Seconds cancel when you multiply metres per second by seconds, leaving metres. A matching unit is a useful check, but it cannot prove the number is right.",
+            "example": {
+              "title": "A toy train",
+              "steps": [
+                "A toy train moves at 2 metres per second for 4 seconds.",
+                "Multiply: (2 m/s) × (4 s) = 8 m. The seconds cancel.",
+                "The result has the unit of distance, as expected."
+              ]
+            },
+            "equation": "distance = speed × time\n(m/s) × s = m",
+            "terms": [
+              {
+                "term": "Unit",
+                "definition": "An agreed amount used for measuring."
+              },
+              {
+                "term": "Cancel",
+                "definition": "Matching factors above and below a division reduce to one."
+              }
+            ]
+          },
+          "body": [
+            "Treat units as part of the calculation. Seconds cancel when you multiply metres per second by seconds, leaving metres. A matching unit is a useful check, but it cannot prove the number is right."
+          ],
+          "glossary": [
+            {
+              "term": "Unit",
+              "definition": "An agreed amount used for measuring."
+            },
+            {
+              "term": "Cancel",
+              "definition": "Matching factors above and below a division reduce to one."
+            }
+          ],
+          "prerequisiteIds": [
+            "foundations/relationships"
+          ],
+          "visual": {
+            "type": "concept",
+            "title": "Let units check your calculation",
+            "caption": "Use the example to explain the relationship in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "Units can warn you that a calculation uses the wrong relationship."
+              }
+            ]
+          },
+          "equationGuide": {
+            "meaning": "Treat units as part of the calculation. Seconds cancel when you multiply metres per second by seconds, leaving metres. A matching unit is a useful check, but it cannot prove the number is right.",
+            "symbols": []
+          },
+          "moduleId": "foundations-helpful-bridges"
+        }
+      ]
+    },
+    {
+      "course": "math",
+      "title": "Small tools before larger equations",
+      "lessons": [
+        {
+          "id": "balance-equation",
+          "title": "Keep both sides of an equation equal",
+          "idea": "To rearrange an equation, make the same change to both sides.",
+          "example": {
+            "title": "How long does a cart move?",
+            "steps": [
+              "At a steady 3 m/s, a cart travels 15 m. Distance = speed × time.",
+              "Divide both sides by 3 m/s: time = (15 m) ÷ (3 m/s).",
+              "The cart moves for 5 seconds."
+            ]
+          },
+          "equation": "distance = speed × time\ntime = distance ÷ speed",
+          "terms": "Rearrange: Write the same relationship with a different quantity by itself. Unknown: A value we are trying to find.",
+          "limits": "The speed must be nonzero to divide by it. This distance rule assumes constant speed; it does not describe every changing motion.",
+          "check": {
+            "prompt": "A cart travels 12 m at a steady 3 m/s. How long does it move?",
+            "options": [
+              "36 seconds",
+              "4 seconds",
+              "9 seconds"
+            ],
+            "answer": 1,
+            "explanations": [
+              "Multiplying does not undo the multiplication by speed. Divide 12 by 3.",
+              "Correct. 12 m divided by 3 m/s is 4 s.",
+              "Subtracting does not undo multiplication. Divide 12 by 3."
+            ]
+          },
+          "apply": {
+            "title": "Find the missing time",
+            "text": "A belt travels 24 m at a steady 4 m/s. Find its travel time.",
+            "answer": "Divide distance by speed: 24 ÷ 4 = 6 seconds. Putting 6 s back into 4 m/s × time gives 24 m."
+          },
+          "practice": {
+            "prompt": "A belt travels 24 m at a steady 4 m/s. Find its travel time.",
+            "parts": [
+              {
+                "label": "Travel time",
+                "unit": "s",
+                "answer": 6,
+                "tolerance": 0.00001,
+                "feedback": "(24 m) ÷ (4 m/s) = 6 s."
+              }
+            ],
+            "reasoning": "Divide distance by speed: 24 ÷ 4 = 6 seconds. Putting 6 s back into 4 m/s × time gives 24 m."
+          },
+          "focus": {
+            "idea": "To rearrange an equation, make the same change to both sides.",
+            "explanation": "An equation says its two sides have equal values. To undo multiplication, divide both sides by the same nonzero number. This leaves the unknown quantity alone while keeping the equality true.",
+            "example": {
+              "title": "How long does a cart move?",
+              "steps": [
+                "At a steady 3 m/s, a cart travels 15 m. Distance = speed × time.",
+                "Divide both sides by 3 m/s: time = (15 m) ÷ (3 m/s).",
+                "The cart moves for 5 seconds."
+              ]
+            },
+            "equation": "distance = speed × time\ntime = distance ÷ speed",
+            "terms": [
+              {
+                "term": "Rearrange",
+                "definition": "Write the same relationship with a different quantity by itself."
+              },
+              {
+                "term": "Unknown",
+                "definition": "A value we are trying to find."
+              }
+            ]
+          },
+          "body": [
+            "An equation says its two sides have equal values. To undo multiplication, divide both sides by the same nonzero number. This leaves the unknown quantity alone while keeping the equality true."
+          ],
+          "glossary": [
+            {
+              "term": "Rearrange",
+              "definition": "Write the same relationship with a different quantity by itself."
+            },
+            {
+              "term": "Unknown",
+              "definition": "A value we are trying to find."
+            }
+          ],
+          "prerequisiteIds": [
+            "foundations/relationships"
+          ],
+          "visual": {
+            "type": "concept",
+            "title": "Keep both sides of an equation equal",
+            "caption": "Use the example to explain the relationship in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "To rearrange an equation, make the same change to both sides."
+              }
+            ]
+          },
+          "equationGuide": {
+            "meaning": "An equation says its two sides have equal values. To undo multiplication, divide both sides by the same nonzero number. This leaves the unknown quantity alone while keeping the equality true.",
+            "symbols": []
+          },
+          "moduleId": "math-helpful-bridges"
+        },
+        {
+          "id": "chance-fractions",
+          "title": "Read chance as a fraction",
+          "idea": "For equally likely outcomes, chance is the matching count divided by the total count.",
+          "example": {
+            "title": "Picking one counter",
+            "steps": [
+              "A bag holds 3 blue and 2 red identical counters, well mixed.",
+              "There are 3 blue counters out of 5 equally likely picks.",
+              "The chance of blue is 3 ÷ 5 = 0.6, or 60%."
+            ]
+          },
+          "equation": "probability = matching outcomes ÷ total outcomes\n3 ÷ 5 = 0.6 = 60%",
+          "terms": "Probability: A number describing how likely an outcome is. Equally likely: Each counted outcome has the same chance.",
+          "limits": "A biased selection can make the counted outcomes unequal. Probability describes a model of repeated trials; it does not promise the outcome of one pick.",
+          "check": {
+            "prompt": "A bag has 1 blue and 3 red equally likely counters. What is the chance of blue?",
+            "options": [
+              "75%",
+              "50%",
+              "25%"
+            ],
+            "answer": 2,
+            "explanations": [
+              "75% is the chance of red: three of the four counters.",
+              "There are two colours, but the colours are not equally likely. Count counters.",
+              "Correct. One of four equally likely counters is blue: 25%."
+            ]
+          },
+          "apply": {
+            "title": "A new bag",
+            "text": "A bag has 3 green and 7 other equally likely counters. Write the chance of green as a decimal.",
+            "answer": "There are 10 counters in total. The chance is 3/10 = 0.3, or 30%."
+          },
+          "practice": {
+            "prompt": "A bag has 3 green and 7 other equally likely counters. Write the chance of green as a decimal.",
+            "parts": [
+              {
+                "label": "Probability of green",
+                "unit": "unit-free decimal",
+                "answer": 0.3,
+                "tolerance": 0.00001,
+                "feedback": "Three of ten equally likely counters are green: 3 ÷ 10 = 0.3."
+              }
+            ],
+            "reasoning": "There are 10 counters in total. The chance is 3/10 = 0.3, or 30%."
+          },
+          "focus": {
+            "idea": "For equally likely outcomes, chance is the matching count divided by the total count.",
+            "explanation": "A probability describes how likely an outcome is, from zero to one. A probability of 0.6 is the same as 60%. This counting shortcut works only when the outcomes you count are equally likely.",
+            "example": {
+              "title": "Picking one counter",
+              "steps": [
+                "A bag holds 3 blue and 2 red identical counters, well mixed.",
+                "There are 3 blue counters out of 5 equally likely picks.",
+                "The chance of blue is 3 ÷ 5 = 0.6, or 60%."
+              ]
+            },
+            "equation": "probability = matching outcomes ÷ total outcomes\n3 ÷ 5 = 0.6 = 60%",
+            "terms": [
+              {
+                "term": "Probability",
+                "definition": "A number describing how likely an outcome is."
+              },
+              {
+                "term": "Equally likely",
+                "definition": "Each counted outcome has the same chance."
+              }
+            ]
+          },
+          "body": [
+            "A probability describes how likely an outcome is, from zero to one. A probability of 0.6 is the same as 60%. This counting shortcut works only when the outcomes you count are equally likely."
+          ],
+          "glossary": [
+            {
+              "term": "Probability",
+              "definition": "A number describing how likely an outcome is."
+            },
+            {
+              "term": "Equally likely",
+              "definition": "Each counted outcome has the same chance."
+            }
+          ],
+          "prerequisiteIds": [
+            "foundations/relationships"
+          ],
+          "visual": {
+            "type": "concept",
+            "title": "Read chance as a fraction",
+            "caption": "Use the example to explain the relationship in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "For equally likely outcomes, chance is the matching count divided by the total count."
+              }
+            ]
+          },
+          "equationGuide": {
+            "meaning": "A probability describes how likely an outcome is, from zero to one. A probability of 0.6 is the same as 60%. This counting shortcut works only when the outcomes you count are equally likely.",
+            "symbols": []
+          },
+          "moduleId": "math-helpful-bridges"
+        }
+      ]
+    },
+    {
+      "course": "mechanics",
+      "title": "A first look at fluids",
+      "lessons": [
+        {
+          "id": "fluid-density",
+          "title": "Compare mass in the same amount of space",
+          "idea": "Density tells us how much mass fits into a given volume.",
+          "example": {
+            "title": "A small liquid sample",
+            "steps": [
+              "A liquid sample has mass 40 grams and volume 20 cubic centimetres.",
+              "Its density is 40 ÷ 20 = 2 grams per cubic centimetre.",
+              "Each cubic centimetre contains 2 grams on average."
+            ]
+          },
+          "equation": "density = mass ÷ volume\n(40 g) ÷ (20 cm³) = 2 g/cm³",
+          "terms": "Density: Mass divided by volume. Volume: The amount of space an object or sample occupies. cm³: Cubic centimetres: a volume unit. cm³ (cubic centimetre): The volume of a cube 1 centimetre long, wide and high.",
+          "limits": "This is average density. Density can vary with position, temperature and pressure; a gas is not generally incompressible.",
+          "check": {
+            "prompt": "A uniform liquid sample doubles in both mass and volume. What happens to its density?",
+            "options": [
+              "It stays the same",
+              "It doubles",
+              "It halves"
+            ],
+            "answer": 0,
+            "explanations": [
+              "Correct. Doubling the top and bottom of the ratio leaves it unchanged.",
+              "Its volume doubles too, so the ratio does not double.",
+              "The mass doubles along with volume, so the ratio does not halve."
+            ]
+          },
+          "apply": {
+            "title": "Find a density",
+            "text": "A sample has mass 60 g and volume 30 cm³. What is its average density?",
+            "answer": "60 divided by 30 gives 2 g/cm³. Keep both units in the answer."
+          },
+          "practice": {
+            "prompt": "A sample has mass 60 g and volume 30 cm³. What is its average density?",
+            "parts": [
+              {
+                "label": "Average density",
+                "unit": "g/cm³",
+                "answer": 2,
+                "tolerance": 0.00001,
+                "feedback": "Divide 60 g by 30 cm³ to get 2 g/cm³."
+              }
+            ],
+            "reasoning": "60 divided by 30 gives 2 g/cm³. Keep both units in the answer."
+          },
+          "focus": {
+            "idea": "Density tells us how much mass fits into a given volume.",
+            "explanation": "Volume is the space something occupies. Divide mass by volume to find average density. A larger sample of the same uniform material has more mass and more volume, but the same density.",
+            "example": {
+              "title": "A small liquid sample",
+              "steps": [
+                "A liquid sample has mass 40 grams and volume 20 cubic centimetres.",
+                "Its density is 40 ÷ 20 = 2 grams per cubic centimetre.",
+                "Each cubic centimetre contains 2 grams on average."
+              ]
+            },
+            "equation": "density = mass ÷ volume\n(40 g) ÷ (20 cm³) = 2 g/cm³",
+            "terms": [
+              {
+                "term": "Density",
+                "definition": "Mass divided by volume."
+              },
+              {
+                "term": "Volume",
+                "definition": "The amount of space an object or sample occupies."
+              },
+              {
+                "term": "cm³ (cubic centimetre)",
+                "definition": "The volume of a cube 1 centimetre long, wide and high."
+              }
+            ]
+          },
+          "body": [
+            "Volume is the space something occupies. Divide mass by volume to find average density. A larger sample of the same uniform material has more mass and more volume, but the same density."
+          ],
+          "glossary": [
+            {
+              "term": "Density",
+              "definition": "Mass divided by volume."
+            },
+            {
+              "term": "Volume",
+              "definition": "The amount of space an object or sample occupies."
+            },
+            {
+              "term": "cm³ (cubic centimetre)",
+              "definition": "The volume of a cube 1 centimetre long, wide and high."
+            }
+          ],
+          "prerequisiteIds": [
+            "foundations/units"
+          ],
+          "visual": {
+            "type": "concept",
+            "title": "Compare mass in the same amount of space",
+            "caption": "Use the example to explain the relationship in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "Density tells us how much mass fits into a given volume."
+              }
+            ]
+          },
+          "equationGuide": {
+            "meaning": "Volume is the space something occupies. Divide mass by volume to find average density. A larger sample of the same uniform material has more mass and more volume, but the same density.",
+            "symbols": []
+          },
+          "moduleId": "mechanics-helpful-bridges"
+        },
+        {
+          "id": "fluid-pressure-depth",
+          "title": "Still water presses harder farther down",
+          "idea": "Pressure increases with depth in a liquid at rest.",
+          "example": {
+            "title": "Two metres below the surface",
+            "steps": [
+              "Use water density 1000 kg/m³ and gravity 10 m/s² for a simple estimate.",
+              "At 2 m depth, the added pressure is 1000 × 10 × 2 = 20,000 pascals.",
+              "Add the surface pressure if you need the total pressure."
+            ]
+          },
+          "equation": "added pressure = density × gravity × depth",
+          "terms": "Pressure: Force divided by the area it acts on. Pascal (Pa): One newton of force per square metre.",
+          "limits": "The liquid is at rest; density and gravity are treated as constant. Added pressure is measured above the pressure at the surface, not above an absolute vacuum.",
+          "check": {
+            "prompt": "At 1 m below the surface, what added pressure does this model give?",
+            "options": [
+              "10 Pa",
+              "10,000 Pa",
+              "110,000 Pa"
+            ],
+            "answer": 1,
+            "explanations": [
+              "Multiply 1000 × 10 × 1. The density matters.",
+              "Correct. The added pressure is 10,000 Pa.",
+              "That could include a surface contribution, but the question asks only for added pressure."
+            ]
+          },
+          "apply": {
+            "title": "Another depth",
+            "text": "Using the same density and gravity, find the added pressure at 3 m depth.",
+            "answer": "1000 × 10 × 3 = 30,000 Pa above surface pressure."
+          },
+          "practice": {
+            "prompt": "Using the same density and gravity, find the added pressure at 3 m depth.",
+            "parts": [
+              {
+                "label": "Added pressure",
+                "unit": "Pa",
+                "answer": 30000,
+                "tolerance": 0.00001,
+                "feedback": "Multiply density 1000 by gravity 10 and depth 3."
+              }
+            ],
+            "reasoning": "1000 × 10 × 3 = 30,000 Pa above surface pressure."
+          },
+          "focus": {
+            "idea": "Pressure increases with depth in a liquid at rest.",
+            "explanation": "Pressure is force spread over area. Deeper water must support more water above it. For a liquid with constant density, each extra metre adds the same amount of pressure.",
+            "example": {
+              "title": "Two metres below the surface",
+              "steps": [
+                "Use water density 1000 kg/m³ and gravity 10 m/s² for a simple estimate.",
+                "At 2 m depth, the added pressure is 1000 × 10 × 2 = 20,000 pascals.",
+                "Add the surface pressure if you need the total pressure."
+              ]
+            },
+            "equation": "added pressure = density × gravity × depth",
+            "terms": [
+              {
+                "term": "Pressure",
+                "definition": "Force divided by the area it acts on."
+              },
+              {
+                "term": "Pascal (Pa)",
+                "definition": "One newton of force per square metre."
+              }
+            ]
+          },
+          "body": [
+            "Pressure is force spread over area. Deeper water must support more water above it. For a liquid with constant density, each extra metre adds the same amount of pressure."
+          ],
+          "glossary": [
+            {
+              "term": "Pressure",
+              "definition": "Force divided by the area it acts on."
+            },
+            {
+              "term": "Pascal (Pa)",
+              "definition": "One newton of force per square metre."
+            }
+          ],
+          "prerequisiteIds": [
+            "mechanics/fluid-density"
+          ],
+          "visual": {
+            "type": "concept",
+            "title": "Still water presses harder farther down",
+            "caption": "Use the example to explain the relationship in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "Pressure increases with depth in a liquid at rest."
+              }
+            ]
+          },
+          "equationGuide": {
+            "meaning": "Pressure is force spread over area. Deeper water must support more water above it. For a liquid with constant density, each extra metre adds the same amount of pressure.",
+            "symbols": []
+          },
+          "moduleId": "mechanics-helpful-bridges"
+        },
+        {
+          "id": "fluid-buoyancy",
+          "title": "Water pressure gives an upward push",
+          "idea": "The upward buoyant force equals the weight of the fluid displaced.",
+          "example": {
+            "title": "A fully submerged block",
+            "steps": [
+              "A block displaces 0.002 m³ of water with density 1000 kg/m³.",
+              "That water has mass 2 kg; using gravity 10 m/s² gives weight 20 N.",
+              "The buoyant force is 20 N upward, whether or not the block floats."
+            ]
+          },
+          "equation": "buoyant force = fluid density × displaced volume × gravity",
+          "terms": "Buoyancy: The net upward force from a surrounding fluid at rest. Displaced volume: The volume of fluid replaced by the submerged part of an object.",
+          "limits": "The surrounding fluid is at rest and reaches the relevant surfaces. Contact with a sealed bottom, surface tension and moving-fluid forces need separate treatment. The fluid density and gravitational strength are treated as constant.",
+          "check": {
+            "prompt": "The block weighs 25 N and has buoyant force 20 N. With no other force, which way is the net force?",
+            "options": [
+              "Upward",
+              "Zero",
+              "Downward"
+            ],
+            "answer": 2,
+            "explanations": [
+              "Its downward weight is larger than the upward buoyant force.",
+              "The forces differ by 5 N, so they do not balance.",
+              "Correct. 25 N downward minus 20 N upward leaves 5 N downward."
+            ]
+          },
+          "apply": {
+            "title": "A different submerged volume",
+            "text": "An object displaces 0.003 m³ of the same water. Find the buoyant force.",
+            "answer": "1000 × 0.003 × 10 = 30 N upward. This is a force, not a statement that the object must float."
+          },
+          "practice": {
+            "prompt": "An object displaces 0.003 m³ of the same water. Find the buoyant force.",
+            "parts": [
+              {
+                "label": "Buoyant force",
+                "unit": "N",
+                "answer": 30,
+                "tolerance": 0.00001,
+                "feedback": "Use the displaced fluid volume: 1000 × 0.003 × 10 = 30 N."
+              }
+            ],
+            "reasoning": "1000 × 0.003 × 10 = 30 N upward. This is a force, not a statement that the object must float."
+          },
+          "focus": {
+            "idea": "The upward buoyant force equals the weight of the fluid displaced.",
+            "explanation": "In a fluid at rest, pressure is greater lower down. The resulting forces give a net upward push called buoyancy. Displaced fluid is the fluid that would occupy the object’s submerged space.",
+            "example": {
+              "title": "A fully submerged block",
+              "steps": [
+                "A block displaces 0.002 m³ of water with density 1000 kg/m³.",
+                "That water has mass 2 kg; using gravity 10 m/s² gives weight 20 N.",
+                "The buoyant force is 20 N upward, whether or not the block floats."
+              ]
+            },
+            "equation": "buoyant force = fluid density × displaced volume × gravity",
+            "terms": [
+              {
+                "term": "Buoyancy",
+                "definition": "The net upward force from a surrounding fluid at rest."
+              },
+              {
+                "term": "Displaced volume",
+                "definition": "The volume of fluid replaced by the submerged part of an object."
+              }
+            ]
+          },
+          "body": [
+            "In a fluid at rest, pressure is greater lower down. The resulting forces give a net upward push called buoyancy. Displaced fluid is the fluid that would occupy the object’s submerged space."
+          ],
+          "glossary": [
+            {
+              "term": "Buoyancy",
+              "definition": "The net upward force from a surrounding fluid at rest."
+            },
+            {
+              "term": "Displaced volume",
+              "definition": "The volume of fluid replaced by the submerged part of an object."
+            }
+          ],
+          "prerequisiteIds": [
+            "mechanics/fluid-pressure-depth"
+          ],
+          "visual": {
+            "type": "concept",
+            "title": "Water pressure gives an upward push",
+            "caption": "Use the example to explain the relationship in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "The upward buoyant force equals the weight of the fluid displaced."
+              }
+            ]
+          },
+          "equationGuide": {
+            "meaning": "In a fluid at rest, pressure is greater lower down. The resulting forces give a net upward push called buoyancy. Displaced fluid is the fluid that would occupy the object’s submerged space.",
+            "symbols": []
+          },
+          "moduleId": "mechanics-helpful-bridges"
+        },
+        {
+          "id": "fluid-continuity",
+          "title": "A narrower passage needs faster steady flow",
+          "idea": "For steady flow with no leaks and fixed density, the same volume passes each point each second.",
+          "example": {
+            "title": "A pipe narrows",
+            "steps": [
+              "The wide section has area 4 cm² and average speed 1 m/s.",
+              "The narrow section has area 2 cm², half as large.",
+              "Its average speed must be 2 m/s to carry the same volume each second."
+            ]
+          },
+          "equation": "area₁ × average speed₁ = area₂ × average speed₂",
+          "terms": "Incompressible: Treated as having constant density. Steady flow: Flow properties at each place stay constant over time. Cross-sectional area: The area of a cut straight across the pipe. Subscripts 1 and 2: The small numbers label the two pipe sections. They are not multiplication.",
+          "limits": "This form assumes steady flow, constant density, no leaks and no branches. Use cross-section average speeds. Compressible flow requires conservation of mass rather than equal volume flow.",
+          "check": {
+            "prompt": "The area becomes one quarter as large. What speed keeps the same volume flow?",
+            "options": [
+              "Four times the speed",
+              "One quarter of the speed",
+              "The same speed"
+            ],
+            "answer": 0,
+            "explanations": [
+              "Correct. Area times average speed must stay the same.",
+              "A smaller area needs a larger speed in this model.",
+              "That would carry only one quarter of the volume each second."
+            ]
+          },
+          "apply": {
+            "title": "Find an average speed",
+            "text": "Area changes from 6 cm² to 3 cm². The initial average speed is 1.5 m/s. Find the new speed.",
+            "answer": "The area halves, so the average speed doubles to 3 m/s."
+          },
+          "practice": {
+            "prompt": "Area changes from 6 cm² to 3 cm². The initial average speed is 1.5 m/s. Find the new speed.",
+            "parts": [
+              {
+                "label": "Average speed",
+                "unit": "m/s",
+                "answer": 3,
+                "tolerance": 0.00001,
+                "feedback": "6 × 1.5 = 3 × speed, so speed is 3 m/s."
+              }
+            ],
+            "reasoning": "The area halves, so the average speed doubles to 3 m/s."
+          },
+          "focus": {
+            "idea": "For steady flow with no leaks and fixed density, the same volume passes each point each second.",
+            "explanation": "Incompressible means the fluid’s density stays constant in this model. With no leaks or buildup, what enters must leave. A smaller opening therefore needs a larger average speed to carry the same amount.",
+            "example": {
+              "title": "A pipe narrows",
+              "steps": [
+                "The wide section has area 4 cm² and average speed 1 m/s.",
+                "The narrow section has area 2 cm², half as large.",
+                "Its average speed must be 2 m/s to carry the same volume each second."
+              ]
+            },
+            "equation": "area₁ × average speed₁ = area₂ × average speed₂",
+            "terms": [
+              {
+                "term": "Incompressible",
+                "definition": "Treated as having constant density."
+              },
+              {
+                "term": "Steady flow",
+                "definition": "Flow properties at each place stay constant over time."
+              },
+              {
+                "term": "Cross-sectional area",
+                "definition": "The area of a cut straight across the pipe."
+              },
+              {
+                "term": "Subscripts 1 and 2",
+                "definition": "The small numbers label the two pipe sections. They are not multiplication."
+              }
+            ]
+          },
+          "body": [
+            "Incompressible means the fluid’s density stays constant in this model. With no leaks or buildup, what enters must leave. A smaller opening therefore needs a larger average speed to carry the same amount."
+          ],
+          "glossary": [
+            {
+              "term": "Incompressible",
+              "definition": "Treated as having constant density."
+            },
+            {
+              "term": "Steady flow",
+              "definition": "Flow properties at each place stay constant over time."
+            },
+            {
+              "term": "Cross-sectional area",
+              "definition": "The area of a cut straight across the pipe."
+            },
+            {
+              "term": "Subscripts 1 and 2",
+              "definition": "The small numbers label the two pipe sections. They are not multiplication."
+            }
+          ],
+          "prerequisiteIds": [
+            "mechanics/fluid-density"
+          ],
+          "visual": {
+            "type": "concept",
+            "title": "A narrower passage needs faster steady flow",
+            "caption": "Use the example to explain the relationship in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "Steady incompressible flow carries the same volume each second through an unbranched pipe."
+              }
+            ]
+          },
+          "equationGuide": {
+            "meaning": "Incompressible means the fluid’s density stays constant in this model. With no leaks or buildup, what enters must leave. A smaller opening therefore needs a larger average speed to carry the same amount.",
+            "symbols": []
+          },
+          "moduleId": "mechanics-helpful-bridges"
+        },
+        {
+          "id": "fluid-bernoulli",
+          "title": "Use energy to compare pressure and speed",
+          "idea": "In a suitable steady flow, pressure can fall as the fluid speeds up.",
+          "example": {
+            "title": "Water speeds up in a level pipe",
+            "steps": [
+              "Use density 1000 kg/m³; speed rises from 1 m/s to 3 m/s.",
+              "The pressure drop is ½ × 1000 × (3² − 1²) = 4000 Pa.",
+              "The faster point has pressure 4000 Pa lower under these assumptions."
+            ]
+          },
+          "equation": "pressure drop = ½ × density × (final speed² − initial speed²)",
+          "terms": "Bernoulli’s rule: An energy relationship for a fluid under specified steady-flow conditions. Flow path: The route followed by a small part of the fluid. ² (squared): Multiply the speed by itself before subtracting the two results. Streamline: A line that follows the direction of the flow at each point.",
+          "limits": "Compare points along the same streamline in steady, incompressible, negligible-friction flow. Include the height term when height changes, and account for pumps or energy losses when present. Faster fluid does not universally mean lower pressure.",
+          "check": {
+            "prompt": "Which change requires a different energy account?",
+            "options": [
+              "Keeping the pipe level",
+              "Adding a pump between the points",
+              "Using the same liquid"
+            ],
+            "answer": 1,
+            "explanations": [
+              "A level pipe fits the example’s same-height condition.",
+              "Correct. A pump supplies energy, so its contribution must be included.",
+              "Using the same constant-density liquid fits this model."
+            ]
+          },
+          "apply": {
+            "title": "Calculate one pressure drop",
+            "text": "Under the same ideal conditions, water speeds up from 2 m/s to 4 m/s. Find the pressure drop.",
+            "answer": "½ × 1000 × (16 − 4) = 6000 Pa. The height is unchanged and no pump or friction loss is included."
+          },
+          "practice": {
+            "prompt": "Under the same ideal conditions, water speeds up from 2 m/s to 4 m/s. Find the pressure drop.",
+            "parts": [
+              {
+                "label": "Pressure drop",
+                "unit": "Pa",
+                "answer": 6000,
+                "tolerance": 0.00001,
+                "feedback": "Square each speed before subtracting: ½ × 1000 × (4² − 2²) = 6000 Pa."
+              }
+            ],
+            "reasoning": "½ × 1000 × (16 − 4) = 6000 Pa. The height is unchanged and no pump or friction loss is included."
+          },
+          "focus": {
+            "idea": "In a suitable steady flow, pressure can fall as the fluid speeds up.",
+            "explanation": "Pressure forces can make a fluid speed up. Compare two points along one steady flow path at the same height. This rule assumes the density stays fixed, friction removes almost no energy, and no pump adds energy.",
+            "example": {
+              "title": "Water speeds up in a level pipe",
+              "steps": [
+                "Use density 1000 kg/m³; speed rises from 1 m/s to 3 m/s.",
+                "The pressure drop is ½ × 1000 × (3² − 1²) = 4000 Pa.",
+                "The faster point has pressure 4000 Pa lower under these assumptions."
+              ]
+            },
+            "equation": "pressure drop = ½ × density × (final speed² − initial speed²)",
+            "terms": [
+              {
+                "term": "Bernoulli’s rule",
+                "definition": "A way to track energy in flowing fluid, under the conditions given here."
+              },
+              {
+                "term": "Flow path",
+                "definition": "The route followed by a small part of the fluid."
+              },
+              {
+                "term": "² (squared)",
+                "definition": "Multiply the speed by itself before subtracting the two results."
+              },
+              {
+                "term": "Streamline",
+                "definition": "A line that follows the direction of the flow at each point."
+              }
+            ]
+          },
+          "body": [
+            "Pressure forces can make a fluid speed up. Compare two points along one steady flow path at the same height. This rule assumes the density stays fixed, friction removes almost no energy, and no pump adds energy."
+          ],
+          "glossary": [
+            {
+              "term": "Bernoulli’s rule",
+              "definition": "A way to track energy in flowing fluid, under the conditions given here."
+            },
+            {
+              "term": "Flow path",
+              "definition": "The route followed by a small part of the fluid."
+            },
+            {
+              "term": "² (squared)",
+              "definition": "Multiply the speed by itself before subtracting the two results."
+            },
+            {
+              "term": "Streamline",
+              "definition": "A line that follows the direction of the flow at each point."
+            }
+          ],
+          "prerequisiteIds": [
+            "mechanics/fluid-continuity",
+            "mechanics/fluid-pressure-depth",
+            "mechanics/kinetic-energy"
+          ],
+          "visual": {
+            "type": "concept",
+            "title": "Use energy to compare pressure and speed",
+            "caption": "Use the example to explain the relationship in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "In a suitable steady flow, pressure can fall as the fluid speeds up."
+              }
+            ]
+          },
+          "equationGuide": {
+            "meaning": "Pressure forces can make a fluid speed up. Compare two points along one steady flow path at the same height. This rule assumes the density stays fixed, friction removes almost no energy, and no pump adds energy.",
+            "symbols": []
+          },
+          "moduleId": "mechanics-helpful-bridges"
+        }
+      ]
+    }
+  ]
+}

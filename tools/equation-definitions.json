@@ -1,0 +1,1440 @@
+{
+  "common": {
+    "sin": "Sine: a rule that turns an angle into a number. In a right triangle, it is opposite side divided by longest side.",
+    "cos": "Cosine: a rule that turns an angle into a number. In a right triangle, it is the nearby side divided by longest side.",
+    "tan": "Tangent: sine divided by cosine for the same angle.",
+    "tanh": "Hyperbolic tangent: a calculator function whose answer stays between −1 and 1.",
+    "exp": "The exponential rule: exp(x) means e raised to x, where e is about 2.718.",
+    "ln": "Natural logarithm: the power you give e to make the input number. Here e is about 2.718.",
+    "log": "Logarithm: the power needed to make the input number, using the base stated in the lesson.",
+    "Tr": "Trace: add the entries along the main diagonal of a square matrix, from top left to bottom right.",
+    "diag": "Make a matrix with these values on its main diagonal and zeros elsewhere.",
+    "det": "Determinant: one number made from a square matrix. For a two-by-two matrix, multiply the main-diagonal entries and subtract the other diagonal's product.",
+    "Var": "Variance: the average squared distance of values from their average. It tells us their spread.",
+    "Cov": "Covariance: how two quantities change together after their averages are removed.",
+    "Re": "Real part: the part of a complex number that does not multiply the imaginary unit i.",
+    "Im": "Imaginary part: the real number multiplying i in a complex number.",
+    "mean": "Average: add the values and divide by how many there are, or use the stated probability weights.",
+    "Σ": "Add the indicated terms. The small labels tell you which terms to include.",
+    "Δ": "Change: the final value minus the starting value, unless this lesson states a different comparison.",
+    "ℏ": "Reduced Planck constant: a fixed number connecting quantum energy to angular frequency. Read it as h-bar.",
+    "π": "Pi: the circle constant, about 3.14159.",
+    "cm": "Centimetres: 100 centimetres make one metre.",
+    "mm": "Millimetres: 1,000 millimetres make one metre.",
+    "km": "Kilometres: one kilometre is 1,000 metres.",
+    "nm": "Nanometres: one billionth of a metre each.",
+    "ms": "Milliseconds: 1,000 milliseconds make one second.",
+    "kg": "Kilograms: a unit for mass, or how much matter an object has.",
+    "Hz": "Hertz: cycles or readings per second, as named in this lesson.",
+    "Pa": "Pascals: a unit of pressure, equal to one newton of force per square metre.",
+    "rad": "Radians: an angle unit. One radian cuts off an arc as long as the circle's radius.",
+    "eV": "Electronvolts: an energy unit equal to the energy change of one elementary charge across one volt.",
+    "keV": "Kiloelectronvolts: 1,000 electronvolts of energy.",
+    "MeV": "Megaelectronvolts: one million electronvolts of energy.",
+    "GeV": "Gigaelectronvolts: one billion electronvolts of energy. With c = 1, mass and momentum can use this unit too.",
+    "Mpc": "Megaparsecs: a distance unit used for very large distances in space.",
+    "mol": "Moles: groups containing the fixed Avogadro number of specified particles.",
+    "d": "A tiny change. In dA/dt, divide the tiny change in A by the tiny change in time to find its rate. In an integral, d names the small pieces being added.",
+    "e": "The exponential constant, about 2.718. Raising it to a changing power describes exponential growth, decay or phase.",
+    "Σⱼ": "Add the terms for all allowed labels j.",
+    "Σₙ": "Add the terms for all allowed numbers n.",
+    "log₂": "Base-two logarithm: the power you give 2 to obtain the number in brackets.",
+    "ħ": "Reduced Planck constant, read h-bar: the fixed number connecting quantum energy and angular frequency.",
+    "cot": "Cotangent: cosine divided by sine for the same angle.",
+    "sinh": "Hyperbolic sine: a calculator function used for growing and shrinking shapes.",
+    "cosh": "Hyperbolic cosine: a calculator function used for growing and shrinking shapes.",
+    "sinc": "Sinc: sine of the input divided by the input; its value at zero is 1.",
+    "lim": "Limit: the value approached as the input gets closer to the stated number.",
+    "dim": "Dimension: the number of independent directions in this state space.",
+    "cov": "Covariance: a measure of how two quantities change together.",
+    "MJ": "Megajoules: one million joules of energy.",
+    "au": "Astronomical unit: about the average distance from Earth to the Sun.",
+    "arcsin": "Inverse sine: find the angle whose sine equals the input number."
+  },
+  "courses": {
+    "foundations": {
+      "m": "Metres: a unit of length or distance.",
+      "s": "Seconds: a unit of time."
+    },
+    "math": {
+      "m": "Metres: a unit of length or distance.",
+      "s": "Seconds: a unit of time.",
+      "N₀": "The starting amount N, when time is zero. The small zero labels the starting value.",
+      "ω₀": "The natural angular frequency: how quickly the unforced oscillator repeats, measured in radians per second.",
+      "x": "The input value, or horizontal position when a position is being studied.",
+      "t": "Time.",
+      "v": "Velocity: how fast position changes, including direction.",
+      "a": "Acceleration: how fast velocity changes.",
+      "N": "Newtons, a unit of force.",
+      "C": "Coulombs, a unit of electric charge.",
+      "z": "The z direction, perpendicular to the x and y directions.",
+      "u₁": "First part of vector u.",
+      "u₂": "Second part of vector u.",
+      "v₁": "Velocity labeled 1.",
+      "v₂": "Velocity labeled 2."
+    },
+    "mechanics": {
+      "m": "Metres: a unit of length or distance.",
+      "s": "Seconds: a unit of time.",
+      "N": "Newtons: a unit of force, or push or pull.",
+      "J": "Joules: a unit of energy or work.",
+      "v₀": "The starting velocity, including its direction. The small zero means the value at time zero.",
+      "ω₀": "The starting angular velocity: the signed rotation rate at time zero.",
+      "m₁": "Mass of object 1: how much matter that object has.",
+      "m₂": "Mass of object 2: how much matter that object has.",
+      "x₁": "Position of object 1 along the chosen line.",
+      "x₂": "Position of object 2 along the chosen line.",
+      "u₁": "Velocity of object 1 before the collision.",
+      "u₂": "Velocity of object 2 before the collision.",
+      "v₁": "Velocity of object 1 after the collision.",
+      "v₂": "Velocity of object 2 after the collision.",
+      "μm": "μ × m: the gravity parameter GM multiplied by the orbiting object’s mass m.",
+      "x": "Position along the chosen line.",
+      "t": "Time.",
+      "v": "Velocity: speed together with direction.",
+      "a": "Acceleration: how fast velocity changes.",
+      "F": "Force: a push or pull.",
+      "U": "Potential energy: energy stored because of position or shape.",
+      "ω": "Angular velocity: how fast an object turns, including its turning direction.",
+      "i": "The label i means the starting value here.",
+      "f": "The label f means the final value here."
+    },
+    "em": {
+      "ε₀": "Vacuum permittivity: the constant setting the electric-field scale in empty space.",
+      "μ₀": "Vacuum permeability: the constant setting the magnetic-field scale in empty space.",
+      "Q₀": "Charge at the starting time.",
+      "V₀": "Voltage at the starting time.",
+      "I₀": "Current at the starting time.",
+      "ω₀": "Natural angular frequency: how quickly this circuit oscillates when undriven, in radians per second.",
+      "q₁": "Electric charge of object 1, including its sign.",
+      "q₂": "Electric charge of object 2, including its sign.",
+      "t": "Time.",
+      "E": "Electric field: the force per unit of positive charge.",
+      "B": "Magnetic field strength and direction.",
+      "A": "Area: how much surface is covered.",
+      "V": "Voltage: energy change per unit of charge.",
+      "J": "Current density: electric current per unit of area, with a direction.",
+      "I": "Electric current: charge passing a point each second.",
+      "q": "Electric charge on the object or plate being studied.",
+      "ℓ": "Distance along the chosen path."
+    },
+    "waves": {
+      "ω₀": "Natural angular frequency: the unforced, undamped oscillation rate in radians per second.",
+      "A₀": "Starting size of the oscillation amplitude.",
+      "E₀": "Starting energy in the decay formula, or peak electric-field size in a wave formula; the lesson identifies which quantity E represents.",
+      "A₁": "Amplitude, or peak size, of wave 1.",
+      "A₂": "Amplitude, or peak size, of wave 2.",
+      "ε₀": "Vacuum permittivity: the constant setting the electric-field scale in empty space.",
+      "θ₁": "Angle in medium 1, measured from the surface normal.",
+      "θ₂": "Angle in medium 2, measured from the surface normal.",
+      "P_in": "Power supplied: energy added each second.",
+      "P_loss": "Power lost: energy removed each second.",
+      "ℓ": "Distance traveled along a path.",
+      "p": "Pressure; the prime mark here selects the small change from the resting pressure.",
+      "I": "Intensity: wave power reaching each unit of area."
+    },
+    "thermodynamics": {
+      "p_external": "Pressure exerted on the system from outside.",
+      "V": "Volume: how much space the system occupies.",
+      "T": "Temperature, or the temperature whose change is written ΔT; use the scale specified in the lesson.",
+      "V_initial": "The starting volume.",
+      "V_final": "The final volume.",
+      "N": "Number of particles."
+    },
+    "optics": {
+      "θ_reflected": "Angle of the reflected ray, measured from the line perpendicular to the surface.",
+      "θ_incoming": "Angle of the incoming ray, measured from the line perpendicular to the surface.",
+      "θ_critical": "The incidence angle at which the transmitted ray runs along the boundary.",
+      "λ_material": "Wavelength inside the material: the distance between repeating wave peaks.",
+      "λ_vacuum": "Wavelength in empty space.",
+      "d_image": "Image distance in the lesson’s sign convention. A following 1 or 2 identifies the relevant lens.",
+      "d_object": "Object distance in the lesson’s sign convention. A following 1 or 2 identifies the relevant lens.",
+      "m₁": "Signed magnification of the first lens: image size divided by object size.",
+      "m₂": "Signed magnification of the second lens.",
+      "f_number": "F-number: focal length divided by the entrance-pupil diameter.",
+      "focal_length": "Focal length: the lens’s distance scale for focusing parallel rays.",
+      "pupil_diameter": "Width across the entrance pupil, the apparent opening seen from the object side.",
+      "f_objective": "Focal length of the objective, the lens facing the distant object.",
+      "f_eyepiece": "Focal length of the eyepiece, the lens nearer the eye.",
+      "E_x": "The electric field’s x-direction part.",
+      "E_y": "The electric field’s y-direction part.",
+      "I_out": "Light intensity after passing through the stated device.",
+      "I_in": "Light intensity arriving at the device.",
+      "I₁": "Intensity from the first wave alone.",
+      "I₂": "Intensity from the second wave alone.",
+      "n_j": "Refractive index of section j: how much that section slows the light’s phase speed.",
+      "L_j": "Distance traveled through section j.",
+      "I_max": "Largest intensity in the interference pattern.",
+      "I_min": "Smallest intensity in the interference pattern.",
+      "E_total": "Total electric field after adding the wave contributions.",
+      "I_image": "Light intensity at the chosen image position.",
+      "B₁": "Brightness assigned to object point 1 in this image model.",
+      "B₂": "Brightness assigned to object point 2 in this image model.",
+      "h₁": "The image’s spread pattern from point 1, evaluated at the chosen image position.",
+      "h₂": "The image’s spread pattern from point 2, evaluated at the chosen image position.",
+      "θ_R": "Angular separation at the stated Rayleigh resolution limit.",
+      "sampling_frequency": "Number of samples per unit distance in this spatial-sampling lesson.",
+      "pixel_pitch": "Distance from one pixel centre to the next.",
+      "ν_x": "Spatial frequency in the x direction: cycles per unit distance.",
+      "ν_c": "Cutoff spatial frequency: the highest spatial frequency passed in the stated ideal model.",
+      "n_cladding": "Refractive index of the outer layer around a fibre’s core.",
+      "n_core": "Refractive index of the fibre’s inner core.",
+      "n_effective": "Effective index describing the phase speed of the chosen guided mode.",
+      "I_photo": "Electric current produced by the detected light.",
+      "E_photon": "Energy carried by one photon.",
+      "I": "Light intensity: power reaching each unit of area.",
+      "I₀": "The reference light intensity, defined in the lesson.",
+      "F": "Fourier transform: a rule that rewrites a shape as a mix of waves."
+    },
+    "atomic-nuclear": {
+      "E_photon": "Energy carried by the emitted or absorbed photon.",
+      "E_upper": "Energy of the higher state.",
+      "E_lower": "Energy of the lower state.",
+      "E_separated": "Energy of the same parts when they are separated, using the stated reference.",
+      "E_bound": "Energy of those parts in the bound state.",
+      "binding_energy": "Energy needed to separate the bound parts in the stated comparison.",
+      "E_n": "Energy of the state labeled by the integer n.",
+      "L_z": "Orbital angular momentum measured along the chosen z direction.",
+      "E": "Energy of the state being described.",
+      "E_base": "Energy from the simpler starting model.",
+      "E_fine": "Fine-structure energy contribution: a small correction from effects such as spin–orbit coupling. The preceding δ marks the correction.",
+      "E_hyperfine": "Hyperfine energy contribution: a still smaller correction involving nuclear properties. The preceding δ marks the correction.",
+      "n_i": "Occupation of complete electron state i: zero means empty and one means occupied.",
+      "Z_effective": "Effective nuclear charge: the approximate pull felt after other electrons partly screen the nucleus.",
+      "electron_count": "Total number of electrons.",
+      "sum_of_occupations": "Add the electron counts in the listed complete states.",
+      "gap_correction": "Change made to the predicted energy gap by the improved model.",
+      "improved_gap": "Energy gap predicted by the improved model.",
+      "reference_gap": "Energy gap from the starting comparison model.",
+      "net_stimulated_rate": "Stimulated emission rate minus stimulated absorption rate.",
+      "N_upper": "Number of particles in the upper level.",
+      "N_lower": "Number of particles in the lower level.",
+      "g_upper": "Number of distinct states sharing the upper level’s energy.",
+      "g_lower": "Number of distinct states sharing the lower level’s energy.",
+      "F": "Force, or push or pull, along the separation direction.",
+      "U_effective": "Effective potential energy for the slow nuclear motion.",
+      "E_electronic": "Electron energy for the stated fixed nuclear separation.",
+      "U_nuclear": "Potential energy from the nuclei’s direct interaction.",
+      "E_rotation": "Energy stored in molecular rotation in this model.",
+      "D_e": "Energy from the bottom of the molecular well up to separated fragments.",
+      "E_zero": "Vibrational ground-state energy above the bottom of the well.",
+      "r₀": "Radius scale in the nuclear-size model, before multiplying by A to the one-third power.",
+      "average_binding": "Binding energy divided by the total number of protons and neutrons.",
+      "B": "Total nuclear binding energy in this equation.",
+      "B_volume": "The binding contribution associated with the bulk of the nucleus.",
+      "B_surface": "The binding reduction associated with nucleons at the surface.",
+      "B_repulsion": "The binding reduction from proton–proton electric repulsion.",
+      "B_imbalance": "The binding reduction associated with an imbalance between neutron and proton counts.",
+      "δ_pair": "The stated positive, negative or zero correction for pairing.",
+      "E_next": "Energy of the next available state above the filled group.",
+      "E_filled": "Energy of the highest filled state in this comparison.",
+      "T_half": "Half-life: time for the expected undecayed population to halve.",
+      "daughter_change_rate": "How quickly the daughter-nucleus count changes.",
+      "production_rate": "Number of daughter nuclei made per unit time.",
+      "decay_rate": "Number of daughter nuclei lost by decay per unit time.",
+      "A_after": "Total proton-plus-neutron count of the remaining nucleus after decay.",
+      "A_before": "Total proton-plus-neutron count before decay.",
+      "Z_after": "Proton count of the remaining nucleus after decay.",
+      "Z_before": "Proton count before decay.",
+      "E_gap": "Energy difference between the two nuclear levels.",
+      "E_recoil": "Motion energy gained by the recoiling nucleus.",
+      "total_charge_before": "Add all electric charges before the process.",
+      "total_charge_after": "Add all electric charges after the process.",
+      "energy_loss": "Energy transferred from the traveling particle to its surroundings.",
+      "stopping_power": "Energy lost per unit distance in the stated material.",
+      "N_signal": "Estimated signal count after background and efficiency correction.",
+      "N_observed": "Count actually recorded by the detector.",
+      "N_background": "Estimated count from sources other than the desired signal.",
+      "A_initial": "Proton-plus-neutron count for each initial nucleus or nucleon in the sum.",
+      "A_final": "Proton-plus-neutron count for each final nucleus or nucleon in the sum.",
+      "Z_initial": "Proton number for each initial nuclear label in the stated reaction.",
+      "Z_final": "Proton number for each final nuclear label in the stated reaction.",
+      "m_initial": "Rest mass of each initial particle or nucleus in the sum.",
+      "m_final": "Rest mass of each final particle or nucleus in the sum.",
+      "N_target": "Number of target particles available for the reaction.",
+      "E_CM": "Total energy in the centre-of-momentum frame; “threshold” labels the minimum required value.",
+      "final_rest_energies": "The rest energies of all required outgoing particles, added together.",
+      "released_energy": "Energy made available by the decrease in total rest energy.",
+      "initial_rest_energy": "Total rest energy before the rearrangement.",
+      "final_rest_energy": "Total rest energy after the rearrangement.",
+      "electric_potential_energy": "Energy associated with the electric interaction of the two nuclei.",
+      "Z₁": "Proton count of nucleus 1.",
+      "Z₂": "Proton count of nucleus 2.",
+      "stored_energy_change": "Change in the energy kept inside the chosen system.",
+      "generated_energy": "Energy supplied inside the chosen system during the interval.",
+      "escaping_energy": "Energy leaving the system during the interval.",
+      "N₀": "Starting number of undecayed nuclei in the sample.",
+      "D₀": "Energy needed to dissociate the molecule from its vibrational ground state.",
+      "I₀": "Incident intensity before attenuation through the material.",
+      "E₁": "Energy of level 1.",
+      "E₂": "Energy of level 2.",
+      "E₃": "Energy of level 3.",
+      "R₁": "The measured decay count rate at the first time.",
+      "R₂": "The measured decay count rate at the second time.",
+      "t₁": "Time of the first rate measurement.",
+      "t₂": "Time of the second rate measurement.",
+      "t": "Time.",
+      "c": "The speed of light in empty space.",
+      "m": "Mass; Δm means the difference between the starting and final total masses.",
+      "δ": "A small correction to the energy.",
+      "T": "The T with a one-half label means half-life: time for the expected undecayed count to halve.",
+      "P": "Radial probability density: multiplying by a tiny radial thickness gives the chance within that shell.",
+      "ν̄": "Antineutrino. The small e label selects the electron type."
+    },
+    "particles": {
+      "q_antiparticle": "Electric charge of the antiparticle.",
+      "q_particle": "Electric charge of the corresponding particle.",
+      "q_up": "Electric charge of an up quark.",
+      "q_down": "Electric charge of a down quark.",
+      "proton_valence_label": "The proton’s valence-quark label: uud means two up quarks and one down quark. It is not its complete quantum state.",
+      "E_parent": "Energy of the particle before it decays, in the chosen frame.",
+      "E_products": "Energies of the outgoing particles, all measured in the same frame.",
+      "p_parent": "Momentum of the particle before decay, including direction.",
+      "p_products": "Momenta of the outgoing particles; add their vector components.",
+      "E_each": "Energy of each outgoing particle in the stated equal-energy case.",
+      "c": "Speed of light in empty space.",
+      "E_i": "Energy of outgoing particle i in the chosen frame.",
+      "p_i": "Momentum of outgoing particle i in the same frame.",
+      "E_CM": "Total energy in the frame where total momentum is zero.",
+      "B_i": "Branching fraction for channel i: the share of decays taking that route.",
+      "Γ_i": "Decay width for channel i: its contribution to the overall decay rate, expressed in energy units.",
+      "Γ_total": "Total decay width after adding all channels.",
+      "cross_section": "Cross section: the effective area measuring how strongly the specified collision process occurs.",
+      "N": "Expected number of detected events.",
+      "L_integrated": "Integrated luminosity: the accumulated beam-overlap exposure over the run.",
+      "total_amplitude": "The combined complex amplitude for the specified final outcome.",
+      "contributing_amplitudes": "The separate amplitude contributions leading to that same final outcome.",
+      "leading_result": "The first nonzero term kept in the approximation.",
+      "B": "Baryon number: a count-like label equal to one third of quark count minus antiquark count here.",
+      "n_quark": "Number of quarks being counted.",
+      "n_antiquark": "Number of antiquarks being counted.",
+      "channel_yield": "Expected event count for the selected final-state channel.",
+      "production_rate": "Rate at which the parent particle is produced.",
+      "branching_fraction": "Fraction of decays going into the selected channel.",
+      "total_rest_frame_energy": "All energy in the system’s rest frame, including motion and interaction energy of its parts.",
+      "p_missing": "Momentum imbalance inferred from the visible particles; the T label selects the part across the beam direction.",
+      "p_visible": "Measured visible-particle momenta; the T label selects their transverse parts.",
+      "observed_count": "Number of events actually recorded in the chosen sample.",
+      "expected_background": "Estimated count from known processes other than the proposed signal.",
+      "E₁": "Energy of photon 1.",
+      "E₂": "Energy of photon 2.",
+      "σ_channel": "Cross section already restricted to the selected channel; do not multiply its branching fraction a second time.",
+      "total_charge_initial": "Sum of all electric charges before the process.",
+      "total_charge_final": "Sum of all electric charges after the process.",
+      "q": "Electric charge, including its positive or negative sign.",
+      "T": "Teslas: a unit of magnetic field strength.",
+      "m": "Mass. In Δm², compare the squares of the two particle masses."
+    },
+    "materials": {
+      "vacancy_fraction": "Fraction of lattice sites that are empty.",
+      "vacant_sites": "Number of empty lattice sites.",
+      "total_sites": "Total number of sites being counted.",
+      "s_modulus": "Young’s modulus: the material’s stiffness for small stretches along the stated direction.",
+      "F_n": "Net force on the atom or site labeled n.",
+      "u_next": "Displacement of the next site from its rest position.",
+      "u_previous": "Displacement of the preceding site from its rest position.",
+      "u_n": "Displacement of site n from its rest position.",
+      "C_lattice": "Heat capacity contributed by the lattice vibrations.",
+      "occupancy_per_complete_electron_state": "Number of electrons in one full state, including its spin label.",
+      "occupied_count": "Estimated number of occupied states in the chosen small energy interval.",
+      "k_B": "Boltzmann constant: the fixed factor connecting temperature to a particle-scale energy.",
+      "E_gap": "Energy gap between the specified states or bands.",
+      "μ_mobility": "Carrier mobility: drift speed per unit electric field. This μ is not a mass or a magnetic moment.",
+      "n_intrinsic": "Electron density of the pure intrinsic semiconductor; its hole density is the same.",
+      "ρ_mobile": "Net electric charge per volume carried by mobile electrons and holes.",
+      "n_idealk_BT": "n_ideal × k_B × T: diode ideality factor times Boltzmann constant times absolute temperature.",
+      "P_out": "Useful output power: energy delivered each second.",
+      "P_in": "Input power: energy arriving each second.",
+      "ε₀": "Vacuum permittivity: the constant setting the electric-field scale in empty space.",
+      "E_final": "Energy of the final electron state.",
+      "E_initial": "Energy of the initial electron state.",
+      "E_exciton": "Energy needed for the bound electron–hole excitation in this model.",
+      "E_binding": "Energy by which binding lowers the electron–hole pair relative to the unbound pair.",
+      "M_net": "Overall magnetization after combining the domains.",
+      "volume_fraction": "Fraction of the sample volume occupied by that domain.",
+      "domain_magnetization": "Magnetic moment per volume within that domain, including its direction.",
+      "k_BT_c": "k_B × T_c: Boltzmann constant times the critical temperature, an energy scale.",
+      "E_conduction": "Energy in the conduction band; “min” selects its lowest value.",
+      "E_valence": "Energy in the valence band; “max” selects its highest value.",
+      "d_new": "New spacing between the stated crystal planes.",
+      "d_old": "Original spacing between those planes.",
+      "θ_new": "New diffraction angle in the stated Bragg-angle convention.",
+      "θ_old": "Original diffraction angle in the same convention.",
+      "t": "Time.",
+      "x": "Position along the chosen line.",
+      "n": "The site number in the chain of atoms.",
+      "m": "Effective mass: the mass-like number describing how a particle responds inside the material.",
+      "E": "Energy; the plus or minus sign selects the upper or lower energy.",
+      "μ": "Mobility when labeled mob, n or p: how quickly a carrier drifts for a given electric field.",
+      "χ": "Susceptibility: how strongly the material responds to the applied field. The e or m label selects electric or magnetic response."
+    },
+    "quantum1": {
+      "i": "Imaginary unit: the number defined by i² = −1. It lets amplitudes carry a phase.",
+      "ψ": "The quantum state or wavefunction, read “psi.” Its amplitudes are used to predict measurement chances.",
+      "x": "Position along the chosen x direction.",
+      "H": "Hamiltonian: the operator describing energy and governing how the state changes with time.",
+      "E₁": "Energy of state 1 in the stated model.",
+      "E₂": "Energy of state 2 in the stated model.",
+      "c₀": "Complex amplitude multiplying basis state 0.",
+      "c₁": "Complex amplitude multiplying basis state 1.",
+      "u₀": "Basis pattern or state labeled 0.",
+      "u₁": "Basis pattern or state labeled 1.",
+      "u₂": "Basis pattern or state labeled 2.",
+      "u_i": "Basis pattern labeled i. Here i is a label, not the imaginary unit.",
+      "σ_x": "Standard deviation of position: the spread of position outcomes.",
+      "σ_p": "Standard deviation of momentum: the spread of momentum outcomes.",
+      "p₀": "Starting mean momentum of the wave packet.",
+      "P": "Probability: the chance of the stated result, from 0 to 1.",
+      "t": "Time.",
+      "j": "The label of the measured outcome.",
+      "a": "The left end of the position interval.",
+      "b": "The right end of the position interval.",
+      "V": "Potential energy, which can change with position.",
+      "L": "Orbital angular momentum: the quantum quantity describing motion around a point.",
+      "L̂": "The rule for finding orbital angular momentum; the hat marks it as an operator.",
+      "Y": "The angular wavefunction: how the state depends on direction.",
+      "m_ec": "m_e × c: electron mass times the speed of light. In m_ec², only the speed is squared."
+    },
+    "quantum2": {
+      "i": "Imaginary unit: the number defined by i² = −1. It lets amplitudes carry a phase.",
+      "ψ": "The quantum state or wavefunction, read “psi.” Its amplitudes are used to predict measurement chances.",
+      "x": "Position along the chosen x direction.",
+      "H": "Hamiltonian: the operator describing energy and governing how the state changes with time.",
+      "I": "Identity operator: it leaves a state unchanged.",
+      "U†": "The conjugate transpose of U; for a unitary gate, this undoes U.",
+      "A": "The observable operator being studied: a rule associated with measurement outcomes.",
+      "B": "The second observable operator in the stated comparison.",
+      "u_j": "Component j of state u in the chosen basis.",
+      "v_j": "Component j of state v in the same basis.",
+      "Σ_j": "Add the terms for every allowed label j.",
+      "Σ_i": "Add the terms for every allowed label i.",
+      "Σ_k": "Add the terms for every allowed label k.",
+      "Σ_a": "Add the terms for all distinct allowed values labeled a.",
+      "z": "The chosen z direction used as a reference for the measurement.",
+      "S_z": "The spin angular-momentum operator along z.",
+      "ρ": "Density matrix: a table of amplitudes and weights used to predict measurements of a pure state or a mixture.",
+      "ρ_AB": "Density matrix of systems A and B together.",
+      "ρ†": "The conjugate transpose of ρ: swap rows and columns and reverse the imaginary parts.",
+      "P": "The probability or projector named P in this lesson; a projector selects a specified outcome subspace.",
+      "α₀": "Starting complex amplitude of the coherent state.",
+      "χ": "The spin-state part of the full state in the stated space-times-spin separation.",
+      "ψ_initial": "Quantum state before the operations.",
+      "ψ_final": "Quantum state after the operations.",
+      "a₀": "Amplitude for outcome 0 in the first qubit’s state.",
+      "a₁": "Amplitude for outcome 1 in the first qubit’s state.",
+      "b₀": "Amplitude for outcome 0 in the second qubit’s state.",
+      "b₁": "Amplitude for outcome 1 in the second qubit’s state.",
+      "c₀₀": "Amplitude of joint basis state |00⟩.",
+      "c₀₁": "Amplitude of joint basis state |01⟩.",
+      "c₁₀": "Amplitude of joint basis state |10⟩.",
+      "c₁₁": "Amplitude of joint basis state |11⟩.",
+      "Sₓ": "Spin angular-momentum operator along x.",
+      "Sᵧ": "Spin angular-momentum operator along y.",
+      "σₓ": "Pauli x matrix: the operation that swaps the two basis amplitudes.",
+      "P₀": "Probability starting from state 0; the arrow to 1 specifies transfer into state 1.",
+      "t": "Time.",
+      "E": "Energy. The plus or minus label selects one of the two energies.",
+      "J": "Angular momentum: the quantum quantity describing rotation.",
+      "J₁": "Angular momentum of the first part of the system.",
+      "J₂": "Angular momentum of the second part of the system.",
+      "J_+": "Raising operator: moves the angular-momentum state up by one allowed component step.",
+      "J_-": "Lowering operator: moves the angular-momentum state down by one allowed component step.",
+      "S": "Spin angular momentum: the particle’s built-in quantum rotation quantity.",
+      "j": "The label of the total angular-momentum size, or an outcome label in a measurement sum.",
+      "m": "The row or state label m in the displayed expression.",
+      "n": "The column or state label n in the displayed expression.",
+      "Ψ": "The two-particle quantum state. The plus or minus label selects its exchange symmetry.",
+      "λ": "An eigenvalue: an allowed value associated with the matrix.",
+      "σ_A": "Standard deviation of A: the typical spread of its measurement results.",
+      "σ_B": "Standard deviation of B: the typical spread of its measurement results.",
+      "σ_y": "Standard deviation of the y component: its measurement spread.",
+      "σ_z": "Standard deviation of the z component: its measurement spread.",
+      "φ": "The part of the wavefunction describing positions.",
+      "ψ_new": "The wavefunction after shifting it.",
+      "ψ_old": "The wavefunction before shifting it.",
+      "ψ_rot": "The wavefunction after rotating it."
+    },
+    "quantum3": {
+      "i": "Imaginary unit: the number defined by i² = −1. It lets amplitudes carry a phase.",
+      "ψ": "The quantum state or wavefunction, read “psi.” Its amplitudes are used to predict measurement chances.",
+      "x": "Position along the chosen x direction.",
+      "H": "Hamiltonian: the operator describing energy and governing how the state changes with time.",
+      "m": "Mass of the moving particle in the stated model.",
+      "c": "Speed of light in empty space.",
+      "t": "Time.",
+      "V": "Potential-energy or interaction operator specified in this lesson.",
+      "Σ_i": "Add the terms for every allowed label i.",
+      "Σ_j": "Add the terms for every allowed label j.",
+      "Σ_l": "Add the angular-momentum channels labeled l.",
+      "N₀": "Starting population before decay.",
+      "γ₁": "Population-relaxation rate: how quickly excited-state population falls.",
+      "S_rate": "Survival probability predicted by the stated constant-rate approximation.",
+      "P_transfer": "Probability transferred to the specified destination state or set of states.",
+      "ρ_E": "Density of final states per unit energy.",
+      "χ": "Nuclear-motion amplitude in the stated separation of electron and nuclear motion.",
+      "C₀": "Coulomb-potential strength in the stated hydrogen-like model.",
+      "Eₘ": "Energy of the state labeled m; the superscript (0) means the unperturbed value.",
+      "U₀†": "Inverse of the unperturbed evolution operator U₀.",
+      "E": "Energy; a plus or minus label selects one of the displayed levels.",
+      "Eₙ": "Energy of state n. A raised number in brackets labels the correction order, not a power.",
+      "c_f": "Amplitude for reaching the final state f. A raised (1) marks the first-order estimate.",
+      "j": "Probability current: how quickly probability moves past a point.",
+      "s": "The running position used while adding the small pieces in the integral.",
+      "n": "A state label. A sum over n includes the specified states.",
+      "u": "A normalized state of the displayed matrix.",
+      "Ω": "Solid angle: the size of a patch of directions.",
+      "σ": "Scattering cross section: an effective target area for a scattering outcome.",
+      "f": "Scattering amplitude: a number whose squared size sets scattering probability per angle."
+    },
+    "advanced-mechanics": {
+      "L": "Lagrangian: kinetic energy minus potential energy in the models used here.",
+      "S": "Action: the Lagrangian added up over the chosen time interval.",
+      "m": "Mass: how much matter the modeled object has.",
+      "q": "The chosen position-like coordinate. It can be a distance or an angle, as stated in the lesson.",
+      "p": "Canonical momentum paired with q. For the simple cart, it is mass times velocity.",
+      "V": "Potential energy: energy associated with position in the chosen force model.",
+      "H": "Hamiltonian: the function of coordinates and momenta that gives their motion rules; it equals total energy in the stated simple models.",
+      "E": "The conserved total energy in the stated model.",
+      "ℓ": "Length of the pendulum from its pivot to its mass.",
+      "g": "Local downward gravitational acceleration.",
+      "v": "Velocity: how quickly position changes, including direction.",
+      "r": "Distance from the centre, or the position vector from the chosen origin when written as a vector.",
+      "t": "Time.",
+      "V_eff": "Effective radial potential: the ordinary potential plus the angular-momentum barrier.",
+      "ω_same": "Angular frequency of the mode in which the two masses move together.",
+      "ω_opposite": "Angular frequency of the mode in which the two masses move in opposite directions.",
+      "y": "Vertical position in the chosen coordinate system.",
+      "m_i": "Mass of the piece labeled i in the sum.",
+      "ω": "Angular velocity: how fast the body turns and about which direction; for a single oscillation it names angular frequency.",
+      "L_rot": "Rotational angular momentum of the rigid body.",
+      "ω_i": "Angular-velocity component along principal axis i.",
+      "i": "The label selecting one of the three principal axes.",
+      "I": "Moment of inertia, or an entry in the inertia description. The small 1, 2 and 3 select the principal axes.",
+      "ω₁": "Angular-velocity component along principal axis 1.",
+      "ω₂": "Angular-velocity component along principal axis 2.",
+      "ω₃": "Angular-velocity component along principal axis 3.",
+      "F": "Force along the chosen coordinate: a push or pull, including its sign.",
+      "E_top": "Pendulum energy at its upright top position, using the bottom as zero potential energy.",
+      "θ": "Pendulum angle measured from its downward rest direction.",
+      "Ω": "Angular frequency of the external driving force.",
+      "t_n": "Time of sample n in the repeated-sampling sequence.",
+      "nT_d": "n × T_d: sample number n multiplied by one driving period.",
+      "Q": "New canonical coordinate after the stated change of variables.",
+      "P": "New canonical momentum paired with Q.",
+      "α": "Positive strength of the attractive potential V = −α/r in the orbit model.",
+      "φ": "Orbital angle. When it appears as a subscript on p, it names the coordinate whose canonical momentum is being used.",
+      "q₁": "Displacement of mass 1 from its rest position.",
+      "q₂": "Displacement of mass 2 from its rest position.",
+      "r₀": "Radius of the circular orbit being tested.",
+      "I₁": "Principal moment of inertia about axis 1.",
+      "I₂": "Principal moment of inertia about axis 2.",
+      "I₃": "Principal moment of inertia about axis 3.",
+      "δ₀": "Starting separation between the two nearby trajectories.",
+      "k": "Spring stiffness: how much more force is needed for each extra stretch.",
+      "x": "Position in the fixed reference frame.",
+      "T": "Kinetic energy: energy of motion.",
+      "a": "Acceleration: how quickly velocity changes.",
+      "p_φ": "Angular momentum for the angle φ. It stays fixed when the forces exert no torque about that axis.",
+      "f": "The function being studied; in a constraint equation, f = 0 sets the allowed positions.",
+      "K": "Stiffness of the spring joining the two objects.",
+      "h": "The height of the moving support at the given time.",
+      "ḣ": "How quickly the support height changes: its vertical velocity.",
+      "ẋ": "Velocity in the fixed frame: the rate of change of x.",
+      "λ": "The constraint multiplier: a number that lets us include the constraint force.",
+      "I_z": "Moment of inertia about the z axis: resistance to changing the turning motion about that axis.",
+      "x_i": "The x position of mass piece i.",
+      "y_i": "The y position of mass piece i.",
+      "I_i": "Moment of inertia about principal axis i.",
+      "τ₁": "Torque about principal axis 1: the turning effect of the applied forces.",
+      "β": "The strength of the extra cubic spring-force term.",
+      "γ": "Damping rate: how strongly the motion is slowed in this model.",
+      "A": "The size of the driving term in the angular-acceleration equation.",
+      "δ": "Distance between two nearby states being compared.",
+      "F₂": "A generating function: a rule used to change position and momentum coordinates together.",
+      "W": "The position-dependent part of the action."
+    },
+    "fluid-dynamics": {
+      "A": "Cross-sectional area of the flow passage.",
+      "v": "Flow velocity or its stated component; subscripts 1 and 2 select the two sections.",
+      "h": "Distance between the two parallel surfaces.",
+      "x": "Position along the x direction.",
+      "y": "Position along the y direction, often measured away from the wall.",
+      "z": "Position along the z direction, upward in the hydrostatic example.",
+      "u": "Flow velocity component in the x direction.",
+      "p": "Fluid pressure: normal push per unit area.",
+      "ρ": "Mass density: fluid mass per volume.",
+      "μ": "Dynamic viscosity: the coefficient relating shear stress to a velocity gradient.",
+      "U": "The reference or outside-flow speed chosen for the model.",
+      "U_model": "Reference flow speed in the scale model.",
+      "L_model": "Reference length in the scale model.",
+      "ν_model": "Kinematic viscosity in the scale model: dynamic viscosity divided by density.",
+      "U_full": "Reference flow speed in the full-size system.",
+      "L_full": "Reference length in the full-size system.",
+      "ν_full": "Kinematic viscosity in the full-size system.",
+      "τ_R": "Reynolds stress: the momentum-flow contribution from linked velocity fluctuations; xy selects the two directions.",
+      "ρ₁": "Mass density at section 1.",
+      "ρ₂": "Mass density at section 2.",
+      "A₁": "Cross-sectional area at section 1.",
+      "A₂": "Cross-sectional area at section 2.",
+      "v₁": "Average flow speed through section 1.",
+      "v₂": "Average flow speed through section 2.",
+      "fₓ": "x component of force per unit volume.",
+      "aₓ": "x component of acceleration.",
+      "Fₓ": "x component of net force on the chosen fluid region.",
+      "t": "Time.",
+      "τ": "Shear stress: sideways force per unit of area.",
+      "D": "The capital D marks change while following a moving bit of fluid.",
+      "w": "Velocity in the z direction.",
+      "u_at": "Fluid velocity at the wall.",
+      "ν": "Kinematic viscosity: viscosity divided by density. It measures how easily velocity differences smooth out.",
+      "r": "Distance from the centre of the pipe.",
+      "R": "The pipe’s inside radius.",
+      "L": "The chosen length scale; for a pipe segment, its length.",
+      "gₓ": "The x part of gravitational acceleration.",
+      "u_out": "Signed fluid velocity leaving the region.",
+      "u_in": "Signed fluid velocity entering the region.",
+      "Ma": "Mach number: fluid speed divided by the local speed of sound.",
+      "F_D": "Drag force: the force opposing motion through the fluid."
+    },
+    "plasma": {
+      "λ_D": "Debye length: the distance scale over which mobile charges screen a small electric disturbance.",
+      "ε₀": "Vacuum permittivity: the constant setting the electric-field scale.",
+      "k_B": "Boltzmann constant: the factor converting temperature into a particle-scale energy.",
+      "T_e": "Electron temperature in kelvin.",
+      "n_e": "Electron number density: electrons per volume.",
+      "n": "Particle number density: number of particles per volume in the stated population.",
+      "m_e": "Electron mass.",
+      "m": "Mass of the charged particle being followed.",
+      "ω_p": "Plasma angular frequency: the natural collective charge-oscillation rate in the stated model.",
+      "ω_pe": "Electron plasma angular frequency.",
+      "φ": "Electric potential: electric potential energy per unit charge.",
+      "B": "Magnetic-field strength, or magnetic-field vector when a direction is needed.",
+      "E": "Electric field: force per unit charge, including direction.",
+      "v_perp": "Particle speed perpendicular to the local magnetic field.",
+      "t": "Time.",
+      "x": "Position along the chosen direction.",
+      "n_s": "Number density of species s; the label identifies the kind of particle.",
+      "u_s": "Average flow velocity of species s.",
+      "ω": "Angular frequency of the wave, in radians per unit time.",
+      "k": "Wave number: how quickly the wave phase changes with distance.",
+      "c_s": "Ion-sound speed in the stated electron-and-ion approximation.",
+      "v_A": "Alfvén speed: the speed of the stated magnetic-tension wave in the fluid model.",
+      "μ₀": "Vacuum permeability: the constant setting the magnetic-field scale.",
+      "A": "Amplitude of the small disturbance.",
+      "v": "Individual particle velocity in the distribution integral.",
+      "f": "Velocity distribution: particle density per velocity interval in this one-dimensional model.",
+      "v_x": "Individual particle velocity in the x direction.",
+      "u_x": "Average particle velocity in the x direction.",
+      "λ₁": "Initial Debye screening length in this comparison.",
+      "λ₂": "New Debye screening length.",
+      "n₁": "Initial particle number density.",
+      "n₂": "New particle number density.",
+      "ω₁": "Initial plasma angular frequency.",
+      "ω₂": "New plasma angular frequency.",
+      "n₀": "Undisturbed electron number density.",
+      "A₀": "Disturbance amplitude at the starting time.",
+      "ω_c": "Cyclotron angular frequency: how fast a charged particle circles in the magnetic field.",
+      "q": "Electric charge of the particle, with its sign.",
+      "n_i": "Number of ions per unit of volume.",
+      "B_m": "Magnetic field strength at the mirror point, where the motion along the field reverses.",
+      "B₀": "Magnetic field strength at the starting point.",
+      "α₀": "Starting angle between the particle velocity and the magnetic field.",
+      "D_s": "Change while following the flow of particle type s.",
+      "D": "Together with Dt, marks a rate while following the moving particles.",
+      "q_s": "Charge of one particle of type s.",
+      "u_i": "Average ion velocity.",
+      "u_e": "Average electron velocity.",
+      "γ": "Growth rate: a positive value makes the disturbance grow; a negative value makes it shrink."
+    },
+    "general-relativity": {
+      "c": "Speed of light in empty space.",
+      "τ": "Proper time: time measured by a clock following the stated path.",
+      "t": "Time coordinate in the chosen description.",
+      "a_near": "Free-fall acceleration at the nearer point.",
+      "a_far": "Free-fall acceleration at the farther point.",
+      "A_μ": "Component μ of A after lowering its index with the metric.",
+      "A": "The vector whose components are being rewritten.",
+      "g_μν": "Metric component with lower labels μ and ν; the metric tells how coordinate changes combine into an interval.",
+      "V": "The vector being moved or differentiated.",
+      "Γ": "Connection coefficient: the correction accounting for how the coordinate directions change from place to place.",
+      "x": "Spacetime coordinate; its raised label selects which coordinate.",
+      "μ": "A component label running over the four spacetime coordinates. Here a raised letter is an index, not a power.",
+      "ν": "A component label running over the four spacetime coordinates. Here a raised letter is an index, not a power.",
+      "α": "A component label running over the four spacetime coordinates. Here a raised letter is an index, not a power.",
+      "β": "A component label running over the four spacetime coordinates. Here a raised letter is an index, not a power.",
+      "σ": "A component label running over the four spacetime coordinates. Here a raised letter is an index, not a power.",
+      "ρ": "A component label running over the four spacetime coordinates. Here a raised letter is an index, not a power.",
+      "R_μν": "Ricci tensor component: a particular sum of spacetime-curvature components.",
+      "a_relative": "Acceleration of one nearby falling object relative to the other.",
+      "p": "Pressure of the fluid measured in its local rest frame.",
+      "G_μν": "Einstein tensor component: the combination of Ricci curvature and its trace used in the gravity equation.",
+      "T": "Stress-energy tensor: the collection describing energy, momentum and stresses. Its labels select one component.",
+      "g_00": "Time–time metric component in the stated coordinates. Both small zeros select the time direction.",
+      "r_s": "Schwarzschild radius: the horizon radius in the nonrotating, uncharged black-hole model.",
+      "G_N": "Newton’s gravitational constant: the fixed strength factor in Newton’s gravity law.",
+      "M": "Mass of the spherical gravitating source.",
+      "f_far": "Light frequency measured by the stationary receiver far away.",
+      "f_emit": "Light frequency measured at the supported emitter.",
+      "r_emit": "Radius of the emitter in the Schwarzschild coordinates.",
+      "D": "Physical separation of the two comoving points at the same cosmic time.",
+      "χ": "Fixed comoving coordinate separation; it uses distance units in this lesson.",
+      "Λ": "Cosmological constant, a term allowed in Einstein’s gravity equation.",
+      "s": "The spacetime interval label. Its square combines small changes of time and position.",
+      "y": "Position in the y direction.",
+      "z": "Position in the z direction.",
+      "l": "Distance along a small spatial step.",
+      "g": "Metric: the numbers that turn coordinate steps into physical intervals.",
+      "g_xx": "Metric number multiplying the two x steps.",
+      "g_xy": "Metric number for the mixed x and y steps.",
+      "g_yy": "Metric number multiplying the two y steps.",
+      "r": "Distance from the centre in these polar coordinates.",
+      "θ": "Angle around the centre in these polar coordinates.",
+      "R": "Curvature. With several indices it is the Riemann tensor; alone it is scalar curvature, a single combined number.",
+      "ξ": "Small separation between the nearby freely falling objects.",
+      "L": "The original length of the arm.",
+      "a": "Scale factor: the number telling how cosmic distances grow or shrink."
+    },
+    "experimental-methods": {
+      "n": "Number of readings in the sample.",
+      "t": "Time; Δt is the gap between consecutive readings.",
+      "u_mean": "Standard uncertainty of the average: estimated spread of repeated averages under the independence assumption.",
+      "u_total": "Combined standard uncertainty from the listed independent contributions.",
+      "f_sample": "Sample rate: number of readings taken each second.",
+      "f_max": "Highest signal frequency the measurement is intended to capture.",
+      "x_i": "Reading x with label i. The label counts the readings.",
+      "u_cal": "Combined standard uncertainty of the calibration result.",
+      "u_comparison": "Standard uncertainty contributed by the instrument comparison.",
+      "u_reference": "Standard uncertainty contributed by the reference standard.",
+      "u_rounding": "Standard uncertainty assigned to the rounding on the display.",
+      "w": "Width of one display step in this rounding model.",
+      "u_x": "Standard uncertainty of the input x.",
+      "u_y": "Standard uncertainty of the result y.",
+      "S": "Least-squares score: the sum of all squared prediction misses.",
+      "w_i": "Weight assigned to reading i in the fit.",
+      "y_i": "Observed output value for reading i.",
+      "ŷ_i": "Value predicted by the fitted model for reading i. The hat marks a prediction.",
+      "u_i": "Standard uncertainty assigned to reading i.",
+      "u_c": "Combined standard uncertainty, before multiplying by the coverage factor.",
+      "s": "Sample standard deviation: a measure of how spread out the readings are.",
+      "u₁": "Standard uncertainty from the first independent source.",
+      "u₂": "Standard uncertainty from the second independent source.",
+      "a": "Gain: how much the reading changes for each unit of the input.",
+      "b": "Offset: the reading when the input is zero.",
+      "x": "The input quantity.",
+      "y": "The output quantity calculated or measured from x.",
+      "χ": "Chi, read “kai.” Here chi-squared measures how far the readings are from the model, compared with their uncertainties.",
+      "U": "Expanded uncertainty: the wider uncertainty interval reported with the result.",
+      "k": "Coverage factor: the number used to multiply the standard uncertainty."
+    },
+    "quantum-information": {
+      "P": "Probability of the outcome written in brackets: a number from zero to one.",
+      "a": "Complex amplitude attached to |0⟩ in the first qubit.",
+      "b": "Complex amplitude attached to |1⟩ in the first qubit.",
+      "p": "The probability specified in this lesson, from zero to one.",
+      "ρ": "Density matrix: the state’s table of weights and phase information used to predict measurements.",
+      "ρ_out": "Density matrix after the stated operation.",
+      "ψ_in": "Input quantum state, before the gates.",
+      "ψ_out": "Output quantum state, after the gates.",
+      "H": "Hadamard gate: combines the two input amplitudes by adding and subtracting them, with a factor 1/√2.",
+      "X": "X gate: swaps the |0⟩ and |1⟩ amplitudes.",
+      "Z": "Z gate: reverses the sign of the |1⟩ amplitude and leaves the |0⟩ amplitude alone.",
+      "CNOT": "Controlled-NOT gate: flips the target bit when the control is 1, applied coherently to all terms.",
+      "Φ": "The symbol naming the Bell state Φ⁺ shown here: equal amplitudes for |00⟩ and |11⟩.",
+      "P_out": "Probability after the noise operation; (1) asks for outcome 1.",
+      "P_in": "Probability before the noise operation; (1) asks for outcome 1.",
+      "K_j†": "Conjugate transpose of channel operator K_j: swap rows and columns and reverse imaginary parts.",
+      "q₁": "The 0/1 label of physical qubit 1 in the parity expression.",
+      "q₂": "The 0/1 label of physical qubit 2 in the parity expression.",
+      "q₃": "The 0/1 label of physical qubit 3 in the parity expression.",
+      "P_fail": "Probability that the encoded information has a logical error after the stated recovery.",
+      "O_f": "Phase oracle for function f: multiplies each basis state by (−1) raised to its function value.",
+      "x": "The input label of a basis state in the oracle problem.",
+      "f": "The specified function whose output is either 0 or 1.",
+      "a_i": "Amplitude of item i in the search state.",
+      "v": "The normalized state representing the measurement outcome being tested.",
+      "ψ": "The quantum state being measured.",
+      "K_j": "One of the channel operators: rules describing the possible effects of the noise. The j labels which rule."
+    },
+    "many-body": {
+      "N": "Total particle count, or number of sites when explicitly stated in the structure-factor normalization.",
+      "n": "Occupation: number of particles in the specified complete single-particle state.",
+      "n₁": "Occupation of mode 1.",
+      "n₂": "Occupation of mode 2.",
+      "E_interaction": "Energy from the stated particle–particle interaction.",
+      "a": "Boson annihilation operator: removes one quantum from the chosen mode with its required amplitude factor.",
+      "a†": "Boson creation operator: adds one quantum to the chosen mode with its required amplitude factor.",
+      "aa†": "Apply a† first, then a: add one quantum and then remove one, retaining both amplitude factors.",
+      "I": "Identity operator: leaves a state unchanged.",
+      "c_i": "Fermion annihilation operator for the full state labeled i.",
+      "c_j†": "Fermion creation operator for the full state labeled j.",
+      "a_i†": "Add a boson in site or mode i.",
+      "a_j†": "Add a boson in site or mode j.",
+      "a_i": "Remove a boson from site or mode i.",
+      "a_j": "Remove a boson from site or mode j.",
+      "n_i": "Occupation of site or mode i; an up or down arrow further selects its spin state.",
+      "n_j": "Occupation of site or mode j.",
+      "H": "Hamiltonian: the energy operator defining the model and its time evolution.",
+      "Σ_i": "Add the contribution from every site or mode i.",
+      "U": "Interaction-energy cost per on-site pair in the specified model.",
+      "E_bond": "Energy contributed by the single bond between two neighboring spins.",
+      "s_i": "Ising spin at site i, either +1 or −1.",
+      "s_j": "Ising spin at site j, either +1 or −1.",
+      "A": "The first quantity or observable being averaged and compared.",
+      "B": "The second quantity or observable being averaged and compared.",
+      "h": "Applied field multiplied by the spin’s magnetic moment: an energy coefficient, not a field in tesla.",
+      "m": "Average Ising spin in these mean-field lessons, between −1 and +1.",
+      "k_BT": "k_B × T: Boltzmann constant times temperature, the thermal energy scale.",
+      "k_BT_c": "k_B × T_c: the thermal energy at the predicted transition temperature.",
+      "s": "One Ising spin variable, with outcomes +1 and −1.",
+      "C": "Connected correlation: the linked part left after removing the product of the averages.",
+      "r": "Separation between the two sites or observations.",
+      "Σ_ij": "Add over all ordered pairs of site labels i and j in this definition.",
+      "r_i": "Position of site i.",
+      "r_j": "Position of site j.",
+      "M": "Total dimensionless spin in the stated response model.",
+      "χ": "Susceptibility: how much the mean total spin changes per small change of its applied field energy.",
+      "z": "Number of nearest neighbors of one site.",
+      "J": "Interaction strength: the energy scale connecting two neighboring spins.",
+      "i": "The imaginary unit in the exponential; i² = −1. As a small index, i labels a site.",
+      "σ": "Standard deviation of one input quantity: the typical spread of its values.",
+      "S": "Static structure factor: how strongly the system’s correlations show a pattern at wavevector q.",
+      "δ": "A small change from the original value."
+    },
+    "quantum-field-theory": {
+      "φ": "The scalar field, read “phi”: the field variable at a place and time. In the quantum description it is an operator.",
+      "E_n": "Energy of the mode when its occupation is n.",
+      "n": "Number of quanta in the specified mode.",
+      "c": "Speed of light in empty space; its numerical value is one in the chosen natural units.",
+      "E": "Energy of the particle or process in the stated comparison.",
+      "S": "Action: the Lagrangian density added over the spacetime region.",
+      "ℒ": "Lagrangian density: the local contribution to the field action per space and time volume.",
+      "m": "Mass parameter of the scalar field or particle in the stated free model.",
+      "I": "Identity operator: it leaves a state unchanged.",
+      "a": "Annihilation operator: lowers the occupation of one boson mode.",
+      "a†": "Creation operator: raises the occupation of one boson mode.",
+      "ω": "Positive mode angular frequency, measured in energy units when ℏ = 1.",
+      "λ": "Quartic interaction strength in the displayed φ⁴ convention.",
+      "M_tree": "Invariant scattering amplitude at tree level, before loop corrections.",
+      "iM_tree": "i × M_tree: the imaginary unit multiplying the invariant amplitude in this diagram convention.",
+      "i": "Imaginary unit, defined by i² = −1.",
+      "D_F": "Scalar Feynman propagator: the calculation factor joining two interaction points.",
+      "P": "Probability of the specified normalized outcome.",
+      "σ_new": "Scattering cross section with the new coupling.",
+      "σ_old": "Scattering cross section with the original coupling.",
+      "λ_new": "New value of the quartic coupling.",
+      "λ_old": "Original value of the quartic coupling.",
+      "k": "Momentum magnitude being added over in the illustrative cutoff integral.",
+      "g_reference": "Coupling value fixed at the chosen reference measurement.",
+      "g_bare": "Parameter used in the regulated calculation before adding the loop correction.",
+      "g_loop": "Loop-correction contribution; the preceding Δ marks it as a change.",
+      "Λ": "Upper momentum cutoff used to regulate the calculation.",
+      "x": "Position in space.",
+      "t": "Time.",
+      "q": "The time-changing size of the chosen field pattern.",
+      "f": "The fixed shape of that field pattern across space.",
+      "ε": "Energy added by one quantum of the mode.",
+      "p": "Momentum. In the propagator, p is four-momentum and p² combines its energy and spatial momentum.",
+      "Q": "The position-like coordinate of one field mode.",
+      "A₁": "The first contribution to the outcome’s probability amplitude.",
+      "A₂": "The second contribution to the same outcome’s probability amplitude.",
+      "β": "Beta function: the rule telling how the coupling changes as the energy scale changes."
+    },
+    "relativity": {
+      "t": "Time measured in the chosen reference frame.",
+      "τ": "Proper time: the time read by the clock traveling along the path.",
+      "x": "Position along the chosen horizontal direction.",
+      "s": "The interval label. Here s² is the signed combination of time and distance shown in the equation.",
+      "h": "Height.",
+      "E": "Energy.",
+      "p": "Momentum: the quantity describing motion that is shared in a collision.",
+      "A": "The four-vector being studied; the following 0 or 1 selects its time or space part."
+    }
+  },
+  "lessons": {
+    "math/dot-cross": {
+      "a_zb_z": "a_z × b_z: multiply the z-direction part of vector a by the z-direction part of vector b."
+    },
+    "math/prep-functions": {
+      "f": "The rule that turns an input into an output; f(x) means apply rule f to x.",
+      "x": "The input number given to the rule."
+    },
+    "math/prep-sums": {
+      "n": "The counting label: use 1, then 2, then 3, then 4 in this sum."
+    },
+    "math/prep-change": {
+      "x": "Position: where the object is along the chosen line."
+    },
+    "mechanics/relative-velocity": {
+      "A": "The object whose motion we are describing.",
+      "B": "The object or observer used as the moving reference."
+    },
+    "mechanics/conservative-force": {
+      "W_conservative": "Work done by the conservative force: energy it transfers as the object moves."
+    },
+    "mechanics/centre-mass": {
+      "Ma_CM": "M × a_CM: total mass times the acceleration of the system’s centre of mass."
+    },
+    "mechanics/fluid-density": {
+      "g": "Grams: a mass unit. One kilogram contains 1,000 grams."
+    },
+    "em/two-charge-field": {
+      "N": "Newtons: a unit of force.",
+      "C": "Coulombs: a unit of electric charge."
+    },
+    "em/ring-axis-field": {
+      "N": "Newtons: a unit of force.",
+      "C": "Coulombs: a unit of electric charge."
+    },
+    "em/em-model-selection": {
+      "N": "Newtons: a unit of force.",
+      "C": "Coulombs: a unit of electric charge."
+    },
+    "em/potential-difference": {
+      "A": "The starting point of the path.",
+      "B": "The ending point of the path."
+    },
+    "em/capacitance-geometry": {
+      "C_parallel": "Capacitance of the parallel-plate capacitor in this geometry."
+    },
+    "em/capacitor-energy-combinations": {
+      "C_parallel": "Combined capacitance when capacitors are connected in parallel.",
+      "C_series": "Combined capacitance when capacitors are connected in series."
+    },
+    "em/current-definition": {
+      "A": "Amperes: current units, equal to coulombs passing per second.",
+      "C": "Coulombs: units of electric charge.",
+      "s": "Seconds: time units."
+    },
+    "em/charge-continuity": {
+      "dQ_inside": "A tiny change in the electric charge inside the chosen region."
+    },
+    "em/ohmic-resistance": {
+      "Ω": "Ohms: resistance units, equal to volts divided by amperes."
+    },
+    "em/kirchhoff-loops": {
+      "V": "Volts: units of electric potential difference.",
+      "Ω": "Ohms: resistance units, equal to volts divided by amperes."
+    },
+    "em/circuit-power": {
+      "P_absorbed": "Power taken in by the component: energy received each second under the stated sign convention."
+    },
+    "em/wire-loop-torque": {
+      "F": "Magnetic force: the push on the current-carrying wire, including its direction."
+    },
+    "em/straight-wire-field": {
+      "T": "Teslas: magnetic-field units.",
+      "m": "Metres: distance units.",
+      "A": "Amperes: current units."
+    },
+    "waves/damping-energy": {
+      "E₀": "The starting value of the oscillator’s averaged energy."
+    },
+    "waves/transverse-em-wave": {
+      "E₀": "Peak size of the wave’s electric field.",
+      "B": "The wave’s magnetic field, including its direction.",
+      "E": "The electric-field vector, giving its size and direction."
+    },
+    "waves/viscous-oscillator": {
+      "ω_dt": "ω_d × t: the damped angular frequency multiplied by elapsed time."
+    },
+    "waves/mode-superposition": {
+      "ω_st": "ω_s × t: the symmetric-mode angular frequency multiplied by time.",
+      "ω_at": "ω_a × t: the antisymmetric-mode angular frequency multiplied by time."
+    },
+    "waves/standing-superposition": {
+      "y": "The medium’s sideways displacement from its rest position.",
+      "x_node": "Position of a node, where this standing wave never moves.",
+      "x_antinode": "Position of an antinode, where this standing wave moves most."
+    },
+    "waves/two-slit-interference": {
+      "I₁": "Intensity from one slit alone under the equal-slit assumptions."
+    },
+    "waves/wave-model-selection": {
+      "m": "Metres: distance units.",
+      "s": "Seconds: time units."
+    },
+    "thermodynamics/kelvin-differences": {
+      "T_in_kelvin": "The temperature number on the kelvin scale.",
+      "t_in_Celsius": "The temperature number on the Celsius scale."
+    },
+    "thermodynamics/moles-particles": {
+      "nN_A": "n × N_A: number of moles multiplied by particles per mole."
+    },
+    "thermodynamics/wall-momentum": {
+      "impulse_to_wall": "Momentum transferred to the wall by the collision: force added up over the collision time."
+    },
+    "thermodynamics/entropy-production": {
+      "S_generated": "Entropy produced inside the system by irreversible processes."
+    },
+    "thermodynamics/fluctuations": {
+      "σ": "Standard deviation: the typical spread of the particle count around its average."
+    },
+    "thermodynamics/boltzmann-weights": {
+      "E_j": "Energy of state j. The label j runs over all states in the sum.",
+      "w_j": "The unnormalized weight of state j; divide by the sum of weights to get a probability."
+    },
+    "particles/curvature-measures-transverse-momentum": {
+      "m": "Metres: the unit used for the track radius inside R[m]."
+    },
+    "astrophysics/thermal-spectrum": {
+      "m": "Metres: the length unit in the wavelength–temperature constant.",
+      "K": "Kelvins: the temperature unit counted from absolute zero."
+    },
+    "astrophysics/binary-centre": {
+      "M₁": "Mass of star 1.",
+      "M₂": "Mass of star 2.",
+      "a₁": "Star 1’s orbital distance scale from the shared centre of mass.",
+      "a₂": "Star 2’s orbital distance scale from the shared centre of mass.",
+      "mass₁": "Mass of star 1.",
+      "mass₂": "Mass of star 2.",
+      "distance₁": "Orbital distance scale of star 1 from the shared centre of mass.",
+      "distance₂": "Orbital distance scale of star 2 from the shared centre of mass."
+    },
+    "quantum1/photon-energy-threshold": {
+      "eV_s": "e × V_s: elementary positive charge times the stopping voltage, giving an energy."
+    },
+    "quantum1/complex-amplitudes": {
+      "a": "The real part of the complex amplitude.",
+      "b": "The number multiplying the imaginary unit i."
+    },
+    "quantum1/born-discrete": {
+      "Σ_jP": "Add P(j), the probability for each outcome labeled j."
+    },
+    "quantum1/basis-coefficients": {
+      "Σ_jc": "Add the coefficient-times-basis-state terms for every label j.",
+      "ju_j": "The expression c_j u_j uses the same label j on the coefficient c and basis pattern u.",
+      "Σ_jc_ju_j": "Add c_j × u_j over all j: each coefficient c_j multiplies its matching basis pattern u_j."
+    },
+    "quantum1/commutator-action": {
+      "A": "The first operator: a mathematical rule acting on states.",
+      "B": "The second operator, whose order relative to A is being compared."
+    },
+    "quantum1/flux-coefficients": {
+      "j_in": "Incoming probability flow per unit time and area in this one-dimensional convention.",
+      "j_ref": "Signed reflected probability flow; negative means flow toward decreasing x."
+    },
+    "quantum2/outer-product-action": {
+      "u_jv_k": "u_j × v_k: multiply component j of u by component k of v. The star on v_k then means take its complex conjugate."
+    },
+    "quantum2/adjoints-and-observables": {
+      "c†": "The state coefficient column c turned into a row, with each imaginary part’s sign reversed."
+    },
+    "quantum2/spectral-projectors": {
+      "aP_a": "a × P_a: outcome value a times the operator selecting the subspace for that value.",
+      "Σ_aP": "Add the projectors P_a over all distinct outcome values a.",
+      "P_aP_b": "Apply projector P_b, then P_a. Different outcome subspaces do not overlap."
+    },
+    "quantum2/complete-projective-measurement": {
+      "Σ_jP": "Add all outcome projectors P_j. Together they cover the full state space.",
+      "P_jP_k": "Apply projector P_k, then P_j. Different measurement-outcome subspaces do not overlap.",
+      "j": "A label for a possible earlier measurement outcome.",
+      "k": "A second outcome label used when comparing projectors.",
+      "p": "Outcome probability; p_j is the chance of earlier outcome j."
+    },
+    "quantum2/covariance-uncertainty": {
+      "A_cB_c": "A_c × B_c: apply the centred B operator, then the centred A operator. Centred means subtracting its average.",
+      "B_cA_c": "B_c × A_c: the same two centred operators in reversed order."
+    },
+    "quantum2/translation-generator": {
+      "iap̂": "i × a × p̂: imaginary unit times shift distance a times the momentum operator p̂."
+    },
+    "quantum2/parity-operator": {
+      "P†": "Conjugate transpose of the parity operator P. Parity reverses spatial position in this lesson."
+    },
+    "quantum2/heisenberg-picture": {
+      "A_SU": "A_S × U: the Schrödinger-picture operator A_S followed in the written product by evolution U, which acts first on a state."
+    },
+    "quantum2/magnetic-precession": {
+      "B_zt": "B_z × t: the z component of magnetic field multiplied by elapsed time.",
+      "B": "Magnetic field, including direction."
+    },
+    "quantum2/coupled-state-oscillations": {
+      "σ": "Pauli spin matrix; the small x specifies the one that swaps the two basis amplitudes."
+    },
+    "quantum2/rotating-frame-bridge": {
+      "R†": "The inverse of the unitary rotation R: it transforms into the chosen rotating description.",
+      "σ_z": "Pauli z matrix: leaves the first component unchanged and reverses the sign of the second.",
+      "σ": "Pauli matrix; the small x selects the amplitude-swapping matrix."
+    },
+    "quantum2/displacement-operator": {
+      "D†": "Inverse of the unitary displacement operator D, undoing that displacement."
+    },
+    "quantum2/coherent-quadratures": {
+      "x": "Physical position of the oscillator, found by scaling the unit-free X.",
+      "p": "Physical momentum of the oscillator, found by scaling the unit-free P."
+    },
+    "quantum2/density-from-preparations": {
+      "c_n": "Component n of the pure state’s amplitude column; the star means complex conjugate."
+    },
+    "quantum2/trace-expectation": {
+      "M_ii": "The diagonal entry in row i and column i of matrix M."
+    },
+    "quantum2/partial-trace": {
+      "Tr_AB": "Trace over both systems A and B: add the full matrix’s diagonal entries.",
+      "Tr_A": "Trace over system A’s state space."
+    },
+    "quantum2/purity-and-unrecorded-measurement": {
+      "ρ_unitary": "The state after the unitary operation U.",
+      "ρ_unrecorded": "The state after the measurement when its outcome is not retained.",
+      "Σ_jP": "Add the terms P_jρP_j for all measurement outcomes j."
+    },
+    "quantum2/product-or-entangled": {
+      "C_ij": "Entry in row i and column j of the table of joint amplitudes."
+    },
+    "quantum2/two-spin-correlations": {
+      "P": "Joint probability for the two indicated measurement outcomes."
+    },
+    "quantum2/spin-one-matrices": {
+      "J_z": "Spin-1 angular-momentum operator for the z direction.",
+      "J_x": "Spin-1 angular-momentum operator for the x direction.",
+      "J_y": "Spin-1 angular-momentum operator for the y direction."
+    },
+    "quantum3/ritz-subspace": {
+      "χ_k": "Trial basis state labeled k, one of the allowed building blocks in this approximation."
+    },
+    "quantum3/coulomb-moment-bridge": {
+      "p": "The p-orbital label: orbital angular-momentum quantum number l = 1; 2p also has principal number 2."
+    },
+    "quantum3/atomic-spin-orbit": {
+      "p": "The p-orbital label: orbital angular-momentum quantum number l = 1; 2p also has principal number 2.",
+      "C": "The Coulomb strength C₀ used in the lesson’s potential-energy model.",
+      "r": "Distance from the nucleus."
+    },
+    "quantum3/contact-darwin-shift": {
+      "C": "The Coulomb strength C₀ in the stated atomic model.",
+      "ψ₁": "The wavefunction for the 1s orbital; the following s identifies l = 0.",
+      "s": "The s-orbital label: orbital angular-momentum number l = 0.",
+      "a": "The length scale of the hydrogen-like bound state in this model."
+    },
+    "quantum3/hydrogen-fine-structure": {
+      "s": "The s-orbital label: orbital angular-momentum number l = 0; 2s has principal number 2."
+    },
+    "quantum3/quadratic-stark-parity": {
+      "z": "Position along the direction of the applied electric field.",
+      "E₁": "First-order contribution to the energy change; the preceding Δ marks the shift.",
+      "E₂": "Second-order contribution to the energy change; the preceding Δ marks the shift.",
+      "α": "Polarizability, labeled pol: how strongly the energy changes when an electric field is applied."
+    },
+    "quantum3/gauge-state-phase": {
+      "A": "Magnetic vector potential: an auxiliary field whose curl gives the magnetic field.",
+      "φ": "Electric scalar potential: potential energy per unit charge in this gauge description.",
+      "q": "The particle’s signed electric charge."
+    },
+    "quantum3/instantaneous-eigenstates": {
+      "a": "The time-dependent state coefficients; the following m or n selects which energy-state coefficient.",
+      "am": "Amplitude of state m.",
+      "tn": "In ∂tn, t marks a time derivative and n names the state being differentiated."
+    },
+    "quantum3/adiabatic-gap-criterion": {
+      "m": "A state label in this equation, not mass.",
+      "n": "A second state label, compared with m.",
+      "θ": "The angle specifying the slowly rotating model direction.",
+      "η": "A comparison number testing whether the change is slow enough; its small labels name the compared states or rotation case.",
+      "En": "Energy of state n.",
+      "Em": "Energy of state m."
+    },
+    "quantum3/born-oppenheimer-factor": {
+      "Ψ": "The complete electron-and-nuclear wavefunction before approximating it as a product.",
+      "φ": "The electron wavefunction for nuclei held at the stated positions; 0 labels the lowest state."
+    },
+    "quantum3/nuclear-effective-surface": {
+      "ε": "Electron energy at fixed nuclear positions; the following 0 selects the ground surface.",
+      "U": "Potential energy guiding the nuclear motion.",
+      "R": "The nuclear position coordinate.",
+      "ω": "The angular frequency of nuclear vibration; N is its label.",
+      "N": "The label N means nuclear vibration here.",
+      "VNN": "Potential energy from repulsion between the nuclei.",
+      "Ev": "Energy of vibration level v."
+    },
+    "quantum3/first-transition-amplitude": {
+      "P_i": "The transition probability starting in state i; the arrow points to final state f.",
+      "f": "Label of the final state, rather than a frequency."
+    },
+    "quantum3/dipole-selection-tests": {
+      "f": "Label of the final state.",
+      "i": "Inside |i⟩, i labels the initial state. In the exponential, multiplying the phase, i is the imaginary unit with i² = −1."
+    },
+    "quantum3/kraus-channel-bridge": {
+      "r": "A label counting the possible Kraus terms.",
+      "K_r†": "Conjugate transpose of the channel operator K_r.",
+      "K": "A channel operator; the small 0 or 1 identifies which of the two displayed terms.",
+      "K₀": "Channel operator for the no-phase-flip term in this model.",
+      "K₁": "Channel operator for the phase-flip term in this model."
+    },
+    "quantum3/packets-and-elastic-regime": {
+      "j_j": "Incident particle flux for component j: particles arriving per area and time."
+    },
+    "quantum3/legendre-radial-bridge": {
+      "P_lP_j": "P_l × P_j: multiply Legendre polynomial of degree l by the one of degree j.",
+      "n": "The spherical Neumann function; the small zero gives its order, not a particle count.",
+      "j₀": "Spherical Bessel function of order zero, equal to sin(x)/x.",
+      "n₀": "Spherical Neumann function of order zero, equal to −cos(x)/x."
+    },
+    "quantum3/s-wave-scattering-length": {
+      "ika_s": "i × k × a_s: imaginary unit times incoming wave number times scattering length."
+    },
+    "quantum3/screened-potential-example": {
+      "g_Ye": "g_Y × e^(−μr): interaction strength times the exponential screening factor.",
+      "mg_Y": "m × g_Y: particle mass multiplied by the interaction strength."
+    },
+    "quantum2/two-level-capstone": {
+      "U": "Time-evolution operator: the rule taking the initial state to its later state."
+    },
+    "advanced-mechanics/constraint": {
+      "R": "Fixed radius of the circle on which the object is constrained to move."
+    },
+    "advanced-mechanics/moving-origin": {
+      "a": "Position of the moving coordinate origin as a function of time."
+    },
+    "advanced-mechanics/constraint-multiplier": {
+      "f": "Constraint expression: allowed positions satisfy f = 0."
+    },
+    "advanced-mechanics/constraint-power": {
+      "P_support": "Power transferred by the moving support: energy supplied each second.",
+      "λ": "Upward support force in this constraint convention."
+    },
+    "advanced-mechanics/circular-orbit-radius": {
+      "dV_eff": "A tiny change in the effective radial potential energy."
+    },
+    "advanced-mechanics/transformed-hamiltonian": {
+      "a": "The fixed nonzero scale factor used to change the canonical coordinate and momentum."
+    },
+    "fluid-dynamics/pressure-force-density": {
+      "f": "Force per unit volume; the small x selects its x component, and “pressure” identifies its cause."
+    },
+    "fluid-dynamics/viscous-curvature": {
+      "a": "Acceleration from viscosity; the small x selects its x-direction component."
+    },
+    "fluid-dynamics/momentum-flow-balance": {
+      "F": "Net external force acting on the fluid; the small x selects the signed x component."
+    },
+    "fluid-dynamics/fluctuation-size": {
+      "u": "The x-direction flow velocity. The prime in u′ means its change from the time-average value."
+    },
+    "plasma/boltzmann-response": {
+      "n": "Electron density; δn_e is its small change and n₀ is the undisturbed density.",
+      "e": "Elementary charge: the positive size of one proton’s charge. An electron has the opposite charge."
+    },
+    "mechanics/fluid-continuity": {
+      "area₁": "Cross-sectional area of the passage at section 1.",
+      "area₂": "Cross-sectional area at section 2.",
+      "speed₁": "Average flow speed through section 1.",
+      "speed₂": "Average flow speed through section 2."
+    },
+    "waves/oscillator-initial-data": {
+      "x": "Displacement from the oscillator’s equilibrium position."
+    },
+    "waves/mode-driving": {
+      "q̇": "Rate of change of the chosen mode’s amplitude; the dot means change per time.",
+      "q̈": "Rate at which that amplitude’s rate is changing; two dots mean a second time derivative."
+    },
+    "optics/system-capstone": {
+      "dᵢ₁": "Image distance produced by lens 1.",
+      "dᵢ₂": "Image distance produced by lens 2.",
+      "dₒ₁": "Object distance for lens 1.",
+      "dₒ₂": "Object distance for lens 2. All use the stated signed-distance convention."
+    },
+    "quantum2/tensor-basis": {
+      "a": "State of the first qubit; |a⟩ is its amplitude column.",
+      "b": "State of the second qubit; |b⟩ is its amplitude column."
+    },
+    "quantum3/electric-dipole-regime": {
+      "E": "Applied electric-field vector, giving its size and direction."
+    },
+    "advanced-mechanics/orbit-energy-shape": {
+      "Ep_φ": "E × p_φ: total energy multiplied by the canonical angular momentum. The squared sign applies to p_φ in this formula.",
+      "e": "Eccentricity: a number describing the orbit’s shape. Zero is a circle; values below 1 are ellipses."
+    },
+    "quantum1/orbital-lz": {
+      "L̂": "Orbital angular-momentum operator. The hat says this acts on a quantum state.",
+      "z": "The selected z direction; L̂_z measures the angular-momentum part along it."
+    },
+    "general-relativity/polar-connection": {
+      "r_θθ": "These labels belong to Γ: the raised r selects its radial component, and the two lower θ labels select the two angular directions."
+    },
+    "general-relativity/covariant-derivative": {
+      "ν_μρ": "These labels belong to Γ: raised ν selects its output component; lower μ and ρ select derivative direction and vector component."
+    },
+    "general-relativity/parallel-transport": {
+      "μ_νρ": "These labels belong to Γ: μ selects the changed vector component, ν the step direction, and ρ the vector component being combined."
+    },
+    "general-relativity/geodesic-equation": {
+      "μ_αβ": "These labels belong to Γ: μ selects the coordinate acceleration; α and β label the two velocity components being added over."
+    },
+    "general-relativity/riemann-comparison": {
+      "ρ_σμν": "These labels belong to R: the curvature maps vector component σ to component ρ when derivative directions μ and ν are exchanged.",
+      "R": "Riemann tensor: numbers recording how changing the order of two geometric steps changes a vector."
+    },
+    "general-relativity/ricci-contraction": {
+      "R": "The Riemann curvature tensor when it carries four component labels in this equation.",
+      "α_μαν": "These four labels belong to R. The repeated α is added over; μ and ν remain as the Ricci component labels."
+    },
+    "general-relativity/friedmann-rate": {
+      "ρ": "Total cosmic energy per volume divided by c², so it has mass-density units."
+    },
+    "experimental-methods/calibration-gain": {
+      "x": "The corrected input quantity you want to estimate.",
+      "y": "The instrument’s uncorrected output reading."
+    },
+    "experimental-methods/correlated-inputs": {
+      "x": "The first uncertain input being added.",
+      "y": "The second uncertain input being added.",
+      "u": "Standard uncertainty of the quantity in brackets. The squared sign makes it an uncertainty variance."
+    },
+    "quantum-information/product-state": {
+      "c": "The |0⟩ amplitude of the second qubit.",
+      "d": "The |1⟩ amplitude of the second qubit; it is not a derivative symbol here."
+    },
+    "quantum-information/controlled-not": {
+      "c": "Control bit, written first in the two-qubit label.",
+      "t": "Target bit, written second in the label; it is not time here."
+    },
+    "quantum-information/chsh-test": {
+      "S": "The sum of four correlations in this CHSH test.",
+      "E": "Average product of the observers’ ±1 outcomes for the two settings in brackets.",
+      "a": "First observer’s measurement setting; a′ is that observer’s other setting.",
+      "b": "Second observer’s measurement setting; b′ is that observer’s other setting."
+    },
+    "quantum-information/phase-flip-channel": {
+      "c_in": "Off-diagonal entry of the input density matrix: its phase-sensitive part.",
+      "c_out": "That entry after the random phase flips.",
+      "p": "Probability that a Z phase flip is applied."
+    },
+    "quantum-information/logical-error-rate": {
+      "p": "Independent probability of an X bit flip on each physical qubit."
+    },
+    "many-body/static-structure-factor": {
+      "N": "Number of sites in this structure-factor normalization."
+    },
+    "quantum-field-theory/above-vacuum": {
+      "ε": "Energy added by one quantum: reduced Planck constant times mode angular frequency."
+    },
+    "quantum-field-theory/momentum-cutoff": {
+      "I": "Value of the illustrative regulated integral; it is not an identity operator in this lesson."
+    },
+    "math/elementary-derivatives": {
+      "q": "The quantity whose change over time is being calculated."
+    },
+    "math/fourier": {
+      "q": "The signal value at the given time."
+    },
+    "math/trigonometry": {
+      "x": "The horizontal part of the arrow.",
+      "y": "The vertical part of the arrow."
+    },
+    "math/toolkit-capstone": {
+      "x": "Position.",
+      "A": "Amplitude: the greatest distance from the middle."
+    },
+    "mechanics/third-law": {
+      "A": "The object named A.",
+      "B": "The object named B.",
+      "F_A": "Force exerted by object A; “on B” names the object receiving it.",
+      "F_B": "Force exerted by object B; “on A” names the object receiving it."
+    },
+    "mechanics/power": {
+      "W": "Work, or energy transferred, in the formula. After a number, W means watts: joules transferred each second."
+    },
+    "mechanics/rolling-energy": {
+      "Mv_CM": "M × v_CM: total mass times the speed of the centre of mass. In Mv_CM², only the speed is squared."
+    },
+    "mechanics/static-equilibrium": {
+      "τ": "Torque: the turning effect of a force.",
+      "z": "The z label selects the direction out of the page."
+    },
+    "em/biot-savart": {
+      "T": "Teslas: a unit of magnetic field strength.",
+      "m": "Metres: a unit of distance.",
+      "A": "Amperes: a unit of electric current."
+    },
+    "plasma/shielding-scale": {
+      "e": "Elementary charge: the positive size of one proton’s charge. An electron has the opposite charge."
+    },
+    "plasma/plasma-oscillation": {
+      "e": "Elementary charge: the positive size of one proton’s charge. An electron has the opposite charge."
+    },
+    "astrophysics/magnitudes": {
+      "pc": "Parsecs: a distance unit, about 3.26 light-years."
+    },
+    "astrophysics/competing-models": {
+      "χ": "Chi, read “kai.” Here χ² names a score measuring how far the data are from the model, compared with their uncertainties."
+    },
+    "quantum1/wavefunction-inner-product": {
+      "f": "The first wavefunction being compared.",
+      "g": "The second wavefunction being compared."
+    },
+    "quantum2/joint-measurements": {
+      "j": "The outcome label for the second system."
+    },
+    "quantum3/landau-oscillator-map": {
+      "ω": "The cyclotron angular frequency, labeled c: how fast the charge circles in the field.",
+      "px": "Momentum in the x direction."
+    },
+    "quantum3/adiabatic-spin-check": {
+      "P": "Probability of the lower-state outcome, selected by the minus label."
+    },
+    "quantum3/berry-spin-loop": {
+      "γ": "The geometric phase: the phase gained from the path of the state. The plus selects the positive-energy state."
+    },
+    "quantum3/nonadiabatic-boundaries": {
+      "τ": "The overlap involving a second position derivative, with m and n labeling the electronic states.",
+      "ε": "Electronic energy, with m or n selecting the electronic state."
+    },
+    "quantum3/identical-particle-scattering": {
+      "F": "The combined scattering amplitude. Its plus or minus label selects the exchange symmetry."
+    },
+    "quantum3/outgoing-green-response": {
+      "δ": "Dirac delta: an ideal point source. The raised 3 says the source is in three-dimensional space."
+    },
+    "advanced-mechanics/sensitive-dependence": {
+      "λ": "The local growth rate of the separation. A positive value means nearby states spread apart in this estimate."
+    },
+    "optics/far-field-transform": {
+      "Ifar": "Light intensity far from the opening: power reaching each unit of area."
+    },
+    "atomic-nuclear/balance-reaction-labels": {
+      "Ainitial": "Total mass number before the reaction: count all protons and neutrons.",
+      "Afinal": "Total mass number after the reaction.",
+      "Zinitial": "Total electric charge number before the reaction.",
+      "Zfinal": "Total electric charge number after the reaction."
+    },
+    "particles/hadrons-are-composite": {
+      "uud": "Two up quarks (u) and one down quark (d): the proton’s usual valence-quark labels."
+    },
+    "quantum3/linear-stark-subspace": {
+      "Vpair": "The perturbation matrix restricted to the chosen pair of states."
+    },
+    "quantum3/dynamic-geometric-phase": {
+      "tn": "In ∂tn, t marks a time derivative and n names the changing state."
+    },
+    "atomic-nuclear/gamma-emission-includes-recoil": {
+      "M": "Mass of the recoiling nucleus."
+    },
+    "particles/composite-mass-includes-interaction-energy": {
+      "M": "Total mass of the composite system in its rest frame."
+    },
+    "many-body/bose-hubbard": {
+      "j": "The label of the neighboring site in each pair."
+    },
+    "plasma/thermal-shielding": {
+      "e": "Elementary charge: the positive size of one proton’s charge."
+    },
+    "quantum-field-theory/field-momentum": {
+      "π": "Field momentum density, read pi: the quantity paired with the field. Here it equals how fast the field changes with time."
+    },
+    "quantum-field-theory/scalar-propagator": {
+      "ε": "A tiny positive number taken toward zero. It tells the calculation which time-ordering rule to use."
+    },
+    "advanced-mechanics/lagrangian": {
+      "L": "Lagrangian: motion energy minus stored energy in this model.",
+      "V": "Potential energy: energy stored because of position or shape."
+    },
+    "quantum3/gaussian-born-example": {
+      "f_B": "The first Born estimate of the scattering amplitude.",
+      "q": "Transfer wave number: the change in the incoming wave’s direction and spacing, expressed as a size.",
+      "k": "Incoming wave number: how quickly its phase changes with distance.",
+      "θ_half": "The angle where the scattering intensity has fallen to half its forward value.",
+      "E_L": "Energy scale set by the particle mass and the potential width."
+    }
+  }
+}

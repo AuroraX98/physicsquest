@@ -1,0 +1,1020 @@
+{
+  "light-bands": {
+    "idea": "Visible light is only a small part of the electromagnetic spectrum.",
+    "explanation": "Light is an electromagnetic wave: a travelling change in electric and magnetic fields. Radio waves belong to the same family. Frequency counts repeats each second; wavelength is the gap between matching wave parts. In empty space, shorter wavelength means higher frequency.",
+    "example": {
+      "title": "A 600-nanometre wave",
+      "steps": [
+        "600 nm is 6.00 × 10⁻⁷ m.",
+        "Dividing light speed by this wavelength gives 5.00 × 10¹⁴ repeats per second."
+      ]
+    },
+    "equation": "c = fλ₀",
+    "terms": [
+      {
+        "term": "Spectrum",
+        "definition": "The family of these waves arranged by frequency or wavelength."
+      },
+      {
+        "term": "Nanometre (nm)",
+        "definition": "One billionth of a metre."
+      },
+      {
+        "term": "Electric and magnetic fields",
+        "definition": "Descriptions of electric and magnetic effects at each point."
+      }
+    ]
+  },
+  "rays-wavefronts": {
+    "idea": "A ray marks the direction of travel; it is not a glowing thread.",
+    "explanation": "A wavefront joins places at the same stage of a wave's cycle. In a uniform material with the same properties in every direction, rays point at right angles to these fronts.",
+    "example": {
+      "title": "A passing wavefront",
+      "steps": [
+        "Wavefronts are 0.40 μm apart and pass every 2.0 × 10⁻¹⁵ s.",
+        "Their speed is distance divided by time: 2.0 × 10⁸ m/s."
+      ]
+    },
+    "equation": "v = λ/Δt",
+    "terms": [
+      {
+        "term": "Wavefront",
+        "definition": "Places at the same stage of a wave's cycle."
+      },
+      {
+        "term": "Micrometre (μm)",
+        "definition": "One millionth of a metre."
+      }
+    ]
+  },
+  "ray-validity": {
+    "idea": "Ray diagrams work best when important features are much larger than the wavelength.",
+    "explanation": "Waves spread around edges, an effect called diffraction. Rays can locate an approximate image while missing its fine blur. Compare the wavelength with the smallest feature relevant to the question.",
+    "example": {
+      "title": "Checking a lens scale",
+      "steps": [
+        "Light has wavelength 0.50 μm, while a feature is 1.0 mm, or 1000 μm.",
+        "The ratio is 0.00050, supporting ray tracing for position while diffraction still limits fine detail."
+      ]
+    },
+    "equation": "ε = λ/a",
+    "terms": [
+      {
+        "term": "Diffraction",
+        "definition": "Wave spreading caused by an opening or edge."
+      }
+    ]
+  },
+  "intensity-area": {
+    "idea": "The same light power spread over more area gives less power to each square metre.",
+    "explanation": "Irradiance is received power divided by area. This gives the local value for uniform light, or an average for uneven light. Use power actually reaching the area.",
+    "example": {
+      "title": "Light on one patch",
+      "steps": [
+        "A beam delivers 0.020 W across 0.010 m² uniformly.",
+        "The irradiance is 0.020 ÷ 0.010 = 2.0 W/m²."
+      ]
+    },
+    "equation": "I = P/A",
+    "terms": [
+      {
+        "term": "Irradiance",
+        "definition": "Received light power per area."
+      },
+      {
+        "term": "Watt (W)",
+        "definition": "One joule of energy per second."
+      }
+    ]
+  },
+  "reflection-normal": {
+    "idea": "A smooth mirror reflects light at the same angle at which it arrives.",
+    "explanation": "Measure both angles from the normal: a line at right angles to the surface. Measuring from the mirror surface instead gives a different angle.",
+    "example": {
+      "title": "A tilted incoming ray",
+      "steps": [
+        "A ray arrives 25° above the mirror surface, or 65° from the normal.",
+        "It reflects at 65° from the normal on the other side."
+      ]
+    },
+    "equation": "θ_reflected = θ_incoming",
+    "terms": [
+      {
+        "term": "Normal",
+        "definition": "A line at right angles to a surface."
+      }
+    ]
+  },
+  "snell-index": {
+    "idea": "Light can bend when it enters a material with a different refractive index.",
+    "explanation": "Refractive index compares light speed in empty space with the speed of a wave crest in a material. Changing this speed at a surface can bend the wave's direction. The frequency stays the same at a stationary surface, and angles are measured from its normal.",
+    "example": {
+      "title": "Air into glass",
+      "steps": [
+        "Light enters glass of index 1.50 from air of index 1.00 at 30° to the normal.",
+        "The outgoing angle satisfies sinθ = 1/3, giving about 19.47°."
+      ]
+    },
+    "equation": "n₁ sinθ₁ = n₂ sinθ₂",
+    "terms": [
+      {
+        "term": "Refractive index",
+        "definition": "Empty-space light speed divided by the speed of a wave crest in the material."
+      },
+      {
+        "term": "Normal",
+        "definition": "A line at right angles to the surface."
+      },
+      {
+        "term": "sin",
+        "definition": "Sine, an angle function used to compare the directions here."
+      }
+    ]
+  },
+  "total-internal": {
+    "idea": "Light can reflect completely when leaving a higher-index material at a sufficiently large angle.",
+    "explanation": "Refractive index compares light speed in empty space with its wave speed in a material. When light leaves higher index for lower index, a large enough angle can stop a travelling transmitted ray. A field still extends just beyond the surface, so this simple rule assumes no nearby second material.",
+    "example": {
+      "title": "Glass toward air",
+      "steps": [
+        "For glass index 1.50 and air index 1.00, the critical angle is about 41.81°.",
+        "A 50° incoming angle has total internal reflection at this ideal isolated boundary."
+      ]
+    },
+    "equation": "sinθ_critical = n₂/n₁, n₁ > n₂",
+    "terms": [
+      {
+        "term": "Critical angle",
+        "definition": "The incoming angle, measured from the surface normal, above which the simple model has no travelling transmitted ray."
+      },
+      {
+        "term": "Normal",
+        "definition": "A line at right angles to the surface."
+      }
+    ]
+  },
+  "dispersion-colour": {
+    "idea": "A material can bend different colours by different amounts.",
+    "explanation": "Dispersion means refractive index depends on frequency. A prism separates existing frequencies; it does not make new ones. Use the index for the particular colour being studied.",
+    "example": {
+      "title": "One colour in glass",
+      "steps": [
+        "A wave has vacuum wavelength 600 nm and the glass index is 1.50 at that frequency.",
+        "Inside the glass its wavelength is 600 ÷ 1.50 = 400 nm."
+      ]
+    },
+    "equation": "λ_material = λ_vacuum/n",
+    "terms": [
+      {
+        "term": "Dispersion",
+        "definition": "Change of refractive index with frequency."
+      }
+    ]
+  },
+  "real-virtual": {
+    "idea": "A real image forms where rays meet; a virtual image marks where they appear to begin.",
+    "explanation": "A screen can catch a real image where the rays converge. For a virtual image, only backward extensions meet. The eye can see either kind by focusing the arriving light.",
+    "example": {
+      "title": "Light through a lens",
+      "steps": [
+        "Parallel rays meet 15 cm behind a converging lens.",
+        "A screen there can catch the real image."
+      ]
+    },
+    "equation": "d_image > 0 for a real image in this lens convention",
+    "terms": [
+      {
+        "term": "Real image",
+        "definition": "An image where outgoing rays actually meet."
+      },
+      {
+        "term": "Virtual image",
+        "definition": "An image located by extending outgoing rays backward."
+      }
+    ]
+  },
+  "mirror-curvature": {
+    "idea": "A curved mirror can bring nearby rays to an approximate focus.",
+    "explanation": "For a spherical mirror and rays near its axis, focal length is half the signed curvature radius. Rays far from the axis need not meet at exactly the same place.",
+    "example": {
+      "title": "A concave mirror",
+      "steps": [
+        "Its curvature radius is 40 cm, so focal length is 20 cm.",
+        "An object 60 cm in front forms a real image 30 cm in front of the mirror."
+      ]
+    },
+    "equation": "1/f = 1/d_object + 1/d_image",
+    "terms": [
+      {
+        "term": "Focal length",
+        "definition": "The distance from the mirror to its approximate focus for parallel nearby rays."
+      }
+    ]
+  },
+  "thin-lens-signs": {
+    "idea": "The thin-lens rule tells us where a real or virtual image forms.",
+    "explanation": "For a real object, use a positive object distance. A positive image distance means outgoing rays meet; a negative one means only backward extensions meet. Keep every distance in the same unit.",
+    "example": {
+      "title": "One converging lens",
+      "steps": [
+        "The focal length is 10 cm and the object is 30 cm away.",
+        "The image distance is 10 × 30 ÷ (30 − 10) = 15 cm, giving a real image."
+      ]
+    },
+    "equation": "d_image = f d_object/(d_object − f)",
+    "terms": [
+      {
+        "term": "Focal length",
+        "definition": "The distance to the focus of incoming parallel rays in this lens model."
+      }
+    ]
+  },
+  "magnification-sign": {
+    "idea": "Magnification tells the size ratio and orientation of an image.",
+    "explanation": "A negative height ratio means the image is upside down relative to the object. Its magnitude gives the size ratio. This is not a ratio of brightness.",
+    "example": {
+      "title": "An inverted image",
+      "steps": [
+        "An object is 30 cm from a lens and its image is 15 cm beyond it.",
+        "Magnification is −0.50, so a 4 cm object gives a 2 cm tall inverted image."
+      ]
+    },
+    "equation": "m = −d_image/d_object",
+    "terms": [
+      {
+        "term": "Magnification",
+        "definition": "Image height divided by object height, with signs showing orientation."
+      }
+    ]
+  },
+  "two-lens-trace": {
+    "idea": "For a second lens, measure the new object distance from that lens.",
+    "explanation": "First locate the image made by lens one. That location defines the ray bundle reaching lens two. A point beyond the second lens is a virtual object for that lens, so keep the distance sign.",
+    "example": {
+      "title": "Two separated lenses",
+      "steps": [
+        "Lens one makes an image 15 cm after it; lens two is 35 cm after lens one.",
+        "Lens two therefore has an object distance of 35 − 15 = 20 cm."
+      ]
+    },
+    "equation": "d_object,2 = separation − d_image,1",
+    "terms": [
+      {
+        "term": "Virtual object",
+        "definition": "A point toward which arriving rays are already converging."
+      }
+    ]
+  },
+  "stops-pupils": {
+    "idea": "An aperture stop limits how much light from one object point passes through.",
+    "explanation": "The aperture stop is the opening that most restricts rays from one object point. Seen through the front lenses, its apparent size may change: this apparent opening is the entrance pupil. Its diameter sets the usual camera f-number for a distant object.",
+    "example": {
+      "title": "A camera at f/2",
+      "steps": [
+        "The lens focal length is 50 mm and entrance-pupil diameter is 25 mm.",
+        "The f-number is 50 ÷ 25 = 2."
+      ]
+    },
+    "equation": "f_number = focal_length/pupil_diameter",
+    "terms": [
+      {
+        "term": "Aperture stop",
+        "definition": "The opening that most restricts rays from one object point."
+      },
+      {
+        "term": "Entrance pupil",
+        "definition": "The aperture stop as seen through the optics in front of it."
+      }
+    ]
+  },
+  "camera-focus": {
+    "idea": "Depth of field means a range judged sharp enough, not perfectly focused.",
+    "explanation": "Only one object plane is exactly focused on a fixed sensor in this simple model. Other distances make blur circles. A smaller opening reduces geometric defocus blur but increases diffraction blur.",
+    "example": {
+      "title": "A slightly misplaced sensor",
+      "steps": [
+        "Use pupil diameter 10 mm, image distance 100 mm and sensor offset 1 mm.",
+        "The simple blur-diameter estimate is 10 × 1 ÷ 100 = 0.10 mm."
+      ]
+    },
+    "equation": "b ≈ D∣δ∣/d_image",
+    "terms": [
+      {
+        "term": "Depth of field",
+        "definition": "The range of object distances meeting a chosen sharpness limit."
+      },
+      {
+        "term": "Diffraction",
+        "definition": "Wave spreading from an opening or edge."
+      }
+    ]
+  },
+  "optical-instruments": {
+    "idea": "A telescope makes a distant object cover a larger angle at your eye.",
+    "explanation": "Its first lens forms an image, and the eyepiece lets you view it at a larger angle. For relaxed viewing in a simple two-positive-lens telescope, the outgoing rays are parallel.",
+    "example": {
+      "title": "A simple telescope",
+      "steps": [
+        "The objective focal length is 600 mm and the eyepiece focal length is 20 mm.",
+        "Angular magnification is −30: the view spans thirty times the angle and is inverted."
+      ]
+    },
+    "equation": "M = −f_objective/f_eyepiece",
+    "terms": [
+      {
+        "term": "Angular magnification",
+        "definition": "The apparent viewing-angle ratio."
+      },
+      {
+        "term": "Objective",
+        "definition": "The first image-forming lens facing the object."
+      }
+    ]
+  },
+  "field-components": {
+    "idea": "Two perpendicular field components combine into one electric-field arrow.",
+    "explanation": "An electric field is described by an arrow showing the electric push on a positive test charge. Its components are the arrow's parts along chosen directions. Adding perpendicular parts gives the full arrow; they are not separate beams.",
+    "example": {
+      "title": "One instant of a wave",
+      "steps": [
+        "The perpendicular field components are 3 V/m and 4 V/m.",
+        "The full field magnitude is √(3² + 4²) = 5 V/m."
+      ]
+    },
+    "equation": "E² = E_x² + E_y²",
+    "terms": [
+      {
+        "term": "Component",
+        "definition": "The part of an arrow along one chosen direction."
+      },
+      {
+        "term": "V/m",
+        "definition": "Volts per metre, a unit of electric-field strength."
+      }
+    ]
+  },
+  "analyzer-angle": {
+    "idea": "A linear polarizer passes the electric-field component along its axis.",
+    "explanation": "Linearly polarized light has its electric field moving back and forth along one line. A polarizer passes only the part along its own axis. This reduces field size by cosθ, and light intensity by cos²θ because intensity depends on field size squared.",
+    "example": {
+      "title": "A beam meets an analyzer",
+      "steps": [
+        "A polarized beam has intensity 80 W/m² and is 60° from the analyzer axis.",
+        "The transmitted intensity is 80 × 0.5² = 20 W/m²."
+      ]
+    },
+    "equation": "I_out = I_in cos²θ",
+    "terms": [
+      {
+        "term": "Polarizer",
+        "definition": "A device that selects a direction of electric-field motion."
+      },
+      {
+        "term": "θ",
+        "definition": "The angle between the incoming field direction and the polarizer axis."
+      },
+      {
+        "term": "cos",
+        "definition": "Cosine, an angle function; cos(60°) is ½."
+      }
+    ]
+  },
+  "circular-ellipse": {
+    "idea": "The tip of an electric-field arrow can turn in a circle at one fixed place.",
+    "explanation": "Equal perpendicular components, shifted by a quarter cycle, make circular polarization. This describes the electric field over time, not a photon traveling in a circle.",
+    "example": {
+      "title": "Following the field tip",
+      "steps": [
+        "The field changes from (A,0) to (0,A) to (−A,0) over half a cycle.",
+        "These points lie on a circle with radius A."
+      ]
+    },
+    "equation": "E_x = A cosωt; E_y = A sinωt",
+    "terms": [
+      {
+        "term": "Circular polarization",
+        "definition": "A field whose tip rotates in a circle at a fixed position."
+      }
+    ]
+  },
+  "wave-plate": {
+    "idea": "A wave plate delays one polarization component relative to the other.",
+    "explanation": "A wave plate is a material in which two perpendicular field directions have different wave speeds. One component gets ahead of the other in its repeating cycle. This can change the way the combined electric-field arrow moves, called its polarization.",
+    "example": {
+      "title": "A quarter-wave plate",
+      "steps": [
+        "At wavelength 600 nm, the index difference is 0.010.",
+        "Thickness 600 ÷ (4 × 0.010) = 15000 nm, or 15 μm, adds a quarter-cycle difference."
+      ]
+    },
+    "equation": "δ = 2πΔnL/λ₀",
+    "terms": [
+      {
+        "term": "Phase difference",
+        "definition": "The offset between the stages of two repeating waves."
+      },
+      {
+        "term": "Polarization",
+        "definition": "The pattern traced by the electric-field arrow at one place."
+      }
+    ]
+  },
+  "field-not-intensity": {
+    "idea": "For coherent light, add the fields before calculating the intensity.",
+    "explanation": "Coherent beams keep a steady relative phase. Their fields can reinforce or cancel at a point. Bright and dim parts redistribute energy; a bright fringe does not create extra energy.",
+    "example": {
+      "title": "Two matching beams",
+      "steps": [
+        "Each beam alone gives 9 W/m² at a point, with the same frequency and polarization.",
+        "When they arrive in phase, the combined intensity is 9 + 9 + 18 = 36 W/m²."
+      ]
+    },
+    "equation": "I = I₁ + I₂ + 2√(I₁I₂)cosδ",
+    "terms": [
+      {
+        "term": "Coherent",
+        "definition": "Having a stable relative phase during the observation."
+      },
+      {
+        "term": "Phase",
+        "definition": "The stage reached in a repeating cycle."
+      }
+    ]
+  },
+  "optical-path": {
+    "idea": "Optical path length counts phase change, not just physical distance.",
+    "explanation": "Phase is a wave's position in its repeating cycle. Optical path length counts how much phase builds up: multiply each travel distance by its refractive index, then add. Reflections may add further cycle shifts that must be counted separately.",
+    "example": {
+      "title": "Glass replaces a short air path",
+      "steps": [
+        "Replace 2.0 μm of air with material of index 1.50.",
+        "The extra optical path is (1.50 − 1.00) × 2.0 = 1.0 μm, or two wavelengths at 0.50 μm."
+      ]
+    },
+    "equation": "OPL = Σn_j L_j",
+    "terms": [
+      {
+        "term": "Refractive index",
+        "definition": "Empty-space light speed divided by wave-crest speed in the material."
+      },
+      {
+        "term": "Optical path length",
+        "definition": "A distance weighted by refractive index to count phase change."
+      }
+    ]
+  },
+  "two-slit-spacing": {
+    "idea": "Two matching slits make bright stripes where their waves reinforce.",
+    "explanation": "At small viewing angles on a distant screen, stripe spacing grows with wavelength and screen distance. Increasing slit separation brings the stripes closer. Slit width separately affects how bright they are.",
+    "example": {
+      "title": "Two-slit fringes",
+      "steps": [
+        "Use wavelength 500 nm, screen distance 2.0 m and slit separation 0.50 mm.",
+        "The bright-stripe spacing is 2.0 mm."
+      ]
+    },
+    "equation": "Δy ≈ λL/d",
+    "terms": [
+      {
+        "term": "Fringe",
+        "definition": "A bright or dark stripe produced by interference."
+      }
+    ]
+  },
+  "coherence-visibility": {
+    "idea": "Fringe visibility measures how strongly bright and dark stripes differ.",
+    "explanation": "Relative phase is how far one wave is ahead of another in its cycle. If that offset drifts during a photograph, interference stripes can wash out. Unequal beam strengths can also weaken the stripes, so poor visibility does not name a unique cause.",
+    "example": {
+      "title": "Measured bright and dark stripes",
+      "steps": [
+        "The intensity ranges from 2 to 10 W/m².",
+        "Visibility is (10 − 2)/(10 + 2) = 2/3, about 0.667."
+      ]
+    },
+    "equation": "V = (I_max − I_min)/(I_max + I_min)",
+    "terms": [
+      {
+        "term": "Visibility",
+        "definition": "The brightness difference divided by the brightness sum for the brightest and darkest stripes."
+      }
+    ]
+  },
+  "michelson-double-path": {
+    "idea": "Moving a Michelson mirror changes the light's outward and return paths.",
+    "explanation": "The round trip changes by twice the mirror movement. For stable light in air treated as vacuum, each wavelength of round-trip change gives one fringe cycle.",
+    "example": {
+      "title": "A mirror moves 3 micrometres",
+      "steps": [
+        "The wavelength is 600 nm, or 0.600 μm.",
+        "A 3.0 μm movement changes the round trip by 6.0 μm, giving 10 fringe cycles."
+      ]
+    },
+    "equation": "N = 2∣Δx∣/λ₀",
+    "terms": [
+      {
+        "term": "Michelson interferometer",
+        "definition": "A device that compares light traveling out and back along two arms."
+      }
+    ]
+  },
+  "reflection-phase": {
+    "idea": "A reflection can reverse the sign of the electric-field amplitude.",
+    "explanation": "At normal incidence from lower to higher index, the reflected field has a half-cycle reversal in this ideal model. Squaring its amplitude gives a power fraction and removes the sign information.",
+    "example": {
+      "title": "Air against glass",
+      "steps": [
+        "For indices 1.00 and 1.50, the amplitude ratio is (1 − 1.5)/(1 + 1.5) = −0.20.",
+        "The power fraction is 0.20² = 0.040, or 4%, with a field phase reversal."
+      ]
+    },
+    "equation": "r = (n₁ − n₂)/(n₁ + n₂)",
+    "terms": [
+      {
+        "term": "Phase reversal",
+        "definition": "A half-cycle shift that changes the field's sign."
+      }
+    ]
+  },
+  "thin-film-condition": {
+    "idea": "Thin-film reflection depends on both travel distance and reflection phase shifts.",
+    "explanation": "In an ideal air–film–air layer of higher index, one reflection reverses phase and the other does not. Include that half-cycle difference when finding reflected bright bands.",
+    "example": {
+      "title": "A 600-nanometre reflection",
+      "steps": [
+        "For film index 1.50, the smallest positive thickness for constructive reflection is λ₀/(4n).",
+        "It is 600 ÷ (4 × 1.50) = 100 nm at normal incidence."
+      ]
+    },
+    "equation": "2nt = (m + 1/2)λ₀",
+    "terms": [
+      {
+        "term": "Constructive interference",
+        "definition": "Reinforcement when waves arrive with matching phase."
+      }
+    ]
+  },
+  "phase-ambiguity": {
+    "idea": "A repeating fringe does not reveal how many whole cycles occurred.",
+    "explanation": "The measured phase may give only a fraction of a wavelength. To find the full path difference, you must also know the whole-cycle count. Equal brightness alone gives even less information.",
+    "example": {
+      "title": "An unknown fringe order",
+      "steps": [
+        "At wavelength 600 nm, a measured phase π/2 corresponds to a 150 nm fractional path.",
+        "The full path difference is 150 nm plus an unknown whole number of 600 nm steps."
+      ]
+    },
+    "equation": "ΔOPL = (k + φ/(2π))λ₀",
+    "terms": [
+      {
+        "term": "Fringe order (k)",
+        "definition": "The whole number of wavelength steps in a path difference."
+      }
+    ]
+  },
+  "huygens-front": {
+    "idea": "Light from different parts of an opening adds with different phases.",
+    "explanation": "Imagine many small patches contributing to the wave at one observation point. Their travel distances set their phases, so the contributions can reinforce or cancel. The patches are a model, not newly created independent lamps.",
+    "example": {
+      "title": "Cancellation at one point",
+      "steps": [
+        "Two patch contributions are +2 V/m and −2 V/m at the chosen instant.",
+        "Their total is zero even though neither contribution is zero."
+      ]
+    },
+    "equation": "E_total = E₁ + E₂ + …",
+    "terms": [
+      {
+        "term": "Phase",
+        "definition": "The stage reached in a repeating wave."
+      }
+    ]
+  },
+  "single-aperture": {
+    "idea": "A narrower slit spreads light across a wider angle.",
+    "explanation": "Different parts of the slit contribute waves with different travel distances. At a dark minimum these cancel. For a uniformly lit slit in the far field, slit width sets the first dark angle.",
+    "example": {
+      "title": "A narrow slit",
+      "steps": [
+        "Use wavelength 500 nm and slit width 0.10 mm.",
+        "The first dark angle is about 0.005 rad, so the central bright region spans about 0.010 rad."
+      ]
+    },
+    "equation": "sinθ₁ = λ/a",
+    "terms": [
+      {
+        "term": "Far field",
+        "definition": "A region where the wave pattern can be described mainly by observation angle."
+      }
+    ]
+  },
+  "finite-double-slit": {
+    "idea": "Real two-slit patterns combine slit separation with each slit's own spreading.",
+    "explanation": "Separation sets fine stripe spacing; width sets a broader brightness envelope. A predicted bright stripe disappears if it lands at a dark point of that envelope.",
+    "example": {
+      "title": "A missing second stripe",
+      "steps": [
+        "Let slit separation be twice slit width.",
+        "The second interference maximum then coincides with the first single-slit minimum, so that order is missing."
+      ]
+    },
+    "equation": "d sinθ = 2λ and d = 2a imply a sinθ = λ",
+    "terms": [
+      {
+        "term": "Envelope",
+        "definition": "The broader pattern that controls the brightness of finer fringes."
+      }
+    ]
+  },
+  "grating-orders": {
+    "idea": "A grating reinforces directions where neighboring paths differ by whole wavelengths.",
+    "explanation": "The whole number is called the order. Only angles with sine between −1 and 1 are possible. More illuminated grooves can make the bright peaks narrower under the ideal model.",
+    "example": {
+      "title": "First-order light",
+      "steps": [
+        "Use groove spacing 2.0 μm and wavelength 0.50 μm.",
+        "In first order, sinθ = 0.25, giving θ ≈ 14.48°."
+      ]
+    },
+    "equation": "d sinθ = mλ",
+    "terms": [
+      {
+        "term": "Grating",
+        "definition": "A repeating array of openings or grooves that separates light by interference."
+      },
+      {
+        "term": "Order (m)",
+        "definition": "The whole-number path difference measured in wavelengths."
+      }
+    ]
+  },
+  "point-spread": {
+    "idea": "Even one point source makes a spread-out image through a finite aperture.",
+    "explanation": "The point-spread function is the blurred light pattern made by one point source. For independent points whose waves do not keep a fixed relationship, their intensity patterns add in a suitable linear imaging system. Waves that stay coordinated require adding fields first.",
+    "example": {
+      "title": "Two incoherent points",
+      "steps": [
+        "Each point supplies 1 μW; at one pixel their pattern values are 2 × 10⁶ and 1 × 10⁶ per m².",
+        "The irradiances add to 3 W/m² at that pixel."
+      ]
+    },
+    "equation": "I_image = B₁h₁ + B₂h₂",
+    "terms": [
+      {
+        "term": "Point-spread function",
+        "definition": "The image intensity pattern from one point source."
+      },
+      {
+        "term": "Irradiance",
+        "definition": "Received light power per area."
+      },
+      {
+        "term": "Incoherent",
+        "definition": "Having no stable relative wave-cycle relationship during the observation."
+      }
+    ]
+  },
+  "angular-resolution": {
+    "idea": "A larger clear aperture can distinguish smaller angular separations.",
+    "explanation": "Diffraction gives each point source a spread-out pattern. The Rayleigh criterion compares one pattern's bright centre with the other's first dark ring. It is a stated criterion, not a universal limit on all inference.",
+    "example": {
+      "title": "A circular telescope opening",
+      "steps": [
+        "Use wavelength 500 nm and diameter 0.10 m.",
+        "The Rayleigh angle is about 6.10 × 10⁻⁶ rad."
+      ]
+    },
+    "equation": "θ_R ≈ 1.22λ/D",
+    "terms": [
+      {
+        "term": "Rayleigh criterion",
+        "definition": "A conventional separation scale for two incoherent point images."
+      },
+      {
+        "term": "Diffraction",
+        "definition": "Wave spreading caused by an aperture or edge."
+      }
+    ]
+  },
+  "numerical-aperture": {
+    "idea": "Numerical aperture describes the cone of light an objective can collect.",
+    "explanation": "An objective is the lens facing the object. Its numerical aperture combines the width of its collected light cone with the material's refractive index, which compares wave speeds. A larger value usually supports finer detail in the stated imaging model.",
+    "example": {
+      "title": "An objective in air",
+      "steps": [
+        "The half-angle is 30°, giving NA = 1 × sin30° = 0.50.",
+        "At vacuum wavelength 500 nm, the introductory lateral resolution scale is about 610 nm."
+      ]
+    },
+    "equation": "δr ≈ 0.61λ₀/NA",
+    "terms": [
+      {
+        "term": "Numerical aperture (NA)",
+        "definition": "Material refractive index times the sine of the light cone's half-angle."
+      },
+      {
+        "term": "λ₀",
+        "definition": "Light wavelength in empty space."
+      },
+      {
+        "term": "δr",
+        "definition": "The stated sideways detail-separation scale."
+      }
+    ]
+  },
+  "sampling-contrast": {
+    "idea": "Pixels cannot restore detail that the optics already removed.",
+    "explanation": "The optics blur the image before pixels sample it. In an ideal band-limited pattern, use more than two samples per cycle to avoid basic sampling ambiguity. Contrast and noise still affect what can be seen.",
+    "example": {
+      "title": "A pixel grid",
+      "steps": [
+        "A 5 μm pixel pitch gives 200 samples per millimetre.",
+        "A 50-cycles/mm image pattern gets four samples per cycle, though sufficient optical contrast is still needed."
+      ]
+    },
+    "equation": "sampling_frequency = 1/pixel_pitch",
+    "terms": [
+      {
+        "term": "Sampling",
+        "definition": "Recording values at selected positions."
+      },
+      {
+        "term": "Contrast",
+        "definition": "The strength of brightness differences."
+      }
+    ]
+  },
+  "spatial-frequency": {
+    "idea": "Spatial frequency counts repetitions per distance, rather than per second.",
+    "explanation": "A striped image has a repeating distance called its period. Divide one by that distance to find cycles per length. Fine details have higher spatial frequencies.",
+    "example": {
+      "title": "A striped image",
+      "steps": [
+        "The pattern repeats every 0.20 mm.",
+        "Its spatial frequency is 1 ÷ 0.20 = 5 cycles/mm."
+      ]
+    },
+    "equation": "ν = 1/Λ",
+    "terms": [
+      {
+        "term": "Spatial frequency",
+        "definition": "The number of pattern repetitions per unit distance."
+      }
+    ]
+  },
+  "far-field-transform": {
+    "idea": "A far-field diffraction pattern reveals spatial patterns in an aperture's field.",
+    "explanation": "A Fourier transform separates a pattern into repeating wave patterns of different sizes. Far from an opening, these patterns help predict which directions receive light. The calculation gives a field amplitude; measuring only its squared size loses information about its wave-cycle stage.",
+    "example": {
+      "title": "One observation angle",
+      "steps": [
+        "At wavelength 500 nm and sinθ = 0.010, the sampled spatial frequency is 20000 cycles/m.",
+        "That is 20 cycles/mm across the aperture."
+      ]
+    },
+    "equation": "ν_x = sinθ/λ",
+    "terms": [
+      {
+        "term": "Fourier transform",
+        "definition": "A way to express a pattern as contributions from repeating waves."
+      },
+      {
+        "term": "Spatial frequency",
+        "definition": "Pattern repeats per unit of distance."
+      },
+      {
+        "term": "Phase",
+        "definition": "The stage reached in a repeating wave."
+      },
+      {
+        "term": "Far field",
+        "definition": "The distant region where this angle-based diffraction approximation applies."
+      }
+    ]
+  },
+  "frequency-filter": {
+    "idea": "An aperture limits which image patterns can pass through an optical system.",
+    "explanation": "Fine image stripes need more repetitions per millimetre, called higher spatial frequencies. An aperture can remove some of these patterns. The cutoff differs for coordinated light waves and independent light contributions, so identify which model applies before calculating.",
+    "example": {
+      "title": "One ideal pupil",
+      "steps": [
+        "Use NA = 0.25 and vacuum wavelength 500 nm.",
+        "The coherent cutoff is 500 cycles/mm; the corresponding ideal incoherent cutoff is 1000 cycles/mm."
+      ]
+    },
+    "equation": "ν_c,coherent = NA/λ₀",
+    "terms": [
+      {
+        "term": "Cutoff",
+        "definition": "The highest transmitted spatial frequency in the stated ideal model."
+      },
+      {
+        "term": "Coherent",
+        "definition": "Having a stable relative wave-cycle relationship."
+      },
+      {
+        "term": "Incoherent",
+        "definition": "Having no such stable relationship during the observation."
+      },
+      {
+        "term": "NA",
+        "definition": "Numerical aperture, describing the lens's collection cone and surrounding material."
+      }
+    ]
+  },
+  "near-far": {
+    "idea": "The Fresnel number helps decide whether a far-field approximation is reasonable.",
+    "explanation": "It compares aperture size with wavelength and travel distance. A value much smaller than one supports the simple far-field model. State whether aperture size means radius or full width.",
+    "example": {
+      "title": "Checking an observation distance",
+      "steps": [
+        "Use aperture radius 0.50 mm, wavelength 500 nm and distance 1 m.",
+        "The Fresnel number is 0.50, so this is not clearly in the far-field limit."
+      ]
+    },
+    "equation": "F = a²/(λL)",
+    "terms": [
+      {
+        "term": "Fresnel number",
+        "definition": "A dimensionless comparison of aperture size with propagation spreading."
+      }
+    ]
+  },
+  "absorption-law": {
+    "idea": "Equal thicknesses of an absorbing material remove equal fractions of the light reaching them.",
+    "explanation": "Later layers receive less light, so they remove fewer watts. A constant fractional loss produces exponential decay. Reflection at surfaces and scattering need separate treatment.",
+    "example": {
+      "title": "Light through half a metre",
+      "steps": [
+        "Use absorption coefficient 2 per metre and entering irradiance 10 W/m².",
+        "After 0.50 m, the model gives 10 exp(−1) ≈ 3.68 W/m²."
+      ]
+    },
+    "equation": "I(L) = I₀ exp(−αL)",
+    "terms": [
+      {
+        "term": "Absorption coefficient (α)",
+        "definition": "The constant fractional intensity-loss rate per distance in this model."
+      }
+    ]
+  },
+  "guided-modes": {
+    "idea": "A waveguide allows only field patterns that fit its boundaries.",
+    "explanation": "A waveguide keeps light near a central core. Only certain wave patterns fit its boundary conditions and travel with the same shape across the guide. These patterns are guided modes; an effective index summarizes each pattern's forward phase travel.",
+    "example": {
+      "title": "One candidate mode",
+      "steps": [
+        "The cladding index is 1.45 and the core index is 1.50.",
+        "An effective index of 1.47 passes this necessary range check, though a full mode calculation is still needed."
+      ]
+    },
+    "equation": "n_cladding < n_effective < n_core",
+    "terms": [
+      {
+        "term": "Guided mode",
+        "definition": "A permitted light pattern that keeps its cross-sectional shape as it travels."
+      },
+      {
+        "term": "Cladding",
+        "definition": "The material surrounding the central core."
+      },
+      {
+        "term": "Effective index",
+        "definition": "Empty-space light speed divided by the pattern's forward phase speed."
+      }
+    ]
+  },
+  "detector-shot-noise": {
+    "idea": "A detector's responsivity converts received light power into average current.",
+    "explanation": "Responsivity is current per watt at the stated wavelength and operating conditions. It predicts the mean signal, not every fluctuating reading. Counting noise and electronic noise require separate checks.",
+    "example": {
+      "title": "A photodiode receives light",
+      "steps": [
+        "Responsivity is 0.40 A/W and received power is 5.0 μW.",
+        "The mean photocurrent is 0.40 × 5.0 = 2.0 μA."
+      ]
+    },
+    "equation": "I_photo = RP",
+    "terms": [
+      {
+        "term": "Responsivity (R)",
+        "definition": "Detector current per watt of received optical power."
+      }
+    ]
+  },
+  "photon-energy": {
+    "idea": "A photon's energy depends on frequency, not beam brightness.",
+    "explanation": "A photon is one packet of light energy. Higher frequency means more energy in each packet. At a fixed frequency, increasing beam power increases the average number of photons arriving each second rather than increasing the energy of each one.",
+    "example": {
+      "title": "A 600-nanometre photon",
+      "steps": [
+        "Using hc ≈ 1.9878 × 10⁻²⁵ J m, divide by 6.00 × 10⁻⁷ m.",
+        "The photon energy is about 3.313 × 10⁻¹⁹ J."
+      ]
+    },
+    "equation": "E_photon = hf = hc/λ₀",
+    "terms": [
+      {
+        "term": "Photon",
+        "definition": "One packet of light energy."
+      },
+      {
+        "term": "h",
+        "definition": "Planck's constant."
+      },
+      {
+        "term": "c",
+        "definition": "Light speed in empty space."
+      },
+      {
+        "term": "λ₀",
+        "definition": "The wavelength in empty space."
+      },
+      {
+        "term": "f",
+        "definition": "Frequency, or repeats per second."
+      }
+    ]
+  },
+  "choose-optical-model": {
+    "idea": "Choose the optical model for the question you need to answer.",
+    "explanation": "Ray diagrams can locate an image; waves explain fine diffraction blur; photon statistics explain counting fluctuations. One apparatus may need all three, but each calculation answers a different question.",
+    "example": {
+      "title": "Two faint points through a lens",
+      "steps": [
+        "The question is the smallest separation the instrument can distinguish.",
+        "Ray tracing alone is insufficient: include diffraction and then check whether detected signal and noise support the distinction."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Diffraction",
+        "definition": "Wave spreading from a finite opening."
+      },
+      {
+        "term": "Counting fluctuations",
+        "definition": "Random variation in the number of detected events."
+      }
+    ]
+  },
+  "system-capstone": {
+    "idea": "In a lens chain, locate each image before using it as the next object.",
+    "explanation": "Reset distances at each lens. Multiplying signed magnifications gives the final orientation and size. Two inversions can make the final image upright relative to the original.",
+    "example": {
+      "title": "One two-lens system",
+      "steps": [
+        "Lens one has f = 10 cm and object distance 30 cm, forming an image 15 cm away.",
+        "Lens two is 27 cm after lens one with f = 8 cm; its object is 12 cm away, giving a final image 24 cm beyond it.",
+        "The magnifications −0.5 and −2 multiply to +1: upright and original size."
+      ]
+    },
+    "equation": "d_image = f d_object/(d_object − f)",
+    "terms": [
+      {
+        "term": "Magnification",
+        "definition": "Signed image height divided by object height."
+      }
+    ]
+  },
+  "aperture-wavelength": {
+    "idea": "Changing aperture size changes both light collection and diffraction.",
+    "explanation": "At fixed wavelength and uniform illumination, doubling a circular aperture's diameter gives four times its area and half the Rayleigh angle. These are different consequences of the same change, not interchangeable measures.",
+    "example": {
+      "title": "A larger telescope opening",
+      "steps": [
+        "Double the diameter while keeping wavelength and illumination fixed.",
+        "It collects four times the power and halves the ideal Rayleigh angular scale."
+      ]
+    },
+    "equation": "area ∝ diameter²; θ_R ∝ λ/D",
+    "terms": [
+      {
+        "term": "Rayleigh angle",
+        "definition": "A conventional diffraction-based separation scale for two incoherent point images."
+      }
+    ]
+  },
+  "optics-assessment": {
+    "idea": "Check image position, blur and detected signal as separate parts of one prediction.",
+    "explanation": "Knowing where an image forms does not tell you how much power reaches it. Use the supplied aperture, wavelength and received power for their own calculations, keeping each model's assumptions.",
+    "example": {
+      "title": "One lens and detector",
+      "steps": [
+        "A 12 cm focal-length lens views an object 36 cm away, giving an inverted image 18 cm beyond the lens.",
+        "A 6.0 mm aperture at 600 nm gives Rayleigh angle about 1.22 × 10⁻⁴ rad.",
+        "If the detector receives 4.0 μW at 0.45 A/W responsivity, its mean current is 1.8 μA."
+      ]
+    },
+    "equation": "d_image = f d_object/(d_object − f)",
+    "terms": [
+      {
+        "term": "Responsivity",
+        "definition": "Detector current per watt of received light."
+      },
+      {
+        "term": "Rayleigh angle",
+        "definition": "A stated diffraction-based separation scale."
+      }
+    ]
+  }
+}

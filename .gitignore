@@ -3,3 +3,9 @@ node_modules/
 .env.*
 .openai/
 .DS_Store
+
+# Local authoring and workspace material
+authoring/
+work/
+outputs/
+*.log

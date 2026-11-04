@@ -1,5 +1,5 @@
 export const TRACKS=['physics','quantum'];
-export const trackForCourse=id=>/^quantum[123]$/.test(id)?'quantum':'physics';
+export const trackForCourse=id=>(/^(quantum[123]|quantum-information|many-body|quantum-field-theory)$/.test(id))?'quantum':'physics';
 export const normalizeTrack=value=>TRACKS.includes(value)?value:'physics';
 export const coursesForTrack=(courses,track)=>courses.filter(course=>trackForCourse(course.id)===normalizeTrack(track));
 

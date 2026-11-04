@@ -1,0 +1,1495 @@
+{
+  "order-and-disorder": {
+    "idea": "A solid need not have a repeating crystal pattern.",
+    "explanation": "An ideal crystal repeats its atomic arrangement over long distances. An amorphous solid can be rigid without that long-range repetition. Real crystals also contain vibrations, surfaces and defects.",
+    "example": {
+      "title": "One repeating row",
+      "steps": [
+        "Atoms lie at 0, 2, 4 and 6 nm in a toy row.",
+        "Moving the pattern by 2 nm aligns its interior positions with one another."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Crystal",
+        "definition": "A structure with a repeating atomic pattern."
+      },
+      {
+        "term": "Amorphous",
+        "definition": "Without long-range crystal repetition."
+      },
+      {
+        "term": "nm",
+        "definition": "Nanometre, one billionth of a metre."
+      }
+    ]
+  },
+  "lattice-basis-cell": {
+    "idea": "A crystal combines repeat positions with the same small pattern at each position.",
+    "explanation": "The lattice gives the repeat positions. The basis is the group of atoms and their offsets placed at each one. Together they specify the ideal structure.",
+    "example": {
+      "title": "A two-atom repeating pattern",
+      "steps": [
+        "Repeat every 0.6 nm with atoms at offsets 0 and 0.2 nm.",
+        "At repeat number two, the atoms are at 1.2 and 1.4 nm."
+      ]
+    },
+    "equation": "x = na + d",
+    "terms": [
+      {
+        "term": "a",
+        "definition": "Repeat spacing."
+      },
+      {
+        "term": "n",
+        "definition": "Whole-number repeat label."
+      },
+      {
+        "term": "d",
+        "definition": "Atom's offset inside the repeating pattern."
+      },
+      {
+        "term": "Lattice",
+        "definition": "The array of repeat positions."
+      }
+    ]
+  },
+  "planes-and-spacing": {
+    "idea": "Crystal planes describe a direction through the atomic pattern, not separate physical sheets.",
+    "explanation": "Miller indices label the plane orientation. For a cubic crystal, their spacing follows the supplied rule. Other crystal shapes need different formulas.",
+    "example": {
+      "title": "Diagonal planes in a cube",
+      "steps": [
+        "For cube edge 0.40 nm, choose planes labeled (1,1,0).",
+        "Their spacing is 0.40/√2 ≈ 0.283 nm."
+      ]
+    },
+    "equation": "d = a/√(h²+k²+l²)",
+    "terms": [
+      {
+        "term": "Miller indices (h,k,l)",
+        "definition": "Whole-number labels describing crystal-plane orientation."
+      },
+      {
+        "term": "a",
+        "definition": "Cubic cell edge."
+      },
+      {
+        "term": "d",
+        "definition": "Spacing between the planes."
+      }
+    ]
+  },
+  "defects": {
+    "idea": "Different defects change different parts of a crystal's arrangement.",
+    "explanation": "A vacancy is a missing atom at a normal site. An interstitial is an atom in an extra position; a dislocation is a line where rows fail to match. Counting vacancies does not count all disorder.",
+    "example": {
+      "title": "Six empty sites",
+      "steps": [
+        "Six of 2000 sites are vacant.",
+        "The vacancy fraction is 6/2000 = 0.003, or 0.3%."
+      ]
+    },
+    "equation": "vacancy_fraction = vacant_sites/total_sites",
+    "terms": [
+      {
+        "term": "Vacancy",
+        "definition": "An empty site in an otherwise occupied ideal pattern."
+      },
+      {
+        "term": "Dislocation",
+        "definition": "A line defect in the arrangement of atomic rows."
+      }
+    ]
+  },
+  "periodic-wave-phase": {
+    "idea": "Scattered waves reinforce when neighboring cells contribute matching phases.",
+    "explanation": "Phase is a wave's stage in its repeating cycle. Neighboring crystal cells can send waves to the same point at matching stages, making a stronger signal. A whole-cycle difference still matches, which explains why certain scattering directions reinforce.",
+    "example": {
+      "title": "One full-cycle difference",
+      "steps": [
+        "Let spacing a = 0.5 nm and wave-vector change q = 4π rad/nm.",
+        "Their product is 2π radians, one full phase turn."
+      ]
+    },
+    "equation": "qa = 2πn",
+    "terms": [
+      {
+        "term": "q",
+        "definition": "Change in wave vector along the row, measuring the phase change per distance caused by scattering."
+      },
+      {
+        "term": "a",
+        "definition": "Cell spacing."
+      },
+      {
+        "term": "n",
+        "definition": "Any whole number."
+      },
+      {
+        "term": "Radian",
+        "definition": "A unit of angle; 2π radians make one full turn."
+      }
+    ]
+  },
+  "reciprocal-lattice": {
+    "idea": "Reciprocal space maps repeating wave patterns rather than ordinary positions.",
+    "explanation": "Its spacing is inversely related to the crystal's real-space spacing. A larger physical repeat therefore gives smaller reciprocal spacing. Inverse-length units describe wave patterns, not a second hidden crystal.",
+    "example": {
+      "title": "One crystal repeat",
+      "steps": [
+        "A row repeats every 0.50 nm.",
+        "Its angular reciprocal spacing is 2π/0.50 = 4π rad/nm."
+      ]
+    },
+    "equation": "G = 2π/a",
+    "terms": [
+      {
+        "term": "G",
+        "definition": "Reciprocal spacing in the angular wave-number convention."
+      },
+      {
+        "term": "a",
+        "definition": "Real-space repeat distance."
+      }
+    ]
+  },
+  "bragg-condition": {
+    "idea": "Crystal diffraction peaks can occur when extra travel distance equals whole wavelengths.",
+    "explanation": "For parallel planes, that extra distance is 2d sinθ. The angle θ is measured from the planes; instruments often report twice that angle. The atomic basis still determines whether a candidate peak appears.",
+    "example": {
+      "title": "One diffraction peak",
+      "steps": [
+        "Use first order, wavelength 0.20 nm and θ = 30°.",
+        "The inferred plane spacing is 0.20 nm; the beam-to-beam scattering angle is 60°."
+      ]
+    },
+    "equation": "2d sinθ = nλ",
+    "terms": [
+      {
+        "term": "d",
+        "definition": "Plane spacing."
+      },
+      {
+        "term": "n",
+        "definition": "Diffraction order, a whole number."
+      },
+      {
+        "term": "λ",
+        "definition": "Wavelength."
+      },
+      {
+        "term": "θ",
+        "definition": "Angle between ray and planes."
+      }
+    ]
+  },
+  "diffraction-inference": {
+    "idea": "For the same reflection and wavelength, a larger diffraction angle means smaller plane spacing.",
+    "explanation": "Rearrange the Bragg rule: spacing is inversely related to sinθ. Compare the same indexed reflection each time. This detects a spacing change without identifying its cause.",
+    "example": {
+      "title": "A shifting reflection",
+      "steps": [
+        "With nλ = 0.30 nm, sinθ rises from 0.50 to 0.60.",
+        "The spacing falls from 0.30 nm to 0.25 nm."
+      ]
+    },
+    "equation": "d = nλ/(2sinθ)",
+    "terms": [
+      {
+        "term": "Indexed reflection",
+        "definition": "A particular identified set of crystal planes producing a diffraction peak."
+      }
+    ]
+  },
+  "bond-equilibrium": {
+    "idea": "Near a stable bond length, a small displacement produces a restoring force.",
+    "explanation": "Potential energy has a minimum at the resting separation. Its slope determines force. A local spring model can describe small changes, but cannot be extended to arbitrarily large stretching.",
+    "example": {
+      "title": "A slightly stretched bond",
+      "steps": [
+        "Use stiffness 40 N/m and stretch 0.01 nm, or 10⁻¹¹ m.",
+        "The local force is −4 × 10⁻¹⁰ N, pulling toward smaller separation."
+      ]
+    },
+    "equation": "F ≈ −k(r−r₀)",
+    "terms": [
+      {
+        "term": "k",
+        "definition": "Small-displacement stiffness."
+      },
+      {
+        "term": "r₀",
+        "definition": "Equilibrium separation."
+      },
+      {
+        "term": "Restoring force",
+        "definition": "A force pointing back toward the resting position."
+      }
+    ]
+  },
+  "bond-types": {
+    "idea": "Bond labels describe how electrons help hold a material together.",
+    "explanation": "Ionic bonding emphasizes attraction between charged ions. Covalent bonding emphasizes shared electron states between neighbors. Metallic bonding includes states extending across many atoms. Real materials can combine these features.",
+    "example": {
+      "title": "A hydrogen-molecule bond picture",
+      "steps": [
+        "In a simple hydrogen-molecule model, two electrons occupy a shared bonding pattern between two nuclei.",
+        "This is covalent bonding: the shared electron distribution helps hold the nuclei together rather than assigning each electron to a separate atom."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Ion",
+        "definition": "An atom or group with net electric charge."
+      },
+      {
+        "term": "Covalent",
+        "definition": "Bonding involving shared electronic states between atoms."
+      },
+      {
+        "term": "Metallic",
+        "definition": "Bonding involving electronic states spread across many atoms."
+      }
+    ]
+  },
+  "stress-strain": {
+    "idea": "Compare stretching using force per area and extension per original length.",
+    "explanation": "Stress is force divided by area; strain is extension divided by starting length. In a small, reversible linear stretch, their ratio is Young's modulus. Stiffness is different from breaking strength.",
+    "example": {
+      "title": "A stretched wire",
+      "steps": [
+        "A 20 N pull acts over 2 × 10⁻⁶ m², giving stress 10⁷ Pa.",
+        "With modulus 10¹¹ Pa and starting length 0.50 m, the extension is 0.05 mm."
+      ]
+    },
+    "equation": "stress = Young's_modulus × strain",
+    "terms": [
+      {
+        "term": "Stress",
+        "definition": "Force per area."
+      },
+      {
+        "term": "Strain",
+        "definition": "Extension divided by initial length."
+      },
+      {
+        "term": "Young's modulus",
+        "definition": "The stiffness ratio for a specified small uniaxial stretch."
+      }
+    ]
+  },
+  "elastic-limits": {
+    "idea": "A material can be stiffer in one direction than another.",
+    "explanation": "Elastic means the deformation reverses when the load is removed. Linear means stress is proportional to strain, an extra assumption. A single stiffness value applies only to the specified direction and loading conditions.",
+    "example": {
+      "title": "One direction of a crystal",
+      "steps": [
+        "A stress of 100 MPa gives strain 0.001 in the linear range.",
+        "The inferred Young's modulus in that direction is 100 GPa."
+      ]
+    },
+    "equation": "Y = σ/ε",
+    "terms": [
+      {
+        "term": "σ",
+        "definition": "Stress."
+      },
+      {
+        "term": "ε",
+        "definition": "Strain."
+      },
+      {
+        "term": "MPa",
+        "definition": "One million pascals."
+      },
+      {
+        "term": "GPa",
+        "definition": "One billion pascals."
+      },
+      {
+        "term": "Anisotropy",
+        "definition": "Dependence on direction."
+      }
+    ]
+  },
+  "lattice-displacements": {
+    "idea": "An atom's neighbors help determine its restoring force.",
+    "explanation": "In a simple spring-linked row, unequal displacements stretch the connecting springs. The force depends on differences between neighbors, not absolute position. Moving the whole row equally would stretch no springs.",
+    "example": {
+      "title": "One displaced atom",
+      "steps": [
+        "The central mass moves 0.01 nm while its two neighbors remain still.",
+        "The spring-force bracket is −0.02 nm, so the force pulls it back."
+      ]
+    },
+    "equation": "F_n = K(u_next + u_previous − 2u_n)",
+    "terms": [
+      {
+        "term": "u",
+        "definition": "Displacement from equilibrium."
+      },
+      {
+        "term": "K",
+        "definition": "Nearest-neighbor spring stiffness."
+      }
+    ]
+  },
+  "acoustic-optical": {
+    "idea": "Atoms in one repeating cell can move together or against each other.",
+    "explanation": "A vibration pattern is called a mode. In a long-wavelength pattern, moving neighboring cells together barely stretches their bonds, so its frequency approaches zero. Two atoms inside each cell can instead move against each other and keep stretching a bond, allowing a nonzero frequency.",
+    "example": {
+      "title": "Opposite motion inside a cell",
+      "steps": [
+        "In a two-atom cell, one atom moves right while the other moves left.",
+        "Their bond stretches, so this repeated internal motion can oscillate at a finite frequency."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Acoustic branch",
+        "definition": "A family of vibration patterns whose frequency approaches zero as wavelength grows."
+      },
+      {
+        "term": "Optical branch",
+        "definition": "A family that can retain nonzero frequency at long wavelength; the name does not guarantee visible-light interaction."
+      }
+    ]
+  },
+  "phonon-occupation": {
+    "idea": "A phonon is one energy step in a shared vibration pattern of atoms.",
+    "explanation": "Each vibration pattern can gain energy in fixed-sized steps called phonons. Repeated measurements can find different whole-number counts, so their average need not be a whole number. Even zero phonons does not mean zero motion: the lowest quantum state retains zero-point energy.",
+    "example": {
+      "title": "One thermal mode",
+      "steps": [
+        "Choose mode energy ε so that ε/(k_BT) = ln2.",
+        "Its mean phonon count is 1/(2−1) = 1, although individual measurements can give different counts."
+      ]
+    },
+    "equation": "n̄ = 1/[exp(ε/(k_BT))−1]",
+    "terms": [
+      {
+        "term": "ε",
+        "definition": "The energy added by one phonon in this pattern."
+      },
+      {
+        "term": "k_BT",
+        "definition": "Boltzmann's constant times positive kelvin temperature."
+      },
+      {
+        "term": "exp",
+        "definition": "The exponential calculator function; exp(ln2) is 2."
+      },
+      {
+        "term": "n̄",
+        "definition": "The average phonon count."
+      },
+      {
+        "term": "Zero-point energy",
+        "definition": "Energy that remains in the lowest allowed vibration state."
+      }
+    ]
+  },
+  "lattice-heat-capacity": {
+    "idea": "At low temperature, many vibration modes are too costly to excite easily.",
+    "explanation": "Heat capacity measures how much energy changes per temperature rise. A simple three-dimensional Debye model predicts a lattice contribution proportional to T³ at low temperature. Electrons and other effects can add separate contributions.",
+    "example": {
+      "title": "Doubling temperature in the same regime",
+      "steps": [
+        "The lattice heat capacity is 2 μJ/K at 5 K.",
+        "At 10 K the T³ model predicts 2 × 2³ = 16 μJ/K."
+      ]
+    },
+    "equation": "C_lattice ∝ T³",
+    "terms": [
+      {
+        "term": "Heat capacity",
+        "definition": "Energy change per temperature rise under stated conditions."
+      },
+      {
+        "term": "Debye model",
+        "definition": "A simplified model of a solid's vibration modes."
+      },
+      {
+        "term": "μJ",
+        "definition": "One millionth of a joule."
+      }
+    ]
+  },
+  "pauli-box": {
+    "idea": "Electrons fill distinct complete states rather than all collecting in the lowest one.",
+    "explanation": "A spatial state can offer two different spin states. Each complete spatial-and-spin state holds at most one electron. At zero temperature in this noninteracting model, fill the lowest energies first.",
+    "example": {
+      "title": "Four electrons in three levels",
+      "steps": [
+        "Spatial levels have energies 1, 3 and 6 eV, each with two spin states.",
+        "Four electrons fill the first two levels, totaling 2 × 1 + 2 × 3 = 8 eV."
+      ]
+    },
+    "equation": "occupancy_per_complete_electron_state ≤ 1",
+    "terms": [
+      {
+        "term": "Pauli rule",
+        "definition": "No two identical fermions occupy the same complete one-particle state."
+      },
+      {
+        "term": "Spin",
+        "definition": "An intrinsic quantum angular-momentum property."
+      }
+    ]
+  },
+  "density-of-states": {
+    "idea": "Available states and occupied states are different counts.",
+    "explanation": "Density of states tells how many allowed states lie in an energy interval. Multiply by the interval width to estimate available states. Multiply by the occupation fraction as well to estimate how many are occupied.",
+    "example": {
+      "title": "One narrow energy interval",
+      "steps": [
+        "Density of states is 40 states/eV across 0.10 eV, giving about four states.",
+        "If their occupation fraction is 0.25, the mean occupied count is one."
+      ]
+    },
+    "equation": "occupied_count ≈ g(E)f(E)ΔE",
+    "terms": [
+      {
+        "term": "g(E)",
+        "definition": "Available states per energy interval."
+      },
+      {
+        "term": "f(E)",
+        "definition": "Average occupied fraction."
+      },
+      {
+        "term": "ΔE",
+        "definition": "The narrow interval width."
+      }
+    ]
+  },
+  "fermi-occupancy": {
+    "idea": "Temperature softens the boundary between mostly occupied and mostly empty electron states.",
+    "explanation": "Chemical potential is the energy reference controlling equilibrium particle filling. At positive temperature, states well below it are mostly filled and states well above are mostly empty. Exactly at it, mean occupancy is one half.",
+    "example": {
+      "title": "A state at chemical potential",
+      "steps": [
+        "Set E − μ = 0 at a positive temperature.",
+        "The exponential is one, giving occupancy 1/(1+1) = 0.50."
+      ]
+    },
+    "equation": "f = 1/[exp((E−μ)/(k_BT))+1]",
+    "terms": [
+      {
+        "term": "E",
+        "definition": "State energy."
+      },
+      {
+        "term": "μ",
+        "definition": "Chemical potential."
+      },
+      {
+        "term": "k_BT",
+        "definition": "Boltzmann's constant times kelvin temperature."
+      },
+      {
+        "term": "f",
+        "definition": "Average occupancy of one complete electron state."
+      }
+    ]
+  },
+  "degenerate-gas": {
+    "idea": "A strongly filled electron gas does not follow dilute classical counting.",
+    "explanation": "The Pauli rule blocks already occupied states. If temperature is far below the Fermi temperature, warming mainly changes states near the filling boundary. Here “degenerate” describes quantum statistics, not equal-energy levels.",
+    "example": {
+      "title": "A metal-like energy scale",
+      "steps": [
+        "Fermi energy is 4 eV, giving Fermi temperature about 46400 K.",
+        "At 300 K the ratio is about 0.0065, so dilute classical occupancy is a poor model."
+      ]
+    },
+    "equation": "T_F = E_F/k_B",
+    "terms": [
+      {
+        "term": "Fermi energy (E_F)",
+        "definition": "The zero-temperature filling energy measured from the band bottom."
+      },
+      {
+        "term": "Fermi temperature (T_F)",
+        "definition": "That energy divided by Boltzmann's constant."
+      }
+    ]
+  },
+  "bloch-form": {
+    "idea": "An electron wave can repeat its probability pattern while changing phase between cells.",
+    "explanation": "A repeating crystal allows electron wave patterns whose shapes repeat from cell to cell. Their sign or wave-cycle stage can still change between repeats. Since probability depends on the amplitude's squared size, flipping its sign leaves the probability pattern unchanged.",
+    "example": {
+      "title": "A half-turn phase per cell",
+      "steps": [
+        "Let ka = π, where a is cell spacing.",
+        "Moving one cell multiplies the amplitude by −1, but leaves its squared magnitude unchanged."
+      ]
+    },
+    "equation": "ψ(x+a) = exp(ika)ψ(x)",
+    "terms": [
+      {
+        "term": "ψ",
+        "definition": "Electron wave amplitude; its squared size gives probability density."
+      },
+      {
+        "term": "k",
+        "definition": "Wave vector, measuring phase change per distance."
+      },
+      {
+        "term": "a",
+        "definition": "Cell spacing."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary-number unit used to describe a wave's cycle."
+      },
+      {
+        "term": "exp(ika)",
+        "definition": "A factor describing the phase change over one cell."
+      }
+    ]
+  },
+  "nearly-free-gap": {
+    "idea": "A periodic potential can mix equal-energy waves and split their energies.",
+    "explanation": "An electron feels a repeating electric environment in a crystal. This can mix two wave patterns that originally had the same energy. The resulting combinations can have different energies, opening a gap: an interval with no allowed energy from these states.",
+    "example": {
+      "title": "A two-state split",
+      "steps": [
+        "Use common energy 2.0 eV and coupling 0.15 eV.",
+        "The new energies are 1.85 and 2.15 eV, separated by 0.30 eV."
+      ]
+    },
+    "equation": "E_gap = 2∣V∣",
+    "terms": [
+      {
+        "term": "V",
+        "definition": "The supplied interaction energy mixing the two wave patterns."
+      },
+      {
+        "term": "∣V∣",
+        "definition": "The size of that interaction without its sign."
+      },
+      {
+        "term": "Energy gap",
+        "definition": "An interval between the split allowed energies."
+      }
+    ]
+  },
+  "tight-binding": {
+    "idea": "Coupling neighboring atomic states spreads one energy level into a band.",
+    "explanation": "An electron's wave pattern can extend from one atomic site to its neighbors. This linking, called hopping in the model, makes different combinations have different energies and forms a band. It does not mean a classical electron jumps on a fixed schedule.",
+    "example": {
+      "title": "One point in a simple band",
+      "steps": [
+        "Use E₀ = 1.0 eV and hopping t = 0.20 eV.",
+        "At k = 0, the model gives E = 1.0 − 0.40 = 0.60 eV."
+      ]
+    },
+    "equation": "E(k) = E₀ − 2t cos(ka)",
+    "terms": [
+      {
+        "term": "t",
+        "definition": "The interaction energy linking neighboring states."
+      },
+      {
+        "term": "k",
+        "definition": "Wave vector, measuring phase change per distance."
+      },
+      {
+        "term": "a",
+        "definition": "Cell spacing."
+      },
+      {
+        "term": "E₀",
+        "definition": "Energy of an isolated site."
+      },
+      {
+        "term": "Band",
+        "definition": "A range of allowed electron energies in a solid."
+      }
+    ]
+  },
+  "bandwidth-localization": {
+    "idea": "A narrow band shows weak coupling, but does not by itself prove localization.",
+    "explanation": "A narrow band, or small range of allowed energies, indicates weak linking between neighboring states in this model. A perfectly repeating chain can still allow waves spread across the whole chain. Disorder and interactions can instead concentrate states in a smaller region.",
+    "example": {
+      "title": "A weakly coupled chain",
+      "steps": [
+        "Let the neighbor-linking energy have size 0.05 eV.",
+        "The simple band's width is 4 × 0.05 = 0.20 eV, but its allowed wave patterns can still extend across the ideal repeating chain."
+      ]
+    },
+    "equation": "W = 4∣t∣",
+    "terms": [
+      {
+        "term": "Bandwidth (W)",
+        "definition": "The energy range covered by a band."
+      },
+      {
+        "term": "Localization",
+        "definition": "A state being concentrated in a limited spatial region."
+      },
+      {
+        "term": "t",
+        "definition": "Neighbor coupling energy."
+      }
+    ]
+  },
+  "filled-bands": {
+    "idea": "Electrons need accessible empty states to change their current response easily.",
+    "explanation": "A filled ideal band has canceling current contributions, and its states are already occupied. A partly filled band has nearby empty states. This simple picture can be altered by interactions, disorder or strong fields.",
+    "example": {
+      "title": "A half-filled band",
+      "steps": [
+        "At low temperature, an ideal band is only half occupied.",
+        "A weak field can rearrange occupation into nearby empty states more easily than in a full isolated band."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Band",
+        "definition": "A range of allowed electron-state energies in a solid."
+      },
+      {
+        "term": "Occupation",
+        "definition": "Which available states contain electrons."
+      }
+    ]
+  },
+  "fermi-surface": {
+    "idea": "The Fermi surface is a boundary in wave-vector space, not a metal's outer skin.",
+    "explanation": "A wave vector describes a wave's direction and the rate at which its cycle changes across space. At zero temperature, independent electrons fill states up to a boundary in this wave-vector map. That boundary is the Fermi surface, which need not look like the material's outside surface.",
+    "example": {
+      "title": "A free-electron model",
+      "steps": [
+        "States at the Fermi energy all have the same wave-vector magnitude.",
+        "Their directions form a sphere in three-dimensional wave-vector space."
+      ]
+    },
+    "equation": "E(k) = E_F",
+    "terms": [
+      {
+        "term": "Fermi surface",
+        "definition": "The boundary between filled and empty states in the zero-temperature independent-electron model."
+      },
+      {
+        "term": "k",
+        "definition": "Wave vector."
+      },
+      {
+        "term": "E_F",
+        "definition": "The energy at the filling boundary."
+      }
+    ]
+  },
+  "group-effective-mass": {
+    "idea": "Band curvature determines how a wave packet responds to a weak force.",
+    "explanation": "Electrons in a crystal respond to forces according to their allowed energy pattern. Near a rounded band minimum, the curve's bending determines a response number called effective mass. A more sharply bent curve gives a smaller effective mass in this simple approximation.",
+    "example": {
+      "title": "Two band minima",
+      "steps": [
+        "The second parabolic minimum has twice the curvature of the first.",
+        "Its inverse effective mass doubles, so its effective mass is half as large."
+      ]
+    },
+    "equation": "1/m* = (1/ℏ²)d²E/dk²",
+    "terms": [
+      {
+        "term": "Effective mass (m*)",
+        "definition": "A number describing how the electron wave packet accelerates under a weak force."
+      },
+      {
+        "term": "Wave packet",
+        "definition": "A localized combination of nearby wave patterns."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck's constant divided by 2π."
+      },
+      {
+        "term": "k",
+        "definition": "Wave vector, measuring wave-cycle change per distance."
+      },
+      {
+        "term": "d²E/dk²",
+        "definition": "The curvature, or bending, of the energy curve."
+      }
+    ]
+  },
+  "drude-conductivity": {
+    "idea": "Conductivity depends on both carrier number and how easily carriers drift.",
+    "explanation": "The Drude model treats scattering using one average relaxation time. An equivalent formula uses mobility, drift speed per electric field. More carriers do not guarantee high conductivity if their mobility is poor.",
+    "example": {
+      "title": "One carrier population",
+      "steps": [
+        "Use density 2 × 10²² m⁻³, charge magnitude 1.60 × 10⁻¹⁹ C and mobility 0.05 m²/(V s).",
+        "The conductivity is 160 S/m."
+      ]
+    },
+    "equation": "σ = neμ_mobility",
+    "terms": [
+      {
+        "term": "σ",
+        "definition": "Electrical conductivity."
+      },
+      {
+        "term": "n",
+        "definition": "Carrier number per volume."
+      },
+      {
+        "term": "e",
+        "definition": "Positive elementary charge."
+      },
+      {
+        "term": "Mobility",
+        "definition": "Drift speed per electric-field strength."
+      }
+    ]
+  },
+  "intrinsic-carriers": {
+    "idea": "Thermal excitation creates an electron and a hole together in an intrinsic semiconductor.",
+    "explanation": "A semiconductor has filled electron states separated from higher available states by an energy gap. Heating can lift an electron across the gap, leaving a hole: an empty state that can also carry current. Without a donor or acceptor imbalance, each such excitation creates one electron and one hole.",
+    "example": {
+      "title": "A supplied thermal estimate",
+      "steps": [
+        "Let √(N_cN_v) = 10²⁵ m⁻³ and E_g/(2k_BT) = 10.",
+        "The model gives equal electron and hole densities about 4.54 × 10²⁰ m⁻³."
+      ]
+    },
+    "equation": "n = p = n_intrinsic",
+    "terms": [
+      {
+        "term": "n",
+        "definition": "Electron density."
+      },
+      {
+        "term": "p",
+        "definition": "Hole density."
+      },
+      {
+        "term": "N_c,N_v",
+        "definition": "Effective counts per volume of available states near the two band edges."
+      },
+      {
+        "term": "E_g",
+        "definition": "Band-gap energy."
+      },
+      {
+        "term": "k_BT",
+        "definition": "Boltzmann's constant times positive kelvin temperature."
+      },
+      {
+        "term": "Intrinsic",
+        "definition": "With no intentional donor or acceptor imbalance."
+      }
+    ]
+  },
+  "holes-charge": {
+    "idea": "A missing electron in a nearly full band can act like a positive carrier.",
+    "explanation": "Tracking the empty state is often easier than tracking all the remaining electrons. This hole has effective charge +e. It is not a new elementary positive particle inside the atom.",
+    "example": {
+      "title": "Mobile-charge balance",
+      "steps": [
+        "Hole density is 5 × 10²⁰ m⁻³ and electron density is 2 × 10²⁰ m⁻³.",
+        "Their mobile charge density is +48 C/m³ before fixed dopant charges are added."
+      ]
+    },
+    "equation": "ρ_mobile = e(p−n)",
+    "terms": [
+      {
+        "term": "Hole",
+        "definition": "An empty electron state in a nearly full band, treated as a positive carrier."
+      },
+      {
+        "term": "p",
+        "definition": "Hole density."
+      },
+      {
+        "term": "n",
+        "definition": "Electron density."
+      }
+    ]
+  },
+  "doping-chemical-potential": {
+    "idea": "Donor atoms can supply mobile electrons while leaving positive fixed charges behind.",
+    "explanation": "Doping means deliberately adding impurity atoms to a semiconductor. Donors can release electrons into mobile states, becoming fixed positive ions. If nearly every donor is ionized and other carrier sources are negligible, mobile electron count is close to donor count.",
+    "example": {
+      "title": "Fully ionized donors",
+      "steps": [
+        "There are 8 × 10²¹ donors per cubic metre, with negligible acceptors and intrinsic carriers.",
+        "The simple model gives electron density about 8 × 10²¹ m⁻³."
+      ]
+    },
+    "equation": "n ≈ N_D",
+    "terms": [
+      {
+        "term": "Donor",
+        "definition": "An impurity that can supply a mobile electron."
+      },
+      {
+        "term": "Ionized donor",
+        "definition": "A donor left positively charged after releasing an electron."
+      },
+      {
+        "term": "N_D",
+        "definition": "Donor count per volume."
+      },
+      {
+        "term": "n",
+        "definition": "Mobile electron count per volume."
+      }
+    ]
+  },
+  "semiconductor-temperature": {
+    "idea": "A conductivity change can come from carrier density, mobility, or both.",
+    "explanation": "Temperature can free carriers, create electron-hole pairs, or change scattering. Electron and hole currents both contribute. A conductivity curve alone therefore does not directly measure carrier density.",
+    "example": {
+      "title": "Two carrier contributions",
+      "steps": [
+        "Use n = 10²², p = 10²⁰ m⁻³ and mobilities 0.10 and 0.04 m²/(V s).",
+        "With e ≈ 1.60 × 10⁻¹⁹ C, conductivity is about 160.64 S/m."
+      ]
+    },
+    "equation": "σ = e(nμ_n + pμ_p)",
+    "terms": [
+      {
+        "term": "n,p",
+        "definition": "Electron and hole densities."
+      },
+      {
+        "term": "μ_n,μ_p",
+        "definition": "Their drift mobilities."
+      },
+      {
+        "term": "σ",
+        "definition": "Conductivity."
+      }
+    ]
+  },
+  "drift-diffusion": {
+    "idea": "A zero net current can hide equal and opposite drift and diffusion currents.",
+    "explanation": "Diffusion spreads particles from crowded regions. Drift moves charged carriers in an electric field. These contributions can cancel even though particles keep moving randomly.",
+    "example": {
+      "title": "Electrons crowded toward the right",
+      "steps": [
+        "Electrons diffuse left, giving conventional current to the right.",
+        "A leftward electric field can provide an equal leftward conventional drift current."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Diffusion",
+        "definition": "Spreading caused by random motion from higher to lower concentration."
+      },
+      {
+        "term": "Conventional current",
+        "definition": "The direction positive charge would flow."
+      },
+      {
+        "term": "Drift",
+        "definition": "Average directed carrier motion caused by a field."
+      }
+    ]
+  },
+  "depletion-region": {
+    "idea": "A junction's uncovered dopant ions create a field that opposes further carrier diffusion.",
+    "explanation": "A p–n junction joins a hole-rich region with an electron-rich region. Carriers spread across and fill some empty states, uncovering fixed charged impurity ions. Their electric field resists further spreading. The side with fewer impurity ions needs a wider region to balance charge.",
+    "example": {
+      "title": "Unequal doping",
+      "steps": [
+        "The acceptor density is four times the donor density.",
+        "Charge balance requires the n-side depletion width to be four times the p-side width."
+      ]
+    },
+    "equation": "N_A x_p = N_D x_n",
+    "terms": [
+      {
+        "term": "Depletion region",
+        "definition": "The junction region with few mobile carriers but uncovered fixed impurity charge."
+      },
+      {
+        "term": "N_A,N_D",
+        "definition": "Acceptor and donor impurity counts per volume."
+      },
+      {
+        "term": "x_p,x_n",
+        "definition": "The depletion widths on the two sides."
+      }
+    ]
+  },
+  "diode-bias": {
+    "idea": "Forward bias lowers part of a junction's barrier and allows more current.",
+    "explanation": "A p–n junction separates hole-rich material from electron-rich material. Making its p side more positive lowers the barrier resisting carrier flow; this is forward bias. The simple current rule rises rapidly, but real resistance and high carrier injection eventually change it.",
+    "example": {
+      "title": "A supplied forward bias",
+      "steps": [
+        "Let eV/(n_idealk_BT) = ln3, so the exponential is 3.",
+        "The current is I_s(3−1) = 2I_s."
+      ]
+    },
+    "equation": "I = I_s[exp(eV/(n_idealk_BT))−1]",
+    "terms": [
+      {
+        "term": "I_s",
+        "definition": "The model's positive reference current scale."
+      },
+      {
+        "term": "n_ideal",
+        "definition": "A fitted factor adjusting the exponential rise."
+      },
+      {
+        "term": "k_BT",
+        "definition": "Boltzmann's constant times positive kelvin temperature."
+      },
+      {
+        "term": "e",
+        "definition": "Positive elementary charge."
+      },
+      {
+        "term": "V",
+        "definition": "Applied forward voltage."
+      },
+      {
+        "term": "exp",
+        "definition": "The exponential calculator function."
+      }
+    ]
+  },
+  "photovoltaic-limits": {
+    "idea": "A solar cell converts only part of incoming light power into electrical power.",
+    "explanation": "Light can create electron-hole pairs, and the junction helps separate and collect them. Some photons are not absorbed, and other energy becomes heat or is lost through recombination. Absorption alone is not efficiency.",
+    "example": {
+      "title": "One operating point",
+      "steps": [
+        "A model cell receives 20 W of optical power and delivers 4 W electrically.",
+        "Its efficiency is 4/20 = 20%."
+      ]
+    },
+    "equation": "η = P_out/P_in",
+    "terms": [
+      {
+        "term": "Efficiency (η)",
+        "definition": "Useful output power divided by supplied input power."
+      },
+      {
+        "term": "Recombination",
+        "definition": "An electron filling a hole rather than being collected."
+      }
+    ]
+  },
+  "dielectric-polarization": {
+    "idea": "An electric field can slightly separate bound positive and negative charge.",
+    "explanation": "Bound charges cannot travel freely through a dielectric, an insulating material. An electric field can still shift positive and negative charges slightly apart, making many tiny electric dipoles. Polarization counts their combined strength per volume; the response can depend on how rapidly the field changes.",
+    "example": {
+      "title": "A field doubles in one linear model",
+      "steps": [
+        "In a supplied material model, electric susceptibility is 2, so polarization is P = 2ε₀E.",
+        "Doubling the applied field doubles the polarization if the same linear-response conditions hold."
+      ]
+    },
+    "equation": "P = ε₀χ_e E",
+    "terms": [
+      {
+        "term": "P",
+        "definition": "Polarization, electric dipole moment per volume."
+      },
+      {
+        "term": "Electric dipole",
+        "definition": "A separation of positive and negative charge."
+      },
+      {
+        "term": "χ_e",
+        "definition": "Electric susceptibility, the material's linear response factor."
+      },
+      {
+        "term": "ε₀",
+        "definition": "Vacuum permittivity, the electric constant."
+      },
+      {
+        "term": "E",
+        "definition": "Electric-field strength."
+      }
+    ]
+  },
+  "interband-absorption": {
+    "idea": "An electron needs the right energy and an available state to absorb light across bands.",
+    "explanation": "For a direct transition, the photon supplies the energy difference. The final state must be empty and the coupling allowed. Indirect transitions also involve a lattice vibration to balance momentum and energy.",
+    "example": {
+      "title": "A direct 2 eV gap",
+      "steps": [
+        "A 1.5 eV photon cannot supply the required energy alone.",
+        "A 2 eV photon matches it, but absorption still needs an empty final state and allowed coupling."
+      ]
+    },
+    "equation": "hf = E_final − E_initial",
+    "terms": [
+      {
+        "term": "Interband transition",
+        "definition": "A change between electron bands."
+      },
+      {
+        "term": "h",
+        "definition": "Planck's constant."
+      },
+      {
+        "term": "f",
+        "definition": "Light frequency."
+      }
+    ]
+  },
+  "excitons": {
+    "idea": "An excited electron and the hole it leaves can attract and form a bound pair.",
+    "explanation": "The pair is called an exciton. Its energy can lie below that of a separated electron and hole because attraction lowers the energy. The binding energy is what is needed to separate them.",
+    "example": {
+      "title": "One bound pair",
+      "steps": [
+        "The free-pair band gap is 2.0 eV and binding energy is 0.08 eV.",
+        "The exciton transition energy is approximately 1.92 eV."
+      ]
+    },
+    "equation": "E_exciton ≈ E_gap − E_binding",
+    "terms": [
+      {
+        "term": "Exciton",
+        "definition": "A correlated, bound electron-hole pair in a material."
+      }
+    ]
+  },
+  "optical-evidence": {
+    "idea": "A spectral feature can support more than one material model.",
+    "explanation": "Compare the full prediction, not just a hoped-for peak. A residual is measurement minus prediction. Patterns in residuals can suggest missing physics or calibration problems, but even a good fit need not be unique.",
+    "example": {
+      "title": "One absorbance mismatch",
+      "steps": [
+        "A model predicts 0.30 and the measurement is 0.36.",
+        "The residual is +0.06; a repeated nearby pattern deserves investigation rather than automatic dismissal as noise."
+      ]
+    },
+    "equation": "residual = measured − predicted",
+    "terms": [
+      {
+        "term": "Absorbance",
+        "definition": "A logarithmic measure of how much light is removed from a beam; larger values mean less transmitted light."
+      },
+      {
+        "term": "Residual",
+        "definition": "Measured value minus predicted value."
+      }
+    ]
+  },
+  "magnetic-moments": {
+    "idea": "A magnetic moment aligned with a field has lower interaction energy in this simple model.",
+    "explanation": "A magnetic moment describes how strongly something behaves like a tiny magnet and its direction. In the simple field-energy rule, lining up with the field lowers energy. Heat and quantum restrictions mean this does not force every moment to align perfectly.",
+    "example": {
+      "title": "Two orientations of one moment",
+      "steps": [
+        "Let μB = 2 × 10⁻²³ J.",
+        "Parallel and antiparallel energies are −2 × 10⁻²³ and +2 × 10⁻²³ J, separated by 4 × 10⁻²³ J."
+      ]
+    },
+    "equation": "U = −μB cosθ",
+    "terms": [
+      {
+        "term": "μ",
+        "definition": "The magnetic moment's size."
+      },
+      {
+        "term": "B",
+        "definition": "Magnetic-field strength."
+      },
+      {
+        "term": "θ",
+        "definition": "The angle between the moment and field."
+      },
+      {
+        "term": "cos",
+        "definition": "Cosine, an angle function; it is 1 for parallel and −1 for opposite directions."
+      }
+    ]
+  },
+  "para-diamagnetism": {
+    "idea": "Materials can respond magnetically along or against an applied field.",
+    "explanation": "Positive susceptibility describes a weak response along the field; negative susceptibility describes one against it. An ideal dilute set of independent permanent moments follows Curie's inverse-temperature rule only in its stated regime.",
+    "example": {
+      "title": "A Curie-regime sample",
+      "steps": [
+        "Its susceptibility is 0.004 at 200 K.",
+        "At 400 K, the same model predicts 0.002."
+      ]
+    },
+    "equation": "χ_m = C/T",
+    "terms": [
+      {
+        "term": "Susceptibility (χ_m)",
+        "definition": "The material's linear magnetic-response factor."
+      },
+      {
+        "term": "C",
+        "definition": "The Curie constant for the sample."
+      },
+      {
+        "term": "T",
+        "definition": "Absolute temperature in kelvin."
+      }
+    ]
+  },
+  "exchange-order": {
+    "idea": "An effective interaction can favor parallel or opposite spin alignment.",
+    "explanation": "Spin is a built-in quantum form of angular momentum, not literal ball-like rotation. Interactions can favor neighboring spins lining up together or oppositely. The sign of the supplied interaction rule tells which is favored; temperature and geometry also matter for a whole material.",
+    "example": {
+      "title": "A positive coupling",
+      "steps": [
+        "Let J = 2 meV for classical unit spins.",
+        "Parallel energy is −2 meV and opposite energy is +2 meV, so parallel alignment is lower."
+      ]
+    },
+    "equation": "H = −J S₁·S₂",
+    "terms": [
+      {
+        "term": "J",
+        "definition": "The interaction-energy factor linking the two spins."
+      },
+      {
+        "term": "S₁,S₂",
+        "definition": "The two classical unit-length spin arrows used in this toy comparison."
+      },
+      {
+        "term": "S₁·S₂",
+        "definition": "Their directional comparison: +1 when parallel, −1 when opposite."
+      },
+      {
+        "term": "meV",
+        "definition": "One thousandth of an electronvolt."
+      }
+    ]
+  },
+  "domains-hysteresis": {
+    "idea": "A magnetic sample can contain ordered regions whose magnetizations cancel overall.",
+    "explanation": "A domain is a region with a common magnetization direction. A field can change domain sizes, while defects hinder their movement. The resulting dependence on past fields is called hysteresis.",
+    "example": {
+      "title": "Two unequal domains",
+      "steps": [
+        "Three quarters of a sample points along +M₀ and one quarter along −M₀.",
+        "The net magnetization is (0.75−0.25)M₀ = 0.50M₀."
+      ]
+    },
+    "equation": "M_net = Σ(volume_fraction × domain_magnetization)",
+    "terms": [
+      {
+        "term": "Magnetization",
+        "definition": "Magnetic moment per volume."
+      },
+      {
+        "term": "Hysteresis",
+        "definition": "Response that depends on the system's earlier path."
+      }
+    ]
+  },
+  "superconducting-evidence": {
+    "idea": "Very low resistance alone is not enough to identify superconductivity.",
+    "explanation": "An instrument may report zero voltage when the voltage is merely too small to detect. Superconductivity also has a characteristic magnetic response, including expelling field in the appropriate Meissner state. Some superconductors allow magnetic vortices in other conditions, so the test must state its regime.",
+    "example": {
+      "title": "An instrument limit",
+      "steps": [
+        "At current 1 mA, voltage is below a 1 nV resolution limit.",
+        "The measured bound is R < 10⁻⁶ Ω; a separate magnetic test is still needed."
+      ]
+    },
+    "equation": "R = V/I",
+    "terms": [
+      {
+        "term": "Meissner effect",
+        "definition": "Expulsion of bulk magnetic field in an appropriate equilibrium superconducting state."
+      },
+      {
+        "term": "Magnetic vortex",
+        "definition": "A narrow region through which magnetic flux enters certain superconductors."
+      },
+      {
+        "term": "Resolution limit",
+        "definition": "The smallest change an instrument can distinguish."
+      }
+    ]
+  },
+  "cooper-pairs": {
+    "idea": "In conventional superconductors, many electrons join a coordinated state with linked pairs.",
+    "explanation": "Atomic vibrations can help produce an effective attraction between some electrons near the filling boundary. Their behavior becomes linked in Cooper pairs. These pairs can overlap across the material; they are not generally separate tiny molecules following classical orbits.",
+    "example": {
+      "title": "A paired state spread across a metal",
+      "steps": [
+        "In one conventional superconducting model, two linked electron wave patterns extend through many atomic spacings.",
+        "Other pairs occupy the same region too, so drawing each pair as an isolated two-electron orbit misrepresents the shared state."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Cooper pair",
+        "definition": "Two electrons with linked quantum behavior in a superconducting description."
+      },
+      {
+        "term": "Filling boundary",
+        "definition": "The energy boundary separating filled and empty electron states at zero temperature."
+      },
+      {
+        "term": "Coordinated state",
+        "definition": "Here, a shared quantum state with a stable relationship among its wave-cycle stages."
+      }
+    ]
+  },
+  "gap-critical-scales": {
+    "idea": "In a simple fully gapped superconductor, creating excitations costs a minimum energy.",
+    "explanation": "An excitation is an added disturbance above the lowest-energy state. In a fully gapped superconductor, one such disturbance costs at least Δ. Breaking a pair creates two, costing about 2Δ. The displayed weak-coupling BCS rule connects this energy with transition temperature for a particular conventional model.",
+    "example": {
+      "title": "A 10 K transition temperature",
+      "steps": [
+        "With T_c = 10 K, weak-coupling BCS gives 2Δ₀ ≈ 0.00303 eV.",
+        "Thus Δ₀ ≈ 0.00152 eV."
+      ]
+    },
+    "equation": "2Δ₀ ≈ 3.52k_BT_c",
+    "terms": [
+      {
+        "term": "Δ₀",
+        "definition": "The minimum single-excitation energy at zero temperature."
+      },
+      {
+        "term": "T_c",
+        "definition": "The temperature where superconductivity appears in the model."
+      },
+      {
+        "term": "k_B",
+        "definition": "Boltzmann's constant."
+      },
+      {
+        "term": "BCS",
+        "definition": "A conventional electron-pairing theory named for Bardeen, Cooper and Schrieffer."
+      }
+    ]
+  },
+  "superconductor-limits": {
+    "idea": "Evidence of superconductivity does not make every superconducting model correct.",
+    "explanation": "Zero resistance in one regime does not promise no losses at all currents, fields or frequencies. A model must also match the excitation pattern. A node is a place where the gap becomes zero.",
+    "example": {
+      "title": "A nodal sample",
+      "steps": [
+        "Measurements support superconductivity but also show a gap that reaches zero in some directions.",
+        "A model predicting a nonzero gap everywhere cannot fully explain that spectrum."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Node",
+        "definition": "A direction or point where the excitation gap becomes zero."
+      },
+      {
+        "term": "Excitation",
+        "definition": "An added disturbance above the system's reference state."
+      }
+    ]
+  },
+  "order-parameters": {
+    "idea": "An order parameter tracks the particular organization you want to study.",
+    "explanation": "An order parameter is a chosen number that tracks organization. For a ferromagnet, a material whose moments can align together without an applied field, magnetization can serve this role. Oppositely aligned regions can cancel in the whole-sample average even though each region remains ordered.",
+    "example": {
+      "title": "One ordered domain",
+      "steps": [
+        "Use reference magnetization 10⁶ A/m and measured domain magnetization 4 × 10⁵ A/m.",
+        "The normalized order parameter is 0.4."
+      ]
+    },
+    "equation": "m = M/M_reference",
+    "terms": [
+      {
+        "term": "Magnetization",
+        "definition": "Magnetic moment per volume."
+      },
+      {
+        "term": "Domain",
+        "definition": "A region with a common magnetization direction."
+      },
+      {
+        "term": "M_reference",
+        "definition": "The chosen reference magnetization used for comparison."
+      }
+    ]
+  },
+  "correlation": {
+    "idea": "Two outcomes can be linked even when each has zero average.",
+    "explanation": "Compare the average product with the product of separate averages. Their difference is a connected correlation. Zero for one chosen pair does not prove all outcomes are independent.",
+    "example": {
+      "title": "Always matching signs",
+      "steps": [
+        "Half the trials give A = B = +1 and half give A = B = −1.",
+        "Both separate averages are zero, but AB is always one, so the correlation is one."
+      ]
+    },
+    "equation": "C = ⟨AB⟩ − ⟨A⟩⟨B⟩",
+    "terms": [
+      {
+        "term": "⟨…⟩",
+        "definition": "Average over repeated preparations."
+      },
+      {
+        "term": "Correlation",
+        "definition": "A measure of how outcomes vary together."
+      }
+    ]
+  },
+  "band-topology": {
+    "idea": "Some global properties of band states resist small, smooth changes.",
+    "explanation": "Some band properties describe how electron wave states fit together across the whole wave-pattern map. A topological invariant is a label for one such global property. In the stated model, smooth changes cannot alter this label while the energy gap and required symmetry rules remain intact.",
+    "example": {
+      "title": "Connecting two supplied band models",
+      "steps": [
+        "One model has invariant label 0 and another has label 1.",
+        "If we change the first smoothly into the second while keeping the required symmetry, the separating energy gap must close somewhere on that path."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Topological invariant",
+        "definition": "A global label unchanged under the stated smooth, gap-preserving changes."
+      },
+      {
+        "term": "Energy gap",
+        "definition": "An interval separating the relevant allowed energies."
+      },
+      {
+        "term": "Symmetry",
+        "definition": "An allowed change that leaves the relevant physical rules unchanged."
+      }
+    ]
+  },
+  "many-body-prerequisites": {
+    "idea": "A useful simple model says what it keeps and what it leaves out.",
+    "explanation": "A solid contains many interacting particles. Models simplify them into electron bands or shared vibration patterns, but each simplification leaves something out. A mismatch with data helps identify when another contribution or a more detailed model is needed.",
+    "example": {
+      "title": "An extra low-temperature heat contribution",
+      "steps": [
+        "A model of lattice vibrations predicts heat capacity 2 microjoules per kelvin, while the measured value is 3 under the same conditions.",
+        "Investigate the extra contribution, including possible electron effects, before treating the vibration-only model as complete."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Band",
+        "definition": "A range of allowed electron energies in a solid."
+      },
+      {
+        "term": "Heat capacity",
+        "definition": "Energy needed for a temperature rise under specified conditions."
+      },
+      {
+        "term": "Microjoule",
+        "definition": "One millionth of a joule."
+      }
+    ]
+  },
+  "band-occupancy-capstone": {
+    "idea": "A band diagram needs filling information before it can suggest transport behavior.",
+    "explanation": "Allowed energy ranges alone do not tell which states are occupied. A full lower band and empty upper band give one situation; available carriers in a partially filled band give another. Scattering and localization still matter.",
+    "example": {
+      "title": "A synthetic band gap",
+      "steps": [
+        "The lower band ends at −1 eV and the upper starts at +1 eV.",
+        "The gap is 2 eV; it alone does not determine conductivity if the upper band is partly filled."
+      ]
+    },
+    "equation": "E_gap = E_conduction,min − E_valence,max",
+    "terms": [
+      {
+        "term": "Band gap",
+        "definition": "The energy interval between the stated band edges."
+      },
+      {
+        "term": "Conductivity",
+        "definition": "How strongly a material carries current in response to an electric field."
+      }
+    ]
+  },
+  "transport-capstone": {
+    "idea": "One conductivity measurement cannot separately determine carrier density and mobility.",
+    "explanation": "The simple one-carrier model multiplies these quantities. A smaller density with larger mobility can give the same result. Convert square-centimetre mobility units carefully before using SI values.",
+    "example": {
+      "title": "Converting mobility",
+      "steps": [
+        "Use density 5 × 10²² m⁻³ and mobility 200 cm²/(V s), or 0.020 m²/(V s).",
+        "With e ≈ 1.60 × 10⁻¹⁹ C, conductivity is 160 S/m."
+      ]
+    },
+    "equation": "σ = neμ_mobility",
+    "terms": [
+      {
+        "term": "Mobility",
+        "definition": "Drift speed per electric-field strength."
+      },
+      {
+        "term": "n",
+        "definition": "Carrier density."
+      },
+      {
+        "term": "σ",
+        "definition": "Conductivity."
+      }
+    ]
+  },
+  "thermal-electronic-capstone": {
+    "idea": "A measured heat capacity can combine electronic and lattice contributions.",
+    "explanation": "In a limited low-temperature metal regime, a linear term models electrons and a cubic term models acoustic lattice vibrations. Add the contributions before comparing with data. A good fit still leaves room for other mechanisms.",
+    "example": {
+      "title": "Heat capacity at 2 K",
+      "steps": [
+        "Use γ = 0.002 J/K² and β = 0.0001 J/K⁴.",
+        "The terms are 0.004 and 0.0008 J/K, totaling 0.0048 J/K."
+      ]
+    },
+    "equation": "C = γT + βT³",
+    "terms": [
+      {
+        "term": "γ",
+        "definition": "The supplied linear heat-capacity coefficient."
+      },
+      {
+        "term": "β",
+        "definition": "The supplied cubic coefficient."
+      },
+      {
+        "term": "T",
+        "definition": "Kelvin temperature."
+      }
+    ]
+  },
+  "materials-assessment": {
+    "idea": "Two changes occurring together do not prove one caused the other.",
+    "explanation": "A diffraction shift can suggest changed plane spacing. Lower conductivity at unchanged carrier density can suggest lower mobility in a one-carrier model. Processing can change several properties, so test alternatives before claiming a cause.",
+    "example": {
+      "title": "One processed sample",
+      "steps": [
+        "For the same reflection, sinθ rises from 0.50 to 0.55, so spacing becomes about 0.909 of its old value.",
+        "Conductivity falls to 0.70 at independently unchanged carrier density, suggesting mobility also falls to 0.70.",
+        "These separate inferences do not establish that contraction caused the mobility loss."
+      ]
+    },
+    "equation": "d_new/d_old = sinθ_old/sinθ_new",
+    "terms": [
+      {
+        "term": "Mobility",
+        "definition": "Drift speed per electric-field strength."
+      },
+      {
+        "term": "Inference",
+        "definition": "A conclusion drawn from evidence using stated assumptions."
+      }
+    ]
+  }
+}

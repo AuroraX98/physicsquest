@@ -1,0 +1,34 @@
+{
+  "advanced-mechanics": {
+    "course": "f9d64f5d6d6e0089c323f5950ab4798a629e92eb3d631a17fcaee9e2a491ddb8",
+    "lessons": "992a77e84c97a732b09c3a6e4cd62b740ae280fa6b1b815b429b96306902e0c4"
+  },
+  "fluid-dynamics": {
+    "course": "32040d8edbfa6799d8fc2bb2564064033566049395cfda623295ed1ce516cb38",
+    "lessons": "aad056ad2f08a1d68a833f714f422ff903cfa94451585b84ec3259a10281dd3c"
+  },
+  "plasma": {
+    "course": "3a677fc75c534335bd0967051f999882777bb63df820bfd5792ad534f45fa7af",
+    "lessons": "cf836248b8a339bbbf90edc45fb3a8859bc764d6d46518fd2c49292b5184db06"
+  },
+  "general-relativity": {
+    "course": "809857940c998c034e4015dfdeb7476799b2e4c7908331c802a38b01e9d4c10e",
+    "lessons": "5572dd5b77951822adfc15a347fa90b2b70ef5b37e3d2b8037937226a4f5aa73"
+  },
+  "experimental-methods": {
+    "course": "6036a4bb1c39fa8cd3b8fc32c974b774feeffd9fdecd8c3b624c060a150a19da",
+    "lessons": "905384c6badd8916b0663394424e8f3adaacbe58360e6903877b789803f48f3f"
+  },
+  "quantum-information": {
+    "course": "4818aea085552397643cc34508fab72898007c3de20b32eabb27551758f4fc39",
+    "lessons": "5652afcd073a3f732db5fb63525a49906055486f6e405e9aeb12fab11dba8228"
+  },
+  "many-body": {
+    "course": "3afc0a2c98ab5af58039e8eb1cd717fc8708b1208168998df7beeb307e615507",
+    "lessons": "065131d261d1c73417c44bcf7bf78d5ab994d1d97e3cdc6b07932006407dc77b"
+  },
+  "quantum-field-theory": {
+    "course": "ffd7eb6c5ab3ce91b788bfe871acee753d4b5b940c8e62986fc431b8d85ae826",
+    "lessons": "ee03687fbf5de9e7e797c285c6aff9479f0d2344728cb5e375ccc3442b9a98e9"
+  }
+}

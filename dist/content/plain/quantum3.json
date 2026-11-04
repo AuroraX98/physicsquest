@@ -1,0 +1,2003 @@
+{
+  "perturbation-parameter": {
+    "idea": "A change is small only compared with the relevant energy gaps.",
+    "explanation": "Perturbation theory starts from a solved model and estimates a weak change. Compare the actual coupling with the gap; a small-looking number alone does not establish a safe approximation.",
+    "example": {
+      "title": "A weak two-level coupling",
+      "steps": [
+        "The gap is 4 eV and the coupling is 0.20 eV, so their ratio is 0.05.",
+        "The lower shift is approximately −0.20²/4 = −0.0100 eV; the exact model gives about −0.009975 eV."
+      ]
+    },
+    "equation": "smallness ratio = coupling size / energy gap",
+    "terms": [
+      {
+        "term": "Perturbation",
+        "definition": "A change added to a reference model."
+      }
+    ]
+  },
+  "first-energy-shift": {
+    "idea": "The first energy shift is the added energy averaged in the old state.",
+    "explanation": "For a level separated from the others, the first correction uses the original state. Multiply the correction coefficient by the change parameter; the coefficient is not already the full shift.",
+    "example": {
+      "title": "A small diagonal change",
+      "steps": [
+        "The first coefficient is 0.6 eV and the change parameter is 0.10.",
+        "The first shift is 0.060 eV, taking the reference energy 1 eV to 1.060 eV."
+      ]
+    },
+    "equation": "first energy shift = change strength × original-state average of the added energy",
+    "terms": []
+  },
+  "first-state-shift": {
+    "idea": "A weak coupling mixes a little of another state into the old one.",
+    "explanation": "The mixing amplitude is the coupling divided by the signed energy gap. A negative amplitude is allowed; its squared size, not its sign, contributes to probability.",
+    "example": {
+      "title": "A small admixture",
+      "steps": [
+        "A 0.20 eV coupling links a zero-energy state to one at 5 eV.",
+        "The approximate state is |0⟩ − 0.04|1⟩. The small component’s weight is about 0.0016 before normalization."
+      ]
+    },
+    "equation": "mixing amplitude ≈ coupling / signed energy gap",
+    "terms": [
+      {
+        "term": "|0⟩ and |1⟩",
+        "definition": "The two normalized reference energy states."
+      }
+    ]
+  },
+  "second-energy-shift": {
+    "idea": "Mixing with other states also changes energy at second order.",
+    "explanation": "Each contribution uses the coupling’s squared size divided by the signed gap. For a separated lowest state, every higher-state gap has the same negative sign, so these second-order terms lower its energy.",
+    "example": {
+      "title": "Two higher-state contributions",
+      "steps": [
+        "Couplings 0.6 eV and 0.8i eV connect the ground state to levels 3 and 8 eV above it.",
+        "The coefficient is −0.6²/3 − 0.8²/8 = −0.20 eV. At λ = 0.25, the contribution is −0.0125 eV."
+      ]
+    },
+    "equation": "second contribution = λ² Σ coupling size² / signed gap",
+    "terms": [
+      {
+        "term": "λ",
+        "definition": "The dimensionless strength parameter."
+      },
+      {
+        "term": "Σ",
+        "definition": "Add the contributions from the other reference states."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, with i² = −1."
+      }
+    ]
+  },
+  "perturbation-normalization": {
+    "idea": "Normalizing an approximation does not supply its missing physics.",
+    "explanation": "Divide the chosen approximate vector by its length so its probabilities add to one. This corrects its size, but cannot recover other state components that the approximation left out.",
+    "example": {
+      "title": "Normalizing a two-part guess",
+      "steps": [
+        "Use |0⟩ − 0.06|1⟩. Its squared norm is 1.0036.",
+        "Divide by √1.0036. The second-state probability becomes 0.0036/1.0036, about 0.003587."
+      ]
+    },
+    "equation": "normalized vector = trial vector / its length",
+    "terms": [
+      {
+        "term": "|0⟩ and |1⟩",
+        "definition": "The two orthogonal normalized reference states."
+      }
+    ]
+  },
+  "perturbation-error-check": {
+    "idea": "Compare an approximation with a solvable case to measure its error.",
+    "explanation": "State what your error is measured against. A relative error divides by a chosen reference value, so it is undefined when that reference is zero even if absolute error is zero.",
+    "example": {
+      "title": "Checking a second-order shift",
+      "steps": [
+        "For gap 2 eV and coupling 0.20 eV, the estimate is −0.020000 eV; the exact shift is about −0.019804 eV.",
+        "The absolute difference is about 0.000196 eV, roughly 0.99% of the exact shift’s size."
+      ]
+    },
+    "equation": "absolute error = |approximate result − exact result|",
+    "terms": []
+  },
+  "project-perturbation": {
+    "idea": "Treat tied energy states together before using a weak-change formula.",
+    "explanation": "A zero gap cannot go in a denominator. Keep the whole tied space and find which combinations the added energy rule acts on simply; outside separated states can enter later corrections.",
+    "example": {
+      "title": "Splitting a tied pair",
+      "steps": [
+        "Two states both start at 2 eV. Their restricted perturbation has coefficients +0.5 and −0.5 eV.",
+        "At strength 0.10, the first-order energies become 2.05 and 1.95 eV."
+      ]
+    },
+    "equation": "new energy ≈ shared energy + change strength × block eigenvalue",
+    "terms": [
+      {
+        "term": "Block",
+        "definition": "The energy matrix restricted to the tied states."
+      },
+      {
+        "term": "Eigenvalue",
+        "definition": "The multiplier for a state whose shape the matrix preserves."
+      }
+    ]
+  },
+  "diagonalize-degenerate-block": {
+    "idea": "Keep complex phases when finding the correct combinations of tied states.",
+    "explanation": "Some coupling entries carry a phase, represented here by the imaginary number i. Keep those phases when finding the new energy combinations; replacing each entry by its positive size changes the model and can pick the wrong states.",
+    "example": {
+      "title": "A complex two-state block",
+      "steps": [
+        "Use [[1,2i],[−2i,1]] meV. The vector (i,1)/√2 has eigenvalue 3 meV.",
+        "For shared energy 10 meV and strength 0.20, this branch shifts to 10.6 meV."
+      ]
+    },
+    "equation": "new branch energy ≈ E₀ + λε",
+    "terms": [
+      {
+        "term": "E₀",
+        "definition": "The shared reference energy."
+      },
+      {
+        "term": "ε",
+        "definition": "An eigenvalue of the full complex perturbation block."
+      },
+      {
+        "term": "λ",
+        "definition": "Change strength."
+      },
+      {
+        "term": "meV",
+        "definition": "One thousandth of an electronvolt."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, with i² = −1."
+      }
+    ]
+  },
+  "near-degenerate-block": {
+    "idea": "If coupling rivals a small gap, solve the pair together.",
+    "explanation": "Keeping the small block exact avoids dividing through a poorly separated gap. Still check coupling to omitted states; solving the block exactly does not prove the whole physical model exact.",
+    "example": {
+      "title": "A close pair",
+      "steps": [
+        "The average energy is 5 eV, the bare splitting 0.20 eV and coupling 0.15 eV.",
+        "The block energies are 5 ± √(0.10² + 0.15²), about 4.81972 and 5.18028 eV."
+      ]
+    },
+    "equation": "E± = Ē ± √[(δ/2)² + g²]",
+    "terms": [
+      {
+        "term": "Ē",
+        "definition": "Average reference energy."
+      },
+      {
+        "term": "δ",
+        "definition": "Uncoupled splitting."
+      },
+      {
+        "term": "g",
+        "definition": "Coupling energy."
+      },
+      {
+        "term": "E±",
+        "definition": "The two energies after solving the coupled pair."
+      }
+    ]
+  },
+  "symmetry-and-splitting": {
+    "idea": "A symmetry can stop mixing without keeping energies tied.",
+    "explanation": "An even perturbation cannot mix an even state with an odd state. It can still shift their energies by different amounts; symmetry must be checked for the particular claim being made.",
+    "example": {
+      "title": "No mixing, but a split",
+      "steps": [
+        "An even perturbation gives coefficients 0.2 and −0.1 eV to a tied even/odd pair.",
+        "At strength 0.50, their shifts are +0.10 and −0.05 eV, separating them by 0.15 eV."
+      ]
+    },
+    "equation": "separation = difference between the two energy shifts",
+    "terms": [
+      {
+        "term": "Even or odd",
+        "definition": "Unchanged or sign-reversed when reflected."
+      }
+    ]
+  },
+  "variational-bound": {
+    "idea": "An allowed trial state gives an energy at least as high as the ground energy.",
+    "explanation": "Its energy average combines possible energies with nonnegative weights. None lies below the lowest, so the average cannot either; the trial must satisfy the model’s boundaries and have finite energy.",
+    "example": {
+      "title": "A trial energy average",
+      "steps": [
+        "Energy-basis weights 0.50,0.25,0.25 multiply energies 1,3,7 eV.",
+        "The average is 3 eV. This gives an upper bound on the ground energy, not proof that it equals 3 eV."
+      ]
+    },
+    "equation": "ground energy ≤ trial energy average",
+    "terms": [
+      {
+        "term": "Trial state",
+        "definition": "An allowed candidate chosen to estimate the true state."
+      }
+    ]
+  },
+  "gaussian-trial-energy": {
+    "idea": "A trial width balances the costs of confinement and potential energy.",
+    "explanation": "In the quartic trap, a narrow Gaussian has high kinetic energy, while a broad one samples more of the steep potential. Add both costs before judging which width is better.",
+    "example": {
+      "title": "A Gaussian with scaled width one",
+      "steps": [
+        "At width ratio β = 1, the kinetic contribution is 0.25E_s and potential contribution 0.75E_s.",
+        "If E_s = 0.20 eV, the total trial energy is 0.20 eV."
+      ]
+    },
+    "equation": "E_trial/E_s = 1/(4β²) + 3β⁴/4",
+    "terms": [
+      {
+        "term": "β",
+        "definition": "Gaussian width divided by the fixed trap length scale."
+      },
+      {
+        "term": "E_s",
+        "definition": "The fixed energy scale of this quartic-trap model."
+      },
+      {
+        "term": "E_trial",
+        "definition": "The average energy of the chosen trial state."
+      },
+      {
+        "term": "Quartic trap",
+        "definition": "A potential energy growing as position to the fourth power."
+      }
+    ]
+  },
+  "minimize-trial-width": {
+    "idea": "Find the best width within the trial family without calling it exact.",
+    "explanation": "Vary the width while keeping the trap fixed. The minimum is the best energy bound this family supplies; another allowed shape may still improve it.",
+    "example": {
+      "title": "Optimizing the quartic-trap Gaussian",
+      "steps": [
+        "The best width ratio is 6^(−1/6), about 0.74184.",
+        "The trial energy is about 0.68142E_s, or 0.13628 eV when E_s = 0.20 eV."
+      ]
+    },
+    "equation": "best trial width ratio = 6^(−1/6)",
+    "terms": [
+      {
+        "term": "E_s",
+        "definition": "The fixed energy scale of this quartic-trap model."
+      }
+    ]
+  },
+  "ritz-subspace": {
+    "idea": "More allowed trial shapes can improve an energy bound.",
+    "explanation": "Combine the allowed shapes and minimize their average energy. If every old choice remains available, the new minimum cannot rise: the previous best is still an option. The result remains a bound, not a claim of an exact energy.",
+    "example": {
+      "title": "Mixing two trial shapes",
+      "steps": [
+        "Two orthonormal shapes give energy matrix [[2,−0.3],[−0.3,5]] eV.",
+        "Its lowest eigenvalue is about 1.97029 eV, improving the first shape’s 2 eV bound."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Orthonormal",
+        "definition": "Normalized and having zero overlap with each other."
+      },
+      {
+        "term": "Eigenvalue",
+        "definition": "The multiplier for a state whose shape the energy matrix preserves."
+      }
+    ]
+  },
+  "orthogonal-excited-trial": {
+    "idea": "An excited-state bound must exclude the lower exact states.",
+    "explanation": "A trial state with zero overlap with all lower exact energy states has no weight at their energies. Without that restriction, an apparently good low average might come from unwanted ground-state weight.",
+    "example": {
+      "title": "Bounding the first excited energy",
+      "steps": [
+        "Exact energies are 0,2,6 eV. Choose weights 0.75 and 0.25 only on the last two.",
+        "The average is 3 eV, a valid upper bound on the first excited energy because no ground component remains."
+      ]
+    },
+    "equation": "trial energy ≥ target energy when all lower-state overlaps are zero",
+    "terms": []
+  },
+  "wkb-local-wave-number": {
+    "idea": "A slowly changing potential gives a locally changing wavelength.",
+    "explanation": "WKB approximates the wave by adding its local phase changes. It works away from turning points only when the wave number changes slowly enough; a local wavelength alone does not prove that condition.",
+    "example": {
+      "title": "One point in an allowed region",
+      "steps": [
+        "The local kinetic energy is 0.40 eV. With the chosen mass and length scales, its wave number is 1 per nanometre.",
+        "The local wavelength is 2π/k, about 6.283 nm. The potential must still change slowly for WKB to apply."
+      ]
+    },
+    "equation": "local wavelength = 2π/k",
+    "terms": [
+      {
+        "term": "k",
+        "definition": "Local phase change per unit distance."
+      },
+      {
+        "term": "WKB",
+        "definition": "An approximation for waves in slowly varying regions."
+      }
+    ]
+  },
+  "wkb-slow-variation": {
+    "idea": "Check how much the wave number changes before trusting WKB.",
+    "explanation": "A small local change ratio supports the slow-variation approximation. Near a turning point, the wave number reaches zero and this ratio can become large, warning that a different local solution is needed.",
+    "example": {
+      "title": "Near the turn in a linear potential",
+      "steps": [
+        "For this model, the turning point is at scaled position 4. At position 3.9, the check is 1/[2(4 − 3.9)^(3/2)].",
+        "That is about 15.81, far from small. Ordinary WKB should not be trusted there."
+      ]
+    },
+    "equation": "local change ratio = |k′|/k²",
+    "terms": [
+      {
+        "term": "k",
+        "definition": "Local wave number."
+      },
+      {
+        "term": "k′",
+        "definition": "Its change per unit distance."
+      },
+      {
+        "term": "Scaled position",
+        "definition": "Position divided by the model’s length scale."
+      }
+    ]
+  },
+  "wkb-amplitude-current": {
+    "idea": "A slower wave needs more density to carry the same flow.",
+    "explanation": "For one leading WKB traveling branch, current is speed times density. If momentum decreases while current remains constant, the amplitude must increase; this rule fails at ordinary turning points.",
+    "example": {
+      "title": "Keeping one branch’s flow fixed",
+      "steps": [
+        "Momentum falls from 4p_ref to p_ref. Initial density is 0.10 per nanometre.",
+        "Density rises fourfold to 0.40 per nanometre, leaving momentum times density unchanged."
+      ]
+    },
+    "equation": "current ≈ momentum × density / mass",
+    "terms": [
+      {
+        "term": "p_ref",
+        "definition": "A positive reference momentum."
+      }
+    ]
+  },
+  "wkb-forbidden-action": {
+    "idea": "Inside a barrier, a decaying wave can become very small without becoming zero.",
+    "explanation": "The decay builds up across the distance traveled through the barrier. This tells us how amplitude changes inside; finding transmission through the whole barrier also requires matching the waves at its edges.",
+    "example": {
+      "title": "One nanometre inside a barrier",
+      "steps": [
+        "The amplitude shrinks by a factor e^(−2) across 1 nm, about 0.135.",
+        "The probability density shrinks by its square, e^(−4), about 0.0183."
+      ]
+    },
+    "equation": "density ratio = amplitude ratio²",
+    "terms": [
+      {
+        "term": "Amplitude",
+        "definition": "The wave quantity whose squared size gives probability density."
+      },
+      {
+        "term": "e",
+        "definition": "The number about 2.718 used for exponential change."
+      }
+    ]
+  },
+  "simple-turning-point": {
+    "idea": "A smooth turning point needs a wave description that stays finite.",
+    "explanation": "At a turning point, potential energy equals total energy. Ordinary WKB breaks down there; an Airy function joins an oscillating wave on one side to a decaying wave on the other when the local slope is nonzero.",
+    "example": {
+      "title": "Measuring distance from the turn",
+      "steps": [
+        "For this model, the turning-point length scale is 2 nm.",
+        "A point 8 nm to the right has scaled distance 8/2 = 4. This labels its position; it does not by itself prove an approximation accurate."
+      ]
+    },
+    "equation": "scaled distance = distance from turning point / local length scale",
+    "terms": [
+      {
+        "term": "Airy function",
+        "definition": "A wave shape that solves the equation near a smooth, sloping turning point."
+      }
+    ]
+  },
+  "wkb-two-turning-quantization": {
+    "idea": "Two smooth turning points allow only certain standing-wave energies.",
+    "explanation": "The wave must fit between the turns and join decaying tails outside. The turning points supply phase shifts, giving a half-step in the WKB rule; this is different from two infinitely hard walls.",
+    "example": {
+      "title": "A harmonic trap level",
+      "steps": [
+        "The energy spacing is 0.080 eV. Choose level number n = 2.",
+        "Its energy is (2 + ½) × 0.080 = 0.200 eV. WKB gives the exact energies for this special harmonic trap."
+      ]
+    },
+    "equation": "harmonic-trap energy = (n + ½) × energy spacing",
+    "terms": [
+      {
+        "term": "n",
+        "definition": "The level number, starting at zero."
+      },
+      {
+        "term": "WKB",
+        "definition": "A wave approximation used away from turning points and joined to suitable local solutions."
+      }
+    ]
+  },
+  "wkb-tunnelling-validity": {
+    "idea": "A thick, smooth barrier can make transmission exponentially small.",
+    "explanation": "The leading WKB estimate adds the decay across the whole barrier. It requires well-separated turning points and strong decay; near the barrier top, its small transmission estimate can lose accuracy.",
+    "example": {
+      "title": "A smooth parabolic barrier",
+      "steps": [
+        "The barrier calculation gives a decay measure S/ℏ = 1.5π, about 4.712.",
+        "The leading transmission is e^(−3π), about 0.0000807, or 0.00807%. This leaves out finer corrections."
+      ]
+    },
+    "equation": "transmission ≈ exp(−2 × total decay measure)",
+    "terms": [
+      {
+        "term": "S/ℏ",
+        "definition": "The total dimensionless decay measure through the barrier."
+      },
+      {
+        "term": "exp(x)",
+        "definition": "e raised to x, with e about 2.718."
+      }
+    ]
+  },
+  "relativistic-kinetic-expansion": {
+    "idea": "At low momentum, relativity slightly lowers the usual kinetic-energy estimate.",
+    "explanation": "The familiar momentum-squared rule is the first part of an expansion. Its next correction is negative; this shortened formula is useful only when momentum is much smaller than mass times light speed.",
+    "example": {
+      "title": "Momentum equal to 0.2mc",
+      "steps": [
+        "The usual energy is 0.0200mc² and the first correction is −0.0002mc².",
+        "Their sum is 0.0198mc², close to the exact 0.0198039mc²."
+      ]
+    },
+    "equation": "T ≈ p²/(2m) − p⁴/(8m³c²)",
+    "terms": [
+      {
+        "term": "T",
+        "definition": "Kinetic energy."
+      },
+      {
+        "term": "p",
+        "definition": "Momentum size."
+      },
+      {
+        "term": "m",
+        "definition": "Rest mass."
+      },
+      {
+        "term": "c",
+        "definition": "Light speed."
+      }
+    ]
+  },
+  "coulomb-moment-bridge": {
+    "idea": "Radial averages must count the space in each spherical shell.",
+    "explanation": "The radial wave amplitude alone does not give the chance in a shell. Multiply its squared size by the radius squared before averaging; otherwise the weight near the center is wrong.",
+    "example": {
+      "title": "An inverse-cube average for a 2p state",
+      "steps": [
+        "Using the supplied 2p radial wave gives an average of 1/r³ equal to 1/(24a³).",
+        "The same calculation cannot be copied to an s state: its inverse-cube average diverges at the center."
+      ]
+    },
+    "equation": "radial probability weight = r²|R(r)|² dr",
+    "terms": [
+      {
+        "term": "r",
+        "definition": "Distance from the center."
+      },
+      {
+        "term": "R(r)",
+        "definition": "Radial amplitude when the angular part is normalized."
+      },
+      {
+        "term": "dr",
+        "definition": "A very small shell thickness."
+      },
+      {
+        "term": "a",
+        "definition": "The Coulomb model’s length scale."
+      }
+    ]
+  },
+  "atomic-spin-orbit": {
+    "idea": "An electron’s spin and orbital motion can shift atomic energy together.",
+    "explanation": "In the supplied effective model, the shift combines a radial average with a spin–orbit alignment factor. Use this radial formula for nonzero orbital angular momentum; it does not handle an s state by multiplying zero by a divergent average.",
+    "example": {
+      "title": "The 2p, j = 3/2 level",
+      "steps": [
+        "For this level, the model gives a shift K₀/96.",
+        "With K₀ = 1.45 meV, the shift is about +0.01510 meV."
+      ]
+    },
+    "equation": "energy shift = K₀/96 for this 2p branch",
+    "terms": [
+      {
+        "term": "K₀",
+        "definition": "The model’s fixed energy scale."
+      },
+      {
+        "term": "j",
+        "definition": "The total angular-momentum label."
+      },
+      {
+        "term": "meV",
+        "definition": "One thousandth of an electronvolt."
+      },
+      {
+        "term": "Spin",
+        "definition": "An intrinsic quantum form of angular momentum."
+      }
+    ]
+  },
+  "contact-darwin-shift": {
+    "idea": "A contact correction depends on the wave’s density at the nucleus.",
+    "explanation": "A mathematical delta function samples the value at one point when integrated. In this effective point-nucleus model, that makes the correction depend on the electron’s probability density at the center, not the chance of hitting a finite target.",
+    "example": {
+      "title": "The 1s contact correction",
+      "steps": [
+        "For the supplied 1s wave, the model gives a correction K₀/2.",
+        "At K₀ = 1.45 meV, the shift is +0.725 meV. This is one contribution to the energy."
+      ]
+    },
+    "equation": "1s contact shift = K₀/2",
+    "terms": [
+      {
+        "term": "K₀",
+        "definition": "The fixed energy scale in this Coulomb model."
+      },
+      {
+        "term": "Delta function",
+        "definition": "A mathematical rule that picks out a value at a point inside an integral."
+      },
+      {
+        "term": "meV",
+        "definition": "One thousandth of an electronvolt."
+      }
+    ]
+  },
+  "hydrogen-fine-structure": {
+    "idea": "Fine structure combines several small corrections to the same energy level.",
+    "explanation": "Add the kinetic, spin–orbit and contact contributions using one consistent model. Their total can leave some levels tied; this leading fixed-nucleus model does not include the Lamb shift or all real-atom corrections.",
+    "example": {
+      "title": "Adding the 2s corrections",
+      "steps": [
+        "The kinetic correction is −13K₀/128 and the contact correction is +K₀/16; the spin–orbit term is zero.",
+        "The sum is −5K₀/128. For K₀ = 1.45 meV, it is about −0.05664 meV."
+      ]
+    },
+    "equation": "2s total shift = −13K₀/128 + 8K₀/128 = −5K₀/128",
+    "terms": [
+      {
+        "term": "K₀",
+        "definition": "The model’s fixed energy scale."
+      },
+      {
+        "term": "meV",
+        "definition": "One thousandth of an electronvolt."
+      },
+      {
+        "term": "Lamb shift",
+        "definition": "An additional small atomic energy shift beyond this model."
+      }
+    ]
+  },
+  "weak-zeeman": {
+    "idea": "A weak magnetic field shifts levels while spin and orbital motion stay linked.",
+    "explanation": "Weak means small compared with the existing spin–orbit splitting. The field response then depends on the total angular momentum and its component along the field; it is not set by field strength alone.",
+    "example": {
+      "title": "One 2p magnetic level",
+      "steps": [
+        "For j = 3/2 and component label m_j = 3/2, the response factor is 4/3.",
+        "At 0.01 T, the shift is 2μ_BB, about +1.1576 × 10⁻⁶ eV. This is small compared with the stated spin–orbit gap."
+      ]
+    },
+    "equation": "energy shift = μ_B B g_j m_j",
+    "terms": [
+      {
+        "term": "μ_B",
+        "definition": "The positive Bohr magneton, a magnetic energy-per-field scale."
+      },
+      {
+        "term": "B",
+        "definition": "Magnetic-field strength."
+      },
+      {
+        "term": "g_j",
+        "definition": "The level’s magnetic response factor."
+      },
+      {
+        "term": "m_j",
+        "definition": "The numbered total-angular-momentum component along the field."
+      },
+      {
+        "term": "j",
+        "definition": "Total angular-momentum label."
+      }
+    ]
+  },
+  "strong-zeeman": {
+    "idea": "A sufficiently strong magnetic field makes separate orbital and spin components useful.",
+    "explanation": "Here the magnetic splitting dominates the spin–orbit coupling. The field must still be small enough for the assumed atomic model to work; “strong” does not mean arbitrarily large.",
+    "example": {
+      "title": "Cancellation of the leading magnetic shift",
+      "steps": [
+        "At 20 T, choose orbital component m_l = 1 and spin component m_s = −½.",
+        "The factor m_l + 2m_s equals zero, so the leading magnetic shift vanishes. Smaller corrections may remain."
+      ]
+    },
+    "equation": "leading shift ≈ μ_B B(m_l + 2m_s)",
+    "terms": [
+      {
+        "term": "μ_B",
+        "definition": "The positive Bohr magneton."
+      },
+      {
+        "term": "B",
+        "definition": "Magnetic-field strength."
+      },
+      {
+        "term": "m_l and m_s",
+        "definition": "The numbered orbital and spin components along the field."
+      }
+    ]
+  },
+  "zeeman-crossover": {
+    "idea": "Between weak and strong fields, solve the coupled states together.",
+    "explanation": "Neither limiting label is fully reliable when the magnetic and spin–orbit energies compete. A small matrix keeps the mixing and finds the energies without forcing either limiting formula.",
+    "example": {
+      "title": "A two-state crossover model",
+      "steps": [
+        "The model matrix is [[3,√2],[√2,−1]] in microelectronvolts.",
+        "Its energies are 1 ± √6, about 3.449 and −1.449 microelectronvolts. Their sum, 2, matches the matrix’s diagonal sum."
+      ]
+    },
+    "equation": "E± = (1 ± √6) microelectronvolts for this matrix",
+    "terms": [
+      {
+        "term": "E±",
+        "definition": "The higher and lower energies of this two-state model."
+      },
+      {
+        "term": "Microelectronvolt",
+        "definition": "One millionth of an electronvolt."
+      }
+    ]
+  },
+  "quadratic-stark-parity": {
+    "idea": "A level can shift in an electric field even when its first shift is zero.",
+    "explanation": "A state with definite reflection symmetry has zero average position at the center. The field can still mix it with an opposite-symmetry state, producing a second-order energy shift.",
+    "example": {
+      "title": "Mixing with one higher state",
+      "steps": [
+        "A higher state lies 4 meV above the lower state, and the field coupling is 0.2 meV.",
+        "The lower shift is approximately −0.2²/4 = −0.010 meV. This two-state estimate is not the full hydrogen response."
+      ]
+    },
+    "equation": "lower energy shift ≈ −coupling² / positive energy gap",
+    "terms": [
+      {
+        "term": "meV",
+        "definition": "One thousandth of an electronvolt."
+      },
+      {
+        "term": "Second order",
+        "definition": "Proportional to the square of the small field strength."
+      }
+    ]
+  },
+  "linear-stark-subspace": {
+    "idea": "Tied opposite-symmetry states can split directly with electric-field strength.",
+    "explanation": "The field mixes the tied states into new combinations. Because the original energy gap is zero, solve that pair together; dividing by the zero gap would give a meaningless answer.",
+    "example": {
+      "title": "An ideal hydrogen n = 2 pair",
+      "steps": [
+        "For the chosen field, the 2s–2p coupling has size 0.012 meV.",
+        "The new combinations shift by +0.012 and −0.012 meV, leaving a gap of 0.024 meV. Finer atomic effects are omitted here."
+      ]
+    },
+    "equation": "splitting of this tied pair = 2 × coupling size",
+    "terms": [
+      {
+        "term": "meV",
+        "definition": "One thousandth of an electronvolt."
+      },
+      {
+        "term": "n",
+        "definition": "Hydrogen’s main energy-level number."
+      }
+    ]
+  },
+  "minimal-coupling": {
+    "idea": "In a magnetic field, the momentum label need not equal motion-related momentum.",
+    "explanation": "The wave’s derivative gives canonical momentum. Subtract charge times the vector potential to get kinetic momentum, the quantity linked to motion; the potential and wave must be used consistently.",
+    "example": {
+      "title": "A constant vector potential",
+      "steps": [
+        "The canonical momentum is 4p₀ and charge times vector potential is p₀.",
+        "The kinetic momentum is 4p₀ − p₀ = 3p₀."
+      ]
+    },
+    "equation": "kinetic momentum = p − qA",
+    "terms": [
+      {
+        "term": "p",
+        "definition": "Canonical momentum."
+      },
+      {
+        "term": "q",
+        "definition": "Particle charge."
+      },
+      {
+        "term": "A",
+        "definition": "Magnetic vector potential, part of the mathematical description of the field."
+      },
+      {
+        "term": "p₀",
+        "definition": "A positive reference momentum."
+      }
+    ]
+  },
+  "gauge-state-phase": {
+    "idea": "Changing the potentials also requires a matching change to the wave’s phase.",
+    "explanation": "Different potential descriptions can represent the same electric and magnetic fields. Change the wave consistently, and predictions such as kinetic momentum stay the same; changing only the potential can change the physical problem.",
+    "example": {
+      "title": "The same motion in two descriptions",
+      "steps": [
+        "Initially, canonical momentum is 4p₀ and charge times vector potential is p₀.",
+        "After the matching change they are 6p₀ and 3p₀. Both give kinetic momentum 3p₀."
+      ]
+    },
+    "equation": "4p₀ − p₀ = 6p₀ − 3p₀ = 3p₀",
+    "terms": [
+      {
+        "term": "p₀",
+        "definition": "A positive reference momentum."
+      },
+      {
+        "term": "Gauge change",
+        "definition": "A coordinated change of potentials and wave phase that preserves physical predictions."
+      }
+    ]
+  },
+  "flux-loop-phase": {
+    "idea": "Magnetic flux can change interference even when the paths avoid the magnetic field.",
+    "explanation": "Two coherent path amplitudes meet with a phase difference set partly by the enclosed flux. Adding those amplitudes changes the detector probability; this does not assign a definite hidden path to each particle.",
+    "example": {
+      "title": "A quarter flux unit",
+      "steps": [
+        "For an electron and flux h/(4e), the signed phase difference is −π/2.",
+        "For equal path amplitudes and no other phase difference, the chosen output probability is (1 + cos(−π/2))/2 = ½."
+      ]
+    },
+    "equation": "output probability = (1 + cos φ)/2",
+    "terms": [
+      {
+        "term": "φ",
+        "definition": "The phase difference between the two paths."
+      },
+      {
+        "term": "h",
+        "definition": "Planck’s constant."
+      },
+      {
+        "term": "e",
+        "definition": "The positive size of the electron’s charge."
+      },
+      {
+        "term": "Coherent",
+        "definition": "Having a stable relative phase so amplitudes can interfere."
+      }
+    ]
+  },
+  "landau-oscillator-map": {
+    "idea": "A uniform magnetic field gives evenly spaced orbital energy levels.",
+    "explanation": "For a spinless particle moving in a plane, the wave equation becomes a harmonic-oscillator problem. The orbit-center label changes where the wave sits, while the ideal bulk energies depend on the field’s size.",
+    "example": {
+      "title": "A 6 meV level spacing",
+      "steps": [
+        "With spacing 6 meV, the lowest level has energy 3 meV.",
+        "The next levels are 9 and 15 meV. This model leaves out spin, edges and interactions."
+      ]
+    },
+    "equation": "energy = (n + ½) × level spacing",
+    "terms": [
+      {
+        "term": "n",
+        "definition": "The level number, starting at zero."
+      },
+      {
+        "term": "meV",
+        "definition": "One thousandth of an electronvolt."
+      }
+    ]
+  },
+  "instantaneous-eigenstates": {
+    "idea": "A changing set of reference states can mix the coefficients describing a wave.",
+    "explanation": "Energy states can change direction as the Hamiltonian changes. When tracking the wave in that moving basis, include the basis motion as well as energy-driven phase changes; ignoring it can miss transitions.",
+    "example": {
+      "title": "A rotating two-state basis",
+      "steps": [
+        "The basis angle changes at 0.6 radians per second. The relevant overlap rate is half of that, 0.3 per second.",
+        "Starting in the upper reference state gives a lower-component amplitude rate of −0.3 per second at that instant. This is not a probability."
+      ]
+    },
+    "equation": "overlap rate = basis-angle rate / 2 for this spin basis",
+    "terms": [
+      {
+        "term": "Basis",
+        "definition": "Reference states used to describe another state."
+      },
+      {
+        "term": "Hamiltonian",
+        "definition": "The energy rule that controls quantum evolution."
+      }
+    ]
+  },
+  "adiabatic-gap-criterion": {
+    "idea": "Slow following is easier when the changing energy levels stay well separated.",
+    "explanation": "Compare how fast the reference states move with how quickly the energy gap builds phase. A small ratio is a useful local check, but the gaps and motion must be checked throughout the process.",
+    "example": {
+      "title": "A slowly rotating spin model",
+      "steps": [
+        "The basis rotates at 0.4 radians per second and the gap frequency is 20 radians per second.",
+        "The check gives 0.4/(2 × 20) = 0.01. This supports slow following locally, without proving it for the whole experiment."
+      ]
+    },
+    "equation": "local check = rotation rate / (2 × gap frequency)",
+    "terms": [
+      {
+        "term": "Gap frequency",
+        "definition": "The energy difference divided by ℏ."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Adiabatic following",
+        "definition": "Staying close to the corresponding changing energy state."
+      }
+    ]
+  },
+  "dynamic-geometric-phase": {
+    "idea": "A slowly followed state gains phase from both its energy and its changing shape.",
+    "explanation": "The energy supplies the dynamical phase. Following the changing state supplies a geometric contribution; its displayed value depends on the chosen phase convention, so predictions must include the endpoint state consistently.",
+    "example": {
+      "title": "One smooth segment",
+      "steps": [
+        "The energy contribution is −1.5 radians and the geometric contribution is +0.3 radians.",
+        "Their sum is −1.2 radians in this chosen description. This segment is not a closed-loop claim."
+      ]
+    },
+    "equation": "total phase in this description = dynamical phase + geometric contribution",
+    "terms": [
+      {
+        "term": "Phase",
+        "definition": "The angle that controls how complex amplitudes add."
+      }
+    ]
+  },
+  "adiabatic-spin-check": {
+    "idea": "An exactly solved model can test how well a state follows a rotating field.",
+    "explanation": "In this closed two-state model, failure to follow means finding the other instantaneous energy state. Its probability stays bounded, so the exact solution can test the slow-following approximation without treating spin as a little traveling arrow.",
+    "example": {
+      "title": "Checking a rotating field",
+      "steps": [
+        "The gap frequency is 4 radians per second and the field turns at 1 radian per second.",
+        "At time π/√17 seconds, the failure probability reaches 1/(4² + 1²) = 1/17, about 5.88%."
+      ]
+    },
+    "equation": "maximum failure probability = rotation rate² / (gap frequency² + rotation rate²)",
+    "terms": [
+      {
+        "term": "Gap frequency",
+        "definition": "Energy separation divided by ℏ."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      }
+    ]
+  },
+  "berry-spin-loop": {
+    "idea": "A closed loop of field directions can leave a measurable relative phase.",
+    "explanation": "For a slowly followed positive spin eigenstate, the geometric phase is minus half the loop’s area on a unit sphere. A common phase alone is invisible; compare with a reference branch to detect a phase difference.",
+    "example": {
+      "title": "A cone with a 60° opening angle",
+      "steps": [
+        "The direction loop encloses solid angle π.",
+        "The positive eigenstate gains geometric phase −π/2, or −90°. The sign belongs to the specified loop direction."
+      ]
+    },
+    "equation": "geometric phase = −enclosed solid angle / 2",
+    "terms": [
+      {
+        "term": "Solid angle",
+        "definition": "Area on a sphere of radius one, measured in steradians."
+      },
+      {
+        "term": "Positive eigenstate",
+        "definition": "The state with positive energy for the stated two-state Hamiltonian."
+      }
+    ]
+  },
+  "born-oppenheimer-factor": {
+    "idea": "Slow nuclear motion often lets us solve the electron problem at fixed nuclear positions.",
+    "explanation": "At each nuclear position, find the electronic energy first. Use it to help describe the nuclei’s motion; the electron state still changes with nuclear position, and a small electronic energy gap can spoil this separation.",
+    "example": {
+      "title": "Building one point on a molecular energy surface",
+      "steps": [
+        "At one nuclear position, electronic energy is −4 eV and nuclear repulsion is +1.5 eV.",
+        "The leading potential for nuclear motion is −2.5 eV there. Other positions must be calculated to learn the surface’s shape."
+      ]
+    },
+    "equation": "nuclear potential ≈ electronic energy + nuclear repulsion",
+    "terms": [
+      {
+        "term": "Energy surface",
+        "definition": "The potential energy assigned to each nuclear arrangement."
+      }
+    ]
+  },
+  "nuclear-effective-surface": {
+    "idea": "Near a stable molecular shape, nuclei can vibrate like a small spring system.",
+    "explanation": "A smooth energy minimum is approximately a bowl. Its curvature supplies the restoring strength, and the nuclear mass sets the vibration frequency; this local model does not describe the entire molecule coming apart.",
+    "example": {
+      "title": "A small vibration near the minimum",
+      "steps": [
+        "With mass 2 × 10⁻²⁶ kg and curvature 8 N/m, the angular frequency is 2 × 10¹³ per second.",
+        "The quantum spacing is about 0.01316 eV. The lowest level lies half that spacing above the minimum."
+      ]
+    },
+    "equation": "vibration angular frequency = √(curvature / mass)",
+    "terms": [
+      {
+        "term": "Curvature",
+        "definition": "How sharply the potential energy bends upward near its minimum."
+      }
+    ]
+  },
+  "nonadiabatic-boundaries": {
+    "idea": "Nuclear motion can mix electronic states when their shapes change rapidly.",
+    "explanation": "Moving nuclei do not only move along one energy surface: they can couple different surfaces. Compare the motion-induced coupling with the electronic gap; heavy nuclei alone do not guarantee that mixing is small.",
+    "example": {
+      "title": "A local electronic mixing check",
+      "steps": [
+        "For the given nuclear speed and changing electronic state, the coupling scale is 2.63285 × 10⁻⁵ eV.",
+        "Divide by the 0.02 eV gap to get about 0.001316. This is a small local warning ratio, not a complete error bound."
+      ]
+    },
+    "equation": "local mixing check = motion-induced coupling energy / electronic energy gap",
+    "terms": [
+      {
+        "term": "Energy surface",
+        "definition": "Electronic energy viewed as a function of nuclear position."
+      }
+    ]
+  },
+  "interaction-picture": {
+    "idea": "A change of mathematical viewpoint can remove familiar evolution from the state equation.",
+    "explanation": "The interaction picture tracks the known reference evolution separately. States and measured quantities must both change description, so their predictions stay the same; this is an exact coordinate change before any approximation.",
+    "example": {
+      "title": "A changing off-diagonal coupling",
+      "steps": [
+        "A constant reference gap gives frequency 2 radians per second. At time π/4 seconds, the interaction-picture coupling picks up phase i.",
+        "One off-diagonal entry is ig and the reverse is −ig, keeping the energy matrix Hermitian."
+      ]
+    },
+    "equation": "interaction-picture coupling = g exp(iωt)",
+    "terms": [
+      {
+        "term": "g",
+        "definition": "The real coupling energy in this example."
+      },
+      {
+        "term": "ω",
+        "definition": "Reference energy-gap frequency."
+      },
+      {
+        "term": "t",
+        "definition": "Time."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Hermitian",
+        "definition": "Equal to the complex-conjugate transpose, as required for this energy matrix."
+      },
+      {
+        "term": "exp(iωt)",
+        "definition": "A complex phase factor with angle ωt."
+      }
+    ]
+  },
+  "first-transition-amplitude": {
+    "idea": "For a weak short interaction, add the small transition amplitudes across time.",
+    "explanation": "Each moment contributes an amplitude with its own phase. Add those contributions before squaring; this first-order estimate neglects repeated transitions, so the total probability of leaving the initial state must stay small.",
+    "example": {
+      "title": "A short equal-energy coupling",
+      "steps": [
+        "The coupling divided by ℏ is 0.04 per second and lasts 3 seconds.",
+        "The amplitude is −0.12i, so the transition probability is 0.12² = 0.0144, or 1.44%."
+      ]
+    },
+    "equation": "transition probability ≈ |transition amplitude|²",
+    "terms": [
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit; multiplying by i changes phase, not size."
+      }
+    ]
+  },
+  "finite-rectangular-pulse": {
+    "idea": "A finite pulse allows contributions at different times to reinforce or cancel.",
+    "explanation": "For a constant interaction switched on for a fixed time, the energy-gap phase keeps turning. A longer pulse produces a narrower central response, but the first-order formula still requires a small total transition probability.",
+    "example": {
+      "title": "A two-second pulse away from equal energies",
+      "steps": [
+        "The coupling scale is 0.05 per second, the duration is 2 seconds and the gap frequency is π/2 radians per second.",
+        "The probability is 0.01 × (2/π)², about 0.00405, or 0.405%."
+      ]
+    },
+    "equation": "P ≈ (|g|T/ℏ)² sinc²(ωT/2)",
+    "terms": [
+      {
+        "term": "P",
+        "definition": "Transition probability."
+      },
+      {
+        "term": "g",
+        "definition": "Constant coupling energy."
+      },
+      {
+        "term": "T",
+        "definition": "Pulse duration."
+      },
+      {
+        "term": "ω",
+        "definition": "Energy-gap frequency."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "sinc(x)",
+        "definition": "sin(x)/x, defined as 1 at x = 0."
+      }
+    ]
+  },
+  "harmonic-drive-terms": {
+    "idea": "A cosine drive contributes two rotating terms to the transition amplitude.",
+    "explanation": "One term can turn slowly near resonance, while the other usually turns quickly. Add both amplitudes before squaring; dropping the fast term needs a reason based on the frequency, coupling and pulse duration.",
+    "example": {
+      "title": "A particular resonant pulse",
+      "steps": [
+        "The drive and gap frequencies are both 2 radians per second; the pulse lasts π seconds and g/ℏ = 0.02 per second.",
+        "The fast contribution cancels exactly for this duration. The remaining amplitude is −0.01πi, giving probability about 0.000987."
+      ]
+    },
+    "equation": "P ≈ (0.01π)² = 0.00098696 for this pulse",
+    "terms": [
+      {
+        "term": "P",
+        "definition": "Transition probability."
+      },
+      {
+        "term": "g",
+        "definition": "Cosine-drive coupling energy."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit."
+      }
+    ]
+  },
+  "dipole-selection-tests": {
+    "idea": "Symmetry can make a position-driven transition vanish before detailed calculation.",
+    "explanation": "If the position factor makes the overlap odd under reflection, positive and negative sides cancel. Passing a symmetry test only means “not forbidden by this test”; the remaining radial and angular factors still matter.",
+    "example": {
+      "title": "Combining one radial and angular factor",
+      "steps": [
+        "For the chosen z-directed transition, the radial factor is 0.30 nm and the angular factor is 1/√3.",
+        "Their product is about 0.1732 nm. This nonzero result includes both parts of the overlap."
+      ]
+    },
+    "equation": "position overlap = radial factor × angular factor",
+    "terms": [
+      {
+        "term": "Overlap",
+        "definition": "The weighted comparison of the initial and final wave shapes."
+      },
+      {
+        "term": "Odd under reflection",
+        "definition": "Changing sign when position is reflected through the center."
+      }
+    ]
+  },
+  "weak-versus-rabi": {
+    "idea": "A weak-transition estimate fails once repeated transfers become important.",
+    "explanation": "An exactly specified two-state coupling moves probability back and forth. The short-time estimate keeps only the beginning of that motion, so even weak coupling can outgrow the approximation if applied too long.",
+    "example": {
+      "title": "A small rotation angle",
+      "steps": [
+        "For dimensionless angle a = 0.10, the weak estimate gives 0.0100.",
+        "The exact two-state result is sin²(0.10), about 0.0099667. Their difference is about 0.0000333."
+      ]
+    },
+    "equation": "P_exact = sin²(a); P_weak ≈ a²",
+    "terms": [
+      {
+        "term": "P",
+        "definition": "Transition probability."
+      },
+      {
+        "term": "a",
+        "definition": "Coupling energy multiplied by time, then divided by ℏ."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      }
+    ]
+  },
+  "density-of-final-states": {
+    "idea": "A density of states counts how many final states fit into an energy range.",
+    "explanation": "In a large box, closely spaced levels can be averaged into a smooth count per energy. Multiply by a narrow energy width to estimate the count; a fractional average does not mean an individual state is a fraction.",
+    "example": {
+      "title": "A narrow energy window",
+      "steps": [
+        "In the stated large-box model, the density is about 101.321 states per energy unit.",
+        "A width of 0.02 energy units contains an average of about 2.026 states in this smooth approximation."
+      ]
+    },
+    "equation": "average number of states ≈ density per energy × energy width",
+    "terms": [
+      {
+        "term": "Density of states",
+        "definition": "Number of available states per small energy interval."
+      }
+    ]
+  },
+  "long-time-pulse-window": {
+    "idea": "A rate approximation needs time to resolve the energy range without resolving individual levels.",
+    "explanation": "The pulse should last longer than the broad spectral response time, yet shorter than the time that reveals separate final levels. It must also transfer only a small probability; a long pulse alone does not establish a constant rate.",
+    "example": {
+      "title": "Checking a one-second pulse",
+      "steps": [
+        "The broad response time is 0.01 seconds, the level-resolution time is 100 seconds and the candidate rate is 0.02 per second.",
+        "A 1-second pulse sits between those times and transfers an estimated 0.02 probability. These checks support a possible rate window, not a precise error guarantee."
+      ]
+    },
+    "equation": "short response time ≪ pulse duration ≪ level-resolution time",
+    "terms": [
+      {
+        "term": "≪",
+        "definition": "Much smaller than, by enough for the approximation being tested."
+      }
+    ]
+  },
+  "golden-rule-rate": {
+    "idea": "Weak coupling to many nearby final states can produce an approximately constant transfer rate.",
+    "explanation": "The rate grows with the coupling’s squared size and the number of available states per energy. Use matching state normalization and a valid intermediate time window; an isolated two-state system does not automatically follow this rule.",
+    "example": {
+      "title": "A small continuum transition",
+      "steps": [
+        "The supplied coupling and state density give a rate about 0.000152736 per picosecond.",
+        "Over 100 picoseconds, the estimated transfer probability is 0.01527, or 1.53%, provided the stated rate-window checks hold."
+      ]
+    },
+    "equation": "transfer probability ≈ rate × duration",
+    "terms": [
+      {
+        "term": "Picosecond",
+        "definition": "One trillionth of a second."
+      },
+      {
+        "term": "Continuum",
+        "definition": "A smooth approximation to very closely spaced final states."
+      }
+    ]
+  },
+  "threshold-phase-space": {
+    "idea": "A final channel opens only when enough energy is available.",
+    "explanation": "For the stated free three-dimensional channel, the number of final states grows as the square root of excess energy. The rate shares that growth only if the coupling stays nonzero and nearly constant; very near the edge, finite pulse width also matters.",
+    "example": {
+      "title": "Raising the excess energy",
+      "steps": [
+        "A model gives rate 0.03 per nanosecond at excess energy 0.04 eV.",
+        "At 0.09 eV, the rate grows by √(0.09/0.04) = 1.5, becoming 0.045 per nanosecond under the same coupling assumption."
+      ]
+    },
+    "equation": "rate ratio = √(new excess energy / old excess energy)",
+    "terms": [
+      {
+        "term": "Excess energy",
+        "definition": "Energy above the minimum needed to open this final channel."
+      }
+    ]
+  },
+  "rate-and-survival-limits": {
+    "idea": "Very early quantum loss need not follow a constant-rate decay law.",
+    "explanation": "For a state with finite energy spread, the first survival loss grows with time squared. An exponential rate model may work later, but it cannot replace that exact short-time behavior at every time.",
+    "example": {
+      "title": "A very short observation",
+      "steps": [
+        "The energy spread divided by ℏ is 2 per second, and the time is 0.01 seconds.",
+        "The leading survival estimate is 1 − 2² × 0.01² = 0.9996. Only about 0.04% is lost at this order."
+      ]
+    },
+    "equation": "early survival ≈ 1 − (energy spread × time / ℏ)²",
+    "terms": [
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Survival",
+        "definition": "Probability of finding the initial state again."
+      }
+    ]
+  },
+  "electric-dipole-regime": {
+    "idea": "A light wave can look nearly uniform across a very small atom or molecule.",
+    "explanation": "Compare the system’s size with how far the light phase changes. A small ratio supports a uniform-field dipole model, but does not guarantee weak excitation; a uniform field can still drive a large change over time.",
+    "example": {
+      "title": "A small system in visible light",
+      "steps": [
+        "The system size is 0.20 nm and the wavelength is 600 nm.",
+        "The phase-change check is 2π × 0.20/600, about 0.00209. This supports treating the field as nearly uniform across the system."
+      ]
+    },
+    "equation": "spatial phase-change check = 2π × system size / wavelength",
+    "terms": [
+      {
+        "term": "Dipole model",
+        "definition": "An interaction model using charge times position and a nearly uniform electric field."
+      }
+    ]
+  },
+  "spontaneous-emission-input": {
+    "idea": "A supplied decay rate predicts average emission counts, not each photon’s time.",
+    "explanation": "In this model, each excitation has the same constant chance per unit time to decay. The population falls exponentially when there is no pumping or competing channel; the model accepts the decay rate as input rather than deriving it.",
+    "example": {
+      "title": "Five hundred independent excitations",
+      "steps": [
+        "The decay rate is 0.4 per nanosecond. After 5 nanoseconds, the surviving fraction is e^(−2), about 0.1353.",
+        "The expected surviving count is about 67.7, leaving about 432.3 emitted photons on average. Actual counts are whole numbers and can vary."
+      ]
+    },
+    "equation": "expected survivors = initial count × exp(−rate × time)",
+    "terms": [
+      {
+        "term": "exp(x)",
+        "definition": "e raised to x, with e about 2.718."
+      },
+      {
+        "term": "Nanosecond",
+        "definition": "One billionth of a second."
+      }
+    ]
+  },
+  "stimulated-balance-inversion": {
+    "idea": "Equal upward and downward stimulated rates cannot steadily put most atoms in the upper level.",
+    "explanation": "As the upper population grows, downward stimulated flow grows too. Adding spontaneous decay lowers the balance further; this closed two-level population model reaches at most half excited, unlike a different one-way pumping scheme.",
+    "example": {
+      "title": "Balancing two-level flows",
+      "steps": [
+        "The stimulated rate is 0.3 per nanosecond and the spontaneous rate is 0.2 per nanosecond.",
+        "The steady excited fraction is 0.3/(2 × 0.3 + 0.2) = 0.375, or 37.5%."
+      ]
+    },
+    "equation": "steady excited fraction = W/(2W + A)",
+    "terms": [
+      {
+        "term": "W",
+        "definition": "Equal stimulated upward and downward rates."
+      },
+      {
+        "term": "A",
+        "definition": "Spontaneous downward rate."
+      },
+      {
+        "term": "Steady",
+        "definition": "No longer changing under the model’s constant rates."
+      }
+    ]
+  },
+  "environment-dephasing": {
+    "idea": "An unobserved environment can reduce interference without changing local populations.",
+    "explanation": "The environment can carry different records of the two system states. Ignoring those records reduces the off-diagonal entries that support interference, even while the whole system-plus-environment state remains pure.",
+    "example": {
+      "title": "A partial environmental record",
+      "steps": [
+        "Start with equal system amplitudes. The stated interaction gives the local matrix [[0.5,0.25],[0.25,0.5]].",
+        "Both populations remain 0.5, but coherence falls from 0.5 to 0.25. This finite environment does not guarantee permanent or steadily increasing loss."
+      ]
+    },
+    "equation": "local coherence after interaction = initial coherence × cos θ",
+    "terms": [
+      {
+        "term": "Coherence",
+        "definition": "Off-diagonal state entries that carry relative-phase information."
+      },
+      {
+        "term": "θ",
+        "definition": "The environment’s conditional rotation angle; here π/3."
+      },
+      {
+        "term": "Pure state",
+        "definition": "A state described by one normalized quantum vector."
+      }
+    ]
+  },
+  "kraus-channel-bridge": {
+    "idea": "A valid quantum channel must also work when its input is part of a larger system.",
+    "explanation": "Kraus matrices describe allowed state changes whose combined action preserves total probability. This construction stays valid on one part of an entangled pair; checking just one single-system output would not prove that general property.",
+    "example": {
+      "title": "A random phase flip",
+      "steps": [
+        "Apply no phase flip with chance 0.8 and a phase flip with chance 0.2 to an equal superposition.",
+        "The output is [[0.5,0.3],[0.3,0.5]]. Populations stay fixed while coherence is multiplied by 0.6."
+      ]
+    },
+    "equation": "coherence multiplier = 1 − 2q",
+    "terms": [
+      {
+        "term": "q",
+        "definition": "The phase-flip probability, between zero and one."
+      },
+      {
+        "term": "Kraus matrices",
+        "definition": "Matrices whose summed actions represent the quantum channel."
+      },
+      {
+        "term": "Coherence",
+        "definition": "State entries that carry relative-phase information."
+      }
+    ]
+  },
+  "amplitude-damping-channel": {
+    "idea": "Decay transfers excited population into the ground state while reducing coherence.",
+    "explanation": "Add both decay and no-decay contributions to describe an unobserved outcome. Simply shrinking a state vector and renormalizing it would describe a different operation and lose the population transferred to the ground level.",
+    "example": {
+      "title": "A 36% decay chance",
+      "steps": [
+        "Start from an equal superposition with ground and excited populations 0.5 each. Use decay probability 0.36.",
+        "The ground population becomes 0.68 and the excited population 0.32; coherence becomes 0.40. The populations still sum to one."
+      ]
+    },
+    "equation": "excited population after decay = (1 − p) × initial excited population",
+    "terms": [
+      {
+        "term": "p",
+        "definition": "Decay probability during the chosen interval."
+      },
+      {
+        "term": "Coherence",
+        "definition": "An off-diagonal entry carrying relative-phase information."
+      }
+    ]
+  },
+  "markovian-decay-example": {
+    "idea": "Population loss and extra phase noise both shorten the lifetime of coherence.",
+    "explanation": "In this constant-rate memoryless model, losing excited population already reduces coherence. Additional phase noise makes it fade faster, giving a coherence time no longer than twice the population-decay time.",
+    "example": {
+      "title": "Two decay times",
+      "steps": [
+        "The population-decay rate is 0.4 per nanosecond and the extra phase-noise rate is 0.1 per nanosecond.",
+        "Population lifetime is 2.5 ns; coherence lifetime is 1/(0.2 + 0.1), about 3.33 ns, below 5 ns."
+      ]
+    },
+    "equation": "1/T₂ = 1/(2T₁) + γφ",
+    "terms": [
+      {
+        "term": "T₁",
+        "definition": "Population-decay lifetime."
+      },
+      {
+        "term": "T₂",
+        "definition": "Coherence-decay lifetime."
+      },
+      {
+        "term": "γφ",
+        "definition": "Extra phase-noise rate."
+      },
+      {
+        "term": "Memoryless",
+        "definition": "The model’s present change depends on its present state, not its detailed past."
+      },
+      {
+        "term": "ns",
+        "definition": "Nanosecond, one billionth of a second."
+      }
+    ]
+  },
+  "incident-flux-counts": {
+    "idea": "A scattering rate combines beam flux, target count and cross section.",
+    "explanation": "Flux counts particles crossing an area each second. Cross section tells how strongly one target scatters that beam; the simple product assumes a thin sample of independent targets that barely weakens the beam.",
+    "example": {
+      "title": "A dilute target sample",
+      "steps": [
+        "Use 2 × 10⁸ targets, flux 5 × 10¹⁴ per square metre per second and cross section 3 × 10⁻²⁴ square metres.",
+        "The rate is 0.30 per second, giving an expected count of 3 in ten seconds. The actual count can differ."
+      ]
+    },
+    "equation": "expected rate = target count × incident flux × cross section",
+    "terms": [
+      {
+        "term": "Cross section",
+        "definition": "An effective scattering area, not necessarily a target’s geometric size."
+      }
+    ]
+  },
+  "outgoing-scattering-amplitude": {
+    "idea": "The squared scattering amplitude gives an area per direction, not a probability by itself.",
+    "explanation": "Far from a short-range scatterer, an outgoing spherical wave spreads over a growing sphere. Its density falls as distance squared, while the collecting area grows by the same factor, leaving a distance-independent cross section.",
+    "example": {
+      "title": "One isotropic amplitude",
+      "steps": [
+        "At the stated wave number, the amplitude is (0.5 + 0.5i) nm in every direction.",
+        "Its squared size is 0.5² + 0.5² = 0.50 nm², giving differential cross section 0.50 nm² per steradian."
+      ]
+    },
+    "equation": "dσ/dΩ = |f|²",
+    "terms": [
+      {
+        "term": "f",
+        "definition": "Complex scattering amplitude, measured in length."
+      },
+      {
+        "term": "dσ/dΩ",
+        "definition": "Scattering cross section per small patch of directions."
+      },
+      {
+        "term": "Steradian",
+        "definition": "The unit of solid angle."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit."
+      }
+    ]
+  },
+  "solid-angle-cross-section": {
+    "idea": "Add scattering over patches of direction with their proper angular sizes.",
+    "explanation": "Equal steps in polar angle do not cover equal areas on a sphere. Include the sine factor when integrating, and multiply one sampled value by the full sphere only when the distribution is the same in every direction.",
+    "example": {
+      "title": "Integrating one angular distribution",
+      "steps": [
+        "The fit is A(1 + 2cos²θ), with A = 0.30 nm² per steradian.",
+        "The full-sphere integral is 4π × 0.30 × (1 + 2/3), or 2π nm², about 6.283 nm²."
+      ]
+    },
+    "equation": "small solid angle = sin θ × dθ × dφ",
+    "terms": [
+      {
+        "term": "θ",
+        "definition": "Polar angle from the beam direction."
+      },
+      {
+        "term": "φ",
+        "definition": "Angle around the beam axis."
+      },
+      {
+        "term": "dθ and dφ",
+        "definition": "Very small steps in those angles."
+      },
+      {
+        "term": "A",
+        "definition": "The fitted cross-section scale."
+      },
+      {
+        "term": "Solid angle",
+        "definition": "A patch of directions measured by its area on a unit sphere."
+      }
+    ]
+  },
+  "outgoing-green-response": {
+    "idea": "A Green function describes the outgoing wave response to a point source.",
+    "explanation": "This response lets us build a scattered wave by adding contributions from many source points. Its singular value at the source must be handled through integration; it is not an ordinary infinite number to plug into arithmetic.",
+    "example": {
+      "title": "One point away from the source",
+      "steps": [
+        "Take distance 2 nm and wave number π/(2 nm), so the phase angle is π.",
+        "The outgoing response is −1/(8π nm), about −0.03979 per nanometre."
+      ]
+    },
+    "equation": "G₊(r) = exp(ikr)/(4πr)",
+    "terms": [
+      {
+        "term": "G₊",
+        "definition": "The chosen outgoing response kernel."
+      },
+      {
+        "term": "r",
+        "definition": "Distance from the source."
+      },
+      {
+        "term": "k",
+        "definition": "Wave number."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit."
+      },
+      {
+        "term": "exp(ikr)",
+        "definition": "A complex phase factor with angle kr."
+      }
+    ]
+  },
+  "scattering-integral-equation": {
+    "idea": "The scattered wave depends on the wave inside the potential itself.",
+    "explanation": "The integral equation adds the outgoing response from every part of the interaction region. The unknown wave appears inside that sum too, so merely writing the equation does not solve it; replacing the interior wave by a guess introduces an approximation.",
+    "example": {
+      "title": "One sampled source cell",
+      "steps": [
+        "After all unit factors, one cell contributes 0.001 + 0.0005i to the response integral.",
+        "With the chosen outgoing-kernel convention, its correction is −0.001 − 0.0005i. One sampled cell is not a converged scattering solution."
+      ]
+    },
+    "equation": "total wave = incident wave − summed potential response",
+    "terms": [
+      {
+        "term": "i",
+        "definition": "The imaginary unit."
+      },
+      {
+        "term": "Kernel",
+        "definition": "The response rule linking a source point to an observation point."
+      }
+    ]
+  },
+  "packets-and-elastic-regime": {
+    "idea": "A localized incoming packet contains a range of energies.",
+    "explanation": "A single-energy scattering result is useful only if the scattering amplitude changes little across that range. A narrow wave-number spread helps, but a nearby resonance or threshold can still make the energy dependence important.",
+    "example": {
+      "title": "A narrow momentum packet",
+      "steps": [
+        "The mean wave number is 2 per nanometre and its standard deviation is 0.050 per nanometre.",
+        "The relative energy spread is about 2 × 0.050/2 = 0.05, or 5%. Check the scattering response over that band."
+      ]
+    },
+    "equation": "relative energy spread ≈ 2 × relative wave-number spread",
+    "terms": [
+      {
+        "term": "Standard deviation",
+        "definition": "A measure of how widely values spread around their average."
+      },
+      {
+        "term": "Wave number",
+        "definition": "Momentum divided by ℏ."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      }
+    ]
+  },
+  "legendre-radial-bridge": {
+    "idea": "Different angular patterns can have zero overlap when averaged over every direction.",
+    "explanation": "Legendre polynomials separate the angular pieces of central-potential scattering. Their orthogonality means cross terms disappear after the correct full-angle integration, even though the patterns can interfere in one chosen direction.",
+    "example": {
+      "title": "The first two angular patterns",
+      "steps": [
+        "The first patterns are 1 and u, where u = cos θ.",
+        "Their overlap from u = −1 to 1 is zero: the negative half cancels the positive half. This is an amplitude overlap, not a negative probability."
+      ]
+    },
+    "equation": "∫ from −1 to 1 of u du = 0",
+    "terms": [
+      {
+        "term": "θ",
+        "definition": "Angle from the beam direction."
+      },
+      {
+        "term": "Orthogonality",
+        "definition": "Zero integrated overlap between different patterns."
+      },
+      {
+        "term": "∫",
+        "definition": "Add the contributions continuously across the stated interval."
+      }
+    ]
+  },
+  "elastic-phase-shifts": {
+    "idea": "Elastic scattering can change a wave’s phase without losing its incoming flux.",
+    "explanation": "For a real short-range central potential with one open channel, outgoing and incoming radial waves have equal flow. Their relative phase still changes the scattering pattern, so unchanged total flow does not mean no scattering.",
+    "example": {
+      "title": "A phase shift of 30°",
+      "steps": [
+        "The phase shift is δ = π/6, so the scattering factor is exp(iπ/3) = ½ + i√3/2.",
+        "Its squared size is ¼ + ¾ = 1, consistent with equal incoming and outgoing flow."
+      ]
+    },
+    "equation": "S = exp(2iδ); |S|² = 1",
+    "terms": [
+      {
+        "term": "S",
+        "definition": "Outgoing-to-incoming factor relative to the free-wave reference."
+      },
+      {
+        "term": "δ",
+        "definition": "The radial phase shift."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit."
+      },
+      {
+        "term": "exp(iα)",
+        "definition": "A unit-size complex number with phase angle α."
+      }
+    ]
+  },
+  "partial-wave-amplitude": {
+    "idea": "Add angular-channel amplitudes before squaring for a chosen direction.",
+    "explanation": "Different angular waves can reinforce or cancel at the same detector. Their interference disappears from some full-angle integrals, but it must stay in a directional prediction; omitted channels also need justification.",
+    "example": {
+      "title": "Adding s and p waves forward",
+      "steps": [
+        "In the stated two-channel sample, the forward amplitude is (0.75 + 1.25i) nm.",
+        "Squaring its size gives 0.75² + 1.25² = 2.125 nm² per steradian. This uses the combined amplitude."
+      ]
+    },
+    "equation": "directional cross section = |sum of angular-channel amplitudes|²",
+    "terms": [
+      {
+        "term": "s and p",
+        "definition": "Orbital angular channels with labels 0 and 1."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit."
+      },
+      {
+        "term": "Steradian",
+        "definition": "The unit for a patch of directions."
+      }
+    ]
+  },
+  "partial-total-cross-section": {
+    "idea": "After full-angle integration, elastic partial-wave cross sections add.",
+    "explanation": "Orthogonality removes interference between different angular channels from the full-sphere total. Each channel has its own maximum, but this does not impose one fixed maximum on an unrestricted sum of all channels.",
+    "example": {
+      "title": "Adding two integrated channels",
+      "steps": [
+        "At the chosen wave number and phase shifts, the s contribution is π nm² and the p contribution is 12π nm².",
+        "The total is 13π nm², about 40.84 nm². The addition is justified after integrating all directions."
+      ]
+    },
+    "equation": "total cross section = sum of integrated angular-channel cross sections",
+    "terms": [
+      {
+        "term": "s and p",
+        "definition": "Orbital angular channels with labels 0 and 1."
+      }
+    ]
+  },
+  "optical-theorem": {
+    "idea": "Forward interference keeps the total scattering calculation consistent with conserved flow.",
+    "explanation": "For the stated purely elastic short-range model, the imaginary part of the forward amplitude determines the total cross section. This links the angular scattering pattern with the incoming beam’s interference, including the forward direction.",
+    "example": {
+      "title": "Checking an isotropic s wave",
+      "steps": [
+        "At wave number 0.50 per nanometre, the forward amplitude has imaginary part 1.5 nm.",
+        "The forward rule gives 4π × 1.5/0.50 = 12π nm². Integrating the uniform angular value 3 nm² per steradian gives the same total."
+      ]
+    },
+    "equation": "total elastic cross section = (4π/k) × Im f(0)",
+    "terms": [
+      {
+        "term": "k",
+        "definition": "Incident wave number."
+      },
+      {
+        "term": "Im f(0)",
+        "definition": "Imaginary part of the forward scattering amplitude in the stated outgoing-wave convention."
+      },
+      {
+        "term": "s wave",
+        "definition": "The orbital angular channel with label zero."
+      }
+    ]
+  },
+  "s-wave-scattering-length": {
+    "idea": "Scattering length summarizes a short-range interaction at very low energy.",
+    "explanation": "It marks where the outside zero-energy radial wave would reach zero if extended. It can be negative or much larger than the potential’s size; neither makes it a literal radius or a negative area.",
+    "example": {
+      "title": "An attractive spherical well",
+      "steps": [
+        "The well radius is 2 nm and the dimensionless depth parameter is q = π/4.",
+        "The scattering length is 2(1 − 4/π) nm, about −0.5465 nm. Its negative sign belongs to the wave’s extrapolated zero."
+      ]
+    },
+    "equation": "a_s = a[1 − tan(q)/q]",
+    "terms": [
+      {
+        "term": "a_s",
+        "definition": "Scattering length."
+      },
+      {
+        "term": "a",
+        "definition": "Well radius."
+      },
+      {
+        "term": "q",
+        "definition": "The interior zero-energy wave number multiplied by the radius."
+      }
+    ]
+  },
+  "partial-wave-resonance": {
+    "idea": "A narrow resonance makes one angular channel scatter strongly near one energy.",
+    "explanation": "In the stated isolated elastic model, the phase-dependent peak has a width set by Γ. Treating the cross-section shape as the same simple peak also assumes the wave number changes little across that energy window.",
+    "example": {
+      "title": "A narrow s-wave resonance",
+      "steps": [
+        "The resonance energy is 100 meV, its full width is 2 meV and the central wave number is 1 per nanometre.",
+        "The peak area is about 4π nm². At 101 meV, one half-width away, it is about 2π nm² in the constant-wave-number approximation."
+      ]
+    },
+    "equation": "half-height offsets = ±Γ/2",
+    "terms": [
+      {
+        "term": "Γ",
+        "definition": "Full energy width at half the phase-factor peak height."
+      },
+      {
+        "term": "meV",
+        "definition": "One thousandth of an electronvolt."
+      },
+      {
+        "term": "s wave",
+        "definition": "The orbital angular channel with label zero."
+      }
+    ]
+  },
+  "identical-particle-scattering": {
+    "idea": "Indistinguishable collision alternatives must be combined before counting pair events.",
+    "explanation": "Add direct and exchanged amplitudes with the sign required by the spatial symmetry. An outgoing pair occupies opposite directions, so integrate one hemisphere, or halve the full-sphere result, to avoid counting each pair twice.",
+    "example": {
+      "title": "Identical spinless bosons in an s wave",
+      "steps": [
+        "The direct amplitude is (0.5 + 0.5i) nm, and exchange gives the same amplitude.",
+        "Their sum has squared size 2 nm². Integrating over one hemisphere gives pair-event cross section 4π nm²."
+      ]
+    },
+    "equation": "pair-event area = hemisphere integral of |direct + exchanged amplitude|²",
+    "terms": [
+      {
+        "term": "Bosons",
+        "definition": "Particles whose full quantum state is symmetric under exchange."
+      },
+      {
+        "term": "s wave",
+        "definition": "The orbital angular channel with label zero."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit."
+      }
+    ]
+  },
+  "first-born-fourier": {
+    "idea": "The first Born approximation replaces the unknown interior wave with the incoming wave.",
+    "explanation": "This makes scattering computable from the potential’s spatial pattern. It is useful only when that replacement causes little distortion; a small-looking potential number alone does not establish accuracy.",
+    "example": {
+      "title": "A weak spherical barrier forward",
+      "steps": [
+        "The barrier has radius 2 nm and the stated strength ratio 0.060.",
+        "The first Born forward amplitude is −0.040 nm. Squaring gives 0.0016 nm² per steradian, a forward value rather than the full total."
+      ]
+    },
+    "equation": "forward differential cross section ≈ |Born forward amplitude|²",
+    "terms": [
+      {
+        "term": "Born approximation",
+        "definition": "The first estimate obtained by using the incoming wave inside the scattering integral."
+      },
+      {
+        "term": "Steradian",
+        "definition": "The unit for a patch of directions."
+      }
+    ]
+  },
+  "central-born-integral": {
+    "idea": "Scattering angle determines momentum transfer in an elastic collision.",
+    "explanation": "Incoming and outgoing momentum have equal size in this model. Subtracting their vectors gives a transfer that is zero forward and larger at wider angles; the central-potential integral uses that transfer to combine source phases.",
+    "example": {
+      "title": "A 60° scattering angle",
+      "steps": [
+        "The incident wave number is 2 per nanometre and the scattering angle is π/3.",
+        "The transfer wave number is 2 × 2 × sin(π/6) = 2 per nanometre. Physical momentum transfer is ℏ times this value."
+      ]
+    },
+    "equation": "q = 2k sin(θ/2)",
+    "terms": [
+      {
+        "term": "q",
+        "definition": "Transfer wave number."
+      },
+      {
+        "term": "k",
+        "definition": "Incident and outgoing wave-number size."
+      },
+      {
+        "term": "θ",
+        "definition": "Angle between incoming and outgoing directions."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      }
+    ]
+  },
+  "gaussian-born-example": {
+    "idea": "A smooth Gaussian potential gives a smoothly fading angular scattering pattern.",
+    "explanation": "In the first Born model, source phases cancel more at larger momentum transfer. The amplitude decreases exponentially, and squaring it makes the cross section decrease with twice the exponent.",
+    "example": {
+      "title": "At transfer qa = 2",
+      "steps": [
+        "The model’s forward angular cross section is about 0.00502655 nm² per steradian.",
+        "At qa = 2, multiply it by e^(−2), giving about 0.000680269 nm² per steradian. This still assumes the Born approximation is valid."
+      ]
+    },
+    "equation": "angular value / forward value = exp[−(qa)²/2]",
+    "terms": [
+      {
+        "term": "q",
+        "definition": "Transfer wave number."
+      },
+      {
+        "term": "a",
+        "definition": "The Gaussian potential’s length scale."
+      },
+      {
+        "term": "exp(x)",
+        "definition": "e raised to x, with e about 2.718."
+      }
+    ]
+  },
+  "screened-potential-example": {
+    "idea": "Screening cuts off a potential’s long-distance tail and changes its forward scattering.",
+    "explanation": "A finite screening length keeps the stated potential short range. Removing that cutoff is not a harmless substitution: the forward amplitude can diverge and the short-range scattering assumptions need to change.",
+    "example": {
+      "title": "One finite screening scale",
+      "steps": [
+        "For the stated model with length scale 2 nm, the forward amplitude is −0.080 nm.",
+        "At qa = 1 it is −0.040 nm, half the amplitude and one quarter of the forward angular cross section."
+      ]
+    },
+    "equation": "amplitude / forward amplitude = 1/[1 + (qa)²]",
+    "terms": [
+      {
+        "term": "q",
+        "definition": "Transfer wave number."
+      },
+      {
+        "term": "a",
+        "definition": "The finite screening length in this example."
+      },
+      {
+        "term": "Screening",
+        "definition": "Reduction of an interaction’s effect over long distances."
+      }
+    ]
+  },
+  "born-error-and-unitarity": {
+    "idea": "Test a Born estimate against an exact result where one is available.",
+    "explanation": "Compare like quantities in the same energy regime. Also keep approximation orders consistent: a first-order real forward amplitude lacks the second-order imaginary part needed to match its nonzero squared scattering area.",
+    "example": {
+      "title": "A weak attractive well",
+      "steps": [
+        "For depth parameter 0.30, exact matching gives scattering length divided by radius about −0.0311208.",
+        "The Born estimate is −0.0300000. The absolute error is about 0.0011208 times the radius, roughly 3.60% of the exact length’s size."
+      ]
+    },
+    "equation": "absolute error = |approximate scattering length − exact scattering length|",
+    "terms": [
+      {
+        "term": "Born estimate",
+        "definition": "The result from replacing the interior wave by the incoming wave."
+      }
+    ]
+  },
+  "static-approximation-capstone": {
+    "idea": "Choose an approximation by checking the size that makes it reliable.",
+    "explanation": "For a separated two-level pair, compare coupling with the gap before estimating the shift. Then check the estimate against the exact small matrix; the agreement measures this case, not every possible potential.",
+    "example": {
+      "title": "Checking one weak coupling",
+      "steps": [
+        "The gap is 5 eV and the coupling 0.20 eV, giving ratio 0.04.",
+        "The second-order lower shift is −0.20²/5 = −0.008 eV. Exact diagonalization gives about −0.00798724 eV, a difference about 0.00001276 eV."
+      ]
+    },
+    "equation": "lower shift ≈ −coupling² / positive gap",
+    "terms": [
+      {
+        "term": "Diagonalization",
+        "definition": "Finding the states on which the energy matrix acts by simple multiplication."
+      }
+    ]
+  },
+  "driven-open-capstone": {
+    "idea": "Match the evolution formula to the physical model before calculating a probability.",
+    "explanation": "A closed driven pair can transfer probability back and forth, so a weak estimate applies only near the start. A constant loss rate describes a different model and cannot simply be substituted for this coherent motion.",
+    "example": {
+      "title": "Testing a short closed-system drive",
+      "steps": [
+        "The rotation rate is 2 radians per second and the time is 0.20 seconds, giving angle 0.20.",
+        "The exact transfer is sin²(0.20), about 0.03947. Its weak estimate, 0.04000, is close for this duration."
+      ]
+    },
+    "equation": "closed-pair transfer = sin²(Ωt/2)",
+    "terms": [
+      {
+        "term": "Ω",
+        "definition": "The specified two-state rotation rate."
+      },
+      {
+        "term": "t",
+        "definition": "Duration."
+      },
+      {
+        "term": "Coherent",
+        "definition": "Evolution retaining the relative phases needed for interference."
+      }
+    ]
+  },
+  "quantum3-assessment": {
+    "idea": "Check an elastic scattering result by calculating its total area two ways.",
+    "explanation": "The integrated angular-channel sum and the forward interference rule should agree for this complete elastic model. Disagreement calls for checking omitted channels, boundaries and normalization before claiming a new physical effect.",
+    "example": {
+      "title": "One s-plus-p conservation check",
+      "steps": [
+        "With wave number 1.5 per nanometre and the given phases, the angular-channel sum is 40π/9 nm².",
+        "The forward imaginary amplitude is 5/3 nm, so 4π × (5/3)/1.5 gives the same 40π/9, about 13.96 nm²."
+      ]
+    },
+    "equation": "integrated elastic area = (4π/k) × imaginary forward amplitude",
+    "terms": [
+      {
+        "term": "k",
+        "definition": "Incident wave number."
+      },
+      {
+        "term": "s and p",
+        "definition": "Orbital angular channels with labels 0 and 1."
+      }
+    ]
+  }
+}

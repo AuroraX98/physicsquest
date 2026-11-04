@@ -1,0 +1,1777 @@
+{
+  "photon-energy-threshold": {
+    "idea": "Each photon must bring enough energy to free an electron.",
+    "explanation": "A photon is one packet of light. Higher frequency means more energy per packet; at fixed frequency, greater brightness means more packets. Some photon energy is spent freeing the electron.",
+    "example": {
+      "title": "Freeing one electron",
+      "steps": [
+        "One photon brings 3.3088 eV of energy. The material needs 2.20 eV to free an electron.",
+        "The fastest freed electron keeps 3.3088 − 2.20 = 1.1088 eV of motion energy."
+      ]
+    },
+    "equation": "maximum motion energy = photon energy − release energy",
+    "terms": [
+      {
+        "term": "Photon",
+        "definition": "One packet of light energy."
+      },
+      {
+        "term": "eV",
+        "definition": "Electronvolt: a small unit of energy."
+      }
+    ]
+  },
+  "photon-momentum-scattering": {
+    "idea": "A photon can give some of its energy to an electron.",
+    "explanation": "When light scatters, it changes direction. For a free electron initially at rest, the outgoing photon can lose energy while the electron gains motion energy; total energy and momentum remain balanced.",
+    "example": {
+      "title": "A right-angle scattering",
+      "steps": [
+        "A photon with wavelength 50.0 pm scatters through 90°. Its new wavelength is 52.426 pm.",
+        "It loses about 1,148 eV, which becomes the electron’s motion energy."
+      ]
+    },
+    "equation": "wavelength increase at 90° = h / (electron mass × light speed)",
+    "terms": [
+      {
+        "term": "Scattering",
+        "definition": "A change in direction caused by an interaction."
+      },
+      {
+        "term": "pm",
+        "definition": "Picometre: one trillionth of a metre."
+      },
+      {
+        "term": "h",
+        "definition": "Planck’s constant, which links photon energy to frequency."
+      }
+    ]
+  },
+  "matter-wavelength": {
+    "idea": "Greater momentum means a shorter matter wavelength.",
+    "explanation": "Momentum describes an object’s directed motion. Quantum matter has a wavelength linked to that momentum; this wavelength is not the object’s width or a measured path.",
+    "example": {
+      "title": "A moving electron",
+      "steps": [
+        "An electron with motion energy 150 eV has momentum about 6.616 × 10⁻²⁴ kg·m/s.",
+        "Dividing Planck’s constant by this momentum gives wavelength about 0.1001 nm."
+      ]
+    },
+    "equation": "matter wavelength = h / momentum",
+    "terms": [
+      {
+        "term": "Momentum",
+        "definition": "A quantity that describes directed motion."
+      },
+      {
+        "term": "nm",
+        "definition": "Nanometre: one billionth of a metre."
+      },
+      {
+        "term": "h",
+        "definition": "Planck’s constant, about 6.626 × 10⁻³⁴ joule-seconds."
+      }
+    ]
+  },
+  "single-event-interference": {
+    "idea": "Many detections reveal a pattern; one detection gives one result.",
+    "explanation": "Repeat the same preparation to test its predicted chances. The expected count is a long-run average, so one batch need not match it exactly. The pattern alone does not reveal each particle’s path.",
+    "example": {
+      "title": "Counting detections",
+      "steps": [
+        "A region has a 25% chance of receiving each detection. Repeat the experiment independently 400 times.",
+        "The expected count is 400 × 0.25 = 100; a batch of 96 can still fit this prediction."
+      ]
+    },
+    "equation": "expected count = number of runs × probability",
+    "terms": [
+      {
+        "term": "Expected count",
+        "definition": "The average count predicted over many repeated batches."
+      }
+    ]
+  },
+  "complex-amplitudes": {
+    "idea": "An amplitude contains information that a probability alone cannot hold.",
+    "explanation": "An amplitude is a complex number: it has a size and a phase, which describes its relative alignment. Squaring its size gives a nonnegative number; the amplitude itself is not a probability.",
+    "example": {
+      "title": "Two amplitudes",
+      "steps": [
+        "Use amplitudes 3/5 and 4i/5, where i² = −1.",
+        "Their squared sizes are 9/25 and 16/25. They add to 1."
+      ]
+    },
+    "equation": "|a + ib|² = a² + b²",
+    "terms": [
+      {
+        "term": "Amplitude",
+        "definition": "A number used to calculate quantum chances."
+      },
+      {
+        "term": "Phase",
+        "definition": "The relative alignment of amplitudes."
+      },
+      {
+        "term": "a and b",
+        "definition": "The real and imaginary parts of a complex amplitude."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, with i² = −1."
+      }
+    ]
+  },
+  "born-discrete": {
+    "idea": "Square each normalized amplitude’s size to find its outcome’s chance.",
+    "explanation": "Normalized means the squared sizes add to one. These chances apply to a specified measurement: changing the measurement can change the answers.",
+    "example": {
+      "title": "Two possible outcomes",
+      "steps": [
+        "Start with amplitudes 1 and 2i. Their squared sizes add to 5.",
+        "Divide each amplitude by √5. The outcome chances are then 1/5 and 4/5."
+      ]
+    },
+    "equation": "outcome probability = |its normalized amplitude|²",
+    "terms": [
+      {
+        "term": "Normalized",
+        "definition": "Scaled so the total probability is one."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, with i² = −1."
+      }
+    ]
+  },
+  "continuous-density": {
+    "idea": "Add probability density over a region to find its chance.",
+    "explanation": "Density tells how tightly probability is packed into space. A high density is not itself a probability; the width of the region also matters.",
+    "example": {
+      "title": "A small position interval",
+      "steps": [
+        "A uniform density is 5 per metre within a 0.20 m region.",
+        "A 0.030 m piece inside it has chance 5 × 0.030 = 0.15, or 15%."
+      ]
+    },
+    "equation": "probability in a region = integral of density across that region",
+    "terms": [
+      {
+        "term": "Probability density",
+        "definition": "Probability per unit length in this one-dimensional description."
+      },
+      {
+        "term": "Integral",
+        "definition": "A continuous sum over the region."
+      }
+    ]
+  },
+  "global-relative-phase": {
+    "idea": "Changing the phase between parts can change measurement chances.",
+    "explanation": "Phase describes how amplitudes line up. Turning every amplitude by the same phase leaves predictions unchanged; turning one relative to another can change how they combine.",
+    "example": {
+      "title": "Changing one relative sign",
+      "steps": [
+        "Prepare (u₀ + u₁)/√2. A measurement testing that same plus combination succeeds with certainty.",
+        "Change only the second sign to minus. The plus amplitudes now cancel, giving zero chance for that outcome."
+      ]
+    },
+    "equation": "plus-outcome probability = |overlap with the plus state|²",
+    "terms": [
+      {
+        "term": "Phase",
+        "definition": "The relative alignment of amplitudes."
+      },
+      {
+        "term": "u₀ and u₁",
+        "definition": "Two orthogonal normalized reference states."
+      },
+      {
+        "term": "Overlap",
+        "definition": "The amplitude for matching one state with another."
+      }
+    ]
+  },
+  "normalize-one-d": {
+    "idea": "Normalization makes the total position probability equal one.",
+    "explanation": "Keep the wavefunction’s shape, but adjust its overall size. A wavefunction is a rule giving amplitudes at positions; its squared size must add up to one across space.",
+    "example": {
+      "title": "Scaling a sine shape",
+      "steps": [
+        "On a 2 m interval, use ψ(x) = A sin(πx/2 m). The integral of the sine squared is 1 m.",
+        "Choose A = 1 m⁻¹ᐟ². The total probability is then one."
+      ]
+    },
+    "equation": "normalization: |A|² × interval length / 2 = 1",
+    "terms": [
+      {
+        "term": "Normalization",
+        "definition": "Scaling a state so its total probability is one."
+      },
+      {
+        "term": "Wavefunction",
+        "definition": "A rule giving quantum amplitudes at positions."
+      },
+      {
+        "term": "A",
+        "definition": "The multiplier setting the sine wave’s size."
+      },
+      {
+        "term": "x",
+        "definition": "Position within the interval."
+      }
+    ]
+  },
+  "interval-probability": {
+    "idea": "Equal-sized regions can have different chances of containing a particle.",
+    "explanation": "The chance depends on all the density inside the region. Where the density is larger, an equally wide region can collect more probability.",
+    "example": {
+      "title": "The left quarter of a box",
+      "steps": [
+        "Use the normalized sine shape √(2/L) sin(πx/L). Its density is low near the ends.",
+        "The chance in the left quarter is 1/4 − 1/(2π), about 9.1%, rather than 25%."
+      ]
+    },
+    "equation": "left-quarter probability = 1/4 − 1/(2π) ≈ 0.0908",
+    "terms": [
+      {
+        "term": "Density",
+        "definition": "How tightly probability is packed into space."
+      },
+      {
+        "term": "L",
+        "definition": "The box length."
+      },
+      {
+        "term": "x",
+        "definition": "Position measured from the left wall."
+      }
+    ]
+  },
+  "gaussian-state": {
+    "idea": "A Gaussian state has a smooth, bell-shaped position distribution.",
+    "explanation": "The distribution’s width describes the spread of position results. Find this spread from the squared amplitude, called probability density, rather than from the amplitude alone.",
+    "example": {
+      "title": "A bell-shaped position distribution",
+      "steps": [
+        "Set the centre at 0.50 m and the standard deviation at 0.20 m.",
+        "About 68.27% of position results fall between 0.30 m and 0.70 m."
+      ]
+    },
+    "equation": "probability density = |position amplitude|²",
+    "terms": [
+      {
+        "term": "Gaussian",
+        "definition": "A smooth bell-shaped distribution."
+      },
+      {
+        "term": "Standard deviation",
+        "definition": "A measure of how widely results spread around their average."
+      }
+    ]
+  },
+  "wavefunction-inner-product": {
+    "idea": "Two overlapping shapes can still have zero quantum overlap.",
+    "explanation": "Quantum overlap adds products of amplitudes, including their signs and phases. Positive and negative contributions can cancel even when both shapes occupy the same region.",
+    "example": {
+      "title": "Two sine shapes",
+      "steps": [
+        "Use normalized sine shapes with one and two half-waves across the same interval.",
+        "Their product has equal positive and negative contributions. Its integral is zero, so the states are orthogonal."
+      ]
+    },
+    "equation": "⟨f,g⟩ = ∫ f*(x)g(x) dx",
+    "terms": [
+      {
+        "term": "Orthogonal",
+        "definition": "Having zero quantum overlap."
+      },
+      {
+        "term": "Complex conjugate",
+        "definition": "The same complex number with the imaginary part’s sign reversed."
+      },
+      {
+        "term": "f and g",
+        "definition": "The two position-amplitude functions."
+      },
+      {
+        "term": "f*",
+        "definition": "The complex conjugate of f."
+      },
+      {
+        "term": "x",
+        "definition": "Position."
+      },
+      {
+        "term": "∫ … dx",
+        "definition": "Add contributions continuously over position."
+      }
+    ]
+  },
+  "basis-coefficients": {
+    "idea": "A basis lets us describe a state using a list of amplitudes.",
+    "explanation": "An orthonormal basis is a complete set of normalized reference states with zero overlap between different members. Keeping only part of that list loses probability weight; rescaling that selected part changes the state description.",
+    "example": {
+      "title": "Keeping two of three parts",
+      "steps": [
+        "Three reference outcomes have probabilities 0.5, 0.3 and 0.2.",
+        "Keeping the first two retains 0.8 of the weight. Renormalizing gives 0.625 and 0.375 for that selected part."
+      ]
+    },
+    "equation": "basis coefficient = overlap of the reference state with the prepared state",
+    "terms": [
+      {
+        "term": "Basis",
+        "definition": "A complete set of reference states used to describe other states."
+      }
+    ]
+  },
+  "two-state-interference": {
+    "idea": "Coherent amplitudes can strengthen or cancel each other.",
+    "explanation": "Coherent means their relative phase is maintained. Add these amplitudes before squaring: the result includes a term that depends on how they line up.",
+    "example": {
+      "title": "Two contributions at one position",
+      "steps": [
+        "The contributions at one point are 0.50 and 0.7071 in units of m⁻¹ᐟ², with matching phase.",
+        "Their sum is about 1.2071 m⁻¹ᐟ². Squaring gives density about 1.4571 per metre; adding the separate densities would miss interference."
+      ]
+    },
+    "equation": "combined density = |first contribution + second contribution|²",
+    "terms": [
+      {
+        "term": "Coherent",
+        "definition": "Having a maintained relative phase."
+      },
+      {
+        "term": "Interference",
+        "definition": "A change in combined probability caused by adding amplitudes."
+      }
+    ]
+  },
+  "coherent-versus-mixture": {
+    "idea": "A random mixture adds probabilities, not amplitudes.",
+    "explanation": "A mixture randomly prepares different states on different runs. A coherent preparation instead keeps a particular phase relationship within each state; the two procedures can give different results.",
+    "example": {
+      "title": "A half-and-half mixture",
+      "steps": [
+        "Prepare u₀ on half the runs and u₁ on the others. Each gives the plus outcome with probability 1/2.",
+        "The mixture’s plus chance is ½ × ½ + ½ × ½ = ½."
+      ]
+    },
+    "equation": "outcome chance = sum of (preparation weight × conditional chance)",
+    "terms": [
+      {
+        "term": "Mixture",
+        "definition": "An ensemble described by probabilities for different prepared states."
+      },
+      {
+        "term": "u₀ and u₁",
+        "definition": "Two orthogonal normalized reference states."
+      }
+    ]
+  },
+  "projective-update": {
+    "idea": "An ideal measurement keeps the component matching its recorded result.",
+    "explanation": "After recording an outcome, divide the matching component by its size to normalize it. An immediate repeat of the same ideal measurement then gives the same result, if nothing changes between measurements.",
+    "example": {
+      "title": "Recording outcome one",
+      "steps": [
+        "Prepare (3/5)u₀ + (4/5)u₁. Outcome one has chance 16/25.",
+        "If one is recorded, keep (4/5)u₁ and normalize it. The new state is u₁."
+      ]
+    },
+    "equation": "updated state = selected component / its length",
+    "terms": [
+      {
+        "term": "Projection",
+        "definition": "Keeping the part of a state belonging to a chosen outcome."
+      },
+      {
+        "term": "u₀ and u₁",
+        "definition": "Normalized states belonging to the two distinct outcomes."
+      }
+    ]
+  },
+  "schrodinger-one-d": {
+    "idea": "The Schrödinger equation describes how a quantum amplitude changes over time.",
+    "explanation": "The amplitude’s shape and the potential energy determine its change. To make a prediction, also supply the starting state and the boundary rules; the equation alone cannot choose them.",
+    "example": {
+      "title": "Change at one point",
+      "steps": [
+        "Suppose the curvature term is zero at a point and the potential energy is 3.0 × 10⁻²¹ J.",
+        "There the amplitude changes at rate −i(V/ℏ)ψ. This local rule is not a complete state by itself."
+      ]
+    },
+    "equation": "iℏ × time-change rate = −(ℏ²/2m) × spatial curvature + Vψ",
+    "terms": [
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with the system’s position or arrangement."
+      },
+      {
+        "term": "ψ",
+        "definition": "The position amplitude."
+      },
+      {
+        "term": "V",
+        "definition": "Potential energy at the point."
+      },
+      {
+        "term": "m",
+        "definition": "Particle mass."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit."
+      },
+      {
+        "term": "Spatial curvature",
+        "definition": "How the amplitude’s slope changes with position."
+      }
+    ]
+  },
+  "hamiltonian-action": {
+    "idea": "The energy operator acts on the whole state.",
+    "explanation": "An operator is a mathematical rule that changes an input function. Only a definite-energy state comes back as the same shape multiplied everywhere by one energy value.",
+    "example": {
+      "title": "Testing one Gaussian shape",
+      "steps": [
+        "For a free Gaussian shape, applying the energy operator gives a multiplier that depends on position.",
+        "At its centre the multiplier is E₀; at one width away it is zero. The state therefore has no single definite energy."
+      ]
+    },
+    "equation": "energy rule applied to a definite-energy state = energy × same state",
+    "terms": [
+      {
+        "term": "Operator",
+        "definition": "A mathematical rule acting on a state."
+      },
+      {
+        "term": "Hamiltonian",
+        "definition": "The operator representing energy."
+      },
+      {
+        "term": "E₀",
+        "definition": "The positive energy scale for this Gaussian example."
+      }
+    ]
+  },
+  "separate-time": {
+    "idea": "A single energy state keeps its position probabilities unchanged.",
+    "explanation": "When the energy rule stays fixed, a definite-energy state gains only a common phase over time. The phase changes its amplitude but cancels when we calculate probability.",
+    "example": {
+      "title": "One changing phase",
+      "steps": [
+        "An energy state gains the time factor −i at a chosen time.",
+        "Since |−i|² = 1, multiplying the amplitude by −i leaves its density unchanged."
+      ]
+    },
+    "equation": "|common phase factor|² = 1",
+    "terms": [
+      {
+        "term": "Phase",
+        "definition": "The alignment of an amplitude; a common phase leaves probabilities unchanged."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, with |i| = 1."
+      }
+    ]
+  },
+  "evolve-superposition": {
+    "idea": "Different energies change their phases at different rates.",
+    "explanation": "A state combining energies can therefore change their relative alignment over time. Some measurement chances then change, even while the chances of the individual energies stay fixed.",
+    "example": {
+      "title": "Two equally weighted energies",
+      "steps": [
+        "Prepare the equal plus combination of two energy states separated by ΔE.",
+        "At t = πℏ/ΔE, their relative sign has reversed. The chance of the original plus outcome is now zero."
+      ]
+    },
+    "equation": "plus-outcome chance = [1 + cos(ΔEt/ℏ)]/2",
+    "terms": [
+      {
+        "term": "Superposition",
+        "definition": "A state formed by adding amplitudes of reference states."
+      },
+      {
+        "term": "ΔE",
+        "definition": "Energy difference between the two states."
+      },
+      {
+        "term": "t",
+        "definition": "Elapsed time."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      }
+    ]
+  },
+  "probability-current": {
+    "idea": "Probability in a region changes when more flows in than out.",
+    "explanation": "Probability current describes this flow rate. It keeps track of chances crossing a boundary; it does not assign a hidden path to each particle.",
+    "example": {
+      "title": "Flow through an interval",
+      "steps": [
+        "The left boundary has incoming current 0.30 per second. The right has outgoing current 0.10 per second.",
+        "The region’s probability is increasing at 0.20 per second at that instant."
+      ]
+    },
+    "equation": "probability change per second = incoming current − outgoing current",
+    "terms": [
+      {
+        "term": "Probability current",
+        "definition": "The rate of probability flow through a boundary."
+      }
+    ]
+  },
+  "position-momentum-actions": {
+    "idea": "Position and momentum use different mathematical rules on the same amplitude.",
+    "explanation": "In the position description, the position rule multiplies by x. The momentum rule measures how the amplitude changes with position and multiplies that derivative by −iℏ.",
+    "example": {
+      "title": "A plane-wave factor",
+      "steps": [
+        "For the factor e^(ikx), taking the derivative gives ik times the same factor.",
+        "Multiplying by −iℏ leaves ℏk times the original factor: its momentum value is ℏk."
+      ]
+    },
+    "equation": "momentum of the plane-wave factor = ℏk",
+    "terms": [
+      {
+        "term": "Derivative",
+        "definition": "A rule describing how quickly a quantity changes."
+      },
+      {
+        "term": "k",
+        "definition": "Wave number: phase change per unit distance."
+      },
+      {
+        "term": "x",
+        "definition": "Position."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit."
+      },
+      {
+        "term": "e^(ikx)",
+        "definition": "A complex phase with angle kx."
+      }
+    ]
+  },
+  "operator-domains": {
+    "idea": "A quantum rule needs boundary rules for the input waves it allows.",
+    "explanation": "A formula alone does not specify every allowed wave. On a ring, going once around returns to the same point, so the wave must join itself there. This is one needed boundary check, not a complete proof that a measurement rule is valid.",
+    "example": {
+      "title": "Joining a wave around a ring",
+      "steps": [
+        "Let a ring’s circumference be L. Positions 0 and L name the same point.",
+        "The amplitude must therefore have the same value at both ends: ψ(0) = ψ(L). A trial with unequal values fails this boundary check."
+      ]
+    },
+    "equation": "ψ(0) = ψ(L)",
+    "terms": [
+      {
+        "term": "ψ",
+        "definition": "The wave’s position amplitude."
+      },
+      {
+        "term": "L",
+        "definition": "The ring’s circumference."
+      },
+      {
+        "term": "Domain",
+        "definition": "The allowed input waves, including their boundary rules."
+      }
+    ]
+  },
+  "expectation-variance": {
+    "idea": "A predicted average need not be a possible single result.",
+    "explanation": "Multiply each outcome by its chance, then add. This gives the average over many matching preparations; the spread describes how much individual results vary.",
+    "example": {
+      "title": "Two possible energies",
+      "steps": [
+        "Energy is 2E₀ with chance 3/4, or 6E₀ with chance 1/4.",
+        "The average is 3E₀, although no single result can be 3E₀ in this model."
+      ]
+    },
+    "equation": "predicted average = sum of (outcome × its probability)",
+    "terms": [
+      {
+        "term": "Expectation",
+        "definition": "The predicted average over repeated matching preparations."
+      },
+      {
+        "term": "E₀",
+        "definition": "A fixed positive energy unit."
+      }
+    ]
+  },
+  "commutator-action": {
+    "idea": "Doing two quantum operations in a different order can change the result.",
+    "explanation": "A commutator measures the difference between the two orders. In a product such as AB, apply B first, then A; use only inputs for which both orders are allowed.",
+    "example": {
+      "title": "Two small matrices",
+      "steps": [
+        "Let A swap two entries and B reverse the second entry’s sign. Start with (1,0).",
+        "AB gives (0,1), but BA gives (0,−1). Their difference is (0,2)."
+      ]
+    },
+    "equation": "[A,B] = AB − BA",
+    "terms": [
+      {
+        "term": "Commutator",
+        "definition": "The difference between applying two operations in opposite orders."
+      }
+    ]
+  },
+  "ehrenfest-motion": {
+    "idea": "Quantum averages can follow familiar motion rules.",
+    "explanation": "These rules track averages over matching preparations, not individual hidden paths. The average force need not equal the force calculated at the average position when force varies nonlinearly.",
+    "example": {
+      "title": "A free particle’s average motion",
+      "steps": [
+        "A particle has mass 2.0 × 10⁻³⁰ kg and average momentum 6.0 × 10⁻²⁵ kg·m/s.",
+        "Its average position changes at 3.0 × 10⁵ m/s."
+      ]
+    },
+    "equation": "average-position change per second = average momentum / mass",
+    "terms": []
+  },
+  "position-momentum-spread": {
+    "idea": "Spread describes how widely repeated measurement results vary.",
+    "explanation": "Prepare matching copies and measure each quantity on a separate group. The state’s spread is different from a detector’s resolution; a coarse readout describes only what that detector reports.",
+    "example": {
+      "title": "A two-bin readout",
+      "steps": [
+        "A detector reports −2 nm or +2 nm with equal chances.",
+        "The average readout is zero and its standard deviation is 2 nm. This is the readout’s spread, not a complete continuous position distribution."
+      ]
+    },
+    "equation": "standard deviation = √(average squared distance from the mean)",
+    "terms": [
+      {
+        "term": "Standard deviation",
+        "definition": "A measure of how widely results spread around their average."
+      }
+    ]
+  },
+  "gaussian-momentum": {
+    "idea": "A narrower Gaussian position distribution has a wider momentum distribution.",
+    "explanation": "For a Gaussian whose only added phase varies steadily with position, the two standard deviations multiply to ℏ/2. This links the spreads of the prepared state, not the measuring errors of a detector.",
+    "example": {
+      "title": "A narrow Gaussian",
+      "steps": [
+        "The position standard deviation is 0.50 nm.",
+        "Its momentum standard deviation is ℏ/(1.00 nm), about 1.055 × 10⁻²⁵ kg·m/s."
+      ]
+    },
+    "equation": "momentum spread = ℏ / (2 × position spread)",
+    "terms": [
+      {
+        "term": "Gaussian",
+        "definition": "A smooth bell-shaped distribution."
+      },
+      {
+        "term": "Standard deviation",
+        "definition": "A measure of spread around the average."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      }
+    ]
+  },
+  "robertson-bound": {
+    "idea": "Position and momentum spreads cannot both become arbitrarily small.",
+    "explanation": "For allowed states with finite position and momentum spreads, their standard deviations multiply to at least ℏ/2. This constrains the prepared state, rather than saying a poor detector causes all uncertainty.",
+    "example": {
+      "title": "A specified position spread",
+      "steps": [
+        "Let the position standard deviation be 0.80 nm.",
+        "The momentum standard deviation must be at least ℏ/(1.60 nm), about 6.59 × 10⁻²⁶ kg·m/s."
+      ]
+    },
+    "equation": "position spread × momentum spread ≥ ℏ/2",
+    "terms": [
+      {
+        "term": "Standard deviation",
+        "definition": "A measure of how widely results spread around the average."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      }
+    ]
+  },
+  "uncertainty-interpretation": {
+    "idea": "Making this Gaussian preparation narrower raises its average motion energy.",
+    "explanation": "For this free-particle Gaussian, the phase does not vary across position and average momentum is zero. Narrowing its position spread raises its momentum spread and motion energy; preparing that new state must still account for energy transfer.",
+    "example": {
+      "title": "Halving the prepared width",
+      "steps": [
+        "For mass 2.0 × 10⁻³⁰ kg, a zero-mean Gaussian of width 0.50 nm has average motion energy about 2.78 × 10⁻²¹ J.",
+        "Halving its width multiplies that energy by four, to about 1.11 × 10⁻²⁰ J."
+      ]
+    },
+    "equation": "average motion energy = ℏ² / (8 × mass × position spread²)",
+    "terms": [
+      {
+        "term": "Gaussian",
+        "definition": "A smooth bell-shaped state."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      }
+    ]
+  },
+  "spatial-curvature": {
+    "idea": "The energy difference tells a wavefunction how to bend.",
+    "explanation": "In a constant-potential region, energy above the potential gives oscillating shapes. Energy below it gives exponential shapes; the boundary rules choose the allowed combination. Neither case means negative probability.",
+    "example": {
+      "title": "A decaying part",
+      "steps": [
+        "Suppose the decay constant is 2/L. Moving a distance L reduces the chosen amplitude by e⁻².",
+        "Its density falls by the square of that factor: e⁻⁴, about 0.0183."
+      ]
+    },
+    "equation": "density ratio = amplitude ratio²",
+    "terms": [
+      {
+        "term": "Curvature",
+        "definition": "How the slope of a shape changes."
+      },
+      {
+        "term": "L",
+        "definition": "A chosen positive length."
+      },
+      {
+        "term": "e",
+        "definition": "The number about 2.718 used for exponential change."
+      },
+      {
+        "term": "Decay constant",
+        "definition": "How fast an exponential amplitude shrinks with distance."
+      }
+    ]
+  },
+  "boundary-matching": {
+    "idea": "At a finite step, join both the amplitude and its slope.",
+    "explanation": "For constant mass and a bounded potential step, the two sides must meet smoothly. Infinite walls and singular potentials follow different boundary rules.",
+    "example": {
+      "title": "Joining two solutions",
+      "steps": [
+        "At the boundary, matching requires A + B = C and A − B = 2C.",
+        "Solving gives A = 1.5C and B = −0.5C. A negative amplitude contribution is allowed; probability uses the squared total size."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Boundary",
+        "definition": "The place where two regions meet."
+      },
+      {
+        "term": "A, B and C",
+        "definition": "Amplitude coefficients for the waves being joined."
+      }
+    ]
+  },
+  "parity-bound-states": {
+    "idea": "Reflection symmetry can simplify a bound-state calculation.",
+    "explanation": "An even shape stays the same under reflection; an odd shape changes sign. For a smooth symmetric potential that traps a particle along one line, each bound energy state follows one of these reflection rules.",
+    "example": {
+      "title": "An odd shape",
+      "steps": [
+        "Take g(x) = C(x/L)e^(−x²/2L²). Its centre value is zero.",
+        "At x = L and x = −L, the amplitudes have opposite signs but equal densities."
+      ]
+    },
+    "equation": "odd amplitude at −x = −amplitude at x",
+    "terms": [
+      {
+        "term": "Parity",
+        "definition": "A state’s even or odd reflection rule."
+      },
+      {
+        "term": "x",
+        "definition": "Position relative to the center."
+      },
+      {
+        "term": "L",
+        "definition": "A positive length scale."
+      },
+      {
+        "term": "C",
+        "definition": "A multiplier setting the amplitude’s size."
+      },
+      {
+        "term": "e",
+        "definition": "The number about 2.718 used for exponential change."
+      }
+    ]
+  },
+  "shooting-check": {
+    "idea": "Try an energy, then check whether the far boundary fits.",
+    "explanation": "A shooting calculation grows a trial solution from one end. Its endpoint miss is a residual; shrinking numerical steps checks whether an apparently good answer is actually accurate.",
+    "example": {
+      "title": "Finding the first box level",
+      "steps": [
+        "Trials at scaled energies 8 and 12 miss the endpoint with opposite signs, so a root lies between them.",
+        "Refining the calculation approaches 9.8696044, or π². A tiny endpoint miss alone would not prove that accuracy."
+      ]
+    },
+    "equation": "endpoint miss = calculated amplitude at the far boundary",
+    "terms": [
+      {
+        "term": "Residual",
+        "definition": "The remaining mismatch after a trial calculation."
+      },
+      {
+        "term": "Scaled energy",
+        "definition": "Energy divided by the model’s fixed energy unit."
+      }
+    ]
+  },
+  "infinite-well-spectrum": {
+    "idea": "Two impenetrable walls allow only certain standing-wave shapes.",
+    "explanation": "The amplitude must be zero at both ends. Only a whole number of half-waves fits, so the allowed energies form a separated list; the everywhere-zero shape is not a state.",
+    "example": {
+      "title": "The first box energy",
+      "steps": [
+        "Let ℏ²/(2mL²) = 0.020 eV. For the first allowed shape, n = 1.",
+        "Its energy is π² × 0.020 eV, about 0.19739 eV."
+      ]
+    },
+    "equation": "allowed box energy = n²π² × energy scale",
+    "terms": [
+      {
+        "term": "Standing wave",
+        "definition": "A wave pattern with fixed zero-amplitude points."
+      },
+      {
+        "term": "n",
+        "definition": "The positive whole-number level label."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "m",
+        "definition": "Particle mass."
+      },
+      {
+        "term": "L",
+        "definition": "Box length."
+      }
+    ]
+  },
+  "well-normalization-probability": {
+    "idea": "A region’s probability comes from adding the density inside it.",
+    "explanation": "For the box’s lowest-energy sine shape, the density is smaller near the walls. A quarter of the width therefore need not contain a quarter of the probability.",
+    "example": {
+      "title": "The box’s left quarter",
+      "steps": [
+        "Choose a box 2 nm wide and look in its leftmost 0.50 nm.",
+        "For its lowest-energy state, the probability is 1/4 − 1/(2π), about 9.08%."
+      ]
+    },
+    "equation": "left-quarter ground-state chance = 1/4 − 1/(2π)",
+    "terms": [
+      {
+        "term": "Density",
+        "definition": "Probability packed into each unit of position."
+      }
+    ]
+  },
+  "well-means-spreads": {
+    "idea": "Zero average momentum does not mean zero motion energy.",
+    "explanation": "Opposite momentum contributions can cancel in the average while their squares remain positive. Here momentum statistics refer to an ideal release from the box, not an unrestricted momentum rule inside hard walls.",
+    "example": {
+      "title": "Releasing one box ground state",
+      "steps": [
+        "Use a 2 nm box with energy scale 0.020 eV. Its ground state has zero average release momentum.",
+        "The momentum-square average remains positive, giving motion energy π² × 0.020 eV, about 0.19739 eV. Zero mean momentum does not make that energy zero."
+      ]
+    },
+    "equation": "average motion energy = average of (momentum²) / (2 × mass)",
+    "terms": []
+  },
+  "well-superposition-time": {
+    "idea": "Two box energies can make the position pattern change over time.",
+    "explanation": "Their amplitudes gain phase at different rates. The changing relative phase changes position probabilities, while their energy probabilities remain fixed. This describes a pattern, not a particle’s travel time.",
+    "example": {
+      "title": "Probability in the left half",
+      "steps": [
+        "Prepare equal amplitudes of the first two box states with matching initial phase.",
+        "Initially the left-half probability is about 92.44%. Half a pattern cycle later it is about 7.56%."
+      ]
+    },
+    "equation": "left-half chance = 1/2 + [4/(3π)]cos(ΔEt/ℏ)",
+    "terms": [
+      {
+        "term": "Phase",
+        "definition": "The relative alignment of amplitudes."
+      },
+      {
+        "term": "ΔE",
+        "definition": "The gap between the two box energies."
+      },
+      {
+        "term": "t",
+        "definition": "Elapsed time."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      }
+    ]
+  },
+  "periodic-ring": {
+    "idea": "A ring joins the ends instead of placing walls there.",
+    "explanation": "The amplitude and its slope must return to their starting values after one turn. Clockwise and counterclockwise states can have the same energy; a constant zero-momentum state is also allowed.",
+    "example": {
+      "title": "Two directions around one ring",
+      "steps": [
+        "Let the ring energy scale ℏ²/(2mC²) be 0.010 eV.",
+        "The n = +1 and n = −1 states both have energy about 0.39478 eV, despite opposite momentum directions."
+      ]
+    },
+    "equation": "ring energy = 4π²n² × ring energy scale",
+    "terms": [
+      {
+        "term": "Periodic boundary",
+        "definition": "A rule joining values after one complete turn."
+      },
+      {
+        "term": "n",
+        "definition": "The integer winding label, positive, zero or negative."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "m",
+        "definition": "Particle mass."
+      },
+      {
+        "term": "C",
+        "definition": "Ring circumference."
+      }
+    ]
+  },
+  "finite-well-regions": {
+    "idea": "A finite well allows a bound state to extend beyond its edges.",
+    "explanation": "Inside the well the shape oscillates; outside it decays. Both tails must shrink far away so total probability stays finite. A tail does not mean the stationary state is leaking away.",
+    "example": {
+      "title": "A trial outside tail",
+      "steps": [
+        "The outside potential is four energy units and the trial energy is one unit. The model’s length scale is a.",
+        "The outside decay length is a/√3, about 0.577a. Matching at the edges must still decide whether this trial energy is allowed."
+      ]
+    },
+    "equation": "decay length = a/√3 for this trial",
+    "terms": [
+      {
+        "term": "Bound state",
+        "definition": "A state confined near a region with normalizable decaying tails."
+      },
+      {
+        "term": "a",
+        "definition": "Half the well width in this model."
+      },
+      {
+        "term": "Decay length",
+        "definition": "Distance over which the decaying amplitude falls by a factor e, about 2.718."
+      }
+    ]
+  },
+  "finite-well-matching": {
+    "idea": "Only energies that join the inside shape to both tails are allowed.",
+    "explanation": "At each finite edge, match the amplitude and slope. Reflection symmetry lets an even or odd shape handle both edges; a locally correct shape alone does not pass this test.",
+    "example": {
+      "title": "Testing an even shape",
+      "steps": [
+        "For depth parameter 2 and trial parameter 1, the two matching sides are about 1.557 and 1.732.",
+        "They disagree, so this trial is not an allowed energy."
+      ]
+    },
+    "equation": "even-state match: k tan(ka) = κ",
+    "terms": [
+      {
+        "term": "k",
+        "definition": "The inside wave number."
+      },
+      {
+        "term": "a",
+        "definition": "Half the well width."
+      },
+      {
+        "term": "κ",
+        "definition": "The outside decay constant."
+      }
+    ]
+  },
+  "finite-well-roots": {
+    "idea": "Narrow a continuous sign-changing interval to locate an allowed energy.",
+    "explanation": "Bisection halves an interval and keeps the half still containing a sign change. First check that no discontinuity lies inside: a jump across a tangent pole is not an energy level.",
+    "example": {
+      "title": "Halving a bracket",
+      "steps": [
+        "Start with a valid matching bracket of width 0.1.",
+        "After ten halvings its width is 0.1/2¹⁰, about 0.00009766."
+      ]
+    },
+    "equation": "new bracket width = original width / 2ⁿ",
+    "terms": [
+      {
+        "term": "n",
+        "definition": "The number of bisection steps."
+      },
+      {
+        "term": "Bracket",
+        "definition": "A continuous interval whose endpoint mismatches have opposite signs."
+      }
+    ]
+  },
+  "finite-well-tail-probability": {
+    "idea": "Count the tails when normalizing a finite-well state.",
+    "explanation": "Add the density from the middle and both outside regions before normalizing. Outside probability allows a detection there; it does not mean a stationary bound state loses probability over time.",
+    "example": {
+      "title": "Counting both tails",
+      "steps": [
+        "For the stated lowest even state, the middle contributes 1.428615 and the two tails contribute 0.154659 to the unnormalized density integral.",
+        "Outside probability is 0.154659 divided by their sum, about 9.77%."
+      ]
+    },
+    "equation": "outside probability = outside density integral / total density integral",
+    "terms": [
+      {
+        "term": "Integral",
+        "definition": "A continuous sum over the chosen region."
+      }
+    ]
+  },
+  "flux-coefficients": {
+    "idea": "Transmission compares probability flow, not amplitude alone.",
+    "explanation": "A transmitted wave can move more slowly, carrying less flow even with a larger amplitude. Include the speed ratio when the two sides have different wave numbers.",
+    "example": {
+      "title": "A slower transmitted wave",
+      "steps": [
+        "The outgoing-to-incoming wave-number ratio is 1/2, and the amplitude ratio is 4/3.",
+        "Transmission is (1/2) × (4/3)² = 8/9."
+      ]
+    },
+    "equation": "T = (k_R/k_L)|C/A|²",
+    "terms": [
+      {
+        "term": "T",
+        "definition": "The transmitted fraction of incoming flow."
+      },
+      {
+        "term": "k_R/k_L",
+        "definition": "The outgoing-to-incoming wave-number ratio."
+      },
+      {
+        "term": "C/A",
+        "definition": "The transmitted-to-incident amplitude ratio."
+      }
+    ]
+  },
+  "step-above": {
+    "idea": "A wave can reflect even with enough energy to cross a step.",
+    "explanation": "At a sudden potential change, both the amplitude and slope must join. The reflected part helps them match; energy above the step does not guarantee complete transmission.",
+    "example": {
+      "title": "Crossing a step",
+      "steps": [
+        "The incoming and outgoing wave numbers are 4 and 2 per nanometre.",
+        "Reflection amplitude is (4 − 2)/(4 + 2) = 1/3, giving reflected fraction 1/9."
+      ]
+    },
+    "equation": "r = (k₁ − k₂)/(k₁ + k₂)",
+    "terms": [
+      {
+        "term": "r",
+        "definition": "Reflected amplitude divided by incoming amplitude."
+      },
+      {
+        "term": "k₁, k₂",
+        "definition": "Wave numbers before and after the step."
+      }
+    ]
+  },
+  "step-below": {
+    "idea": "An infinite raised step can have a tail without transmitted flow.",
+    "explanation": "Below the step’s height, the allowed stationary tail decays toward infinity. Its density can be nonzero while its net probability current is zero; this differs from a finite barrier.",
+    "example": {
+      "title": "A decaying stationary tail",
+      "steps": [
+        "The incoming wave number and decay constant are both 2 per nanometre. The matched outside tail is stationary.",
+        "At 0.50 nm beyond the step, density is about 0.2707 times the incoming density, but the net current there is zero."
+      ]
+    },
+    "equation": "right-side probability current = 0",
+    "terms": []
+  },
+  "barrier-below": {
+    "idea": "A finite barrier can transmit a wave below the barrier height.",
+    "explanation": "Both edges matter. Join the solutions at each edge, keeping both exponential terms inside; discarding one as if the barrier were infinite gives the wrong answer.",
+    "example": {
+      "title": "A finite rectangular barrier",
+      "steps": [
+        "Choose the stated scales so the barrier width times its decay constant is 1 and its height is twice the incident energy.",
+        "The exact transmitted fraction is 1/[1 + sinh²(1)], about 0.420."
+      ]
+    },
+    "equation": "T = 1/[1 + sinh²(1)] for this case",
+    "terms": [
+      {
+        "term": "sinh u",
+        "definition": "The hyperbolic sine: (eᵘ − e⁻ᵘ)/2."
+      },
+      {
+        "term": "T",
+        "definition": "The transmitted fraction of incoming flow."
+      },
+      {
+        "term": "e",
+        "definition": "The number about 2.718 used for exponential change."
+      }
+    ]
+  },
+  "barrier-above": {
+    "idea": "Reflections inside a barrier can cancel at certain phases.",
+    "explanation": "For the ideal rectangular barrier, matching both edges gives full transmission at special wavelengths. This is a phase condition, not a claim that every wave above the barrier passes completely.",
+    "example": {
+      "title": "One transmission resonance",
+      "steps": [
+        "Choose an interior wave number q and barrier width d so qd = π.",
+        "Then sin²(qd) = 0 and the exact transmitted fraction is one."
+      ]
+    },
+    "equation": "qd = nπ gives T = 1, n = 1,2,…",
+    "terms": [
+      {
+        "term": "q",
+        "definition": "Wave number inside the barrier."
+      },
+      {
+        "term": "d",
+        "definition": "Barrier width."
+      },
+      {
+        "term": "T",
+        "definition": "Transmitted flow fraction."
+      },
+      {
+        "term": "n",
+        "definition": "Any positive whole number."
+      }
+    ]
+  },
+  "scattering-packets": {
+    "idea": "A packet’s transmission averages over its prepared energy distribution.",
+    "explanation": "A physical packet contains a range of energies. Weight each transmission fraction by that energy’s probability; after separated outgoing packets form, the result predicts the transmitted detection chance.",
+    "example": {
+      "title": "Two narrow energy groups",
+      "steps": [
+        "Three quarters of the packet has transmission 0.20; one quarter has transmission 0.80.",
+        "The total transmitted chance is 0.75 × 0.20 + 0.25 × 0.80 = 0.35."
+      ]
+    },
+    "equation": "transmitted chance = sum of (energy weight × transmission)",
+    "terms": []
+  },
+  "oscillator-scales": {
+    "idea": "The oscillator’s natural length is not the same as its ground-state spread.",
+    "explanation": "The natural length makes the oscillator equation simpler. The ground-state position standard deviation is that length divided by √2; specifying which width we mean avoids a factor error.",
+    "example": {
+      "title": "A two-nanometre oscillator length",
+      "steps": [
+        "Let the natural length ℓ be 2 nm.",
+        "The ground-state position spread is 2/√2 nm, about 1.414 nm."
+      ]
+    },
+    "equation": "ground-state position spread = ℓ/√2",
+    "terms": [
+      {
+        "term": "ℓ",
+        "definition": "The natural length scale for the chosen oscillator."
+      }
+    ]
+  },
+  "oscillator-ground": {
+    "idea": "The lowest oscillator state still has nonzero energy.",
+    "explanation": "Its smooth Gaussian amplitude satisfies the energy equation. Kinetic and potential terms balance to give the same energy factor everywhere; this does not describe an unseen back-and-forth orbit.",
+    "example": {
+      "title": "The lowest oscillator energy",
+      "steps": [
+        "The oscillator’s energy spacing ℏω is 0.040 eV.",
+        "Its ground energy is half that spacing: 0.020 eV."
+      ]
+    },
+    "equation": "E₀ = ℏω/2",
+    "terms": [
+      {
+        "term": "E₀",
+        "definition": "The lowest oscillator energy."
+      },
+      {
+        "term": "ℏω",
+        "definition": "The energy spacing between neighboring oscillator levels."
+      }
+    ]
+  },
+  "oscillator-excited": {
+    "idea": "The first excited oscillator state has one zero-amplitude point.",
+    "explanation": "That point is a node. The amplitude changes sign there, while its squared size remains nonnegative everywhere; a negative amplitude is not a negative probability.",
+    "example": {
+      "title": "The centre node",
+      "steps": [
+        "The first excited shape is the ground shape multiplied by √2 x/ℓ.",
+        "At the centre x = 0, its amplitude and position density are both zero."
+      ]
+    },
+    "equation": "ψ₁(x) = √2(x/ℓ)ψ₀(x)",
+    "terms": [
+      {
+        "term": "ψ₀, ψ₁",
+        "definition": "Ground and first excited amplitudes."
+      },
+      {
+        "term": "ℓ",
+        "definition": "The oscillator’s natural length."
+      },
+      {
+        "term": "Node",
+        "definition": "A point where amplitude is zero."
+      },
+      {
+        "term": "x",
+        "definition": "Position measured from the trap center."
+      }
+    ]
+  },
+  "oscillator-ladders": {
+    "idea": "Ladder operators move between neighboring oscillator energy states.",
+    "explanation": "The lowering rule takes level n to n − 1 with a required scale factor. It gives zero on the lowest state; there is no level below it in this model.",
+    "example": {
+      "title": "Lowering level two",
+      "steps": [
+        "Apply the lowering operator to normalized state |2⟩.",
+        "The result is √2|1⟩. The √2 factor records its size; the output is not automatically normalized."
+      ]
+    },
+    "equation": "a|n⟩ = √n|n−1⟩",
+    "terms": [
+      {
+        "term": "a",
+        "definition": "The lowering operator."
+      },
+      {
+        "term": "|n⟩",
+        "definition": "A normalized oscillator state with level number n."
+      }
+    ]
+  },
+  "oscillator-observables": {
+    "idea": "An oscillator state predicts a distribution, not an imagined orbit.",
+    "explanation": "Even when average position is zero, position results can spread widely around it. Calculate the spread for the prepared state rather than treating the average as every result.",
+    "example": {
+      "title": "The first excited state",
+      "steps": [
+        "For level n = 1 and natural length ℓ = 2 nm, the position spread is ℓ√(n + 1/2).",
+        "This gives 2√1.5 nm, about 2.449 nm, despite zero mean position."
+      ]
+    },
+    "equation": "Δx = ℓ√(n + 1/2)",
+    "terms": [
+      {
+        "term": "Δx",
+        "definition": "Position standard deviation."
+      },
+      {
+        "term": "ℓ",
+        "definition": "The oscillator’s natural length."
+      },
+      {
+        "term": "n",
+        "definition": "The oscillator energy-level number."
+      }
+    ]
+  },
+  "momentum-representation": {
+    "idea": "The same state can be described using momentum amplitudes.",
+    "explanation": "A Fourier transform changes from position labels to momentum labels without changing the state. Add the squared momentum amplitude over a momentum interval to find that interval’s chance.",
+    "example": {
+      "title": "A uniform momentum window",
+      "steps": [
+        "Momentum is uniformly distributed from 2 × 10⁻²⁴ to 4 × 10⁻²⁴ kg·m/s.",
+        "The central half of that interval contains half the probability."
+      ]
+    },
+    "equation": "momentum-interval chance = integral of momentum density over that interval",
+    "terms": [
+      {
+        "term": "Fourier transform",
+        "definition": "A rule that rewrites a wave in terms of its momentum components."
+      },
+      {
+        "term": "Integral",
+        "definition": "A continuous sum over the chosen interval."
+      }
+    ]
+  },
+  "free-gaussian-evolution": {
+    "idea": "A free Gaussian packet can widen while its centre stays still.",
+    "explanation": "Different momentum components develop different phases. For the stated initial Gaussian, position spread grows with time while momentum spread stays fixed; this is a probability distribution, not a material cloud.",
+    "example": {
+      "title": "A spreading electron state",
+      "steps": [
+        "Start with width σ₀ = 1 nm and zero average momentum.",
+        "At the spreading time t_s, the width becomes √2 nm, about 1.414 nm, while its centre stays fixed."
+      ]
+    },
+    "equation": "σₓ(t) = σ₀√[1 + (t/t_s)²]",
+    "terms": [
+      {
+        "term": "σ₀",
+        "definition": "Initial position standard deviation."
+      },
+      {
+        "term": "σₓ(t)",
+        "definition": "Position standard deviation at elapsed time t."
+      },
+      {
+        "term": "t_s",
+        "definition": "The time when this packet’s width has grown by a factor √2."
+      }
+    ]
+  },
+  "classical-correspondence": {
+    "idea": "Check the relevant scale before treating quantum spreading as negligible.",
+    "explanation": "For a free Gaussian, spreading depends on mass, starting width and elapsed time together. Small spreading does not by itself remove every quantum effect or prove a classical path.",
+    "example": {
+      "title": "A specified heavy free state",
+      "steps": [
+        "An ideal 1 g mass starts with position spread 1 micrometre. After 1 second its spreading parameter is about 5.28 × 10⁻²⁰.",
+        "Its width change is negligible on this scale. This says nothing about every possible state of a gram-sized object."
+      ]
+    },
+    "equation": "spreading parameter = ℏt / (2mσ₀²)",
+    "terms": [
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "t",
+        "definition": "Elapsed time."
+      },
+      {
+        "term": "m",
+        "definition": "Mass."
+      },
+      {
+        "term": "σ₀",
+        "definition": "Initial position standard deviation."
+      }
+    ]
+  },
+  "spherical-coordinate-bridge": {
+    "idea": "A point can be located by distance and two angles.",
+    "explanation": "Spherical coordinates use distance from the centre, angle from the upward axis, and angle around that axis. A small cell grows wider farther from the centre, which matters when adding volumes.",
+    "example": {
+      "title": "Locating one point",
+      "steps": [
+        "Go 2 m from the origin, turn 90° from the upward z-axis, and choose zero angle around it.",
+        "The point is (2,0,0) m on the positive x-axis."
+      ]
+    },
+    "equation": "x = r sinθ cosφ; y = r sinθ sinφ; z = r cosθ",
+    "terms": [
+      {
+        "term": "r",
+        "definition": "Distance from the origin."
+      },
+      {
+        "term": "θ",
+        "definition": "Angle from the positive z-axis."
+      },
+      {
+        "term": "φ",
+        "definition": "Angle around the z-axis measured from positive x toward positive y."
+      },
+      {
+        "term": "x, y and z",
+        "definition": "The usual three perpendicular position coordinates."
+      }
+    ]
+  },
+  "three-d-probability": {
+    "idea": "A thin outer shell contains more space than an equally thick inner shell.",
+    "explanation": "To find a radius probability, include the shell’s volume as well as the density at each point. Radius density and volume density therefore answer different questions.",
+    "example": {
+      "title": "A uniform ball",
+      "steps": [
+        "Imagine uniform probability per volume inside a ball of radius 2 m.",
+        "The inner ball of radius 1 m has only 1/8 of the volume, so it contains 1/8 of the probability."
+      ]
+    },
+    "equation": "inner probability = (inner radius / outer radius)³",
+    "terms": []
+  },
+  "orbital-lz": {
+    "idea": "A definite angular-momentum component does not pick one direction in space.",
+    "explanation": "Orbital angular momentum describes how a spatial state responds to rotation. Its z-component acts on the angle around the z-axis; a definite value can still leave that angle spread uniformly.",
+    "example": {
+      "title": "An angular phase with label two",
+      "steps": [
+        "Use angular factor e^(2iφ)/√(2π). Its z-angular-momentum value is 2ℏ.",
+        "Its angular density is uniform, so any quarter-turn interval has probability 1/4."
+      ]
+    },
+    "equation": "L_z = mℏ",
+    "terms": [
+      {
+        "term": "m",
+        "definition": "The integer angular label, not mass."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "φ",
+        "definition": "Angle around the z-axis."
+      },
+      {
+        "term": "L_z",
+        "definition": "The measured z-component of orbital angular momentum."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit."
+      },
+      {
+        "term": "e^(2iφ)",
+        "definition": "A complex phase factor with angle 2φ."
+      }
+    ]
+  },
+  "orbital-joint-states": {
+    "idea": "Zero angular momentum along one axis need not mean zero total angular momentum.",
+    "explanation": "The total angular-momentum square and one chosen component can both have definite values. The other components are not then a set of known classical vector parts.",
+    "example": {
+      "title": "An orbital state with ℓ = 1, m = 0",
+      "steps": [
+        "Its z-component is mℏ = 0.",
+        "Its total angular-momentum square is ℓ(ℓ + 1)ℏ² = 2ℏ², so the total is not zero."
+      ]
+    },
+    "equation": "L² = ℓ(ℓ + 1)ℏ²; L_z = mℏ",
+    "terms": [
+      {
+        "term": "ℓ",
+        "definition": "The total orbital angular-momentum label."
+      },
+      {
+        "term": "m",
+        "definition": "The label for one chosen component."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "L²",
+        "definition": "The measured squared total orbital angular momentum."
+      },
+      {
+        "term": "L_z",
+        "definition": "The measured component along z."
+      }
+    ]
+  },
+  "central-radial-equation": {
+    "idea": "A centre-only force lets us separate distance from direction.",
+    "explanation": "For a potential depending only on distance, choose an angular state and solve a radial equation for its distance part. Angular momentum adds a positive term to that radial equation; it is not evidence of an orbit.",
+    "example": {
+      "title": "The extra radial term",
+      "steps": [
+        "For orbital label ℓ = 1, the extra term is twice ℏ²/(2μr²).",
+        "At the stated mass and radius 1 nm, it is about 0.0763 eV."
+      ]
+    },
+    "equation": "extra radial energy = ℏ²ℓ(ℓ + 1)/(2μr²)",
+    "terms": [
+      {
+        "term": "ℓ",
+        "definition": "Orbital angular-momentum label."
+      },
+      {
+        "term": "μ",
+        "definition": "The mass used for relative motion."
+      },
+      {
+        "term": "r",
+        "definition": "Distance from the centre."
+      },
+      {
+        "term": "ℏ",
+        "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "eV",
+        "definition": "Electronvolt, an energy unit often used for atoms."
+      }
+    ]
+  },
+  "radial-boundaries": {
+    "idea": "A radial solution must fit the centre as well as the distant tail.",
+    "explanation": "For the stated ordinary or Coulomb potential, radius times the physical radial amplitude must vanish at the center. A bound solution must also decay far away; finite total probability alone is not every boundary test.",
+    "example": {
+      "title": "Checking one candidate",
+      "steps": [
+        "Take u(r) = Nr e^(−r/a), with positive length a. It vanishes at r = 0 and decays at large r.",
+        "Its physical radial factor u/r stays finite at the centre. The full energy equation still needs checking."
+      ]
+    },
+    "equation": "u(0) = 0 for the stated allowed radial solutions",
+    "terms": [
+      {
+        "term": "u",
+        "definition": "Radius times the radial part of the wavefunction."
+      },
+      {
+        "term": "r",
+        "definition": "Distance from the centre."
+      },
+      {
+        "term": "N",
+        "definition": "A normalization constant."
+      },
+      {
+        "term": "a",
+        "definition": "A positive decay length."
+      }
+    ]
+  },
+  "hydrogen-reduced-mass": {
+    "idea": "Both the proton and electron move inside hydrogen.",
+    "explanation": "Separate the atom’s overall motion from the motion between its two particles. The internal calculation uses a reduced mass, which accounts for both moving instead of fixing the proton in place.",
+    "example": {
+      "title": "A finite proton mass",
+      "steps": [
+        "If the proton is 1836 times as massive as the electron, the reduced mass is 1836/1837 of the electron mass.",
+        "It is slightly smaller, giving a slightly larger atomic length scale than the fixed-proton model."
+      ]
+    },
+    "equation": "μ = mₑmₚ / (mₑ + mₚ)",
+    "terms": [
+      {
+        "term": "μ",
+        "definition": "Reduced mass for relative motion."
+      },
+      {
+        "term": "mₑ, mₚ",
+        "definition": "Electron mass and proton mass."
+      }
+    ]
+  },
+  "hydrogen-ground": {
+    "idea": "The most likely radius differs from the point of greatest density.",
+    "explanation": "Hydrogen’s ground-state density per volume is greatest at the centre. But larger-radius shells contain more volume, so the radius distribution peaks away from the centre; neither describes an orbit.",
+    "example": {
+      "title": "Probability inside one atomic length",
+      "steps": [
+        "The ground state’s radius distribution peaks at r = a.",
+        "The probability inside that radius is 1 − 5e⁻², about 32.33%; a peak does not mean most results lie inside it."
+      ]
+    },
+    "equation": "chance inside radius a = 1 − 5e⁻²",
+    "terms": [
+      {
+        "term": "r",
+        "definition": "Electron-proton separation."
+      },
+      {
+        "term": "a",
+        "definition": "The ground-state Coulomb length scale."
+      },
+      {
+        "term": "e",
+        "definition": "The exponential constant, about 2.718."
+      }
+    ]
+  },
+  "hydrogen-spectrum": {
+    "idea": "The ideal hydrogen model has a separated list of bound energies.",
+    "explanation": "Allowed wavefunctions must fit both the centre and far-away boundary rules. Those restrictions select integer labels; several different spatial shapes can share one energy in this simplified model.",
+    "example": {
+      "title": "Hydrogen’s second energy family",
+      "steps": [
+        "With the rounded energy scale 13.6 eV, label n = 2 gives −13.6/4 = −3.4 eV.",
+        "Four spatial states share that energy when spin and additional corrections are left out."
+      ]
+    },
+    "equation": "Eₙ = −E_R/n²",
+    "terms": [
+      {
+        "term": "n",
+        "definition": "Positive integer energy-family label."
+      },
+      {
+        "term": "E_R",
+        "definition": "The positive Coulomb binding-energy scale."
+      },
+      {
+        "term": "Eₙ",
+        "definition": "The energy of the family labeled n."
+      }
+    ]
+  },
+  "hydrogen-nodes": {
+    "idea": "A node is a place where the amplitude is zero.",
+    "explanation": "The node can be a sphere or a plane, depending on the state’s shape. The amplitude may change sign across it, while density remains nonnegative because we square the amplitude’s size.",
+    "example": {
+      "title": "The hydrogen 2s node",
+      "steps": [
+        "The 2s radial amplitude contains the factor 2 − r/a.",
+        "At r = 2a this factor is zero, creating a spherical node."
+      ]
+    },
+    "equation": "2 − r/a = 0 at r = 2a",
+    "terms": [
+      {
+        "term": "r",
+        "definition": "Electron-proton separation."
+      },
+      {
+        "term": "a",
+        "definition": "The Coulomb length scale."
+      },
+      {
+        "term": "2s",
+        "definition": "The hydrogen state with principal label 2 and orbital label 0."
+      }
+    ]
+  },
+  "hydrogen-transition-energy": {
+    "idea": "An allowed downward level change can release a photon.",
+    "explanation": "The photon carries the energy the atom loses. Energy matching gives its frequency, but separate coupling rules decide whether the transition is allowed; this example neglects recoil.",
+    "example": {
+      "title": "The allowed 3p to 2s transition",
+      "steps": [
+        "Using the rounded 13.6 eV scale, the energy drop is 13.6(1/4 − 1/9), about 1.8889 eV.",
+        "The photon’s vacuum wavelength is about 1240/1.8889 = 656.47 nm."
+      ]
+    },
+    "equation": "photon energy = initial atomic energy − final atomic energy",
+    "terms": [
+      {
+        "term": "nm",
+        "definition": "Nanometre: one billionth of a metre."
+      }
+    ]
+  },
+  "quantum1-model-choice": {
+    "idea": "Match the calculation to the quantity the experiment measures.",
+    "explanation": "A discrete outcome uses a squared coefficient. A position interval needs a density integral, while steady scattering uses a flow ratio. These quantities cannot be substituted for one another.",
+    "example": {
+      "title": "A scattering measurement",
+      "steps": [
+        "Incoming probability current is 6 per second and transmitted current is 4 per second.",
+        "The transmitted fraction is 4/6 = 2/3. An amplitude without its speed information would not settle that fraction."
+      ]
+    },
+    "equation": "transmission = transmitted current / incoming current",
+    "terms": [
+      {
+        "term": "Probability current",
+        "definition": "The rate of probability flow through a boundary."
+      }
+    ]
+  },
+  "quantum1-bound-capstone": {
+    "idea": "Position chances can change while energy chances stay fixed.",
+    "explanation": "In a fixed box, an equal combination of two energies keeps their weights. Their relative phase changes with time, so interference changes the chance of a later position result if no measurement interrupts the evolution.",
+    "example": {
+      "title": "A two-energy box state",
+      "steps": [
+        "Prepare equal amplitudes of energies 0.20 and 0.80 eV. The initial left-half chance is about 92.44%.",
+        "A quarter of the pattern’s cycle later, it is 50%, while both energy chances remain 50%."
+      ]
+    },
+    "equation": "P_left = 1/2 + [4/(3π)]cosθ",
+    "terms": [
+      {
+        "term": "θ",
+        "definition": "The relative time phase between the two energy components."
+      },
+      {
+        "term": "π",
+        "definition": "Pi, about 3.142."
+      },
+      {
+        "term": "P_left",
+        "definition": "Probability of finding the particle in the left half."
+      }
+    ]
+  },
+  "quantum1-scattering-capstone": {
+    "idea": "A larger transmitted amplitude can still carry less than all the incoming flow.",
+    "explanation": "At a step, the transmitted wave can be slower. Multiply its squared relative amplitude by the wave-number ratio to compare flows; the total energy stays fixed in this time-independent model.",
+    "example": {
+      "title": "A four-electronvolt incident state",
+      "steps": [
+        "Total energy is 4 eV and the step is 3 eV, giving a wave-number ratio of 1/2.",
+        "The amplitude ratio is 4/3, so transmission is (1/2)(4/3)² = 8/9."
+      ]
+    },
+    "equation": "T = (k₂/k₁)|t_a|²",
+    "terms": [
+      {
+        "term": "T",
+        "definition": "Transmission fraction."
+      },
+      {
+        "term": "k₂/k₁",
+        "definition": "Outgoing-to-incoming wave-number ratio."
+      },
+      {
+        "term": "t_a",
+        "definition": "Relative transmitted amplitude, not time."
+      }
+    ]
+  },
+  "quantum1-assessment": {
+    "idea": "Check what an average tells you before treating it as an individual outcome.",
+    "explanation": "State the allowed results and their chances, then calculate their average. Explain the answer in words and name the preparation assumptions; a correct number alone does not show every quantum topic is understood.",
+    "example": {
+      "title": "A fresh energy distribution",
+      "steps": [
+        "Energy is 1 eV with chance 3/4 and 5 eV with chance 1/4.",
+        "The mean is 2 eV. The variance is 3 eV², giving a spread √3 eV."
+      ]
+    },
+    "equation": "variance = mean of squared results − square of mean",
+    "terms": [
+      {
+        "term": "Variance",
+        "definition": "The average squared distance of results from their mean."
+      }
+    ]
+  }
+}

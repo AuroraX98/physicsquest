@@ -1,0 +1,1337 @@
+{
+  "restoring-equilibrium": {
+    "idea": "A stretched spring pulls back toward its resting position.",
+    "explanation": "For small stretches, doubling the stretch doubles the spring's pull. The pull points opposite to the displacement, which is the distance and direction from rest. This restoring force helps explain why a released object moves back and forth.",
+    "example": {
+      "title": "A spring pulled right",
+      "steps": [
+        "A spring has stiffness 50 newtons per metre and is stretched 0.020 metres right.",
+        "Its force is 50 × 0.020 = 1 newton left, toward rest."
+      ]
+    },
+    "equation": "spring force = −stiffness × displacement",
+    "terms": [
+      {
+        "term": "stiffness",
+        "definition": "How much extra force a spring gives for each extra metre of stretch."
+      },
+      {
+        "term": "−",
+        "definition": "The force points opposite to the chosen displacement direction."
+      },
+      {
+        "term": "Newton",
+        "definition": "The force that gives a 1-kilogram mass an acceleration of 1 metre per second squared."
+      }
+    ]
+  },
+  "amplitude-phase": {
+    "idea": "Amplitude tells how far an oscillation reaches; phase tells where it is in its cycle.",
+    "explanation": "An oscillation is repeated back-and-forth motion. Its amplitude is the largest distance from the middle. Its phase marks the motion's place in a repeating cycle, so it helps tell whether an object is at an end or passing the middle.",
+    "example": {
+      "title": "Passing the middle",
+      "steps": [
+        "An ideal spring motion reaches 0.10 metres from the middle and starts at the right end.",
+        "With angular frequency 10 radians per second, it reaches the middle after about 0.157 seconds, moving left at 1 metre per second."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "angular frequency",
+        "definition": "How quickly the position in a cycle advances; a full cycle is 2π radians."
+      },
+      {
+        "term": "π",
+        "definition": "A number about 3.1416."
+      },
+      {
+        "term": "Radian",
+        "definition": "An angle unit: one full turn is 2π radians."
+      }
+    ]
+  },
+  "oscillator-initial-data": {
+    "idea": "Starting position and starting velocity together determine an ideal spring's motion.",
+    "explanation": "Position says where the object starts; velocity says how fast and in which direction it starts moving. Both matter: an object already moving can travel farther from the middle than its starting position suggests. This rule assumes no drag or repeated outside push.",
+    "example": {
+      "title": "A moving spring mass",
+      "steps": [
+        "Start 0.060 metres right of the middle, moving right at 0.80 metres per second.",
+        "With angular frequency 10 radians per second, the largest distance from the middle is √(0.060² + 0.080²) = 0.100 metres."
+      ]
+    },
+    "equation": "amplitude = √[starting position² + (starting velocity / angular frequency)²]",
+    "terms": [
+      {
+        "term": "amplitude",
+        "definition": "Largest distance from the middle."
+      },
+      {
+        "term": "angular frequency",
+        "definition": "Rate around a cycle, in radians per second; a full cycle is 2π radians."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "The positive number that gives the value inside when multiplied by itself."
+      }
+    ]
+  },
+  "small-pendulum": {
+    "idea": "A pendulum's length sets its swing time when its swings are small.",
+    "explanation": "A pendulum is a hanging weight that swings. Gravity pulls it back toward its lowest position. For small swings, the time for a full out-and-back swing depends on length and gravity, with no mass in this ideal rule. Large swings take longer.",
+    "example": {
+      "title": "A one-metre pendulum",
+      "steps": [
+        "Use a 1-metre string and Earth's gravity of 9.81 metres per second squared.",
+        "The ideal small-swing time is 2π × √(1 / 9.81), about 2.01 seconds for a complete swing."
+      ]
+    },
+    "equation": "swing time ≈ 2π × √(length / gravity)",
+    "terms": [
+      {
+        "term": "π",
+        "definition": "A number about 3.1416."
+      },
+      {
+        "term": "√",
+        "definition": "The positive square root: the number that multiplies by itself to give the value inside."
+      },
+      {
+        "term": "gravity",
+        "definition": "The downward acceleration caused by gravity, here 9.81 metres per second squared."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "viscous-oscillator": {
+    "idea": "Drag makes a spring's largest swings shrink over time.",
+    "explanation": "Drag opposes motion and takes energy from the moving object. With drag proportional to velocity, the outline of the peaks shrinks by the same fraction in equal times. That outline is called an envelope; the object's actual position still moves above and below the middle.",
+    "example": {
+      "title": "Shrinking swing peaks",
+      "steps": [
+        "A damped spring has an initial envelope of 0.10 metres and a decay rate of 0.20 per second.",
+        "After 5 seconds, its envelope is 0.10 × e⁻¹ ≈ 0.0368 metres; this is a peak limit, not its exact position."
+      ]
+    },
+    "equation": "peak envelope = starting envelope × e^(−decay rate × time)",
+    "terms": [
+      {
+        "term": "e",
+        "definition": "A number about 2.718; the exponent tells its power."
+      },
+      {
+        "term": "decay rate",
+        "definition": "How quickly the envelope shrinks; here it is half the drag coefficient divided by mass."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "damping-regimes": {
+    "idea": "The amount of drag decides whether a spring returns with repeated swings.",
+    "explanation": "With little drag, the object crosses the middle repeatedly. At critical damping, the repeated swings disappear. More drag also removes repeated swings, but can make the return slow. A large starting velocity can still carry the object away from the middle briefly.",
+    "example": {
+      "title": "The boundary between swinging and not swinging",
+      "steps": [
+        "For a 1-kilogram mass on a spring of stiffness 4 newtons per metre, critical drag is 4 kilograms per second.",
+        "At that value, free motion has no repeated back-and-forth swings; the initial push still affects its path."
+      ]
+    },
+    "equation": "critical drag coefficient = 2 × √(mass × stiffness)",
+    "terms": [
+      {
+        "term": "drag coefficient",
+        "definition": "Force from drag divided by speed, for drag proportional to velocity."
+      },
+      {
+        "term": "stiffness",
+        "definition": "Spring force per metre of displacement."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the number that multiplies by itself to give the value inside."
+      },
+      {
+        "term": "Critical damping",
+        "definition": "The boundary between repeated free swings and non-oscillating free motion in this spring-and-drag model."
+      }
+    ]
+  },
+  "damping-energy": {
+    "idea": "Drag removes energy fastest when a moving object is moving fastest.",
+    "explanation": "For drag proportional to velocity, its force grows with speed. The rate of energy loss grows with speed squared: speed multiplied by itself. At a turning point the object is briefly still, so this drag removes no energy at that instant.",
+    "example": {
+      "title": "Energy loss while moving",
+      "steps": [
+        "A spring mass moves at 0.30 metres per second, with drag coefficient 0.20 kilograms per second.",
+        "Its energy loss rate is 0.20 × 0.30² = 0.018 watts, meaning 0.018 joules per second at that instant."
+      ]
+    },
+    "equation": "energy loss rate = drag coefficient × speed²",
+    "terms": [
+      {
+        "term": "drag coefficient",
+        "definition": "The number relating drag force to speed in this model."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "joule",
+        "definition": "A unit of energy."
+      },
+      {
+        "term": "watt",
+        "definition": "One joule per second."
+      }
+    ]
+  },
+  "driven-amplitude": {
+    "idea": "A repeated push can maintain a spring's motion against drag.",
+    "explanation": "The size of the lasting motion depends on how the push timing matches the spring. Drag prevents unlimited growth in this model. The steady amplitude is the largest distance from the middle after the starting motion has faded; it is not the starting position.",
+    "example": {
+      "title": "Pushing at the natural frequency",
+      "steps": [
+        "A 1-kilogram mass, spring stiffness 4 newtons per metre, and drag coefficient 0.40 kilograms per second are driven at 2 radians per second.",
+        "A peak force of 0.080 newtons gives a steady amplitude of 0.080 / (0.40 × 2) = 0.10 metres."
+      ]
+    },
+    "equation": "at natural frequency: amplitude = peak force / (drag coefficient × angular frequency)",
+    "terms": [
+      {
+        "term": "natural frequency",
+        "definition": "The rate the spring would swing with no drag or driving push."
+      },
+      {
+        "term": "angular frequency",
+        "definition": "Rate around a cycle; a full cycle is 2π radians."
+      },
+      {
+        "term": "drag coefficient",
+        "definition": "Drag force divided by speed for this model."
+      }
+    ]
+  },
+  "driven-phase": {
+    "idea": "A driven spring's position can reach its peak after the pushing force does.",
+    "explanation": "This timing gap is called a phase lag. Near the spring's natural swinging rate, position lags the force by about a quarter cycle. In the stated damped model it is exactly a quarter cycle at the natural frequency without damping.",
+    "example": {
+      "title": "A quarter-cycle delay",
+      "steps": [
+        "A spring is driven at angular frequency 2 radians per second, equal to its natural frequency without damping.",
+        "The cycle takes π seconds, so the position peak follows the force peak by π / 4 ≈ 0.785 seconds."
+      ]
+    },
+    "equation": "delay = quarter of the cycle time",
+    "terms": [
+      {
+        "term": "angular frequency",
+        "definition": "Rate around a cycle; a full cycle is 2π radians."
+      },
+      {
+        "term": "π",
+        "definition": "A number about 3.1416."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "driven-power": {
+    "idea": "In steady motion, a driver replaces the energy that drag removes each cycle.",
+    "explanation": "The object's stored energy rises and falls during a swing. Once the motion repeats steadily, it returns to the same energy after each full cycle. The average incoming power therefore equals the average loss; power means energy transferred each second.",
+    "example": {
+      "title": "A steady driven spring",
+      "steps": [
+        "A spring moves with amplitude 0.10 metres at 2 radians per second; its drag coefficient is 0.40 kilograms per second.",
+        "The average loss is ½ × 0.40 × 2² × 0.10² = 0.008 watts, so the driver supplies that same average power."
+      ]
+    },
+    "equation": "average drag loss = ½ × drag coefficient × angular frequency² × amplitude²",
+    "terms": [
+      {
+        "term": "amplitude",
+        "definition": "Largest distance from the middle."
+      },
+      {
+        "term": "angular frequency",
+        "definition": "Rate around a cycle; a full cycle is 2π radians."
+      },
+      {
+        "term": "drag coefficient",
+        "definition": "Drag force divided by speed in this model."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "watt",
+        "definition": "One joule of energy per second."
+      }
+    ]
+  },
+  "resonance-width": {
+    "idea": "A narrow resonance means strong response happens within a small range of driving frequencies.",
+    "explanation": "Resonance is a strong response to a repeated push at suitable timing. To measure its width, find the two frequencies where absorbed power is half its highest value. Their gap is the half-power width. Less damping usually makes this peak narrower.",
+    "example": {
+      "title": "A narrow power peak",
+      "steps": [
+        "A weakly damped spring absorbs most power at 10 radians per second, with half-power points near 9.8 and 10.2.",
+        "Its width is 0.4 radians per second; its quality factor is 10 / 0.4 = 25."
+      ]
+    },
+    "equation": "quality factor ≈ peak angular frequency / half-power width",
+    "terms": [
+      {
+        "term": "angular frequency",
+        "definition": "Rate around a cycle, measured in radians per second."
+      },
+      {
+        "term": "quality factor",
+        "definition": "A number comparing the peak frequency with its width; here the estimate assumes weak damping."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "two-mass-equations": {
+    "idea": "A spring joining two carts lets either cart affect the other.",
+    "explanation": "The joining spring responds to the difference between the carts' positions. When one cart moves and the other stays still, that spring stretches or squeezes. It then pushes the carts in opposite directions, even before the second cart has moved.",
+    "example": {
+      "title": "Move just the left cart",
+      "steps": [
+        "Two carts each have a wall spring of stiffness 9 newtons per metre; their joining spring has stiffness 8.",
+        "Move cart 1 right by 0.020 metres while cart 2 stays at rest: the total force on cart 1 is 0.340 newtons left, and on cart 2 it is 0.160 newtons right."
+      ]
+    },
+    "equation": "joining force on cart 2 = joining stiffness × (cart 1 displacement − cart 2 displacement)",
+    "terms": [
+      {
+        "term": "stiffness",
+        "definition": "Force change per metre of spring stretch."
+      },
+      {
+        "term": "displacement",
+        "definition": "Position measured from each cart's resting position, with right positive."
+      }
+    ]
+  },
+  "symmetric-motions": {
+    "idea": "Some shared motions let connected carts keep a simple pattern as they swing.",
+    "explanation": "A normal mode is a pattern in which all parts swing at one frequency with fixed relative sizes. If two identical carts move together by equal amounts, their joining spring does not change length. Only the wall springs provide the returning force in this mode.",
+    "example": {
+      "title": "Two carts moving together",
+      "steps": [
+        "Each cart has mass 1 kilogram and a wall spring of stiffness 9 newtons per metre.",
+        "Moving both carts 0.020 metres right leaves the joining spring unchanged; each feels 0.180 newtons left and they share angular frequency 3 radians per second."
+      ]
+    },
+    "equation": "same-direction angular frequency = √(wall stiffness / cart mass)",
+    "terms": [
+      {
+        "term": "angular frequency",
+        "definition": "Rate around a cycle; a full cycle is 2π radians."
+      },
+      {
+        "term": "stiffness",
+        "definition": "Spring force per metre of displacement."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the number that multiplies by itself to give the value inside."
+      }
+    ]
+  },
+  "mode-superposition": {
+    "idea": "Adding simple shared motions can reproduce a more complicated starting shape.",
+    "explanation": "Superposition means adding displacements from separate solutions. For two identical linked carts, combine an equal-direction mode with an opposite-direction mode. Each mode then follows its own timing, so the total motion can change shape as it evolves.",
+    "example": {
+      "title": "Only one cart starts displaced",
+      "steps": [
+        "Cart 1 starts 0.010 metres right and cart 2 starts at zero, both still.",
+        "Add the pattern (0.005, 0.005) metres to (0.005, −0.005) metres: the result is exactly (0.010, 0), the desired starting shape."
+      ]
+    },
+    "equation": "(0.005, 0.005) + (0.005, −0.005) = (0.010, 0) metres",
+    "terms": [
+      {
+        "term": "mode",
+        "definition": "A shared motion pattern with one frequency and fixed relative sizes."
+      },
+      {
+        "term": "(x₁, x₂)",
+        "definition": "The positions of cart 1 and cart 2, measured from rest."
+      }
+    ]
+  },
+  "mode-eigenproblem": {
+    "idea": "A normal mode bends the force pattern back into the same motion pattern.",
+    "explanation": "For a normal mode, the returning forces match the parts' displacement pattern, with opposite direction. Testing this match finds the mode's frequency. A matrix is a table of numbers used to combine the displacements and calculate those forces.",
+    "example": {
+      "title": "Testing an equal-cart pattern",
+      "steps": [
+        "For two 2-kilogram carts, the stiffness table has rows (10, −2) and (−2, 10) newtons per metre.",
+        "At displacements (0.010, 0.010) metres, the returning forces are (−0.080, −0.080) newtons; each acceleration is −4 times its displacement, giving angular frequency 2 radians per second."
+      ]
+    },
+    "equation": "angular frequency² = restoring force size / (mass × displacement size)",
+    "terms": [
+      {
+        "term": "angular frequency",
+        "definition": "Rate around a cycle, in radians per second."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Normal mode",
+        "definition": "A shared motion pattern with one frequency and fixed relative sizes."
+      }
+    ]
+  },
+  "modal-initial-data": {
+    "idea": "Starting positions tell how much of each normal mode is present.",
+    "explanation": "A mode is a shared motion pattern with one frequency. To find its share, measure how much the starting shape points along that pattern. For equal masses and mode directions of length one, this is a dot product: multiply matching coordinates, then add.",
+    "example": {
+      "title": "Splitting a starting displacement",
+      "steps": [
+        "Two equal carts start at (0.020, 0) metres with no motion; their mode directions are (1, 1)/√2 and (1, −1)/√2.",
+        "Each mode receives 0.020/√2 ≈ 0.01414 metres; multiplying by its direction and adding gives the original cart positions."
+      ]
+    },
+    "equation": "mode share = starting shape · unit mode direction",
+    "terms": [
+      {
+        "term": "·",
+        "definition": "Dot product: multiply matching coordinates and add."
+      },
+      {
+        "term": "unit mode direction",
+        "definition": "A mode pattern scaled to have length one."
+      },
+      {
+        "term": "√2",
+        "definition": "The positive number whose square is 2, about 1.414."
+      },
+      {
+        "term": "Normal mode",
+        "definition": "A shared motion pattern with one frequency and fixed relative sizes."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "mode-driving": {
+    "idea": "A push excites a normal mode only through the part that matches its pattern.",
+    "explanation": "A mode is a shared motion pattern with one frequency. Equal pushes on two identical carts match their equal-direction mode. Their contributions cancel for the opposite-direction mode, so that mode receives no drive under these symmetric assumptions.",
+    "example": {
+      "title": "Pushing both carts equally",
+      "steps": [
+        "Each cart receives the same force, with peak 0.60 newtons.",
+        "Along the unit direction (1, 1)/√2, the combined peak is 1.20/√2 ≈ 0.849 newtons; along (1, −1)/√2 it is zero."
+      ]
+    },
+    "equation": "opposite-mode drive = (force on cart 1 − force on cart 2) / √2",
+    "terms": [
+      {
+        "term": "unit direction",
+        "definition": "A direction scaled to length one."
+      },
+      {
+        "term": "√2",
+        "definition": "The positive number whose square is 2, about 1.414."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "travelling-profile": {
+    "idea": "A travelling wave moves a shape from place to place.",
+    "explanation": "Follow a crest, the highest point of a wave, to track the shape's motion. The material need not move with that crest. On a string, each small piece can move up and down while the crest travels sideways.",
+    "example": {
+      "title": "Following one crest",
+      "steps": [
+        "A crest starts at position 0.40 metres and travels right at 3 metres per second.",
+        "After 0.20 seconds it has moved 0.60 metres, so its new position is 1.00 metre."
+      ]
+    },
+    "equation": "new crest position = starting position + wave speed × time",
+    "terms": []
+  },
+  "string-wave-equation": {
+    "idea": "String tension and mass per length together set a small wave's speed.",
+    "explanation": "Tension is the pull along a stretched string. It pulls bent parts back toward straight, while the string's mass resists acceleration. More tension speeds the wave up; more mass per metre slows it down. This model needs a uniform string with small bends.",
+    "example": {
+      "title": "A wave on a taut string",
+      "steps": [
+        "A string has tension 18 newtons and mass per length 0.020 kilograms per metre.",
+        "Its wave speed is √(18 / 0.020) = 30 metres per second."
+      ]
+    },
+    "equation": "wave speed = √(tension / mass per length)",
+    "terms": [
+      {
+        "term": "√",
+        "definition": "Positive square root: the number that multiplies by itself to give the value inside."
+      }
+    ]
+  },
+  "wave-phase-power": {
+    "idea": "Wave speed equals the spacing between crests times the number passing each second.",
+    "explanation": "Wavelength is the distance from one crest to the next. Frequency counts complete cycles per second. In one second, that many wavelengths pass a fixed point. Multiplying them gives the distance the pattern travels each second.",
+    "example": {
+      "title": "Counting crests on a string",
+      "steps": [
+        "A string wave travels at 30 metres per second and has frequency 5 hertz, meaning 5 cycles per second.",
+        "Its wavelength is 30 / 5 = 6 metres, so neighbouring crests are 6 metres apart."
+      ]
+    },
+    "equation": "wave speed = wavelength × frequency",
+    "terms": [
+      {
+        "term": "hertz",
+        "definition": "One cycle per second."
+      }
+    ]
+  },
+  "string-interface": {
+    "idea": "A wave can split into reflected and transmitted parts where two strings join.",
+    "explanation": "The join must move as one point, and the forces there must balance. Those rules determine the returning and continuing waves. A wave entering a heavier string can reflect upside down: its displacement changes sign, but its energy is still positive.",
+    "example": {
+      "title": "A pulse reaches a heavier string",
+      "steps": [
+        "At equal tension, join strings with masses per metre of 0.030 and 0.120 kilograms; send a 3-millimetre upward wave from the lighter side.",
+        "The reflected displacement is −1 millimetre and the transmitted displacement is +2 millimetres; 3 + (−1) = 2 keeps the join together."
+      ]
+    },
+    "equation": "incident displacement + reflected displacement = transmitted displacement",
+    "terms": [
+      {
+        "term": "incident",
+        "definition": "Arriving at the join."
+      },
+      {
+        "term": "reflected",
+        "definition": "Returning toward the source."
+      },
+      {
+        "term": "transmitted",
+        "definition": "Continuing past the join."
+      }
+    ]
+  },
+  "standing-superposition": {
+    "idea": "Opposite travelling waves can make a standing pattern with fixed points that never move.",
+    "explanation": "When equal waves travel in opposite directions, their displacements add. Some places always cancel: these are nodes. Halfway between neighbouring nodes, the motion is largest. Those places still move through zero; a node stays at zero throughout every cycle.",
+    "example": {
+      "title": "Nodes on a string",
+      "steps": [
+        "Two opposite waves each have wavelength 0.80 metres and amplitude 1.5 millimetres.",
+        "Their standing pattern has nodes at 0, 0.40, and 0.80 metres; the point at 0.20 metres swings up to 3 millimetres each way."
+      ]
+    },
+    "equation": "largest standing-wave displacement = 2 × each travelling-wave amplitude",
+    "terms": [
+      {
+        "term": "amplitude",
+        "definition": "Largest displacement from the resting position."
+      }
+    ]
+  },
+  "boundary-spectra": {
+    "idea": "A string's ends decide which standing-wave patterns can fit.",
+    "explanation": "With both ends fixed, each end must stay still. Only patterns containing a whole number of half-wavelengths fit between them. This produces a sequence of allowed frequencies. Changing an end to move freely changes the patterns and frequencies.",
+    "example": {
+      "title": "A string fixed at both ends",
+      "steps": [
+        "A 0.75-metre string carries waves at 24 metres per second.",
+        "Its lowest frequency is 24 / (2 × 0.75) = 16 hertz; the next two allowed frequencies are 32 and 48 hertz."
+      ]
+    },
+    "equation": "lowest fixed-end frequency = wave speed / (2 × string length)",
+    "terms": [
+      {
+        "term": "hertz",
+        "definition": "One cycle per second."
+      },
+      {
+        "term": "wavelength",
+        "definition": "Distance between repeating points of a travelling wave, such as neighbouring crests."
+      }
+    ]
+  },
+  "string-mode-expansion": {
+    "idea": "Adding standing-wave patterns can build a string's starting shape.",
+    "explanation": "A mode is one allowed standing pattern with one frequency. Each mode can have a different size. Add their displacements point by point to get the string's shape; then let each mode follow its own timing to predict the later motion.",
+    "example": {
+      "title": "Building one starting shape",
+      "steps": [
+        "A 1-metre string starts with a 3-millimetre first-mode pattern plus a 1-millimetre second-mode pattern, both initially still.",
+        "At the middle, the first pattern reaches 3 millimetres and the second is zero, so the starting displacement there is 3 millimetres."
+      ]
+    },
+    "equation": "starting shape = first-mode contribution + second-mode contribution",
+    "terms": [
+      {
+        "term": "first mode",
+        "definition": "The lowest-frequency fixed-end pattern, with one arch."
+      },
+      {
+        "term": "second mode",
+        "definition": "The next pattern, with two opposite arches and a fixed zero at the middle."
+      }
+    ]
+  },
+  "coherent-addition": {
+    "idea": "The timing between two waves decides how strongly their motions add.",
+    "explanation": "Coherent waves keep the same timing gap, called a phase difference. Peaks arriving together reinforce each other. Opposite peaks partly or fully cancel. You must add the signed displacements first; simply adding their sizes misses this timing effect.",
+    "example": {
+      "title": "A quarter-cycle gap",
+      "steps": [
+        "Two same-frequency waves have amplitudes 3 millimetres and 1 millimetre, with a quarter-cycle timing gap.",
+        "Their combined amplitude is √(3² + 1²) = √10 ≈ 3.16 millimetres, between full reinforcement and full opposition."
+      ]
+    },
+    "equation": "for a quarter-cycle gap: combined amplitude² = first amplitude² + second amplitude²",
+    "terms": [
+      {
+        "term": "amplitude",
+        "definition": "Largest displacement from rest."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the number that multiplies by itself to give the value inside."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "path-phase": {
+    "idea": "A longer route can make a wave arrive at a different part of its cycle.",
+    "explanation": "Each extra wavelength adds one full cycle of travel delay. A fraction of a wavelength adds the same fraction of a cycle. Source timing also matters, so equal path lengths alone do not guarantee matching arrivals. Here both sources start together.",
+    "example": {
+      "title": "A route one-quarter wavelength longer",
+      "steps": [
+        "The wavelength is 0.80 metres, and one route is 0.20 metres longer in the same medium.",
+        "The extra route is one-quarter wavelength, so that wave arrives a quarter cycle behind; the waves neither fully reinforce nor fully cancel."
+      ]
+    },
+    "equation": "extra cycle delay = extra path length / wavelength",
+    "terms": [
+      {
+        "term": "wavelength",
+        "definition": "Distance between repeating points of a wave, such as neighbouring crests."
+      }
+    ]
+  },
+  "beat-envelope": {
+    "idea": "Two nearby frequencies can make a repeating pattern of louder and softer sound.",
+    "explanation": "When the waves line up, their motions reinforce. As their timings drift apart, they cancel more strongly, then line up again. These changes are called beats. The beat rate is the difference between the two frequencies, not their average.",
+    "example": {
+      "title": "Two nearby tones",
+      "steps": [
+        "Tones at 120 and 126 hertz differ by 6 cycles per second.",
+        "Their sum has 6 loudness peaks each second, about 0.167 seconds apart; equal amplitudes allow complete cancellation between peaks in the ideal model."
+      ]
+    },
+    "equation": "beat rate = higher frequency − lower frequency",
+    "terms": [
+      {
+        "term": "hertz",
+        "definition": "One cycle per second."
+      },
+      {
+        "term": "amplitude",
+        "definition": "Largest size of an oscillation from its middle."
+      }
+    ]
+  },
+  "fourier-coefficients": {
+    "idea": "A repeating signal can be described as a sum of simple sine and cosine waves.",
+    "explanation": "Fourier analysis finds the size of each simple wave inside a signal. A matching wave survives averaging after multiplication; different whole-number frequencies cancel over a complete cycle. This method needs sine, cosine, and averaging as preparation, but the purpose is simple: separate a mixture into parts.",
+    "example": {
+      "title": "Reading a signal's parts",
+      "steps": [
+        "A signal is 2 volts plus a cosine wave of size 3 volts, minus a sine wave of size 1 volt at twice the frequency.",
+        "The steady part is 2 volts; the two wave sizes are 3 and −1 volts, with the minus sign reversing the sine contribution."
+      ]
+    },
+    "equation": "q(t) = 2 + 3 cos(πt) − sin(2πt) volts",
+    "terms": [
+      {
+        "term": "q(t)",
+        "definition": "Signal value at time t, with t measured in seconds here."
+      },
+      {
+        "term": "sin and cos",
+        "definition": "Sine and cosine: functions describing smooth repeating waves."
+      },
+      {
+        "term": "π",
+        "definition": "A number about 3.1416."
+      },
+      {
+        "term": "Averaging",
+        "definition": "Adding values and dividing by how many values you used; a continuous average uses an integral."
+      }
+    ]
+  },
+  "localized-packet": {
+    "idea": "A shape confined to a small region needs a mixture of wavelengths.",
+    "explanation": "A single sine wave repeats forever, so it cannot describe a lone pulse. A Fourier transform finds the mixture of wave sizes and timings that builds a pulse. The transform's units depend on the rule used; they need not match the original signal's units.",
+    "example": {
+      "title": "A box-shaped pulse",
+      "steps": [
+        "A 3-volt signal is present from −0.50 to +0.50 metres and zero elsewhere, so its area is 3 volt-metres.",
+        "With the symmetric Fourier convention, its zero-wave-number value is 3 / √(2π) ≈ 1.197 volt-metres."
+      ]
+    },
+    "equation": "zero-wave-number transform value = area under the pulse / √(2π)",
+    "terms": [
+      {
+        "term": "wave number",
+        "definition": "Number of radians of wave pattern per metre; zero means a non-oscillating component."
+      },
+      {
+        "term": "symmetric Fourier convention",
+        "definition": "A transform rule that places the same factor 1/√(2π) in the forward and reverse calculations."
+      },
+      {
+        "term": "π",
+        "definition": "A number about 3.1416."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "bandwidth-duration": {
+    "idea": "A narrower smooth pulse needs a wider spread of wavelengths or frequencies.",
+    "explanation": "A Gaussian pulse has a smooth bell shape. Making it narrower requires more differently sized waves to cancel outside the centre. For a Gaussian with no extra changing phase across it, the width of its squared amplitude and its wave-number spread obey the stated rule.",
+    "example": {
+      "title": "A narrow Gaussian pulse",
+      "steps": [
+        "A Gaussian pulse has position width 0.25 metres, measured as a standard deviation of its squared amplitude.",
+        "Its wave-number width is 1 / (2 × 0.25) = 2 radians per metre."
+      ]
+    },
+    "equation": "position width × wave-number width = ½",
+    "terms": [
+      {
+        "term": "standard deviation",
+        "definition": "A width found by averaging squared distance from the centre, then taking the square root."
+      },
+      {
+        "term": "wave number",
+        "definition": "How quickly wave phase changes with distance, measured in radians per metre."
+      },
+      {
+        "term": "phase",
+        "definition": "Place within a repeating cycle."
+      }
+    ]
+  },
+  "longitudinal-sound": {
+    "idea": "Sound travels as a pattern of small compressions, while particles move back and forth.",
+    "explanation": "In a fluid, a compressed region pushes on its neighbours. Their mass resists acceleration, so the combination of stiffness and density sets sound speed. The speed of that pattern is different from the much smaller back-and-forth particle speed in a quiet, small-amplitude wave.",
+    "example": {
+      "title": "A sound pattern and its particles",
+      "steps": [
+        "A fluid has compression stiffness 144,000 pascals and density 1.25 kilograms per cubic metre, giving sound speed about 339.4 metres per second.",
+        "A pressure-wave peak of 0.50 pascals moves its particles at only about 0.00118 metres per second at their fastest."
+      ]
+    },
+    "equation": "sound speed = √(compression stiffness / density)",
+    "terms": [
+      {
+        "term": "compression stiffness",
+        "definition": "Pressure change divided by fractional volume decrease; also called bulk modulus."
+      },
+      {
+        "term": "density",
+        "definition": "Mass per unit volume."
+      },
+      {
+        "term": "pascal",
+        "definition": "One newton of force per square metre."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      }
+    ]
+  },
+  "sound-intensity": {
+    "idea": "Sound intensity measures how quickly sound energy crosses an area.",
+    "explanation": "For one travelling sound wave, greater pressure changes mean greater energy transfer. Intensity grows with pressure squared, so doubling pressure makes four times the intensity. This rule assumes a simple wave travelling one way in a uniform fluid; it is not a hearing-safety test.",
+    "example": {
+      "title": "Energy carried by a sound wave",
+      "steps": [
+        "A sinusoidal wave has peak pressure 0.20 pascals and sound impedance 400 kilograms per square metre per second.",
+        "Its average intensity is 0.20² / (2 × 400) = 0.000050 watts per square metre."
+      ]
+    },
+    "equation": "intensity = peak pressure² / (2 × sound impedance)",
+    "terms": [
+      {
+        "term": "sinusoidal",
+        "definition": "Changing like a smooth sine wave."
+      },
+      {
+        "term": "sound impedance",
+        "definition": "Fluid density multiplied by sound speed for this travelling-wave model."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "watt",
+        "definition": "One joule of energy per second."
+      },
+      {
+        "term": "pascal",
+        "definition": "One newton of force per square metre."
+      }
+    ]
+  },
+  "sound-boundaries": {
+    "idea": "A pipe's open and closed ends allow different standing sound patterns.",
+    "explanation": "At a closed end, particles cannot move back and forth. At an ideal open end, the pressure change is nearly zero. A pipe with one closed and one open end therefore fits a quarter wavelength at its lowest frequency, then odd multiples of that pattern.",
+    "example": {
+      "title": "A pipe closed at one end",
+      "steps": [
+        "A 0.60-metre pipe has one closed end and one open end; sound travels at 336 metres per second.",
+        "Its lowest frequency is 336 / (4 × 0.60) = 140 hertz, and the next allowed frequency is 420 hertz."
+      ]
+    },
+    "equation": "lowest closed-open frequency = sound speed / (4 × pipe length)",
+    "terms": [
+      {
+        "term": "wavelength",
+        "definition": "Distance over which the travelling sound pattern repeats."
+      },
+      {
+        "term": "hertz",
+        "definition": "One cycle per second."
+      }
+    ]
+  },
+  "sound-doppler": {
+    "idea": "Moving toward a sound source makes wave crests reach you more often.",
+    "explanation": "Frequency counts how many cycles arrive each second. A moving listener meets the oncoming pattern faster, raising the heard frequency. Moving the source also changes crest spacing, so it needs a different rule. This example keeps both source and air still.",
+    "example": {
+      "title": "A listener approaches a tone",
+      "steps": [
+        "A still source produces 500 hertz while sound travels at 340 metres per second.",
+        "A listener approaching at 34 metres per second hears 500 × (340 + 34) / 340 = 550 hertz."
+      ]
+    },
+    "equation": "heard frequency = source frequency × (sound speed + approach speed) / sound speed",
+    "terms": [
+      {
+        "term": "hertz",
+        "definition": "One cycle per second."
+      },
+      {
+        "term": "crest",
+        "definition": "A repeating high point in a wave pattern."
+      }
+    ]
+  },
+  "dispersion-relation": {
+    "idea": "Different wavelengths can travel at different speeds in the same medium.",
+    "explanation": "A dispersion relation links the timing and spacing of a wave. If that relation is not a simple proportional rule, the speed of a crest can depend on wavelength. The particular rule must come from the medium; no one dispersion formula describes every wave.",
+    "example": {
+      "title": "A quadratic wave rule",
+      "steps": [
+        "Suppose the allowed rule is ω = 0.40k², where k is wave number in radians per metre and ω is angular frequency in radians per second.",
+        "At k = 5, ω = 10, so a crest travels at ω / k = 2 metres per second."
+      ]
+    },
+    "equation": "ω = αk²",
+    "terms": [
+      {
+        "term": "ω",
+        "definition": "Angular frequency: rate around a cycle, in radians per second."
+      },
+      {
+        "term": "k",
+        "definition": "Wave number: phase change per metre, in radians per metre."
+      },
+      {
+        "term": "α",
+        "definition": "The chosen model constant, here 0.40 square metres per second."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "phase-group-speed": {
+    "idea": "A wave's individual crests can move at a different speed from the whole packet.",
+    "explanation": "A packet is a group of waves making a limited pulse. Phase speed follows one crest; group speed follows the broad outline when the packet changes shape only slowly. Their difference comes from how frequency changes with wave number. Neither alone always tells information speed.",
+    "example": {
+      "title": "Crests inside a packet",
+      "steps": [
+        "For the rule ω = 0.40k² near k = 5 radians per metre, the crest speed is 2 metres per second.",
+        "The packet outline moves at about 4 metres per second, so the crests change position within it."
+      ]
+    },
+    "equation": "phase speed = ω / k; group speed = slope of the ω-versus-k curve",
+    "terms": [
+      {
+        "term": "ω",
+        "definition": "Angular frequency: rate around a cycle, in radians per second."
+      },
+      {
+        "term": "k",
+        "definition": "Wave number: phase change per metre, in radians per metre."
+      },
+      {
+        "term": "slope",
+        "definition": "Change in the vertical quantity divided by a small change in the horizontal quantity."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "packet-spreading": {
+    "idea": "A packet can widen when its component waves have different group speeds.",
+    "explanation": "Nearby wavelengths may carry parts of a packet at slightly different speeds, stretching its outline. A smooth Gaussian, or bell-shaped packet, follows the stated widening rule when the frequency rule is quadratic and it begins without extra phase variation. Other starting shapes can behave differently.",
+    "example": {
+      "title": "A widening bell-shaped packet",
+      "steps": [
+        "The initial width is 0.50 metres and the dispersion curvature is 1 square metre per second.",
+        "After 0.50 seconds, the width is 0.50 × √2 ≈ 0.707 metres, even while the centre continues moving."
+      ]
+    },
+    "equation": "width(t) = σ₀ × √[1 + (D × t / (2σ₀²))²]",
+    "terms": [
+      {
+        "term": "σ₀",
+        "definition": "Initial standard-deviation width of squared amplitude: a width based on averaged squared distance from the centre."
+      },
+      {
+        "term": "D",
+        "definition": "Dispersion curvature, measuring how group speed changes with wave number."
+      },
+      {
+        "term": "t",
+        "definition": "Elapsed time."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      },
+      {
+        "term": "phase",
+        "definition": "Place within a repeating cycle."
+      },
+      {
+        "term": "Wave number",
+        "definition": "How quickly wave phase changes with distance, in radians per metre."
+      },
+      {
+        "term": "Group speed",
+        "definition": "Speed of a narrow packet’s broad outline when it changes shape slowly."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "cutoff-evanescence": {
+    "idea": "Below a cutoff frequency, a field can fade with distance instead of forming travelling crests.",
+    "explanation": "A cutoff is a frequency boundary in a particular wave model. Below it, one allowed field changes with time but shrinks exponentially into the region: it loses the same fraction of amplitude over equal distances. This evanescent field is not automatically zero beyond a finite barrier.",
+    "example": {
+      "title": "A field below cutoff",
+      "steps": [
+        "In the stated model, cutoff frequency is 10 radians per second, wave frequency is 6, and the speed parameter is 2 metres per second.",
+        "The decay rate is 4 per metre, so after 0.50 metres the amplitude is e⁻² ≈ 0.135 of its boundary value."
+      ]
+    },
+    "equation": "amplitude ratio = e^(−decay rate × distance)",
+    "terms": [
+      {
+        "term": "e",
+        "definition": "A number about 2.718; the exponent tells its power."
+      },
+      {
+        "term": "amplitude",
+        "definition": "Largest oscillation size."
+      },
+      {
+        "term": "speed parameter",
+        "definition": "The constant c₀ in the model ω² = ω_c² + c₀²k², not the particle speed."
+      },
+      {
+        "term": "ω and ω_c",
+        "definition": "Angular frequency and cutoff angular frequency."
+      },
+      {
+        "term": "k",
+        "definition": "Wave number, describing spatial change."
+      },
+      {
+        "term": "ω² and k²",
+        "definition": "Each symbol multiplied by itself; the formula uses angular frequency and wave number."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "transverse-em-wave": {
+    "idea": "In a vacuum light wave, electric and magnetic fields point across its direction of travel.",
+    "explanation": "The electric field describes force per positive charge; the magnetic field describes another part of the electromagnetic force. In a plane wave they point at right angles to each other and to travel. Their changes stay in step, and their sizes are linked by light speed.",
+    "example": {
+      "title": "Matching fields in a light wave",
+      "steps": [
+        "A vacuum wave has peak electric field 12 volts per metre.",
+        "Divide by light speed, about 300,000,000 metres per second: the magnetic peak is 0.000000040 teslas."
+      ]
+    },
+    "equation": "magnetic-field peak = electric-field peak / light speed",
+    "terms": [
+      {
+        "term": "plane wave",
+        "definition": "A wave with the same field pattern across each flat surface perpendicular to travel."
+      },
+      {
+        "term": "tesla",
+        "definition": "A unit of magnetic field."
+      },
+      {
+        "term": "volt per metre",
+        "definition": "A unit of electric field, equal to one newton per coulomb."
+      },
+      {
+        "term": "Coulomb",
+        "definition": "A unit of electric charge."
+      }
+    ]
+  },
+  "polarization-states": {
+    "idea": "Polarization describes how a light wave's electric-field direction changes at one place.",
+    "explanation": "Imagine an arrow showing the electric field. Its tip can move along a line, around a circle, or around an ellipse, a stretched circle. This is the field changing, not a particle circling. The relative timing of perpendicular field components decides the shape.",
+    "example": {
+      "title": "A circular field pattern",
+      "steps": [
+        "Two perpendicular electric-field components each have peak 2 volts per metre and differ by a quarter cycle.",
+        "The arrow starts at (2, 0), reaches (0, 2) a quarter cycle later, and keeps length 2 as its tip traces a circle."
+      ]
+    },
+    "equation": "field magnitude = √(horizontal component² + vertical component²)",
+    "terms": [
+      {
+        "term": "component",
+        "definition": "The part of an arrow along a chosen direction."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      },
+      {
+        "term": "volt per metre",
+        "definition": "A unit of electric field."
+      }
+    ]
+  },
+  "polarizer-projection": {
+    "idea": "A polarizer passes the part of a light wave aligned with its allowed direction.",
+    "explanation": "For light already polarized along a line, an ideal polarizer keeps the electric-field component along its transmission axis. Intensity depends on the square of that component, so turning the polarizer changes transmitted intensity. Real devices also have losses beyond this ideal rule.",
+    "example": {
+      "title": "A polarizer turned sixty degrees",
+      "steps": [
+        "Linearly polarized light has intensity 80 watts per square metre and meets an ideal polarizer at 60 degrees.",
+        "The field fraction is cos 60° = ½; the intensity fraction is ¼, giving 20 watts per square metre."
+      ]
+    },
+    "equation": "output intensity = input intensity × cos²(angle)",
+    "terms": [
+      {
+        "term": "transmission axis",
+        "definition": "Direction of electric field the polarizer allows through."
+      },
+      {
+        "term": "intensity",
+        "definition": "Energy passing through each unit of area each second."
+      },
+      {
+        "term": "cos",
+        "definition": "Cosine: the projection factor for an angle."
+      },
+      {
+        "term": "cos²",
+        "definition": "Find the cosine, then multiply that result by itself."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "wavefront-refraction": {
+    "idea": "A wave changes direction at a boundary when its speed changes.",
+    "explanation": "The boundary must join the wave patterns with matching timing. This keeps the frequency unchanged while wavelength and direction can change. Snell's law links the two angles, measured from the normal: a line perpendicular to the surface. The rule here assumes transparent uniform materials.",
+    "example": {
+      "title": "Light entering glass",
+      "steps": [
+        "Light moves from refractive index 1.0 into index 1.5 at 30 degrees from the normal.",
+        "The sine of its new angle is (1.0 / 1.5) × sin 30° = ⅓, giving about 19.47 degrees from the normal."
+      ]
+    },
+    "equation": "n₁ × sin(θ₁) = n₂ × sin(θ₂)",
+    "terms": [
+      {
+        "term": "n₁ and n₂",
+        "definition": "The two refractive indices: vacuum light speed divided by wave-crest speed in each material."
+      },
+      {
+        "term": "θ₁ and θ₂",
+        "definition": "Incoming and transmitted angles measured from the normal."
+      },
+      {
+        "term": "sin",
+        "definition": "Sine: a right-triangle ratio, opposite side divided by hypotenuse."
+      }
+    ]
+  },
+  "two-slit-interference": {
+    "idea": "Light from two slits can make bright and dark bands by adding with different timing.",
+    "explanation": "The two paths usually have different lengths, so their waves arrive at different parts of the cycle. Matching arrivals reinforce; opposite arrivals cancel when their sizes match. The resulting bands are called interference fringes. Stable source timing and matching polarization are needed.",
+    "example": {
+      "title": "Spacing the bright bands",
+      "steps": [
+        "Light of wavelength 500 nanometres passes through slits 0.25 millimetres apart to a screen 2 metres away.",
+        "For small angles, band spacing is (0.0000005 × 2) / 0.00025 = 0.004 metres, or 4 millimetres."
+      ]
+    },
+    "equation": "bright-band spacing ≈ wavelength × screen distance / slit separation",
+    "terms": [
+      {
+        "term": "wavelength",
+        "definition": "Distance between repeating points of a wave."
+      },
+      {
+        "term": "nanometre",
+        "definition": "One billionth of a metre."
+      },
+      {
+        "term": "polarization",
+        "definition": "Pattern of the electric field's direction."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "single-slit-diffraction": {
+    "idea": "Light from different parts of one opening can cancel in some directions.",
+    "explanation": "A slit is not just one point source: light from across its width travels slightly different distances. Adding those contributions makes a broad central bright region and darker directions beside it. This diffraction pattern depends on slit width and wavelength, under the distant-screen approximation.",
+    "example": {
+      "title": "The first dark bands",
+      "steps": [
+        "A uniformly lit slit is 0.10 millimetres wide, using wavelength 500 nanometres and a screen 2 metres away.",
+        "The first dark bands lie about 10 millimetres on either side of centre, making the central bright region about 20 millimetres wide."
+      ]
+    },
+    "equation": "first dark-band distance from centre ≈ screen distance × wavelength / slit width",
+    "terms": [
+      {
+        "term": "wavelength",
+        "definition": "Distance between repeating points of the wave."
+      },
+      {
+        "term": "nanometre",
+        "definition": "One billionth of a metre."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to; this screen rule assumes small angles and a far-field pattern."
+      },
+      {
+        "term": "Far field",
+        "definition": "A distant-screen situation in which rays from different parts of the slit can be treated as nearly parallel at each viewing direction."
+      }
+    ]
+  },
+  "grating-resolution": {
+    "idea": "More illuminated slits can make neighbouring wavelengths easier to distinguish.",
+    "explanation": "A diffraction grating has many evenly spaced slits or grooves. Their waves add to form narrow bright peaks. More equally lit slits usually narrow the peaks, so two close wavelengths can separate. The estimate below assumes many slits and an accessible nonzero order, or numbered bright peak.",
+    "example": {
+      "title": "Resolving two nearby wavelengths",
+      "steps": [
+        "A grating has 200 illuminated slits and uses its second-order peak for light near 500 nanometres.",
+        "Its ideal resolving power is 2 × 200 = 400, giving a wavelength-separation estimate of 500 / 400 = 1.25 nanometres."
+      ]
+    },
+    "equation": "estimated wavelength separation ≈ wavelength / (order number × illuminated slit count)",
+    "terms": [
+      {
+        "term": "resolving power",
+        "definition": "Wavelength divided by the smallest distinguishable wavelength gap under the stated criterion."
+      },
+      {
+        "term": "nanometre",
+        "definition": "One billionth of a metre."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to; real instruments can perform worse."
+      }
+    ]
+  },
+  "wave-model-selection": {
+    "idea": "Choose a wave rule by identifying what moves and what pushes it back.",
+    "explanation": "A string's displacement, sound's pressure change, and light's electric field are different physical quantities. Similar-looking equations do not make their inputs interchangeable. First identify the system and its assumptions, then use the rule that describes its restoring effect and inertia.",
+    "example": {
+      "title": "Choosing a string rule",
+      "steps": [
+        "A uniform string has tension 40 newtons and mass per length 0.010 kilograms per metre.",
+        "For small bends, its speed is √(40 / 0.010) ≈ 63.25 metres per second; the inputs describe this string's pull and mass."
+      ]
+    },
+    "equation": "string wave speed = √(tension / mass per length)",
+    "terms": [
+      {
+        "term": "tension",
+        "definition": "Pull along the string."
+      },
+      {
+        "term": "inertia",
+        "definition": "Resistance to a change in motion."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "wave-capstone": {
+    "idea": "A string's natural pattern and a repeated push together determine its steady response.",
+    "explanation": "First find the string's lowest standing pattern, then describe how a push drives that pattern against drag. This is a single-mode approximation: it keeps one pattern and leaves out others. It is useful near that pattern's frequency once starting motion has faded.",
+    "example": {
+      "title": "Driving the middle of a string",
+      "steps": [
+        "A 1-metre string with tension 40 newtons and mass per length 0.010 kilograms per metre has lowest angular frequency about 198.69 radians per second.",
+        "Drive its middle at that rate with peak force 0.010 newtons and mode drag coefficient 0.020 kilograms per second: steady centre amplitude is about 0.00252 metres."
+      ]
+    },
+    "equation": "centre amplitude = peak force / (mode drag coefficient × natural angular frequency)",
+    "terms": [
+      {
+        "term": "amplitude",
+        "definition": "Largest displacement from rest."
+      },
+      {
+        "term": "angular frequency",
+        "definition": "Rate around a cycle; a full cycle is 2π radians."
+      },
+      {
+        "term": "mode drag coefficient",
+        "definition": "The number relating drag to the rate of change of this pattern's centre displacement."
+      },
+      {
+        "term": "Natural frequency",
+        "definition": "The frequency of the chosen free-standing pattern without damping or forcing."
+      }
+    ]
+  },
+  "wave-assessment": {
+    "idea": "Combine optical stages only when each factor describes the same light and reference intensity.",
+    "explanation": "A polarizer reduces a chosen part of the light's electric field. A slit then spreads the transmitted light into a pattern. If the polarizer dims the whole slit equally, multiply its intensity fraction by the slit-pattern fraction. It does not move the dark bands in this model.",
+    "example": {
+      "title": "A polarizer before one slit",
+      "steps": [
+        "Without a polarizer, the slit has centre intensity 100 watts per square metre; an ideal polarizer at 60 degrees reduces this to 25.",
+        "At a direction where the slit-pattern fraction is 4/π², the intensity is 25 × 4/π² ≈ 10.13 watts per square metre."
+      ]
+    },
+    "equation": "resulting intensity = reference intensity × polarizer fraction × slit-pattern fraction",
+    "terms": [
+      {
+        "term": "intensity",
+        "definition": "Energy passing through each unit of area each second."
+      },
+      {
+        "term": "π",
+        "definition": "A number about 3.1416."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "reference intensity",
+        "definition": "The same slit's centre intensity without the polarizer."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  }
+}

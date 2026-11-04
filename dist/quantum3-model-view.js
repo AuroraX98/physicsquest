@@ -8,7 +8,7 @@ const readings=arr=>`<div class="model-readout">${arr.map(([a,b])=>`<div>${esc(a
 function graph(series,{xmin,xmax,ymin,ymax,xlabel,ylabel,point}){
  const X=x=>57+(x-xmin)/(xmax-xmin)*330,Y=y=>183-(y-ymin)/(ymax-ymin)*140;let s='';
  for(let i=0;i<=4;i++){const x=xmin+(xmax-xmin)*i/4,y=ymin+(ymax-ymin)*i/4;s+=line(X(x),43,X(x),183)+line(57,Y(y),387,Y(y))+text(X(x),204,f(x))+text(49,Y(y)+4,f(y),'end',10);}
- for(const a of series)s+=`<polyline points="${a.points.map(([x,y])=>`${X(x)},${Y(y)}`).join(' ')}" fill="none" stroke="${a.color}" stroke-width="2.8" ${a.dash?'stroke-dasharray="6 4"':''}/>`;
+ for(const a of series)s+=`<polyline points="${a.points.map(([x,y])=>`${X(x)},${Y(y)}`).join(' ')}" fill="none" stroke="${a.color}" stroke-width="2.8" ${a.dot?'stroke-dasharray="2 4"':a.dash?'stroke-dasharray="6 4"':''}/>`;
  if(point)s+=`<circle cx="${X(point[0])}" cy="${Y(point[1])}" r="5" fill="#9b6f28" stroke="white" stroke-width="1.5"/>`;
  return s+text(222,230,xlabel)+text(57,23,ylabel,'start');
 }
@@ -27,7 +27,7 @@ export function renderQuantum3(type,p){
  if(type==='q3trial'){
   const q=quarticTrial(p.width,.2),kin=[],pot=[],total=[];
   for(let i=0;i<=100;i++){const b=.3+1.5*i/100,t=quarticTrial(b,.2);kin.push([b,t.kineticRatio]);pot.push([b,t.potentialRatio]);total.push([b,t.totalRatio]);}
-  const s=graph([{points:kin,color:'#668f8d'},{points:pot,color:'#b28b3c',dash:true},{points:total,color:'#285d50'}],{xmin:.3,xmax:1.8,ymin:0,ymax:8,xlabel:'Gaussian trial width b / a (unit-free)',ylabel:'Trial expectation / energy scale',point:[p.width,q.totalRatio]})+text(210,12,'Green: total · teal: kinetic · dashed: potential','middle',10);
+  const s=graph([{points:kin,color:'#668f8d',dot:true},{points:pot,color:'#b28b3c',dash:true},{points:total,color:'#285d50'}],{xmin:.3,xmax:1.8,ymin:0,ymax:8,xlabel:'Gaussian trial width b / a (unit-free)',ylabel:'Trial expectation / energy scale',point:[p.width,q.totalRatio]})+text(210,12,'Solid: total · dotted: kinetic · dashed: potential','middle',10);
   return svg(s,`Gaussian trial energy for a fixed positive quartic potential. Width ratio ${p.width}; kinetic ratio ${f(q.kineticRatio)}, potential ratio ${f(q.potentialRatio)}, total ${f(q.totalRatio)}. This is a trial-family upper-bound calculation, not an exact ground-state wave or a physical squeezing operation.`)+readings([['Trial energy (Eₛ = 0.20 eV)',f(q.energy)+' eV'],['Best width in this family',f(q.optimum)+' × a'],['Best family upper bound',f(q.minimumEnergy)+' eV']]);
  }
  if(type==='q3scatter'){

@@ -1,0 +1,1477 @@
+{
+  "version": 1,
+  "note": "Original preparation paths. Refresher selections are editorial choices, not equivalence to the external courses. Advanced preparation paths link to available course modules; course coverage states the current scope.",
+  "paths": [
+    {
+      "id": "foundations",
+      "kind": "course",
+      "track": "physics",
+      "title": "Foundations",
+      "why": "Start with the numbers and simple rules used in the first physics lessons.",
+      "requiredCourses": [],
+      "steps": [
+        {
+          "key": "math/prep-fractions",
+          "why": "Read a share of a whole."
+        },
+        {
+          "key": "math/prep-decimals",
+          "why": "Read small amounts."
+        },
+        {
+          "key": "math/prep-negative-numbers",
+          "why": "Work with numbers below zero."
+        },
+        {
+          "key": "math/prep-brackets",
+          "why": "Group a calculation."
+        },
+        {
+          "key": "math/prep-powers",
+          "why": "Write repeated multiplication."
+        },
+        {
+          "key": "math/prep-substitution",
+          "why": "Put a known value into a rule."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "math",
+      "kind": "course",
+      "track": "physics",
+      "title": "Mathematical toolkit",
+      "why": "Build the number skills used by the mathematical toolkit. Take as many small steps as you need.",
+      "requiredCourses": [
+        "foundations"
+      ],
+      "steps": [
+        {
+          "key": "math/prep-fractions",
+          "why": "Read a share of a whole."
+        },
+        {
+          "key": "math/prep-decimals",
+          "why": "Read small amounts."
+        },
+        {
+          "key": "math/prep-negative-numbers",
+          "why": "Work with numbers below zero."
+        },
+        {
+          "key": "math/prep-percent",
+          "why": "Read a share out of a hundred."
+        },
+        {
+          "key": "math/prep-brackets",
+          "why": "Group a calculation."
+        },
+        {
+          "key": "math/prep-powers",
+          "why": "Write repeated multiplication."
+        },
+        {
+          "key": "math/prep-square-roots",
+          "why": "Undo squaring for a nonnegative value."
+        },
+        {
+          "key": "math/prep-reciprocals",
+          "why": "Find one divided by a number."
+        },
+        {
+          "key": "math/prep-substitution",
+          "why": "Put a known value into a rule."
+        },
+        {
+          "key": "math/prep-functions",
+          "why": "Read an input and its output."
+        },
+        {
+          "key": "math/prep-proportions",
+          "why": "Scale two amounts together."
+        },
+        {
+          "key": "math/prep-exponentials",
+          "why": "Follow repeated growth."
+        },
+        {
+          "key": "math/prep-logarithms",
+          "why": "Find the power that gives a number."
+        },
+        {
+          "key": "math/prep-subscripts",
+          "why": "Tell labeled values apart."
+        },
+        {
+          "key": "math/prep-sums",
+          "why": "Read a short instruction to add terms."
+        },
+        {
+          "key": "math/prep-change",
+          "why": "Subtract the starting value from the final value."
+        },
+        {
+          "key": "foundations/units",
+          "why": "Keep a measurement and its unit together."
+        },
+        {
+          "key": "foundations/relationships",
+          "why": "Read how two quantities are connected."
+        },
+        {
+          "key": "foundations/graphs",
+          "why": "Read change from a graph."
+        },
+        {
+          "key": "math/balance-equation",
+          "why": "Find an unknown while keeping both sides equal."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "mechanics",
+      "kind": "course",
+      "track": "physics",
+      "title": "Classical mechanics",
+      "why": "Review position, change and direction before studying motion.",
+      "requiredCourses": [
+        "foundations",
+        "math"
+      ],
+      "steps": [
+        {
+          "key": "foundations/units",
+          "why": "Keep metres and seconds clear."
+        },
+        {
+          "key": "foundations/relationships",
+          "why": "Connect distance, speed and time."
+        },
+        {
+          "key": "foundations/vectors",
+          "why": "Keep track of direction."
+        },
+        {
+          "key": "foundations/graphs",
+          "why": "Read the steepness of a motion graph."
+        },
+        {
+          "key": "math/prep-change",
+          "why": "Find the change between two readings."
+        },
+        {
+          "key": "math/balance-equation",
+          "why": "Find the unknown in an equation."
+        },
+        {
+          "key": "math/signed-components",
+          "why": "Split a direction into components."
+        },
+        {
+          "key": "math/derivatives",
+          "why": "Read a rate at one instant."
+        },
+        {
+          "key": "math/integrals",
+          "why": "Add up small contributions."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "em",
+      "kind": "course",
+      "track": "physics",
+      "title": "Electricity & magnetism",
+      "why": "Review forces and fields before studying electric and magnetic effects.",
+      "requiredCourses": [
+        "foundations",
+        "math",
+        "mechanics"
+      ],
+      "steps": [
+        {
+          "key": "foundations/units",
+          "why": "Keep charge, force and energy units clear."
+        },
+        {
+          "key": "foundations/vectors",
+          "why": "Track the direction of a force."
+        },
+        {
+          "key": "math/dot-cross",
+          "why": "Compare directions in products."
+        },
+        {
+          "key": "math/fields",
+          "why": "Read a quantity at each place."
+        },
+        {
+          "key": "math/flux",
+          "why": "Read how much passes through a surface."
+        },
+        {
+          "key": "math/gradient",
+          "why": "Connect a change in space to a direction."
+        },
+        {
+          "key": "math/integrals",
+          "why": "Add contributions from many small pieces."
+        },
+        {
+          "key": "math/complex",
+          "why": "Meet the number tool used for oscillating circuits."
+        },
+        {
+          "key": "math/odes",
+          "why": "Read a rule for how a quantity changes."
+        },
+        {
+          "key": "mechanics/net-force",
+          "why": "Connect total force to changing motion."
+        },
+        {
+          "key": "mechanics/work-dot-product",
+          "why": "Connect a force to transferred energy."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "waves",
+      "kind": "course",
+      "track": "physics",
+      "title": "Vibrations & waves",
+      "why": "Review repeated motion and the maths used to describe it.",
+      "requiredCourses": [
+        "math",
+        "mechanics",
+        "em"
+      ],
+      "steps": [
+        {
+          "key": "math/radians",
+          "why": "Measure a turn."
+        },
+        {
+          "key": "math/trigonometry",
+          "why": "Describe a repeating change."
+        },
+        {
+          "key": "math/derivatives",
+          "why": "Find a rate of change."
+        },
+        {
+          "key": "math/integrals",
+          "why": "Add small contributions."
+        },
+        {
+          "key": "math/complex",
+          "why": "Represent two linked number parts."
+        },
+        {
+          "key": "math/euler",
+          "why": "Connect complex numbers and turns."
+        },
+        {
+          "key": "math/oscillator-ode",
+          "why": "Read an equation for repeated motion."
+        },
+        {
+          "key": "math/eigenvectors",
+          "why": "Find a direction a transformation keeps."
+        },
+        {
+          "key": "mechanics/spring-gravity-potentials",
+          "why": "Track energy stored in a spring."
+        },
+        {
+          "key": "em/em-wave-speed",
+          "why": "Prepare for the electromagnetic wave sections."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "thermodynamics",
+      "kind": "course",
+      "track": "physics",
+      "title": "Heat & thermodynamics",
+      "why": "Review energy, change and chance before studying heat.",
+      "requiredCourses": [
+        "math",
+        "mechanics"
+      ],
+      "steps": [
+        {
+          "key": "math/prep-proportions",
+          "why": "Scale related quantities."
+        },
+        {
+          "key": "math/prep-logarithms",
+          "why": "Read logarithms used later in entropy."
+        },
+        {
+          "key": "math/derivatives",
+          "why": "Describe a small change."
+        },
+        {
+          "key": "math/integrals",
+          "why": "Add energy transfers along a process."
+        },
+        {
+          "key": "math/partials",
+          "why": "Change one variable while holding another fixed."
+        },
+        {
+          "key": "math/chance-fractions",
+          "why": "Read simple chances."
+        },
+        {
+          "key": "math/probability",
+          "why": "Connect chances to averages."
+        },
+        {
+          "key": "mechanics/kinetic-energy",
+          "why": "Track energy of motion."
+        },
+        {
+          "key": "mechanics/work-dot-product",
+          "why": "Track energy transferred by a force."
+        },
+        {
+          "key": "mechanics/isolated-momentum",
+          "why": "Use a conservation rule."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "optics",
+      "kind": "course",
+      "track": "physics",
+      "title": "Light & optics",
+      "why": "Review wave timing, direction and addition before studying light.",
+      "requiredCourses": [
+        "math",
+        "em",
+        "waves"
+      ],
+      "steps": [
+        {
+          "key": "math/radians",
+          "why": "Measure phase as a turn."
+        },
+        {
+          "key": "math/trigonometry",
+          "why": "Compare angles."
+        },
+        {
+          "key": "math/complex",
+          "why": "Keep wave size and phase together."
+        },
+        {
+          "key": "math/fourier",
+          "why": "Build a shape from waves."
+        },
+        {
+          "key": "waves/travelling-profile",
+          "why": "Follow a moving wave shape."
+        },
+        {
+          "key": "waves/path-phase",
+          "why": "Connect extra distance to phase."
+        },
+        {
+          "key": "waves/coherent-addition",
+          "why": "Combine waves that keep a steady phase relation."
+        },
+        {
+          "key": "waves/polarizer-projection",
+          "why": "Find the part that passes a polarizer."
+        },
+        {
+          "key": "waves/single-slit-diffraction",
+          "why": "See how an opening spreads a wave."
+        },
+        {
+          "key": "em/em-wave-speed",
+          "why": "Connect light with electric and magnetic waves."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "relativity",
+      "kind": "course",
+      "track": "physics",
+      "title": "Relativity",
+      "why": "Review motion, energy and careful measurement before comparing moving observers.",
+      "requiredCourses": [
+        "math",
+        "mechanics",
+        "em"
+      ],
+      "steps": [
+        {
+          "key": "foundations/units",
+          "why": "Keep units consistent."
+        },
+        {
+          "key": "foundations/models",
+          "why": "State which assumptions you use."
+        },
+        {
+          "key": "math/prep-square-roots",
+          "why": "Read square roots in motion formulas."
+        },
+        {
+          "key": "math/balance-equation",
+          "why": "Find an unknown from a relation."
+        },
+        {
+          "key": "math/signed-components",
+          "why": "Keep direction signs clear."
+        },
+        {
+          "key": "mechanics/relative-velocity",
+          "why": "Compare motion from different observers."
+        },
+        {
+          "key": "mechanics/inertial-frames",
+          "why": "Recognize a non-accelerating frame."
+        },
+        {
+          "key": "mechanics/isolated-momentum",
+          "why": "Track total momentum."
+        },
+        {
+          "key": "mechanics/kinetic-energy",
+          "why": "Track motion energy."
+        },
+        {
+          "key": "em/em-wave-speed",
+          "why": "Review the speed of electromagnetic waves."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "atomic-nuclear",
+      "kind": "course",
+      "track": "physics",
+      "title": "Atomic & nuclear physics",
+      "why": "Review quantum states, electric interactions and energy before studying atoms and nuclei.",
+      "requiredCourses": [
+        "math",
+        "em",
+        "quantum2",
+        "relativity"
+      ],
+      "steps": [
+        {
+          "key": "math/prep-powers",
+          "why": "Read small and large scales."
+        },
+        {
+          "key": "math/exponential-decay",
+          "why": "Read a falling population."
+        },
+        {
+          "key": "math/probability",
+          "why": "Use chances and averages."
+        },
+        {
+          "key": "em/coulomb-force",
+          "why": "Review attraction and repulsion of charges."
+        },
+        {
+          "key": "em/point-charge-potential",
+          "why": "Track electric potential energy per charge."
+        },
+        {
+          "key": "quantum1/hydrogen-spectrum",
+          "why": "Read the allowed energies of hydrogen."
+        },
+        {
+          "key": "quantum2/angular-ladder-spectrum",
+          "why": "Read angular-momentum labels."
+        },
+        {
+          "key": "quantum2/singlet-triplet",
+          "why": "Combine two spin states."
+        },
+        {
+          "key": "quantum2/occupation-and-filling",
+          "why": "Place identical particles in allowed states."
+        },
+        {
+          "key": "relativity/rest-kinetic-energy",
+          "why": "Separate rest energy and motion energy."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "particles",
+      "kind": "course",
+      "track": "physics",
+      "title": "Particle physics",
+      "why": "Review quantum outcomes and energy-momentum accounting before studying particles.",
+      "requiredCourses": [
+        "math",
+        "quantum2",
+        "relativity",
+        "atomic-nuclear"
+      ],
+      "steps": [
+        {
+          "key": "math/probability",
+          "why": "Read predicted event chances."
+        },
+        {
+          "key": "math/complex",
+          "why": "Keep amplitude components clear."
+        },
+        {
+          "key": "quantum2/projector-probability",
+          "why": "Find a quantum measurement chance."
+        },
+        {
+          "key": "quantum2/tensor-basis",
+          "why": "Describe two systems together."
+        },
+        {
+          "key": "quantum2/exchange-postulate",
+          "why": "Track the rule for identical particles."
+        },
+        {
+          "key": "relativity/four-momentum",
+          "why": "Keep energy and momentum together."
+        },
+        {
+          "key": "relativity/energy-momentum-invariant",
+          "why": "Compare a quantity observers agree on."
+        },
+        {
+          "key": "relativity/threshold-energy",
+          "why": "Check whether a reaction has enough energy."
+        },
+        {
+          "key": "atomic-nuclear/conservation-filters-decay-stories",
+          "why": "Reject outcomes that break conservation rules."
+        },
+        {
+          "key": "atomic-nuclear/cross-section-turns-flux-into-rate",
+          "why": "Connect incoming particles to event rates."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "materials",
+      "kind": "course",
+      "track": "physics",
+      "title": "Materials & condensed matter",
+      "why": "Review waves, quantum states and temperature before studying matter in large groups.",
+      "requiredCourses": [
+        "math",
+        "quantum2",
+        "thermodynamics",
+        "em",
+        "waves"
+      ],
+      "steps": [
+        {
+          "key": "math/fourier",
+          "why": "Describe repeating structures with waves."
+        },
+        {
+          "key": "math/eigenvectors",
+          "why": "Find modes that keep their form."
+        },
+        {
+          "key": "waves/standing-superposition",
+          "why": "Combine opposite-moving waves."
+        },
+        {
+          "key": "waves/dispersion-relation",
+          "why": "Relate frequency and wavelength."
+        },
+        {
+          "key": "quantum2/tensor-basis",
+          "why": "Describe several parts together."
+        },
+        {
+          "key": "quantum2/occupation-and-filling",
+          "why": "Use the rules for filling states."
+        },
+        {
+          "key": "thermodynamics/boltzmann-weights",
+          "why": "Compare the chance of different energies."
+        },
+        {
+          "key": "thermodynamics/chemical-potential",
+          "why": "Track how adding particles changes a system."
+        },
+        {
+          "key": "em/current-density-drift",
+          "why": "Relate moving charge to current."
+        },
+        {
+          "key": "em/dielectric-response",
+          "why": "Review how matter responds to an electric field."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "astrophysics",
+      "kind": "course",
+      "track": "physics",
+      "title": "Astrophysics",
+      "why": "Review the tools used to learn about distant objects from motion and light.",
+      "requiredCourses": [
+        "math",
+        "mechanics",
+        "em",
+        "waves",
+        "optics",
+        "thermodynamics",
+        "relativity",
+        "atomic-nuclear"
+      ],
+      "steps": [
+        {
+          "key": "math/prep-powers",
+          "why": "Read very large and small scales."
+        },
+        {
+          "key": "math/prep-logarithms",
+          "why": "Read logarithmic brightness scales."
+        },
+        {
+          "key": "mechanics/circular-orbits",
+          "why": "Connect gravity and orbital motion."
+        },
+        {
+          "key": "em/field-energy-flow",
+          "why": "Track energy carried by fields."
+        },
+        {
+          "key": "waves/sound-doppler",
+          "why": "Start with how motion shifts a received frequency."
+        },
+        {
+          "key": "optics/angular-resolution",
+          "why": "Know when two distant sources can be separated."
+        },
+        {
+          "key": "thermodynamics/radiative-balance",
+          "why": "Compare energy radiated and received."
+        },
+        {
+          "key": "thermodynamics/ideal-gas-law",
+          "why": "Connect gas pressure, amount and temperature."
+        },
+        {
+          "key": "relativity/relativistic-doppler",
+          "why": "Use the light-wave version of the shift."
+        },
+        {
+          "key": "atomic-nuclear/read-a-spectral-gap",
+          "why": "Connect a line of light to an energy gap."
+        },
+        {
+          "key": "atomic-nuclear/stars-couple-nuclear-physics-to-transport",
+          "why": "Connect stellar energy release and transport."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "quantum1",
+      "kind": "course",
+      "track": "quantum",
+      "title": "Quantum I",
+      "why": "Review waves and the maths used to predict quantum outcomes. If a step is new, open its earlier lessons before going on.",
+      "requiredCourses": [
+        "math",
+        "mechanics",
+        "em",
+        "waves"
+      ],
+      "steps": [
+        {
+          "key": "math/complex",
+          "why": "Read a number with real and imaginary parts."
+        },
+        {
+          "key": "math/complex-phase",
+          "why": "Read the angle of a complex number."
+        },
+        {
+          "key": "math/derivatives",
+          "why": "Find a local rate of change."
+        },
+        {
+          "key": "math/integrals",
+          "why": "Add a continuous set of contributions."
+        },
+        {
+          "key": "math/odes",
+          "why": "Read an equation that contains a rate."
+        },
+        {
+          "key": "math/fourier-transform",
+          "why": "Change between a wave shape and its wave content."
+        },
+        {
+          "key": "math/inner-products",
+          "why": "Compare two states using an inner product."
+        },
+        {
+          "key": "math/eigenvectors",
+          "why": "Find a direction that keeps its form."
+        },
+        {
+          "key": "math/probability",
+          "why": "Read chances and averages."
+        },
+        {
+          "key": "mechanics/energy-diagrams",
+          "why": "Identify allowed motion from energy."
+        },
+        {
+          "key": "em/point-charge-potential",
+          "why": "Review an electric potential."
+        },
+        {
+          "key": "waves/coherent-addition",
+          "why": "Add wave amplitudes."
+        },
+        {
+          "key": "waves/localized-packet",
+          "why": "Build a wave confined to a region."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "quantum2",
+      "kind": "course",
+      "track": "quantum",
+      "title": "Quantum II",
+      "why": "Review quantum states and matrix tools before working with more general measurements and combined systems.",
+      "requiredCourses": [
+        "math",
+        "quantum1"
+      ],
+      "steps": [
+        {
+          "key": "math/complex",
+          "why": "Review complex components."
+        },
+        {
+          "key": "math/matrix-products",
+          "why": "Combine matrix actions in order."
+        },
+        {
+          "key": "math/eigenvectors",
+          "why": "Find unchanged directions."
+        },
+        {
+          "key": "math/inner-products",
+          "why": "Compare state vectors."
+        },
+        {
+          "key": "math/probability",
+          "why": "Connect outcomes with chances."
+        },
+        {
+          "key": "math/derivatives",
+          "why": "Read time changes."
+        },
+        {
+          "key": "math/integrals",
+          "why": "Add a continuous probability density."
+        },
+        {
+          "key": "quantum1/complex-amplitudes",
+          "why": "Review amplitudes."
+        },
+        {
+          "key": "quantum1/global-relative-phase",
+          "why": "Separate overall phase from relative phase."
+        },
+        {
+          "key": "quantum1/wavefunction-inner-product",
+          "why": "Compare wavefunctions."
+        },
+        {
+          "key": "quantum1/projective-update",
+          "why": "Describe an ideal measurement update."
+        },
+        {
+          "key": "quantum1/expectation-variance",
+          "why": "Read an average and its spread."
+        },
+        {
+          "key": "quantum1/evolve-superposition",
+          "why": "Follow a state in time."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "quantum3",
+      "kind": "course",
+      "track": "quantum",
+      "title": "Quantum III",
+      "why": "Review operators, combined states and approximation tools before the final quantum course.",
+      "requiredCourses": [
+        "math",
+        "quantum2"
+      ],
+      "steps": [
+        {
+          "key": "math/linearization",
+          "why": "Use a small-change approximation."
+        },
+        {
+          "key": "math/integration-parts",
+          "why": "Move a derivative inside an integral."
+        },
+        {
+          "key": "math/fourier-transform",
+          "why": "Move between two wave descriptions."
+        },
+        {
+          "key": "math/odes",
+          "why": "Review change equations."
+        },
+        {
+          "key": "quantum2/spectral-projectors",
+          "why": "Split a state using energy subspaces."
+        },
+        {
+          "key": "quantum2/commutator-products",
+          "why": "Track whether action order matters."
+        },
+        {
+          "key": "quantum2/spectral-time-evolution",
+          "why": "Follow energy components in time."
+        },
+        {
+          "key": "quantum2/two-level-hamiltonian",
+          "why": "Describe two coupled states."
+        },
+        {
+          "key": "quantum2/tensor-basis",
+          "why": "Describe two systems together."
+        },
+        {
+          "key": "quantum2/density-from-preparations",
+          "why": "Describe a mixture of preparations."
+        },
+        {
+          "key": "quantum2/partial-trace",
+          "why": "Describe one part when its partner is ignored."
+        },
+        {
+          "key": "quantum2/angular-ladder-spectrum",
+          "why": "Review angular-momentum states."
+        }
+      ],
+      "remainingTools": [],
+      "nextTopics": [],
+      "sources": []
+    },
+    {
+      "id": "advanced-mechanics",
+      "kind": "specialization",
+      "track": "physics",
+      "title": "Advanced analytical mechanics",
+      "why": "Prepare to describe motion using energy, chosen coordinates and action.",
+      "requiredCourses": [
+        "math",
+        "mechanics",
+        "waves"
+      ],
+      "steps": [
+        {
+          "key": "math/partials",
+          "why": "Change one coordinate at a time."
+        },
+        {
+          "key": "math/total-differential",
+          "why": "Combine small changes."
+        },
+        {
+          "key": "math/odes",
+          "why": "Read a rule for evolving motion."
+        },
+        {
+          "key": "math/eigenvectors",
+          "why": "Find independent modes."
+        },
+        {
+          "key": "mechanics/motion-constraints",
+          "why": "Track restrictions on motion."
+        },
+        {
+          "key": "mechanics/conservative-force",
+          "why": "Connect force and potential energy."
+        },
+        {
+          "key": "mechanics/angular-momentum",
+          "why": "Track rotational motion."
+        },
+        {
+          "key": "mechanics/static-equilibrium",
+          "why": "Balance forces and torques."
+        },
+        {
+          "key": "waves/mode-eigenproblem",
+          "why": "Find separate patterns of vibration."
+        }
+      ],
+      "remainingTools": [
+        "Calculus of variations: compare nearby possible paths.",
+        "Numerical differential equations: calculate motion in small time steps."
+      ],
+      "nextTopics": [
+        "Choose coordinates that follow a constraint.",
+        "Build a Lagrangian from kinetic and potential energy.",
+        "Find an equation of motion from stationary action.",
+        "Use Hamiltonian variables and conservation rules.",
+        "Study rigid-body motion and nonlinear behaviour."
+      ],
+      "sources": [
+        {
+          "title": "MIT subject scope: Classical Mechanics III",
+          "url": "https://catalog.mit.edu/subjects/8/"
+        }
+      ]
+    },
+    {
+      "id": "fluid-dynamics",
+      "kind": "specialization",
+      "track": "physics",
+      "title": "Fluid dynamics",
+      "why": "Prepare to study flowing liquids and gases beyond the simple fluid lessons.",
+      "requiredCourses": [
+        "math",
+        "mechanics",
+        "thermodynamics"
+      ],
+      "steps": [
+        {
+          "key": "mechanics/fluid-density",
+          "why": "Compare mass per volume."
+        },
+        {
+          "key": "mechanics/fluid-pressure-depth",
+          "why": "Review pressure in a still fluid."
+        },
+        {
+          "key": "mechanics/fluid-buoyancy",
+          "why": "Track the upward pressure force."
+        },
+        {
+          "key": "mechanics/fluid-continuity",
+          "why": "Track flow through changing area."
+        },
+        {
+          "key": "mechanics/fluid-bernoulli",
+          "why": "Use energy within the ideal-flow limits."
+        },
+        {
+          "key": "math/partials",
+          "why": "Track change in space and time."
+        },
+        {
+          "key": "math/divergence",
+          "why": "Read local spreading of a field."
+        },
+        {
+          "key": "math/curl",
+          "why": "Read local turning of a field."
+        },
+        {
+          "key": "thermodynamics/first-law",
+          "why": "Keep an energy balance."
+        }
+      ],
+      "remainingTools": [
+        "Partial differential equations: follow a quantity changing in space and time.",
+        "Numerical grids: approximate a flow in small cells."
+      ],
+      "nextTopics": [
+        "Describe a tiny moving piece of fluid.",
+        "Conserve mass in a flowing region.",
+        "Include viscosity, the resistance to shearing flow.",
+        "Build the momentum equation for a fluid.",
+        "Compare flow scales, walls and turbulent motion."
+      ],
+      "sources": [
+        {
+          "title": "MIT scope: Fluid Mechanics 2.25",
+          "url": "https://catalog.mit.edu/subjects/2/2_coursestext.pdf"
+        }
+      ]
+    },
+    {
+      "id": "plasma",
+      "kind": "specialization",
+      "track": "physics",
+      "title": "Plasma physics",
+      "why": "Prepare to study a gas whose charged particles act together.",
+      "requiredCourses": [
+        "math",
+        "mechanics",
+        "em",
+        "waves",
+        "thermodynamics"
+      ],
+      "steps": [
+        {
+          "key": "math/fields",
+          "why": "Describe quantities throughout space."
+        },
+        {
+          "key": "math/divergence",
+          "why": "Read local spreading."
+        },
+        {
+          "key": "math/curl",
+          "why": "Read local turning."
+        },
+        {
+          "key": "math/fourier-transform",
+          "why": "Describe a disturbance using waves."
+        },
+        {
+          "key": "em/lorentz-force",
+          "why": "Follow a charged particle in fields."
+        },
+        {
+          "key": "em/charged-circular-motion",
+          "why": "Review curved motion in a magnetic field."
+        },
+        {
+          "key": "em/maxwell-map",
+          "why": "Connect charge, current and fields."
+        },
+        {
+          "key": "waves/dispersion-relation",
+          "why": "Compare different wave speeds."
+        },
+        {
+          "key": "thermodynamics/random-motion",
+          "why": "Connect bulk gas behaviour to particle motion."
+        }
+      ],
+      "remainingTools": [
+        "Partial differential equations: connect changes in space and time.",
+        "Complex analysis and Laplace transforms: follow growing or fading disturbances.",
+        "Kinetic theory: track a distribution of particle velocities."
+      ],
+      "nextTopics": [
+        "Estimate how a plasma screens an electric charge.",
+        "Follow charged-particle motion and drift.",
+        "Build a simple fluid model of a plasma.",
+        "Find plasma waves and test their stability.",
+        "Connect the particle and fluid descriptions."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW: Plasma Physics prerequisites and scope",
+          "url": "https://ocw.mit.edu/courses/22-611j-introduction-to-plasma-physics-i-fall-2003/pages/syllabus/"
+        }
+      ]
+    },
+    {
+      "id": "general-relativity",
+      "kind": "specialization",
+      "track": "physics",
+      "title": "General relativity",
+      "why": "Prepare to study gravity through the geometry of space and time.",
+      "requiredCourses": [
+        "math",
+        "mechanics",
+        "em",
+        "relativity"
+      ],
+      "steps": [
+        {
+          "key": "math/partials",
+          "why": "Track change along different coordinates."
+        },
+        {
+          "key": "math/matrices",
+          "why": "Read linear transformations."
+        },
+        {
+          "key": "math/odes",
+          "why": "Follow a changing path."
+        },
+        {
+          "key": "relativity/events-frames",
+          "why": "Locate events for an observer."
+        },
+        {
+          "key": "relativity/interval",
+          "why": "Compare spacetime separation."
+        },
+        {
+          "key": "relativity/four-vectors",
+          "why": "Combine space and time components."
+        },
+        {
+          "key": "relativity/equivalence",
+          "why": "Connect a local gravity picture and acceleration."
+        },
+        {
+          "key": "relativity/geodesics",
+          "why": "Meet the idea of a free-fall path."
+        },
+        {
+          "key": "relativity/gravity-limits",
+          "why": "Recognize where the introductory picture ends."
+        }
+      ],
+      "remainingTools": [
+        "Tensor calculus: track quantities as coordinates change.",
+        "Differential geometry: measure distances and curvature.",
+        "Action principles, Green functions and numerical differential equations."
+      ],
+      "nextTopics": [
+        "Use a metric to measure spacetime separation.",
+        "Compare directions at nearby points.",
+        "Describe curvature with tensors.",
+        "Connect curvature to energy and momentum.",
+        "Study gravitational fields, waves and cosmological models."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW: General Relativity prerequisites and scope",
+          "url": "https://www.ocw.mit.edu/courses/8-962-general-relativity-spring-2020/pages/syllabus/"
+        }
+      ]
+    },
+    {
+      "id": "experimental-methods",
+      "kind": "specialization",
+      "track": "physics",
+      "title": "Advanced experimental methods",
+      "why": "Prepare to judge measurements and explain what an experiment supports.",
+      "requiredCourses": [
+        "foundations",
+        "math",
+        "mechanics",
+        "em",
+        "optics",
+        "quantum1"
+      ],
+      "steps": [
+        {
+          "key": "foundations/units",
+          "why": "Write a measurement clearly."
+        },
+        {
+          "key": "foundations/uncertainty",
+          "why": "State how much a reading may vary."
+        },
+        {
+          "key": "foundations/models",
+          "why": "Separate a model from the real object."
+        },
+        {
+          "key": "math/probability",
+          "why": "Describe expected variation."
+        },
+        {
+          "key": "math/linearization",
+          "why": "Estimate the effect of a small change."
+        },
+        {
+          "key": "optics/detector-shot-noise",
+          "why": "Review counting noise."
+        },
+        {
+          "key": "atomic-nuclear/separate-efficiency-and-background",
+          "why": "Separate missed signals from background."
+        },
+        {
+          "key": "atomic-nuclear/count-uncertainty-survives-subtraction",
+          "why": "Keep uncertainty after subtracting counts."
+        },
+        {
+          "key": "particles/systematics-can-move-many-measurements-together",
+          "why": "Recognize a shared measurement shift."
+        }
+      ],
+      "remainingTools": [
+        "Statistics and fitting: compare measured data with predictions.",
+        "Calibration and uncertainty propagation: track how measurement errors combine.",
+        "Instrument skills and supervised laboratory practice."
+      ],
+      "nextTopics": [
+        "Choose one question and a measurable quantity.",
+        "Calibrate an instrument against a known reference.",
+        "Distinguish random scatter from systematic error.",
+        "Fit a model and inspect what it misses.",
+        "Record a repeatable procedure and report its limits."
+      ],
+      "sources": [
+        {
+          "title": "MIT Junior Lab: experimental and analysis preparation",
+          "url": "https://live.ocw.mit.edu/courses/8-13-14-experimental-physics-i-ii-junior-lab-fall-2016-spring-2017/pages/syllabus/schedule-summaries/"
+        }
+      ]
+    },
+    {
+      "id": "quantum-information",
+      "kind": "specialization",
+      "track": "quantum",
+      "title": "Quantum information",
+      "why": "Prepare to describe information stored in quantum systems.",
+      "requiredCourses": [
+        "math",
+        "quantum1",
+        "quantum2"
+      ],
+      "steps": [
+        {
+          "key": "math/matrix-products",
+          "why": "Combine operations in order."
+        },
+        {
+          "key": "math/inner-products",
+          "why": "Compare states."
+        },
+        {
+          "key": "quantum2/bloch-pure-state",
+          "why": "Picture a pure two-state system."
+        },
+        {
+          "key": "quantum2/unitary-basis-change",
+          "why": "Change a state representation."
+        },
+        {
+          "key": "quantum2/tensor-basis",
+          "why": "Combine systems."
+        },
+        {
+          "key": "quantum2/joint-measurements",
+          "why": "Find joint outcome probabilities."
+        },
+        {
+          "key": "quantum2/density-from-preparations",
+          "why": "Describe mixed preparations."
+        },
+        {
+          "key": "quantum2/partial-trace",
+          "why": "Focus on one part."
+        },
+        {
+          "key": "quantum2/product-or-entangled",
+          "why": "Check whether a state separates."
+        },
+        {
+          "key": "quantum2/local-no-signalling",
+          "why": "Keep correlation distinct from sending information."
+        }
+      ],
+      "remainingTools": [
+        "Classical information and probability: measure uncertainty in messages.",
+        "Circuit notation and algorithm analysis: describe ordered operations and their cost."
+      ],
+      "nextTopics": [
+        "Use a qubit to describe two possible measurement outcomes.",
+        "Combine reversible gates into a small circuit.",
+        "Compare classical and quantum correlations.",
+        "Describe noise as an operation on a state.",
+        "Introduce error correction and simple quantum algorithms."
+      ],
+      "sources": [
+        {
+          "title": "MIT scope: Quantum Information Science",
+          "url": "https://mit-public.courseleaf.com/subjects/8/"
+        }
+      ]
+    },
+    {
+      "id": "many-body",
+      "kind": "specialization",
+      "track": "quantum",
+      "title": "Advanced many-body physics",
+      "why": "Prepare to study many interacting quantum particles.",
+      "requiredCourses": [
+        "math",
+        "quantum2",
+        "quantum3",
+        "thermodynamics",
+        "materials"
+      ],
+      "steps": [
+        {
+          "key": "quantum2/tensor-basis",
+          "why": "Combine individual state spaces."
+        },
+        {
+          "key": "quantum2/exchange-postulate",
+          "why": "Use identical-particle rules."
+        },
+        {
+          "key": "quantum2/occupation-and-filling",
+          "why": "Describe occupied states."
+        },
+        {
+          "key": "quantum2/density-from-preparations",
+          "why": "Keep mixtures clear."
+        },
+        {
+          "key": "thermodynamics/partition-function",
+          "why": "Sum statistical weights."
+        },
+        {
+          "key": "thermodynamics/chemical-potential",
+          "why": "Track the cost of adding a particle."
+        },
+        {
+          "key": "materials/bloch-form",
+          "why": "Review a state in a repeating solid."
+        },
+        {
+          "key": "materials/correlation",
+          "why": "Compare joint behaviour with independent behaviour."
+        },
+        {
+          "key": "materials/many-body-prerequisites",
+          "why": "Identify where the materials bridge ends."
+        }
+      ],
+      "remainingTools": [
+        "Second quantization: use operators that add or remove particles.",
+        "Statistical ensembles and response theory.",
+        "Path integrals and Green functions: new ways to track quantum changes."
+      ],
+      "nextTopics": [
+        "Describe particle occupation with creation and removal operators.",
+        "Build a simple interacting many-particle model.",
+        "Find a mean-field approximation and test its limits.",
+        "Describe fluctuations around the average state.",
+        "Connect correlations to observable responses."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW: Many-Body Theory scope",
+          "url": "https://ocw.mit.edu/courses/8-513-many-body-theory-for-condensed-matter-systems-fall-2004/"
+        }
+      ]
+    },
+    {
+      "id": "quantum-field-theory",
+      "kind": "specialization",
+      "track": "quantum",
+      "title": "Quantum field theory",
+      "why": "Prepare to connect quantum theory, relativity and fields.",
+      "requiredCourses": [
+        "math",
+        "em",
+        "relativity",
+        "quantum2",
+        "quantum3",
+        "particles"
+      ],
+      "steps": [
+        {
+          "key": "math/fourier-transform",
+          "why": "Compare space and momentum descriptions."
+        },
+        {
+          "key": "math/odes",
+          "why": "Review time evolution."
+        },
+        {
+          "key": "em/maxwell-map",
+          "why": "Review a classical field theory."
+        },
+        {
+          "key": "relativity/four-vectors",
+          "why": "Keep spacetime components together."
+        },
+        {
+          "key": "relativity/energy-momentum-invariant",
+          "why": "Use relativistic energy and momentum."
+        },
+        {
+          "key": "quantum1/oscillator-ladders",
+          "why": "Use operators that change oscillator levels."
+        },
+        {
+          "key": "quantum2/exchange-postulate",
+          "why": "Review identical-particle rules."
+        },
+        {
+          "key": "particles/diagrams-organize-amplitudes",
+          "why": "Understand what a process diagram represents."
+        },
+        {
+          "key": "particles/know-where-the-bridge-ends",
+          "why": "Identify what the introductory particle course leaves open."
+        }
+      ],
+      "remainingTools": [
+        "Classical action and Noether theorem: connect symmetries and conserved quantities.",
+        "Distributions, contour integration and advanced scattering theory.",
+        "Relativistic quantum theory and group representations."
+      ],
+      "nextTopics": [
+        "Describe a classical field with an action.",
+        "Quantize a free scalar field.",
+        "Describe particle creation and removal.",
+        "Compute a simple interaction amplitude.",
+        "Introduce regularization and renormalization with explicit limits."
+      ],
+      "sources": [
+        {
+          "title": "MIT scope: Relativistic Quantum Field Theory I",
+          "url": "https://catalog.mit.edu/subjects/8/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1540 @@
+{
+  "position": {
+    "idea": "Position tells us where something is compared with a chosen zero point.",
+    "explanation": "At constant velocity, add the same signed position change each second. Then add the starting position to find the finish. A change in position and a final position are different quantities.",
+    "example": {
+      "title": "Crossing zero",
+      "steps": [
+        "A cart starts at −3 metres and moves +2 metres each second for 4 seconds.",
+        "Its position changes by +8 metres.",
+        "Its final position is −3 + 8 = +5 metres."
+      ]
+    },
+    "equation": "final position = start position + velocity × time",
+    "terms": [
+      {
+        "term": "Velocity",
+        "definition": "The rate and direction of position change."
+      }
+    ]
+  },
+  "instantaneous-velocity": {
+    "idea": "Average velocity describes a whole interval; instantaneous velocity describes one moment.",
+    "explanation": "Average velocity describes the start-to-finish position change divided by time. Instantaneous velocity describes that rate right now. Returning to the start can give zero average velocity even when the velocity was nonzero throughout most of the trip.",
+    "example": {
+      "title": "An out-and-back trip",
+      "steps": [
+        "Travel 6 metres right at 2 metres per second, then 6 metres left at the same speed.",
+        "During each straight leg, instantaneous velocity is +2 or −2 metres per second.",
+        "Over the complete 6-second trip, the position change is zero, so average velocity is zero."
+      ]
+    },
+    "equation": "average velocity = position change ÷ elapsed time",
+    "terms": [
+      {
+        "term": "Instantaneous",
+        "definition": "At one moment."
+      },
+      {
+        "term": "Average velocity",
+        "definition": "Signed position change divided by time."
+      },
+      {
+        "term": "Average speed",
+        "definition": "Total distance divided by time."
+      }
+    ]
+  },
+  "relative-velocity": {
+    "idea": "To compare two velocities, measure both from the same viewpoint first.",
+    "explanation": "Subtract the observer's velocity from the object's velocity. Use matching directions and units. This classical subtraction rule applies when speeds are much smaller than light speed.",
+    "example": {
+      "title": "Two carts moving right",
+      "steps": [
+        "Cart A moves at 5 metres per second; cart B moves at 2 metres per second relative to the floor.",
+        "From B, A pulls ahead at 5 − 2 = 3 metres per second."
+      ]
+    },
+    "equation": "velocity of A relative to B = 5 − 2 = 3 m/s",
+    "terms": [
+      {
+        "term": "Velocity",
+        "definition": "Rate and direction of position change."
+      },
+      {
+        "term": "Relative velocity",
+        "definition": "An object's velocity as described from another moving viewpoint."
+      }
+    ]
+  },
+  "acceleration": {
+    "idea": "Acceleration is the rate at which velocity changes.",
+    "explanation": "Its sign tells the direction of the change, not automatically whether speed increases. Adding a positive change to a negative velocity first slows the motion. Constant acceleration adds the same velocity change each second.",
+    "example": {
+      "title": "Slowing to a stop",
+      "steps": [
+        "Start at −4 metres per second with acceleration +2 metres per second squared.",
+        "After 2 seconds, the velocity is −4 + 2 × 2 = 0.",
+        "The object is momentarily stopped, although its acceleration continues."
+      ]
+    },
+    "equation": "velocity = starting velocity + acceleration × time",
+    "terms": [
+      {
+        "term": "Acceleration",
+        "definition": "Rate of change of velocity."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Rate and direction of position change."
+      }
+    ]
+  },
+  "derive-constant-a": {
+    "idea": "With constant acceleration, a speed change can be linked directly to a position change.",
+    "explanation": "Combining the velocity and position rules removes time. The resulting equation uses velocity squared, so it loses the direction sign. Use the motion's conditions to choose the correct sign.",
+    "example": {
+      "title": "Finding the final velocity",
+      "steps": [
+        "A cart starts at +2 metres per second and accelerates at +1.5 metres per second squared through +4 metres.",
+        "Its final velocity squared is 2² + 2 × 1.5 × 4 = 16.",
+        "On this forward-moving part of the trip, its final velocity is +4 metres per second."
+      ]
+    },
+    "equation": "final velocity² = initial velocity² + 2 × acceleration × displacement",
+    "terms": [
+      {
+        "term": "Displacement",
+        "definition": "The signed change in position."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "The rate of velocity change."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "motion-constraints": {
+    "idea": "Define the event before solving for its time.",
+    "explanation": "Stopping means velocity is zero. Reaching a place means position equals that place's coordinate. These conditions can occur at different times, and a position may be crossed more than once.",
+    "example": {
+      "title": "A momentary stop",
+      "steps": [
+        "Use x(t) = (4 m/s)t − (1 m/s²)t².",
+        "The velocity becomes zero at 2 seconds, when the position is 4 metres.",
+        "The object has stopped momentarily; it has not returned to its starting position."
+      ]
+    },
+    "equation": "stop condition: velocity = 0",
+    "terms": [
+      {
+        "term": "Velocity",
+        "definition": "Rate and direction of position change."
+      },
+      {
+        "term": "Coordinate",
+        "definition": "A number locating a place relative to chosen reference directions."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "variable-acceleration": {
+    "idea": "When acceleration changes, add its contributions over time.",
+    "explanation": "An integral is a continuous sum of small pieces. Integrating acceleration gives the velocity change; add the starting velocity to find the current velocity. Using the final acceleration for the whole interval usually overcounts.",
+    "example": {
+      "title": "Acceleration rising with time",
+      "steps": [
+        "Start at 1 metre per second with a(t) = (2 m/s³)t.",
+        "Adding the acceleration from 0 to 2 seconds gives a 4-metre-per-second increase.",
+        "The final velocity is 1 + 4 = 5 metres per second."
+      ]
+    },
+    "equation": "final velocity = initial velocity + accumulated acceleration",
+    "terms": [
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      },
+      {
+        "term": "Integral",
+        "definition": "A continuous sum of small contributions."
+      },
+      {
+        "term": "³",
+        "definition": "Multiply the quantity by itself three times."
+      }
+    ]
+  },
+  "projectiles": {
+    "idea": "In the no-drag model, gravity changes a projectile's vertical motion while horizontal velocity stays constant.",
+    "explanation": "Treat the horizontal and vertical motions separately, but use the same elapsed time. Gravity acts downward even at the highest point. This model assumes a constant gravitational acceleration and ignores air resistance.",
+    "example": {
+      "title": "A horizontal launch",
+      "steps": [
+        "An object leaves a height of 1.22625 metres at 3 metres per second horizontally.",
+        "With gravity 9.81 metres per second squared, it reaches the floor after 0.5 seconds.",
+        "It travels 3 × 0.5 = 1.5 metres horizontally."
+      ]
+    },
+    "equation": "horizontal distance = horizontal velocity × time",
+    "terms": [
+      {
+        "term": "Projectile",
+        "definition": "An object moving after launch under the forces included in the model."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      }
+    ]
+  },
+  "unequal-heights": {
+    "idea": "Find landing time from the actual landing height.",
+    "explanation": "A platform gives a projectile extra distance to fall. Set its height equal to the landing surface and solve for the relevant later time. The equal-height flight-time shortcut does not apply to every launch.",
+    "example": {
+      "title": "Falling from a platform",
+      "steps": [
+        "Launch horizontally from 4.905 metres above the floor at 2 metres per second.",
+        "With gravity 9.81 metres per second squared, the fall lasts 1 second.",
+        "The horizontal range is 2 × 1 = 2 metres."
+      ]
+    },
+    "equation": "fall time = √(2 × height ÷ gravitational acceleration)",
+    "terms": [
+      {
+        "term": "Projectile",
+        "definition": "An object moving after launch."
+      },
+      {
+        "term": "Range",
+        "definition": "Horizontal distance from launch to landing."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "angled-launch": {
+    "idea": "At a fixed launch speed, the angle divides the motion between upward and sideways parts.",
+    "explanation": "More upward motion usually allows more flight time, while less horizontal motion covers ground more slowly. For equal heights and no air resistance, combining these effects gives the stated range formula. Its assumptions matter.",
+    "example": {
+      "title": "A 30-degree launch",
+      "steps": [
+        "Launch at 7 metres per second, at 30°, with gravity rounded to 9.8 metres per second squared.",
+        "For equal start and finish heights, the range is 49 × sin 60° ÷ 9.8.",
+        "It is about 4.33 metres in this ideal model."
+      ]
+    },
+    "equation": "range = speed² × sin(2 × angle) ÷ gravity",
+    "terms": [
+      {
+        "term": "Range",
+        "definition": "Horizontal launch-to-landing distance."
+      },
+      {
+        "term": "Sine",
+        "definition": "A mathematical function giving a direction's vertical share for a unit arrow."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "inertial-frames": {
+    "idea": "In an inertial frame, zero net force means unchanged velocity, not necessarily rest.",
+    "explanation": "An inertial frame is a viewpoint where a freely moving object keeps constant velocity. Observers moving steadily relative to each other can disagree about velocity while agreeing it is not changing. Accelerating viewpoints need extra care.",
+    "example": {
+      "title": "Moving beside a cart",
+      "steps": [
+        "A cart travels at 2 metres per second with zero net force in a laboratory.",
+        "An observer moving alongside sees it at rest.",
+        "Both observers describe zero acceleration."
+      ]
+    },
+    "equation": "zero net force → zero acceleration",
+    "terms": [
+      {
+        "term": "Inertial frame",
+        "definition": "A viewpoint where a free object keeps constant velocity."
+      },
+      {
+        "term": "Net force",
+        "definition": "The directed sum of all forces."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      }
+    ]
+  },
+  "net-force": {
+    "idea": "Add all forces before calculating acceleration.",
+    "explanation": "The net force is their combined directed effect. For constant mass in an inertial frame, divide net force by mass to find acceleration. Opposing forces can partly or completely cancel.",
+    "example": {
+      "title": "Two pushes on a cart",
+      "steps": [
+        "A 3-kilogram cart receives +10 newtons and −4 newtons horizontally.",
+        "The net force is +6 newtons.",
+        "Its acceleration is +6 ÷ 3 = +2 metres per second squared."
+      ]
+    },
+    "equation": "acceleration = net force ÷ mass",
+    "terms": [
+      {
+        "term": "Net force",
+        "definition": "The directed sum of all forces."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      },
+      {
+        "term": "Inertial frame",
+        "definition": "A viewpoint where a free object keeps constant velocity."
+      }
+    ]
+  },
+  "third-law": {
+    "idea": "Interacting objects exert equal and opposite forces on each other.",
+    "explanation": "The two forces act on different objects, so they do not cancel for either object alone. The same force can give different accelerations because acceleration also depends on mass. This lesson uses ordinary classical contacts.",
+    "example": {
+      "title": "Two carts pushing apart",
+      "steps": [
+        "Two carts of 2 and 5 kilograms exert a 10-newton force on each other.",
+        "If these are their only horizontal forces, their acceleration sizes are 10 ÷ 2 = 5 and 10 ÷ 5 = 2 metres per second squared.",
+        "The accelerations point in opposite directions."
+      ]
+    },
+    "equation": "force of A on B = −force of B on A",
+    "terms": [
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      }
+    ]
+  },
+  "choose-system": {
+    "idea": "Choose the object or group you are studying before drawing force arrows.",
+    "explanation": "A free-body diagram shows outside forces acting on that chosen system. Name each force's source. Do not add forces the system exerts on something else as if they acted on itself.",
+    "example": {
+      "title": "A box on a table",
+      "steps": [
+        "Choose only the box as the system.",
+        "Draw Earth's downward pull and the table's upward push on the box.",
+        "The box's downward push on the table belongs on the table's diagram instead."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "System",
+        "definition": "The object or group selected for study."
+      },
+      {
+        "term": "Free-body diagram",
+        "definition": "A drawing of the external forces acting on a chosen system."
+      }
+    ]
+  },
+  "normal-tension": {
+    "idea": "A supporting surface supplies only the push needed by the motion and other forces.",
+    "explanation": "The normal force is perpendicular to the surface. It need not equal the object's weight. For a box staying on a level table without vertical acceleration, upward and downward forces balance.",
+    "example": {
+      "title": "Helping support a box",
+      "steps": [
+        "A 2-kilogram box weighs 20 newtons using rounded gravity of 10 metres per second squared.",
+        "A hand pulls upward with 6 newtons.",
+        "The table supplies the remaining 20 − 6 = 14 newtons while contact remains."
+      ]
+    },
+    "equation": "table force + hand force = weight",
+    "terms": [
+      {
+        "term": "Normal force",
+        "definition": "A surface's perpendicular push."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle."
+      },
+      {
+        "term": "Weight",
+        "definition": "The gravitational force on an object."
+      }
+    ]
+  },
+  "inclines": {
+    "idea": "Gravity has a part down a slope and a part pressing into it.",
+    "explanation": "Choose directions along and perpendicular to the ramp. On a frictionless ramp, the down-slope part causes acceleration. This is a sliding model; a rolling object's rotation needs separate accounting.",
+    "example": {
+      "title": "Sliding on a 30-degree ramp",
+      "steps": [
+        "Use mass 2 kilograms and rounded gravity 10 metres per second squared.",
+        "Down-slope force is 20 × sin 30° = 10 newtons.",
+        "Acceleration is 10 ÷ 2 = 5 metres per second squared."
+      ]
+    },
+    "equation": "down-slope acceleration = gravity × sin(ramp angle)",
+    "terms": [
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      },
+      {
+        "term": "Sine",
+        "definition": "A mathematical function that selects a component for a stated angle."
+      }
+    ]
+  },
+  "linked-bodies": {
+    "idea": "A tight, unstretching rope can make two carts share an acceleration.",
+    "explanation": "For carts in a straight line, fixed separation means matching accelerations. Treat both carts together to find that acceleration. Their internal rope pulls cancel in the combined force sum.",
+    "example": {
+      "title": "Two carts pulled together",
+      "steps": [
+        "A 10-newton force pulls linked carts of 2 and 3 kilograms on a frictionless track.",
+        "Their combined mass is 5 kilograms.",
+        "Both accelerate at 10 ÷ 5 = 2 metres per second squared."
+      ]
+    },
+    "equation": "common acceleration = external force ÷ total mass",
+    "terms": [
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      },
+      {
+        "term": "Internal force",
+        "definition": "A force between parts of the chosen system."
+      }
+    ]
+  },
+  "static-friction": {
+    "idea": "Static friction adjusts to prevent sliding, up to its maximum size.",
+    "explanation": "Static friction acts when the contacting surfaces are not sliding relative to each other. First find the force needed to prevent sliding. Then check whether it fits below the contact's limit.",
+    "example": {
+      "title": "A gentle push",
+      "steps": [
+        "A box's maximum static friction is 8 newtons.",
+        "You push with 5 newtons and it stays still.",
+        "Friction is 5 newtons opposite the push, rather than automatically 8 newtons."
+      ]
+    },
+    "equation": "actual static friction ≤ maximum static friction",
+    "terms": [
+      {
+        "term": "Static friction",
+        "definition": "A contact force preventing relative sliding, within a limit."
+      },
+      {
+        "term": "≤",
+        "definition": "Less than or equal to."
+      }
+    ]
+  },
+  "kinetic-friction": {
+    "idea": "Sliding friction opposes the surfaces' relative sliding.",
+    "explanation": "A simple model multiplies the normal force by a fixed friction coefficient. The coefficient is a unit-free description of that contact. Real friction can vary with conditions, so this rule is an approximation.",
+    "example": {
+      "title": "A sliding box",
+      "steps": [
+        "A 2-kilogram box slides right with normal force 20 newtons and friction coefficient 0.3.",
+        "Friction is 0.3 × 20 = 6 newtons leftward.",
+        "If it is the only horizontal force, acceleration is −3 metres per second squared."
+      ]
+    },
+    "equation": "sliding friction size = coefficient × normal force",
+    "terms": [
+      {
+        "term": "Normal force",
+        "definition": "A surface's perpendicular push."
+      },
+      {
+        "term": "Friction coefficient",
+        "definition": "A unit-free number describing friction in a chosen contact model."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "Meeting at a right angle."
+      }
+    ]
+  },
+  "linear-drag": {
+    "idea": "Linear drag grows in proportion to velocity relative to the surrounding material.",
+    "explanation": "The drag force points against that relative motion. With no other force and a fixed drag coefficient, velocity decreases by the same fraction during equal time intervals. This law fits only some flow conditions.",
+    "example": {
+      "title": "Slowing in a stationary medium",
+      "steps": [
+        "A 2-kilogram object starts at 3 metres per second with drag coefficient 1 kilogram per second.",
+        "Its decay time is 2 ÷ 1 = 2 seconds.",
+        "After that time, its velocity is 3/e ≈ 1.10 metres per second; e is about 2.718."
+      ]
+    },
+    "equation": "drag force = −drag coefficient × relative velocity",
+    "terms": [
+      {
+        "term": "Linear drag",
+        "definition": "A force proportional to and opposite relative velocity."
+      },
+      {
+        "term": "Medium",
+        "definition": "The surrounding material, such as air or water."
+      },
+      {
+        "term": "Decay time",
+        "definition": "Time for the velocity in this drag model to fall to about 36.8% of its starting value."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "terminal-speed": {
+    "idea": "At terminal speed, a falling object's forces balance while it keeps moving.",
+    "explanation": "Gravity pulls downward and drag opposes the fall. When their sizes match, acceleration is zero. The terminal speed depends on the drag law and conditions, not just the object's mass.",
+    "example": {
+      "title": "A linear-drag fall",
+      "steps": [
+        "Use mass 1 kilogram, gravity 10 metres per second squared, and drag coefficient 2 kilograms per second.",
+        "The balance is 10 − 2 × speed = 0.",
+        "Terminal speed is 5 metres per second downward."
+      ]
+    },
+    "equation": "terminal speed = weight ÷ linear-drag coefficient",
+    "terms": [
+      {
+        "term": "Terminal speed",
+        "definition": "A steady falling speed reached when the relevant forces balance."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      },
+      {
+        "term": "Drag",
+        "definition": "Resistance due to motion relative to surrounding material."
+      },
+      {
+        "term": "Weight",
+        "definition": "The downward force due to gravity."
+      }
+    ]
+  },
+  "radial-acceleration": {
+    "idea": "Moving around a circle changes velocity even when speed stays the same.",
+    "explanation": "Velocity includes direction. As that direction turns, acceleration points inward in uniform circular motion. Its size is speed squared divided by the circle's radius.",
+    "example": {
+      "title": "Turning at constant speed",
+      "steps": [
+        "A cart moves at 3 metres per second around a circle of radius 1.5 metres.",
+        "Its inward acceleration is 3² ÷ 1.5 = 6 metres per second squared.",
+        "Its speed stays constant while its direction keeps changing."
+      ]
+    },
+    "equation": "inward acceleration = speed² ÷ radius",
+    "terms": [
+      {
+        "term": "Velocity",
+        "definition": "Rate and direction of position change."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      },
+      {
+        "term": "Radius",
+        "definition": "Distance from a circle's centre to its edge."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "radial-force-budget": {
+    "idea": "The real forces must supply the inward total required for circular motion.",
+    "explanation": "“Centripetal force” names this inward requirement, not a new force to add. Identify which actual forces point inward and add their components. If the total is wrong, the assumed circle will not occur.",
+    "example": {
+      "title": "A puck on a string",
+      "steps": [
+        "A 0.5-kilogram puck moves at 4 metres per second in a 2-metre-radius circle on a frictionless horizontal surface.",
+        "The horizontal string supplies all the inward force.",
+        "Its tension is 0.5 × 4² ÷ 2 = 4 newtons."
+      ]
+    },
+    "equation": "required inward force = mass × speed² ÷ radius",
+    "terms": [
+      {
+        "term": "Centripetal",
+        "definition": "Directed toward the centre."
+      },
+      {
+        "term": "Tension",
+        "definition": "A pulling force along a tight string or rope."
+      },
+      {
+        "term": "Component",
+        "definition": "A force's contribution along a chosen direction."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "nonuniform-circular": {
+    "idea": "On a fixed circle, acceleration can change both direction and speed.",
+    "explanation": "The inward part turns the velocity; the tangential part changes speed. These parts meet at a right angle, so combine their sizes using the right-triangle rule. This description excludes an instant of reversed motion.",
+    "example": {
+      "title": "Two acceleration parts",
+      "steps": [
+        "At radius 2 metres and speed 4 metres per second, inward acceleration is 8 metres per second squared.",
+        "Suppose the tangential acceleration is 6 metres per second squared.",
+        "The total size is √(8² + 6²) = 10 metres per second squared."
+      ]
+    },
+    "equation": "total acceleration size = √(inward part² + tangential part²)",
+    "terms": [
+      {
+        "term": "Tangential",
+        "definition": "Along the direction that just touches the circular path."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "work-dot-product": {
+    "idea": "Only a force's part along a displacement contributes to mechanical work.",
+    "explanation": "Work is energy transferred by a force as its point of action moves. A force against the motion does negative work; a perpendicular force does none. For a constant force, multiply matching components and add.",
+    "example": {
+      "title": "A slanted displacement",
+      "steps": [
+        "A force has components (6,−2) newtons, and the displacement is (3,1) metres.",
+        "The work is 6 × 3 + (−2) × 1.",
+        "The result is 16 joules."
+      ]
+    },
+    "equation": "work = 6 N × 3 m − 2 N × 1 m = 16 J",
+    "terms": [
+      {
+        "term": "Work",
+        "definition": "Energy transferred by a force through displacement."
+      },
+      {
+        "term": "Displacement",
+        "definition": "Directed start-to-finish change in position."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle."
+      }
+    ]
+  },
+  "variable-force-work": {
+    "idea": "When force changes with position, add its work along the path.",
+    "explanation": "A short move contributes force times that small displacement. The integral adds those pieces continuously. On a force–position graph, this is signed area; the final force times the whole distance is generally wrong.",
+    "example": {
+      "title": "A steadily growing force",
+      "steps": [
+        "A force rises from 0 to 6 newtons while position changes from 0 to 2 metres.",
+        "The force–position graph is a triangle.",
+        "Its area is ½ × 2 × 6 = 6 joules of work."
+      ]
+    },
+    "equation": "work = ½ × 2 m × 6 N = 6 J",
+    "terms": [
+      {
+        "term": "Integral",
+        "definition": "A continuous sum of small contributions."
+      },
+      {
+        "term": "Work",
+        "definition": "Energy transferred by a force through displacement."
+      }
+    ]
+  },
+  "kinetic-energy": {
+    "idea": "Net work equals the change in kinetic energy.",
+    "explanation": "Kinetic energy is energy of motion. For a constant-mass object at ordinary speeds, it is half the mass times speed squared. Combine the work of every relevant force, keeping negative contributions.",
+    "example": {
+      "title": "Speeding up a cart",
+      "steps": [
+        "A 2-kilogram cart speeds up from 1 to 3 metres per second.",
+        "Its kinetic energy rises from 1 joule to 9 joules.",
+        "The net work is 9 − 1 = 8 joules."
+      ]
+    },
+    "equation": "net work = final kinetic energy − initial kinetic energy",
+    "terms": [
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy associated with motion."
+      },
+      {
+        "term": "Net work",
+        "definition": "The sum of work done by all relevant forces."
+      }
+    ]
+  },
+  "power": {
+    "idea": "Power tells us how quickly energy is transferred.",
+    "explanation": "Average power is transferred energy divided by elapsed time. One watt means one joule per second. For a steady force along motion, multiply force by speed to find its mechanical power.",
+    "example": {
+      "title": "A model lift",
+      "steps": [
+        "A lift raises a 2-kilogram mass steadily at 0.4 metres per second, using gravity rounded to 10 metres per second squared.",
+        "It supplies 20 newtons upward.",
+        "Its useful mechanical power is 20 × 0.4 = 8 watts."
+      ]
+    },
+    "equation": "power = force × speed = 8 W",
+    "terms": [
+      {
+        "term": "Power",
+        "definition": "Energy transferred per unit time."
+      },
+      {
+        "term": "Watt",
+        "definition": "One joule per second."
+      }
+    ]
+  },
+  "conservative-force": {
+    "idea": "A conservative force's work depends on the endpoints, not the route.",
+    "explanation": "Potential energy records energy associated with position in that interaction. In a fixed one-dimensional model, force points toward decreasing potential energy. Its value is minus the potential's local slope.",
+    "example": {
+      "title": "A curved potential",
+      "steps": [
+        "Let U(x) = (3 J/m²)x², where x is position.",
+        "The force is −(6 N/m)x.",
+        "At x = 2 metres, it is −12 newtons, toward lower potential energy."
+      ]
+    },
+    "equation": "force = −potential-energy slope",
+    "terms": [
+      {
+        "term": "Conservative force",
+        "definition": "A force whose work depends only on endpoints within the stated model."
+      },
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with configuration or position in an interaction."
+      },
+      {
+        "term": "Slope",
+        "definition": "Change per small input change."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "energy-diagrams": {
+    "idea": "An energy diagram shows where classical motion has enough energy to occur.",
+    "explanation": "Subtract potential energy from total mechanical energy to find kinetic energy. Kinetic energy cannot be negative. Where it reaches zero, the object may turn around even though the force is not zero.",
+    "example": {
+      "title": "Finding the ends of a motion",
+      "steps": [
+        "Let potential energy be (2 J/m²)x² and total energy be 8 joules.",
+        "At the turning points, 2x² = 8 in SI units.",
+        "The turning positions are x = −2 and +2 metres."
+      ]
+    },
+    "equation": "kinetic energy = total energy − potential energy",
+    "terms": [
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      },
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with position in an interaction."
+      },
+      {
+        "term": "Turning point",
+        "definition": "A position where motion reverses with zero speed for an instant."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "spring-gravity-potentials": {
+    "idea": "A compressed spring can store positive energy just like a stretched spring.",
+    "explanation": "For an ideal linear spring, stored energy depends on displacement squared. Squaring removes the stretch-or-compression sign. The force still points back toward the relaxed length.",
+    "example": {
+      "title": "A compressed spring",
+      "steps": [
+        "A spring has stiffness 120 newtons per metre and compression x = −0.15 metres.",
+        "Its energy is ½ × 120 × 0.15² = 1.35 joules.",
+        "Its force points toward the relaxed length."
+      ]
+    },
+    "equation": "spring energy = ½ × stiffness × displacement²",
+    "terms": [
+      {
+        "term": "Stiffness",
+        "definition": "Force increase per extra metre of spring displacement in the model."
+      },
+      {
+        "term": "Displacement",
+        "definition": "Change from the relaxed position."
+      },
+      {
+        "term": "Linear spring",
+        "definition": "A spring model whose force is proportional to its displacement."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "nonconservative-energy": {
+    "idea": "Mechanical energy can decrease while total energy remains accounted for.",
+    "explanation": "Mechanical energy combines motion energy and potential energy. Friction can transfer part of it into heating or deformation. Specify the objects and energy forms included before deciding what is conserved.",
+    "example": {
+      "title": "A block losing motion energy",
+      "steps": [
+        "A block starts with 8 joules of kinetic energy on a level floor.",
+        "Friction does −3 joules of work.",
+        "It finishes with 5 joules of kinetic energy; the missing mechanical energy has gone to other forms."
+      ]
+    },
+    "equation": "final kinetic energy = 8 J − 3 J = 5 J",
+    "terms": [
+      {
+        "term": "Mechanical energy",
+        "definition": "Kinetic plus potential energy."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      },
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with configuration in an interaction."
+      }
+    ]
+  },
+  "momentum-vector": {
+    "idea": "Momentum is mass times velocity, so it includes direction.",
+    "explanation": "Multiply every velocity component by the same mass. Opposite directions give opposite momentum signs. Momentum differs from kinetic energy, which depends on speed squared rather than direction.",
+    "example": {
+      "title": "A two-direction momentum",
+      "steps": [
+        "A 0.6-kilogram object has velocity components (+3,−4) metres per second.",
+        "Multiply both by 0.6.",
+        "Its momentum is (+1.8,−2.4) kilogram-metres per second."
+      ]
+    },
+    "equation": "momentum = mass × velocity",
+    "terms": [
+      {
+        "term": "Momentum",
+        "definition": "Mass times velocity in classical mechanics."
+      },
+      {
+        "term": "Component",
+        "definition": "A quantity's part along a chosen direction."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with direction."
+      }
+    ]
+  },
+  "impulse": {
+    "idea": "Impulse is the momentum change produced while a net force acts.",
+    "explanation": "Add the force's contributions over time, keeping their signs. Average force is impulse divided by duration. It is not necessarily the peak force reached during the interaction.",
+    "example": {
+      "title": "A change in velocity",
+      "steps": [
+        "A 0.4-kilogram object changes velocity from +1 to +4 metres per second.",
+        "The impulse is 0.4 × (4 − 1) = +1.2 newton-seconds.",
+        "Over 0.3 seconds, the average net force is +4 newtons."
+      ]
+    },
+    "equation": "impulse = mass × velocity change",
+    "terms": [
+      {
+        "term": "Impulse",
+        "definition": "Net force accumulated over time, equal to momentum change."
+      },
+      {
+        "term": "Momentum",
+        "definition": "Mass times velocity in classical mechanics."
+      },
+      {
+        "term": "Peak",
+        "definition": "The largest value reached."
+      }
+    ]
+  },
+  "isolated-momentum": {
+    "idea": "Total momentum stays unchanged when net external impulse is zero.",
+    "explanation": "Choose the system's objects and the time interval. Their mutual forces cancel in the total momentum balance. Outside forces can still change the total, unless their combined impulse is negligible.",
+    "example": {
+      "title": "Two carts pushing apart",
+      "steps": [
+        "Stationary carts of 0.3 and 0.9 kilograms push apart with negligible outside horizontal impulse.",
+        "If the light cart moves at +1.8 metres per second, its momentum is +0.54 kilogram-metres per second.",
+        "The heavy cart needs the opposite momentum, giving velocity −0.6 metres per second."
+      ]
+    },
+    "equation": "0.3 × 1.8 + 0.9 × (−0.6) = 0",
+    "terms": [
+      {
+        "term": "Momentum",
+        "definition": "Mass times velocity."
+      },
+      {
+        "term": "Impulse",
+        "definition": "Force accumulated over time."
+      },
+      {
+        "term": "System",
+        "definition": "The objects chosen for study."
+      }
+    ]
+  },
+  "centre-mass": {
+    "idea": "The centre of mass is a position average that counts heavier objects more strongly.",
+    "explanation": "Multiply each position by its mass, add, then divide by total mass. This average can lie in an empty gap. Internal rearrangement alone cannot accelerate it; the total outside force determines that acceleration.",
+    "example": {
+      "title": "Two unequal masses",
+      "steps": [
+        "Put 1 kilogram at −2 metres and 3 kilograms at +2 metres.",
+        "Their centre is [1 × (−2) + 3 × 2] ÷ 4.",
+        "The centre of mass is at +1 metre, closer to the heavier object."
+      ]
+    },
+    "equation": "centre of mass = mass-weighted position sum ÷ total mass",
+    "terms": [
+      {
+        "term": "Centre of mass",
+        "definition": "The mass-weighted average position of a system."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      }
+    ]
+  },
+  "collision-types": {
+    "idea": "Momentum can be conserved in a collision even when kinetic energy decreases.",
+    "explanation": "Check outside impulse before using momentum conservation. An elastic collision keeps kinetic energy unchanged; a perfectly inelastic collision makes the bodies stick together. Lost motion energy goes into other forms rather than disappearing.",
+    "example": {
+      "title": "Two carts stick",
+      "steps": [
+        "A 0.8-kilogram cart at 3 metres per second sticks to a stationary 0.4-kilogram cart.",
+        "Their shared speed is 2.4 ÷ 1.2 = 2 metres per second when outside impulse is negligible.",
+        "Kinetic energy falls from 3.6 to 2.4 joules."
+      ]
+    },
+    "equation": "shared velocity = total momentum ÷ total mass",
+    "terms": [
+      {
+        "term": "Momentum",
+        "definition": "Mass times velocity."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      },
+      {
+        "term": "Impulse",
+        "definition": "Force accumulated over time."
+      }
+    ]
+  },
+  "elastic-collisions": {
+    "idea": "An ideal elastic collision conserves both momentum and kinetic energy.",
+    "explanation": "Use both balances and choose the solution describing bodies separating after impact. Equal masses exchange velocities in the one-dimensional case with one initially at rest. This is not a general rule for all collisions.",
+    "example": {
+      "title": "Equal carts collide",
+      "steps": [
+        "Two 0.7-kilogram carts collide along a line; the first approaches at 2.4 metres per second and the second is still.",
+        "For an isolated, elastic completed collision, the first stops and the second leaves at 2.4 metres per second.",
+        "Both total momentum and kinetic energy match their starting values."
+      ]
+    },
+    "equation": "equal masses, stationary target: final velocities = 0 and initial incoming velocity",
+    "terms": [
+      {
+        "term": "Elastic collision",
+        "definition": "A collision that preserves total kinetic energy."
+      },
+      {
+        "term": "Momentum",
+        "definition": "Mass times velocity."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      }
+    ]
+  },
+  "two-d-collisions": {
+    "idea": "Conserve momentum separately in each direction when outside impulse is negligible.",
+    "explanation": "A single speed balance misses direction. For two bodies that stick, add their momenta in each direction and divide each total by combined mass. Real collisions may also require rotation information.",
+    "example": {
+      "title": "Two pucks stick",
+      "steps": [
+        "A 0.5-kilogram puck moves at (4,0) metres per second and a 1.5-kilogram puck at (0,2).",
+        "Total momentum is (2,3) kilogram-metres per second and mass is 2 kilograms.",
+        "Their shared velocity is (1,1.5) metres per second."
+      ]
+    },
+    "equation": "shared velocity components = momentum components ÷ total mass",
+    "terms": [
+      {
+        "term": "Momentum",
+        "definition": "Mass times velocity."
+      },
+      {
+        "term": "Component",
+        "definition": "A quantity's part along a chosen direction."
+      },
+      {
+        "term": "Impulse",
+        "definition": "Force accumulated over time."
+      }
+    ]
+  },
+  "angular-kinematics": {
+    "idea": "Angular acceleration tells how quickly a turning rate changes.",
+    "explanation": "Choose a turning direction as positive. With constant angular acceleration, add the same angular-velocity change each second. Use radians, an angle unit, when linking turning rate to ordinary speed.",
+    "example": {
+      "title": "A wheel speeds up",
+      "steps": [
+        "A wheel starts at +1 radian per second and gains +0.5 radians per second each second.",
+        "After 4 seconds, its angular velocity is 1 + 0.5 × 4 = +3 radians per second."
+      ]
+    },
+    "equation": "angular velocity = initial angular velocity + angular acceleration × time",
+    "terms": [
+      {
+        "term": "Angular velocity",
+        "definition": "Rate and direction of turning."
+      },
+      {
+        "term": "Angular acceleration",
+        "definition": "Rate of angular-velocity change."
+      },
+      {
+        "term": "Radian",
+        "definition": "An angle unit; one full turn is 2π radians."
+      },
+      {
+        "term": "π",
+        "definition": "A number about 3.1416."
+      }
+    ]
+  },
+  "moment-inertia": {
+    "idea": "Mass farther from a turning axis contributes more to moment of inertia.",
+    "explanation": "Moment of inertia measures how mass is spread around one specified axis. Multiply each mass by its distance from the axis squared and add. The chosen axis is essential to the answer.",
+    "example": {
+      "title": "Three attached masses",
+      "steps": [
+        "Place 0.2 kilogram at radius 0.1 metre, 0.3 kilogram at 0.2 metre, and 0.5 kilogram on the axis.",
+        "Ignoring support mass, the sum is 0.2 × 0.1² + 0.3 × 0.2².",
+        "The moment of inertia is 0.014 kilogram-square-metres."
+      ]
+    },
+    "equation": "moment of inertia = sum of mass × distance-from-axis²",
+    "terms": [
+      {
+        "term": "Moment of inertia",
+        "definition": "A measure of mass distribution about a turning axis."
+      },
+      {
+        "term": "Axis",
+        "definition": "The line about which something turns."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "parallel-axis": {
+    "idea": "Moving to a parallel axis away from the centre of mass increases moment of inertia.",
+    "explanation": "Start with an axis through the centre of mass. Add total mass times the squared distance to the new, parallel axis. This rule does not apply to axes pointing in different directions.",
+    "example": {
+      "title": "Shifting an axis",
+      "steps": [
+        "A 2-kilogram object has centre-axis inertia 0.04 kilogram-square-metres.",
+        "A parallel axis lies 0.3 metre away.",
+        "The new inertia is 0.04 + 2 × 0.3² = 0.22 kilogram-square-metres."
+      ]
+    },
+    "equation": "new inertia = centre-axis inertia + mass × separation²",
+    "terms": [
+      {
+        "term": "Moment of inertia",
+        "definition": "A measure of mass distribution around a turning axis."
+      },
+      {
+        "term": "Centre of mass",
+        "definition": "Mass-weighted average position."
+      },
+      {
+        "term": "Parallel",
+        "definition": "Pointing in the same direction without meeting."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "rolling-energy": {
+    "idea": "A rolling body has energy from both moving forward and turning.",
+    "explanation": "For no-slip rolling on a stationary floor, centre speed equals angular speed times radius. Count the centre's motion energy and the rotation about the centre separately, then add. Sliding needs a different relation.",
+    "example": {
+      "title": "One rolling wheel",
+      "steps": [
+        "A 2-kilogram wheel with radius 0.2 metre and centre inertia 0.04 kilogram-square-metres rolls at 1 metre per second.",
+        "Its angular speed is 5 radians per second, giving 1 joule of forward-motion energy and 0.5 joule of rotational energy.",
+        "Total kinetic energy is 1.5 joules."
+      ]
+    },
+    "equation": "total kinetic energy = forward-motion energy + rotational energy",
+    "terms": [
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      },
+      {
+        "term": "Angular speed",
+        "definition": "Turning angle per second."
+      },
+      {
+        "term": "Moment of inertia",
+        "definition": "A measure of mass distribution about an axis."
+      }
+    ]
+  },
+  "torque-vector": {
+    "idea": "A force's turning effect depends on where it acts relative to a chosen point.",
+    "explanation": "Torque means this turning effect. Its size is force times the perpendicular distance to the force's line. A force whose line passes through the chosen point has zero torque there.",
+    "example": {
+      "title": "A force with a lever arm",
+      "steps": [
+        "A 15-newton upward force acts 0.40 metre right of the chosen point.",
+        "The lever arm is 0.40 metre, so torque size is 15 × 0.40 = 6 newton-metres.",
+        "Its direction indicates counterclockwise turning in this view."
+      ]
+    },
+    "equation": "torque size = force × perpendicular lever arm",
+    "terms": [
+      {
+        "term": "Torque",
+        "definition": "A force's turning effect about a chosen point."
+      },
+      {
+        "term": "Lever arm",
+        "definition": "Shortest distance from that point to the force's line."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle."
+      }
+    ]
+  },
+  "rotational-dynamics": {
+    "idea": "Net torque changes a rotor's turning rate rather than directly setting that rate.",
+    "explanation": "For a rigid body turning about a fixed axis with constant inertia, divide net torque by inertia. The result is angular acceleration. Zero torque means unchanged turning rate, not necessarily a stopped rotor.",
+    "example": {
+      "title": "A driven rotor",
+      "steps": [
+        "A rotor has inertia 0.60 kilogram-square-metres and torques +2.4 and −0.6 newton-metres.",
+        "Net torque is +1.8 newton-metres.",
+        "Its angular acceleration is 1.8 ÷ 0.60 = 3 radians per second squared."
+      ]
+    },
+    "equation": "angular acceleration = net torque ÷ moment of inertia",
+    "terms": [
+      {
+        "term": "Torque",
+        "definition": "Turning effect about an axis."
+      },
+      {
+        "term": "Moment of inertia",
+        "definition": "A measure of mass distribution around that axis."
+      },
+      {
+        "term": "Angular acceleration",
+        "definition": "Rate of change of angular velocity."
+      }
+    ]
+  },
+  "static-equilibrium": {
+    "idea": "A rigid object stays at rest only when forces and turning effects both balance.",
+    "explanation": "Force balance prevents acceleration of its centre of mass. Torque balance prevents a change in its rotation. Check both in a nonaccelerating frame, with contacts able to supply the calculated forces.",
+    "example": {
+      "title": "Supporting a bar",
+      "steps": [
+        "A weightless 3-metre bar has an 18-newton downward load 1 metre from its left end.",
+        "Balancing torque about the left end gives right support force 18 × 1 ÷ 3 = 6 newtons.",
+        "Force balance then requires 12 newtons from the left support."
+      ]
+    },
+    "equation": "left support + right support = load",
+    "terms": [
+      {
+        "term": "Torque",
+        "definition": "A force's turning effect."
+      },
+      {
+        "term": "Centre of mass",
+        "definition": "Mass-weighted average position."
+      },
+      {
+        "term": "Rigid",
+        "definition": "Keeping the same shape in the model."
+      }
+    ]
+  },
+  "angular-momentum": {
+    "idea": "A particle can have angular momentum about a point without travelling in a circle.",
+    "explanation": "Angular momentum combines its momentum with its position relative to that point. Motion whose line passes through the point has zero angular momentum about it. Changing the reference point can change the answer.",
+    "example": {
+      "title": "A particle moving past a point",
+      "steps": [
+        "A 0.5-kilogram particle is 2 metres right of the origin and moves upward at 3 metres per second.",
+        "Its upward momentum is 1.5 kilogram-metres per second.",
+        "Its angular momentum points out of the page with size 2 × 1.5 = 3 kilogram-square-metres per second."
+      ]
+    },
+    "equation": "angular-momentum size = perpendicular distance × momentum",
+    "terms": [
+      {
+        "term": "Momentum",
+        "definition": "Mass times velocity."
+      },
+      {
+        "term": "Angular momentum",
+        "definition": "A directed measure of motion about a chosen point."
+      },
+      {
+        "term": "Origin",
+        "definition": "The chosen reference point."
+      }
+    ]
+  },
+  "angular-momentum-conservation": {
+    "idea": "Angular momentum stays constant when total external torque about the chosen fixed origin is zero.",
+    "explanation": "A torque is a turning effect from a force. Add all outside torques for the selected system. Even a small remaining torque can accumulate a significant angular-momentum change over time.",
+    "example": {
+      "title": "A rotor feels resistance",
+      "steps": [
+        "A rotor begins with axial angular momentum 4 kilogram-square-metres per second.",
+        "A resisting torque of −0.10 newton-metres acts for 3 seconds.",
+        "Its final angular momentum is 4 − 0.10 × 3 = 3.70 kilogram-square-metres per second."
+      ]
+    },
+    "equation": "angular-momentum change = constant external torque × time",
+    "terms": [
+      {
+        "term": "Angular momentum",
+        "definition": "A directed measure of motion about a chosen point or axis."
+      },
+      {
+        "term": "External",
+        "definition": "From outside the selected system."
+      },
+      {
+        "term": "Origin",
+        "definition": "The reference point for measuring turning effects."
+      }
+    ]
+  },
+  "changing-inertia": {
+    "idea": "Moving mass inward can increase spin speed without increasing angular momentum.",
+    "explanation": "With no outside axial torque, inertia times angular velocity stays constant. Compare settled starting and ending shapes, with no relative radial motion. Increased rotational energy comes from internal work; it is not free energy.",
+    "example": {
+      "title": "A rotor pulls its parts inward",
+      "steps": [
+        "Its inertia changes from 0.80 to 0.40 kilogram-square-metres, starting at 3 radians per second.",
+        "Conserving angular momentum gives final speed 0.80 × 3 ÷ 0.40 = 6 radians per second.",
+        "Its rotational energy rises by 3.6 joules, supplied internally in this ideal model."
+      ]
+    },
+    "equation": "initial inertia × initial spin rate = final inertia × final spin rate",
+    "terms": [
+      {
+        "term": "Inertia",
+        "definition": "Here, moment of inertia: mass distribution about the turning axis."
+      },
+      {
+        "term": "Angular momentum",
+        "definition": "A directed measure of rotational motion."
+      },
+      {
+        "term": "Torque",
+        "definition": "A turning effect from a force."
+      },
+      {
+        "term": "Radial",
+        "definition": "Toward or away from the turning axis."
+      }
+    ]
+  },
+  "inverse-square-gravity": {
+    "idea": "Outside a spherical source, Newtonian gravity weakens with centre distance squared.",
+    "explanation": "Use distance from the source's centre, not height above its surface. Dividing the force by the small object's mass gives its acceleration. This model assumes weak-field classical gravity and the stated spherical source.",
+    "example": {
+      "title": "Gravity in an invented model",
+      "steps": [
+        "Let the source's gravitational parameter be 8 × 10¹² cubic metres per second squared.",
+        "At centre distance 2 × 10⁶ metres, acceleration is (8 × 10¹²) ÷ (2 × 10⁶)².",
+        "It is 2 metres per second squared inward."
+      ]
+    },
+    "equation": "gravitational acceleration = source parameter ÷ centre distance²",
+    "terms": [
+      {
+        "term": "Gravitational parameter",
+        "definition": "The gravitational constant multiplied by the source's mass."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "gravitational-potential-escape": {
+    "idea": "The ideal escape threshold has just enough kinetic energy to balance negative gravitational potential energy.",
+    "explanation": "Choose potential energy zero at infinitely large separation. At the escape threshold, speed approaches zero as distance grows without bound. The model excludes drag, other bodies, further driving, and paths that hit the source.",
+    "example": {
+      "title": "An escape-speed estimate",
+      "steps": [
+        "Use gravitational parameter 8 × 10¹² cubic metres per second squared and starting centre distance 2 × 10⁶ metres.",
+        "The threshold speed is √[2 × (8 × 10¹²) ÷ (2 × 10⁶)].",
+        "It is about 2,828 metres per second in this ideal model."
+      ]
+    },
+    "equation": "escape speed = √(2 × gravitational parameter ÷ centre distance)",
+    "terms": [
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      },
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with position in an interaction."
+      },
+      {
+        "term": "Gravitational parameter",
+        "definition": "Gravitational constant times source mass."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "circular-orbits": {
+    "idea": "A circular orbit is free fall with exactly the required inward acceleration.",
+    "explanation": "Gravity keeps turning the velocity instead of allowing a straight path. Set gravity's inward acceleration equal to speed squared divided by radius. This assumes an isolated spherical source much heavier than the orbiting object.",
+    "example": {
+      "title": "One model orbit",
+      "steps": [
+        "Use gravitational parameter 8 × 10¹² cubic metres per second squared and orbital radius 2 × 10⁶ metres.",
+        "Circular speed is the square root of their ratio.",
+        "The speed is 2,000 metres per second, while gravity still accelerates the object inward."
+      ]
+    },
+    "equation": "circular speed = √(gravitational parameter ÷ radius)",
+    "terms": [
+      {
+        "term": "Free fall",
+        "definition": "Motion under gravity alone."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "Rate of velocity change."
+      },
+      {
+        "term": "Gravitational parameter",
+        "definition": "Gravitational constant times source mass."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "orbital-energy": {
+    "idea": "A circular gravitational orbit has negative total energy when potential is zero at infinity.",
+    "explanation": "Its positive motion energy is half the size of its negative potential energy. Adding them leaves a negative total. This describes a bound ideal orbit, but does not guarantee it avoids the source's surface.",
+    "example": {
+      "title": "Adding orbital energies",
+      "steps": [
+        "A model orbit has kinetic energy 6 million joules and potential energy −12 million joules.",
+        "Their sum is −6 million joules.",
+        "The object cannot escape arbitrarily far without added energy under this isolated gravity model."
+      ]
+    },
+    "equation": "total energy = 6 MJ − 12 MJ = −6 MJ",
+    "terms": [
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      },
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with position in gravity."
+      },
+      {
+        "term": "Bound",
+        "definition": "Unable to reach arbitrarily large distance under the model alone."
+      },
+      {
+        "term": "MJ",
+        "definition": "One million joules."
+      }
+    ]
+  },
+  "model-selection": {
+    "idea": "Choose a balance law from the event's conditions and the unknown you need.",
+    "explanation": "Forces help find acceleration. Momentum links a collision's start and finish when outside impulse is negligible. Energy gives another account, but sticking can turn kinetic energy into heat or deformation.",
+    "example": {
+      "title": "Choosing a rule for sticking carts",
+      "steps": [
+        "A 0.40-kilogram cart at 3 metres per second sticks to a stationary 0.20-kilogram cart.",
+        "Negligible outside horizontal impulse allows momentum conservation: shared speed is 1.2 ÷ 0.60 = 2 metres per second.",
+        "Kinetic energy decreases, so conserving it would be the wrong rule."
+      ]
+    },
+    "equation": "shared velocity = initial total momentum ÷ combined mass",
+    "terms": [
+      {
+        "term": "Momentum",
+        "definition": "Mass times velocity."
+      },
+      {
+        "term": "Impulse",
+        "definition": "Force accumulated over time."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      }
+    ]
+  },
+  "mechanics-capstone": {
+    "idea": "Different stages of one event can need different balance laws.",
+    "explanation": "Separate the push, sticking collision, and spring compression. The collision can conserve momentum while losing kinetic energy. Only the energy remaining after sticking is available to compress the ideal spring.",
+    "example": {
+      "title": "A cart reaches a spring after sticking",
+      "steps": [
+        "A 0.50-kilogram cart reaches 4 metres per second, then sticks to a stationary 1.5-kilogram cart with negligible outside impulse.",
+        "Their shared speed is 1 metre per second, leaving 1 joule of kinetic energy.",
+        "On a lossless track, a 50-newton-per-metre spring stores that energy at compression 0.20 metre."
+      ]
+    },
+    "equation": "½ × 50 N/m × (0.20 m)² = 1 J",
+    "terms": [
+      {
+        "term": "Momentum",
+        "definition": "Mass times velocity."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      },
+      {
+        "term": "Impulse",
+        "definition": "Force accumulated over time."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "mechanics-assessment": {
+    "idea": "Recheck the governing balance whenever a rotor's physical conditions change.",
+    "explanation": "An outside torque changes angular momentum during the drive. After that torque is removed, balanced inward rearrangement can preserve axial angular momentum while increasing spin speed. Compare endpoints without relative radial motion and count the internal energy supplied.",
+    "example": {
+      "title": "Driving then rearranging one rotor",
+      "steps": [
+        "A rotor of inertia 0.40 kilogram-square-metres receives 0.60 newton-metres for 2 seconds from rest, reaching 3 radians per second.",
+        "With external torque removed, its inertia falls to 0.20, so its final spin rate is 6 radians per second.",
+        "Its rotational energy rises from 1.8 to 3.6 joules during rearrangement, supplied by internal work."
+      ]
+    },
+    "equation": "0.40 × 3 = 0.20 × 6",
+    "terms": [
+      {
+        "term": "Torque",
+        "definition": "A turning effect from a force."
+      },
+      {
+        "term": "Inertia",
+        "definition": "Here, mass distribution about the turning axis."
+      },
+      {
+        "term": "Angular momentum",
+        "definition": "A directed measure of motion about an axis."
+      },
+      {
+        "term": "Axial",
+        "definition": "Along the selected turning axis."
+      },
+      {
+        "term": "Radial",
+        "definition": "Toward or away from that axis."
+      }
+    ]
+  }
+}

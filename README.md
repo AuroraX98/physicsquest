@@ -1,43 +1,49 @@
 # PhysicsQuest
 
-[Open the app online](https://physicsquest.aurorax.chatgpt.site)
+Learn physics one small idea at a time.
 
-Learn physics through 794 guided lessons, worked examples, numerical practice, and interactive models—from foundations to quantum physics.
+**[Open PhysicsQuest](https://physicsquest.aurorax.chatgpt.site)** — no download needed.
 
-## Version 0.9.0
+Each lesson explains one idea in plain words and shows one example. Equations explain what their letters and signs mean. Pictures help you see what is happening. Some lessons let you move a slider and see what changes.
 
-- 15 introductory courses, 794 lessons, 554 numerical practice parts, and 41 interactive model types.
-- Original scientific diagrams, explicit prerequisites, and model limitations.
-- Optional browser-local progress and JSON import/export; no application backend or analytics.
-- Buildless HTML, CSS, and JavaScript with no third-party runtime dependencies.
+## What you can learn
 
-This is a bounded introductory learning studio, not a complete university curriculum or qualification. Scientific models are educational approximations, not safety-engineering tools.
+- **1,083 lessons in 23 courses**, from measurements and motion to quantum physics and advanced topics.
+- **209 example pictures** and **43 lessons with interactive models**.
+- Short questions and number practice to check your understanding.
+- Preparation paths to help you learn the basics you need first.
 
-## Run
+On a wide screen, pictures sit beside the explanation. On a phone, they sit below it. Extra details stay tucked away until you open them.
 
-Serve `dist/` with any static HTTP server, for example:
+## Your progress
 
-```sh
-python3 -m http.server 8000 --directory dist
-```
+Saving is optional. When you turn it on, your progress and notes stay in your browser. You can export a backup. They do not automatically move between devices.
 
-Open `http://localhost:8000`. The authored curriculum is in `dist/content/*.json`.
+## Latest update: 0.17.2
 
-Use an HTTP server rather than opening `index.html` directly: JavaScript modules and curriculum fetches need HTTP. The downloaded app can run from a local server without an internet connection; external reference links require internet. The hosted app does not install an offline cache or service worker, so full offline availability of the hosted site is not promised. Progress is browser-local, not synchronized between devices; export a backup before clearing browser data.
+Clearer lessons, better picture layouts, and less repetition. Explore appears when it adds a useful model or diagram. **288 automated tests pass.** See the [release notes](docs/RELEASE-0.17.2.md).
 
-## Verify
+## Run it on your computer
 
-With Node.js installed:
+With Python installed, run this inside the project folder:
 
-```sh
+~~~sh
+python -m http.server 8000 --directory dist
+~~~
+
+Then open [localhost:8000](http://localhost:8000). Keep the terminal open while using the app.
+
+To check the code with Node.js:
+
+~~~sh
 npm run check
 npm test
-```
+~~~
 
-Tests use Node's built-in test runner and require no dependency installation.
+No package installation or build step is needed.
 
-## Authorship and licensing
+## About the content
 
-See [the provenance notice](docs/PROVENANCE.md). The original app code is available under the [MIT license](LICENSE). Lesson text, exercises, worked examples, and curriculum data are excluded from that grant and have no additional reuse license. See the license for its exact scope.
+These courses teach a defined set of topics; they are not a university qualification. The app is not affiliated with MIT or any university.
 
-Standard science and factual scope references are distinguished from independently authored teaching content. This project is not affiliated with or endorsed by MIT or any university.
+The original app code uses the [MIT license](LICENSE), within its stated scope. Lesson text, exercises and other teaching content are outside that license. Read the [authorship notes](docs/PROVENANCE.md) for details.

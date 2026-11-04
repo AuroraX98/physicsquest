@@ -11,6 +11,6 @@ export function parseProgressImport(raw,known){
  if(!data||data.app!=='PhysicsQuest'||data.version!==1||!Array.isArray(data.completed)||data.completed.some(x=>typeof x!=='string'))throw new Error('Not a supported PhysicsQuest progress export.');
  return {completed:filterIds(data.completed,known),unknown:data.completed.filter(x=>!known.has(x)).length};
 }
-export function createProgressExport(completed,now=new Date().toISOString()){return {app:'PhysicsQuest',version:1,completed:[...new Set(completed)],exportedAt:now};}
+export function createProgressExport(completed,now=new Date().toISOString(),study){return {app:'PhysicsQuest',version:1,completed:[...new Set(completed)],exportedAt:now,...(study?{study}:{})};}
 export function readProgress(storage,known){try{return {...parseSavedProgress(storage.getItem(PROGRESS_KEY),known),available:true};}catch{return {enabled:false,completed:[],available:false};}}
-export function saveProgress(storage,completed,enabled){try{if(enabled)storage.setItem(PROGRESS_KEY,JSON.stringify({version:1,enabled:true,completed:[...new Set(completed)]}));else storage.removeItem(PROGRESS_KEY);return true;}catch{return false;}}
+export function saveProgress(storage,completed,enabled,study){try{if(enabled)storage.setItem(PROGRESS_KEY,JSON.stringify({version:1,enabled:true,completed:[...new Set(completed)],...(study?{study}:{})}));else storage.removeItem(PROGRESS_KEY);return true;}catch{return false;}}

@@ -1,0 +1,172 @@
+{
+  "units": {
+    "idea": "A measurement needs both a number and a unit.",
+    "explanation": "A unit is the amount we use to measure, such as a metre. The number tells us how many of those units fit. Changing the unit changes the number, but not the object.",
+    "example": {
+      "title": "The same shelf",
+      "steps": [
+        "A shelf is 1.8 metres long.",
+        "Each metre contains 100 centimetres, so 1.8 × 100 = 180 centimetres.",
+        "The shelf stays the same length."
+      ]
+    },
+    "equation": "1.8 m = 180 cm",
+    "terms": [
+      {
+        "term": "Unit",
+        "definition": "An agreed amount used for measuring."
+      }
+    ]
+  },
+  "scale": {
+    "idea": "Powers of ten are a short way to write very large or small numbers.",
+    "explanation": "The raised number tells us how many tens to multiply. A negative raised number means divide 1 by those tens; it does not make the answer negative.",
+    "example": {
+      "title": "A thin coating",
+      "steps": [
+        "A coating is 6 × 10⁻⁴ metres thick.",
+        "10⁻⁴ means 1 ÷ 10,000, or 0.0001.",
+        "Six of these make 0.0006 metres."
+      ]
+    },
+    "equation": "6 × 10⁻⁴ m = 0.0006 m",
+    "terms": [
+      {
+        "term": "Power of ten",
+        "definition": "A number made by multiplying tens, or by dividing 1 by that product."
+      }
+    ]
+  },
+  "relationships": {
+    "idea": "An equation shows how quantities are connected.",
+    "explanation": "A quantity is something we can measure. At a steady speed, an object travels the same distance each second. Multiplying that speed by the time gives the distance.",
+    "example": {
+      "title": "A moving belt",
+      "steps": [
+        "A belt moves 0.4 metres each second for 5 seconds.",
+        "It travels 0.4 × 5 = 2 metres."
+      ]
+    },
+    "equation": "distance = constant speed × time",
+    "terms": [
+      {
+        "term": "Quantity",
+        "definition": "Something we can measure, such as distance or time."
+      }
+    ]
+  },
+  "vectors": {
+    "idea": "A vector tells us both how much and which way.",
+    "explanation": "We draw a vector as an arrow. A displacement arrow points straight from the start to the finish. Its length can be shorter than the path travelled.",
+    "example": {
+      "title": "A rover turns a corner",
+      "steps": [
+        "A rover drives 6 metres east and then 8 metres north.",
+        "These directions make a right angle, so the straight arrow has length √(6² + 8²) = 10 metres.",
+        "That arrow describes where the rover finishes relative to its start."
+      ]
+    },
+    "equation": "straight distance = √(6² + 8²) = 10 m",
+    "terms": [
+      {
+        "term": "Vector",
+        "definition": "A quantity with both size and direction."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from starting position to finishing position."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "graphs": {
+    "idea": "A position–time graph shows where an object is at each time.",
+    "explanation": "Time runs along the bottom and position runs up the side. To find average velocity, divide the position change by the time taken. Velocity includes direction.",
+    "example": {
+      "title": "Reading two points",
+      "steps": [
+        "At 1 second, the object is at 2 metres; at 4 seconds, it is at 8 metres.",
+        "Its position changes by 6 metres in 3 seconds.",
+        "Its average velocity is +2 metres per second."
+      ]
+    },
+    "equation": "average velocity = (8 − 2) m ÷ (4 − 1) s = +2 m/s",
+    "terms": [
+      {
+        "term": "Position",
+        "definition": "Where something is compared with a chosen zero point."
+      },
+      {
+        "term": "Average velocity",
+        "definition": "Position change divided by elapsed time, including direction."
+      }
+    ]
+  },
+  "accumulation": {
+    "idea": "Add the change in each part of a trip to find the overall change.",
+    "explanation": "Choose one direction as positive. Motion the other way counts as negative. Adding these signed changes tells you where the trip ends compared with where it began.",
+    "example": {
+      "title": "A trip to the right and back",
+      "steps": [
+        "Moving right at 2 metres per second for 3 seconds adds +6 metres.",
+        "Moving left at 1 metre per second for 2 seconds adds −2 metres.",
+        "The overall change is +4 metres: the finish is 4 metres right of the start."
+      ]
+    },
+    "equation": "overall change = +6 m − 2 m = +4 m",
+    "terms": []
+  },
+  "uncertainty": {
+    "idea": "A measurement is an estimate with a stated amount of uncertainty.",
+    "explanation": "Uncertainty describes how much doubt remains in a measurement. Compare it with the size of the estimate to see how large that doubt is in proportion. The method used to find the uncertainty still matters.",
+    "example": {
+      "title": "Measuring a length",
+      "steps": [
+        "A length estimate is 40 centimetres, with stated uncertainty of 1 centimetre.",
+        "Divide 1 by 40 to get 0.025, or 2.5%.",
+        "This comparison does not, by itself, say how likely any particular length is."
+      ]
+    },
+    "equation": "relative uncertainty = 1 cm ÷ 40 cm = 2.5%",
+    "terms": [
+      {
+        "term": "Uncertainty",
+        "definition": "A stated measure of doubt about a measurement."
+      },
+      {
+        "term": "Relative uncertainty",
+        "definition": "Uncertainty divided by the size of the estimate."
+      }
+    ]
+  },
+  "models": {
+    "idea": "A model is a simplified description used to answer a question.",
+    "explanation": "We choose which details matter, then use the model to predict a result. Compare that prediction with measurements. A disagreement is a reason to check the model and measurements.",
+    "example": {
+      "title": "Predicting a trolley's motion",
+      "steps": [
+        "Suppose a trolley keeps moving forward at 0.6 metres per second.",
+        "In 5 seconds, the model predicts 0.6 × 5 = 3 metres forward.",
+        "Compare that prediction with how far the trolley actually moves."
+      ]
+    },
+    "equation": "predicted change = 0.6 m/s × 5 s = 3 m",
+    "terms": [
+      {
+        "term": "Model",
+        "definition": "A simplified description used to answer a question."
+      },
+      {
+        "term": "Prediction",
+        "definition": "A result expected if the model's conditions hold."
+      }
+    ]
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "lessons": {
+    "units": {
+      "kind": "scales",
+      "title": "One shelf, two units",
+      "caption": "The aligned marks describe the same length. The shelf does not grow when we change units.",
+      "scales": [
+        {
+          "label": "Metres",
+          "values": [
+            0,
+            0.6,
+            1.2,
+            1.8
+          ]
+        },
+        {
+          "label": "Centimetres",
+          "values": [
+            0,
+            60,
+            120,
+            180
+          ]
+        }
+      ]
+    },
+    "relationships": {
+      "kind": "plot",
+      "title": "The belt travels steadily",
+      "caption": "Each second adds 0.4 metres. The last point is the example’s 2 metres after 5 seconds.",
+      "x": {
+        "label": "Time (s)",
+        "range": [
+          0,
+          5
+        ]
+      },
+      "y": {
+        "label": "Distance (m)",
+        "range": [
+          0,
+          2
+        ]
+      },
+      "series": [
+        {
+          "label": "Belt distance",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    "vectors": {
+      "kind": "plot",
+      "title": "Across, up, then straight to the finish",
+      "caption": "The dashed route is 6 m east and 8 m north. The straight line joins the same start and finish; its length is 10 m. Both axes use the same scale.",
+      "x": {
+        "label": "East (m)",
+        "range": [
+          0,
+          8
+        ]
+      },
+      "y": {
+        "label": "North (m)",
+        "range": [
+          0,
+          8
+        ]
+      },
+      "series": [
+        {
+          "label": "Straight start-to-finish line",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "Driven route",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              8
+            ]
+          ]
+        }
+      ],
+      "equalAspect": true
+    },
+    "graphs": {
+      "kind": "plot",
+      "title": "Read two places on the graph",
+      "caption": "Position rises by 6 m while time passes by 3 s. The straight line shows the steady motion used to connect these readings.",
+      "x": {
+        "label": "Time (s)",
+        "range": [
+          0,
+          4
+        ]
+      },
+      "y": {
+        "label": "Position (m)",
+        "range": [
+          0,
+          8
+        ]
+      },
+      "series": [
+        {
+          "label": "Position",
+          "points": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    "accumulation": {
+      "kind": "plot",
+      "title": "The areas count signed change",
+      "caption": "The area above zero adds 6 m. The area below zero subtracts 2 m. Together they give +4 m.",
+      "x": {
+        "label": "Time (s)",
+        "range": [
+          0,
+          5
+        ]
+      },
+      "y": {
+        "label": "Velocity (m/s)",
+        "range": [
+          -2,
+          2
+        ]
+      },
+      "series": [
+        {
+          "label": "Rightward leg",
+          "points": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "fill": true
+        },
+        {
+          "label": "Leftward leg",
+          "points": [
+            [
+              3,
+              -1
+            ],
+            [
+              5,
+              -1
+            ]
+          ],
+          "fill": true
+        }
+      ]
+    },
+    "uncertainty": {
+      "kind": "scales",
+      "title": "An estimate with an uncertainty",
+      "caption": "The middle mark is the 40 cm estimate. The outer marks are one stated uncertainty away, at 39 and 41 cm. This interval alone does not say how likely a value is.",
+      "scales": [
+        {
+          "label": "Length (cm)",
+          "values": [
+            39,
+            40,
+            41
+          ]
+        }
+      ]
+    }
+  }
+}

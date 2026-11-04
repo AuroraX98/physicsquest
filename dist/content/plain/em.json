@@ -1,0 +1,1657 @@
+{
+  "charge-conservation": {
+    "idea": "Charge can move between objects without changing the total charge of an isolated group.",
+    "explanation": "Electrons carry negative charge. Removing electrons leaves an ordinary object more positive. If no charge crosses the boundary of the whole group, the charge removed from one part is still elsewhere inside it.",
+    "example": {
+      "title": "Losing three electrons",
+      "steps": [
+        "An initially neutral object loses three electrons.",
+        "Its charge rises by three elementary charges, about 4.81 × 10⁻¹⁹ coulombs.",
+        "The removed electrons carry the balancing negative charge elsewhere."
+      ]
+    },
+    "equation": "object's charge change = +3 elementary charges",
+    "terms": [
+      {
+        "term": "Isolated",
+        "definition": "With no relevant exchange across the chosen boundary."
+      },
+      {
+        "term": "Elementary charge",
+        "definition": "The positive size of one electron's charge."
+      },
+      {
+        "term": "Coulomb",
+        "definition": "The unit of electric charge."
+      }
+    ]
+  },
+  "coulomb-force": {
+    "idea": "Stationary point charges attract or repel with a force that weakens as separation squared.",
+    "explanation": "A point charge treats an object's size as negligible compared with its separation. In vacuum, multiply the charge sizes and divide by separation squared, using Coulomb's constant. Choose direction from the charge signs: opposites attract.",
+    "example": {
+      "title": "Two opposite charges",
+      "steps": [
+        "Charges +2 and −3 microcoulombs are 0.30 metre apart; micro means one millionth.",
+        "Using rounded Coulomb's constant 9 × 10⁹, the force size is 0.60 newton.",
+        "Each charge is pulled toward the other."
+      ]
+    },
+    "equation": "force size = Coulomb's constant × charge sizes ÷ separation²",
+    "terms": [
+      {
+        "term": "Point charge",
+        "definition": "A charge model with negligible spatial size."
+      },
+      {
+        "term": "Vacuum",
+        "definition": "A region without material."
+      },
+      {
+        "term": "Coulomb's constant",
+        "definition": "The vacuum electric-force factor, about 9 × 10⁹ N·m²/C²."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "charge-in-matter": {
+    "idea": "A neutral object can rearrange its charges while remaining neutral overall.",
+    "explanation": "Polarization means its positive and negative charge distributions shift relative to each other. Rearrangement changes where charge is located, but not the total if none enters or leaves. Neutral means balanced charge, not an absence of charged parts.",
+    "example": {
+      "title": "Separating charge within an object",
+      "steps": [
+        "A model object contains +6 and −6 nanocoulombs; nano means one billionth.",
+        "Shift its negative charge slightly without moving any charge across the boundary.",
+        "The total is still +6 − 6 = 0 nanocoulombs."
+      ]
+    },
+    "equation": "net charge = positive charge + negative charge",
+    "terms": [
+      {
+        "term": "Neutral",
+        "definition": "Having zero net charge."
+      },
+      {
+        "term": "Polarization",
+        "definition": "A relative shift or alignment of positive and negative charge distributions."
+      }
+    ]
+  },
+  "field-definition": {
+    "idea": "Electric field tells the force per unit positive test charge at a place.",
+    "explanation": "Its direction is defined by the push on a small positive charge. Multiply by a probe's signed charge to find its force. A negative probe feels force opposite the field; the probe must not significantly disturb the sources.",
+    "example": {
+      "title": "A negative probe",
+      "steps": [
+        "A field points right with strength 200 newtons per coulomb.",
+        "A probe of −3 nanocoulombs has force (−3 × 10⁻⁹) × 200 newtons.",
+        "Its force is 6 × 10⁻⁷ newton leftward."
+      ]
+    },
+    "equation": "force = probe charge × electric field",
+    "terms": [
+      {
+        "term": "Electric field",
+        "definition": "Force per unit positive test charge at a place."
+      },
+      {
+        "term": "Probe",
+        "definition": "A small test object used to examine a field."
+      },
+      {
+        "term": "Nanocoulomb",
+        "definition": "One billionth of a coulomb."
+      }
+    ]
+  },
+  "point-charge-field": {
+    "idea": "A positive point charge's electric field points outward from the charge.",
+    "explanation": "A negative source's field points inward instead. At a nonzero separation in vacuum, field size is Coulomb's constant times source-charge size divided by distance squared. Find the source field before choosing a probe charge.",
+    "example": {
+      "title": "A point to the right",
+      "steps": [
+        "Put +2 nanocoulombs at zero and observe 0.30 metre to its right.",
+        "The field size is (9 × 10⁹) × (2 × 10⁻⁹) ÷ 0.30² = 200 newtons per coulomb.",
+        "It points right, away from the positive source."
+      ]
+    },
+    "equation": "field size = Coulomb's constant × source-charge size ÷ distance²",
+    "terms": [
+      {
+        "term": "Point charge",
+        "definition": "A source treated as having negligible size."
+      },
+      {
+        "term": "Nanocoulomb",
+        "definition": "One billionth of a coulomb."
+      },
+      {
+        "term": "Coulomb's constant",
+        "definition": "The vacuum electric-force factor, about 9 × 10⁹ N·m²/C²."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "field-diagrams": {
+    "idea": "Field arrows show local field direction, not a charged particle's whole path.",
+    "explanation": "A path also depends on the particle's starting velocity and charge sign. Drawn arrow lengths show strength only if the diagram specifies a scale. For one unchanged point source, strength falls with distance squared.",
+    "example": {
+      "title": "Comparing two distances",
+      "steps": [
+        "A point source's field is 90 newtons per coulomb at 0.20 metre.",
+        "At 0.60 metre, distance is three times larger, so field strength is divided by nine.",
+        "The new strength is 10 newtons per coulomb."
+      ]
+    },
+    "equation": "new field ÷ old field = (old distance ÷ new distance)²",
+    "terms": [
+      {
+        "term": "Velocity",
+        "definition": "Rate and direction of position change."
+      },
+      {
+        "term": "Point source",
+        "definition": "A source whose size is neglected in the model."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "two-charge-field": {
+    "idea": "Add electric-field directions as well as sizes before finding the total.",
+    "explanation": "Each fixed source contributes a field at the observation point. Along a line, use positive and negative signs for direction. Zero total field can result from cancellation even when each contribution is nonzero.",
+    "example": {
+      "title": "Between equal positive charges",
+      "steps": [
+        "Place +2 nanocoulombs 0.30 metre left and right of the midpoint.",
+        "At the midpoint, the left source gives +200 newtons per coulomb and the right source gives −200.",
+        "Their total is zero."
+      ]
+    },
+    "equation": "total field = +200 N/C − 200 N/C = 0",
+    "terms": [
+      {
+        "term": "Nanocoulomb",
+        "definition": "One billionth of a coulomb."
+      },
+      {
+        "term": "Superposition",
+        "definition": "Adding separate field contributions while keeping their directions."
+      }
+    ]
+  },
+  "electric-dipole": {
+    "idea": "A neutral charge pair can turn in a uniform field even with zero net force.",
+    "explanation": "An electric dipole is a separated positive-negative pair. Equal opposite forces act at different places, creating torque: a turning effect. In this model the field tends to align the pair's negative-to-positive direction with itself.",
+    "example": {
+      "title": "A pair across the field",
+      "steps": [
+        "Charges of size 2 nanocoulombs are 0.040 metre apart, perpendicular to a uniform 5,000-newton-per-coulomb field.",
+        "Their dipole-moment size is 8 × 10⁻¹¹ coulomb-metres.",
+        "Torque size is that moment times the field: 4 × 10⁻⁷ newton-metres."
+      ]
+    },
+    "equation": "torque size = dipole-moment size × field strength at 90°",
+    "terms": [
+      {
+        "term": "Dipole",
+        "definition": "A pair of equal opposite charges separated in space."
+      },
+      {
+        "term": "Dipole moment",
+        "definition": "Charge size times separation, directed from negative to positive."
+      },
+      {
+        "term": "Uniform",
+        "definition": "The same throughout the region."
+      },
+      {
+        "term": "Torque",
+        "definition": "A turning effect."
+      }
+    ]
+  },
+  "continuous-charge": {
+    "idea": "A charge density lets us add the field from many small charge portions.",
+    "explanation": "Line density means charge per length. Each short portion contributes according to its own distance and direction. An integral adds these contributions continuously; putting all charge at one convenient distance generally gives the wrong answer.",
+    "example": {
+      "title": "A short charged line",
+      "steps": [
+        "A line has 2 nanocoulombs per metre over length 0.30 metre; observe 0.30 metre beyond its left end.",
+        "Adding its contributions gives about 30 newtons per coulomb.",
+        "The field points left, away from the positive line."
+      ]
+    },
+    "equation": "field size = Coulomb's constant × line density × (1/near distance − 1/far distance)",
+    "terms": [
+      {
+        "term": "Density",
+        "definition": "Amount per stated length, area, or volume."
+      },
+      {
+        "term": "Integral",
+        "definition": "A continuous sum of small contributions."
+      },
+      {
+        "term": "Nanocoulomb",
+        "definition": "One billionth of a coulomb."
+      }
+    ]
+  },
+  "ring-axis-field": {
+    "idea": "On a uniformly charged ring's axis, sideways electric-field contributions cancel.",
+    "explanation": "Opposite parts of the ring produce equal opposite sideways parts. Their axial parts add. This symmetry works on the line through the centre perpendicular to the ring, not at every nearby point.",
+    "example": {
+      "title": "A point on the ring's axis",
+      "steps": [
+        "A ring has radius 0.30 metre and charge +3 nanocoulombs; observe 0.40 metre along its axis.",
+        "Each ring portion is 0.50 metre from the point.",
+        "The summed axial field is 86.4 newtons per coulomb, away from the ring's centre."
+      ]
+    },
+    "equation": "axial field = (9 × 10⁹) × (3 × 10⁻⁹) × 0.40 ÷ 0.50³ = 86.4 N/C",
+    "terms": [
+      {
+        "term": "Axis",
+        "definition": "The line through the centre perpendicular to the ring's plane."
+      },
+      {
+        "term": "Uniformly charged",
+        "definition": "Having equal charge per equal ring length."
+      },
+      {
+        "term": "Nanocoulomb",
+        "definition": "One billionth of a coulomb."
+      },
+      {
+        "term": "³",
+        "definition": "Multiply the quantity by itself three times."
+      }
+    ]
+  },
+  "electric-flux": {
+    "idea": "Electric flux counts the field's through-surface part over an area.",
+    "explanation": "Choose a perpendicular arrow, called the normal, to specify the positive direction. For a flat patch in a uniform field, multiply field, area, and cosine of the angle from that normal. Flux is not a flow of physical field lines.",
+    "example": {
+      "title": "A tilted patch",
+      "steps": [
+        "Use field 12 newtons per coulomb, area 0.50 square metre, and angle 60° from its normal.",
+        "The flux is 12 × 0.50 × cos 60° = 3 newton-square-metres per coulomb."
+      ]
+    },
+    "equation": "electric flux = field × area × cos(angle from normal)",
+    "terms": [
+      {
+        "term": "Flux",
+        "definition": "A field's through-surface contribution."
+      },
+      {
+        "term": "Normal",
+        "definition": "A direction perpendicular to a surface."
+      },
+      {
+        "term": "Uniform",
+        "definition": "The same everywhere in the relevant region."
+      },
+      {
+        "term": "cos",
+        "definition": "Cosine: the factor selecting how much of the field points along the chosen normal."
+      }
+    ]
+  },
+  "gauss-law": {
+    "idea": "Total electric flux through a closed surface depends on its enclosed charge.",
+    "explanation": "A closed surface surrounds a region completely. Count outward flux as positive. Outside charges can alter local field values but contribute zero net flux through the whole surface; zero total flux does not mean zero field everywhere.",
+    "example": {
+      "title": "An enclosing box",
+      "steps": [
+        "A box encloses +8.85 × 10⁻¹² coulomb.",
+        "Divide by vacuum permittivity, about 8.85 × 10⁻¹² in the matching SI units.",
+        "The total outward electric flux is 1 newton-square-metre per coulomb."
+      ]
+    },
+    "equation": "closed-surface electric flux = enclosed charge ÷ vacuum permittivity",
+    "terms": [
+      {
+        "term": "Flux",
+        "definition": "A field's through-surface contribution."
+      },
+      {
+        "term": "Vacuum permittivity",
+        "definition": "The constant linking electric field and charge in vacuum."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "gauss-sphere": {
+    "idea": "Spherical symmetry lets enclosed charge determine the electric field at a radius.",
+    "explanation": "For a uniform solid charged sphere, the enclosed fraction grows with radius cubed. The resulting interior field grows linearly from zero at the centre. This is not the charge distribution of a conducting sphere at equilibrium.",
+    "example": {
+      "title": "Inside a uniform sphere",
+      "steps": [
+        "A uniformly charged solid sphere has +1 nanocoulomb and radius 0.20 metre.",
+        "At radius 0.10 metre, its field is 112.5 newtons per coulomb.",
+        "The field points outward."
+      ]
+    },
+    "equation": "interior field = Coulomb's constant × total charge × radius ÷ sphere radius³",
+    "terms": [
+      {
+        "term": "Spherical symmetry",
+        "definition": "Having the same arrangement in every direction from the centre."
+      },
+      {
+        "term": "Nanocoulomb",
+        "definition": "One billionth of a coulomb."
+      },
+      {
+        "term": "Coulomb's constant",
+        "definition": "The vacuum electric-force factor."
+      },
+      {
+        "term": "³",
+        "definition": "Multiply the quantity by itself three times."
+      }
+    ]
+  },
+  "gauss-cylinder-sheet": {
+    "idea": "Source shape changes how electric-field strength varies with distance.",
+    "explanation": "Gauss's law is the same for every shape, but different symmetries simplify it differently. A long ideal line gives a field decreasing as one over distance. The infinite-line approximation works away from ends and outside the source.",
+    "example": {
+      "title": "Near a long charged line",
+      "steps": [
+        "Use positive line density 2 nanocoulombs per metre and distance 0.10 metre.",
+        "The long-line formula gives about 360 newtons per coulomb.",
+        "The field points away from the line."
+      ]
+    },
+    "equation": "line field = line-charge density ÷ (2π × vacuum permittivity × distance)",
+    "terms": [
+      {
+        "term": "Symmetry",
+        "definition": "An arrangement unchanged by specified moves or turns."
+      },
+      {
+        "term": "Line density",
+        "definition": "Charge per length."
+      },
+      {
+        "term": "Vacuum permittivity",
+        "definition": "The constant linking electric field and charge in vacuum."
+      },
+      {
+        "term": "π",
+        "definition": "A number about 3.1416; one full turn is 2π radians."
+      }
+    ]
+  },
+  "potential-difference": {
+    "idea": "Voltage tells how electric potential energy changes per unit charge between two places.",
+    "explanation": "Multiply the voltage change by the signed probe charge to find its energy change. A negative charge reverses that sign. This use of a single voltage difference assumes a stationary electric-field setting.",
+    "example": {
+      "title": "Moving with an electric field",
+      "steps": [
+        "Move a positive 0.003-coulomb probe 0.5 metre along a uniform 8-newton-per-coulomb field.",
+        "Voltage changes by −8 × 0.5 = −4 volts.",
+        "Its potential energy changes by 0.003 × (−4) = −0.012 joule."
+      ]
+    },
+    "equation": "potential-energy change = probe charge × voltage change",
+    "terms": [
+      {
+        "term": "Voltage",
+        "definition": "A potential-energy difference per unit charge."
+      },
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with position in the electric interaction."
+      },
+      {
+        "term": "Uniform",
+        "definition": "The same throughout the region."
+      }
+    ]
+  },
+  "point-charge-potential": {
+    "idea": "Add signed electric potentials as numbers, not as arrows.",
+    "explanation": "For fixed point sources, each potential is Coulomb's constant times source charge divided by distance. Choose zero far away from this finite source set. A zero potential can still have a nonzero electric field.",
+    "example": {
+      "title": "Adding two source potentials",
+      "steps": [
+        "A +2-nanocoulomb source is 3 metres away and a −1-nanocoulomb source is 1 metre away.",
+        "Their potentials are +6 and −9 volts using rounded constants.",
+        "The total is −3 volts."
+      ]
+    },
+    "equation": "total potential = +6 V − 9 V = −3 V",
+    "terms": [
+      {
+        "term": "Potential",
+        "definition": "Electric potential energy per unit probe charge relative to a reference."
+      },
+      {
+        "term": "Point source",
+        "definition": "A source whose size is neglected."
+      },
+      {
+        "term": "Nanocoulomb",
+        "definition": "One billionth of a coulomb."
+      }
+    ]
+  },
+  "field-from-potential": {
+    "idea": "Electric field points toward decreasing electric potential in electrostatics.",
+    "explanation": "Electrostatics describes charges and fields that do not change with time. In one direction, find the potential's local slope and reverse its sign. The field tells force direction for a positive probe; negative charges respond oppositely.",
+    "example": {
+      "title": "A curved potential",
+      "steps": [
+        "Let V(x) = (2 V/m²)x², where x is position.",
+        "The slope is (4 V/m²)x.",
+        "At x = 3 metres, the electric field is −12 volts per metre."
+      ]
+    },
+    "equation": "electric field = −potential slope",
+    "terms": [
+      {
+        "term": "Electrostatics",
+        "definition": "The study of stationary charge arrangements and fields."
+      },
+      {
+        "term": "Potential",
+        "definition": "Electric potential energy per unit charge relative to a reference."
+      },
+      {
+        "term": "Slope",
+        "definition": "Change in one quantity per small change in another."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "equipotential-surfaces": {
+    "idea": "Moving along an equipotential surface produces no electric potential-energy change for a fixed charge.",
+    "explanation": "Equipotential means equal electric potential. Where the field is nonzero, it is perpendicular to a smooth equipotential surface. The force can still exist even though it does no work along that surface.",
+    "example": {
+      "title": "Moving upward at fixed x",
+      "steps": [
+        "In V(x,y) = (5 V/m)x, move from (2 m,1 m) to (2 m,4 m).",
+        "Both endpoints have potential 10 volts.",
+        "The voltage change and electric work are zero."
+      ]
+    },
+    "equation": "electric work = −charge × voltage change = 0",
+    "terms": [
+      {
+        "term": "Equipotential",
+        "definition": "Having the same electric potential."
+      },
+      {
+        "term": "Electric potential",
+        "definition": "Potential energy per unit charge relative to a reference."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle."
+      }
+    ]
+  },
+  "conductor-equilibrium": {
+    "idea": "The electric field inside conducting material is zero in electrostatic equilibrium.",
+    "explanation": "A conductor lets charges move. If an internal field persisted, it would keep moving them, so their settled arrangement cancels the field inside the metal. A charged cavity and the surrounding metal are different regions.",
+    "example": {
+      "title": "Metal held at seven volts",
+      "steps": [
+        "A connected conductor is held at +7 volts relative to a reference.",
+        "At equilibrium, every point in its metal is at +7 volts and its internal field is zero.",
+        "Its outside field need not be zero."
+      ]
+    },
+    "equation": "inside equilibrium metal: electric field = 0",
+    "terms": [
+      {
+        "term": "Conductor",
+        "definition": "A material with charges able to move through it."
+      },
+      {
+        "term": "Electrostatic equilibrium",
+        "definition": "A settled, unchanging charge arrangement."
+      }
+    ]
+  },
+  "capacitance-geometry": {
+    "idea": "Capacitance tells how much charge a capacitor holds for each volt between its conductors.",
+    "explanation": "A capacitor separates equal opposite charges on two conductors. For fixed geometry and a linear material response, divide charge size by voltage size to find capacitance. Changing charge alone does not change that capacitance.",
+    "example": {
+      "title": "Finding a capacitance",
+      "steps": [
+        "A capacitor holds 18 microcoulombs at 6 volts; micro means one millionth.",
+        "Its capacitance is 18 ÷ 6 = 3 microfarads.",
+        "A farad means one coulomb per volt."
+      ]
+    },
+    "equation": "capacitance = charge magnitude ÷ voltage magnitude",
+    "terms": [
+      {
+        "term": "Capacitor",
+        "definition": "Separated conductors used to store opposite charges."
+      },
+      {
+        "term": "Capacitance",
+        "definition": "Stored charge magnitude per volt."
+      },
+      {
+        "term": "Linear response",
+        "definition": "A response proportional to the applied change within the model."
+      }
+    ]
+  },
+  "capacitor-energy-combinations": {
+    "idea": "A fixed linear capacitor stores energy proportional to voltage squared.",
+    "explanation": "Charging becomes harder as the voltage rises. Adding the work of each small charge transfer gives half the capacitance times voltage squared. When capacitors are combined, first find the equivalent capacitance under the stated connections.",
+    "example": {
+      "title": "Energy in a series pair",
+      "steps": [
+        "Capacitors of 3 and 6 microfarads form a series pair with equivalent capacitance 2 microfarads; their middle connection starts neutral and has no other branch.",
+        "At 4 volts across the pair, energy is ½ × (2 × 10⁻⁶) × 4².",
+        "The total stored energy is 16 microjoules."
+      ]
+    },
+    "equation": "stored energy = ½ × capacitance × voltage²",
+    "terms": [
+      {
+        "term": "Capacitance",
+        "definition": "Stored charge magnitude per volt."
+      },
+      {
+        "term": "Equivalent capacitance",
+        "definition": "The capacitance giving the same outside charge-voltage relation."
+      },
+      {
+        "term": "Micro",
+        "definition": "One millionth."
+      },
+      {
+        "term": "Series",
+        "definition": "Connected as an unbranched chain."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "dielectric-response": {
+    "idea": "An insulating material can change a capacitor's response by shifting its bound charges.",
+    "explanation": "This material is a dielectric; its charge rearrangement is polarization. In a simple fully filled linear model, capacitance increases by a material factor. For a disconnected capacitor, charge stays fixed, so voltage falls.",
+    "example": {
+      "title": "Filling an isolated capacitor",
+      "steps": [
+        "A 2-microfarad capacitor starts at 10 volts with 20 microcoulombs of charge.",
+        "A material factor of 4 raises its capacitance to 8 microfarads.",
+        "Its charge stays fixed, so voltage becomes 20 ÷ 8 = 2.5 volts."
+      ]
+    },
+    "equation": "fixed charge: voltage = charge ÷ capacitance",
+    "terms": [
+      {
+        "term": "Dielectric",
+        "definition": "An insulating material whose bound charges respond to an electric field."
+      },
+      {
+        "term": "Polarization",
+        "definition": "Relative shift or alignment of positive and negative charge."
+      },
+      {
+        "term": "Capacitance",
+        "definition": "Charge magnitude stored per volt."
+      }
+    ]
+  },
+  "current-definition": {
+    "idea": "Current measures how quickly signed charge crosses a chosen surface.",
+    "explanation": "Choose which direction counts as positive. Divide transferred signed charge by time for the average current. Negative charges moving the opposite way can produce positive conventional current; charge is transferred, not used up.",
+    "example": {
+      "title": "Charge crossing a surface",
+      "steps": [
+        "Choose rightward as positive.",
+        "Nine coulombs of positive charge cross rightward in 3 seconds.",
+        "The average current is 9 ÷ 3 = +3 amperes."
+      ]
+    },
+    "equation": "average current = signed transferred charge ÷ time",
+    "terms": [
+      {
+        "term": "Current",
+        "definition": "Rate of signed charge transfer."
+      },
+      {
+        "term": "Ampere",
+        "definition": "One coulomb per second."
+      },
+      {
+        "term": "Conventional current",
+        "definition": "The direction in which positive charge flow would count."
+      }
+    ]
+  },
+  "current-density-drift": {
+    "idea": "Current density depends on carriers' average directed motion, not all their random motion.",
+    "explanation": "For one carrier type, multiply number per volume, charge per carrier, and average drift velocity. Negative carriers make current point opposite their drift. This drift speed is not the speed at which a circuit signal spreads.",
+    "example": {
+      "title": "Negative carriers drifting left",
+      "steps": [
+        "Use 2 × 10²⁰ carriers per cubic metre, charge −1.6 × 10⁻¹⁹ coulomb each, and drift velocity −0.01 metre per second.",
+        "Their product is +0.32 ampere per square metre.",
+        "The conventional current density points right."
+      ]
+    },
+    "equation": "current density = carrier density × carrier charge × drift velocity",
+    "terms": [
+      {
+        "term": "Current density",
+        "definition": "Directed current per cross-sectional area."
+      },
+      {
+        "term": "Drift velocity",
+        "definition": "The average directed motion of charge carriers."
+      },
+      {
+        "term": "Carrier",
+        "definition": "A particle or effective object transporting charge."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "charge-continuity": {
+    "idea": "Charge builds up when more current enters a region than leaves.",
+    "explanation": "Current is charge transfer per second. Subtract outgoing current from incoming current to find the rate of charge accumulation. At a steady junction, that difference must be zero.",
+    "example": {
+      "title": "An uneven current balance",
+      "steps": [
+        "Five amperes enter a region and three leave.",
+        "Net charge builds up at 2 coulombs per second.",
+        "If this lasts 0.2 second, the region gains 0.4 coulomb."
+      ]
+    },
+    "equation": "charge-change rate = incoming current − outgoing current",
+    "terms": [
+      {
+        "term": "Junction",
+        "definition": "A connection where circuit branches meet."
+      },
+      {
+        "term": "Ampere",
+        "definition": "One coulomb per second."
+      },
+      {
+        "term": "Steady",
+        "definition": "Unchanging with time in the stated model."
+      }
+    ]
+  },
+  "ohmic-resistance": {
+    "idea": "An ohmic resistor has a proportional voltage-current relation under fixed conditions.",
+    "explanation": "Resistance is voltage drop divided by current. An ohm means one volt per ampere. Heating or other changes can alter resistance, and many devices do not follow this constant-resistance model.",
+    "example": {
+      "title": "A model resistor",
+      "steps": [
+        "A resistor has 12 volts across it and carries 3 amperes.",
+        "Its resistance is 12 ÷ 3 = 4 ohms.",
+        "This describes its stated operating conditions."
+      ]
+    },
+    "equation": "resistance = voltage drop ÷ current = 4 Ω",
+    "terms": [
+      {
+        "term": "Ohmic",
+        "definition": "Having constant resistance over the conditions studied."
+      },
+      {
+        "term": "Resistance",
+        "definition": "Voltage drop per unit current."
+      },
+      {
+        "term": "Ohm",
+        "definition": "One volt per ampere."
+      }
+    ]
+  },
+  "resistor-networks": {
+    "idea": "Resistor connections determine which quantities are shared.",
+    "explanation": "Resistors in series share current; their voltage drops add. Resistors in parallel share voltage; their branch currents add. Use actual connection points to decide which rule applies, not the drawing's appearance.",
+    "example": {
+      "title": "A combined network",
+      "steps": [
+        "Put 6 and 3 ohms in parallel: their equivalent is 2 ohms.",
+        "Add 4 ohms in series with that pair.",
+        "The total equivalent resistance is 6 ohms."
+      ]
+    },
+    "equation": "1 / parallel resistance = 1 / (6 ohms) + 1 / (3 ohms)",
+    "terms": [
+      {
+        "term": "Series",
+        "definition": "An unbranched chain of components."
+      },
+      {
+        "term": "Parallel",
+        "definition": "Connected across the same two nodes."
+      },
+      {
+        "term": "Equivalent resistance",
+        "definition": "The single resistance with the same outside voltage-current relation."
+      },
+      {
+        "term": "Node",
+        "definition": "An electrical connection point shared by components."
+      }
+    ]
+  },
+  "kirchhoff-loops": {
+    "idea": "Signed voltage rises and drops sum to zero around an ideal steady circuit loop.",
+    "explanation": "Choose a direction around the loop and a trial current direction first. A negative solved current means the actual current goes against your chosen direction. This simple rule assumes negligible changing magnetic flux through the loop.",
+    "example": {
+      "title": "One battery and two resistors",
+      "steps": [
+        "An 11-volt source drives series resistors of 2 and 3 ohms.",
+        "The loop balance is 11 − 2I − 3I = 0, where I is current in amperes.",
+        "The current is 2.2 amperes."
+      ]
+    },
+    "equation": "11 V − I × 2 Ω − I × 3 Ω = 0",
+    "terms": [
+      {
+        "term": "Loop",
+        "definition": "A path returning to its starting connection."
+      },
+      {
+        "term": "Magnetic flux",
+        "definition": "The magnetic field's through-surface contribution."
+      },
+      {
+        "term": "I",
+        "definition": "Current, measured in amperes."
+      }
+    ]
+  },
+  "circuit-power": {
+    "idea": "Voltage times current gives absorbed power when the terminal signs are chosen consistently.",
+    "explanation": "Count positive current as entering the positive-voltage terminal. Positive power then means energy enters the component; negative power means it supplies energy. A resistor turns the absorbed electrical energy into heating in this model.",
+    "example": {
+      "title": "Power in one resistor",
+      "steps": [
+        "An ideal 8-volt source drives a 40-ohm resistor.",
+        "Current is 8 ÷ 40 = 0.20 ampere.",
+        "The resistor absorbs 8 × 0.20 = 1.6 watts."
+      ]
+    },
+    "equation": "absorbed power = voltage × current",
+    "terms": [
+      {
+        "term": "Power",
+        "definition": "Energy transferred per second."
+      },
+      {
+        "term": "Watt",
+        "definition": "One joule per second."
+      },
+      {
+        "term": "Terminal",
+        "definition": "A component's electrical connection point."
+      }
+    ]
+  },
+  "rc-charging": {
+    "idea": "A capacitor charges more slowly as its voltage approaches the source voltage.",
+    "explanation": "In an ideal resistor-capacitor circuit, the remaining voltage difference drives current through the resistor. As that difference shrinks, so does the charging current. Resistance times capacitance sets the time scale.",
+    "example": {
+      "title": "Charging from nine volts",
+      "steps": [
+        "Use 3,000 ohms and 200 microfarads with an initially uncharged capacitor and a 9-volt source.",
+        "The time constant is 3,000 × 0.000200 = 0.60 second.",
+        "After that time, capacitor voltage is about 63.2% of 9 volts, or 5.69 volts."
+      ]
+    },
+    "equation": "time constant = resistance × capacitance",
+    "terms": [
+      {
+        "term": "Time constant",
+        "definition": "Time for the remaining difference to fall to about 36.8%."
+      },
+      {
+        "term": "Capacitance",
+        "definition": "Stored charge magnitude per volt."
+      },
+      {
+        "term": "Microfarad",
+        "definition": "One millionth of a farad."
+      }
+    ]
+  },
+  "rc-discharging": {
+    "idea": "A capacitor discharging through a resistor loses the same fraction of charge in equal intervals.",
+    "explanation": "With the source removed, capacitor voltage drives the current. As charge decreases, voltage and current decrease together. The lost stored energy becomes resistor heating in this ideal closed circuit.",
+    "example": {
+      "title": "A discharging capacitor",
+      "steps": [
+        "A 100-microfarad capacitor starts at 6 volts across a 2,000-ohm resistor.",
+        "The time constant is 0.20 second.",
+        "After that interval, voltage is 6/e ≈ 2.21 volts; e is about 2.718."
+      ]
+    },
+    "equation": "voltage after one time constant = initial voltage ÷ e",
+    "terms": [
+      {
+        "term": "Time constant",
+        "definition": "Resistance times capacitance in this model."
+      },
+      {
+        "term": "Capacitor",
+        "definition": "A component storing separated charges."
+      },
+      {
+        "term": "Microfarad",
+        "definition": "One millionth of a farad."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "rc-energy": {
+    "idea": "In ideal resistor charging from zero, half the source's energy ends in the capacitor.",
+    "explanation": "The constant-voltage source supplies the same energy per coulomb throughout. The capacitor's own voltage rises from zero, so only half that supplied energy is stored. The rest heats the positive resistor; other charging methods can have different splits.",
+    "example": {
+      "title": "Following the charging energy",
+      "steps": [
+        "Charge 400 microfarads completely from an ideal 5-volt source through a finite positive resistor.",
+        "The source supplies 0.010 joule, while the capacitor stores 0.005 joule.",
+        "The remaining 0.005 joule heats the resistor."
+      ]
+    },
+    "equation": "source energy = stored energy + resistor heat",
+    "terms": [
+      {
+        "term": "Microfarad",
+        "definition": "One millionth of a farad."
+      },
+      {
+        "term": "Coulomb",
+        "definition": "The unit of charge."
+      }
+    ]
+  },
+  "lorentz-force": {
+    "idea": "Magnetic force can bend a moving charge without changing its speed.",
+    "explanation": "The magnetic force is perpendicular to the charge's velocity. It therefore does no work on that point charge, although it changes direction. An electric force can change the charge's kinetic energy.",
+    "example": {
+      "title": "A positive charge bends",
+      "steps": [
+        "A +2-microcoulomb charge moves right at 30 metres per second through a 0.20-tesla field out of the page.",
+        "The magnetic force is 1.2 × 10⁻⁵ newton downward.",
+        "It is sideways to the velocity, so this force changes direction rather than speed."
+      ]
+    },
+    "equation": "magnetic force size at 90° = charge size × speed × field",
+    "terms": [
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      },
+      {
+        "term": "Tesla",
+        "definition": "The magnetic-field unit."
+      },
+      {
+        "term": "Microcoulomb",
+        "definition": "One millionth of a coulomb."
+      }
+    ]
+  },
+  "charged-circular-motion": {
+    "idea": "A uniform magnetic field can bend perpendicular particle motion into a circle.",
+    "explanation": "With no electric field or other relevant force, magnetic force supplies the inward acceleration. The charge sign controls bending direction; its size enters the positive radius. This classical model neglects collisions and radiation losses.",
+    "example": {
+      "title": "A model particle circles",
+      "steps": [
+        "Use mass 3 × 10⁻⁸ kilogram, charge size 2 × 10⁻⁶ coulomb, speed 40 metres per second, and perpendicular field 0.30 tesla.",
+        "Radius is mass times speed divided by charge size times field.",
+        "The radius is 2 metres."
+      ]
+    },
+    "equation": "radius = mass × perpendicular speed ÷ (charge size × magnetic field)",
+    "terms": [
+      {
+        "term": "Uniform",
+        "definition": "The same throughout the region."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle."
+      },
+      {
+        "term": "Tesla",
+        "definition": "The magnetic-field unit."
+      }
+    ]
+  },
+  "wire-loop-torque": {
+    "idea": "A current loop can turn in a uniform magnetic field even when its net force is zero.",
+    "explanation": "Opposite wire segments feel opposite forces at different places. Together they create torque, a turning effect. The loop's magnetic moment points perpendicular to its area, following the right-hand current rule.",
+    "example": {
+      "title": "A loop turns",
+      "steps": [
+        "A 10-turn loop carries 0.30 ampere through area 0.020 square metre.",
+        "In a 0.40-tesla field perpendicular to its normal, torque is 10 × 0.30 × 0.020 × 0.40.",
+        "The torque size is 0.024 newton-metre."
+      ]
+    },
+    "equation": "torque size at 90° = turns × current × area × field",
+    "terms": [
+      {
+        "term": "Torque",
+        "definition": "A turning effect."
+      },
+      {
+        "term": "Normal",
+        "definition": "A direction perpendicular to a surface."
+      },
+      {
+        "term": "Magnetic moment",
+        "definition": "A directed measure of a current loop's magnetic response."
+      },
+      {
+        "term": "Uniform",
+        "definition": "The same throughout the region."
+      },
+      {
+        "term": "Right-hand current rule",
+        "definition": "Curl the fingers of your right hand with the current around the loop; your thumb points along its magnetic moment."
+      }
+    ]
+  },
+  "biot-savart": {
+    "idea": "Each small piece of steady current contributes to the magnetic field at a point.",
+    "explanation": "The contribution depends on the piece's length, direction, and distance from the observation point. Add the contributions as vectors, keeping direction. One short piece's field is not the total field of the whole circuit.",
+    "example": {
+      "title": "One short wire contribution",
+      "steps": [
+        "A 0.002-metre piece carries 0.40 ampere rightward; observe 0.20 metre above its centre.",
+        "The short-piece approximation gives about 2 × 10⁻⁹ tesla out of the page.",
+        "The rest of the circuit can add further field."
+      ]
+    },
+    "equation": "short-piece field size ≈ (10⁻⁷ T·m/A) × current × length / distance² at 90°",
+    "terms": [
+      {
+        "term": "Steady",
+        "definition": "Unchanging with time."
+      },
+      {
+        "term": "Vector",
+        "definition": "A quantity with size and direction."
+      },
+      {
+        "term": "Tesla",
+        "definition": "The magnetic-field unit."
+      },
+      {
+        "term": "10⁻⁷",
+        "definition": "The rounded vacuum factor μ₀/(4π), in T·m/A."
+      },
+      {
+        "term": "T·m/A",
+        "definition": "Tesla-metres per ampere: the units of the vacuum factor in this expression."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "straight-wire-field": {
+    "idea": "A long straight wire's magnetic field circles the wire and weakens as one over distance.",
+    "explanation": "Point your right thumb along conventional current; curled fingers show field direction. The formula approximates a thin wire far from its ends and outside its thickness. Do not apply it at the wire's centre.",
+    "example": {
+      "title": "Near a long wire",
+      "steps": [
+        "A wire carries 0.60 ampere out of the page; observe 0.030 metre to its right.",
+        "Its field is about 4 × 10⁻⁶ tesla, or 4 microteslas.",
+        "The field points upward."
+      ]
+    },
+    "equation": "field size ≈ (2 × 10⁻⁷ T·m/A) × current ÷ distance",
+    "terms": [
+      {
+        "term": "Conventional current",
+        "definition": "The direction positive-charge flow would take."
+      },
+      {
+        "term": "Microtesla",
+        "definition": "One millionth of a tesla."
+      },
+      {
+        "term": "Tesla",
+        "definition": "The magnetic-field unit."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "loop-axis-field": {
+    "idea": "On a circular current loop's axis, sideways magnetic-field contributions cancel.",
+    "explanation": "The remaining axial parts add. Geometry changes each contribution as the observation point moves away from the centre. This formula applies on the axis of a thin steady-current loop in vacuum.",
+    "example": {
+      "title": "One loop away from its centre",
+      "steps": [
+        "A loop of radius 0.040 metre carries 0.20 ampere; its centre field is about 3.142 microteslas.",
+        "At one radius along the axis, the field is the centre value divided by 2√2.",
+        "It is about 1.111 microteslas."
+      ]
+    },
+    "equation": "field at one radius along axis = centre field ÷ (2√2)",
+    "terms": [
+      {
+        "term": "Axis",
+        "definition": "The line through the loop centre perpendicular to its plane."
+      },
+      {
+        "term": "Microtesla",
+        "definition": "One millionth of a tesla."
+      },
+      {
+        "term": "Steady",
+        "definition": "Unchanging with time."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "ampere-law": {
+    "idea": "For steady currents, magnetic circulation around a closed path depends on the current crossing its surface.",
+    "explanation": "Circulation adds the field's along-path contribution. Count crossing currents with signs set by a matching surface direction. This total alone does not give the field at every point without suitable symmetry.",
+    "example": {
+      "title": "Two crossing currents",
+      "steps": [
+        "Choose outward current as positive; +0.50 and −0.20 ampere cross the surface.",
+        "Their net current is +0.30 ampere.",
+        "The circulation is vacuum permeability times 0.30, about 3.77 × 10⁻⁷ tesla-metres."
+      ]
+    },
+    "equation": "magnetic circulation = vacuum permeability × net crossing current",
+    "terms": [
+      {
+        "term": "Circulation",
+        "definition": "The summed field contribution along a closed path."
+      },
+      {
+        "term": "Vacuum permeability",
+        "definition": "The constant linking magnetic field and current in vacuum."
+      },
+      {
+        "term": "Steady",
+        "definition": "Unchanging with time."
+      }
+    ]
+  },
+  "solenoid-field": {
+    "idea": "A long, closely wound coil produces an approximately uniform field inside, away from its ends.",
+    "explanation": "A solenoid is a coil spread along a straight length. Its interior field depends on current and turns per length. Real finite coils also have exterior and end fields.",
+    "example": {
+      "title": "A long model coil",
+      "steps": [
+        "Put 600 turns over 0.50 metre, giving 1,200 turns per metre, with current 0.25 ampere.",
+        "Multiplying by vacuum permeability gives about 3.77 × 10⁻⁴ tesla.",
+        "This is an interior estimate far from the ends."
+      ]
+    },
+    "equation": "interior field ≈ vacuum permeability × turns per length × current",
+    "terms": [
+      {
+        "term": "Solenoid",
+        "definition": "A coil with turns spread along a length."
+      },
+      {
+        "term": "Uniform",
+        "definition": "The same throughout the region."
+      },
+      {
+        "term": "Vacuum permeability",
+        "definition": "The vacuum magnetic constant, about 4π × 10⁻⁷ T·m/A."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "toroid-field": {
+    "idea": "An ideal ring-shaped coil has a stronger interior field at smaller radii.",
+    "explanation": "A toroid is wound around a ring. In the symmetric, continuous-winding model, its field circles the central hole. Inside the wound region, divide the total turns-current factor by circumference; real windings can leak field outside.",
+    "example": {
+      "title": "Inside a model toroid",
+      "steps": [
+        "A 300-turn vacuum-core toroid carries 0.40 ampere.",
+        "At interior radius 0.080 metre, the field is about 3 × 10⁻⁴ tesla.",
+        "That is 0.300 millitesla, with milli meaning one thousandth."
+      ]
+    },
+    "equation": "interior field = vacuum permeability × turns × current ÷ (2π × radius)",
+    "terms": [
+      {
+        "term": "Toroid",
+        "definition": "A coil wound around a ring-shaped region."
+      },
+      {
+        "term": "Vacuum permeability",
+        "definition": "The vacuum magnetic constant."
+      },
+      {
+        "term": "Symmetry",
+        "definition": "An arrangement unchanged by specified turns or moves."
+      },
+      {
+        "term": "π",
+        "definition": "A number about 3.1416; one full turn is 2π radians."
+      }
+    ]
+  },
+  "faraday-flux": {
+    "idea": "Changing magnetic flux through a stationary loop produces an induced voltage around it.",
+    "explanation": "Flux is the magnetic field's through-area contribution. Choose a loop direction and its matching normal first; the minus sign then fixes the voltage direction. A current also depends on the circuit's resistance and inductance.",
+    "example": {
+      "title": "A field grows through a coil",
+      "steps": [
+        "A stationary 20-turn coil has area 0.003 square metre per turn.",
+        "A perpendicular field rises by 0.20 tesla in 0.50 second, giving flux-change rate 0.0012 weber per second per turn.",
+        "Induced voltage is −20 × 0.0012 = −0.024 volt in the chosen direction."
+      ]
+    },
+    "equation": "induced voltage = −turns × flux-change rate",
+    "terms": [
+      {
+        "term": "Flux",
+        "definition": "A field's through-surface contribution."
+      },
+      {
+        "term": "Weber",
+        "definition": "The unit of magnetic flux."
+      },
+      {
+        "term": "Normal",
+        "definition": "A direction perpendicular to a surface."
+      },
+      {
+        "term": "Inductance",
+        "definition": "A circuit's relation between current and linked magnetic flux."
+      }
+    ]
+  },
+  "lenz-energy": {
+    "idea": "The induced response opposes a change in magnetic flux, not necessarily the existing field.",
+    "explanation": "For a resistive loop with negligible inductance and no other source, the induced voltage sets the current direction. Heating still needs energy from the agent or source changing the flux. The minus sign does not create energy.",
+    "example": {
+      "title": "An increasing flux",
+      "steps": [
+        "Flux rises from 0.010 to 0.016 weber in 0.20 second.",
+        "The induced voltage is −0.006 ÷ 0.20 = −0.030 volt.",
+        "With resistance 3 ohms, current is −0.010 ampere, opposite the chosen positive loop direction."
+      ]
+    },
+    "equation": "induced voltage = −flux change ÷ elapsed time",
+    "terms": [
+      {
+        "term": "Flux",
+        "definition": "A field's through-area contribution."
+      },
+      {
+        "term": "Inductance",
+        "definition": "A circuit's response linking changing current and magnetic flux."
+      },
+      {
+        "term": "Weber",
+        "definition": "The magnetic-flux unit."
+      }
+    ]
+  },
+  "motional-emf": {
+    "idea": "A moving conductor can develop a voltage as magnetic force separates its charges.",
+    "explanation": "For a straight bar, take its length, motion, and magnetic field mutually perpendicular. After charge separation settles in an open bar, electric and magnetic forces along it balance. A closed driven circuit receives energy from the external mover.",
+    "example": {
+      "title": "A moving bar",
+      "steps": [
+        "A 0.30-metre bar moves at 2 metres per second through a 0.40-tesla field, with all three directions perpendicular.",
+        "Its voltage magnitude is 0.40 × 0.30 × 2.",
+        "The result is 0.24 volt."
+      ]
+    },
+    "equation": "voltage magnitude = magnetic field × bar length × speed",
+    "terms": [
+      {
+        "term": "Conductor",
+        "definition": "A material with mobile charge carriers."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle."
+      },
+      {
+        "term": "Tesla",
+        "definition": "The magnetic-field unit."
+      }
+    ]
+  },
+  "mutual-inductance-transformer": {
+    "idea": "An ideal transformer trades voltage for current while preserving power.",
+    "explanation": "Changing magnetic flux links the two coils without charge crossing between their wires. In the ideal shared-flux model, voltage ratio equals turns ratio. A steady unchanging flux does not generate transformer voltage.",
+    "example": {
+      "title": "A step-down transformer",
+      "steps": [
+        "A transformer has 120 primary turns and 30 secondary turns, with 12 volts RMS at the primary.",
+        "The secondary gives 12 × 30 ÷ 120 = 3 volts RMS.",
+        "A resistive load drawing 0.60 ampere receives 1.8 watts; the ideal source supplies the same power."
+      ]
+    },
+    "equation": "secondary voltage ÷ primary voltage = secondary turns ÷ primary turns",
+    "terms": [
+      {
+        "term": "Transformer",
+        "definition": "A device linking coils through changing magnetic flux."
+      },
+      {
+        "term": "RMS",
+        "definition": "An AC size giving the same resistor heating as that steady DC value."
+      },
+      {
+        "term": "Flux",
+        "definition": "A magnetic field's through-surface contribution."
+      },
+      {
+        "term": "Primary",
+        "definition": "The coil connected to the input source."
+      },
+      {
+        "term": "Secondary",
+        "definition": "The coil connected to the output load."
+      },
+      {
+        "term": "AC",
+        "definition": "Alternating current or voltage, which reverses direction repeatedly."
+      },
+      {
+        "term": "DC",
+        "definition": "Direct current or voltage, with a fixed direction."
+      }
+    ]
+  },
+  "self-inductance-energy": {
+    "idea": "An inductor stores energy in its magnetic field as current builds.",
+    "explanation": "Its own changing linked flux creates a voltage opposing the current change. In the fixed linear model, stored energy is half the inductance times current squared. An ideal inductor can return energy; it does not continually heat like a resistor.",
+    "example": {
+      "title": "Energy in an inductor",
+      "steps": [
+        "An inductor has inductance 0.20 henry and current 3 amperes.",
+        "Stored energy is ½ × 0.20 × 3².",
+        "It holds 0.90 joule."
+      ]
+    },
+    "equation": "stored magnetic energy = ½ × inductance × current²",
+    "terms": [
+      {
+        "term": "Inductance",
+        "definition": "Linked magnetic flux per current in a fixed linear model."
+      },
+      {
+        "term": "Henry",
+        "definition": "The unit of inductance."
+      },
+      {
+        "term": "Flux",
+        "definition": "A field's through-area contribution."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "rl-switching": {
+    "idea": "An inductor makes an ideal series circuit's current change gradually.",
+    "explanation": "Its voltage depends on how quickly current changes. With constant resistance, inductance, and source voltage, the time scale is inductance divided by resistance. The starting current is needed to choose the response.",
+    "example": {
+      "title": "Current rising from zero",
+      "steps": [
+        "Use inductance 0.60 henry, resistance 3 ohms, and source voltage 6 volts.",
+        "The time constant is 0.20 second and final current is 2 amperes.",
+        "After one time constant, current is about 63.2% of that, or 1.264 amperes."
+      ]
+    },
+    "equation": "time constant = inductance ÷ resistance",
+    "terms": [
+      {
+        "term": "Inductance",
+        "definition": "A coil's current-to-linked-flux relation in the model."
+      },
+      {
+        "term": "Time constant",
+        "definition": "Time for the remaining difference to fall to about 36.8%."
+      },
+      {
+        "term": "Henry",
+        "definition": "The inductance unit."
+      }
+    ]
+  },
+  "lc-oscillation": {
+    "idea": "An ideal capacitor and inductor exchange stored energy back and forth.",
+    "explanation": "With no resistance or outside drive, capacitor charge and circuit current oscillate. Electric-field energy falls while magnetic-field energy rises, then the exchange reverses. Their sum stays constant.",
+    "example": {
+      "title": "A quarter of one oscillation",
+      "steps": [
+        "Use inductance 1 henry, capacitance 0.010 farad, and initial capacitor charge 0.020 coulomb with no current.",
+        "Initial stored electric energy is 0.020 joule.",
+        "After a quarter cycle, charge is zero and current magnitude is 0.20 ampere; magnetic energy is the same 0.020 joule."
+      ]
+    },
+    "equation": "electric energy + magnetic energy = constant",
+    "terms": [
+      {
+        "term": "Inductance",
+        "definition": "The current-to-linked-magnetic-flux relation."
+      },
+      {
+        "term": "Capacitance",
+        "definition": "Stored charge per volt."
+      },
+      {
+        "term": "Oscillate",
+        "definition": "Change back and forth repeatedly."
+      }
+    ]
+  },
+  "driven-rlc": {
+    "idea": "In a series RLC circuit, the inductor and capacitor can cancel each other's timing effects.",
+    "explanation": "RLC means resistor, inductor, and capacitor. At series-current resonance, these timing effects cancel, leaving resistance to limit current. This describes the steady sinusoidal response after starting effects fade, with positive resistance.",
+    "example": {
+      "title": "At current resonance",
+      "steps": [
+        "Use inductance 1 henry, capacitance 0.010 farad, resistance 4 ohms, and peak source voltage 8 volts.",
+        "At 10 radians per second, the inductor and capacitor effects cancel.",
+        "Peak current is 8 ÷ 4 = 2 amperes."
+      ]
+    },
+    "equation": "peak current at series resonance = peak voltage ÷ resistance",
+    "terms": [
+      {
+        "term": "Resonance",
+        "definition": "Here, the drive frequency giving greatest steady current for fixed voltage."
+      },
+      {
+        "term": "Sinusoidal",
+        "definition": "Following a smooth sine or cosine wave."
+      },
+      {
+        "term": "Peak",
+        "definition": "The greatest size reached in a cycle."
+      }
+    ]
+  },
+  "displacement-current": {
+    "idea": "A changing electric field contributes to magnetic circulation even without charge crossing a capacitor gap.",
+    "explanation": "This field-change term is called displacement current. It has current units, but does not mean electrons pass through an ideal insulating gap. Including it makes the magnetic-law result consistent for different surfaces spanning the same loop.",
+    "example": {
+      "title": "A growing gap field",
+      "steps": [
+        "A uniform normal field grows at 2 × 10⁶ volts per metre per second over area 0.020 square metre.",
+        "Multiply area and field-change rate by vacuum permittivity.",
+        "The displacement-current term is 3.54 × 10⁻⁷ ampere."
+      ]
+    },
+    "equation": "displacement current = vacuum permittivity × electric-flux change rate",
+    "terms": [
+      {
+        "term": "Displacement current",
+        "definition": "The changing-electric-flux term in the magnetic circulation law."
+      },
+      {
+        "term": "Circulation",
+        "definition": "The field's summed contribution around a closed path."
+      },
+      {
+        "term": "Vacuum permittivity",
+        "definition": "The vacuum electric constant."
+      }
+    ]
+  },
+  "maxwell-map": {
+    "idea": "Maxwell's equations connect charges, currents, and changing electric and magnetic fields.",
+    "explanation": "They describe where fields spread outward and how they circulate. These are connected constraints, not four separate forces. A full solution also needs information about the boundaries and starting fields.",
+    "example": {
+      "title": "One electric-field check",
+      "steps": [
+        "Charge density is 1.77 × 10⁻¹¹ coulomb per cubic metre.",
+        "Divide by vacuum permittivity, about 8.85 × 10⁻¹² in matching units.",
+        "The electric divergence is 2 newtons per coulomb-metre; this checks one law, not a complete field solution."
+      ]
+    },
+    "equation": "electric divergence = charge density ÷ vacuum permittivity",
+    "terms": [
+      {
+        "term": "Divergence",
+        "definition": "Net outward field contribution per tiny volume."
+      },
+      {
+        "term": "Charge density",
+        "definition": "Charge per volume."
+      },
+      {
+        "term": "Vacuum permittivity",
+        "definition": "The constant connecting charge and electric field in vacuum."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "em-wave-speed": {
+    "idea": "A vacuum electromagnetic wave has linked electric and magnetic fields travelling together.",
+    "explanation": "In a plane wave, both fields are perpendicular to travel and to each other. Their amplitudes are connected by the vacuum light speed. Wavelength times frequency gives that same speed.",
+    "example": {
+      "title": "A two-metre wave",
+      "steps": [
+        "A vacuum wave has wavelength 2 metres.",
+        "Using light speed 3 × 10⁸ metres per second, frequency is that speed divided by 2.",
+        "The result is 1.5 × 10⁸ hertz."
+      ]
+    },
+    "equation": "frequency = wave speed ÷ wavelength",
+    "terms": [
+      {
+        "term": "Wavelength",
+        "definition": "Distance between matching points in successive cycles."
+      },
+      {
+        "term": "Frequency",
+        "definition": "Cycles per second."
+      },
+      {
+        "term": "Hertz",
+        "definition": "One cycle per second."
+      },
+      {
+        "term": "Plane wave",
+        "definition": "An ideal wave with matching phase across flat planes."
+      },
+      {
+        "term": "Phase",
+        "definition": "The place within a repeating cycle."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "The largest field size in a cycle."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "Meeting at a right angle."
+      }
+    ]
+  },
+  "field-energy-flow": {
+    "idea": "Electromagnetic fields carry energy as well as storing it.",
+    "explanation": "For a sinusoidal vacuum plane wave, average intensity depends on peak electric-field strength squared. Intensity is power per area perpendicular to travel. Near-source fields and materials need a more detailed account.",
+    "example": {
+      "title": "Power through a small patch",
+      "steps": [
+        "A wave with peak electric field 20 volts per metre has average intensity about 0.531 watt per square metre.",
+        "A perpendicular patch has area 0.020 square metre.",
+        "Average power crossing it is 0.531 × 0.020 = 0.01062 watt."
+      ]
+    },
+    "equation": "average power = average intensity × perpendicular area",
+    "terms": [
+      {
+        "term": "Intensity",
+        "definition": "Power crossing each unit area."
+      },
+      {
+        "term": "Peak",
+        "definition": "The greatest field size in a cycle."
+      },
+      {
+        "term": "Sinusoidal",
+        "definition": "Following a sine or cosine pattern."
+      },
+      {
+        "term": "Plane wave",
+        "definition": "An ideal wave with flat constant-phase fronts."
+      },
+      {
+        "term": "Phase",
+        "definition": "Place within a repeating cycle."
+      },
+      {
+        "term": "Power",
+        "definition": "Energy transferred per second."
+      }
+    ]
+  },
+  "em-model-selection": {
+    "idea": "Choose an electrical equation by what you need to find and the physical conditions.",
+    "explanation": "Force, field, voltage, current, and energy answer different questions. Match the source geometry and time dependence before calculating. Correct units alone cannot rescue an equation used outside its assumptions.",
+    "example": {
+      "title": "Finding a probe's force",
+      "steps": [
+        "A positive 2-nanocoulomb probe is in a rightward field of 300 newtons per coulomb.",
+        "Use force = charge × field.",
+        "The force is 6 × 10⁻⁷ newton rightward, assuming the probe does not disturb the sources."
+      ]
+    },
+    "equation": "force = 2 × 10⁻⁹ C × 300 N/C = 6 × 10⁻⁷ N",
+    "terms": [
+      {
+        "term": "Probe",
+        "definition": "A small test charge."
+      },
+      {
+        "term": "Nanocoulomb",
+        "definition": "One billionth of a coulomb."
+      },
+      {
+        "term": "Geometry",
+        "definition": "The shape, size, and arrangement of the setup."
+      }
+    ]
+  },
+  "em-capstone": {
+    "idea": "Halving a fixed capacitor's voltage leaves one quarter of its stored energy.",
+    "explanation": "Stored energy depends on voltage squared. During discharge through an ideal resistor, the lost capacitor energy heats the resistor. Treat the charging and discharging intervals separately and remove the source for this discharge model.",
+    "example": {
+      "title": "Following a discharge",
+      "steps": [
+        "A 4-nanofarad capacitor starts at 5 volts with stored energy 50 nanojoules.",
+        "When its voltage falls to 2.5 volts, stored energy is 12.5 nanojoules.",
+        "The ideal resistor has received 50 − 12.5 = 37.5 nanojoules."
+      ]
+    },
+    "equation": "energy fraction = voltage fraction² = (½)² = ¼",
+    "terms": [
+      {
+        "term": "Capacitor",
+        "definition": "A component storing separated charges."
+      },
+      {
+        "term": "Nano",
+        "definition": "One billionth."
+      },
+      {
+        "term": "Farad",
+        "definition": "The unit of capacitance, one coulomb per volt."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "em-assessment": {
+    "idea": "Heating by an induced current still needs an energy source.",
+    "explanation": "A changing magnetic field produces voltage around the fixed loop. With negligible inductance, resistance gives the current, and current squared times resistance gives heating power. The source changing the field supplies the transferred energy.",
+    "example": {
+      "title": "A field-driven loop",
+      "steps": [
+        "A 0.020-square-metre loop has resistance 4 ohms; its normal field rises from 0.10 to 0.40 tesla in 0.30 second.",
+        "Induced voltage is −0.020 volt and current is −0.0050 ampere.",
+        "Heating power is 0.0001 watt, transferring 0.00003 joule over the interval."
+      ]
+    },
+    "equation": "heat = current² × resistance × time",
+    "terms": [
+      {
+        "term": "Inductance",
+        "definition": "The circuit's response linking changing current and magnetic flux."
+      },
+      {
+        "term": "Normal",
+        "definition": "Perpendicular to the loop's area."
+      },
+      {
+        "term": "Tesla",
+        "definition": "The magnetic-field unit."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  }
+}

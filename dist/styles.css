@@ -26,3 +26,65 @@ main{padding-bottom:max(96px,calc(env(safe-area-inset-bottom,0px) + 88px))}
 
 /* Keep long scientific readouts distinct at focal and domain limits. */
 .model-readout>div{min-width:120px;flex:1 1 120px;padding:5px 8px;overflow-wrap:anywhere}.model-readout b{line-height:1.45;margin-top:3px}
+
+/* Focused reading: one idea and one example before optional detail. */
+.focused-layout{display:block;max-width:76ch}.focused-layout .reading{max-width:none}.focused-example{margin:26px 0;background:#eef3e9;border:1px solid #d5dfce;border-radius:14px;padding:22px 24px}.focused-example h2{font-family:inherit;font-weight:700;font-size:17px;line-height:1.5;letter-spacing:0}.focused-example ol{margin:12px 0 0;padding-left:22px}.focused-example li{padding:4px 0}.focused-equation{margin:22px 0}.focused-equation h2{font-family:inherit;font-size:13px;letter-spacing:.04em;margin:0 0 8px}.focused-equation pre{white-space:pre-wrap;overflow-wrap:anywhere;font:600 18px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;background:#e9eee2;border:1px solid #d5dfce;border-radius:12px;padding:16px 18px;margin:0}.focused-equation details{padding:10px 0}.focused-equation dl,.focus-words dl{margin:12px 0}.focused-equation dl>div,.focus-words dl>div{margin:0 0 14px}.focused-equation dt,.focus-words dt{font-size:14px;font-weight:700}.focused-equation dd,.focus-words dd{margin:4px 0 0;font-size:14px}.full-explanation summary{margin-bottom:14px}.full-explanation p{font-size:15px}.focused-layout+.lesson-glossary{max-width:76ch}.lesson-grid:has(.focused-example){grid-template-columns:1fr}
+@media(max-width:720px){.focused-example{padding:18px}.focused-equation pre{font-size:16px}.focused-example h2{font-size:16px}}
+
+.equation-label{font-size:13px;font-weight:700;margin:22px 0 6px}.equation-label+.equation{margin-top:0}.equation code{font:inherit}
+
+@media(max-width:360px){.topbar{height:auto;min-height:72px;flex-wrap:wrap;padding:13px 18px;row-gap:6px}.topbar .brand{flex:1 0 100%}.topbar>.quiet{padding:6px 0}.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.step{text-align:left}.track-tabs{flex-wrap:wrap}.track-tabs a{padding:7px 9px}}
+
+.quick-tools{padding:10px 0;margin-bottom:18px;max-width:76ch}.quick-tools summary{font-size:12px;color:var(--muted)}.quick-tools ul{font-size:14px;padding-left:20px}
+
+.lesson-search{margin:0 0 14px}.lesson-search label{display:block;font-size:12px;font-weight:650;margin-bottom:5px}.search-row{display:flex;gap:5px}.search-row input{min-width:0;width:100%;font-size:13px;border:1px solid #c6d2bc;background:var(--card);border-radius:8px;padding:9px;color:var(--ink)}.search-row button{font-size:11px;padding:5px}.lesson-search p,.search-empty{font-size:12px;line-height:1.6;margin:5px 0}.lesson-footer{flex-wrap:wrap}.lesson-footer #previous{margin-left:auto}.lesson-count{display:block}.lesson-heading{flex-wrap:wrap}.lesson-count{padding-top:0}.buttonrow{flex-wrap:wrap}#storageNotice{margin:12px 20px}main:focus{outline:none}
+@media(max-width:720px){.lesson-footer #previous{margin-left:0}.lesson-footer{flex-direction:column}.lesson-footer #continue{order:-2}.lesson-footer #previous{order:-1}.lesson-count{font-size:11px}.lesson-search{margin-top:8px}}
+
+.step{color:#4f5f4d}.step span{opacity:1}.visual-label span:last-child{color:#786331}
+
+.practice-pages{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12px;margin:18px 0}.practice-pages button{font-size:12px;padding:8px 10px}.numeric-part[hidden]{display:none}
+.review-page{max-width:76ch}.review-page h1{margin-bottom:20px}.review-save,.review-count{font-size:14px}.review-save .textbutton{display:inline;font:inherit;font-weight:650}.review-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;margin:20px 0}.review-card h2{font-size:26px}.review-card .smallheading{font-size:12px}.review-card #reviewAnswer{margin-top:28px}.review-card-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;margin-top:28px;font-size:14px}.review-card-actions .textbutton{font-size:14px}.review-timing{border-top:1px solid var(--line);padding-top:22px;margin-top:24px}.review-timing .buttonrow{gap:12px;flex-wrap:wrap}.review-timing .buttonrow button{font-size:15px;padding:10px 14px}.review-list ul{padding-left:22px}.review-list li{margin:16px 0}.review-list li>span{display:block;font-size:13px;color:var(--muted)}.button-link{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}#reviewLink[aria-current]{text-decoration:underline;text-underline-offset:5px}.lesson-footer #lessonReviewStatus{font-size:12px;max-width:38ch}.review-count{font-weight:650}
+@media(max-width:720px){.review-card{padding:20px}.lesson-footer #lessonReviewStatus{display:block}.lesson-footer #addReview{order:1}.review-card h2{font-size:24px}.topbar{height:auto;min-height:72px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}.topbar #reviewLink{margin-left:0}}
+@media(max-width:500px){.topbar .brand{flex:1 0 100%}.topbar #mapLink{margin-left:auto}.topbar #reviewLink{margin-left:14px}}
+@media(max-width:720px){.lesson-search input,.sidebar select{font-size:16px}.topbar .quiet,button,summary{min-height:44px}.topbar .quiet{display:inline-flex;align-items:center}.review-card-actions .textbutton{padding:8px 0}.practice-pages{flex-wrap:wrap}.practice-pages button{min-height:44px}.numeric-row input{font-size:16px}}
+.preparation-start{max-width:76ch;padding:22px 24px;background:var(--card);border:1px solid var(--line);border-radius:16px;margin:24px 0}.preparation-start h2{font-size:24px}.preparation-start>.primary{margin:6px 20px 10px 0}.preparation-list{max-width:76ch;margin:20px 0}.preparation-list li{margin:15px 0}.preparation-list li p{margin:3px 0;font-size:14px;color:var(--muted)}.preparation-list ol,.preparation-list ul{padding-left:24px}.preparation-context{border-left:3px solid var(--green);border-radius:0 10px 10px 0;background:#e9eee2;padding:14px 18px;margin-bottom:22px;font-size:13px;display:flex;gap:8px 20px;flex-wrap:wrap}.preparation-context a{font-weight:700}.preparation-context span{margin-left:auto}.preparation-context p{flex-basis:100%;margin:0}.preparation-exit{margin-top:28px}a.primary{display:inline-flex;align-items:center;border-radius:10px;text-decoration:none;max-width:100%;overflow-wrap:anywhere}.plan-banner li{margin:10px 0}.plan-banner details{margin-top:16px}.plan-banner h2{font-size:25px}
+@media(max-width:720px){.preparation-start{padding:18px}.preparation-context span{margin-left:0}.preparation-list a{overflow-wrap:anywhere}}
+
+/* Keep long course names inside the reading area at narrow widths and high zoom. */
+h1{overflow-wrap:anywhere}
+.pill{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.coursecard{min-width:0;overflow-wrap:anywhere}
+.plan-banner p > a:not(.primary){display:inline-block;max-width:100%;min-height:24px;padding:2px 0}
+
+.equation-key{margin:12px 0 0;padding:16px 18px;border-left:3px solid #397267;background:#f5f7f1;border-radius:0 10px 10px 0;overflow-wrap:anywhere}
+.equation-key h3,.equation-key h4{font-family:inherit;font-size:14px;line-height:1.5;font-weight:700;letter-spacing:0;margin:0 0 10px}
+.equation-key dl{margin:0;display:grid;gap:10px}.equation-key dl>div{margin:0}.equation-key dt{font-size:14px}.equation-key dt span{font-weight:400}.equation-key dd{font-size:14px;line-height:1.55;margin:2px 0 0}.equation-key code{white-space:normal;overflow-wrap:anywhere}.notation-key{border-top:1px solid #ccd7c5;padding-top:12px;margin-top:14px}.symbol-unit{color:#3a5045}
+@media(max-width:480px){.equation-key{padding:12px}.equation-key dd{font-size:14px}}
+
+/* One picture of the same example; its values remain readable without sight or colour. */
+.lesson-diagram{margin:24px 0 0;padding-top:20px;border-top:1px solid #c3cfbb;min-width:0}.lesson-diagram h3{font-family:inherit;font-weight:700;font-size:16px;line-height:1.5;letter-spacing:0;margin:0 0 8px}.lesson-diagram p{font-size:14px;line-height:1.65;margin:8px 0}.diagram-scroll,.diagram-table-scroll{max-width:100%;overflow:auto}.diagram-scroll:focus-visible{outline:3px solid #654a87;outline-offset:3px}.lesson-diagram svg{display:block;width:100%;min-width:320px;max-width:540px;margin:auto;background:#f9fbf6;border-radius:10px}.lesson-diagram svg text{fill:#233f34;font:14px system-ui,sans-serif}.diagram-axis{stroke:#4e6558;stroke-width:1.5}.diagram-grid{stroke:#dbe3d5;stroke-width:1}.diagram-legend{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:13px}.diagram-legend li{display:flex;align-items:center;gap:8px}.diagram-legend span{display:inline-block;width:25px;border-top-width:3px;flex:none}.diagram-values summary{font-size:14px;padding:8px 0}.diagram-values table{border-collapse:collapse;font-size:13px;min-width:100%}.diagram-values th,.diagram-values td{border-bottom:1px solid #c3cfbb;padding:7px;text-align:left;white-space:normal}.diagram-values caption{text-align:left;padding:10px 0}.diagram-axes{color:#233f34}@media(max-width:480px){.focused-example{padding:14px}.lesson-diagram svg{min-width:320px}.diagram-values table{min-width:280px}}
+
+.model-stage{max-width:100%;overflow-x:auto}.model-stage svg{min-width:500px;max-width:100%;width:100%}.model-stage:focus-visible{outline:3px solid #654a87;outline-offset:3px}.model-stage .caption{font-size:14px;line-height:1.65}
+
+.responsive-scales,.responsive-bars{background:#f9fbf6;border-radius:10px;padding:16px 12px;font-size:14px;color:#233f34}.diagram-scale+.diagram-scale{margin-top:28px}.diagram-scale strong{font-weight:600}.diagram-ticks{display:flex;justify-content:space-between;position:relative;margin:18px 5px 0;padding-top:12px}.diagram-ticks:before{content:"";position:absolute;top:0;left:0;right:0;border-top:2px solid #4e6558}.diagram-ticks span{position:relative;text-align:center;min-width:1px}.diagram-ticks span:before{content:"";position:absolute;height:12px;border-left:2px solid #4e6558;top:-17px;left:50%}.diagram-ticks span:first-child{transform:translateX(-50%)}.diagram-ticks span:last-child{transform:translateX(50%)}.diagram-bar-row+.diagram-bar-row{margin-top:17px}.diagram-bar-row>div:first-child{display:flex;justify-content:space-between;gap:10px}.diagram-bar-track{height:22px;position:relative;margin-top:6px;background:#e4ebdf}.diagram-bar-zero{position:absolute;top:-3px;bottom:-3px;border-left:2px solid #233f34;z-index:1}.diagram-bar-fill{position:absolute;height:100%;background:#245b50}.diagram-values table{min-width:100%;width:100%;table-layout:fixed}.diagram-values th,.diagram-values td{overflow-wrap:anywhere}.diagram-pan-hint{display:none}.lesson-diagram svg{min-width:400px}@media(max-width:480px){.diagram-pan-hint{display:block;font-size:13px}.lesson-diagram svg{min-width:400px}.diagram-values table{min-width:100%}}
+
+.diagram-ticks{display:block;height:32px;padding-top:12px}.diagram-ticks span{position:absolute;transform:translateX(-50%)}.diagram-ticks span:last-child{transform:translateX(-50%)}.diagram-values summary:focus-visible{outline:3px solid #654a87;outline-offset:2px}
+
+/* Put the same example beside the explanation when both have room to breathe.
+   The DOM keeps explanation, example, picture, then optional detail in reading order. */
+.focused-layout:has(.focused-pair){max-width:none}
+.focused-pair{max-width:76ch}
+.focused-explanation,.focused-details,.focused-visual{min-width:0}
+.focused-visual{margin:0 0 26px;padding:22px;background:var(--card);border:1px solid #d5dccd;border-radius:var(--radius);box-shadow:var(--shadow)}
+.focused-visual .smallheading{margin-bottom:8px}
+.pictured-example{font-size:14px;font-weight:650;line-height:1.6;margin-bottom:18px}
+.focused-visual .lesson-diagram,#visual>.lesson-diagram{margin:0;padding:0;border-top:0}
+@media(min-width:1200px){
+ .focused-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(440px,1fr);gap:0 28px;max-width:none;align-items:start}
+ .focused-explanation{grid-column:1;grid-row:1}
+ .focused-visual{grid-column:2;grid-row:1 / span 2;margin:0;padding:18px}
+ .focused-details{grid-column:1;grid-row:2}
+}
+@media(max-width:480px){.focused-visual{padding:14px}}
+.review-card .focused-pair{display:block;max-width:100%}
+.review-card .focused-visual{margin-bottom:26px}

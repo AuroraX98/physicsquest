@@ -1,0 +1,1214 @@
+{
+  "thermal-contact": {
+    "idea": "Heat flows from a hotter object toward a cooler one.",
+    "explanation": "Heat is energy moving because temperatures differ. Two touching objects stop passing energy in one preferred direction when their temperatures become equal.",
+    "example": {
+      "title": "Two touching blocks",
+      "steps": [
+        "One block is at 330 K and the other is at 290 K.",
+        "Heat initially moves from the 330 K block to the 290 K block."
+      ]
+    },
+    "equation": "T_hot > T_cold",
+    "terms": [
+      {
+        "term": "Heat",
+        "definition": "Energy transferred because of a temperature difference."
+      },
+      {
+        "term": "Kelvin (K)",
+        "definition": "The temperature unit used in absolute-temperature calculations."
+      }
+    ]
+  },
+  "kelvin-differences": {
+    "idea": "Celsius and kelvin use equal-sized steps but start counting at different places.",
+    "explanation": "Add 273.15 to a Celsius temperature to get kelvin. Do not add this number to a temperature rise: a rise of 10 °C is already a rise of 10 K.",
+    "example": {
+      "title": "A ten-degree rise",
+      "steps": [
+        "Water warms from 20 °C to 30 °C, or from 293.15 K to 303.15 K.",
+        "Both scales give a rise of 10 degrees."
+      ]
+    },
+    "equation": "T_in_kelvin = t_in_Celsius + 273.15",
+    "terms": [
+      {
+        "term": "Kelvin (K)",
+        "definition": "The temperature unit measured from absolute zero."
+      }
+    ]
+  },
+  "heat-internal-energy": {
+    "idea": "Internal energy is stored in a system; heat is a transfer of energy.",
+    "explanation": "A system is the matter you choose to study. Its internal energy includes tiny movements and interactions within it. Heating and stirring can both increase that energy, but stirring transfers energy as work.",
+    "example": {
+      "title": "Water gains energy",
+      "steps": [
+        "A water sample's internal energy rises from 1000 J to 1080 J.",
+        "It gained 80 J; that number alone does not tell us whether heating or stirring supplied it."
+      ]
+    },
+    "equation": "ΔU = U_final − U_initial",
+    "terms": [
+      {
+        "term": "Internal energy",
+        "definition": "Energy in microscopic motion and interactions inside a system."
+      },
+      {
+        "term": "Joule (J)",
+        "definition": "A unit of energy."
+      }
+    ]
+  },
+  "state-equilibrium": {
+    "idea": "A settled system's state tells us how it is now, not how it got there.",
+    "explanation": "Pressure, volume and temperature describe a settled gas. Internal energy depends on its state. If the gas returns to exactly the same state, its internal energy returns too.",
+    "example": {
+      "title": "Returning to the start",
+      "steps": [
+        "A gas starts with an internal energy of 500 J.",
+        "After several changes it returns to exactly the same state, so its internal energy is again 500 J."
+      ]
+    },
+    "equation": "ΔU_cycle = 0",
+    "terms": [
+      {
+        "term": "State",
+        "definition": "The conditions that describe a system at a particular time."
+      }
+    ]
+  },
+  "pressure-area": {
+    "idea": "Pressure tells us how much perpendicular force acts on each unit of area.",
+    "explanation": "The same force spread over a larger area gives less pressure. Divide force by area when the push is evenly spread and acts straight into the surface.",
+    "example": {
+      "title": "A gas pushes a piston",
+      "steps": [
+        "A gas pushes with 200 N over 0.020 m².",
+        "Its pressure is 200 ÷ 0.020 = 10000 Pa."
+      ]
+    },
+    "equation": "p = F/A",
+    "terms": [
+      {
+        "term": "Pressure",
+        "definition": "Perpendicular force per unit area."
+      },
+      {
+        "term": "Pascal (Pa)",
+        "definition": "One newton of force per square metre."
+      }
+    ]
+  },
+  "moles-particles": {
+    "idea": "A mole is a fixed, very large bundle of particles.",
+    "explanation": "One mole contains exactly 6.02214076 × 10²³ specified particles. Always name what you are counting: molecules and atoms are different things.",
+    "example": {
+      "title": "Half a mole of molecules",
+      "steps": [
+        "A sample contains 0.50 mol of gas molecules.",
+        "Multiplying by the number per mole gives about 3.0111 × 10²³ molecules."
+      ]
+    },
+    "equation": "N = nN_A",
+    "terms": [
+      {
+        "term": "Mole (mol)",
+        "definition": "A bundle of exactly 6.02214076 × 10²³ specified particles."
+      }
+    ]
+  },
+  "ideal-gas-law": {
+    "idea": "An ideal gas links pressure, volume, amount and temperature in one relationship.",
+    "explanation": "This model treats gas particles as tiny and far apart, with negligible attraction. At fixed amount and temperature, squeezing the gas into less space raises its pressure. Use absolute pressure and kelvin.",
+    "example": {
+      "title": "One mole in a container",
+      "steps": [
+        "Put 1 mol of ideal gas at 300 K in 0.025 m³.",
+        "Using R ≈ 8.31446 J/(mol K), its pressure is about 99774 Pa."
+      ]
+    },
+    "equation": "pV = nRT",
+    "terms": [
+      {
+        "term": "Ideal gas",
+        "definition": "A gas model that neglects particle size and attraction."
+      },
+      {
+        "term": "Absolute pressure",
+        "definition": "Pressure measured relative to a vacuum."
+      }
+    ]
+  },
+  "ideal-gas-limits": {
+    "idea": "The ideal-gas rule can fail when particles are crowded or attract each other strongly.",
+    "explanation": "Compare measured pressure times volume with the ideal prediction. Their ratio is called Z. A value near one means agreement for this measurement, not proof that the model always works.",
+    "example": {
+      "title": "Testing one gas state",
+      "steps": [
+        "A measurement gives pV = 1100 J, while nRT = 1000 J.",
+        "Z = 1.10, so the measured product is 10% above the ideal prediction."
+      ]
+    },
+    "equation": "Z = pV/(nRT)",
+    "terms": [
+      {
+        "term": "Z",
+        "definition": "The measured pressure-volume product divided by its ideal-gas prediction."
+      }
+    ]
+  },
+  "random-motion": {
+    "idea": "Zero average velocity does not mean that particles have stopped moving.",
+    "explanation": "Velocity includes direction. Opposite velocities can cancel when averaged, even though both particles have nonzero speed. Speed tells only how fast each particle moves.",
+    "example": {
+      "title": "Two moving particles",
+      "steps": [
+        "One particle moves at +4 m/s and another at −4 m/s.",
+        "Their average velocity is zero, but both have speed 4 m/s."
+      ]
+    },
+    "equation": "v_mean = (v₁ + v₂)/2",
+    "terms": [
+      {
+        "term": "Velocity",
+        "definition": "Speed together with direction."
+      },
+      {
+        "term": "Speed",
+        "definition": "How fast something moves, without direction."
+      }
+    ]
+  },
+  "wall-momentum": {
+    "idea": "Gas pressure comes from many particles bouncing against a wall.",
+    "explanation": "A bounce changes a particle's momentum, its mass times velocity. The wall receives the opposite change. Adding these pushes over time gives an average force.",
+    "example": {
+      "title": "One ideal bounce",
+      "steps": [
+        "A toy particle of mass 0.002 kg hits a stationary wall at 3 m/s and bounces back equally fast.",
+        "It gives the wall 2 × 0.002 × 3 = 0.012 N s of impulse."
+      ]
+    },
+    "equation": "impulse_to_wall = 2mu",
+    "terms": [
+      {
+        "term": "Momentum",
+        "definition": "Mass times velocity."
+      },
+      {
+        "term": "Impulse",
+        "definition": "Force added over the time it acts; it equals a momentum change."
+      }
+    ]
+  },
+  "kinetic-temperature": {
+    "idea": "In a classical monatomic ideal gas, higher temperature means greater average motion energy.",
+    "explanation": "Monatomic means each gas particle is one atom. This rule gives an average over many atoms, not the energy of every atom. It applies to ordinary, nonrelativistic ideal-gas motion.",
+    "example": {
+      "title": "Gas at 300 kelvin",
+      "steps": [
+        "Use T = 300 K and k_B ≈ 1.38 × 10⁻²³ J/K.",
+        "The average motion energy per atom is 1.5 × k_B × T = 6.21 × 10⁻²¹ J."
+      ]
+    },
+    "equation": "⟨K⟩ = (3/2)k_B T",
+    "terms": [
+      {
+        "term": "Monatomic",
+        "definition": "A substance whose particles are individual atoms."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy of motion."
+      }
+    ]
+  },
+  "speed-averages": {
+    "idea": "Root-mean-square speed gives extra weight to faster particles.",
+    "explanation": "To find it, square each speed, average the squares, then take the square root. This is useful because motion energy depends on speed squared.",
+    "example": {
+      "title": "Two toy speeds",
+      "steps": [
+        "The speeds are 0 m/s and 4 m/s, so their mean squared speed is 8 m²/s².",
+        "Their root-mean-square speed is √8 ≈ 2.83 m/s, while their ordinary average is 2 m/s."
+      ]
+    },
+    "equation": "v_rms = √⟨v²⟩",
+    "terms": [
+      {
+        "term": "Root-mean-square",
+        "definition": "The square root of the average of squared values."
+      }
+    ]
+  },
+  "internal-versus-bulk": {
+    "idea": "Energy of a whole moving object is different from energy inside it.",
+    "explanation": "A moving container carries its contents along. This shared motion has energy of its own. A rise in total energy therefore need not all become internal energy.",
+    "example": {
+      "title": "A container gains energy",
+      "steps": [
+        "A system gains 100 J in total, including 30 J of extra motion energy.",
+        "If its height does not change, the remaining 70 J increases internal energy."
+      ]
+    },
+    "equation": "ΔE = ΔU + ΔK_bulk + ΔE_grav",
+    "terms": [
+      {
+        "term": "Internal energy",
+        "definition": "Energy in microscopic motion and interactions."
+      },
+      {
+        "term": "Bulk motion",
+        "definition": "Motion of the system as a whole."
+      }
+    ]
+  },
+  "expansion-work": {
+    "idea": "An expanding gas can transfer energy by pushing its surroundings.",
+    "explanation": "When a gas moves a piston against a steady outside pressure, multiply that pressure by the volume increase. We count this work as positive because energy leaves the gas.",
+    "example": {
+      "title": "A piston moves outward",
+      "steps": [
+        "A gas expands by 0.003 m³ against 100000 Pa.",
+        "It delivers 100000 × 0.003 = 300 J of work to its surroundings."
+      ]
+    },
+    "equation": "W_by = p_external ΔV",
+    "terms": [
+      {
+        "term": "Work",
+        "definition": "Energy transferred through a force acting over movement."
+      }
+    ]
+  },
+  "external-reversible": {
+    "idea": "Expansion work depends on the pressure resisting the gas.",
+    "explanation": "The gas's own pressure is not always the resisting pressure. When a gas expands into an ideal vacuum, there is no outside pressure for it to push against, so this boundary work is zero.",
+    "example": {
+      "title": "Expansion into a vacuum",
+      "steps": [
+        "An ideal gas expands into empty space with outside pressure zero.",
+        "There is no pressure-volume work, even though the gas initially had pressure."
+      ]
+    },
+    "equation": "W_by = ∫p_external dV",
+    "terms": [
+      {
+        "term": "Boundary work",
+        "definition": "Energy transferred by pushing a system's boundary outward or inward."
+      }
+    ]
+  },
+  "heat-capacity": {
+    "idea": "Heat capacity tells us how much heating a sample needs for a temperature rise.",
+    "explanation": "A bigger sample usually needs more energy for the same rise. For a fixed process with nearly constant specific heat, multiply mass, specific heat and temperature rise. This excludes a change of phase.",
+    "example": {
+      "title": "Warming one sample",
+      "steps": [
+        "A 0.20 kg sample has specific heat 4000 J/(kg K).",
+        "Raising its temperature by 5 K needs 0.20 × 4000 × 5 = 4000 J under these conditions."
+      ]
+    },
+    "equation": "Q = mcΔT",
+    "terms": [
+      {
+        "term": "Specific heat",
+        "definition": "Heat needed per kilogram for a one-kelvin rise under stated conditions."
+      }
+    ]
+  },
+  "first-law": {
+    "idea": "Energy gained as heat can be stored or passed out as work.",
+    "explanation": "For a closed system that stays still and at the same height, subtract work done by the system from heat entering it. What remains is its internal-energy change.",
+    "example": {
+      "title": "Heating a gas",
+      "steps": [
+        "A fixed gas sample receives 500 J of heat and delivers 180 J of work.",
+        "Its internal energy rises by 500 − 180 = 320 J."
+      ]
+    },
+    "equation": "ΔU = Q − W_by",
+    "terms": [
+      {
+        "term": "Closed system",
+        "definition": "A fixed amount of matter with no matter crossing its boundary."
+      }
+    ]
+  },
+  "path-state": {
+    "idea": "The route between two states affects heat and work, but not the internal-energy change.",
+    "explanation": "Internal energy depends on the starting and ending states. Heat and work describe transfers along the route. Extra work outward needs extra heat inward if the same energy increase is to remain.",
+    "example": {
+      "title": "One energy balance",
+      "steps": [
+        "A process raises internal energy by 100 J while delivering 20 J of work.",
+        "It therefore needs 100 + 20 = 120 J of heat input."
+      ]
+    },
+    "equation": "Q = ΔU + W_by",
+    "terms": [
+      {
+        "term": "State",
+        "definition": "The conditions that describe a settled system."
+      }
+    ]
+  },
+  "constant-volume": {
+    "idea": "A rigid container cannot do expansion work.",
+    "explanation": "Its volume does not change. If heating is the only energy transfer, all incoming heat increases internal energy. Electrical or stirring work would need separate counting.",
+    "example": {
+      "title": "Heating a rigid container",
+      "steps": [
+        "The sample's heat capacity is 20 J/K and it receives 60 J of heat.",
+        "With no other work, its temperature rises by 60 ÷ 20 = 3 K."
+      ]
+    },
+    "equation": "Q = C_V ΔT",
+    "terms": [
+      {
+        "term": "Heat capacity",
+        "definition": "Energy needed for a one-kelvin temperature rise under stated conditions."
+      }
+    ]
+  },
+  "constant-pressure": {
+    "idea": "Heating at steady pressure can both warm a gas and make it expand.",
+    "explanation": "For a slowly balanced piston with only expansion work, heat supplies the rise in internal energy plus work on the load. Enthalpy groups these two contributions into one state quantity.",
+    "example": {
+      "title": "Heating under a loaded piston",
+      "steps": [
+        "The gas gains 100 J of internal energy and delivers 40 J of expansion work.",
+        "It needs 140 J of heat, equal to its enthalpy increase in this process."
+      ]
+    },
+    "equation": "Q_p = ΔH",
+    "terms": [
+      {
+        "term": "Enthalpy",
+        "definition": "Internal energy plus pressure times volume."
+      }
+    ]
+  },
+  "cp-cv-assumptions": {
+    "idea": "An ideal gas needs extra heat when warming also makes it expand.",
+    "explanation": "At fixed pressure, some incoming energy goes into pushing the surroundings. At fixed volume, that expansion work is absent. For one mole of a fixed-composition ideal gas, the heat-capacity difference is R.",
+    "example": {
+      "title": "A monatomic ideal gas",
+      "steps": [
+        "Its heat capacity per mole at fixed volume is 3R/2.",
+        "At fixed pressure it is 5R/2, so the difference is R."
+      ]
+    },
+    "equation": "C_p,m − C_V,m = R",
+    "terms": [
+      {
+        "term": "Molar heat capacity",
+        "definition": "Heat capacity per mole for a stated process."
+      }
+    ]
+  },
+  "isothermal-work": {
+    "idea": "An ideal gas can expand without cooling if heat replaces the energy used for work.",
+    "explanation": "Isothermal means temperature stays fixed. During a very gentle ideal-gas expansion, pressure falls as the gas takes up more space. The logarithm in the work rule accounts for this changing pressure; heat entering replaces the energy passed out as work.",
+    "example": {
+      "title": "A gas doubles its volume",
+      "steps": [
+        "Keep nRT = 1000 J while the gas expands reversibly to twice its volume.",
+        "It delivers 1000 ln(2) ≈ 693 J of work and receives the same heat input."
+      ]
+    },
+    "equation": "W_by = nRT ln(V_final/V_initial)",
+    "terms": [
+      {
+        "term": "Isothermal",
+        "definition": "At constant temperature."
+      },
+      {
+        "term": "Reversible",
+        "definition": "An ideal change that could be undone without leaving a change elsewhere."
+      },
+      {
+        "term": "ln",
+        "definition": "Natural logarithm, a calculator function that turns multiplication into addition; ln(2) is about 0.693."
+      }
+    ]
+  },
+  "adiabatic-change": {
+    "idea": "A gas can cool by doing work even when no heat leaves it.",
+    "explanation": "Adiabatic means no heat crosses the boundary. If the gas pushes a load, the energy comes from its internal energy. The familiar pressure-volume power law needs extra ideal-gas and reversibility assumptions.",
+    "example": {
+      "title": "An insulated gas pushes a load",
+      "steps": [
+        "The gas delivers 90 J of work with no heat transfer.",
+        "Its internal energy falls by 90 J; with heat capacity 30 J/K, it cools by 3 K."
+      ]
+    },
+    "equation": "ΔU = −W_by when Q = 0",
+    "terms": [
+      {
+        "term": "Adiabatic",
+        "definition": "Having no heat transfer across the chosen boundary."
+      }
+    ]
+  },
+  "steady-conduction": {
+    "idea": "Heat can pass through a solid without the solid moving.",
+    "explanation": "For a uniform slab, more area and a larger temperature difference increase the transfer rate. A thicker slab slows it. This simple rule assumes a steady temperature pattern and no heat made inside.",
+    "example": {
+      "title": "Heat through a slab",
+      "steps": [
+        "Use conductivity 2 W/(m K), area 0.5 m², thickness 0.10 m and temperature difference 20 K.",
+        "The heat-transfer rate is 2 × 0.5 × 20 ÷ 0.10 = 200 W."
+      ]
+    },
+    "equation": "P = kAΔT/L",
+    "terms": [
+      {
+        "term": "Conduction",
+        "definition": "Energy transfer through matter without bulk flow."
+      },
+      {
+        "term": "Watt (W)",
+        "definition": "One joule transferred each second."
+      }
+    ]
+  },
+  "thermal-resistance": {
+    "idea": "Layers in a steady heat path share the same heat-transfer rate.",
+    "explanation": "Thermal resistance tells how much temperature drop is needed for a given transfer rate. Resistances add for layers in series, provided heat does not leak out of the sides.",
+    "example": {
+      "title": "Two insulating layers",
+      "steps": [
+        "Their resistances are 0.20 and 0.30 K/W, giving 0.50 K/W together.",
+        "A 25 K difference drives 25 ÷ 0.50 = 50 W through both."
+      ]
+    },
+    "equation": "P = ΔT/(R₁ + R₂)",
+    "terms": [
+      {
+        "term": "Thermal resistance",
+        "definition": "Temperature difference divided by heat-transfer rate."
+      }
+    ]
+  },
+  "empirical-convection": {
+    "idea": "Moving air or water can carry energy away from a warm surface.",
+    "explanation": "Convection is heat transfer involving fluid motion. A supplied coefficient h describes the particular surface and flow. Changing the flow can change h, so it is not a universal material constant.",
+    "example": {
+      "title": "Warm surface in air",
+      "steps": [
+        "Use h = 10 W/(m² K), area 0.20 m² and a surface 15 K warmer than the air.",
+        "The estimated outward transfer rate is 30 W."
+      ]
+    },
+    "equation": "P = hA(T_surface − T_fluid)",
+    "terms": [
+      {
+        "term": "Convection",
+        "definition": "Heat transfer involving moving fluid."
+      }
+    ]
+  },
+  "radiative-balance": {
+    "idea": "An object both sends out and absorbs radiation.",
+    "explanation": "Net cooling depends on the difference between outgoing and incoming energy. In a large surrounding enclosure, the simple radiation rule uses kelvin temperatures raised to the fourth power.",
+    "example": {
+      "title": "Equal temperatures",
+      "steps": [
+        "A small surface and its surrounding enclosure are both at 300 K.",
+        "Each emits radiation, but the net exchange is zero."
+      ]
+    },
+    "equation": "P_net = εσA(T_surface⁴ − T_surroundings⁴)",
+    "terms": [
+      {
+        "term": "Radiation",
+        "definition": "Energy carried by electromagnetic waves."
+      },
+      {
+        "term": "Net",
+        "definition": "The overall result after opposite contributions are combined."
+      }
+    ]
+  },
+  "lumped-gray-limits": {
+    "idea": "One-temperature cooling works only when heat spreads through an object fast enough.",
+    "explanation": "A thin, well-conducting object may stay at nearly the same temperature throughout. With steady air conditions, each equal time interval removes the same fraction of its remaining temperature difference. This is exponential cooling, rather than losing the same number of degrees every second.",
+    "example": {
+      "title": "A cooling metal object",
+      "steps": [
+        "Its heat capacity is 100 J/K and hA = 5 W/K, giving a time constant of 20 s.",
+        "After 20 s, a 10 K temperature excess becomes about 3.68 K."
+      ]
+    },
+    "equation": "θ(t) = θ₀ exp(−t/τ)",
+    "terms": [
+      {
+        "term": "θ(t)",
+        "definition": "Temperature above the surrounding air at time t."
+      },
+      {
+        "term": "θ₀",
+        "definition": "The starting temperature difference."
+      },
+      {
+        "term": "τ",
+        "definition": "Time constant: the time for the difference to fall to about 37% of its starting value."
+      },
+      {
+        "term": "exp",
+        "definition": "The exponential calculator function; exp(−1) is about 0.368."
+      }
+    ]
+  },
+  "reversible-comparison": {
+    "idea": "A gas's entropy change depends on its starting and ending conditions, not its actual route.",
+    "explanation": "Entropy measures the spread of possible tiny arrangements of particles and energy. We can calculate its change by imagining a very gentle route between the same conditions. That does not mean the actual change can be undone without affecting the surroundings.",
+    "example": {
+      "title": "Free expansion to twice the volume",
+      "steps": [
+        "An insulated ideal gas expands into empty space to twice its volume, ending at the same temperature; let nR = 1 J/K.",
+        "An imagined slow, reversible expansion between those conditions gives entropy change 1 × ln(2) ≈ 0.693 J/K, even though the actual expansion transfers no heat."
+      ]
+    },
+    "equation": "ΔS = nR ln(V_final/V_initial)",
+    "terms": [
+      {
+        "term": "ΔS",
+        "definition": "Entropy change, measured in joules per kelvin."
+      },
+      {
+        "term": "nR",
+        "definition": "Amount of gas in moles multiplied by the gas constant."
+      },
+      {
+        "term": "V_final, V_initial",
+        "definition": "Final and initial gas volumes."
+      },
+      {
+        "term": "ln",
+        "definition": "Natural logarithm, a calculator function that turns multiplication into addition."
+      },
+      {
+        "term": "Reversible",
+        "definition": "An ideal change that could be undone without leaving a change elsewhere."
+      }
+    ]
+  },
+  "entropy-heat": {
+    "idea": "The same reversible heat input adds more entropy at a lower positive temperature.",
+    "explanation": "Entropy measures the spread of possible tiny arrangements of particles and energy. In a reversible transfer, one that could ideally be undone without leaving changes elsewhere, divide incoming heat by temperature to find the added entropy. Use kelvin, and keep the temperature fixed for this simple quotient.",
+    "example": {
+      "title": "A reversible heat input",
+      "steps": [
+        "A system receives 600 J reversibly at 300 K.",
+        "Its entropy increases by 600 ÷ 300 = 2 J/K."
+      ]
+    },
+    "equation": "ΔS = Q_rev/T",
+    "terms": [
+      {
+        "term": "ΔS",
+        "definition": "Entropy change, measured in joules per kelvin."
+      },
+      {
+        "term": "Q_rev",
+        "definition": "Heat entering through the ideal reversible transfer."
+      },
+      {
+        "term": "T",
+        "definition": "The fixed positive temperature in kelvin."
+      }
+    ]
+  },
+  "entropy-production": {
+    "idea": "An isolated system can gain entropy while its total energy stays constant.",
+    "explanation": "Isolated means neither matter nor energy crosses the boundary. Internal friction can turn organized motion into the tiny motions of particles. The energy stays inside, but it becomes more spread among possible arrangements, increasing entropy.",
+    "example": {
+      "title": "A stirrer slows inside insulation",
+      "steps": [
+        "Imagine an insulated, sealed system containing water and a freely spinning stirrer.",
+        "Friction slows the stirrer and warms the water: total energy stays constant while entropy increases."
+      ]
+    },
+    "equation": "ΔS_isolated = S_generated ≥ 0",
+    "terms": [
+      {
+        "term": "Entropy",
+        "definition": "A number measuring the spread of possible tiny arrangements of particles and energy."
+      },
+      {
+        "term": "Isolated system",
+        "definition": "A system exchanging neither matter nor energy with its surroundings."
+      }
+    ]
+  },
+  "system-surroundings": {
+    "idea": "Heat flowing from hot to cold increases the total entropy of the pair.",
+    "explanation": "The hot object loses entropy while the cold one gains it. For large reservoirs at fixed temperatures, the cold gain is larger. Count both objects before judging the total change.",
+    "example": {
+      "title": "Heat between two reservoirs",
+      "steps": [
+        "Transfer 120 J from 400 K to 300 K.",
+        "Entropy changes are −0.30 J/K and +0.40 J/K, giving +0.10 J/K overall."
+      ]
+    },
+    "equation": "ΔS_total = Q/T_cold − Q/T_hot",
+    "terms": [
+      {
+        "term": "Reservoir",
+        "definition": "A body large enough to stay at nearly fixed temperature during the transfer."
+      },
+      {
+        "term": "Entropy",
+        "definition": "A number measuring the spread of possible tiny arrangements of particles and energy."
+      }
+    ]
+  },
+  "engine-energy": {
+    "idea": "A heat engine returns to its starting state after each complete cycle.",
+    "explanation": "Its internal energy therefore has no net change over the cycle. Heat taken from a hot source supplies both useful work and heat released to a cooler sink.",
+    "example": {
+      "title": "One engine cycle",
+      "steps": [
+        "The engine takes in 1000 J and releases 700 J to a cooler sink.",
+        "The remaining 300 J leaves as net work."
+      ]
+    },
+    "equation": "W_out = Q_hot − Q_cold",
+    "terms": [
+      {
+        "term": "Cycle",
+        "definition": "A sequence of changes ending at the starting state."
+      }
+    ]
+  },
+  "carnot-bound": {
+    "idea": "The reservoir temperatures limit how much incoming heat an engine can turn into work.",
+    "explanation": "Even an ideal reversible engine must release some heat to the cooler reservoir. Real losses reduce its efficiency further. Use kelvin in the temperature ratio.",
+    "example": {
+      "title": "An ideal upper limit",
+      "steps": [
+        "The hot reservoir is at 600 K and the cold one at 300 K.",
+        "Efficiency cannot exceed 1 − 300/600 = 50%, so 1000 J of heat gives at most 500 J of work."
+      ]
+    },
+    "equation": "η ≤ 1 − T_cold/T_hot",
+    "terms": [
+      {
+        "term": "Efficiency",
+        "definition": "Useful work divided by heat taken from the hot source."
+      },
+      {
+        "term": "Reversible",
+        "definition": "Ideally undoable without a net change elsewhere."
+      }
+    ]
+  },
+  "refrigerator-cop": {
+    "idea": "A refrigerator uses work to move heat from a colder place to a warmer one.",
+    "explanation": "It releases both the removed heat and the motor's work into the warmer room. Its performance number compares heat moved with work supplied, so it can exceed one without creating energy.",
+    "example": {
+      "title": "One refrigerator cycle",
+      "steps": [
+        "The fridge removes 300 J using 100 J of work.",
+        "Its performance number is 3, and it releases 400 J to the room."
+      ]
+    },
+    "equation": "COP = Q_cold/W_in",
+    "terms": [
+      {
+        "term": "Coefficient of performance (COP)",
+        "definition": "Heat removed from the cold space divided by work supplied."
+      }
+    ]
+  },
+  "energy-usefulness": {
+    "idea": "The surroundings help determine how much useful work a heat supply can provide.",
+    "explanation": "A heat source's energy is conserved, but only part may become work in a heat engine. The temperature difference between source and surroundings sets the ideal limit.",
+    "example": {
+      "title": "Heat from a hot reservoir",
+      "steps": [
+        "Take 100 J from a 600 K reservoir with surroundings at 300 K.",
+        "A reversible engine can provide at most 100 × (1 − 300/600) = 50 J of work."
+      ]
+    },
+    "equation": "W_max = Q_hot(1 − T_ambient/T_hot)",
+    "terms": [
+      {
+        "term": "Reservoir",
+        "definition": "A large body that stays at nearly fixed temperature during a transfer."
+      }
+    ]
+  },
+  "micro-macro": {
+    "idea": "Many detailed arrangements can have the same large-scale description.",
+    "explanation": "A microstate lists the details. A macrostate keeps only the chosen overall information. Counting compatible details helps us understand why one overall state can occur in many ways.",
+    "example": {
+      "title": "Three labeled switches",
+      "steps": [
+        "For switches A, B and C, the description “two up” allows UUD, UDU and DUU.",
+        "There are three different detailed arrangements with that same description."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Microstate",
+        "definition": "A detailed arrangement in the model."
+      },
+      {
+        "term": "Macrostate",
+        "definition": "A description that keeps only selected overall information."
+      }
+    ]
+  },
+  "count-arrangements": {
+    "idea": "Count each final arrangement once, even if it can be chosen in different orders.",
+    "explanation": "Picking switch A then B gives the same up-pair as picking B then A. The combination formula removes these repeated orders when choosing a fixed number from labeled objects.",
+    "example": {
+      "title": "Choose two of four switches",
+      "steps": [
+        "The up-pairs are AB, AC, AD, BC, BD and CD.",
+        "There are six choices, matching 4! ÷ (2! × 2!) = 6."
+      ]
+    },
+    "equation": "Ω = N!/[r!(N−r)!]",
+    "terms": [
+      {
+        "term": "Factorial (!)",
+        "definition": "Multiply a positive whole number by every smaller positive whole number; 0! is defined as 1."
+      }
+    ]
+  },
+  "boltzmann-entropy": {
+    "idea": "More equally likely tiny arrangements give a larger statistical entropy.",
+    "explanation": "Entropy assigns a number to the spread of possible particle arrangements. Joining independent systems multiplies their arrangement counts, but their entropies add. A logarithm converts the multiplied counts into a sum; unequal chances need a different rule.",
+    "example": {
+      "title": "Four allowed arrangements",
+      "steps": [
+        "A model permits four equally likely detailed arrangements.",
+        "The natural-logarithm calculator button gives ln(4) ≈ 1.386, so its entropy is 1.386 times Boltzmann's constant."
+      ]
+    },
+    "equation": "S = k_B ln Ω",
+    "terms": [
+      {
+        "term": "S",
+        "definition": "Statistical entropy in this counting model."
+      },
+      {
+        "term": "k_B",
+        "definition": "Boltzmann's constant, about 1.38 × 10⁻²³ joules per kelvin."
+      },
+      {
+        "term": "Ω",
+        "definition": "The count of allowed, equally likely detailed arrangements."
+      },
+      {
+        "term": "ln",
+        "definition": "Natural logarithm, a calculator function that turns multiplication into addition; ln(1) is 0."
+      }
+    ]
+  },
+  "fluctuations": {
+    "idea": "Random counts vary even when their average is predictable.",
+    "explanation": "For independent yes-or-no events, the standard deviation measures a typical size of that variation. It grows with the square root of the number of events, not directly with that number.",
+    "example": {
+      "title": "One hundred fair trials",
+      "steps": [
+        "The mean success count is 50.",
+        "Its standard deviation is √(100 × 0.5 × 0.5) = 5; an actual count need not be exactly 50."
+      ]
+    },
+    "equation": "σ = √[M p(1−p)]",
+    "terms": [
+      {
+        "term": "Standard deviation",
+        "definition": "A measure of how widely values spread around their average."
+      }
+    ]
+  },
+  "reservoir-model": {
+    "idea": "A small system can exchange energy while a large bath stays at nearly fixed temperature.",
+    "explanation": "The bath is a thermal reservoir. In equilibrium, the small system still changes energy; its probabilities stay steady. We assume weak contact, so the small system's energy levels remain meaningful.",
+    "example": {
+      "title": "One energy exchange",
+      "steps": [
+        "A small system receives 2 × 10⁻²¹ J from its bath.",
+        "The bath loses the same amount, with negligible temperature change in this model."
+      ]
+    },
+    "equation": "E_total = E_system + E_bath",
+    "terms": [
+      {
+        "term": "Thermal reservoir",
+        "definition": "A body large enough to exchange heat without appreciably changing temperature."
+      }
+    ]
+  },
+  "positive-temperature-domain": {
+    "idea": "Energy divided by the thermal energy scale is a pure number.",
+    "explanation": "Boltzmann's constant times kelvin temperature gives a useful energy for comparing particle behavior. Divide an energy difference by this quantity to see how large it is compared with thermal effects. The formulas here require positive temperature; zero would cause division by zero.",
+    "example": {
+      "title": "Comparing two energies",
+      "steps": [
+        "The energy gap is 4 × 10⁻²¹ J and k_B T is 2 × 10⁻²¹ J.",
+        "Their ratio is 2, with the joule units canceling."
+      ]
+    },
+    "equation": "x = ΔE/(k_B T), T > 0",
+    "terms": [
+      {
+        "term": "k_B",
+        "definition": "Boltzmann's constant, about 1.38 × 10⁻²³ joules per kelvin."
+      },
+      {
+        "term": "T",
+        "definition": "Positive temperature in kelvin."
+      },
+      {
+        "term": "ΔE",
+        "definition": "The energy difference being compared."
+      },
+      {
+        "term": "x",
+        "definition": "The resulting ratio, with no units."
+      }
+    ]
+  },
+  "boltzmann-weights": {
+    "idea": "At positive temperature, each higher-energy state gets a smaller thermal weight.",
+    "explanation": "A weight is a relative score, not yet a probability. Divide each weight by their total to get probabilities that add to one. Count distinct states correctly.",
+    "example": {
+      "title": "Two energy levels",
+      "steps": [
+        "Two single states have weights 1 and 1/3.",
+        "Their total is 4/3, so their probabilities are 3/4 and 1/4."
+      ]
+    },
+    "equation": "p_i = exp(−E_i/(k_B T))/Σ_j exp(−E_j/(k_B T))",
+    "terms": [
+      {
+        "term": "Thermal weight",
+        "definition": "A relative score used to calculate an equilibrium probability."
+      }
+    ]
+  },
+  "partition-function": {
+    "idea": "The partition function adds all the thermal weights.",
+    "explanation": "If several distinct states share an energy, count every one. Their shared energy does not make them the same state. This total lets us turn weights into probabilities.",
+    "example": {
+      "title": "One lower and two upper states",
+      "steps": [
+        "The lower state has weight 1; each upper state has weight 1/2.",
+        "The total Z is 2, so the whole upper level has probability 1/2."
+      ]
+    },
+    "equation": "Z = Σ_i g_i exp(−E_i/(k_B T))",
+    "terms": [
+      {
+        "term": "Partition function (Z)",
+        "definition": "The sum of the thermal weights of all included states."
+      },
+      {
+        "term": "Degeneracy (g)",
+        "definition": "The number of distinct states sharing an energy."
+      }
+    ]
+  },
+  "mean-energy-capacity": {
+    "idea": "Average energy need not be an energy found in a single measurement.",
+    "explanation": "Multiply each possible energy by its probability, then add. This describes the average over repeated preparations. As temperature changes the probabilities, it can change this average.",
+    "example": {
+      "title": "A two-level model",
+      "steps": [
+        "The possible energies are 0 J and 4 J, with probabilities 0.75 and 0.25.",
+        "The mean is 1 J, although a single measurement gives either 0 J or 4 J."
+      ]
+    },
+    "equation": "U = Σ_i p_i E_i",
+    "terms": [
+      {
+        "term": "Mean",
+        "definition": "The average found by weighting values by their probabilities."
+      }
+    ]
+  },
+  "phase-latent-heat": {
+    "idea": "A material can absorb heat while changing phase without becoming hotter.",
+    "explanation": "At a pure material's melting point and fixed pressure, heat can turn solid into liquid. It changes the internal arrangement instead of raising temperature during that ideal melting step.",
+    "example": {
+      "title": "Melting a small sample",
+      "steps": [
+        "Use latent heat 200000 J/kg and melt 0.020 kg at its melting point.",
+        "The required heat is 0.020 × 200000 = 4000 J."
+      ]
+    },
+    "equation": "Q = mL",
+    "terms": [
+      {
+        "term": "Latent heat per mass (L)",
+        "definition": "Energy per kilogram needed for a specified change of phase."
+      }
+    ]
+  },
+  "free-energy": {
+    "idea": "At fixed temperature and volume, Helmholtz free energy helps predict which allowed changes are favored.",
+    "explanation": "Helmholtz free energy combines stored internal energy with entropy, which tracks the spread of possible tiny arrangements. Under fixed temperature and volume, an allowed spontaneous change lowers this quantity. A lower value can favor a change without telling us how quickly a barrier lets it happen.",
+    "example": {
+      "title": "Comparing two states",
+      "steps": [
+        "At 300 K, a change raises internal energy by 100 J and entropy by 0.50 J/K.",
+        "Its free-energy change is 100 − 300 × 0.50 = −50 J."
+      ]
+    },
+    "equation": "ΔF = ΔU − TΔS",
+    "terms": [
+      {
+        "term": "Helmholtz free energy (F)",
+        "definition": "Internal energy U minus temperature T times entropy S."
+      },
+      {
+        "term": "Δ",
+        "definition": "Change from the starting value to the ending value."
+      }
+    ]
+  },
+  "chemical-potential": {
+    "idea": "Chemical potential tells how free energy changes when a little matter is added.",
+    "explanation": "For one species at fixed temperature and pressure, multiply added particle count by chemical potential to estimate the Gibbs-energy change. This is only a small-change estimate when chemical potential stays nearly constant.",
+    "example": {
+      "title": "Adding particles",
+      "steps": [
+        "The chemical potential is 2 × 10⁻²¹ J per particle.",
+        "Adding 1000 particles raises Gibbs energy by about 2 × 10⁻¹⁸ J."
+      ]
+    },
+    "equation": "ΔG ≈ μΔN",
+    "terms": [
+      {
+        "term": "Chemical potential (μ)",
+        "definition": "The change in free energy per added particle under specified conditions."
+      },
+      {
+        "term": "Gibbs energy",
+        "definition": "Internal energy plus pressure times volume, minus temperature times entropy."
+      }
+    ]
+  },
+  "mean-occupation": {
+    "idea": "An average particle count can exceed one without being a probability.",
+    "explanation": "Bosons can share one state. Averaging its particle count can therefore give two or more. A fully specified fermion state allows only zero or one particle.",
+    "example": {
+      "title": "A boson state",
+      "steps": [
+        "The state contains zero particles half the time and four particles half the time.",
+        "Its average count is 2, not a probability of 200%."
+      ]
+    },
+    "equation": "n̄ = Σ_r rP(r)",
+    "terms": [
+      {
+        "term": "Boson",
+        "definition": "A particle type that permits multiple particles in the same single-particle state."
+      },
+      {
+        "term": "Fermion",
+        "definition": "A particle type allowing at most one particle per fully specified single-particle state."
+      }
+    ]
+  },
+  "quantum-distribution-domains": {
+    "idea": "Bosons can share one allowed state; fermions cannot share a fully specified state.",
+    "explanation": "Bosons and fermions are two particle families with different counting rules. A state means one fully specified allowed condition. Their ideal-gas formulas predict average counts at positive temperature; for the finite boson formula, the particle-adding energy μ must be below every included state's energy.",
+    "example": {
+      "title": "One supplied energy comparison",
+      "steps": [
+        "Choose the dimensionless energy comparison x so that exp(x) = 3; this satisfies the boson requirement x > 0.",
+        "The average boson count is 1/(3−1) = ½, while the fermion count is 1/(3+1) = ¼ in the same comparison."
+      ]
+    },
+    "equation": "x = (ε−μ)/(k_B T); n̄_B = 1/[exp(x)−1]; n̄_F = 1/[exp(x)+1]",
+    "terms": [
+      {
+        "term": "ε",
+        "definition": "Energy of the selected single-particle state."
+      },
+      {
+        "term": "μ",
+        "definition": "Chemical potential: the free-energy cost of adding a particle while the specified conditions are held fixed."
+      },
+      {
+        "term": "k_B T",
+        "definition": "Boltzmann's constant times temperature, an energy scale."
+      },
+      {
+        "term": "T",
+        "definition": "Temperature in kelvin; it must be positive here."
+      },
+      {
+        "term": "n̄_B, n̄_F",
+        "definition": "Average boson and fermion counts in one fully specified state."
+      },
+      {
+        "term": "exp(x)",
+        "definition": "The exponential calculator function, e raised to x, where e is about 2.718."
+      },
+      {
+        "term": "Free energy",
+        "definition": "An energy-based quantity used to compare changes when temperature and other stated conditions stay fixed."
+      }
+    ]
+  },
+  "classical-quantum-map": {
+    "idea": "When very few particles occupy each state, boson and fermion predictions become nearly equal.",
+    "explanation": "Bosons can share an allowed particle state; fermions cannot share a fully specified one. At very low average counts, this difference matters little. In their formulas, adding or subtracting one barely changes a much larger number; high temperature alone does not guarantee this condition.",
+    "example": {
+      "title": "A large exponential term",
+      "steps": [
+        "Let the exponential term be 100.",
+        "The two means are 1/99 ≈ 0.01010 and 1/101 ≈ 0.00990, both close to 0.01000."
+      ]
+    },
+    "equation": "n̄ ≈ exp[−(ε−μ)/(k_B T)]",
+    "terms": [
+      {
+        "term": "n̄",
+        "definition": "Average particle count in one fully specified state."
+      },
+      {
+        "term": "ε",
+        "definition": "State energy."
+      },
+      {
+        "term": "μ",
+        "definition": "Chemical potential, the free-energy cost of adding a particle under specified conditions."
+      },
+      {
+        "term": "k_BT",
+        "definition": "Boltzmann's constant times positive kelvin temperature."
+      },
+      {
+        "term": "exp",
+        "definition": "The exponential calculator function."
+      }
+    ]
+  },
+  "third-law": {
+    "idea": "A single allowed lowest-energy arrangement gives zero counting entropy in the ideal zero-temperature limit.",
+    "explanation": "The ground state is the lowest-energy state a system can have. If only one such arrangement remains possible as an equilibrated system approaches absolute zero, its counting entropy approaches zero. This describes a limit, not a recipe for reaching absolute zero.",
+    "example": {
+      "title": "A unique ground state",
+      "steps": [
+        "The model has one allowed ground state, so g₀ = 1.",
+        "Its limiting entropy is k_B ln(1) = 0."
+      ]
+    },
+    "equation": "S(T→0) = k_B ln g₀",
+    "terms": [
+      {
+        "term": "Ground state",
+        "definition": "A lowest-energy allowed arrangement."
+      },
+      {
+        "term": "g₀",
+        "definition": "Number of allowed lowest-energy arrangements."
+      },
+      {
+        "term": "k_B",
+        "definition": "Boltzmann's constant."
+      },
+      {
+        "term": "ln",
+        "definition": "Natural logarithm, a calculator function; ln(1) is zero."
+      },
+      {
+        "term": "S",
+        "definition": "Entropy, here calculated from the count of allowed arrangements."
+      }
+    ]
+  },
+  "choose-boundary": {
+    "idea": "Choose what belongs to your system before counting energy transfers.",
+    "explanation": "A boundary separates the system from its surroundings. List any matter, heat or work crossing it. A transfer across a small system's boundary may be an internal change for a larger system.",
+    "example": {
+      "title": "Gas inside a piston",
+      "steps": [
+        "Choose only the sealed gas as the system.",
+        "Heating brings energy in and the moving piston carries work out; no matter crosses this boundary."
+      ]
+    },
+    "equation": "ΔU = Q − W_by",
+    "terms": [
+      {
+        "term": "System",
+        "definition": "The matter or region chosen for study."
+      },
+      {
+        "term": "Boundary",
+        "definition": "The dividing line between the system and its surroundings."
+      }
+    ]
+  },
+  "combine-thermal": {
+    "idea": "Use energy balance to find warming, then a gas law to find the new pressure.",
+    "explanation": "A sealed rigid ideal gas keeps the same amount and volume. With constant heat capacity and no work, heat input determines the temperature rise. Pressure then follows the kelvin-temperature ratio.",
+    "example": {
+      "title": "Heating a sealed gas",
+      "steps": [
+        "Start at 300 K and 100000 Pa, with heat capacity 30 J/K; add 600 J.",
+        "The gas warms by 20 K, so its final pressure is 100000 × 320/300 ≈ 106667 Pa."
+      ]
+    },
+    "equation": "p_final/p_initial = T_final/T_initial",
+    "terms": [
+      {
+        "term": "Heat capacity",
+        "definition": "Energy needed for a one-kelvin rise under stated conditions."
+      }
+    ]
+  },
+  "cycle-audit": {
+    "idea": "An engine claim must satisfy both energy conservation and the temperature limit.",
+    "explanation": "First check that incoming heat equals work plus rejected heat. Then compare its efficiency with the reversible limit. Passing both checks still does not prove a real machine can achieve the claim.",
+    "example": {
+      "title": "Checking one claim",
+      "steps": [
+        "An engine takes 1000 J, releases 600 J and delivers 400 J between 500 K and 300 K.",
+        "Energy balances, and 40% equals the ideal temperature limit; equality would require reversibility."
+      ]
+    },
+    "equation": "η ≤ 1 − T_cold/T_hot",
+    "terms": [
+      {
+        "term": "Efficiency",
+        "definition": "Useful work divided by incoming heat."
+      },
+      {
+        "term": "Reversible",
+        "definition": "Ideally undoable without a net change elsewhere."
+      }
+    ]
+  },
+  "thermal-assessment": {
+    "idea": "A prediction should include the uncertainty that comes from its inputs.",
+    "explanation": "For a fixed heat capacity and no work, a heat range becomes a temperature range. Extra calculator digits cannot remove that input uncertainty. Check that no phase change or uncounted loss breaks the model.",
+    "example": {
+      "title": "Heating with an input range",
+      "steps": [
+        "Start at exactly 300 K with heat capacity 200 J/K; supply 1000 ± 50 J.",
+        "The final temperature is 305.00 ± 0.25 K under the stated model."
+      ]
+    },
+    "equation": "ΔT = Q/C",
+    "terms": [
+      {
+        "term": "Uncertainty range",
+        "definition": "A stated interval of plausible values, not automatically a statistical confidence interval."
+      }
+    ]
+  }
+}

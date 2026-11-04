@@ -1,0 +1,1218 @@
+{
+  "sky-angles": {
+    "idea": "Sky coordinates tell us which direction to look, rather than how far away something is.",
+    "explanation": "Right ascension and declination work like longitude and latitude on a sky map. Right ascension uses hours as angle labels: a whole circle is 24 hours. These hours do not measure travel time.",
+    "example": {
+      "title": "Two sky-map hours",
+      "steps": [
+        "Two points on the sky's equator differ by 2 hours of right ascension.",
+        "Each hour means 15°, so their separation is 30°; away from this equator, the same subtraction does not give their true separation."
+      ]
+    },
+    "equation": "1 hour of right ascension = 15°",
+    "terms": [
+      {
+        "term": "Right ascension",
+        "definition": "An east-west direction label on the sky."
+      },
+      {
+        "term": "Declination",
+        "definition": "An angle north or south of the sky's equator."
+      },
+      {
+        "term": "Sky's equator",
+        "definition": "Earth's equator extended outward as a circle on the sky."
+      }
+    ]
+  },
+  "distance-units": {
+    "idea": "A light-year measures distance, even though its name contains the word year.",
+    "explanation": "Light takes time to travel. In nearby space, multiplying its speed by its travel time gives the distance. An astronomical unit, or au, is another length unit, close to the average Earth–Sun distance.",
+    "example": {
+      "title": "A 500-second journey",
+      "steps": [
+        "Light travels at about 300 million metres each second through empty space.",
+        "In 500 seconds it travels about 150 billion metres, roughly 1 au; this simple rule needs changes for distances across the expanding universe."
+      ]
+    },
+    "equation": "distance = light speed × travel time",
+    "terms": [
+      {
+        "term": "Light-year",
+        "definition": "The distance light travels through empty space in one year."
+      }
+    ]
+  },
+  "flux-luminosity": {
+    "idea": "The same source looks fainter farther away because its light spreads over a larger area.",
+    "explanation": "Luminosity means total light power sent out. Flux means the power reaching each square metre. If light spreads equally in every direction, doubling the distance spreads it over four times the area.",
+    "example": {
+      "title": "Moving twice as far away",
+      "steps": [
+        "Imagine observing one steady lamp from a distance of 10 metres, then 20 metres.",
+        "Ignoring blocked or absorbed light, each square metre at the second position receives one quarter as much power."
+      ]
+    },
+    "equation": "flux = luminosity / (4π × distance²)",
+    "terms": [
+      {
+        "term": "π",
+        "definition": "Pi, a number about 3.14."
+      }
+    ]
+  },
+  "selection-uncertainty": {
+    "idea": "A survey can miss faint objects even when it measures the visible ones well.",
+    "explanation": "A brightness cutoff decides which objects enter a survey. Measurement uncertainty describes how precisely each selected object is measured. These are different problems: low measurement noise cannot reveal objects left out of the sample.",
+    "example": {
+      "title": "One measured signal",
+      "steps": [
+        "A detector records a signal of 20 counts, with a usual noise size of 5 counts.",
+        "The signal-to-noise ratio is 20/5 = 4; this says nothing by itself about faint objects excluded from the survey."
+      ]
+    },
+    "equation": "signal-to-noise ratio = signal / noise size",
+    "terms": [
+      {
+        "term": "Noise",
+        "definition": "Unwanted variation in a measurement."
+      }
+    ]
+  },
+  "thermal-spectrum": {
+    "idea": "A hotter ideal glowing object has its wavelength peak at a shorter wavelength.",
+    "explanation": "A blackbody is an ideal object that absorbs all incoming light and glows according to its temperature. Its wavelength peak is where it gives out the most power per equal wavelength interval. Real stars only approximately follow this pattern.",
+    "example": {
+      "title": "Finding a glowing object's temperature",
+      "steps": [
+        "An ideal object's wavelength peak is 0.0000005 metres.",
+        "Divide 0.002898 metre-kelvin by that wavelength to get about 5,796 K; a graph using frequency has a differently defined peak."
+      ]
+    },
+    "equation": "peak wavelength × temperature = 0.002898 m·K",
+    "terms": [
+      {
+        "term": "Wavelength",
+        "definition": "The distance between matching parts of successive waves."
+      },
+      {
+        "term": "Kelvin (K)",
+        "definition": "The temperature scale starting at absolute zero."
+      }
+    ]
+  },
+  "spectral-lines": {
+    "idea": "Atoms absorb or emit particular colours because their electrons can change energy only by allowed amounts.",
+    "explanation": "A spectral line is a narrow colour feature in light split into its wavelengths. Each line corresponds to an energy jump. Several matching lines help identify an atom; line strength also depends on temperature and the gas conditions.",
+    "example": {
+      "title": "One emitted photon",
+      "steps": [
+        "An electron loses energy and emits a photon with wavelength 600 nanometres.",
+        "Using light speed and Planck's constant, its energy is about 3.315 × 10⁻¹⁹ joules; that equals the electron's energy loss."
+      ]
+    },
+    "equation": "photon energy = h × c / wavelength",
+    "terms": [
+      {
+        "term": "Photon",
+        "definition": "One packet of light energy."
+      },
+      {
+        "term": "h",
+        "definition": "Planck's constant, about 6.63 × 10⁻³⁴ joule-seconds."
+      },
+      {
+        "term": "c",
+        "definition": "Light speed in empty space, about 3 × 10⁸ metres per second."
+      },
+      {
+        "term": "Nanometre",
+        "definition": "One billionth of a metre."
+      }
+    ]
+  },
+  "doppler-motion": {
+    "idea": "A small shift toward longer wavelengths can reveal motion away from us.",
+    "explanation": "Redshift means a measured wavelength is longer than its resting value. For slow motion directly away from us, the fractional wavelength change gives speed divided by light speed. Expansion of the universe and gravity can also shift wavelengths.",
+    "example": {
+      "title": "A slightly shifted line",
+      "steps": [
+        "A line normally at 500.0 nanometres appears at 500.5 nanometres.",
+        "Its fractional shift is 0.5/500 = 0.001, giving about 300 km/s away if ordinary motion causes the shift."
+      ]
+    },
+    "equation": "speed away ≈ light speed × (observed wavelength − resting wavelength) / resting wavelength",
+    "terms": [
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "reddening-degeneracy": {
+    "idea": "Dust can make a star look redder without changing where its spectral lines belong.",
+    "explanation": "Dust often removes more short-wavelength light than long-wavelength light. A cooler star can also look redder, so colour alone does not settle the cause. Spectral lines, the narrow colour features in a spectrum, help separate these possibilities.",
+    "example": {
+      "title": "A dimmer beam",
+      "steps": [
+        "Imagine a dust screen that lets half of a star's light through at one chosen wavelength.",
+        "The measured light there becomes half as strong; this dimming alone does not shift a spectral line to a new wavelength."
+      ]
+    },
+    "equation": "measured flux = clear-view flux × fraction transmitted",
+    "terms": [
+      {
+        "term": "Flux",
+        "definition": "Light power received per square metre."
+      }
+    ]
+  },
+  "parallax-distance": {
+    "idea": "A nearby star appears to shift against distant stars as Earth moves around the Sun.",
+    "explanation": "This apparent change in direction is parallax. A larger shift means a nearer star. The parallax angle used for distance is half the full change between opposite sides of Earth's orbit, not the full change.",
+    "example": {
+      "title": "A small yearly shift",
+      "steps": [
+        "A star has a clearly measured parallax angle of 0.050 arcsecond.",
+        "Its distance is 1/0.050 = 20 parsecs; its full opposite-season shift is 0.100 arcsecond."
+      ]
+    },
+    "equation": "distance in parsecs = 1 / parallax in arcseconds",
+    "terms": [
+      {
+        "term": "Arcsecond",
+        "definition": "One 3,600th of a degree."
+      },
+      {
+        "term": "Parsec",
+        "definition": "A distance defined by a parallax angle of one arcsecond; about 3.26 light-years."
+      }
+    ]
+  },
+  "magnitudes": {
+    "idea": "Astronomers use smaller magnitude numbers for brighter objects.",
+    "explanation": "Magnitude is a brightness scale: a change of five magnitudes means a hundredfold change in received light. Absolute magnitude is the number an object would have at 10 parsecs. Comparing it with apparent magnitude can reveal distance when dust is accounted for.",
+    "example": {
+      "title": "Moving a star ten times farther away",
+      "steps": [
+        "A star has absolute magnitude 2, meaning magnitude 2 at 10 parsecs.",
+        "At 100 parsecs its light is 100 times fainter, so its apparent magnitude is 7 if nothing absorbs the light."
+      ]
+    },
+    "equation": "apparent magnitude − absolute magnitude = 5 × log₁₀(distance / 10 parsecs)",
+    "terms": [
+      {
+        "term": "log₁₀",
+        "definition": "The power of ten needed to make a number; log₁₀(10) is 1."
+      },
+      {
+        "term": "Parsec",
+        "definition": "A distance unit about 3.26 light-years."
+      }
+    ]
+  },
+  "standardizable-sources": {
+    "idea": "Some stars reveal their light output through a measured pattern, helping us estimate their distance.",
+    "explanation": "A repeating brightness pattern has a period: the time needed to repeat. For some star types, carefully measured nearby examples link period with luminosity, or total light power. That link must be checked before using it for distant stars.",
+    "example": {
+      "title": "One supplied brightness rule",
+      "steps": [
+        "Suppose a calibrated rule says luminosity grows with the square of the period.",
+        "A star with twice the reference period has four times its luminosity; if both look equally bright, the brighter star is twice as far away, ignoring dust."
+      ]
+    },
+    "equation": "luminosity ratio = period ratio²",
+    "terms": [
+      {
+        "term": "Calibrated",
+        "definition": "Checked and adjusted using known measurements."
+      }
+    ]
+  },
+  "distance-errors": {
+    "idea": "A distance estimate inherits uncertainty from the light output and brightness used to calculate it.",
+    "explanation": "Using brightness to find distance requires knowing the source's luminosity, or total light power. Small independent random errors can be combined by a square-root rule. Shared errors, such as a wrong calibration for every source, need separate treatment.",
+    "example": {
+      "title": "Combining two small errors",
+      "steps": [
+        "Suppose luminosity has 6% uncertainty and received brightness has 8%, with independent random errors.",
+        "Their combined size is √(6² + 8²)% = 10%; distance depends on a square root, so its uncertainty is about 5%."
+      ]
+    },
+    "equation": "fractional distance uncertainty ≈ ½ × √[(fractional luminosity uncertainty)² + (fractional flux uncertainty)²]",
+    "terms": [
+      {
+        "term": "Flux",
+        "definition": "Light power received per square metre."
+      },
+      {
+        "term": "Independent errors",
+        "definition": "Errors that do not tend to change together."
+      }
+    ]
+  },
+  "kepler-mass": {
+    "idea": "The size and timing of a two-body orbit reveal the pair's total mass.",
+    "explanation": "More mass pulls orbiting bodies together more strongly. For the same orbit size, this makes the orbit faster. Use the size of the bodies' separation orbit, not just one body's distance from their shared centre.",
+    "example": {
+      "title": "An eight-year orbit",
+      "steps": [
+        "A binary pair has an orbit size of 4 au and a period of 8 years.",
+        "In these units, total mass is 4³/8² = 1 solar mass, assuming an isolated Newtonian two-body orbit."
+      ]
+    },
+    "equation": "total mass in solar masses ≈ (orbit size in au)³ / (period in years)²",
+    "terms": [
+      {
+        "term": "Orbit size",
+        "definition": "The semi-major axis, half the longest width of the separation orbit."
+      },
+      {
+        "term": "au",
+        "definition": "A distance close to the average Earth–Sun distance."
+      },
+      {
+        "term": "Solar mass",
+        "definition": "The mass of our Sun."
+      }
+    ]
+  },
+  "binary-centre": {
+    "idea": "The heavier member of an orbiting pair stays closer to their shared balance point.",
+    "explanation": "Both bodies orbit their centre of mass, the balance point of the pair. Their distances from that point shrink as their masses grow. Adding those two distances gives the separation between the bodies.",
+    "example": {
+      "title": "A three-to-one pair",
+      "steps": [
+        "Two bodies have masses of 3 and 1 units and are separated by 4 au.",
+        "The heavier one is 1 au from the balance point; the lighter one is 3 au away, making both mass-times-distance products equal to 3."
+      ]
+    },
+    "equation": "mass₁ × distance₁ = mass₂ × distance₂",
+    "terms": [
+      {
+        "term": "au",
+        "definition": "A distance close to the average Earth–Sun distance."
+      }
+    ]
+  },
+  "transit-rv": {
+    "idea": "A planet's dip in starlight can reveal its size compared with its star.",
+    "explanation": "A transit happens when a planet crosses in front of its star. The planet blocks part of the glowing surface. For a small dark planet crossing a uniformly bright star, the blocked fraction is roughly the square of the radius ratio.",
+    "example": {
+      "title": "A one-percent dip",
+      "steps": [
+        "A planet blocks 1% of a star's light during a suitable transit.",
+        "The radius ratio is √0.01 = 0.1, so its radius is about one tenth of the star's; this dip alone does not give its mass."
+      ]
+    },
+    "equation": "blocked light fraction ≈ (planet radius / star radius)²",
+    "terms": [
+      {
+        "term": "Radius",
+        "definition": "The distance from the centre to the edge of a circle or sphere."
+      }
+    ]
+  },
+  "inclination-limits": {
+    "idea": "Motion across our view can hide part of a star's orbital speed.",
+    "explanation": "The Doppler effect measures motion toward or away from us. A tilted orbit sends only part of the star's speed in those directions. A face-on orbit can hide that motion entirely, so the viewing angle matters for mass estimates.",
+    "example": {
+      "title": "A tilted orbit",
+      "steps": [
+        "In a circular orbit, a star moves at 20 metres per second around the shared centre.",
+        "At a tilt of 30° from face-on, sin(30°) = ½, so the measured speed amplitude is only 10 metres per second."
+      ]
+    },
+    "equation": "measured speed amplitude = orbital speed × sin(viewing tilt)",
+    "terms": [
+      {
+        "term": "Amplitude",
+        "definition": "The largest size of the repeating toward-or-away speed."
+      },
+      {
+        "term": "sin",
+        "definition": "Sine, an angle rule that gives the fraction of the speed along our view here."
+      }
+    ]
+  },
+  "hydrostatic-support": {
+    "idea": "Pressure must rise inward to support a star against gravity.",
+    "explanation": "Gravity pulls each layer inward. Higher pressure beneath the layer pushes outward more strongly than pressure above it pushes inward. In a steady star, these effects balance; equal pressure everywhere would not provide this support.",
+    "example": {
+      "title": "Pressure across one thin layer",
+      "steps": [
+        "In a small layer, gravity is 100 metres per second squared and density is 2 kilograms per cubic metre.",
+        "Pressure falls outward by about 200 pascals per metre, or 2,000 pascals across 10 metres if those values stay nearly constant."
+      ]
+    },
+    "equation": "outward pressure change per metre = −density × inward gravity",
+    "terms": [
+      {
+        "term": "Density",
+        "definition": "Mass in each unit of volume."
+      },
+      {
+        "term": "Pascal",
+        "definition": "One newton of force per square metre."
+      }
+    ]
+  },
+  "stellar-equation-state": {
+    "idea": "In a simple gas model, more particles or higher temperature means more pressure.",
+    "explanation": "Moving particles strike their surroundings and transfer momentum. The ideal-gas rule connects this pressure with temperature and particle count per volume. In stars, count free electrons as well as ions; radiation and tightly packed particles can need other pressure rules.",
+    "example": {
+      "title": "A simple hot gas",
+      "steps": [
+        "A gas has 10²⁰ particles per cubic metre at 10,000 K.",
+        "Multiplying those values by Boltzmann's constant gives a gas pressure of about 13.8 pascals, within the ideal-gas model."
+      ]
+    },
+    "equation": "gas pressure = number density × k_B × temperature",
+    "terms": [
+      {
+        "term": "Number density",
+        "definition": "The number of particles in each unit of volume."
+      },
+      {
+        "term": "k_B",
+        "definition": "Boltzmann's constant, about 1.38 × 10⁻²³ joules per kelvin."
+      },
+      {
+        "term": "Ion",
+        "definition": "An atom or group of atoms with an electric charge."
+      }
+    ]
+  },
+  "stellar-energy": {
+    "idea": "A star's outgoing power increases through a layer that adds energy.",
+    "explanation": "Luminosity is the total power moving outward through a star. A layer can add energy by nuclear reactions or lose it through other processes. In a steady model, its net added power tells us how much the outward luminosity changes.",
+    "example": {
+      "title": "One energy-making layer",
+      "steps": [
+        "A layer contains 2 × 10²⁰ kilograms and adds 3 × 10⁻⁴ watts per kilogram.",
+        "Multiply them to get 6 × 10¹⁶ watts added to the outward luminosity; energy may travel through the layer by light, moving gas, or conduction."
+      ]
+    },
+    "equation": "luminosity increase = layer mass × net power added per kilogram",
+    "terms": [
+      {
+        "term": "Watt",
+        "definition": "One joule of energy each second."
+      },
+      {
+        "term": "Conduction",
+        "definition": "Energy transfer through nearby particles without bulk flow of the material."
+      }
+    ]
+  },
+  "stellar-transport": {
+    "idea": "A lighter parcel of gas can rise and carry heat through a star.",
+    "explanation": "Convection means energy carried by the movement of material. A gas parcel can rise if it is less dense than its surroundings at the same pressure. Composition and heat loss affect whether that difference persists.",
+    "example": {
+      "title": "One rising parcel",
+      "steps": [
+        "A gas parcel has density 0.8 kilograms per cubic metre while nearby gas has density 1.0 at the same pressure.",
+        "The parcel is less dense, so buoyancy tends to lift it; this is the starting test, not a complete prediction of its later motion."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Density",
+        "definition": "Mass in each unit of volume."
+      },
+      {
+        "term": "Buoyancy",
+        "definition": "The upward push caused by the surrounding material's pressure."
+      }
+    ]
+  },
+  "mass-luminosity": {
+    "idea": "Some more massive stars shine so much faster that they use their fuel sooner.",
+    "explanation": "Main-sequence stars make energy by turning hydrogen into helium in their cores. Within a limited group, a mass–luminosity rule estimates how light output changes with mass. More fuel does not guarantee a longer life if it is used much faster.",
+    "example": {
+      "title": "A supplied star rule",
+      "steps": [
+        "Use a simplified rule in which twice the mass gives 2³ = 8 times the luminosity.",
+        "With twice the usable fuel but eight times the power, the estimated lifetime is 2/8 = one quarter as long."
+      ]
+    },
+    "equation": "estimated lifetime ∝ usable fuel / luminosity",
+    "terms": [
+      {
+        "term": "∝",
+        "definition": "Changes in proportion to, within the stated model."
+      },
+      {
+        "term": "Luminosity",
+        "definition": "Total light power given out."
+      }
+    ]
+  },
+  "hr-diagram": {
+    "idea": "A star chart comparing temperature and light output helps reveal stars of different sizes.",
+    "explanation": "An H–R diagram plots stars by surface temperature and luminosity, their total light power. Hotter stars usually sit on the left. At the same surface temperature, a larger star shines more because it has more surface giving off light.",
+    "example": {
+      "title": "Two equally hot stars",
+      "steps": [
+        "Two spherical stars have the same effective surface temperature, but one has twice the radius.",
+        "Its surface area and luminosity are four times as large, so it sits higher on the diagram."
+      ]
+    },
+    "equation": "luminosity ratio = radius ratio², when temperatures match",
+    "terms": [
+      {
+        "term": "Radius",
+        "definition": "Distance from the centre to the surface."
+      },
+      {
+        "term": "Effective temperature",
+        "definition": "The temperature an ideal glowing surface would need to give out the same power per area."
+      }
+    ]
+  },
+  "cluster-ages": {
+    "idea": "The stars that have just used up their core hydrogen help reveal a star cluster's age.",
+    "explanation": "Stars in a cluster often formed at roughly the same time. The shortest-lived stars leave the hydrogen-burning main sequence first. Comparing this departure point with models gives an age estimate, with checks for composition, dust and paired stars.",
+    "example": {
+      "title": "A shorter-lived cluster star",
+      "steps": [
+        "A simple model gives a star twice the Sun's usable fuel but eight times its power output.",
+        "It lasts about one quarter as long, so its departure from the main sequence marks a younger cluster than the Sun's departure would."
+      ]
+    },
+    "equation": "estimated lifetime ∝ usable fuel / power output",
+    "terms": [
+      {
+        "term": "Main sequence",
+        "definition": "The stage in which a star turns hydrogen into helium in its core."
+      },
+      {
+        "term": "∝",
+        "definition": "Changes in proportion to within the stated model."
+      }
+    ]
+  },
+  "stellar-inference": {
+    "idea": "A star's luminosity and surface temperature together reveal its estimated radius.",
+    "explanation": "A bigger surface emits more total light. A hotter surface emits more light per square metre. Combining these effects lets us estimate radius, but finding mass or age usually needs more observations or a star model.",
+    "example": {
+      "title": "Nine times the light",
+      "steps": [
+        "A star has nine times a reference star's luminosity and the same effective temperature.",
+        "Its radius is √9 = 3 times the reference radius, assuming the same spherical light-emission model."
+      ]
+    },
+    "equation": "radius ratio = √(luminosity ratio) / (temperature ratio)²",
+    "terms": [
+      {
+        "term": "Luminosity",
+        "definition": "Total light power given out."
+      },
+      {
+        "term": "Effective temperature",
+        "definition": "Temperature of an ideal surface with the same power emitted per area."
+      }
+    ]
+  },
+  "fusion-fuel": {
+    "idea": "A star's estimated fuel lifetime is its usable energy divided by its power output.",
+    "explanation": "Fusion joins small nuclei and can release energy. Only part of a star's mass is available for a given burning stage, and only part of that mass becomes released energy. Some energy also escapes in particles rather than light.",
+    "example": {
+      "title": "A supplied fuel budget",
+      "steps": [
+        "A star has 6 × 10⁴³ joules of usable energy and a steady power output of 3 × 10²⁶ watts.",
+        "Dividing gives 2 × 10¹⁷ seconds; this estimate changes if its power or accessible fuel changes."
+      ]
+    },
+    "equation": "estimated lifetime = usable energy / power output",
+    "terms": [
+      {
+        "term": "Nucleus",
+        "definition": "The small central part of an atom."
+      },
+      {
+        "term": "Watt",
+        "definition": "One joule per second."
+      }
+    ]
+  },
+  "late-burning": {
+    "idea": "A star's core can get hotter while its expanded outer surface gets cooler.",
+    "explanation": "When core hydrogen runs out, the core may shrink and heat up. Hydrogen burning in a surrounding layer can help the outer star expand. The larger surface can give out more total light even though it is cooler; later burning stages depend on the star.",
+    "example": {
+      "title": "An expanded star",
+      "steps": [
+        "Suppose a star's radius becomes 10 times larger and its effective temperature becomes half as large.",
+        "The luminosity ratio is 10² × (½)⁴ = 6.25, so the star gives out more total light despite its cooler surface."
+      ]
+    },
+    "equation": "luminosity ratio = radius ratio² × temperature ratio⁴",
+    "terms": [
+      {
+        "term": "Luminosity",
+        "definition": "Total light power given out."
+      },
+      {
+        "term": "Effective temperature",
+        "definition": "Temperature of an ideal surface with the same emitted power per area."
+      }
+    ]
+  },
+  "remnant-pathways": {
+    "idea": "What a star leaves behind depends on its core and the mass it loses.",
+    "explanation": "A remnant is what remains after a star's main life ends. Some stars shed their outer layers and leave a white dwarf; others undergo core collapse. Starting mass matters, but winds, a nearby companion and composition can change the outcome.",
+    "example": {
+      "title": "Tracking lost mass",
+      "steps": [
+        "A simplified star starts with 5 mass units and ejects 4.2 units.",
+        "About 0.8 unit remains before small mass-to-energy changes are included; this bookkeeping alone does not tell us which kind of remnant formed."
+      ]
+    },
+    "equation": "remaining mass ≈ starting mass − ejected mass",
+    "terms": [
+      {
+        "term": "White dwarf",
+        "definition": "A compact stellar remnant supported mainly by tightly packed electrons."
+      },
+      {
+        "term": "Core collapse",
+        "definition": "Rapid inward fall of a star's central region."
+      }
+    ]
+  },
+  "initial-conditions": {
+    "idea": "A star's starting mixture affects how it burns fuel and how easily light travels through it.",
+    "explanation": "Hydrogen and helium make up most ordinary stars. Astronomers call all elements heavier than helium metals, including oxygen. Different mixtures change nuclear reactions and how particles absorb light, so composition belongs in a star model.",
+    "example": {
+      "title": "Completing one mixture",
+      "steps": [
+        "A star model begins with 70% hydrogen and 28% helium by mass.",
+        "That leaves 100% − 70% − 28% = 2% in heavier elements, the part astronomers call metals."
+      ]
+    },
+    "equation": "hydrogen fraction + helium fraction + heavier-element fraction = 1",
+    "terms": [
+      {
+        "term": "Element",
+        "definition": "A kind of atom identified by its number of protons."
+      }
+    ]
+  },
+  "degenerate-support": {
+    "idea": "Crowded electrons can create pressure even when their thermal motion is small.",
+    "explanation": "Electrons cannot all share the same fully specified quantum state, meaning the same allowed condition. Squeezing many into a smaller space forces some into states with greater momentum. This creates degeneracy pressure, which differs from ordinary gas pressure caused mainly by heat.",
+    "example": {
+      "title": "Packing electrons more tightly",
+      "steps": [
+        "In the cold, slow-electron ideal model, increase the number of electrons per volume by 8.",
+        "The pressure grows by 8^(5/3) = 32; this rule changes when electron speeds approach light speed or interactions matter strongly."
+      ]
+    },
+    "equation": "degeneracy pressure ∝ (electron number density)^(5/3)",
+    "terms": [
+      {
+        "term": "Momentum",
+        "definition": "A measure of motion carried by a particle."
+      },
+      {
+        "term": "∝",
+        "definition": "Changes in proportion to."
+      },
+      {
+        "term": "Number density",
+        "definition": "Particle count in each unit of volume."
+      }
+    ]
+  },
+  "white-dwarf": {
+    "idea": "Adding mass can make a white dwarf smaller rather than larger.",
+    "explanation": "A white dwarf is a compact stellar remnant supported mainly by electron degeneracy pressure, the push that comes from packing electrons into allowed quantum states. More mass strengthens gravity and compresses it. A simple shrinking rule applies only away from the high-mass limit.",
+    "example": {
+      "title": "A heavier white dwarf model",
+      "steps": [
+        "Compare two cold white dwarf models with the same composition, within the slow-electron approximation.",
+        "Doubling the mass changes the radius by 2^(−1/3), about 0.794, so the heavier model is about 21% smaller in radius."
+      ]
+    },
+    "equation": "radius ∝ mass^(−1/3)",
+    "terms": [
+      {
+        "term": "∝",
+        "definition": "Changes in proportion to within the stated model."
+      },
+      {
+        "term": "Quantum state",
+        "definition": "An allowed condition of a particle."
+      }
+    ]
+  },
+  "pulsar-clock": {
+    "idea": "A pulsar flashes because its beam sweeps past us as the star rotates.",
+    "explanation": "A neutron star is a very compact remnant with matter packed far more tightly than in ordinary stars. Some send out beams that cross our view like a lighthouse. The pulses can act as precise clocks, but rotation and travel effects can change their timing.",
+    "example": {
+      "title": "A repeating pulse",
+      "steps": [
+        "A pulsar's observed pattern repeats every 0.020 second.",
+        "Its frequency is 1/0.020 = 50 repeats per second, or 50 Hz; relating this to the star's spin requires knowing how the beams are arranged."
+      ]
+    },
+    "equation": "frequency = 1 / repeat period",
+    "terms": [
+      {
+        "term": "Hertz (Hz)",
+        "definition": "Repeats per second."
+      }
+    ]
+  },
+  "black-hole-horizon": {
+    "idea": "A black hole's horizon marks the boundary from inside which light cannot reach distant observers.",
+    "explanation": "The horizon is not a solid surface. It is a boundary set by the shape of spacetime, the linked description of space and time. Light from hot gas outside it can still escape, making the surrounding region visible.",
+    "example": {
+      "title": "A ten-Sun-mass black hole",
+      "steps": [
+        "For an isolated black hole with no spin or electric charge, the horizon radius is about 2.95 kilometres per solar mass.",
+        "At 10 solar masses, that is 29.5 kilometres; this is a radius, not the size of a glowing disk."
+      ]
+    },
+    "equation": "horizon radius = 2 × G × mass / c²",
+    "terms": [
+      {
+        "term": "G",
+        "definition": "Newton's gravitational constant."
+      },
+      {
+        "term": "c",
+        "definition": "Light speed in empty space."
+      },
+      {
+        "term": "Solar mass",
+        "definition": "The mass of our Sun."
+      }
+    ]
+  },
+  "interstellar-phases": {
+    "idea": "Gas between stars can have the same pressure while differing greatly in temperature and density.",
+    "explanation": "Interstellar gas means gas between stars. Some regions are cold and dense, while others are hot and thin. For a simple gas, more particles can balance a lower temperature to give the same thermal pressure; magnetic fields and motion add other effects.",
+    "example": {
+      "title": "Two gas regions",
+      "steps": [
+        "One model region has 100 particles in each chosen volume unit at 100 K; another has 1 at 10,000 K.",
+        "Both give number density × temperature = 10,000, so their ideal thermal pressures match."
+      ]
+    },
+    "equation": "thermal pressure = number density × k_B × temperature",
+    "terms": [
+      {
+        "term": "Number density",
+        "definition": "Particle count in each unit of volume."
+      },
+      {
+        "term": "k_B",
+        "definition": "Boltzmann's constant, connecting temperature with particle energy."
+      },
+      {
+        "term": "K",
+        "definition": "Kelvin, the temperature unit starting from absolute zero."
+      }
+    ]
+  },
+  "gas-cooling": {
+    "idea": "Gas cools when energy leaves faster than new energy arrives.",
+    "explanation": "Particles can collide, gain internal energy and then give it off as light. The gas loses that energy only if the light escapes. Comparing its stored thermal energy with the net loss per second estimates a cooling time when the rates stay nearly steady.",
+    "example": {
+      "title": "One cooling gas parcel",
+      "steps": [
+        "A parcel holds 1,000 joules, loses 15 watts and gains 5 watts.",
+        "Its net loss is 10 joules each second, so the cooling-time estimate is 1,000/10 = 100 seconds if those rates remain similar."
+      ]
+    },
+    "equation": "cooling time ≈ thermal energy / (cooling power − heating power)",
+    "terms": [
+      {
+        "term": "Watt",
+        "definition": "One joule per second."
+      }
+    ]
+  },
+  "cloud-collapse": {
+    "idea": "Denser clouds have a shorter gravity-driven collapse time when other support is ignored.",
+    "explanation": "Gravity pulls a cloud inward, while heat, motion and magnetic fields can resist or redirect the collapse. A simple free-fall model removes those supports. It gives a useful comparison time, not a promise of when a real cloud will form stars.",
+    "example": {
+      "title": "A denser model cloud",
+      "steps": [
+        "Compare two uniform, spherical clouds that start at rest with no pressure support.",
+        "If the second has four times the density, its free-fall time is half as long because the time varies as one over the square root of density."
+      ]
+    },
+    "equation": "free-fall time ∝ 1 / √density",
+    "terms": [
+      {
+        "term": "Density",
+        "definition": "Mass in each unit of volume."
+      },
+      {
+        "term": "∝",
+        "definition": "Changes in proportion to within this model."
+      }
+    ]
+  },
+  "virial-estimate": {
+    "idea": "Comparing a cloud's internal motion with its gravity helps test whether a simple balance is plausible.",
+    "explanation": "Moving gas resists being gathered by gravity. A virial parameter is a number comparing these effects in a chosen cloud model. Its interpretation depends on shape, outside pressure and magnetic fields, so one number cannot settle whether stars will form.",
+    "example": {
+      "title": "A cloud comparison",
+      "steps": [
+        "A uniform spherical cloud's measured size and random speeds give a motion-based mass estimate of 200 units.",
+        "Its independently estimated mass is 100 units, giving a virial parameter of 2; other forms of support and outside pressure still need checking."
+      ]
+    },
+    "equation": "virial parameter = motion-based mass estimate / measured mass",
+    "terms": [
+      {
+        "term": "Motion-based mass estimate",
+        "definition": "Here, 5 × speed spread² × cloud radius / G, using the speed spread along one direction."
+      },
+      {
+        "term": "G",
+        "definition": "Newton's gravitational constant."
+      }
+    ]
+  },
+  "galaxy-mass-profile": {
+    "idea": "In a spherical model, orbital speed and radius reveal the mass enclosed inside that orbit.",
+    "explanation": "Gravity from enclosed mass keeps an object moving in a circular orbit. At a larger radius, the same speed needs more enclosed mass. Real galaxies can be flattened and their stars need not follow circles, so the model's shape matters.",
+    "example": {
+      "title": "The same speed farther out",
+      "steps": [
+        "In a spherical galaxy model, an orbit at radius r encloses mass M.",
+        "At twice the radius with the same circular speed, the inferred enclosed mass is 2M."
+      ]
+    },
+    "equation": "enclosed mass = circular speed² × radius / G",
+    "terms": [
+      {
+        "term": "G",
+        "definition": "Newton's gravitational constant."
+      },
+      {
+        "term": "Enclosed mass",
+        "definition": "All the mass inside the chosen radius."
+      }
+    ]
+  },
+  "rotation-unseen-mass": {
+    "idea": "Nearly constant outer orbital speeds suggest additional mass beyond a galaxy's bright central region.",
+    "explanation": "If nearly all mass sat at the centre, circular orbits farther out would be slower. Many galaxies keep roughly the same speed over a large outer region. Within ordinary gravity models, this suggests more mass than the visible stars and gas account for.",
+    "example": {
+      "title": "A flat-speed model",
+      "steps": [
+        "At radius r, a spherical model gives enclosed mass M from the circular speed.",
+        "At radius 3r with the same speed, it needs 3M; the extra mass requirement does not by itself identify a new kind of particle."
+      ]
+    },
+    "equation": "enclosed mass ∝ radius, when circular speed stays constant",
+    "terms": [
+      {
+        "term": "∝",
+        "definition": "Changes in proportion to within this model."
+      }
+    ]
+  },
+  "galaxy-evolution": {
+    "idea": "The brightest stars can dominate a galaxy's light without holding most of its mass.",
+    "explanation": "Young stars can shine strongly in blue light. Older stars may contribute more mass while looking less bright in that colour. A galaxy's appearance therefore gives only part of its story; colours, spectra and motion provide other clues.",
+    "example": {
+      "title": "Light and mass disagree",
+      "steps": [
+        "A model galaxy has 90 mass units in old stars and 10 in young stars.",
+        "Each group gives 50 light-power units in the chosen colour band, so young stars provide half the light but only one tenth of the mass."
+      ]
+    },
+    "equation": "total luminosity = young-star luminosity + old-star luminosity",
+    "terms": [
+      {
+        "term": "Luminosity",
+        "definition": "Total light power emitted in the stated range of colours."
+      }
+    ]
+  },
+  "accretion-energy": {
+    "idea": "Gas falling toward a compact object can release large amounts of energy before reaching it.",
+    "explanation": "Accretion means matter gathering onto an object. As gas moves inward through a disk, interactions can heat it and produce light. An efficiency tells us what fraction of the incoming mass's energy appears as radiation; it depends on the flow and object.",
+    "example": {
+      "title": "One supplied accretion model",
+      "steps": [
+        "Gas arrives at 10¹⁰ kilograms per second, with light speed 3 × 10⁸ metres per second and efficiency 0.10.",
+        "The predicted light power is 0.10 × 10¹⁰ × (3 × 10⁸)² = 9 × 10²⁵ watts, emitted outside any black-hole horizon."
+      ]
+    },
+    "equation": "light power = efficiency × arriving mass per second × light speed²",
+    "terms": [
+      {
+        "term": "Horizon",
+        "definition": "The boundary from inside which light cannot escape to distant observers."
+      }
+    ]
+  },
+  "scale-redshift": {
+    "idea": "Light travelling across an expanding universe has its wavelength stretched along with the expansion.",
+    "explanation": "The scale factor tracks the changing distance between ideal locations carried with the expansion. We set its value today to 1. This stretching does not make bound objects, such as atoms or the solar system, grow in the same way.",
+    "example": {
+      "title": "Light from a smaller universe",
+      "steps": [
+        "A photon was emitted when the scale factor was 0.25.",
+        "Its wavelength is stretched by 1/0.25 = 4 today, so its redshift z is 3 because the stretch factor equals 1 + z."
+      ]
+    },
+    "equation": "1 + z = scale factor now / scale factor at emission",
+    "terms": [
+      {
+        "term": "Photon",
+        "definition": "One packet of light energy."
+      },
+      {
+        "term": "z",
+        "definition": "Redshift: the wavelength stretch factor minus one."
+      }
+    ]
+  },
+  "local-hubble": {
+    "idea": "For nearby galaxies moving with cosmic expansion, greater distance means a greater recession speed.",
+    "explanation": "The Hubble relation estimates how quickly distances grow in the nearby, smoothly expanding universe. Individual galaxies also move because of gravity, which can change their measured speeds. The supplied Hubble constant is the expansion rate used for this calculation.",
+    "example": {
+      "title": "A galaxy 100 megaparsecs away",
+      "steps": [
+        "Use an illustrative rate of 70 kilometres per second for each megaparsec of distance.",
+        "At 100 megaparsecs, the expansion-related speed is about 7,000 km/s; this ignores the galaxy's separate local motion."
+      ]
+    },
+    "equation": "recession speed ≈ H₀ × distance",
+    "terms": [
+      {
+        "term": "H₀",
+        "definition": "The current expansion rate adopted for the calculation."
+      },
+      {
+        "term": "Megaparsec (Mpc)",
+        "definition": "One million parsecs, about 3.26 million light-years."
+      }
+    ]
+  },
+  "expansion-content": {
+    "idea": "The universe's expansion rate changes as the importance of its different contents changes.",
+    "explanation": "Matter thins out as space expands. A cosmological constant is a model component with constant energy per volume. Combining them in a supplied model predicts how the expansion rate differed in the past; this example ignores radiation and spatial curvature.",
+    "example": {
+      "title": "A supplied earlier-universe model",
+      "steps": [
+        "Use present matter share 0.3, constant-component share 0.7 and scale factor 0.5.",
+        "The squared rate ratio is 0.3 × 8 + 0.7 = 3.1, so the expansion rate was √3.1 ≈ 1.761 times today's."
+      ]
+    },
+    "equation": "(H/H₀)² = Ω_m/a³ + Ω_Λ",
+    "terms": [
+      {
+        "term": "H",
+        "definition": "Expansion rate at the time considered."
+      },
+      {
+        "term": "H₀",
+        "definition": "Expansion rate today."
+      },
+      {
+        "term": "a",
+        "definition": "Scale factor, with today's value set to 1."
+      },
+      {
+        "term": "Ω_m",
+        "definition": "Today's matter share in this model."
+      },
+      {
+        "term": "Ω_Λ",
+        "definition": "Today's cosmological-constant share in this model."
+      }
+    ]
+  },
+  "cosmic-distances": {
+    "idea": "For distant galaxies, distance inferred from brightness differs from distance inferred from apparent size.",
+    "explanation": "Cosmic expansion changes light's energy, arrival rate and path geometry. Luminosity distance is the distance label used in the brightness rule. Angular-diameter distance is the one used to connect an object's physical size with its apparent angle.",
+    "example": {
+      "title": "Two distance labels for one source",
+      "steps": [
+        "A source at redshift z = 1 has angular-diameter distance 1,000 megaparsecs in a supplied transparent-universe model.",
+        "Its luminosity distance is (1 + 1)² × 1,000 = 4,000 megaparsecs; neither label simply means light speed times travel time."
+      ]
+    },
+    "equation": "luminosity distance = (1 + z)² × angular-diameter distance",
+    "terms": [
+      {
+        "term": "z",
+        "definition": "Redshift, the wavelength stretch factor minus one."
+      },
+      {
+        "term": "Megaparsec",
+        "definition": "A million parsecs, about 3.26 million light-years."
+      }
+    ]
+  },
+  "background-spectrum": {
+    "idea": "The cosmic microwave background is cooled light from the hot early universe.",
+    "explanation": "This radiation reaches us from across the sky and has an almost ideal thermal spectrum. As space expands, its wavelengths stretch and its temperature falls. It comes from before the first stars, rather than being their combined starlight.",
+    "example": {
+      "title": "An earlier background temperature",
+      "steps": [
+        "Use a rounded present temperature of 2.7 K for a teaching calculation.",
+        "At redshift z = 9, the standard expansion model gives 2.7 × (1 + 9) = 27 K."
+      ]
+    },
+    "equation": "background temperature = present temperature × (1 + z)",
+    "terms": [
+      {
+        "term": "z",
+        "definition": "Redshift, the wavelength stretch factor minus one."
+      },
+      {
+        "term": "K",
+        "definition": "Kelvin, the temperature unit starting at absolute zero."
+      },
+      {
+        "term": "Thermal spectrum",
+        "definition": "The pattern of light wavelengths given off because of temperature."
+      }
+    ]
+  },
+  "recombination": {
+    "idea": "Light could travel much farther once many free electrons joined nuclei to form neutral atoms.",
+    "explanation": "Early gas contained free electrons that repeatedly scattered light. As the universe cooled, atoms formed and fewer free electrons remained. This gradual change let background light travel almost freely; astronomers call the atom-forming stage recombination.",
+    "example": {
+      "title": "Fewer light scatterers",
+      "steps": [
+        "Suppose free-electron density falls by a factor of 100 while each electron's scattering strength stays the same.",
+        "The average distance light travels before scattering grows by 100, making long uninterrupted journeys more likely."
+      ]
+    },
+    "equation": "average path before scattering = 1 / (free-electron number density × scattering cross section)",
+    "terms": [
+      {
+        "term": "Number density",
+        "definition": "Particle count in each unit of volume."
+      },
+      {
+        "term": "Scattering cross section",
+        "definition": "An effective target area measuring how likely an interaction is."
+      }
+    ]
+  },
+  "primordial-elements": {
+    "idea": "The early universe made mostly hydrogen and helium before expansion slowed its nuclear reactions.",
+    "explanation": "When the universe was hot and dense, protons and neutrons could join into light nuclei. Expansion cooled and spread the matter, making many reactions too slow to keep going. Most heavier elements formed later in stars and other energetic environments.",
+    "example": {
+      "title": "Reactions racing expansion",
+      "steps": [
+        "At one imagined time, a reaction rate is 10 per second while the expansion rate is 1 per second.",
+        "Several reactions can happen during the expansion time; if the reaction rate later falls far below expansion, that process cannot keep pace."
+      ]
+    },
+    "equation": "reaction time ≈ 1 / reaction rate",
+    "terms": [
+      {
+        "term": "Nucleus",
+        "definition": "The small central part of an atom, made of protons and usually neutrons."
+      }
+    ]
+  },
+  "cosmic-model-tests": {
+    "idea": "A useful universe model must agree with several different kinds of evidence.",
+    "explanation": "Scientists compare predictions with the background light, element amounts and galaxy motion. Each measurement has uncertainty. A disagreement needs investigation, but one mismatch alone does not explain whether the model, measurement or an overlooked effect caused it.",
+    "example": {
+      "title": "Checking one prediction",
+      "steps": [
+        "An observation gives 10 units, a model predicts 9, and their combined uncertainty is 0.5 unit.",
+        "The difference is 1/0.5 = 2 uncertainty units; check its cause and the other evidence before judging the whole model."
+      ]
+    },
+    "equation": "standardized difference = (observed value − predicted value) / combined uncertainty",
+    "terms": [
+      {
+        "term": "Combined uncertainty",
+        "definition": "The estimated uncertainty in the difference, including relevant measurement and model errors."
+      }
+    ]
+  },
+  "gravitational-waves": {
+    "idea": "A passing gravitational wave changes measured separations by a tiny fraction of their length.",
+    "explanation": "Changing, uneven mass motion can send out gravitational waves. A detector compares light travelling along different paths to detect the changing distances. The response depends on the wave's direction and the detector's layout, so a source model is needed to interpret it.",
+    "example": {
+      "title": "A tiny detector change",
+      "steps": [
+        "A 4,000-metre reference length changes by 4 × 10⁻¹⁸ metre.",
+        "The fractional change is 10⁻²¹, called strain; this number alone does not give the source's mass or distance."
+      ]
+    },
+    "equation": "strain = length change / reference length",
+    "terms": [
+      {
+        "term": "Gravitational wave",
+        "definition": "A travelling change in spacetime, the linked description of space and time."
+      }
+    ]
+  },
+  "particle-messengers": {
+    "idea": "Two signals from the same event can arrive apart because they left apart or travelled differently.",
+    "explanation": "Neutrinos are particles with no electric charge that rarely interact with matter. They can carry information out of places light cannot easily escape. Comparing them with light or gravitational waves requires checking both when the signals were emitted and how they travelled.",
+    "example": {
+      "title": "A five-second arrival gap",
+      "steps": [
+        "In a nearby, non-expanding timing example, two signals arrive 5 seconds apart.",
+        "If a source model says they left 3 seconds apart in the same order, only the remaining 2 seconds is assigned to different travel times."
+      ]
+    },
+    "equation": "arrival-time gap = emission-time gap + travel-time gap",
+    "terms": [
+      {
+        "term": "Emission",
+        "definition": "The sending out of a particle or wave."
+      }
+    ]
+  },
+  "lensing-mass": {
+    "idea": "Gravity can bend light from a distant object even when the bending mass does not glow.",
+    "explanation": "Gravitational lensing changes the path of background light. It can shift, stretch or multiply the images we see. For a weak, isolated point-like mass, light passing farther away bends less; real galaxies require more detailed shapes and distances.",
+    "example": {
+      "title": "Two paths past one mass",
+      "steps": [
+        "Compare two light rays passing the same isolated mass in a weak-gravity model.",
+        "If the second path passes twice as far from the mass, its bending angle is half as large."
+      ]
+    },
+    "equation": "bending angle = 4 × G × mass / (closest-path offset × c²)",
+    "terms": [
+      {
+        "term": "G",
+        "definition": "Newton's gravitational constant."
+      },
+      {
+        "term": "c",
+        "definition": "Light speed in empty space."
+      },
+      {
+        "term": "Closest-path offset",
+        "definition": "The perpendicular offset of the ray's original straight path from the mass."
+      }
+    ]
+  },
+  "dark-sector-evidence": {
+    "idea": "Evidence for extra gravitating matter does not by itself reveal what that matter is made of.",
+    "explanation": "Dark matter is the name for extra gravitating matter inferred from several observations in standard gravity models. Dark energy is a different idea used to describe accelerated cosmic expansion. Neither name is a discovered substance's complete explanation.",
+    "example": {
+      "title": "A missing-mass budget",
+      "steps": [
+        "A gravity model needs 10 mass units in a region, while measured stars and gas account for 3.",
+        "The remaining 7-unit gap motivates further tests; it does not identify a dark-matter particle or mean dark energy is gathered there."
+      ]
+    },
+    "equation": "mass discrepancy = gravity-inferred mass − accounted ordinary mass",
+    "terms": [
+      {
+        "term": "Ordinary matter",
+        "definition": "Matter made from familiar particles, including atoms and gas."
+      }
+    ]
+  },
+  "synthetic-star": {
+    "idea": "A chain of compatible measurements can turn a star's apparent brightness into a radius estimate.",
+    "explanation": "First use a reliable parallax, the yearly apparent shift, to find distance. Distance and received brightness give total light power. Comparing that power with surface temperature then gives radius, provided dust, blended light and the star model are properly accounted for.",
+    "example": {
+      "title": "Finding one star's radius",
+      "steps": [
+        "A precise parallax of 0.025 arcsecond puts a star at 40 parsecs; an equally bright reference is at 10 parsecs, so the star has 16 times its total light power.",
+        "Its effective temperature is twice the reference, so its radius ratio is √16/2² = 1: the radii match."
+      ]
+    },
+    "equation": "radius ratio = √(luminosity ratio) / (temperature ratio)²",
+    "terms": [
+      {
+        "term": "Luminosity",
+        "definition": "Total light power emitted across all wavelengths here."
+      },
+      {
+        "term": "Arcsecond",
+        "definition": "One 3,600th of a degree."
+      },
+      {
+        "term": "Parsec",
+        "definition": "A distance unit about 3.26 light-years."
+      },
+      {
+        "term": "Effective temperature",
+        "definition": "Temperature of an ideal surface with the same emitted power per area."
+      }
+    ]
+  },
+  "timescale-comparison": {
+    "idea": "Light-crossing time and orbital period measure different processes, even at the same distance.",
+    "explanation": "Light-crossing time tells us how long a signal needs to cover a distance. Orbital period tells us how long a body needs to circle under gravity. Comparing them helps test a proposed cause of changing brightness; they cannot replace one another.",
+    "example": {
+      "title": "Across an Earth-sized orbit",
+      "steps": [
+        "At a radius of 150 billion metres, light takes about 500 seconds to travel that distance.",
+        "A body orbiting roughly one solar mass at that radius takes about one year to circle it, so an orbital explanation needs the much longer timescale."
+      ]
+    },
+    "equation": "light-crossing time = distance / light speed",
+    "terms": [
+      {
+        "term": "Solar mass",
+        "definition": "The mass of our Sun."
+      },
+      {
+        "term": "Orbital period",
+        "definition": "Time for one full orbit."
+      }
+    ]
+  },
+  "competing-models": {
+    "idea": "Extra measurements help distinguish explanations that fit the same brightness reading.",
+    "explanation": "A faint source might be distant, weak or hidden by dust. A distance measurement or spectrum can test those possibilities differently. Compare predictions with uncertainty included, and account for how many adjustable choices each model used.",
+    "example": {
+      "title": "Comparing one model with two readings",
+      "steps": [
+        "A model misses two independent readings by +1 and −2 uncertainty units.",
+        "Squaring and adding gives χ² = 1 + 4 = 5; deciding whether that is acceptable also needs the number of readings, fitted choices and a suitable error model."
+      ]
+    },
+    "equation": "χ² = sum of squared differences measured in uncertainty units",
+    "terms": [
+      {
+        "term": "χ²",
+        "definition": "Chi-squared, a combined mismatch score; this simple form assumes independent, roughly bell-shaped errors."
+      },
+      {
+        "term": "Spectrum",
+        "definition": "Light separated by wavelength."
+      }
+    ]
+  },
+  "further-prerequisites": {
+    "idea": "A smooth computer result still needs checks against known physics and simpler cases.",
+    "explanation": "Astrophysics calculations often combine gas motion, gravity, magnetic fields and light transfer. Each part needs suitable assumptions. Compare a simulation with a known answer, then improve its detail and check that the result settles rather than trusting a polished graph.",
+    "example": {
+      "title": "Checking one simulation",
+      "steps": [
+        "A trusted comparison predicts 100 units while a simulation gives 102.",
+        "The relative difference is 2/100 = 2%; repeat with finer calculation detail and check the physical assumptions separately."
+      ]
+    },
+    "equation": "relative discrepancy = absolute difference / absolute reference value",
+    "terms": [
+      {
+        "term": "Simulation",
+        "definition": "A computer calculation of how a model behaves."
+      },
+      {
+        "term": "Absolute value",
+        "definition": "The size of a number without its plus or minus sign."
+      }
+    ]
+  }
+}

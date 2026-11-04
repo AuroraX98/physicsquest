@@ -19,3 +19,10 @@ MIT OCW's general license is CC BY-NC-SA 4.0; specific excluded third-party asse
 
 No third-party runtime library, external font, photograph, copied figure or teaching asset is bundled. Node built-ins are used for local tests. Required third-party notices must be retained if the dependency list changes.
 
+
+
+## Public update — 2026-11-04, version 0.17.2
+
+The public repository now includes the checked version 0.17.2 app: 1,083 lessons in 23 courses, 209 example pictures and 43 interactive lesson attachments. The latest changes simplify wording, explain equation symbols, add advanced courses, improve responsive layouts and remove repetition that adds no teaching. See `RELEASE-0.17.2.md` for the detailed checks and limits.
+
+The existing scoped MIT code license and teaching-content exclusions are unchanged. Older release notes describe the project at their own release dates. Site hosting configuration, credentials, exported learner data and private workspace files are excluded from this public copy.

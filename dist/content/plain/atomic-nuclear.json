@@ -1,0 +1,1274 @@
+{
+  "count-charge-and-isotopes": {
+    "idea": "Counting an atom's parts tells us its element, isotope and electric charge.",
+    "explanation": "An atom has a central nucleus containing positive protons and uncharged neutrons, with negative electrons around it. Proton count names the element. Changing neutrons makes a different isotope of that element; changing electrons changes its electric charge.",
+    "example": {
+      "title": "One carbon ion",
+      "steps": [
+        "A nucleus has six protons and eight neutrons, giving mass number 14.",
+        "With five electrons, the atom has one more positive than negative charge: +e."
+      ]
+    },
+    "equation": "A = Z + N",
+    "terms": [
+      {
+        "term": "Isotope",
+        "definition": "A form of an element with a particular neutron count."
+      },
+      {
+        "term": "Z",
+        "definition": "Number of protons."
+      },
+      {
+        "term": "N",
+        "definition": "Number of neutrons."
+      },
+      {
+        "term": "A",
+        "definition": "Total protons and neutrons."
+      },
+      {
+        "term": "e",
+        "definition": "The positive elementary charge."
+      }
+    ]
+  },
+  "translate-an-energy-scale": {
+    "idea": "Electronvolts measure energy, not voltage.",
+    "explanation": "One electronvolt is the magnitude of energy gained by one elementary charge across one volt. A higher-energy photon has a shorter vacuum wavelength. Keep the length and energy units consistent.",
+    "example": {
+      "title": "A 4 eV photon",
+      "steps": [
+        "Use the rounded relation wavelength in nm = 1240 divided by energy in eV.",
+        "Its wavelength is 1240 ÷ 4 = 310 nm, in ultraviolet light."
+      ]
+    },
+    "equation": "E = hf = hc/λ",
+    "terms": [
+      {
+        "term": "Electronvolt (eV)",
+        "definition": "An energy unit equal to 1.602176634 × 10⁻¹⁹ joule."
+      }
+    ]
+  },
+  "read-a-spectral-gap": {
+    "idea": "An emitted photon's energy tells us the gap between two levels.",
+    "explanation": "The atom moves from a higher-energy state to a lower one. The released energy becomes photon energy in this first model. Moving every level by the same amount leaves the gap unchanged.",
+    "example": {
+      "title": "Two atomic levels",
+      "steps": [
+        "The levels are −7 eV and −3 eV.",
+        "A downward jump releases (−3) − (−7) = 4 eV."
+      ]
+    },
+    "equation": "E_photon = E_upper − E_lower",
+    "terms": [
+      {
+        "term": "Energy level",
+        "definition": "An allowed energy of the system."
+      }
+    ]
+  },
+  "binding-needs-a-reference": {
+    "idea": "A negative bound-state energy means energy is needed to separate the particles.",
+    "explanation": "We choose zero for a separated electron and nucleus at rest. A bound atom lies below that reference. Negative energy does not mean negative mass; it depends on where we put zero.",
+    "example": {
+      "title": "A bound level",
+      "steps": [
+        "Set the separated reference to zero and the bound level to −6 eV.",
+        "At least 6 eV must be supplied to separate the particles with no leftover motion energy."
+      ]
+    },
+    "equation": "E_separated − E_bound = binding_energy",
+    "terms": [
+      {
+        "term": "Bound state",
+        "definition": "A state in which the particles remain held together."
+      }
+    ]
+  },
+  "label-hydrogen-states": {
+    "idea": "Quantum labels describe allowed hydrogen states, not tiny electron tracks.",
+    "explanation": "An electron's allowed condition is called its quantum state. Three number labels describe the spatial part in this simple hydrogen model. The first sets the shell; the other two describe orbital angular momentum, a quantum measure related to rotation rather than a tiny circular path.",
+    "example": {
+      "title": "The n = 2 shell",
+      "steps": [
+        "For n = 2, l can be 0 or 1.",
+        "Choosing l = 1 allows m = −1, 0 or +1."
+      ]
+    },
+    "equation": "l = 0,…,n−1; m = −l,…,+l",
+    "terms": [
+      {
+        "term": "n",
+        "definition": "The principal shell label, starting at 1."
+      },
+      {
+        "term": "l",
+        "definition": "Orbital-angular-momentum label, from 0 to n−1."
+      },
+      {
+        "term": "m",
+        "definition": "The chosen-axis angular-momentum label, from −l to +l."
+      },
+      {
+        "term": "Orbital",
+        "definition": "An allowed spatial wave pattern for an electron, not a track."
+      }
+    ]
+  },
+  "a-shell-is-not-an-orbit": {
+    "idea": "Probability in a spherical shell depends on both density and shell size.",
+    "explanation": "Density tells how much probability lies in a tiny volume. A farther shell contains more volume, so equal density need not mean equal probability. Neither quantity describes an electron's path.",
+    "example": {
+      "title": "Two thin shells",
+      "steps": [
+        "Two equally thick shells at r and 2r are assumed to have equal probability density.",
+        "The outer shell has four times the area, so it contains four times the probability in this comparison."
+      ]
+    },
+    "equation": "P(r)dr = 4πr²∣ψ(r)∣²dr",
+    "terms": [
+      {
+        "term": "Probability density",
+        "definition": "Probability per tiny volume."
+      },
+      {
+        "term": "Shell",
+        "definition": "A thin layer at a chosen distance from the centre."
+      }
+    ]
+  },
+  "subtract-hydrogen-energies": {
+    "idea": "Hydrogen energy gaps get smaller as the principal label increases.",
+    "explanation": "In the simple one-electron model, energy depends on −1/n². Higher levels approach zero, the separation reference. Use level differences to find photon energies.",
+    "example": {
+      "title": "Hydrogen drops from n = 2 to n = 1",
+      "steps": [
+        "The energies are −3.4 eV and −13.6 eV.",
+        "Their difference is 10.2 eV, the emitted photon energy when recoil is neglected."
+      ]
+    },
+    "equation": "E_n ≈ −13.6Z²/n² eV",
+    "terms": [
+      {
+        "term": "n",
+        "definition": "The principal positive-integer state label."
+      },
+      {
+        "term": "Z",
+        "definition": "Nuclear proton count."
+      }
+    ]
+  },
+  "allowed-does-not-mean-certain": {
+    "idea": "A permitted transition is possible through a given mechanism, not guaranteed to happen.",
+    "explanation": "Light can move an atom between allowed states only through a suitable interaction. For the common electric-dipole mechanism, which links light to the atom's charge distribution, the orbital label l changes by one. Other, often weaker mechanisms follow different rules.",
+    "example": {
+      "title": "Testing one transition",
+      "steps": [
+        "A direct l = 0 to l = 0 change has Δl = 0.",
+        "It fails the electric-dipole rule, although another weaker mechanism may allow it."
+      ]
+    },
+    "equation": "Δl = ±1 for electric-dipole transitions",
+    "terms": [
+      {
+        "term": "l",
+        "definition": "The orbital-angular-momentum label of an electron state."
+      },
+      {
+        "term": "Δl",
+        "definition": "The final l minus the initial l."
+      },
+      {
+        "term": "Electric dipole",
+        "definition": "The separation pattern of positive and negative charge that couples to light here."
+      }
+    ]
+  },
+  "two-kinds-of-angular-momentum": {
+    "idea": "Angular-momentum size is different from its measured part along one axis.",
+    "explanation": "Angular momentum measures rotational behavior, but quantum values do not behave exactly like spinning arrows. The label l sets its full size, while m labels a measurement along one chosen direction. These are different quantities.",
+    "example": {
+      "title": "An l = 1 state",
+      "steps": [
+        "Its angular-momentum magnitude is √2 ħ.",
+        "The possible axis projections are −ħ, 0 and +ħ, not ±√2 ħ."
+      ]
+    },
+    "equation": "L_z = mħ",
+    "terms": [
+      {
+        "term": "ħ",
+        "definition": "Planck's constant divided by 2π, the standard unit used for quantum angular momentum."
+      },
+      {
+        "term": "Projection",
+        "definition": "The measured part along a chosen direction."
+      },
+      {
+        "term": "l",
+        "definition": "The label setting total orbital-angular-momentum size."
+      },
+      {
+        "term": "m",
+        "definition": "The label for its chosen-axis measurement."
+      }
+    ]
+  },
+  "couple-spin-to-orbital-motion": {
+    "idea": "Electron spin and orbital motion combine into allowed total-angular-momentum labels.",
+    "explanation": "Spin is an electron's built-in quantum angular momentum; it does not mean a little ball literally spinning. Combining it with orbital angular momentum gives particular allowed total labels j. Their interaction can make these groups have slightly different energies.",
+    "example": {
+      "title": "Combining l = 1 and spin 1/2",
+      "steps": [
+        "The allowed total labels are j = 1/2 and j = 3/2.",
+        "These are two distinct families, whose energies can differ through spin-orbit coupling."
+      ]
+    },
+    "equation": "j = ∣l−s∣,…,l+s",
+    "terms": [
+      {
+        "term": "l",
+        "definition": "Orbital-angular-momentum label."
+      },
+      {
+        "term": "s",
+        "definition": "Spin label; ½ for an electron."
+      },
+      {
+        "term": "j",
+        "definition": "Allowed total-angular-momentum label."
+      },
+      {
+        "term": "Spin-orbit coupling",
+        "definition": "The interaction linking electron spin and its orbital behavior."
+      }
+    ]
+  },
+  "split-levels-with-a-field": {
+    "idea": "A weak magnetic field can shift atomic sublevels by different amounts.",
+    "explanation": "Some atomic states respond to a magnetic field like tiny magnets with different allowed alignments. The field can therefore shift their energies by different amounts. The displayed rule uses a weak field and a supplied response factor g; strong fields can mix states differently.",
+    "example": {
+      "title": "One weak-field shift",
+      "steps": [
+        "Use g = 2, m_j = +1/2, B = 1 T and μ_B ≈ 5.79 × 10⁻⁵ eV/T.",
+        "The energy shift is +5.79 × 10⁻⁵ eV."
+      ]
+    },
+    "equation": "ΔE = gμ_B m_j B",
+    "terms": [
+      {
+        "term": "ΔE",
+        "definition": "The energy shift."
+      },
+      {
+        "term": "g",
+        "definition": "The supplied dimensionless magnetic-response factor."
+      },
+      {
+        "term": "μ_B",
+        "definition": "The Bohr magneton, about 5.79 × 10⁻⁵ eV per tesla."
+      },
+      {
+        "term": "m_j",
+        "definition": "The label for angular momentum along the field."
+      },
+      {
+        "term": "B",
+        "definition": "Magnetic-field strength."
+      },
+      {
+        "term": "Tesla (T)",
+        "definition": "A unit of magnetic-field strength."
+      }
+    ]
+  },
+  "resolve-smaller-structure": {
+    "idea": "More precise atomic measurements reveal energy differences hidden by a simple model.",
+    "explanation": "A simple atomic model leaves out small effects. Fine structure adds effects involving relativity and electron spin; hyperfine structure includes magnetic interactions with the nucleus. These change the atom's predicted levels, not just the measuring instrument's settings.",
+    "example": {
+      "title": "Adding supplied corrections",
+      "steps": [
+        "Start at −2 eV and add +0.001 eV and −0.000002 eV.",
+        "The corrected energy is −1.999002 eV."
+      ]
+    },
+    "equation": "E = E_base + δE_fine + δE_hyperfine",
+    "terms": [
+      {
+        "term": "Fine structure",
+        "definition": "Small energy splitting from relativistic and electron-spin effects."
+      },
+      {
+        "term": "Hyperfine structure",
+        "definition": "Smaller splitting involving the nucleus's magnetic properties."
+      },
+      {
+        "term": "Spin",
+        "definition": "Built-in quantum angular momentum, not literal ball-like rotation."
+      }
+    ]
+  },
+  "fill-states-not-locations": {
+    "idea": "A complete electron state can hold at most one electron.",
+    "explanation": "A spatial orbital has two possible spin states, so it can hold two electrons with opposite spin labels. This does not forbid two electrons from appearing in the same region of space.",
+    "example": {
+      "title": "Filling one orbital",
+      "steps": [
+        "Put one electron in each of the orbital's two spin states.",
+        "The orbital now holds two electrons; a third needs a different complete state."
+      ]
+    },
+    "equation": "n_i = 0 or 1",
+    "terms": [
+      {
+        "term": "Orbital",
+        "definition": "A spatial electron state."
+      },
+      {
+        "term": "Complete state",
+        "definition": "A state with both its spatial and spin information specified."
+      }
+    ]
+  },
+  "screen-the-nuclear-pull": {
+    "idea": "Other electrons partly reduce the nucleus's pull on a chosen electron.",
+    "explanation": "A simple average model calls the remaining pull an effective nuclear charge. The proton count has not changed. Different orbitals can experience different screening, so one number is not exact for all electrons.",
+    "example": {
+      "title": "A supplied screening estimate",
+      "steps": [
+        "Take nuclear charge number Z = 8 and screening estimate σ = 5.",
+        "The effective value is 8 − 5 = 3 for this specified model."
+      ]
+    },
+    "equation": "Z_effective = Z − σ",
+    "terms": [
+      {
+        "term": "Screening",
+        "definition": "The partial reduction of nuclear attraction caused by other electrons."
+      }
+    ]
+  },
+  "use-filling-to-explain-trends": {
+    "idea": "The outer electrons strongly influence how an atom behaves chemically.",
+    "explanation": "A configuration records how states are occupied. Outer electrons are usually easier to remove or share than tightly held inner ones. Patterns across elements have exceptions because orbital energies and screening also change.",
+    "example": {
+      "title": "Counting one configuration",
+      "steps": [
+        "A toy atom has orbital-family occupations 2, 2 and 1, giving five electrons.",
+        "Removing the outer electron leaves four electrons while its five-proton nucleus stays unchanged."
+      ]
+    },
+    "equation": "electron_count = sum_of_occupations",
+    "terms": [
+      {
+        "term": "Configuration",
+        "definition": "A record of occupied electron-state families."
+      }
+    ]
+  },
+  "an-average-field-misses-correlations": {
+    "idea": "An average electron environment misses some coordinated electron behavior.",
+    "explanation": "Electrons respond to each other, so treating each as independent is an approximation. Correlation means dependence beyond that chosen reference. Better calculations can raise or lower a predicted gap.",
+    "example": {
+      "title": "Correcting an energy gap",
+      "steps": [
+        "An average-field model predicts 3.0 eV and a more accurate model gives 2.8 eV.",
+        "The gap correction is −0.2 eV."
+      ]
+    },
+    "equation": "gap_correction = improved_gap − reference_gap",
+    "terms": [
+      {
+        "term": "Average field",
+        "definition": "A model replacing other particles' detailed behavior with an average influence."
+      },
+      {
+        "term": "Correlation",
+        "definition": "Dependence beyond a chosen independent-particle model."
+      }
+    ]
+  },
+  "light-can-drive-either-direction": {
+    "idea": "Resonant light can make atoms absorb energy or return energy to the light.",
+    "explanation": "Light matching an energy gap can raise a lower-state atom or make an upper-state atom emit more light. The second process is stimulated emission. If the two levels contain equal numbers of sublevels, their atom counts decide which effect wins in this simple rate model.",
+    "example": {
+      "title": "Thirty upper and seventy lower atoms",
+      "steps": [
+        "The population difference is 30 − 70 = −40.",
+        "The beam loses energy overall through net absorption in this rate model."
+      ]
+    },
+    "equation": "net_stimulated_rate ∝ N_upper − N_lower",
+    "terms": [
+      {
+        "term": "Stimulated emission",
+        "definition": "Incoming light causing an excited atom to add energy to the light field."
+      },
+      {
+        "term": "Sublevel",
+        "definition": "A distinct state within the energy-level group."
+      }
+    ]
+  },
+  "lifetime-predicts-a-population-curve": {
+    "idea": "An excited-state lifetime predicts a population pattern, not each atom's countdown.",
+    "explanation": "Individual emission times are random. For independent atoms with one constant decay rate, the expected excited population falls exponentially. Some atoms remain excited long after the mean lifetime.",
+    "example": {
+      "title": "One mean lifetime later",
+      "steps": [
+        "Start with an expected 1000 excited atoms.",
+        "After one mean lifetime, about 1000/e ≈ 368 remain excited on average."
+      ]
+    },
+    "equation": "N(t) = N₀ exp(−t/τ)",
+    "terms": [
+      {
+        "term": "Mean lifetime (τ)",
+        "definition": "The average waiting time across many decay events."
+      }
+    ]
+  },
+  "a-line-has-a-shape": {
+    "idea": "A finite excited-state lifetime gives a natural width to its spectral line.",
+    "explanation": "A spectral line is not infinitely sharp. Atomic motion, collisions and the instrument can add broadening, so measured width is not always a direct lifetime measurement. The simple formula assumes a much narrower lower level.",
+    "example": {
+      "title": "A short-lived upper state",
+      "steps": [
+        "Use lifetime 10⁻⁸ s and ħ ≈ 6.582 × 10⁻¹⁶ eV s.",
+        "The natural energy width is about 6.582 × 10⁻⁸ eV."
+      ]
+    },
+    "equation": "Γ = ħ/τ",
+    "terms": [
+      {
+        "term": "Γ",
+        "definition": "The full energy width at half the line's maximum height."
+      },
+      {
+        "term": "ħ",
+        "definition": "Planck's constant divided by 2π."
+      }
+    ]
+  },
+  "gain-needs-a-supplied-energy-source": {
+    "idea": "Amplifying light requires energy stored or supplied in the material.",
+    "explanation": "Pumping puts energy into the atoms. Stimulated emission can then transfer it to light. More upper-state atoms per sublevel can give gain, but useful output also has to overcome losses.",
+    "example": {
+      "title": "A pumped population",
+      "steps": [
+        "With equal numbers of sublevels, 60 atoms are upper and 40 lower.",
+        "Stimulated gain is possible; the extra light energy comes from the pumped atoms."
+      ]
+    },
+    "equation": "N_upper/g_upper > N_lower/g_lower",
+    "terms": [
+      {
+        "term": "Pumping",
+        "definition": "Supplying energy to prepare excited states."
+      },
+      {
+        "term": "Gain",
+        "definition": "An increase in light energy drawn from the material."
+      },
+      {
+        "term": "g",
+        "definition": "Number of sublevels in the stated level."
+      }
+    ]
+  },
+  "a-molecular-well-has-a-minimum": {
+    "idea": "A bond can hold atoms near a separation where potential energy is lowest.",
+    "explanation": "Moving slightly away from this minimum raises potential energy. The resulting force points back toward it. Quantum motion remains even in the lowest-energy molecular state.",
+    "example": {
+      "title": "A slightly stretched model bond",
+      "steps": [
+        "A model bond is stretched just beyond its lowest-energy separation.",
+        "At that position the energy slope is +2 nanonewtons, so the force is −2 nanonewtons, pulling the atoms closer together."
+      ]
+    },
+    "equation": "F = −dU/dR",
+    "terms": [
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with position or arrangement."
+      },
+      {
+        "term": "Slope",
+        "definition": "Energy change per change in separation; its units are force."
+      },
+      {
+        "term": "Nanonewton",
+        "definition": "One billionth of a newton."
+      }
+    ]
+  },
+  "separate-fast-and-slow-motion": {
+    "idea": "Molecular models often solve fast electron motion before slower nuclear motion.",
+    "explanation": "Nuclei are much heavier than electrons. We can first hold nuclei at chosen positions and calculate electron energy, then use the resulting energy curve for nuclear motion. This approximation can fail where electronic states strongly mix.",
+    "example": {
+      "title": "One point on a model bond curve",
+      "steps": [
+        "Hold a model molecule's two nuclei at one chosen separation: the supplied electron energy is −8 eV and nuclear repulsion is +3 eV.",
+        "Their sum is −5 eV; repeating this calculation at other separations builds the curve used for the nuclei's slower motion."
+      ]
+    },
+    "equation": "U_effective(R) = E_electronic(R) + U_nuclear(R)",
+    "terms": [
+      {
+        "term": "Effective energy curve",
+        "definition": "The calculated energy versus nuclear position used in the simplified motion model."
+      }
+    ]
+  },
+  "read-rotational-and-vibrational-spacings": {
+    "idea": "Molecular rotation and vibration have different patterns of allowed energies.",
+    "explanation": "A molecule can turn as a whole or stretch its bonds back and forth. These motions have different allowed energies. Holding the bond length fixed gives a simple rotation rule, while small spring-like bond vibrations have almost equal energy steps.",
+    "example": {
+      "title": "One rotational gap",
+      "steps": [
+        "Use rotational constant B = 0.002 eV.",
+        "J = 0 gives zero and J = 1 gives 0.004 eV, so their gap is 0.004 eV."
+      ]
+    },
+    "equation": "E_rotation = BJ(J+1)",
+    "terms": [
+      {
+        "term": "J",
+        "definition": "The whole-number rotational-angular-momentum label, starting at 0 in this model."
+      },
+      {
+        "term": "B",
+        "definition": "The rotational energy constant."
+      },
+      {
+        "term": "Rigid rotor",
+        "definition": "A model that keeps bond lengths fixed during rotation."
+      }
+    ]
+  },
+  "zero-point-energy-reduces-dissociation-energy": {
+    "idea": "Breaking a ground-state molecule needs less energy than the full potential-well depth.",
+    "explanation": "The lowest vibrational state lies above the bottom of the potential well. This zero-point energy already supplies part of the climb toward separated fragments. Specify the initial state and final fragments.",
+    "example": {
+      "title": "A molecular well",
+      "steps": [
+        "The well depth is 5.0 eV and ground-state vibration lies 0.2 eV above its bottom.",
+        "The separation threshold from that ground state is 4.8 eV."
+      ]
+    },
+    "equation": "D₀ = D_e − E_zero",
+    "terms": [
+      {
+        "term": "Zero-point energy",
+        "definition": "Energy remaining above a potential minimum in the lowest quantum state."
+      },
+      {
+        "term": "Dissociation",
+        "definition": "Separating a molecule into specified fragments."
+      }
+    ]
+  },
+  "identify-a-nucleus": {
+    "idea": "A nucleus's mass number counts its protons plus neutrons.",
+    "explanation": "Protons are positively charged and neutrons are neutral; both are called nucleons. Their count is a label, not an exact mass in atomic mass units.",
+    "example": {
+      "title": "A nucleus labeled A = 23, Z = 11",
+      "steps": [
+        "Subtract proton count from total nucleon count: 23 − 11 = 12 neutrons.",
+        "Changing the surrounding electrons leaves these nuclear counts unchanged."
+      ]
+    },
+    "equation": "N = A − Z",
+    "terms": [
+      {
+        "term": "Nucleon",
+        "definition": "A proton or neutron."
+      },
+      {
+        "term": "A",
+        "definition": "Mass number."
+      },
+      {
+        "term": "Z",
+        "definition": "Proton count."
+      },
+      {
+        "term": "N",
+        "definition": "Neutron count."
+      }
+    ]
+  },
+  "nuclei-grow-by-volume": {
+    "idea": "Nuclear radius grows roughly with the cube root of nucleon count.",
+    "explanation": "Adding particles mainly adds volume. The simple radius rule assumes a roughly similar density across nuclei. Light nuclei and unusually extended nuclei can depart from this pattern.",
+    "example": {
+      "title": "A nucleus with A = 64",
+      "steps": [
+        "The cube root of 64 is 4.",
+        "Using r₀ ≈ 1.2 fm gives radius about 4.8 fm."
+      ]
+    },
+    "equation": "R ≈ r₀A^(1/3)",
+    "terms": [
+      {
+        "term": "Femtometre (fm)",
+        "definition": "One millionth of one billionth of a metre."
+      },
+      {
+        "term": "A",
+        "definition": "The total proton and neutron count."
+      }
+    ]
+  },
+  "mass-difference-stores-binding": {
+    "idea": "A bound nucleus has less rest mass than its separated constituents.",
+    "explanation": "The mass difference corresponds to binding energy. That energy is released on formation or needed for separation. Use a consistent set of nuclear or atomic masses so electron contributions do not create a false result.",
+    "example": {
+      "title": "One supplied mass difference",
+      "steps": [
+        "Separated constituent masses total 20.010 u and the nucleus has mass 20.000 u.",
+        "The difference 0.010 u corresponds to about 9.315 MeV of binding energy."
+      ]
+    },
+    "equation": "B = Δmc²",
+    "terms": [
+      {
+        "term": "u",
+        "definition": "The unified atomic mass unit."
+      },
+      {
+        "term": "MeV",
+        "definition": "One million electronvolts."
+      },
+      {
+        "term": "Binding energy",
+        "definition": "Energy needed to separate the specified bound constituents."
+      }
+    ]
+  },
+  "compare-binding-per-nucleon": {
+    "idea": "Binding energy per nucleon lets us compare different-sized nuclei more fairly.",
+    "explanation": "A large nucleus may have more total binding but less binding per particle. Divide binding energy by proton-plus-neutron count. Particular decay possibilities still require the actual product masses.",
+    "example": {
+      "title": "One nucleus's average binding",
+      "steps": [
+        "A nucleus has binding energy 80 MeV and ten nucleons.",
+        "Its average binding is 80 ÷ 10 = 8 MeV per nucleon."
+      ]
+    },
+    "equation": "average_binding = B/A",
+    "terms": [
+      {
+        "term": "Nucleon",
+        "definition": "A proton or neutron."
+      },
+      {
+        "term": "A",
+        "definition": "Total nucleon count."
+      }
+    ]
+  },
+  "nuclear-attraction-is-short-ranged": {
+    "idea": "The attraction binding nuclei acts mainly over very short distances.",
+    "explanation": "Protons repel electrically, but nearby nucleons also have a strong nuclear interaction that can bind them. Its short range means distant nucleons do not all attract equally strongly.",
+    "example": {
+      "title": "Two separated protons",
+      "steps": [
+        "Move the protons far beyond nuclear distances.",
+        "The residual strong attraction becomes tiny, while electric repulsion still acts over the longer distance."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Residual strong interaction",
+        "definition": "The short-range interaction between nucleons arising from their internal strong-force physics."
+      },
+      {
+        "term": "Nucleon",
+        "definition": "A proton or neutron."
+      }
+    ]
+  },
+  "balance-liquid-drop-contributions": {
+    "idea": "A liquid-drop model adds competing contributions to nuclear binding.",
+    "explanation": "Interior nucleons gain binding from neighbors, while the surface and proton repulsion reduce it. Neutron-proton imbalance and pairing also matter. This smooth picture misses detailed shell effects.",
+    "example": {
+      "title": "A supplied toy energy account",
+      "steps": [
+        "The contributions are 100 − 20 − 10 − 5 + 1 MeV.",
+        "The predicted total binding is 66 MeV."
+      ]
+    },
+    "equation": "B = B_volume − B_surface − B_repulsion − B_imbalance + δ_pair",
+    "terms": [
+      {
+        "term": "Pairing",
+        "definition": "A binding contribution associated with how proton and neutron states pair."
+      }
+    ]
+  },
+  "shell-gaps-matter-in-nuclei": {
+    "idea": "A large gap between nuclear states can make a filled shell especially important.",
+    "explanation": "Protons and neutrons occupy separate sets of quantum states. A big energy gap makes promotion to the next state costly. Nuclear shell patterns differ from atomic electron-shell patterns.",
+    "example": {
+      "title": "A toy shell gap",
+      "steps": [
+        "The last filled state is at −8 MeV and the next is at −2 MeV.",
+        "Moving a nucleon between them costs 6 MeV in this model."
+      ]
+    },
+    "equation": "gap = E_next − E_filled",
+    "terms": [
+      {
+        "term": "Shell",
+        "definition": "A group of available quantum states separated from other groups by an energy gap."
+      }
+    ]
+  },
+  "spin-and-parity-test-a-model": {
+    "idea": "Matching an energy is not enough if a model predicts the wrong quantum labels.",
+    "explanation": "Energy is only one test of a nuclear model. Spin labels total angular momentum, a quantum measure related to rotation. Parity describes whether reversing all positions preserves or flips the sign of the state's wave pattern. The predicted labels must also match measurements.",
+    "example": {
+      "title": "One failed prediction",
+      "steps": [
+        "A model predicts spin zero and even parity, but measurement finds spin one and odd parity.",
+        "Even a matching energy cannot make that state assignment correct."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Parity",
+        "definition": "The wave pattern's sign behavior when every position is reversed."
+      },
+      {
+        "term": "Even parity",
+        "definition": "The pattern keeps its sign under this reversal."
+      },
+      {
+        "term": "Odd parity",
+        "definition": "The pattern reverses its sign."
+      }
+    ]
+  },
+  "random-decays-smooth-average": {
+    "idea": "Random individual decays produce a predictable average when many nuclei are observed.",
+    "explanation": "In the constant-rate model, each surviving nucleus has the same chance per short time to decay. Surviving longer does not make it overdue. The smooth curve gives expected counts, not guaranteed ones.",
+    "example": {
+      "title": "One half-life",
+      "steps": [
+        "Start with 800 independent nuclei.",
+        "After one half-life, 400 remain on average; the exact count can differ."
+      ]
+    },
+    "equation": "N(t) = N₀ exp(−λt)",
+    "terms": [
+      {
+        "term": "Decay constant (λ)",
+        "definition": "The constant decay probability rate for a surviving nucleus."
+      },
+      {
+        "term": "Half-life",
+        "definition": "Time for survival probability to fall to one half."
+      }
+    ]
+  },
+  "half-life-is-not-mean-lifetime": {
+    "idea": "Half-life and mean lifetime describe different parts of the same decay pattern.",
+    "explanation": "Half-life is when half the population survives on average. Mean lifetime is the average wait until decay. Neither gives a deadline for the last remaining nucleus.",
+    "example": {
+      "title": "A three-second half-life",
+      "steps": [
+        "For a single exponential decay, mean lifetime is 3 ÷ ln(2) ≈ 4.33 s.",
+        "It is longer than the half-life because some waiting times are much longer."
+      ]
+    },
+    "equation": "τ = T_half/ln(2)",
+    "terms": [
+      {
+        "term": "Mean lifetime",
+        "definition": "Average waiting time until decay."
+      },
+      {
+        "term": "ln(2)",
+        "definition": "The fixed number about 0.693 used in exponential half-life calculations."
+      }
+    ]
+  },
+  "activity-is-a-rate": {
+    "idea": "Activity counts decays per second, not radiation dose.",
+    "explanation": "Multiply the number of undecayed nuclei by their decay constant. The same activity can come from many slowly decaying nuclei or fewer rapidly decaying ones. Detected counts also depend on the detector.",
+    "example": {
+      "title": "A sample's activity",
+      "steps": [
+        "With 5000 nuclei and decay constant 0.01 per second, activity is 50 decays per second.",
+        "That is 50 Bq; it does not by itself state dose or risk."
+      ]
+    },
+    "equation": "activity = λN",
+    "terms": [
+      {
+        "term": "Becquerel (Bq)",
+        "definition": "One decay per second."
+      },
+      {
+        "term": "Decay constant (λ)",
+        "definition": "Decay probability rate for each surviving nucleus."
+      }
+    ]
+  },
+  "a-daughter-can-also-decay": {
+    "idea": "A daughter population changes through both production and its own decay.",
+    "explanation": "Parent decays add daughter nuclei while daughter decays remove them. Subtract the outgoing rate from the incoming rate. The daughter's population need not follow one simple falling exponential.",
+    "example": {
+      "title": "A daughter population grows",
+      "steps": [
+        "Parents produce 40 daughters per second while 15 daughters decay per second.",
+        "The expected daughter count is increasing by 25 per second at that instant."
+      ]
+    },
+    "equation": "daughter_change_rate = production_rate − decay_rate",
+    "terms": [
+      {
+        "term": "Daughter",
+        "definition": "The nucleus produced by a parent decay."
+      }
+    ]
+  },
+  "alpha-decay-crosses-a-barrier": {
+    "idea": "Alpha emission removes two protons and two neutrons from a nucleus.",
+    "explanation": "An alpha particle is a helium nucleus. Its escape can involve quantum tunnelling, which gives a chance to cross a barrier. The energy release alone does not tell us the lifetime.",
+    "example": {
+      "title": "A hypothetical alpha decay",
+      "steps": [
+        "Start with A = 150 and Z = 64.",
+        "The daughter has A = 146 and Z = 62; masses and interactions must still show whether the channel occurs."
+      ]
+    },
+    "equation": "A_after = A_before − 4; Z_after = Z_before − 2",
+    "terms": [
+      {
+        "term": "Alpha particle",
+        "definition": "A nucleus of two protons and two neutrons."
+      },
+      {
+        "term": "Tunnelling",
+        "definition": "Quantum transmission through a barrier that would block the corresponding classical motion."
+      }
+    ]
+  },
+  "beta-decay-shares-energy": {
+    "idea": "In beta-minus decay, the electron shares energy with an antineutrino and nuclear recoil.",
+    "explanation": "The nuclear change converts a neutron into a proton, so proton count rises by one while total nucleon count stays fixed. Sharing energy explains why emitted electrons can have a range of energies.",
+    "example": {
+      "title": "A hypothetical beta-minus label change",
+      "steps": [
+        "Start with nuclear labels A = 40 and Z = 18, only to check particle counting.",
+        "A beta-minus change would give A = 40 and Z = 19, with the electron balancing charge; this does not establish that this particular nucleus can release enough energy to decay."
+      ]
+    },
+    "equation": "n → p + e⁻ + ν̄_e",
+    "terms": [
+      {
+        "term": "Antineutrino",
+        "definition": "A very weakly interacting particle emitted with the electron in beta-minus decay."
+      },
+      {
+        "term": "Recoil",
+        "definition": "The nucleus's motion required to balance momentum."
+      },
+      {
+        "term": "A",
+        "definition": "Total proton and neutron count."
+      },
+      {
+        "term": "Z",
+        "definition": "Proton count."
+      }
+    ]
+  },
+  "gamma-emission-includes-recoil": {
+    "idea": "A free nucleus recoils when it emits a gamma photon.",
+    "explanation": "The nuclear proton and neutron counts do not change. Some excitation energy becomes recoil energy, so the photon carries slightly less than the full level gap.",
+    "example": {
+      "title": "A 1 MeV photon",
+      "steps": [
+        "For nuclear rest energy 100000 MeV, recoil is approximately 1²/(2 × 100000) = 0.000005 MeV.",
+        "The excitation gap is therefore about 1.000005 MeV."
+      ]
+    },
+    "equation": "E_gap = E_photon + E_recoil",
+    "terms": [
+      {
+        "term": "Gamma photon",
+        "definition": "A photon emitted in a nuclear transition."
+      },
+      {
+        "term": "Recoil",
+        "definition": "Motion that balances the emitted photon's momentum."
+      }
+    ]
+  },
+  "conservation-filters-decay-stories": {
+    "idea": "A proposed decay must balance all the conserved quantities of the complete system.",
+    "explanation": "Charge balance is one necessary check; energy and momentum matter too. Passing these checks does not guarantee a fast or even measurable process. The interaction also matters.",
+    "example": {
+      "title": "An impossible charge account",
+      "steps": [
+        "A neutral parent supposedly produces one +e particle and only neutral particles.",
+        "The final charge is +e, so the story is missing negative charge or cannot be correct."
+      ]
+    },
+    "equation": "total_charge_before = total_charge_after",
+    "terms": [
+      {
+        "term": "Conservation",
+        "definition": "A rule stating that a total stays unchanged for the complete process."
+      }
+    ]
+  },
+  "charged-particles-leave-energy-behind": {
+    "idea": "A charged particle can lose motion energy as it excites or ionizes matter.",
+    "explanation": "Ionizing means removing an electron. Stopping power gives average energy loss per distance, but depends on the particle, speed and material. A supplied constant is only a local approximation.",
+    "example": {
+      "title": "One short path segment",
+      "steps": [
+        "Use stopping power 2 MeV/mm over a short 0.1 mm path.",
+        "The estimated energy loss is 0.2 MeV."
+      ]
+    },
+    "equation": "energy_loss ≈ stopping_power × distance",
+    "terms": [
+      {
+        "term": "Stopping power",
+        "definition": "Average particle energy loss per distance."
+      },
+      {
+        "term": "Ionization",
+        "definition": "Removing an electron from an atom or molecule."
+      }
+    ]
+  },
+  "attenuation-removes-unscattered-photons": {
+    "idea": "A narrow beam loses photons when they are absorbed or scattered out of it.",
+    "explanation": "The exponential law counts photons that have not interacted. Scattered photons can still reach elsewhere or enter a broad detector. This law therefore does not describe all transmitted energy or dose.",
+    "example": {
+      "title": "Half the uncollided beam",
+      "steps": [
+        "Choose a thickness for which μx = ln(2).",
+        "The uncollided beam fraction is exp(−ln(2)) = 1/2."
+      ]
+    },
+    "equation": "I(x) = I₀ exp(−μx)",
+    "terms": [
+      {
+        "term": "Attenuation",
+        "definition": "Reduction of the beam being counted."
+      },
+      {
+        "term": "μ",
+        "definition": "The interaction-loss coefficient per distance."
+      }
+    ]
+  },
+  "separate-efficiency-and-background": {
+    "idea": "Observed counts include background, and the detector also misses some signal events.",
+    "explanation": "First estimate the signal by subtracting compatible background counts. Then divide by the detection efficiency. Uncertainty in both steps remains part of the answer.",
+    "example": {
+      "title": "Correcting one count",
+      "steps": [
+        "Observe 120 events with expected background 20, leaving estimated signal 100.",
+        "At efficiency 0.50, the estimated number of true signal events is 200."
+      ]
+    },
+    "equation": "N_signal ≈ (N_observed − N_background)/efficiency",
+    "terms": [
+      {
+        "term": "Efficiency",
+        "definition": "The fraction of relevant signal events detected under stated conditions."
+      },
+      {
+        "term": "Background",
+        "definition": "Events not caused by the signal of interest."
+      }
+    ]
+  },
+  "count-uncertainty-survives-subtraction": {
+    "idea": "Subtracting background does not subtract its uncertainty.",
+    "explanation": "Two independently counted samples both vary randomly. Subtracting their counts removes an estimated background, but the variations remain. For equal observation times and ordinary independent counting, add the counts before taking the square root to estimate the net uncertainty; very small counts need fuller methods.",
+    "example": {
+      "title": "Two count measurements",
+      "steps": [
+        "Measure 100 on-source and 64 background events, giving net count 36.",
+        "The uncertainty estimate is √164 ≈ 12.8 counts, not √36."
+      ]
+    },
+    "equation": "σ_net ≈ √(N_on + N_off)",
+    "terms": [
+      {
+        "term": "N_on",
+        "definition": "Count measured while observing the source."
+      },
+      {
+        "term": "N_off",
+        "definition": "Independent background count for the same exposure time."
+      },
+      {
+        "term": "σ_net",
+        "definition": "Estimated standard uncertainty, a typical size of random variation in the difference."
+      }
+    ]
+  },
+  "balance-reaction-labels": {
+    "idea": "Nuclear reaction labels must balance across all incoming and outgoing particles.",
+    "explanation": "Add proton counts and nucleon counts on each side. These checks can identify a missing product's labels, but they do not establish that the reaction is physically allowed.",
+    "example": {
+      "title": "An invented reaction",
+      "steps": [
+        "A nucleus (A = 10, Z = 5) captures a neutron and emits a proton.",
+        "The remaining nucleus must have A = 10 and Z = 4."
+      ]
+    },
+    "equation": "ΣA_initial = ΣA_final; ΣZ_initial = ΣZ_final",
+    "terms": [
+      {
+        "term": "A",
+        "definition": "Total proton and neutron count."
+      },
+      {
+        "term": "Z",
+        "definition": "Proton count."
+      }
+    ]
+  },
+  "q-measures-rest-energy-change": {
+    "idea": "The Q value tells how much rest energy is released or required by a reaction.",
+    "explanation": "Subtract final rest energy from initial rest energy. Positive Q means the difference can appear in other energy forms. Incoming kinetic energy must be included separately, and momentum controls how energy is shared.",
+    "example": {
+      "title": "One supplied mass difference",
+      "steps": [
+        "The initial masses exceed the final masses by 0.002 u.",
+        "This gives Q ≈ 1.863 MeV; with 0.5 MeV incoming motion energy, 2.363 MeV is available in final motion or radiation."
+      ]
+    },
+    "equation": "Q = (Σm_initial − Σm_final)c²",
+    "terms": [
+      {
+        "term": "Q value",
+        "definition": "Initial rest energy minus final rest energy."
+      },
+      {
+        "term": "u",
+        "definition": "The unified atomic mass unit."
+      }
+    ]
+  },
+  "cross-section-turns-flux-into-rate": {
+    "idea": "Cross section connects an incoming particle flux with a reaction rate.",
+    "explanation": "Flux counts particles arriving per area per second. Cross section describes interaction likelihood at a stated energy; it need not equal a literal target silhouette. The simple rate rule assumes a thin, dilute target.",
+    "example": {
+      "title": "A supplied toy target",
+      "steps": [
+        "Use flux 10⁶ m⁻²s⁻¹, 10¹⁰ target particles and cross section 10⁻²⁸ m².",
+        "Their product gives expected rate 10⁻¹² per second."
+      ]
+    },
+    "equation": "R = ΦN_target σ",
+    "terms": [
+      {
+        "term": "Flux (Φ)",
+        "definition": "Incoming particles per area per time."
+      },
+      {
+        "term": "Cross section (σ)",
+        "definition": "An area-valued measure of interaction likelihood."
+      }
+    ]
+  },
+  "threshold-needs-momentum-room": {
+    "idea": "Creating final particles requires enough energy while also balancing momentum.",
+    "explanation": "Motion carries both energy and momentum, which must balance in a complete reaction. In the centre-of-mass frame, the viewpoint where total momentum is zero, the minimum energy equals the new particles' total rest energy. A laboratory beam can need extra energy because the products must also move overall.",
+    "example": {
+      "title": "Testing an energy threshold",
+      "steps": [
+        "The proposed final particles need 12 MeV of rest energy in total.",
+        "An initial centre-of-mass energy of 11 MeV cannot create them."
+      ]
+    },
+    "equation": "E_CM,threshold = Σ(final_rest_energies)",
+    "terms": [
+      {
+        "term": "Centre-of-mass frame",
+        "definition": "The viewpoint where total momentum is zero."
+      },
+      {
+        "term": "Threshold",
+        "definition": "The smallest energy compatible with energy and momentum balance."
+      },
+      {
+        "term": "Rest energy",
+        "definition": "The energy associated with a particle's mass."
+      }
+    ]
+  },
+  "rearrangement-can-release-binding-energy": {
+    "idea": "Lower final rest energy leaves energy available for motion or radiation.",
+    "explanation": "Total energy is conserved. It changes form when nuclear constituents rearrange. Whether a particular channel releases energy must be checked with the actual initial and final masses.",
+    "example": {
+      "title": "One energy account",
+      "steps": [
+        "Initial rest energy is 1000 MeV and final rest energy is 998 MeV.",
+        "The remaining 2 MeV appears in other energy forms; no total energy disappears."
+      ]
+    },
+    "equation": "released_energy = initial_rest_energy − final_rest_energy",
+    "terms": [
+      {
+        "term": "Rest energy",
+        "definition": "Energy associated with mass when the object is at rest."
+      }
+    ]
+  },
+  "a-chain-is-a-causal-sequence": {
+    "idea": "A chain reaction continues only when one event actually causes later events.",
+    "explanation": "Some fissions emit neutrons that could cause more fissions. Those opportunities may instead be lost or absorbed without fission. Producing neutrons does not by itself guarantee a growing sequence.",
+    "example": {
+      "title": "A sequence that ends",
+      "steps": [
+        "One fission produces two hypothetical opportunities for another event.",
+        "Neither causes a later fission, so this sequence stops."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Fission",
+        "definition": "The splitting of a heavy nucleus into smaller products."
+      }
+    ]
+  },
+  "fusion-faces-electric-repulsion": {
+    "idea": "Positively charged nuclei repel before they can reach strong-interaction distances.",
+    "explanation": "Fusion requires a very close encounter. Quantum tunnelling can allow some encounters through the repulsive barrier, but it does not make every slow collision fuse.",
+    "example": {
+      "title": "Comparing the barrier at one separation",
+      "steps": [
+        "Keep separation fixed and double the product of the two nuclear charges.",
+        "The simple electric potential energy doubles; this alone does not determine the reaction's energy release."
+      ]
+    },
+    "equation": "electric_potential_energy ∝ Z₁Z₂/r",
+    "terms": [
+      {
+        "term": "Fusion",
+        "definition": "A process combining light nuclei into a different nuclear system."
+      },
+      {
+        "term": "Tunnelling",
+        "definition": "Quantum transmission through a classically blocking barrier."
+      }
+    ]
+  },
+  "stars-couple-nuclear-physics-to-transport": {
+    "idea": "A star's generated energy need not leave its surface immediately.",
+    "explanation": "Nuclear reactions change rest energy into other forms inside the star. Some energy is stored while some escapes. Transport through the star connects core generation with later surface light.",
+    "example": {
+      "title": "A toy star's energy account",
+      "steps": [
+        "The star generates 12 energy units and loses 10 during an interval.",
+        "Its stored energy rises by two units."
+      ]
+    },
+    "equation": "stored_energy_change = generated_energy − escaping_energy",
+    "terms": [
+      {
+        "term": "Energy transport",
+        "definition": "Movement of energy from one region to another."
+      }
+    ]
+  },
+  "infer-an-original-spectral-ladder": {
+    "idea": "Several spectral gaps can constrain a possible set of energy levels.",
+    "explanation": "A large gap should equal the sum of smaller gaps through the same intermediate state. Agreement supports the proposed ladder but does not uniquely identify the atom or every transition.",
+    "example": {
+      "title": "A synthetic spectrum",
+      "steps": [
+        "Observed gaps are 2, 3 and 5 eV.",
+        "Levels at 0, 2 and 5 eV reproduce all three differences."
+      ]
+    },
+    "equation": "E₃ − E₁ = (E₃ − E₂) + (E₂ − E₁)",
+    "terms": [
+      {
+        "term": "Spectral gap",
+        "definition": "The energy difference inferred from a transition line."
+      }
+    ]
+  },
+  "fit-a-decay-record-cautiously": {
+    "idea": "Decay rates at two times can estimate a half-life under specific assumptions.",
+    "explanation": "Subtract compatible background first. If efficiency is unchanged and one exponential species dominates, the rate ratio gives a decay estimate. Two points alone cannot establish that the model fits well.",
+    "example": {
+      "title": "A rate halves in ten seconds",
+      "steps": [
+        "Corrected rates fall from 80 to 40 per second over 10 s.",
+        "The inferred half-life is 10 s, with uncertainty from the measurements."
+      ]
+    },
+    "equation": "λ = ln(R₁/R₂)/(t₂−t₁)",
+    "terms": [
+      {
+        "term": "λ",
+        "definition": "The exponential decay-rate constant."
+      },
+      {
+        "term": "Half-life",
+        "definition": "Time for the expected surviving population to halve."
+      }
+    ]
+  },
+  "balance-and-test-a-synthetic-reaction": {
+    "idea": "A balanced reaction and a positive Q value still do not tell us its rate.",
+    "explanation": "First balance nuclear labels, then use the supplied mass difference to find energy release. Interaction likelihood is a separate question. Keep invented teaching examples separate from measured isotope data.",
+    "example": {
+      "title": "One synthetic reaction",
+      "steps": [
+        "Initial labels total A = 18, Z = 8; emitting a neutron leaves A = 17, Z = 8.",
+        "A supplied positive mass difference of 0.001 u gives Q ≈ 0.9315 MeV, but the reaction rate remains unknown."
+      ]
+    },
+    "equation": "Q = Δmc²",
+    "terms": [
+      {
+        "term": "Q value",
+        "definition": "Initial rest energy minus final rest energy."
+      },
+      {
+        "term": "u",
+        "definition": "The unified atomic mass unit."
+      }
+    ]
+  },
+  "compare-the-models": {
+    "idea": "Choose an atomic or nuclear model to match the measurement being predicted.",
+    "explanation": "Atomic light often concerns electron energy levels; nuclear decays concern nuclear states and interactions. Name the quantity and assumptions before choosing an equation. More complicated models are not automatically better.",
+    "example": {
+      "title": "Predicting one hydrogen line",
+      "steps": [
+        "The question asks for a hydrogen optical transition energy.",
+        "Start with electron-level differences and add corrections only if the required precision needs them."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "Model",
+        "definition": "A simplified description used to answer a specified question."
+      }
+    ]
+  }
+}

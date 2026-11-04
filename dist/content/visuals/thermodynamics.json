@@ -1,0 +1,446 @@
+{
+  "lessons": {
+    "kelvin-differences": {
+      "kind": "scales",
+      "title": "Equal steps, different starting numbers",
+      "caption": "The same warming is 10 degrees on both scales. Kelvin uses K, without a degree sign.",
+      "scales": [
+        {
+          "label": "Celsius (°C)",
+          "values": [
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "label": "Kelvin (K)",
+          "values": [
+            293.15,
+            298.15,
+            303.15
+          ]
+        }
+      ]
+    },
+    "ideal-gas-law": {
+      "kind": "plot",
+      "title": "More room means less pressure",
+      "caption": "This curve keeps 1 mol of ideal gas at 300 K. At volume 0.025 m³ the pressure is about 99.77 kPa.",
+      "x": {
+        "label": "Volume (m³)",
+        "range": [
+          0.025,
+          0.1
+        ]
+      },
+      "y": {
+        "label": "Pressure (kPa)",
+        "range": [
+          0,
+          100
+        ]
+      },
+      "series": [
+        {
+          "label": "Constant-temperature gas",
+          "points": [
+            [
+              0.025,
+              99.77352
+            ],
+            [
+              0.02734375,
+              91.221504
+            ],
+            [
+              0.029687500000000002,
+              84.01980631578948
+            ],
+            [
+              0.032031250000000004,
+              77.8720156097561
+            ],
+            [
+              0.034375,
+              72.56255999999999
+            ],
+            [
+              0.03671875,
+              67.93090723404256
+            ],
+            [
+              0.0390625,
+              63.8550528
+            ],
+            [
+              0.041406250000000006,
+              60.2406158490566
+            ],
+            [
+              0.043750000000000004,
+              57.01344
+            ],
+            [
+              0.04609375,
+              54.114451525423725
+            ],
+            [
+              0.04843750000000001,
+              51.49601032258064
+            ],
+            [
+              0.05078125000000001,
+              49.11927138461538
+            ],
+            [
+              0.053125000000000006,
+              46.95224470588235
+            ],
+            [
+              0.055468750000000004,
+              44.96834704225353
+            ],
+            [
+              0.05781250000000001,
+              43.14530594594594
+            ],
+            [
+              0.06015625000000001,
+              41.46432
+            ],
+            [
+              0.0625,
+              39.909408000000006
+            ],
+            [
+              0.06484375,
+              38.46689927710843
+            ],
+            [
+              0.06718750000000001,
+              37.12503069767442
+            ],
+            [
+              0.06953125000000002,
+              35.87362516853932
+            ],
+            [
+              0.07187500000000001,
+              34.70383304347826
+            ],
+            [
+              0.07421875,
+              33.6079225263158
+            ],
+            [
+              0.0765625,
+              32.57910857142857
+            ],
+            [
+              0.07890625000000001,
+              31.61141227722772
+            ],
+            [
+              0.08125000000000002,
+              30.699544615384614
+            ],
+            [
+              0.08359375000000001,
+              29.838809719626166
+            ],
+            [
+              0.0859375,
+              29.025024000000002
+            ],
+            [
+              0.08828125,
+              28.25444814159292
+            ],
+            [
+              0.09062500000000001,
+              27.523729655172414
+            ],
+            [
+              0.09296875000000002,
+              26.829854117647056
+            ],
+            [
+              0.09531250000000002,
+              26.170103606557372
+            ],
+            [
+              0.09765625,
+              25.54202112
+            ],
+            [
+              0.1,
+              24.94338
+            ]
+          ]
+        }
+      ]
+    },
+    "expansion-work": {
+      "kind": "plot",
+      "title": "Area counts work done by the gas",
+      "caption": "The pressure stays at 100 kPa while volume increases by 0.003 m³. The shaded area is 0.3 kJ, or 300 J.",
+      "x": {
+        "label": "Volume increase (m³)",
+        "range": [
+          0,
+          0.003
+        ]
+      },
+      "y": {
+        "label": "Outside pressure (kPa)",
+        "range": [
+          0,
+          100
+        ]
+      },
+      "series": [
+        {
+          "label": "Resisting pressure",
+          "points": [
+            [
+              0,
+              100
+            ],
+            [
+              0.003,
+              100
+            ]
+          ],
+          "fill": true
+        }
+      ]
+    },
+    "lumped-gray-limits": {
+      "kind": "plot",
+      "title": "The temperature gap shrinks",
+      "caption": "The object starts 10 K warmer than its surroundings. After 20 s, that gap is about 3.68 K in this one-temperature model.",
+      "x": {
+        "label": "Time (s)",
+        "range": [
+          0,
+          60
+        ]
+      },
+      "y": {
+        "label": "Temperature above surroundings (K)",
+        "range": [
+          0,
+          10
+        ]
+      },
+      "series": [
+        {
+          "label": "Temperature excess",
+          "points": [
+            [
+              0,
+              10
+            ],
+            [
+              1.875,
+              9.105103613800342
+            ],
+            [
+              3.75,
+              8.290291181804005
+            ],
+            [
+              5.625,
+              7.548396019890074
+            ],
+            [
+              7.5,
+              6.872892787909722
+            ],
+            [
+              9.375,
+              6.2578400960459115
+            ],
+            [
+              11.25,
+              5.69782824730923
+            ],
+            [
+              13.125,
+              5.187931656538893
+            ],
+            [
+              15,
+              4.723665527410147
+            ],
+            [
+              16.875,
+              4.300946406400622
+            ],
+            [
+              18.75,
+              3.91605626676799
+            ],
+            [
+              20.625,
+              3.5656098066394697
+            ],
+            [
+              22.5,
+              3.2465246735834974
+            ],
+            [
+              24.375,
+              2.9559943537737077
+            ],
+            [
+              26.25,
+              2.6914634872918386
+            ],
+            [
+              28.125,
+              2.450605392455259
+            ],
+            [
+              30,
+              2.231301601484298
+            ],
+            [
+              31.875,
+              2.0316232275153174
+            ],
+            [
+              33.75,
+              1.8498139990730427
+            ],
+            [
+              35.625,
+              1.6842748127818425
+            ],
+            [
+              37.5,
+              1.5335496684492846
+            ],
+            [
+              39.375,
+              1.3963128628139898
+            ],
+            [
+              41.25,
+              1.271357329320356
+            ],
+            [
+              43.125,
+              1.1575840213626323
+            ],
+            [
+              45,
+              1.0539922456186432
+            ],
+            [
+              46.875,
+              0.9596708604499847
+            ],
+            [
+              48.75,
+              0.8737902619542038
+            ],
+            [
+              50.625,
+              0.7955950871822769
+            ],
+            [
+              52.5,
+              0.7243975703425145
+            ],
+            [
+              54.375,
+              0.6595714935553818
+            ],
+            [
+              56.25,
+              0.6005466789530794
+            ],
+            [
+              58.125,
+              0.5468039736791477
+            ],
+            [
+              60,
+              0.49787068367863946
+            ]
+          ]
+        }
+      ]
+    },
+    "engine-energy": {
+      "kind": "bars",
+      "title": "Account for the incoming heat",
+      "caption": "The 1000 J entering divides into 700 J released to the cooler sink and 300 J of work.",
+      "unit": "Energy per cycle (J)",
+      "values": [
+        [
+          "Heat in",
+          1000
+        ],
+        [
+          "Heat out",
+          700
+        ],
+        [
+          "Work out",
+          300
+        ]
+      ]
+    },
+    "boltzmann-weights": {
+      "kind": "bars",
+      "title": "Turn weights into chances",
+      "caption": "The two probabilities add to 1. The higher-energy state has one third the weight and one third the probability of the lower state.",
+      "unit": "Probability (no units)",
+      "values": [
+        [
+          "Lower state",
+          0.75
+        ],
+        [
+          "Higher state",
+          0.25
+        ]
+      ]
+    },
+    "mean-energy-capacity": {
+      "kind": "bars",
+      "title": "Two possible measured energies",
+      "caption": "The bars show probabilities, not energy amounts. A single measurement gives 0 J or 4 J; their weighted mean is 1 J.",
+      "unit": "Probability (no units)",
+      "values": [
+        [
+          "Energy 0 J",
+          0.75
+        ],
+        [
+          "Energy 4 J",
+          0.25
+        ]
+      ]
+    },
+    "quantum-distribution-domains": {
+      "kind": "bars",
+      "title": "Compare average counts in one state",
+      "caption": "At the same energy comparison, the mean boson count is 0.5 and the mean fermion count is 0.25. These are average counts, not a claim about one trial.",
+      "unit": "Mean particles per state",
+      "values": [
+        [
+          "Bosons",
+          0.5
+        ],
+        [
+          "Fermions",
+          0.25
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,1069 @@
+{
+  "events-frames": {
+    "idea": "An event is something happening at one place and one time.",
+    "explanation": "A flash is an event; its coordinates are the place and time labels we give it. A reference frame supplies rulers and clocks for those labels. Another frame can give the same flash different labels. The event time is not when its light finally reaches a distant viewer.",
+    "example": {
+      "title": "Giving a flash an address",
+      "steps": [
+        "Place a detector at the laboratory's position zero.",
+        "A flash there when the local clock reads 2 seconds has address (2 seconds, 0 metres): time first, position second."
+      ]
+    },
+    "equation": "event address = (time, position)",
+    "terms": [
+      {
+        "term": "reference frame",
+        "definition": "A system of position labels and clocks used to describe events."
+      }
+    ]
+  },
+  "synchronize": {
+    "idea": "A round-trip light signal lets us set a distant clock's time by an agreed rule.",
+    "explanation": "Send light to a stationary distant clock, reflect it immediately, and record its return on the starting clock. Einstein synchronization assigns the halfway time to the reflection. This rule treats outward and return light speeds as equal in the chosen inertial frame.",
+    "example": {
+      "title": "Setting the reflection time",
+      "steps": [
+        "A flash leaves at 2 microseconds and returns at 10 microseconds, with no delay at the mirror.",
+        "The halfway time is (2 + 10) / 2 = 6 microseconds, so that is the assigned time of reflection."
+      ]
+    },
+    "equation": "reflection time = (departure time + return time) / 2",
+    "terms": [
+      {
+        "term": "microsecond",
+        "definition": "One millionth of a second."
+      },
+      {
+        "term": "inertial frame",
+        "definition": "A frame where an unforced object moves at constant velocity."
+      }
+    ]
+  },
+  "light-speed": {
+    "idea": "Every inertial frame measures the same speed for light travelling through empty space.",
+    "explanation": "Each frame uses its own rulers and synchronized clocks. A moving lamp does not make its vacuum light travel faster or slower than c, the vacuum light speed. Space and time measurements must change together between frames for this to work.",
+    "example": {
+      "title": "Timing a vacuum pulse",
+      "steps": [
+        "Using rounded light speed 300,000,000 metres per second, let a pulse travel for 2 microseconds.",
+        "It covers 600 metres in that frame; the lamp's speed is not added to the light speed."
+      ]
+    },
+    "equation": "distance = vacuum light speed × elapsed time",
+    "terms": [
+      {
+        "term": "inertial frame",
+        "definition": "A frame where an unforced object moves at constant velocity."
+      },
+      {
+        "term": "synchronized clocks",
+        "definition": "Clocks set to a shared timing rule within their frame."
+      },
+      {
+        "term": "microsecond",
+        "definition": "One millionth of a second."
+      },
+      {
+        "term": "c",
+        "definition": "Vacuum light speed, exactly 299,792,458 metres per second."
+      }
+    ]
+  },
+  "galilean-limit": {
+    "idea": "Ordinary speed addition works very well when all speeds are much smaller than light speed.",
+    "explanation": "Everyday calculations treat time as shared by all steadily moving observers. That lets us add a walker's speed to a train's speed. At very high speeds this shared-time assumption fails, so relativity changes both distance and elapsed time when changing frames.",
+    "example": {
+      "title": "Walking on a train",
+      "steps": [
+        "A train moves at 10 metres per second, and a passenger walks forward at 1 metre per second relative to it.",
+        "The passenger's ground speed is approximately 11 metres per second; the relativistic correction is tiny at these speeds."
+      ]
+    },
+    "equation": "ground speed ≈ train speed + walking speed",
+    "terms": [
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "proper-time": {
+    "idea": "Proper time is the time a travelling clock records along its own path.",
+    "explanation": "Choose two events that the same clock visits. Its elapsed reading between them is proper time. A laboratory may measure a longer interval using clocks at different places. For constant speed and negligible gravity, the speed determines how the two intervals compare.",
+    "example": {
+      "title": "A fast travelling clock",
+      "steps": [
+        "A clock moves at 0.6 times light speed for 10 laboratory seconds.",
+        "Its own elapsed time is 10 × √(1 − 0.6²) = 8 seconds between those same events."
+      ]
+    },
+    "equation": "clock time = lab time × √[1 − (speed / light speed)²]",
+    "terms": [
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the number that multiplies by itself to give the value inside."
+      }
+    ]
+  },
+  "light-clock": {
+    "idea": "A moving light clock takes longer between ticks because its light follows a longer path.",
+    "explanation": "Imagine light bouncing between two mirrors, with one round trip making a tick. When the clock moves sideways, the receiving mirror shifts during the trip, making the light path diagonal. Light speed stays the same, so the laboratory measures a longer tick interval.",
+    "example": {
+      "title": "A sideways light clock",
+      "steps": [
+        "Mirrors 1.5 metres apart make a rest tick of 10 nanoseconds, using rounded vacuum light speed.",
+        "At 0.6 times light speed sideways, the laboratory tick interval is 1.25 × 10 = 12.5 nanoseconds."
+      ]
+    },
+    "equation": "lab tick interval = Lorentz factor × clock's rest tick interval",
+    "terms": [
+      {
+        "term": "nanosecond",
+        "definition": "One billionth of a second."
+      },
+      {
+        "term": "Lorentz factor",
+        "definition": "The speed-dependent number 1/√(1 − speed²/light speed²); it is 1.25 here."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      }
+    ]
+  },
+  "length-contraction": {
+    "idea": "A moving object's length requires measuring both ends at the same time in your frame.",
+    "explanation": "An object's rest length is measured in a frame moving with it. A frame where it moves measures a shorter length along its motion, using simultaneous endpoint positions. The object need not feel squeezed. A photograph includes light delays, so it is a different measurement.",
+    "example": {
+      "title": "Measuring a moving rod",
+      "steps": [
+        "A rod is 5 metres long at rest and moves along its length at 0.6 times light speed.",
+        "With Lorentz factor 1.25, its simultaneous laboratory length is 5 / 1.25 = 4 metres."
+      ]
+    },
+    "equation": "moving length = rest length / Lorentz factor",
+    "terms": [
+      {
+        "term": "frame",
+        "definition": "A system of position labels and clocks used to describe events."
+      },
+      {
+        "term": "Lorentz factor",
+        "definition": "The speed-dependent number 1/√(1 − speed²/light speed²); it is 1.25 here."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      }
+    ]
+  },
+  "simultaneity": {
+    "idea": "Distant events happening together in one frame may happen at different times in another.",
+    "explanation": "Each frame uses its own network of synchronized clocks. Changing frames changes the time labels of separated events, not just their position labels. This disagreement is about assigned event times, after allowing for signal travel; it is not simply seeing one flash later.",
+    "example": {
+      "title": "Two simultaneous flashes",
+      "steps": [
+        "Two laboratory flashes occur together, 300 metres apart along the rightward direction.",
+        "A frame moving right at 0.6 times light speed assigns the right-hand flash a time 0.75 microseconds earlier than the left-hand flash."
+      ]
+    },
+    "equation": "for simultaneous lab events: moving-frame time gap = −Lorentz factor × frame speed × separation / light speed²",
+    "terms": [
+      {
+        "term": "Lorentz factor",
+        "definition": "The speed-dependent time-and-space conversion factor, 1.25 at 0.6 times light speed."
+      },
+      {
+        "term": "microsecond",
+        "definition": "One millionth of a second."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "−",
+        "definition": "Negative here means the right-hand event is earlier."
+      }
+    ]
+  },
+  "gamma-domain": {
+    "idea": "The Lorentz factor grows as a frame's speed gets closer to light speed.",
+    "explanation": "This factor tells how strongly space and time measurements change between steadily moving frames. It equals one when their relative speed is zero. It grows without limit as speed approaches c, so special relativity has no ordinary rest frame moving with light.",
+    "example": {
+      "title": "Finding the factor at high speed",
+      "steps": [
+        "At 0.8 times light speed, first calculate 1 − 0.8² = 0.36.",
+        "Its square root is 0.6, so the Lorentz factor is 1 / 0.6 ≈ 1.667."
+      ]
+    },
+    "equation": "Lorentz factor = 1 / √[1 − (frame speed / light speed)²]",
+    "terms": [
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "boost-event": {
+    "idea": "Changing reference frames changes an event's time and position together.",
+    "explanation": "A Lorentz boost converts between frames moving steadily relative to each other. Both labels must be converted, or the answer mixes two frames. For the formulas here, the frames' origins meet when both clocks read zero, and the new frame moves along positive x.",
+    "example": {
+      "title": "Relabelling one event",
+      "steps": [
+        "An event has x = 1,000 metres and ct = 2,000 metres; the new frame moves at 0.6 times light speed, with factor 1.25.",
+        "The converted labels are x′ = 1.25(1,000 − 1,200) = −250 metres and ct′ = 1.25(2,000 − 600) = 1,750 metres."
+      ]
+    },
+    "equation": "x′ = γ(x − βct); ct′ = γ(ct − βx)",
+    "terms": [
+      {
+        "term": "x and x′",
+        "definition": "The event's positions in the original and new frames."
+      },
+      {
+        "term": "t and t′",
+        "definition": "The event's times in the original and new frames."
+      },
+      {
+        "term": "c",
+        "definition": "Vacuum light speed; ct expresses time as a distance."
+      },
+      {
+        "term": "β",
+        "definition": "New frame velocity divided by c."
+      },
+      {
+        "term": "γ",
+        "definition": "The Lorentz factor, 1/√(1 − β²), here 1.25."
+      },
+      {
+        "term": "prime (′)",
+        "definition": "Marks the new frame's label, not a derivative."
+      }
+    ]
+  },
+  "inverse-boost": {
+    "idea": "To undo a frame conversion, reverse the relative velocity and convert both labels back.",
+    "explanation": "If one frame moves right relative to another, the second moves left relative to the first. The Lorentz factor stays the same because it depends on speed squared. Converting forward and back should recover the original event, making this a useful arithmetic check.",
+    "example": {
+      "title": "Recovering an event's original labels",
+      "steps": [
+        "Start with x′ = −250 metres and ct′ = 1,750 metres, with relative speed 0.6c and Lorentz factor 1.25.",
+        "Convert back: x = 1.25(−250 + 0.6 × 1,750) = 1,000 metres; ct = 1.25(1,750 + 0.6 × (−250)) = 2,000 metres."
+      ]
+    },
+    "equation": "x = γ(x′ + βct′); ct = γ(ct′ + βx′)",
+    "terms": [
+      {
+        "term": "x and x′",
+        "definition": "Positions before and after the forward conversion."
+      },
+      {
+        "term": "t and t′",
+        "definition": "Times before and after the forward conversion."
+      },
+      {
+        "term": "c",
+        "definition": "Vacuum light speed; ct expresses time as a distance."
+      },
+      {
+        "term": "β",
+        "definition": "Forward frame velocity divided by c, here 0.6."
+      },
+      {
+        "term": "γ",
+        "definition": "Lorentz factor, here 1.25."
+      },
+      {
+        "term": "prime (′)",
+        "definition": "Marks the moving frame's labels."
+      }
+    ]
+  },
+  "velocity-addition": {
+    "idea": "At high speeds, combining velocities also requires converting the elapsed time.",
+    "explanation": "A velocity is distance change divided by time change. Both change between frames, producing a denominator as well as a sum. This keeps vacuum light speed the same and approaches ordinary addition at low speeds. The rule here is for motion along one line.",
+    "example": {
+      "title": "Launching a fast probe",
+      "steps": [
+        "A ship moves at 0.6c and launches a probe forward at 0.6c relative to itself.",
+        "The laboratory speed is (0.6c + 0.6c) / (1 + 0.6 × 0.6) ≈ 0.882c, below light speed."
+      ]
+    },
+    "equation": "lab velocity = (probe velocity + ship velocity) / (1 + probe velocity × ship velocity / c²)",
+    "terms": [
+      {
+        "term": "c",
+        "definition": "Vacuum light speed."
+      },
+      {
+        "term": "probe velocity",
+        "definition": "Velocity measured in the ship's frame."
+      },
+      {
+        "term": "ship velocity",
+        "definition": "Velocity measured in the laboratory frame."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "spacetime-diagram": {
+    "idea": "A spacetime diagram shows where and when events happen, not an object's physical shape.",
+    "explanation": "Draw position sideways and time upward. Multiplying time by light speed gives both axes distance units. A line tracks an object's history: a still clock makes a vertical line. Light makes a 45-degree line only when the two axes use equal scales.",
+    "example": {
+      "title": "Reading a history line",
+      "steps": [
+        "An event lies at position 600 metres and time coordinate ct = 1,000 metres.",
+        "A straight history from the origin to that event has speed ratio 600 / 1,000 = 0.6, meaning 0.6 times light speed."
+      ]
+    },
+    "equation": "speed / light speed = position change / (light speed × time change)",
+    "terms": [
+      {
+        "term": "c",
+        "definition": "Vacuum light speed."
+      },
+      {
+        "term": "t",
+        "definition": "Time coordinate; ct converts it to distance units."
+      }
+    ]
+  },
+  "interval": {
+    "idea": "The spacetime interval combines event separation in a way all inertial frames agree on.",
+    "explanation": "Position gaps and time gaps can change between frames. But squared time gap, expressed as a light-travel distance, minus squared position gap stays fixed. The minus sign matters: this is not ordinary distance on paper. Here we use the convention with the time term positive.",
+    "example": {
+      "title": "An unchanged combination",
+      "steps": [
+        "Two events have light-travel time gap 1,000 metres and position gap 600 metres.",
+        "Their interval is 1,000² − 600² = 640,000 square metres; every inertial frame calculates the same value."
+      ]
+    },
+    "equation": "interval = (light speed × time gap)² − (position gap)²",
+    "terms": [
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "inertial frame",
+        "definition": "A frame where an unforced object moves at constant velocity."
+      }
+    ]
+  },
+  "separation-types": {
+    "idea": "Event separation tells whether a light-speed-or-slower signal could connect the events.",
+    "explanation": "Compare the position gap with the distance light could travel during the time gap. A smaller gap is timelike: slower-than-light travel could connect them. An equal gap is lightlike. A larger gap is spacelike: even light cannot bridge it in the available time.",
+    "example": {
+      "title": "A reachable event pair",
+      "steps": [
+        "During the time between two events, light could travel 5 metres; the events are only 3 metres apart.",
+        "Their interval is 5² − 3² = 16 square metres, positive in our convention, so the separation is timelike."
+      ]
+    },
+    "equation": "interval = (light speed × time gap)² − (position gap)²",
+    "terms": [
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "interval",
+        "definition": "The signed combination of time and position gaps that stays unchanged between inertial frames."
+      }
+    ]
+  },
+  "causal-order": {
+    "idea": "Changing frames cannot reverse the order of a cause and its light-speed-or-slower effect.",
+    "explanation": "Observers may disagree about the order of events too far apart to exchange a signal in time. Such events are spacelike separated. This does not let a message arrive before it was sent: events connected by ordinary causal signals keep their order.",
+    "example": {
+      "title": "Events too far apart to connect",
+      "steps": [
+        "Two events are 5 metres apart, but light could travel only 2 metres during their time gap.",
+        "A frame moving at 0.4 times light speed calls them simultaneous; this changes their labels without creating a signal between them."
+      ]
+    },
+    "equation": "simultaneous-frame speed / light speed = (light speed × time gap) / position gap",
+    "terms": [
+      {
+        "term": "frame",
+        "definition": "A system of position labels and synchronized clocks."
+      },
+      {
+        "term": "causal signal",
+        "definition": "A physical influence travelling from a cause to its effect."
+      }
+    ]
+  },
+  "piecewise-proper-time": {
+    "idea": "A clock's total elapsed time comes from adding the time along each part of its trip.",
+    "explanation": "If the clock changes speed, one constant-speed calculation cannot describe the whole trip. Calculate the clock time for each constant-speed part, then add. Very short speed changes are ignored in this simplified example; longer changes also contribute time.",
+    "example": {
+      "title": "Two parts of one trip",
+      "steps": [
+        "A clock spends 5 laboratory seconds moving at 0.6 times light speed, then 5 laboratory seconds at rest.",
+        "It records 4 seconds during the moving part and 5 during the rest part, giving 9 seconds while the laboratory records 10."
+      ]
+    },
+    "equation": "total clock time = clock time on first part + clock time on second part",
+    "terms": []
+  },
+  "twin-comparison": {
+    "idea": "Clocks that leave and later reunite can record different amounts of elapsed time.",
+    "explanation": "The readings can be compared side by side at reunion. Their difference comes from their different paths through space and time. The traveller changes direction to return, so there is no single steadily moving frame covering the whole trip. A real turnaround must also be included.",
+    "example": {
+      "title": "A clock goes out and back",
+      "steps": [
+        "A traveller moves at 0.6 times light speed for 5 laboratory seconds outward and 5 inward, ignoring a brief turnaround.",
+        "Each leg adds 4 seconds on the travelling clock: it reads 8 seconds while the laboratory clock reads 10."
+      ]
+    },
+    "equation": "traveller's time = 2 × lab time per leg × √[1 − (speed / light speed)²]",
+    "terms": [
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      }
+    ]
+  },
+  "relativistic-doppler": {
+    "idea": "Light received from a directly receding source has a lower frequency.",
+    "explanation": "Frequency counts cycles per second. As source and receiver move apart, each new pulse must travel farther. Time dilation also affects the comparison between their clocks. Together these effects give a redshift, meaning lower received frequency, for direct recession in vacuum.",
+    "example": {
+      "title": "Receiving light from a receding source",
+      "steps": [
+        "A source moving directly away at 0.6 times light speed emits at 600 terahertz in its own frame.",
+        "The frequency factor is √(0.4 / 1.6) = 0.5, so the receiver measures 300 terahertz."
+      ]
+    },
+    "equation": "received frequency / emitted frequency = √[(1 − β) / (1 + β)]",
+    "terms": [
+      {
+        "term": "β",
+        "definition": "Recession speed divided by vacuum light speed."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      },
+      {
+        "term": "terahertz",
+        "definition": "One trillion cycles per second."
+      },
+      {
+        "term": "time dilation",
+        "definition": "The difference between a moving clock's elapsed time and the coordinate-time interval in another frame."
+      }
+    ]
+  },
+  "local-inertial": {
+    "idea": "An accelerating clock has a momentary rest frame that changes as its velocity changes.",
+    "explanation": "An accelerometer measures acceleration felt aboard the clock; this is proper acceleration. Laboratory acceleration instead measures velocity change per laboratory second. These differ at high speed. The formula here applies when acceleration and velocity lie along the same line.",
+    "example": {
+      "title": "Two acceleration measurements",
+      "steps": [
+        "At 0.6 times light speed, the Lorentz factor is 1.25.",
+        "A laboratory acceleration of 2 metres per second squared corresponds to proper acceleration 1.25³ × 2 = 3.90625 metres per second squared."
+      ]
+    },
+    "equation": "proper acceleration = Lorentz factor³ × lab acceleration",
+    "terms": [
+      {
+        "term": "Lorentz factor",
+        "definition": "The speed-dependent space-and-time conversion number, 1.25 at 0.6 times light speed."
+      },
+      {
+        "term": "³",
+        "definition": "Multiply a quantity by itself three times."
+      }
+    ]
+  },
+  "relativistic-momentum": {
+    "idea": "At high speed, momentum grows faster than mass times velocity.",
+    "explanation": "Momentum helps track motion through interactions. For a massive particle, multiply mass and velocity by the Lorentz factor. The mass itself stays the same. Near light speed, adding momentum produces smaller changes in speed, because the factor grows very large.",
+    "example": {
+      "title": "A fast massive particle",
+      "steps": [
+        "A 2-kilogram particle moves at 0.6 times light speed, or 180,000,000 metres per second using rounded light speed.",
+        "Its momentum is 1.25 × 2 × 180,000,000 = 450,000,000 kilogram-metres per second, in the direction of motion."
+      ]
+    },
+    "equation": "momentum = Lorentz factor × mass × velocity",
+    "terms": [
+      {
+        "term": "Lorentz factor",
+        "definition": "The speed-dependent conversion number, 1.25 at 0.6 times light speed."
+      },
+      {
+        "term": "velocity",
+        "definition": "Speed together with direction."
+      }
+    ]
+  },
+  "rest-kinetic-energy": {
+    "idea": "Total energy includes energy from rest mass as well as energy from motion.",
+    "explanation": "Rest energy is the energy a free particle has in its own rest frame. Kinetic energy is the extra energy it has because it moves in the chosen frame. Subtract rest energy from total energy to find that extra amount; do not call all its energy kinetic.",
+    "example": {
+      "title": "Separating the two energies",
+      "steps": [
+        "A particle's Lorentz factor is 1.25, so its total energy is 1.25 times its rest energy.",
+        "Subtract one rest-energy unit: its kinetic energy is 0.25 times its rest energy."
+      ]
+    },
+    "equation": "kinetic energy = (Lorentz factor − 1) × mass × light speed²",
+    "terms": [
+      {
+        "term": "Lorentz factor",
+        "definition": "The speed-dependent multiplier relating total energy to rest energy."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      }
+    ]
+  },
+  "energy-momentum-invariant": {
+    "idea": "Energy and momentum together reveal rest energy, even when the object is moving.",
+    "explanation": "Different frames measure different energy and momentum. The combination energy squared minus momentum-times-light-speed squared stays unchanged. Its positive square root gives rest energy. For a whole system, add energy and signed momentum first, so internal motion is included.",
+    "example": {
+      "title": "Finding rest energy",
+      "steps": [
+        "An object has total energy 5 units and momentum times light speed 3 of the same energy units.",
+        "Rest energy is √(5² − 3²) = 4 units, leaving 1 unit of kinetic energy in this frame."
+      ]
+    },
+    "equation": "rest energy = √[total energy² − (momentum magnitude × light speed)²]",
+    "terms": [
+      {
+        "term": "momentum magnitude",
+        "definition": "The size of momentum, without its direction."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      },
+      {
+        "term": "kinetic energy",
+        "definition": "Energy above rest energy due to motion in the chosen frame."
+      }
+    ]
+  },
+  "photon-momentum": {
+    "idea": "A photon has no rest mass but still carries energy and momentum.",
+    "explanation": "A photon is one packet of light. Its energy and momentum obey a special massless relation; we cannot use the massive-particle formula at light speed. Momentum points along the photon's travel. There is no inertial frame sitting at rest beside a vacuum photon.",
+    "example": {
+      "title": "Momentum carried by one photon",
+      "steps": [
+        "A photon has energy 3.0 × 10⁻¹⁹ joules.",
+        "Dividing by rounded light speed gives momentum magnitude 1.0 × 10⁻²⁷ kilogram-metres per second, directed along its travel."
+      ]
+    },
+    "equation": "photon momentum magnitude = photon energy / light speed",
+    "terms": [
+      {
+        "term": "magnitude",
+        "definition": "Size without direction."
+      },
+      {
+        "term": "joule",
+        "definition": "A unit of energy."
+      },
+      {
+        "term": "10⁻¹⁹",
+        "definition": "One divided by 10 multiplied by itself 19 times."
+      },
+      {
+        "term": "10⁻²⁷",
+        "definition": "One divided by 10 multiplied by itself 27 times."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "four-momentum": {
+    "idea": "Energy and all three momentum directions must be counted together in an isolated interaction.",
+    "explanation": "Four-momentum packages energy and the three momentum components into one set. Conservation means each total stays equal before and after an isolated interaction. Opposite momenta can cancel, while positive energies still add. Include anything that carries energy away, such as emitted light.",
+    "example": {
+      "title": "Two opposite photons",
+      "steps": [
+        "Two photons each have energy 2 mega-electronvolts and travel in opposite directions.",
+        "Their total energy is 4 mega-electronvolts; their momentum-times-light-speed values, +2 and −2, cancel to zero."
+      ]
+    },
+    "equation": "total (energy, momentum × light speed) = (2, +2) + (2, −2) = (4, 0) MeV",
+    "terms": [
+      {
+        "term": "MeV",
+        "definition": "Mega-electronvolt: one million electronvolts, a unit of energy."
+      },
+      {
+        "term": "component",
+        "definition": "Part of momentum along a chosen direction."
+      },
+      {
+        "term": "isolated",
+        "definition": "No energy or momentum enters or leaves the chosen system."
+      }
+    ]
+  },
+  "com-frame": {
+    "idea": "A system's centre-of-momentum frame is the frame where its total momentum is zero.",
+    "explanation": "Individual parts can still move in this frame; their signed momenta cancel. Find the frame speed from total momentum and energy, not an ordinary average of particle speeds. Such a rest frame exists for a system with positive invariant mass, meaning mass agreed on by all inertial frames.",
+    "example": {
+      "title": "Opposite photons with unequal energies",
+      "steps": [
+        "Opposite photons carry energies 5 and 3 mega-electronvolts.",
+        "Total energy is 8 and total momentum times light speed is 2 in the same units, so the centre-of-momentum frame moves at 2/8 = 0.25 times light speed toward the stronger photon."
+      ]
+    },
+    "equation": "frame velocity / light speed = (total momentum × light speed) / total energy",
+    "terms": [
+      {
+        "term": "mega-electronvolt",
+        "definition": "A unit of energy equal to one million electronvolts."
+      },
+      {
+        "term": "inertial frame",
+        "definition": "A frame where an unforced object moves at constant velocity."
+      }
+    ]
+  },
+  "inelastic-mass": {
+    "idea": "Energy trapped inside a merged object increases its rest mass.",
+    "explanation": "When particles stick together, their incoming motion energy can become internal energy. If none escapes, the final object's rest mass includes that energy. The sum of the particles' separate rest masses need not stay constant; total energy and momentum are still conserved.",
+    "example": {
+      "title": "Two particles stick together",
+      "steps": [
+        "Two 1-kilogram particles approach at equal opposite speeds of 0.6 times light speed and merge without releasing radiation.",
+        "Each has Lorentz factor 1.25, so the final stationary object has mass 2 × 1.25 × 1 = 2.5 kilograms."
+      ]
+    },
+    "equation": "merged mass = 2 × incoming Lorentz factor × each particle's rest mass",
+    "terms": [
+      {
+        "term": "Lorentz factor",
+        "definition": "The multiplier relating a moving particle's total energy to its rest energy."
+      },
+      {
+        "term": "rest mass",
+        "definition": "Mass measured from the object's rest energy, unchanged by a change of frame."
+      }
+    ]
+  },
+  "threshold-energy": {
+    "idea": "Starting a reaction against a stationary target can require extra energy for recoil.",
+    "explanation": "Recoil means the final system moves because it must keep the incoming momentum. That motion uses some available energy. Therefore the incoming photon may need more energy than the increase in rest energy alone. This calculation gives a minimum from conservation laws, not proof the reaction occurs.",
+    "example": {
+      "title": "A photon strikes a still target",
+      "steps": [
+        "The target has rest energy 10 mega-electronvolts, and the proposed products have total rest energy 12.",
+        "The photon threshold is (12² − 10²) / (2 × 10) = 2.2 mega-electronvolts, including the required recoil."
+      ]
+    },
+    "equation": "photon threshold energy = (final rest energy² − target rest energy²) / (2 × target rest energy)",
+    "terms": [
+      {
+        "term": "mega-electronvolt",
+        "definition": "A unit of energy equal to one million electronvolts."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "rest energy",
+        "definition": "The energy associated with mass in the system's rest frame."
+      }
+    ]
+  },
+  "charge-current-frames": {
+    "idea": "Different moving frames can measure different charge densities for the same distribution.",
+    "explanation": "Charge density is charge per volume. A frame change alters which positions count as simultaneous and how the charges move. Density and current therefore change together. This does not change the total charge of a complete isolated system; density in a chosen region is a different quantity.",
+    "example": {
+      "title": "Viewing stationary charge from a moving frame",
+      "steps": [
+        "Charge at rest has density 2 coulombs per cubic metre in the laboratory.",
+        "A frame moving right at 0.6 times light speed measures density 1.25 × 2 = 2.5 coulombs per cubic metre and sees the charge moving left."
+      ]
+    },
+    "equation": "for charge stationary in the lab: moving-frame density = Lorentz factor × lab density",
+    "terms": [
+      {
+        "term": "coulomb",
+        "definition": "A unit of electric charge."
+      },
+      {
+        "term": "Lorentz factor",
+        "definition": "The speed-dependent space-and-time conversion number, 1.25 here."
+      },
+      {
+        "term": "current",
+        "definition": "The rate at which electric charge passes through a surface."
+      }
+    ]
+  },
+  "field-mixing": {
+    "idea": "A frame change can turn a purely electric field into both electric and magnetic parts.",
+    "explanation": "Electric and magnetic fields are linked parts of one electromagnetic field. A moving observer can measure different amounts of each. The motion of a test charge also changes between frames, so comparing its behaviour requires converting both the fields and the motion.",
+    "example": {
+      "title": "A sideways electric field",
+      "steps": [
+        "In the laboratory, an electric field of 100 volts per metre points up and the magnetic field is zero.",
+        "A frame moving sideways at 0.6 times light speed measures electric field 125 volts per metre and a perpendicular magnetic field of −2.5 × 10⁻⁷ teslas in the stated axis direction."
+      ]
+    },
+    "equation": "for this transverse electric-only case: new electric field = Lorentz factor × original electric field",
+    "terms": [
+      {
+        "term": "Lorentz factor",
+        "definition": "The speed-dependent conversion number, 1.25 here."
+      },
+      {
+        "term": "transverse",
+        "definition": "Perpendicular to the frame's motion."
+      },
+      {
+        "term": "tesla",
+        "definition": "A unit of magnetic field."
+      },
+      {
+        "term": "volt per metre",
+        "definition": "A unit of electric field."
+      },
+      {
+        "term": "10⁻⁷",
+        "definition": "One ten-millionth."
+      }
+    ]
+  },
+  "four-vectors": {
+    "idea": "A four-vector's time-related and space-related parts change together by a fixed rule.",
+    "explanation": "A four-vector is not just any list of four numbers. Its components must follow the Lorentz transformation between frames. Event separations and four-momentum do this. The pattern lets us form combinations that stay unchanged even though individual measurements change.",
+    "example": {
+      "title": "Finding a particle's rest frame",
+      "steps": [
+        "A particle has energy 5 mega-electronvolts and momentum times light speed 3 in the same units.",
+        "A frame moving at 0.6 times light speed measures energy 1.25(5 − 0.6 × 3) = 4 and momentum times light speed 1.25(3 − 0.6 × 5) = 0."
+      ]
+    },
+    "equation": "(E′, p′c) = (γ(E − βpc), γ(pc − βE))",
+    "terms": [
+      {
+        "term": "E and E′",
+        "definition": "Total energies in the original and new frames."
+      },
+      {
+        "term": "p and p′",
+        "definition": "Momentum along the motion in each frame."
+      },
+      {
+        "term": "c",
+        "definition": "Vacuum light speed."
+      },
+      {
+        "term": "β",
+        "definition": "Frame velocity divided by c."
+      },
+      {
+        "term": "γ",
+        "definition": "Lorentz factor, 1.25 here."
+      },
+      {
+        "term": "mega-electronvolt",
+        "definition": "A unit of energy equal to one million electronvolts."
+      },
+      {
+        "term": "Lorentz transformation",
+        "definition": "The rule that converts time and position, or other suitable components, between steadily moving frames."
+      },
+      {
+        "term": "Component",
+        "definition": "One entry of the set, such as one momentum direction."
+      }
+    ]
+  },
+  "covariant-laws": {
+    "idea": "A physical law can keep the same form even when observers measure different numbers.",
+    "explanation": "A covariant law is one whose quantities transform together so the relationship remains true. For example, an isolated collision conserves energy and momentum in every inertial frame. Each frame can assign different totals, but its own before and after totals must match.",
+    "example": {
+      "title": "Conservation survives a frame change",
+      "steps": [
+        "Both sides of a collision have total energy 10 and momentum times light speed 6 mega-electronvolts.",
+        "A frame moving at 0.6 times light speed converts both sides to (8, 0); the numbers changed, but before still equals after."
+      ]
+    },
+    "equation": "total four-momentum before = total four-momentum after",
+    "terms": [
+      {
+        "term": "four-momentum",
+        "definition": "The set containing energy divided by light speed and the three momentum components."
+      },
+      {
+        "term": "inertial frame",
+        "definition": "A frame where an unforced object moves at constant velocity."
+      },
+      {
+        "term": "mega-electronvolt",
+        "definition": "A unit of energy equal to one million electronvolts."
+      }
+    ]
+  },
+  "equivalence": {
+    "idea": "Inside a small freely falling box, nearby unsupported objects can float relative to each other.",
+    "explanation": "The box and its contents fall together, so the contents do not press on a support. A carried accelerometer reads zero in ideal free fall. Gravity can still be present. Across a larger region, differences in gravity can change separations; these are tidal effects.",
+    "example": {
+      "title": "A ball inside a falling box",
+      "steps": [
+        "Release a small sealed box with a loose ball inside, ignoring air resistance.",
+        "Initially both fall together, so the ball floats relative to the box and a carried accelerometer reads zero; over longer times, tidal differences can matter."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "accelerometer",
+        "definition": "An instrument measuring acceleration felt through forces such as a push or support."
+      }
+    ]
+  },
+  "weak-gravity-clocks": {
+    "idea": "A higher stationary clock ticks slightly faster near Earth than a lower one.",
+    "explanation": "In a weak, steady gravitational field, clock rates depend on gravitational potential: the gravitational energy per unit mass. Over a modest height difference near Earth, the potential change is approximately gravity times height. This comparison assumes both clocks stay at fixed heights.",
+    "example": {
+      "title": "Clocks one hundred metres apart",
+      "steps": [
+        "Use gravity 10 metres per second squared and height difference 100 metres.",
+        "The higher clock gains about 11.1 nanoseconds over 1,000,000 seconds in this approximation, because its fractional rate advantage is about 1.11 × 10⁻¹⁴."
+      ]
+    },
+    "equation": "fractional rate difference ≈ gravity × height difference / light speed²",
+    "terms": [
+      {
+        "term": "fractional rate difference",
+        "definition": "The rate difference divided by the lower clock's rate."
+      },
+      {
+        "term": "nanosecond",
+        "definition": "One billionth of a second."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "10⁻¹⁴",
+        "definition": "One divided by 100 trillion."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "geodesics": {
+    "idea": "A freely falling object follows the path selected by spacetime geometry.",
+    "explanation": "That free-motion path is called a geodesic. It looks straight inside a sufficiently small freely falling laboratory, even when it curves on a large coordinate map. Nearby free-fall paths can approach or separate because of tidal gravity. Calculating these paths requires more advanced mathematics.",
+    "example": {
+      "title": "An astronaut in orbit",
+      "steps": [
+        "An astronaut freely orbits Earth while carrying an accelerometer.",
+        "The instrument can read zero even though the orbit curves on an Earth-centred map: a curved drawn path does not by itself mean the astronaut feels a push."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "spacetime",
+        "definition": "Space and time treated together when describing events."
+      },
+      {
+        "term": "accelerometer",
+        "definition": "An instrument measuring acceleration felt through forces such as a push or support."
+      },
+      {
+        "term": "tidal gravity",
+        "definition": "Differences in gravity that change the separation of nearby freely falling objects."
+      }
+    ]
+  },
+  "gravity-limits": {
+    "idea": "The precision you need helps decide whether a gravitational correction can be ignored.",
+    "explanation": "Special relativity can describe acceleration in flat spacetime; acceleration alone does not prove curvature. Comparing distant clocks in gravity can need additional corrections. Estimate their size before choosing a model, because an effect tiny for everyday work may dominate a very precise measurement.",
+    "example": {
+      "title": "A small clock correction",
+      "steps": [
+        "Suppose gravity changes a clock comparison by one part in 100 trillion, or 10⁻¹⁴.",
+        "A goal of one part in a million is much looser than this correction; a goal of one part in 10 quadrillion is tighter, so the correction matters."
+      ]
+    },
+    "equation": "correction size = |gravitational potential difference| / light speed²",
+    "terms": [
+      {
+        "term": "gravitational potential",
+        "definition": "Gravitational energy per unit mass."
+      },
+      {
+        "term": "| | ",
+        "definition": "Absolute value: keep the size without the sign."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "flat spacetime",
+        "definition": "Spacetime without gravitational curvature."
+      },
+      {
+        "term": "Curvature",
+        "definition": "A property of spacetime geometry that can make nearby free-fall paths approach or separate."
+      }
+    ]
+  },
+  "frame-event-capstone": {
+    "idea": "A time calculation starts by choosing the events and identifying which clock measures them.",
+    "explanation": "A laboratory network can time departure and arrival at different places. A spacecraft's clock visits both events and records its own elapsed time. Keeping these measurements separate prevents mistakes. The later arrival of a report at the starting point would be a third event.",
+    "example": {
+      "title": "Timing a spacecraft trip",
+      "steps": [
+        "A detector is 900 metres from the start, and a spacecraft travels to it at 0.6 times rounded light speed.",
+        "The laboratory assigns 5 microseconds to the journey; the spacecraft records 5 × 0.8 = 4 microseconds between departure and arrival."
+      ]
+    },
+    "equation": "spacecraft time = (detector distance / spacecraft speed) × √[1 − (speed / light speed)²]",
+    "terms": [
+      {
+        "term": "microsecond",
+        "definition": "One millionth of a second."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      }
+    ]
+  },
+  "clock-signal-capstone": {
+    "idea": "Receiving a travel report takes longer than the journey because the report also needs travel time.",
+    "explanation": "Keep three events separate: departure, arrival at the detector, and reception of the return light signal. The origin clock measures departure to reception. The journey and signal-travel intervals add in the laboratory frame, with the detector and origin fixed in that frame.",
+    "example": {
+      "title": "Waiting for the return flash",
+      "steps": [
+        "A spacecraft travels 600 metres at 0.6 times light speed, taking about 3.333 microseconds in the laboratory.",
+        "An immediate light report takes another 2 microseconds back, so the origin receives it about 5.333 microseconds after departure."
+      ]
+    },
+    "equation": "reception time after departure = distance / spacecraft speed + distance / light speed",
+    "terms": [
+      {
+        "term": "microsecond",
+        "definition": "One millionth of a second."
+      },
+      {
+        "term": "frame",
+        "definition": "A system of position labels and synchronized clocks used for the calculation."
+      }
+    ]
+  },
+  "collision-capstone": {
+    "idea": "A collision outcome must satisfy both energy and signed momentum conservation.",
+    "explanation": "First add incoming energies and momenta in one frame. Then use those totals to find the system's rest energy. If an allowed reaction traps everything in one object, it must keep the total momentum; unequal opposite inputs cannot produce a stationary final object in that frame.",
+    "example": {
+      "title": "Two unequal photons merge",
+      "steps": [
+        "Opposite photons carry 9 and 4 mega-electronvolts: total energy is 13 and momentum times light speed is 5 in those units.",
+        "Their combined rest energy is √(13² − 5²) = 12 mega-electronvolts, leaving 1 mega-electronvolt of laboratory motion energy if all energy is trapped."
+      ]
+    },
+    "equation": "system rest energy = √[total energy² − (total momentum × light speed)²]",
+    "terms": [
+      {
+        "term": "mega-electronvolt",
+        "definition": "A unit of energy equal to one million electronvolts."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root."
+      },
+      {
+        "term": "photon",
+        "definition": "One packet of light."
+      }
+    ]
+  },
+  "relativity-next-tools": {
+    "idea": "Choose the simplest relativity model that still captures the effects your question needs.",
+    "explanation": "A local collision can use special relativity. A gravity problem may need a metric: a rule for measuring spacetime intervals. More advanced gravity calculations also need calculus and geometry. These lessons provide starting tools, not a complete method for solving every gravity problem.",
+    "example": {
+      "title": "Choosing a precision-clock model",
+      "steps": [
+        "Two stationary precision clocks sit at different heights near Earth.",
+        "Include the gravitational rate difference when it is larger than the allowed timing error; the required accuracy decides whether the weak-gravity approximation is enough."
+      ]
+    },
+    "equation": "",
+    "terms": [
+      {
+        "term": "spacetime interval",
+        "definition": "A combination of time and position separations used to compare events."
+      },
+      {
+        "term": "calculus",
+        "definition": "Mathematics of continuous change and accumulation."
+      },
+      {
+        "term": "weak-gravity approximation",
+        "definition": "A simplified gravity rule valid when the relevant gravitational effects are small."
+      },
+      {
+        "term": "Special relativity",
+        "definition": "The theory relating space, time, energy, and momentum in flat spacetime."
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+# Release 0.4.0 — electricity and magnetism
+
+The new defined introductory E&M path contains 56 lessons in 16 modules: charges, fields, superposition, Gauss’s law, potential, capacitors, current, DC circuits, RC dynamics, magnetic force and sources, Ampere’s law, induction, inductance/RLC, Maxwell’s equations, and field-and-circuit capstones. Each lesson supplies plain original teaching, visible equation meanings and units, worked examples, changed-case checks, local prerequisite links and explicit model limits. There are 48 numeric practice parts.
+
+Available totals now derive from 168 actual lesson objects: Foundations 8, Math 48, Mechanics 56 and E&M 56. There are 130 numerical practice parts, 20 interactive model types and 90 nonempty optional glossaries. Completing a lesson is a self-reported mark, not proof of mastery or an equivalent university credential. Advanced electromagnetism, substantial laboratory work and extensive independent problem sets remain outside this bounded introductory map.
+
+The three added model types show signed two-source electric fields, RC charging/discharging and perpendicular magnetic force/radius. The RC graph explicitly distinguishes its current-into-plate sign from outward discharge current. Arrows describe directions, not particle trajectories. Static conceptual summaries remain under the interactive diagrams. Tests include analytic checks, finite-difference ODE checks, energy quadrature, zero voltage and control extrema.
+
+All four E&M source packages have independent terminal review receipts. Integration preservation passes, all 63 Node tests pass, and JavaScript syntax checks pass. The existing progress key and export format are unchanged; old completion marks survive the added course. Progress remains opt-in browser-local, not cloud-synced. No user data was migrated or modified.
+
+Authorized read-only live-browser samples verified the prior desktop/mobile navigation and 390 px sidebar correction. No new E&M rendered-browser pass is claimed at packaging; its final sampled QA is separate from the verified source and native deployment evidence. Supported managed preview remains unavailable after previously recorded infrastructure failures; no alternative preview server was introduced.
+
+Waves and Quantum I/II/III are next sequential core paths. The seven expanded fields remain explicitly planned, with no placeholder lessons counted as authored. Roadmap v2 still has 722 finite targets, of which 168 are available and 554 planned; this is not all physics research. Public GitHub publication and licensing choice remain separate, pending owner coordination.

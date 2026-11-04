@@ -1,0 +1,1880 @@
+{
+  "radians": {
+    "idea": "A radian measures a turn by comparing two lengths on a circle.",
+    "explanation": "The radius runs from the centre to the edge. An arc follows part of the curved edge. When the arc is as long as the radius, the turn is one radian.",
+    "example": {
+      "title": "One radian",
+      "steps": [
+        "A circle has a radius of 2 centimetres.",
+        "Trace 2 centimetres along its edge: arc length ÷ radius = 2 ÷ 2 = 1 radian."
+      ]
+    },
+    "equation": "angle in radians = arc length ÷ radius",
+    "terms": [
+      {
+        "term": "Radius",
+        "definition": "Distance from a circle's centre to its edge."
+      },
+      {
+        "term": "Arc",
+        "definition": "A curved part of a circle's edge."
+      },
+      {
+        "term": "Radian",
+        "definition": "A turn that traces an arc as long as the radius."
+      }
+    ]
+  },
+  "trigonometry": {
+    "idea": "Sine and cosine split a slanted arrow into horizontal and vertical parts.",
+    "explanation": "Measure the angle from the positive horizontal direction. Cosine gives the horizontal share of the arrow's length; sine gives the vertical share. Use the matching degree or radian setting on your calculator.",
+    "example": {
+      "title": "Splitting a two-metre arrow",
+      "steps": [
+        "An arrow is 2 metres long and points 60° above the horizontal.",
+        "Its horizontal part is 2 × cos 60° = 1 metre.",
+        "Its vertical part is 2 × sin 60° ≈ 1.732 metres."
+      ]
+    },
+    "equation": "x = r cos θ; y = r sin θ",
+    "terms": [
+      {
+        "term": "Sine",
+        "definition": "The vertical share of a unit-length arrow at a stated angle."
+      },
+      {
+        "term": "Cosine",
+        "definition": "The horizontal share of a unit-length arrow at a stated angle."
+      },
+      {
+        "term": "x and y",
+        "definition": "Horizontal and vertical parts of the arrow."
+      },
+      {
+        "term": "r",
+        "definition": "Arrow length."
+      },
+      {
+        "term": "θ",
+        "definition": "The angle measured from the positive horizontal direction."
+      },
+      {
+        "term": "sin and cos",
+        "definition": "Short forms of sine and cosine."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "signed-components": {
+    "idea": "An arrow's minus signs tell us its direction, not a negative length.",
+    "explanation": "Choose right and up as positive. A negative horizontal part then means left. Square the perpendicular parts, add them, and take the square root to find the arrow's positive length.",
+    "example": {
+      "title": "Left and up",
+      "steps": [
+        "An arrow goes 3 metres left and 4 metres up, so its parts are −3 and +4 metres.",
+        "Its length is √(9 + 16) = 5 metres.",
+        "It points left and up even though its length is positive."
+      ]
+    },
+    "equation": "length = √[(−3 m)² + (4 m)²] = 5 m",
+    "terms": [
+      {
+        "term": "Perpendicular",
+        "definition": "Meeting at a right angle."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "dot-cross": {
+    "idea": "Two vectors can be multiplied in ways that answer different questions.",
+    "explanation": "A vector has size and direction. The dot product measures how much two vectors point along each other. The cross product describes the area they span and its orientation; here we focus on that area.",
+    "example": {
+      "title": "The area between two arrows",
+      "steps": [
+        "Two arrows are 2 metres and 3 metres long and meet at a right angle.",
+        "They span a rectangle with area 2 × 3 = 6 square metres.",
+        "The cross product's length is therefore 6 square metres."
+      ]
+    },
+    "equation": "cross-product length = 2 m × 3 m = 6 m²",
+    "terms": [
+      {
+        "term": "Vector",
+        "definition": "A quantity with size and direction."
+      },
+      {
+        "term": "Cross product",
+        "definition": "A vector that describes the oriented area spanned by two vectors."
+      },
+      {
+        "term": "Dot product",
+        "definition": "A signed number measuring how much two vectors point along each other."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "derivatives": {
+    "idea": "A derivative tells us how quickly an output changes at one input.",
+    "explanation": "A function is a rule connecting an input to an output. Its derivative is the local rate of change. Multiplying that rate by a small input change estimates the output change.",
+    "example": {
+      "title": "A small change in a square",
+      "steps": [
+        "For f(x) = x², the rate at x = 3 is 2 × 3 = 6.",
+        "Increasing x by 0.01 raises the output by about 6 × 0.01 = 0.06.",
+        "The exact increase is 0.0601; the estimate is close because the step is small."
+      ]
+    },
+    "equation": "f(x) = x²; f′(3) = 6",
+    "terms": [
+      {
+        "term": "Function",
+        "definition": "A rule connecting input to output."
+      },
+      {
+        "term": "Derivative",
+        "definition": "The local rate of change of an output with its input."
+      },
+      {
+        "term": "f(x)",
+        "definition": "The output of rule f for input x."
+      },
+      {
+        "term": "f′(3)",
+        "definition": "The rate of f with its input at input 3."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "power-rule": {
+    "idea": "The power rule finds the rate of change of a power of x.",
+    "explanation": "For positive whole-number powers, multiply by the power, then lower it by one. A fixed added number has rate zero because it does not change. The symbol d/dx asks for the rate with respect to x.",
+    "example": {
+      "title": "The rate of a cubic rule",
+      "steps": [
+        "Start with f(x) = 2x³ − 5.",
+        "Its derivative is 2 × 3x² = 6x².",
+        "At x = 2, the rate is 6 × 4 = 24."
+      ]
+    },
+    "equation": "d(2x³ − 5)/dx = 6x²",
+    "terms": [
+      {
+        "term": "Power",
+        "definition": "The raised number saying how many equal factors to multiply."
+      },
+      {
+        "term": "Derivative",
+        "definition": "A local rate of change."
+      },
+      {
+        "term": "x",
+        "definition": "The input number."
+      },
+      {
+        "term": "f(x)",
+        "definition": "The output of rule f for input x."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "³",
+        "definition": "Multiply the quantity by itself three times."
+      }
+    ]
+  },
+  "product-rule": {
+    "idea": "When two changing factors are multiplied, both contribute to the rate of change.",
+    "explanation": "Find the first factor's rate and multiply by the second factor. Then add the first factor times the second factor's rate. This accounts for both ways the product changes.",
+    "example": {
+      "title": "Two powers multiplied",
+      "steps": [
+        "For x² × x³, the rates of the factors are 2x and 3x².",
+        "The product's rate is 2x × x³ + x² × 3x² = 5x⁴.",
+        "This agrees with first writing the product as x⁵."
+      ]
+    },
+    "equation": "d(fg)/dx = (df/dx)g + f(dg/dx)",
+    "terms": [
+      {
+        "term": "Factor",
+        "definition": "One of the quantities being multiplied."
+      },
+      {
+        "term": "f and g",
+        "definition": "Two rules depending on the same input x."
+      },
+      {
+        "term": "df/dx and dg/dx",
+        "definition": "Their rates of change with input x."
+      },
+      {
+        "term": "d(fg)/dx",
+        "definition": "Rate of change of their product."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "³",
+        "definition": "Multiply the quantity by itself three times."
+      }
+    ]
+  },
+  "chain-rule": {
+    "idea": "When a change passes through two linked rules, multiply their rates.",
+    "explanation": "The first rule changes a middle value. The second rule turns that middle value into the final output. The chain rule follows both changes to find the final rate.",
+    "example": {
+      "title": "Squaring a changing expression",
+      "steps": [
+        "Let y = (2x + 1)².",
+        "The inner rule has rate 2; the outer squaring rule has rate 2(2x + 1).",
+        "Multiply them: at x = 1, the final rate is 2 × 6 = 12."
+      ]
+    },
+    "equation": "dy/dx = 4(2x + 1)",
+    "terms": [
+      {
+        "term": "Chain rule",
+        "definition": "Finding a linked rate by multiplying the rates of its stages."
+      },
+      {
+        "term": "x and y",
+        "definition": "Input and output numbers."
+      },
+      {
+        "term": "dy/dx",
+        "definition": "The output’s rate of change with input x."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "elementary-derivatives": {
+    "idea": "The exponential eˣ changes at a rate equal to its own value.",
+    "explanation": "The number e is about 2.718. If its exponent also depends on the input, multiply by the exponent's rate. A negative rate in the exponent makes a decreasing exponential.",
+    "example": {
+      "title": "A shrinking amount",
+      "steps": [
+        "Let q(t) = 5e^(−2t), using unit-free numbers.",
+        "The exponent's rate is −2, so the full rate is −10e^(−2t).",
+        "At t = 0, the amount is 5 and its rate is −10."
+      ]
+    },
+    "equation": "dq/dt = −10e^(−2t)",
+    "terms": [
+      {
+        "term": "Exponential",
+        "definition": "A rule with the input in the exponent, such as eˣ."
+      },
+      {
+        "term": "Exponent",
+        "definition": "The raised number that specifies a power."
+      },
+      {
+        "term": "q(t)",
+        "definition": "The output of rule q at input t, both unit-free here."
+      },
+      {
+        "term": "dq/dt",
+        "definition": "The rate of q with input t."
+      }
+    ]
+  },
+  "integrals": {
+    "idea": "An integral adds many small contributions to find a total.",
+    "explanation": "When velocity changes, split the time into short pieces and add each piece's change in position. An integral carries this idea to continuously changing motion. Keep negative contributions negative.",
+    "example": {
+      "title": "A triangular graph",
+      "steps": [
+        "Velocity rises steadily from 0 to 6 metres per second over 3 seconds.",
+        "The area under its velocity–time graph is a triangle: ½ × 3 × 6 = 9.",
+        "The object changes position by 9 metres."
+      ]
+    },
+    "equation": "displacement = ½ × 3 s × 6 m/s = 9 m",
+    "terms": [
+      {
+        "term": "Integral",
+        "definition": "A continuous sum of small contributions."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from starting position to finishing position."
+      }
+    ]
+  },
+  "antiderivatives": {
+    "idea": "Knowing a rate does not tell us the starting value.",
+    "explanation": "An antiderivative is a rule whose derivative gives the rate we began with. Add a constant to allow for the unknown starting value. One known value fixes that constant.",
+    "example": {
+      "title": "Starting with some speed",
+      "steps": [
+        "A velocity increases by 3 metres per second each second.",
+        "Its rule is v(t) = 3t + C, with matching velocity units.",
+        "If it starts at 2 metres per second, C is 2 metres per second."
+      ]
+    },
+    "equation": "v(t) = (3 m/s²)t + 2 m/s",
+    "terms": [
+      {
+        "term": "Antiderivative",
+        "definition": "A rule whose derivative equals a specified rate."
+      },
+      {
+        "term": "Constant",
+        "definition": "A value that stays fixed as the input changes."
+      },
+      {
+        "term": "v(t)",
+        "definition": "Velocity at elapsed time t."
+      },
+      {
+        "term": "C",
+        "definition": "A fixed starting velocity, found from the initial condition."
+      },
+      {
+        "term": "m/s²",
+        "definition": "Metres per second per second, the unit of acceleration."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "definite-integrals": {
+    "idea": "A definite integral finds the accumulated change between two inputs.",
+    "explanation": "Find a rule whose derivative is the quantity being added. Evaluate that rule at the ending input and subtract its value at the starting input. The order controls the sign.",
+    "example": {
+      "title": "Adding the rate 2x",
+      "steps": [
+        "To add 2x from x = 1 to x = 3, use the antiderivative x².",
+        "Subtract its starting value from its ending value: 3² − 1² = 8.",
+        "This is the accumulated total in this unit-free example."
+      ]
+    },
+    "equation": "∫₁³ 2x dx = 3² − 1² = 8",
+    "terms": [
+      {
+        "term": "Definite integral",
+        "definition": "A continuous sum over a stated interval."
+      },
+      {
+        "term": "Antiderivative",
+        "definition": "A rule whose derivative equals the quantity being added."
+      },
+      {
+        "term": "∫₁³",
+        "definition": "Add continuously from input 1 to input 3."
+      },
+      {
+        "term": "dx",
+        "definition": "A tiny step in input x, used in the continuous sum."
+      },
+      {
+        "term": "x",
+        "definition": "The input number."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "³",
+        "definition": "Multiply the quantity by itself three times."
+      }
+    ]
+  },
+  "substitution": {
+    "idea": "Changing an integral's input can make its pattern easier to recognize.",
+    "explanation": "Give a repeated expression a temporary name. Replace both that expression and the matching change in the input. If the integral has endpoints, change those endpoints too.",
+    "example": {
+      "title": "Renaming x²",
+      "steps": [
+        "For ∫₀¹ 2x e^(x²) dx, name x² as u, so du = 2x dx.",
+        "The endpoints remain 0 and 1 in this case.",
+        "The new integral is ∫₀¹ eᵘ du = e − 1, about 1.718."
+      ]
+    },
+    "equation": "u = x²; ∫₀¹ 2x e^(x²) dx = e − 1",
+    "terms": [
+      {
+        "term": "Substitution",
+        "definition": "Changing an input variable to rewrite a calculation."
+      },
+      {
+        "term": "∫₀¹",
+        "definition": "Add continuously from input 0 to input 1."
+      },
+      {
+        "term": "u",
+        "definition": "A temporary input name, here x²."
+      },
+      {
+        "term": "dx and du",
+        "definition": "Tiny steps in the old and new inputs."
+      },
+      {
+        "term": "e",
+        "definition": "A fixed number about 2.718."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "integration-parts": {
+    "idea": "Integration by parts trades one difficult integral for another that may be simpler.",
+    "explanation": "Split the product into two parts. Differentiate one and integrate the other, using the product rule in reverse. Keep the endpoint terms when endpoints are given.",
+    "example": {
+      "title": "Integrating x eˣ",
+      "steps": [
+        "Choose u = x and dv = eˣ dx.",
+        "Then du = dx and v = eˣ, giving x eˣ − ∫eˣ dx.",
+        "The result is (x − 1)eˣ + C; differentiating it returns x eˣ."
+      ]
+    },
+    "equation": "∫u dv = uv − ∫v du",
+    "terms": [
+      {
+        "term": "Integration by parts",
+        "definition": "A method for rewriting the integral of a product."
+      },
+      {
+        "term": "Constant C",
+        "definition": "An arbitrary fixed offset in an antiderivative."
+      },
+      {
+        "term": "u and v",
+        "definition": "The two chosen functions of the same input."
+      },
+      {
+        "term": "du and dv",
+        "definition": "Their tiny changes; these include their rates and the input step."
+      },
+      {
+        "term": "∫",
+        "definition": "An integral: a continuous sum of small contributions."
+      },
+      {
+        "term": "e",
+        "definition": "A fixed number about 2.718."
+      },
+      {
+        "term": "x",
+        "definition": "The input number."
+      }
+    ]
+  },
+  "partials": {
+    "idea": "A partial derivative changes one input while holding the others fixed.",
+    "explanation": "A rule may depend on several inputs. To isolate one input's effect, keep the others unchanged. The resulting rate depends on which inputs you hold fixed.",
+    "example": {
+      "title": "Changing only x",
+      "steps": [
+        "For f(x,y) = x² + 3y, hold y fixed.",
+        "At x = 2, the rate with x is 2x = 4.",
+        "A small increase of 0.01 in x therefore raises f by about 0.04."
+      ]
+    },
+    "equation": "∂f/∂x = 2x",
+    "terms": [
+      {
+        "term": "Partial derivative",
+        "definition": "A rate found by changing one input while keeping the other independent inputs fixed."
+      },
+      {
+        "term": "f(x,y)",
+        "definition": "Output of a rule with inputs x and y."
+      },
+      {
+        "term": "∂f/∂x",
+        "definition": "The rate of f with x while y stays fixed."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "total-differential": {
+    "idea": "When several inputs change, add their separate contributions to the output's rate.",
+    "explanation": "Find how strongly the output responds to each input. Multiply each response by that input's time rate, then add. This gives the exact rate when the needed derivatives exist.",
+    "example": {
+      "title": "A growing rectangle",
+      "steps": [
+        "A rectangle is 2 metres by 3 metres; its sides grow at 0.1 and 0.2 metres per second.",
+        "The two contributions are 3 × 0.1 and 2 × 0.2 square metres per second.",
+        "The area is growing at 0.7 square metres per second at that moment."
+      ]
+    },
+    "equation": "dA/dt = y(dx/dt) + x(dy/dt)",
+    "terms": [
+      {
+        "term": "Derivative",
+        "definition": "A local rate of change."
+      },
+      {
+        "term": "A",
+        "definition": "Rectangle area."
+      },
+      {
+        "term": "x and y",
+        "definition": "The two side lengths."
+      },
+      {
+        "term": "t",
+        "definition": "Elapsed time."
+      },
+      {
+        "term": "dA/dt, dx/dt, dy/dt",
+        "definition": "Rates of area and the two side lengths per second."
+      }
+    ]
+  },
+  "gradient": {
+    "idea": "The gradient points toward the fastest local increase in a field's value.",
+    "explanation": "A field gives a value at each place. Its gradient collects the change rates along the coordinate directions into one arrow. It estimates change for a small move, not necessarily a large one.",
+    "example": {
+      "title": "A small upward move",
+      "steps": [
+        "For f(x,y) = x² + y² at (1,2), the gradient is (2,4).",
+        "An upward move of 0.01 therefore increases f by about 4 × 0.01 = 0.04.",
+        "All values in this example are unit-free."
+      ]
+    },
+    "equation": "∇f(1,2) = (2,4)",
+    "terms": [
+      {
+        "term": "Field",
+        "definition": "A rule giving a value at every place."
+      },
+      {
+        "term": "Gradient",
+        "definition": "An arrow showing the direction and rate of fastest local increase."
+      },
+      {
+        "term": "f(x,y)",
+        "definition": "Field value at coordinates x and y."
+      },
+      {
+        "term": "∇f",
+        "definition": "The gradient: an arrow of local change rates."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "linearization": {
+    "idea": "A smooth curve can be estimated by a straight line near one point.",
+    "explanation": "Start with the known output and add slope times input change. The approximation works best for small changes where the curve does not bend much. Its error is not automatically a measurement uncertainty.",
+    "example": {
+      "title": "Estimating a square",
+      "steps": [
+        "For x² at x = 3, the value is 9 and the slope is 6.",
+        "A step of 0.1 gives the estimate 9 + 6 × 0.1 = 9.6.",
+        "The exact value is 9.61, so this estimate misses by 0.01."
+      ]
+    },
+    "equation": "f(x + Δx) ≈ f(x) + f′(x)Δx",
+    "terms": [
+      {
+        "term": "Slope",
+        "definition": "The local output change per unit input change."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result that is close enough for a stated purpose but not exact."
+      },
+      {
+        "term": "f(x)",
+        "definition": "The output at input x."
+      },
+      {
+        "term": "Δx",
+        "definition": "The small change in the input."
+      },
+      {
+        "term": "f′(x)",
+        "definition": "The local rate of the output with input x."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "fields": {
+    "idea": "A field assigns a value to each place.",
+    "explanation": "A temperature map gives one number at each place. A wind map gives both speed and direction. Neither map is itself the path followed by an object.",
+    "example": {
+      "title": "Reading a mathematical field",
+      "steps": [
+        "Let the field be f(x,y) = x² + y², using unit-free coordinates.",
+        "At the place (1,2), its value is 1² + 2² = 5.",
+        "That value describes this place, not a moving object's route."
+      ]
+    },
+    "equation": "f(1,2) = 1² + 2² = 5",
+    "terms": [
+      {
+        "term": "Field",
+        "definition": "A rule assigning a value to every place."
+      },
+      {
+        "term": "f(x,y)",
+        "definition": "The field value at coordinates x and y."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "line-integrals": {
+    "idea": "A line integral adds a field's contribution along a chosen path.",
+    "explanation": "For work, count only the force pointing along each small move. Add these contributions along the route. A sideways force contributes no work during a move perpendicular to it.",
+    "example": {
+      "title": "A two-part path",
+      "steps": [
+        "A constant 4-newton rightward force acts while an object moves 2 metres right, then 3 metres up.",
+        "The rightward part transfers 4 × 2 = 8 joules; the upward part transfers none.",
+        "The total work is 8 joules."
+      ]
+    },
+    "equation": "W = ∫ F · dr",
+    "terms": [
+      {
+        "term": "Work",
+        "definition": "Energy transferred by a force as its point of action moves."
+      },
+      {
+        "term": "Line integral",
+        "definition": "A sum taken along a path."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle."
+      },
+      {
+        "term": "W",
+        "definition": "Work, measured in joules."
+      },
+      {
+        "term": "F",
+        "definition": "The force vector."
+      },
+      {
+        "term": "dr",
+        "definition": "A tiny directed step along the path."
+      },
+      {
+        "term": "F · dr",
+        "definition": "Force’s along-step part multiplied by the step length."
+      },
+      {
+        "term": "∫",
+        "definition": "Add these contributions continuously along the path."
+      }
+    ]
+  },
+  "flux": {
+    "idea": "Flux measures how much a field points through a surface.",
+    "explanation": "Count the surface area and the field's perpendicular part. For a flat sheet in a uniform field, multiply field size, area, and the appropriate direction factor. Flux need not describe a material flowing.",
+    "example": {
+      "title": "A field through a sheet",
+      "steps": [
+        "A uniform electric field of 6 newtons per coulomb points straight through a 2-square-metre sheet.",
+        "Its flux is 6 × 2 = 12 newton-square-metres per coulomb."
+      ]
+    },
+    "equation": "Φ = EA = 12 N·m²/C",
+    "terms": [
+      {
+        "term": "Flux",
+        "definition": "A measure of a field's through-surface contribution."
+      },
+      {
+        "term": "Uniform",
+        "definition": "The same at every place in the region."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle to the surface."
+      },
+      {
+        "term": "Φ",
+        "definition": "Electric flux through the sheet."
+      },
+      {
+        "term": "E",
+        "definition": "Electric-field strength, in newtons per coulomb."
+      },
+      {
+        "term": "A",
+        "definition": "Sheet area, in square metres."
+      },
+      {
+        "term": "N·m²/C",
+        "definition": "Newton-square-metres per coulomb, the electric-flux unit."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "divergence": {
+    "idea": "Divergence measures a field's net outward contribution near one place.",
+    "explanation": "Imagine a tiny closed box. Compare what points outward through its sides with what points inward, then divide by its volume. This mathematical test also works for fields that are not flowing materials.",
+    "example": {
+      "title": "A simple outward field",
+      "steps": [
+        "For the unit-free field F = (x,y,z), each matching change rate is 1.",
+        "Add them: the divergence is 1 + 1 + 1 = 3.",
+        "Across a region of volume 1, the total outward flux is 3."
+      ]
+    },
+    "equation": "∇ · F = 3",
+    "terms": [
+      {
+        "term": "Divergence",
+        "definition": "Net outward field contribution per small volume."
+      },
+      {
+        "term": "Flux",
+        "definition": "A field's contribution through a surface."
+      },
+      {
+        "term": "F",
+        "definition": "The field vector."
+      },
+      {
+        "term": "x, y, z",
+        "definition": "The three position coordinates."
+      },
+      {
+        "term": "∇ · F",
+        "definition": "The divergence of the field, found by adding the matching coordinate-change rates."
+      }
+    ]
+  },
+  "curl": {
+    "idea": "Curl measures a field's local tendency to circulate.",
+    "explanation": "Compare how nearby parts of the field change sideways. Curl gives both the amount of local circulation and its orientation. Curved-looking arrows alone do not measure it.",
+    "example": {
+      "title": "A circulating field",
+      "steps": [
+        "For the unit-free field F = (−y,x,0), the upward part changes with x at rate 1.",
+        "The rightward part changes with y at rate −1.",
+        "Their difference is 2, giving counterclockwise circulation viewed from positive z."
+      ]
+    },
+    "equation": "(∇ × F)z = 1 − (−1) = 2",
+    "terms": [
+      {
+        "term": "Curl",
+        "definition": "A measure of local circulation in a field."
+      },
+      {
+        "term": "Circulation",
+        "definition": "The field's tendency to point around a loop."
+      },
+      {
+        "term": "F",
+        "definition": "The field vector."
+      },
+      {
+        "term": "x, y, z",
+        "definition": "The three position coordinates."
+      },
+      {
+        "term": "(∇ × F)z",
+        "definition": "The z-directed part of the field’s curl."
+      }
+    ]
+  },
+  "complex": {
+    "idea": "A complex number keeps two number parts together.",
+    "explanation": "Write it as a + ib, where i² = −1. Plot the real part across and the imaginary part up on a number diagram. The distance from zero is its magnitude, not automatically a probability.",
+    "example": {
+      "title": "The number 2 + 3i",
+      "steps": [
+        "Plot 2 across and 3 up.",
+        "Its squared distance from zero is 2² + 3² = 13.",
+        "Its magnitude is √13, about 3.606."
+      ]
+    },
+    "equation": "|2 + 3i| = √13",
+    "terms": [
+      {
+        "term": "Complex number",
+        "definition": "A number with real and imaginary parts."
+      },
+      {
+        "term": "Imaginary part",
+        "definition": "The coefficient of i, where i² = −1."
+      },
+      {
+        "term": "Magnitude",
+        "definition": "Distance from zero on the complex-number diagram."
+      },
+      {
+        "term": "a and b",
+        "definition": "Real numbers forming the horizontal and vertical parts."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, defined by i² = −1."
+      },
+      {
+        "term": "| |",
+        "definition": "Magnitude: distance from zero."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "complex-phase": {
+    "idea": "Complex numbers of equal size can point in different directions on their number diagram.",
+    "explanation": "The angle from the positive real direction is called phase. When you add complex numbers, add their horizontal and vertical parts separately. The directions affect the final size.",
+    "example": {
+      "title": "Adding 2 and 2i",
+      "steps": [
+        "One number points 2 units right; the other points 2 units up.",
+        "Their sum is 2 + 2i, with magnitude √(4 + 4) = √8.",
+        "Their sizes do not simply add to 4 because their directions differ."
+      ]
+    },
+    "equation": "|2 + 2i| = √8",
+    "terms": [
+      {
+        "term": "Phase",
+        "definition": "An angle on the complex-number diagram."
+      },
+      {
+        "term": "Magnitude",
+        "definition": "Distance from zero on that diagram."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, defined by i² = −1."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      },
+      {
+        "term": "| | (magnitude)",
+        "definition": "The bars mean the distance from zero on the complex-number plane."
+      }
+    ]
+  },
+  "complex-division": {
+    "idea": "A complex fraction becomes easier when its denominator is made real.",
+    "explanation": "Reverse the sign of the denominator's imaginary part to form its conjugate. Multiply both top and bottom by it. This keeps the fraction unchanged, provided the denominator is not zero.",
+    "example": {
+      "title": "Dividing by 1 + i",
+      "steps": [
+        "Multiply 1/(1 + i) by (1 − i)/(1 − i).",
+        "The denominator becomes 1 − i² = 2.",
+        "The result is 0.5 − 0.5i."
+      ]
+    },
+    "equation": "1/(1 + i) = (1 − i)/2",
+    "terms": [
+      {
+        "term": "Conjugate",
+        "definition": "A complex number with the imaginary part's sign reversed."
+      },
+      {
+        "term": "Imaginary part",
+        "definition": "The coefficient of i, where i² = −1."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, defined by i² = −1."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "euler": {
+    "idea": "Euler's formula describes a point on a unit circle with one complex exponential.",
+    "explanation": "Cosine gives its horizontal part and sine its vertical part. Multiplying by e^(iθ) turns a number through angle θ without changing its size. This is a number-diagram rotation, not necessarily a physical motion.",
+    "example": {
+      "title": "A quarter-turn",
+      "steps": [
+        "A quarter-turn is π/2 radians.",
+        "Euler's formula gives e^(iπ/2) = i.",
+        "Multiplying 2 by i turns it to 2i while keeping its magnitude 2."
+      ]
+    },
+    "equation": "e^(iθ) = cos θ + i sin θ",
+    "terms": [
+      {
+        "term": "Complex exponential",
+        "definition": "Here, e^(iθ) is the unit-circle point at angle θ, expressed as a complex number."
+      },
+      {
+        "term": "Radian",
+        "definition": "A unit for angles."
+      },
+      {
+        "term": "Magnitude",
+        "definition": "Distance from zero on the complex-number diagram."
+      },
+      {
+        "term": "θ",
+        "definition": "The angle in radians."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, defined by i² = −1."
+      },
+      {
+        "term": "e",
+        "definition": "A fixed number about 2.718."
+      },
+      {
+        "term": "sin and cos",
+        "definition": "Sine and cosine: the vertical and horizontal coordinates on a unit circle."
+      },
+      {
+        "term": "π",
+        "definition": "A number about 3.1416; one full turn is 2π radians."
+      }
+    ]
+  },
+  "phasor-derivatives": {
+    "idea": "For a steady complex wave, taking a time derivative means multiplying by iω.",
+    "explanation": "Here ω is a fixed angular frequency, the phase change per second. This shortcut works for a constant-amplitude, single-frequency signal. A changing amplitude would contribute another term.",
+    "example": {
+      "title": "Differentiating a position signal",
+      "steps": [
+        "Let the complex position be (2 m)e^(i3t/s).",
+        "Multiply by i × 3 per second to get (6i m/s)e^(i3t/s).",
+        "The real part of this result gives the physical velocity."
+      ]
+    },
+    "equation": "d[Xe^(iωt)]/dt = iωXe^(iωt)",
+    "terms": [
+      {
+        "term": "Derivative",
+        "definition": "A rate of change."
+      },
+      {
+        "term": "Angular frequency",
+        "definition": "Phase change per second, measured in radians per second."
+      },
+      {
+        "term": "Real part",
+        "definition": "The part of a complex number without i."
+      },
+      {
+        "term": "X",
+        "definition": "The constant complex amplitude, holding size and starting phase."
+      },
+      {
+        "term": "t",
+        "definition": "Elapsed time."
+      },
+      {
+        "term": "ω",
+        "definition": "Angular frequency, measured in radians per second."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, defined by i² = −1."
+      },
+      {
+        "term": "e",
+        "definition": "The exponential base, about 2.718."
+      },
+      {
+        "term": "Phase",
+        "definition": "Place within the repeating cycle."
+      },
+      {
+        "term": "d/dt",
+        "definition": "Take the rate of change with time."
+      }
+    ]
+  },
+  "real-oscillations": {
+    "idea": "A complex calculation can represent a real repeating signal.",
+    "explanation": "At the end, take the real part: the part without i. The complex amplitude stores both the signal's size and its timing. Its starting value need not equal its greatest value.",
+    "example": {
+      "title": "A voltage signal",
+      "steps": [
+        "Use complex amplitude 2 + i volts.",
+        "The real signal is [2 cos(ωt) − sin(ωt)] volts.",
+        "It starts at 2 volts, while its greatest magnitude is √5 volts."
+      ]
+    },
+    "equation": "Re[(2 + i)e^(iωt)] = 2 cos(ωt) − sin(ωt)",
+    "terms": [
+      {
+        "term": "Real part",
+        "definition": "The part of a complex number without i."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "The greatest size of the repeating signal's departure from zero."
+      },
+      {
+        "term": "Re",
+        "definition": "Take the real part."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, defined by i² = −1."
+      },
+      {
+        "term": "ω",
+        "definition": "Angular frequency: phase change per second."
+      },
+      {
+        "term": "t",
+        "definition": "Elapsed time."
+      },
+      {
+        "term": "e",
+        "definition": "The exponential base, about 2.718."
+      },
+      {
+        "term": "sin and cos",
+        "definition": "Sine and cosine: smooth repeating wave functions."
+      },
+      {
+        "term": "Phase",
+        "definition": "Place within a repeating cycle."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "matrices": {
+    "idea": "Each row of a matrix gives instructions for one output.",
+    "explanation": "A matrix is a table of numbers. Multiply each row's numbers by the matching input parts, then add. Different rows produce different output parts.",
+    "example": {
+      "title": "Doubling one component",
+      "steps": [
+        "The matrix [[2,0],[0,1]] acts on (3,−2).",
+        "Its first output is 2 × 3 = 6; its second is 1 × (−2) = −2.",
+        "The output is (6,−2)."
+      ]
+    },
+    "equation": "[[2,0],[0,1]] (3,−2) = (6,−2)",
+    "terms": [
+      {
+        "term": "Matrix",
+        "definition": "A table of numbers specifying how to combine inputs."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a vector's coordinate list."
+      }
+    ]
+  },
+  "matrix-products": {
+    "idea": "The order of two matrix operations can change the answer.",
+    "explanation": "In ABv, apply B first, then A. Some pairs give the same result in either order, but many do not. Check the actual operations instead of assuming they can swap.",
+    "example": {
+      "title": "Stretching then turning",
+      "steps": [
+        "Start with the arrow (1,0).",
+        "Doubling its horizontal part and then turning 90° gives (0,2).",
+        "Turning first and then doubling the horizontal part gives (0,1); order changes this one experiment's outcome."
+      ]
+    },
+    "equation": "ABv = A(Bv)",
+    "terms": [
+      {
+        "term": "Matrix",
+        "definition": "A table describing an operation on a vector."
+      },
+      {
+        "term": "A and B",
+        "definition": "The two matrices representing the operations."
+      },
+      {
+        "term": "v",
+        "definition": "The input vector."
+      }
+    ]
+  },
+  "linear-systems": {
+    "idea": "An inverse matrix undoes a matrix operation when a unique undoing exists.",
+    "explanation": "In Av = b, the input v is unknown and the output b is known. If A has an inverse, apply it to recover v. Some matrices lose information and cannot be undone uniquely.",
+    "example": {
+      "title": "Recovering two inputs",
+      "steps": [
+        "The output is (6,8) after the first input was doubled and the second multiplied by 4.",
+        "Undo those changes: 6 ÷ 2 = 3 and 8 ÷ 4 = 2.",
+        "The original input is (3,2)."
+      ]
+    },
+    "equation": "[[2,0],[0,4]] (3,2) = (6,8)",
+    "terms": [
+      {
+        "term": "Inverse matrix",
+        "definition": "A matrix that undoes another matrix operation."
+      },
+      {
+        "term": "A",
+        "definition": "The matrix representing the operation."
+      },
+      {
+        "term": "v",
+        "definition": "The unknown input vector."
+      },
+      {
+        "term": "b",
+        "definition": "The known output vector."
+      }
+    ]
+  },
+  "basis-change": {
+    "idea": "Changing the basis changes a vector's coordinate list, not the vector itself.",
+    "explanation": "A basis is a set of independent building-block vectors that reaches the whole space. The coordinates tell us how much of each building block to use. New building blocks require new coordinates.",
+    "example": {
+      "title": "Swapping coordinate directions",
+      "steps": [
+        "Take the new first direction as old up and the new second direction as old right.",
+        "The old vector (3,5) then has new coordinates (5,3).",
+        "Five new-first steps and three new-second steps reconstruct the same vector."
+      ]
+    },
+    "equation": "v_old = P v_new",
+    "terms": [
+      {
+        "term": "Basis",
+        "definition": "Independent vectors whose combinations describe every vector in the space."
+      },
+      {
+        "term": "Coordinates",
+        "definition": "Numbers specifying how much of each basis vector to use."
+      },
+      {
+        "term": "v_old and v_new",
+        "definition": "The same vector’s coordinate lists in the old and new bases."
+      },
+      {
+        "term": "P",
+        "definition": "The matrix whose columns are the new basis directions written in old coordinates."
+      },
+      {
+        "term": "Independent",
+        "definition": "None of the building blocks can be made from the others."
+      }
+    ]
+  },
+  "eigenvectors": {
+    "idea": "An eigenvector keeps its component pattern when a matrix acts on it.",
+    "explanation": "Every component is multiplied by the same number, called its eigenvalue. The vector must be nonzero. For real vectors, a negative eigenvalue reverses direction as well as changing size.",
+    "example": {
+      "title": "A special input direction",
+      "steps": [
+        "Apply [[2,0],[0,1]] to (4,0).",
+        "The output is (8,0), exactly twice the input.",
+        "So this input is an eigenvector with eigenvalue 2."
+      ]
+    },
+    "equation": "Av = λv, v ≠ 0",
+    "terms": [
+      {
+        "term": "Eigenvector",
+        "definition": "A nonzero vector multiplied by one common factor by an operation."
+      },
+      {
+        "term": "Eigenvalue",
+        "definition": "That common multiplying factor."
+      },
+      {
+        "term": "A",
+        "definition": "The matrix for the operation."
+      },
+      {
+        "term": "v",
+        "definition": "A nonzero input vector."
+      },
+      {
+        "term": "λ",
+        "definition": "The eigenvalue: its common multiplying factor."
+      },
+      {
+        "term": "≠",
+        "definition": "Not equal to."
+      }
+    ]
+  },
+  "characteristic-equation": {
+    "idea": "Eigenvalues are the factors that allow a nonzero vector to keep its pattern.",
+    "explanation": "Subtract a trial factor λ from the matrix's diagonal. For the right factors, this new matrix sends some nonzero vector to zero. Its determinant, a test of invertibility, is then zero.",
+    "example": {
+      "title": "Finding two factors",
+      "steps": [
+        "For A = [[2,1],[1,2]], calculate (2 − λ)² − 1.",
+        "Setting it to zero gives λ = 1 or 3.",
+        "Multiplying A by (1,1) confirms the factor 3."
+      ]
+    },
+    "equation": "det(A − λI) = 0",
+    "terms": [
+      {
+        "term": "Eigenvalue",
+        "definition": "A factor by which an operation multiplies an eigenvector."
+      },
+      {
+        "term": "Determinant",
+        "definition": "A number that is zero when a square matrix cannot be inverted."
+      },
+      {
+        "term": "Diagonal",
+        "definition": "Entries running from top left to bottom right."
+      },
+      {
+        "term": "A",
+        "definition": "The given matrix."
+      },
+      {
+        "term": "λ",
+        "definition": "A trial eigenvalue."
+      },
+      {
+        "term": "I",
+        "definition": "The identity matrix, which leaves every vector unchanged."
+      },
+      {
+        "term": "det",
+        "definition": "Take the determinant, a number testing whether the matrix can be inverted."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "diagonalization": {
+    "idea": "Using eigenvectors as coordinates can turn a matrix into separate multiplying rules.",
+    "explanation": "If there are enough independent eigenvectors, they form a basis. In that basis the matrix is diagonal, so each coordinate is multiplied by its own eigenvalue. This is a coordinate change, not deleting unwanted entries.",
+    "example": {
+      "title": "Repeating a simple matrix action",
+      "steps": [
+        "For A = [[2,1],[1,2]], the vector (1,1) is multiplied by 3.",
+        "Applying A twice multiplies it by 3² = 9.",
+        "Its output after two applications is (9,9)."
+      ]
+    },
+    "equation": "Aⁿ = PDⁿP⁻¹",
+    "terms": [
+      {
+        "term": "Eigenvector",
+        "definition": "A nonzero vector multiplied by one common factor by an operation."
+      },
+      {
+        "term": "Eigenvalue",
+        "definition": "That factor."
+      },
+      {
+        "term": "Diagonal matrix",
+        "definition": "A matrix with zero entries away from its main diagonal."
+      },
+      {
+        "term": "A",
+        "definition": "The original matrix."
+      },
+      {
+        "term": "n",
+        "definition": "The number of repeated applications."
+      },
+      {
+        "term": "D",
+        "definition": "The diagonal matrix of eigenvalues."
+      },
+      {
+        "term": "P",
+        "definition": "The matrix of eigenvector columns."
+      },
+      {
+        "term": "P⁻¹",
+        "definition": "The inverse of P, converting to the eigenvector coordinates."
+      },
+      {
+        "term": "Independent",
+        "definition": "No basis vector can be built from the others."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "inner-products": {
+    "idea": "An inner product compares two vectors and gives one number.",
+    "explanation": "For real vectors in perpendicular unit coordinates, multiply matching parts and add. Comparing a vector with itself gives its squared length. Complex vectors require conjugating the first vector's parts before multiplying.",
+    "example": {
+      "title": "The length of (3,4)",
+      "steps": [
+        "The vector's inner product with itself is 3 × 3 + 4 × 4 = 25.",
+        "Its length is √25 = 5.",
+        "Dividing by 5 gives (0.6,0.8), which has length 1."
+      ]
+    },
+    "equation": "⟨v,v⟩ = 25; ||v|| = 5",
+    "terms": [
+      {
+        "term": "Inner product",
+        "definition": "A number comparing two vectors using the space's specified rule."
+      },
+      {
+        "term": "Conjugate",
+        "definition": "Reverse the sign of a complex number's imaginary part."
+      },
+      {
+        "term": "v",
+        "definition": "The vector being measured."
+      },
+      {
+        "term": "⟨v,v⟩",
+        "definition": "The inner product of the vector with itself, equal to its squared length."
+      },
+      {
+        "term": "||v||",
+        "definition": "The vector’s length under the chosen inner-product rule."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "normalization": {
+    "idea": "Normalization changes a nonzero vector's overall size so its length becomes one.",
+    "explanation": "Divide every part by the same length. This keeps their relative pattern unchanged. Do not divide by the squared length, and do not try to normalize the zero vector.",
+    "example": {
+      "title": "Normalizing (1,i)",
+      "steps": [
+        "Its squared length is 1 + 1 = 2, so its length is √2.",
+        "Divide both parts by √2 to get (1/√2, i/√2).",
+        "The squared magnitudes now add to 1."
+      ]
+    },
+    "equation": "v_normalized = v / ||v||",
+    "terms": [
+      {
+        "term": "Normalization",
+        "definition": "Rescaling a nonzero vector to length one."
+      },
+      {
+        "term": "Magnitude",
+        "definition": "Distance from zero for a complex number."
+      },
+      {
+        "term": "v",
+        "definition": "The nonzero vector to resize."
+      },
+      {
+        "term": "||v||",
+        "definition": "Its length under the chosen inner-product rule."
+      },
+      {
+        "term": "v_normalized",
+        "definition": "The resized vector of length one."
+      },
+      {
+        "term": "i",
+        "definition": "The imaginary unit, defined by i² = −1."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "projections": {
+    "idea": "A projection finds the part of a vector along a chosen direction.",
+    "explanation": "For a unit direction, take its inner product with the vector. Multiply that number by the direction vector to get the projected vector. The number and the vector are different answers.",
+    "example": {
+      "title": "An arrow's horizontal part",
+      "steps": [
+        "Let the direction be (1,0) and the vector be (3,4).",
+        "Their inner product is 3, so the projected vector is (3,0).",
+        "The remaining part, (0,4), is perpendicular to that direction."
+      ]
+    },
+    "equation": "parallel part = u⟨u,v⟩, when ||u|| = 1",
+    "terms": [
+      {
+        "term": "Projection",
+        "definition": "The part of a vector along a chosen direction."
+      },
+      {
+        "term": "Unit vector",
+        "definition": "A vector of length one."
+      },
+      {
+        "term": "Inner product",
+        "definition": "A number comparing two vectors."
+      },
+      {
+        "term": "u",
+        "definition": "A direction vector of length one."
+      },
+      {
+        "term": "v",
+        "definition": "The vector whose part we want."
+      },
+      {
+        "term": "⟨u,v⟩",
+        "definition": "The inner product: the signed size along u in this real-vector example."
+      },
+      {
+        "term": "||u||",
+        "definition": "The length of u."
+      }
+    ]
+  },
+  "odes": {
+    "idea": "A differential equation gives a rule for change rather than the value directly.",
+    "explanation": "A rate proportional to the amount remaining produces exponential decay when the proportionality stays fixed. A starting value selects one solution. Check both the rate rule and the starting value.",
+    "example": {
+      "title": "A decreasing model amount",
+      "steps": [
+        "Start with 100 units and rate constant 0.2 per second.",
+        "After 5 seconds, the model gives 100e⁻¹ ≈ 36.8 units.",
+        "This is a smooth amount or average, not a fractional count of one particle."
+      ]
+    },
+    "equation": "dN/dt = −kN; N(t) = N₀e^(−kt)",
+    "terms": [
+      {
+        "term": "Differential equation",
+        "definition": "An equation containing rates of change."
+      },
+      {
+        "term": "Exponential decay",
+        "definition": "A decrease by the same fraction over equal time intervals."
+      },
+      {
+        "term": "N(t)",
+        "definition": "The amount at time t."
+      },
+      {
+        "term": "N₀",
+        "definition": "The starting amount."
+      },
+      {
+        "term": "k",
+        "definition": "The positive decay-rate constant, here 0.2 per second."
+      },
+      {
+        "term": "dN/dt",
+        "definition": "The rate of change of the amount."
+      },
+      {
+        "term": "e",
+        "definition": "The exponential base, about 2.718."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "exponential-decay": {
+    "idea": "In exponential decay, equal time intervals leave equal fractions of what was present.",
+    "explanation": "The amount lost gets smaller as less remains. Half-life means the time for half to remain, assuming the decay rate stays fixed. A smooth average does not predict each random event.",
+    "example": {
+      "title": "Two half-lives",
+      "steps": [
+        "A model amount starts at 100 units.",
+        "After one half-life, 50 remain; after a second, 25 remain.",
+        "Each interval halves what is left rather than removing another 50."
+      ]
+    },
+    "equation": "remaining fraction after two half-lives = ½ × ½ = ¼",
+    "terms": [
+      {
+        "term": "Exponential decay",
+        "definition": "A decrease by the same fraction over equal time intervals."
+      },
+      {
+        "term": "Half-life",
+        "definition": "The time for a model amount to fall to half its starting value."
+      }
+    ]
+  },
+  "oscillator-ode": {
+    "idea": "An ideal oscillator accelerates back toward its resting position.",
+    "explanation": "The farther it is displaced, the stronger the acceleration back, in this model. That produces smooth back-and-forth motion without damping or an outside drive. Starting position and velocity choose the particular motion.",
+    "example": {
+      "title": "Starting at one end",
+      "steps": [
+        "Let the angular frequency be 2 radians per second and the starting position be 3 centimetres, with zero starting velocity.",
+        "The motion is x(t) = (3 cm) cos[(2 s⁻¹)t].",
+        "At the start its acceleration is −12 centimetres per second squared, toward the centre."
+      ]
+    },
+    "equation": "x″ = −ω₀²x",
+    "terms": [
+      {
+        "term": "Oscillator",
+        "definition": "A system that moves back and forth."
+      },
+      {
+        "term": "Angular frequency",
+        "definition": "The phase change per second."
+      },
+      {
+        "term": "Damping",
+        "definition": "An effect that reduces motion by transferring energy away."
+      },
+      {
+        "term": "x",
+        "definition": "Position measured from rest."
+      },
+      {
+        "term": "x″",
+        "definition": "Second time derivative of position: acceleration."
+      },
+      {
+        "term": "ω₀",
+        "definition": "Natural angular frequency, here 2 radians per second."
+      },
+      {
+        "term": "cos",
+        "definition": "Cosine: a smooth repeating wave function."
+      },
+      {
+        "term": "Phase",
+        "definition": "Place within a repeating cycle."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  },
+  "driven-ode": {
+    "idea": "A repeated push can sustain motion despite damping.",
+    "explanation": "For a linear oscillator, the long-time amplitude depends on the push frequency and damping. Amplitude means the greatest displacement, not the position right now. Starting-condition effects fade only when the model has positive damping.",
+    "example": {
+      "title": "A steady driven motion",
+      "steps": [
+        "Use natural and drive frequencies of 2 radians per second, damping constant 0.5 per second, and driving acceleration 1 metre per second squared.",
+        "At this matching frequency, the amplitude is 1 ÷ (2 × 0.5 × 2) = 0.5 metres.",
+        "This is the model's settled response."
+      ]
+    },
+    "equation": "A = f₀ / √[(ω₀² − ω²)² + (2βω)²]",
+    "terms": [
+      {
+        "term": "Amplitude",
+        "definition": "Greatest displacement size in a repeating motion."
+      },
+      {
+        "term": "Damping",
+        "definition": "An effect transferring energy out of the motion."
+      },
+      {
+        "term": "Linear oscillator",
+        "definition": "A model with restoring and damping effects proportional to displacement and velocity."
+      },
+      {
+        "term": "A",
+        "definition": "The settled displacement amplitude."
+      },
+      {
+        "term": "f₀",
+        "definition": "Peak driving force divided by mass, here 1 metre per second squared."
+      },
+      {
+        "term": "ω₀ and ω",
+        "definition": "Natural and driving angular frequencies, both 2 radians per second here."
+      },
+      {
+        "term": "β",
+        "definition": "Damping rate, here 0.5 per second; the velocity term in the equation is 2β times velocity."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "coupled-odes": {
+    "idea": "Connected oscillators can move in patterns that keep their relative proportions.",
+    "explanation": "Such a pattern is a normal mode. In a suitable linear motion equation, a restoring matrix maps the pattern to a multiple of itself. A positive multiplier gives the squared angular frequency.",
+    "example": {
+      "title": "Moving together",
+      "steps": [
+        "For K = [[2,−1],[−1,2]]ωₛ², choose the pattern (1,1).",
+        "Multiplication returns ωₛ²(1,1), so both coordinates keep the same relative motion.",
+        "This mode's angular frequency is ωₛ."
+      ]
+    },
+    "equation": "Ku = λu; mode frequency = √λ for r″ = −Kr",
+    "terms": [
+      {
+        "term": "Normal mode",
+        "definition": "A motion pattern that keeps fixed proportions between coordinates."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A table describing how inputs combine."
+      },
+      {
+        "term": "Angular frequency",
+        "definition": "Phase change per second."
+      },
+      {
+        "term": "K",
+        "definition": "The restoring matrix after mass has been accounted for."
+      },
+      {
+        "term": "u",
+        "definition": "The mode’s nonzero displacement pattern."
+      },
+      {
+        "term": "λ",
+        "definition": "The matrix’s multiplying factor for that pattern."
+      },
+      {
+        "term": "r″",
+        "definition": "The acceleration vector of all coordinates."
+      },
+      {
+        "term": "ωₛ",
+        "definition": "The positive angular-frequency scale chosen in this example."
+      },
+      {
+        "term": "Phase",
+        "definition": "Place within a repeating cycle."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      }
+    ]
+  },
+  "fourier": {
+    "idea": "A repeating signal can be built by adding simple waves.",
+    "explanation": "Each wave contributes a particular size and repetition rate. Their sum sets the signal's shape. These mathematical ingredients need not be separate physical objects.",
+    "example": {
+      "title": "Two ingredients in one signal",
+      "steps": [
+        "Add a 1-hertz sine wave to a 3-hertz sine wave with 0.3 times its amplitude.",
+        "The combined signal repeats every second.",
+        "The faster ingredient changes the shape within that second."
+      ]
+    },
+    "equation": "q(t) = sin(2πt/s) + 0.3 sin(6πt/s)",
+    "terms": [
+      {
+        "term": "Hertz",
+        "definition": "Repeats per second."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "The size of a wave's largest departure from zero."
+      },
+      {
+        "term": "Fourier description",
+        "definition": "Describing a signal through its wave ingredients."
+      },
+      {
+        "term": "q(t)",
+        "definition": "Signal value at time t."
+      },
+      {
+        "term": "t/s",
+        "definition": "Elapsed time divided by one second, so the sine input has no unit."
+      },
+      {
+        "term": "sin",
+        "definition": "Sine: a smooth repeating wave function."
+      },
+      {
+        "term": "π",
+        "definition": "A number about 3.1416; one full turn is 2π radians."
+      }
+    ]
+  },
+  "fourier-transform": {
+    "idea": "A Fourier transform describes a signal by its wave ingredients.",
+    "explanation": "Each ingredient is assigned a size and phase instead of listing the signal at each position. At wave number zero, the transform in this convention is simply the signal's total area divided by √(2π). These weights are not automatically probabilities.",
+    "example": {
+      "title": "Transforming a box at zero wave number",
+      "steps": [
+        "A unit-height signal fills the interval from 0 to 2 metres.",
+        "Its area is 2 metres.",
+        "Its transform at zero wave number is 2/√(2π) ≈ 0.798 metres."
+      ]
+    },
+    "equation": "ψ̃(0) = (1/√(2π))∫ψ(x) dx",
+    "terms": [
+      {
+        "term": "Fourier transform",
+        "definition": "A way to describe a signal using wave ingredients."
+      },
+      {
+        "term": "Phase",
+        "definition": "Position within a repeating cycle."
+      },
+      {
+        "term": "Wave number",
+        "definition": "Phase change per unit distance."
+      },
+      {
+        "term": "ψ(x)",
+        "definition": "The signal value at position x."
+      },
+      {
+        "term": "ψ̃(0)",
+        "definition": "Its transform at wave number zero."
+      },
+      {
+        "term": "∫ψ(x) dx",
+        "definition": "The signal’s signed area over all positions."
+      },
+      {
+        "term": "√",
+        "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      },
+      {
+        "term": "π",
+        "definition": "A number about 3.1416; one full turn is 2π radians."
+      },
+      {
+        "term": "≈",
+        "definition": "Approximately equal to."
+      }
+    ]
+  },
+  "probability": {
+    "idea": "For a continuous density, probability comes from an interval's area, not its height alone.",
+    "explanation": "A density spreads probability over possible values. Multiply density by a small interval width and add to find a chance. The total area over all possibilities must be one.",
+    "example": {
+      "title": "A uniform position density",
+      "steps": [
+        "The density is 0.5 per metre between 0 and 2 metres, and zero outside.",
+        "The interval from 0.5 to 1 metre is 0.5 metre wide.",
+        "Its probability is 0.5 × 0.5 = 0.25, or 25%."
+      ]
+    },
+    "equation": "P(0.5 m ≤ x ≤ 1 m) = 0.25",
+    "terms": [
+      {
+        "term": "Probability",
+        "definition": "How likely an outcome is."
+      },
+      {
+        "term": "Density",
+        "definition": "Probability per unit interval for a continuous quantity."
+      },
+      {
+        "term": "P",
+        "definition": "Probability of the event inside the parentheses."
+      },
+      {
+        "term": "x",
+        "definition": "The possible measured position."
+      },
+      {
+        "term": "≤",
+        "definition": "Less than or equal to."
+      }
+    ]
+  },
+  "toolkit-capstone": {
+    "idea": "A motion's position and its rates answer different questions about the same instant.",
+    "explanation": "Position tells where the object is. Velocity is its position's time rate; acceleration is its velocity's time rate. An object can be momentarily still while accelerating toward where it will move next.",
+    "example": {
+      "title": "At the end of an oscillation",
+      "steps": [
+        "For x(t) = (0.02 m) cos[(3 s⁻¹)t], start at t = 0.",
+        "Its position is 0.02 metres and its velocity is zero.",
+        "Its acceleration is −0.18 metres per second squared, directing it back toward the centre."
+      ]
+    },
+    "equation": "a(0) = −(3 s⁻¹)² × 0.02 m = −0.18 m/s²",
+    "terms": [
+      {
+        "term": "Velocity",
+        "definition": "How quickly position changes, including direction."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How quickly velocity changes."
+      },
+      {
+        "term": "x(t)",
+        "definition": "Position at time t."
+      },
+      {
+        "term": "a(0)",
+        "definition": "Acceleration at time zero."
+      },
+      {
+        "term": "cos",
+        "definition": "Cosine: a smooth repeating wave function."
+      },
+      {
+        "term": "s⁻¹",
+        "definition": "Per second."
+      },
+      {
+        "term": "²",
+        "definition": "Multiply the quantity by itself."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1671 @@
+{
+  "version": 1,
+  "note": "Original short preparation lessons. Standard mathematical relationships; no source teaching prose or examples are adapted.",
+  "sources": [
+    {
+      "id": "prealgebra-scope",
+      "title": "OpenStax Prealgebra: scope reference for basic number operations",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/1-introduction"
+    }
+  ],
+  "groups": [
+    {
+      "id": "math-preparation-basics",
+      "course": "math",
+      "title": "Maths for getting started",
+      "showInQuickTools": false,
+      "lessons": [
+        {
+          "id": "prep-fractions",
+          "title": "Read a fraction as equal parts",
+          "moduleId": "math-preparation-basics",
+          "idea": "A fraction names some equal parts of a whole.",
+          "body": [
+            "The bottom number tells how many equal parts make the whole. The top number tells how many parts we choose. Equal-sized parts let us compare amounts fairly."
+          ],
+          "equation": "coloured share = 3 ÷ 4 = 3/4",
+          "equationGuide": {
+            "meaning": "The bottom number tells how many equal parts make the whole. The top number tells how many parts we choose. Equal-sized parts let us compare amounts fairly.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Three parts of one sheet",
+            "steps": [
+              "Fold a sheet into 4 equal parts.",
+              "Colour 3 of those parts. The coloured share is 3/4."
+            ]
+          },
+          "terms": "Fraction: A number written as one number divided by another. Numerator: The top number: the chosen parts in this example. Denominator: The bottom number: equal parts in the whole in this example.",
+          "glossary": [
+            {
+              "term": "Fraction",
+              "definition": "A number written as one number divided by another."
+            },
+            {
+              "term": "Numerator",
+              "definition": "The top number: the chosen parts in this example."
+            },
+            {
+              "term": "Denominator",
+              "definition": "The bottom number: equal parts in the whole in this example."
+            }
+          ],
+          "limits": "The denominator cannot be zero. This first example uses parts of one whole; fractions can also be greater than one.",
+          "focus": {
+            "idea": "A fraction names some equal parts of a whole.",
+            "explanation": "The bottom number tells how many equal parts make the whole. The top number tells how many parts we choose. Equal-sized parts let us compare amounts fairly.",
+            "equation": "coloured share = 3 ÷ 4 = 3/4",
+            "example": {
+              "title": "Three parts of one sheet",
+              "steps": [
+                "Fold a sheet into 4 equal parts.",
+                "Colour 3 of those parts. The coloured share is 3/4."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Fraction",
+                "definition": "A number written as one number divided by another."
+              },
+              {
+                "term": "Numerator",
+                "definition": "The top number: the chosen parts in this example."
+              },
+              {
+                "term": "Denominator",
+                "definition": "The bottom number: equal parts in the whole in this example."
+              }
+            ]
+          },
+          "prerequisiteIds": [],
+          "check": {
+            "prompt": "A ribbon has 5 equal pieces. You keep 2. Which fraction is yours?",
+            "options": [
+              "2/5",
+              "5/2",
+              "2/7"
+            ],
+            "answer": 0,
+            "explanations": [
+              "Yes. You kept 2 of the 5 equal pieces.",
+              "The whole has 5 pieces, so 5 belongs on the bottom.",
+              "Use the original 5 pieces as the whole."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "A shape has 8 equal parts and 3 are shaded. In 3/8, what is the denominator?",
+            "answer": "The denominator is 8: the number of equal parts in the whole."
+          },
+          "practice": {
+            "prompt": "A shape has 8 equal parts and 3 are shaded. In 3/8, what is the denominator?",
+            "parts": [
+              {
+                "label": "Denominator",
+                "answer": 8,
+                "tolerance": 1e-08,
+                "unit": "unit-free",
+                "feedback": "The denominator is 8: the number of equal parts in the whole."
+              }
+            ],
+            "reasoning": "The denominator is 8: the number of equal parts in the whole."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Read a fraction as equal parts",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "A fraction names some equal parts of a whole."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-decimals",
+          "title": "Read hundredths in a decimal",
+          "moduleId": "math-preparation-basics",
+          "idea": "A decimal can name parts smaller than one.",
+          "body": [
+            "The first place after the decimal point counts tenths. The next counts hundredths. One hundredth is one of 100 equal parts of one."
+          ],
+          "equation": "0.25 = 25/100",
+          "equationGuide": {
+            "meaning": "The first place after the decimal point counts tenths. The next counts hundredths. One hundredth is one of 100 equal parts of one.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Twenty-five small squares",
+            "steps": [
+              "Divide one square into 100 equal small squares.",
+              "Shade 25 of them. The shaded share is 25/100, written 0.25."
+            ]
+          },
+          "terms": "Decimal point: The mark separating whole units from tenths and smaller parts. Hundredth: One of 100 equal parts of one.",
+          "glossary": [
+            {
+              "term": "Decimal point",
+              "definition": "The mark separating whole units from tenths and smaller parts."
+            },
+            {
+              "term": "Hundredth",
+              "definition": "One of 100 equal parts of one."
+            }
+          ],
+          "limits": "The place-value rule applies to decimal numbers. Keep the measurement unit when the number describes a quantity.",
+          "focus": {
+            "idea": "A decimal can name parts smaller than one.",
+            "explanation": "The first place after the decimal point counts tenths. The next counts hundredths. One hundredth is one of 100 equal parts of one.",
+            "equation": "0.25 = 25/100",
+            "example": {
+              "title": "Twenty-five small squares",
+              "steps": [
+                "Divide one square into 100 equal small squares.",
+                "Shade 25 of them. The shaded share is 25/100, written 0.25."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Decimal point",
+                "definition": "The mark separating whole units from tenths and smaller parts."
+              },
+              {
+                "term": "Hundredth",
+                "definition": "One of 100 equal parts of one."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-fractions"
+          ],
+          "check": {
+            "prompt": "How many hundredths are in 0.07?",
+            "options": [
+              "7",
+              "70",
+              "700"
+            ],
+            "answer": 0,
+            "explanations": [
+              "Yes. The 7 is in the hundredths place.",
+              "Seven tenths is 0.7. Here the tenths place is zero.",
+              "0.07 is smaller than one; it contains 7 hundredths."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "How many hundredths are in 0.30?",
+            "answer": "0.30 = 30/100, so it contains 30 hundredths."
+          },
+          "practice": {
+            "prompt": "How many hundredths are in 0.30?",
+            "parts": [
+              {
+                "label": "Hundredths",
+                "answer": 30,
+                "tolerance": 1e-08,
+                "unit": "hundredths",
+                "feedback": "0.30 = 30/100, so it contains 30 hundredths."
+              }
+            ],
+            "reasoning": "0.30 = 30/100, so it contains 30 hundredths."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Read hundredths in a decimal",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "A decimal can name parts smaller than one."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-negative-numbers",
+          "title": "Move along a number line",
+          "moduleId": "math-preparation-basics",
+          "idea": "Adding a positive number moves you right along the number line.",
+          "body": [
+            "Negative numbers are to the left of zero. Start at the first number, then count right when you add a positive amount. You may reach zero or pass it."
+          ],
+          "equation": "−3 + 2 = −1",
+          "equationGuide": {
+            "meaning": "Negative numbers are to the left of zero. Start at the first number, then count right when you add a positive amount. You may reach zero or pass it.",
+            "symbols": []
+          },
+          "example": {
+            "title": "A warmer temperature",
+            "steps": [
+              "A thermometer reads −3 °C.",
+              "It warms by 2 degrees: count right from −3 to −2, then to −1.",
+              "The new reading is −1 °C."
+            ]
+          },
+          "terms": "Negative number: A number less than zero. Number line: A line where numbers increase as you move right.",
+          "glossary": [
+            {
+              "term": "Negative number",
+              "definition": "A number less than zero."
+            },
+            {
+              "term": "Number line",
+              "definition": "A line where numbers increase as you move right."
+            }
+          ],
+          "limits": "This lesson adds a positive amount. A negative Celsius reading does not mean a negative absolute temperature.",
+          "focus": {
+            "idea": "Adding a positive number moves you right along the number line.",
+            "explanation": "Negative numbers are to the left of zero. Start at the first number, then count right when you add a positive amount. You may reach zero or pass it.",
+            "equation": "−3 + 2 = −1",
+            "example": {
+              "title": "A warmer temperature",
+              "steps": [
+                "A thermometer reads −3 °C.",
+                "It warms by 2 degrees: count right from −3 to −2, then to −1.",
+                "The new reading is −1 °C."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Negative number",
+                "definition": "A number less than zero."
+              },
+              {
+                "term": "Number line",
+                "definition": "A line where numbers increase as you move right."
+              }
+            ]
+          },
+          "prerequisiteIds": [],
+          "check": {
+            "prompt": "Start at −2 and add 3. Where do you finish?",
+            "options": [
+              "−5",
+              "1",
+              "5"
+            ],
+            "answer": 1,
+            "explanations": [
+              "Adding a positive amount moves right, toward larger numbers.",
+              "Yes. Three steps right from −2 end at 1.",
+              "Count the three steps: −1, 0, 1."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "A reading starts at −4 °C and rises by 7 degrees. Find the new reading.",
+            "answer": "−4 + 7 = 3 °C."
+          },
+          "practice": {
+            "prompt": "A reading starts at −4 °C and rises by 7 degrees. Find the new reading.",
+            "parts": [
+              {
+                "label": "New temperature",
+                "answer": 3,
+                "tolerance": 1e-08,
+                "unit": "°C",
+                "feedback": "−4 + 7 = 3 °C."
+              }
+            ],
+            "reasoning": "−4 + 7 = 3 °C."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Move along a number line",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "Adding a positive number moves you right along the number line."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-percent",
+          "title": "Read percent as out of a hundred",
+          "moduleId": "math-preparation-basics",
+          "idea": "Percent means out of a hundred.",
+          "body": [
+            "Divide a percentage by 100 to write it as a decimal. Multiply that decimal by the whole amount to find the chosen part."
+          ],
+          "equation": "20% of 50 = (20/100) × 50 = 10",
+          "equationGuide": {
+            "meaning": "Divide a percentage by 100 to write it as a decimal. Multiply that decimal by the whole amount to find the chosen part.",
+            "symbols": []
+          },
+          "example": {
+            "title": "A share of 50 counters",
+            "steps": [
+              "You want 20% of a group of 50 counters.",
+              "20% is 0.20, so the share is 0.20 × 50 = 10 counters."
+            ]
+          },
+          "terms": "Percent (%): An amount out of 100. Whole amount: The full amount from which a share is taken.",
+          "glossary": [
+            {
+              "term": "Percent (%)",
+              "definition": "An amount out of 100."
+            },
+            {
+              "term": "Whole amount",
+              "definition": "The full amount from which a share is taken."
+            }
+          ],
+          "limits": "The percentage must refer to a stated whole. A percentage change and a change in percentage points are different questions.",
+          "focus": {
+            "idea": "Percent means out of a hundred.",
+            "explanation": "Divide a percentage by 100 to write it as a decimal. Multiply that decimal by the whole amount to find the chosen part.",
+            "equation": "20% of 50 = (20/100) × 50 = 10",
+            "example": {
+              "title": "A share of 50 counters",
+              "steps": [
+                "You want 20% of a group of 50 counters.",
+                "20% is 0.20, so the share is 0.20 × 50 = 10 counters."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Percent (%)",
+                "definition": "An amount out of 100."
+              },
+              {
+                "term": "Whole amount",
+                "definition": "The full amount from which a share is taken."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-decimals"
+          ],
+          "check": {
+            "prompt": "Which decimal equals 5%?",
+            "options": [
+              "5",
+              "0.5",
+              "0.05"
+            ],
+            "answer": 2,
+            "explanations": [
+              "Divide the percentage by 100.",
+              "0.5 is 50 out of 100.",
+              "Yes. 5/100 = 0.05."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "Find 30% of 80 counters.",
+            "answer": "30/100 × 80 = 0.30 × 80 = 24 counters."
+          },
+          "practice": {
+            "prompt": "Find 30% of 80 counters.",
+            "parts": [
+              {
+                "label": "Number of counters",
+                "answer": 24,
+                "tolerance": 1e-08,
+                "unit": "counters",
+                "feedback": "30/100 × 80 = 0.30 × 80 = 24 counters."
+              }
+            ],
+            "reasoning": "30/100 × 80 = 0.30 × 80 = 24 counters."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Read percent as out of a hundred",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "Percent means out of a hundred."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-brackets",
+          "title": "Work inside brackets first",
+          "moduleId": "math-preparation-basics",
+          "idea": "Brackets tell you which calculation belongs together.",
+          "body": [
+            "Complete the calculation inside a pair of brackets before using its result outside. This keeps the intended grouping clear."
+          ],
+          "equation": "2 × (3 + 4) = 2 × 7 = 14",
+          "equationGuide": {
+            "meaning": "Complete the calculation inside a pair of brackets before using its result outside. This keeps the intended grouping clear.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Two matching bags",
+            "steps": [
+              "Each bag has 3 red counters and 4 blue counters. There are 2 bags.",
+              "One bag contains 3 + 4 = 7 counters.",
+              "The two bags contain 2 × 7 = 14 counters."
+            ]
+          },
+          "terms": "Brackets ( ): Marks that group a part of a calculation.",
+          "glossary": [
+            {
+              "term": "Brackets ( )",
+              "definition": "Marks that group a part of a calculation."
+            }
+          ],
+          "limits": "Work from inner brackets outward when brackets are nested. Outside brackets, powers come before multiplication/division, then addition/subtraction.",
+          "focus": {
+            "idea": "Brackets tell you which calculation belongs together.",
+            "explanation": "Complete the calculation inside a pair of brackets before using its result outside. This keeps the intended grouping clear.",
+            "equation": "2 × (3 + 4) = 2 × 7 = 14",
+            "example": {
+              "title": "Two matching bags",
+              "steps": [
+                "Each bag has 3 red counters and 4 blue counters. There are 2 bags.",
+                "One bag contains 3 + 4 = 7 counters.",
+                "The two bags contain 2 × 7 = 14 counters."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Brackets ( )",
+                "definition": "Marks that group a part of a calculation."
+              }
+            ]
+          },
+          "prerequisiteIds": [],
+          "check": {
+            "prompt": "In 3 × (2 + 5), what should you calculate first?",
+            "options": [
+              "3 × 2",
+              "2 + 5",
+              "3 + 5"
+            ],
+            "answer": 1,
+            "explanations": [
+              "First finish the grouped calculation inside the brackets.",
+              "Yes. The brackets group 2 + 5.",
+              "The expression asks for multiplication outside the brackets."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "Calculate 3 × (2 + 4).",
+            "answer": "First 2 + 4 = 6. Then 3 × 6 = 18."
+          },
+          "practice": {
+            "prompt": "Calculate 3 × (2 + 4).",
+            "parts": [
+              {
+                "label": "Result",
+                "answer": 18,
+                "tolerance": 1e-08,
+                "unit": "unit-free",
+                "feedback": "First 2 + 4 = 6. Then 3 × 6 = 18."
+              }
+            ],
+            "reasoning": "First 2 + 4 = 6. Then 3 × 6 = 18."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Work inside brackets first",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "Brackets tell you which calculation belongs together."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-powers",
+          "title": "Read a power as repeated multiplication",
+          "moduleId": "math-preparation-basics",
+          "idea": "A power such as 3² tells you how many matching numbers to multiply.",
+          "body": [
+            "In 3², the small 2 tells us to multiply two 3s. It counts copies of 3 in the multiplication."
+          ],
+          "equation": "3² = 3 × 3 = 9",
+          "equationGuide": {
+            "meaning": "In 3², the small 2 tells us to multiply two 3s. It counts copies of 3 in the multiplication.",
+            "symbols": []
+          },
+          "example": {
+            "title": "A square of counters",
+            "steps": [
+              "Arrange 3 rows with 3 counters in each row.",
+              "There are 3 × 3 = 9 counters. We can write this as 3²."
+            ]
+          },
+          "terms": "Base: The number being multiplied. Exponent: The small raised number that tells how many factors to use here. Squared: Raised to the power 2.",
+          "glossary": [
+            {
+              "term": "Base",
+              "definition": "The number being multiplied."
+            },
+            {
+              "term": "Exponent",
+              "definition": "The small raised number that tells how many factors to use here."
+            },
+            {
+              "term": "Squared",
+              "definition": "Raised to the power 2."
+            }
+          ],
+          "limits": "This first rule describes positive whole-number exponents. Zero, negative and fractional exponents need their own definitions.",
+          "focus": {
+            "idea": "A power such as 3² tells you how many matching numbers to multiply.",
+            "explanation": "In 3², the small 2 tells us to multiply two 3s. It counts copies of 3 in the multiplication.",
+            "equation": "3² = 3 × 3 = 9",
+            "example": {
+              "title": "A square of counters",
+              "steps": [
+                "Arrange 3 rows with 3 counters in each row.",
+                "There are 3 × 3 = 9 counters. We can write this as 3²."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Base",
+                "definition": "The number being multiplied."
+              },
+              {
+                "term": "Exponent",
+                "definition": "The small raised number that tells how many factors to use here."
+              },
+              {
+                "term": "Squared",
+                "definition": "Raised to the power 2."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-brackets"
+          ],
+          "check": {
+            "prompt": "What does 2³ mean?",
+            "options": [
+              "2 + 3",
+              "2 × 3",
+              "2 × 2 × 2"
+            ],
+            "answer": 2,
+            "explanations": [
+              "A power uses repeated multiplication.",
+              "The exponent counts the number of factors.",
+              "Yes. There are three factors, each equal to 2."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "Calculate 4³.",
+            "answer": "4³ = 4 × 4 × 4 = 64."
+          },
+          "practice": {
+            "prompt": "Calculate 4³.",
+            "parts": [
+              {
+                "label": "Result",
+                "answer": 64,
+                "tolerance": 1e-08,
+                "unit": "unit-free",
+                "feedback": "4³ = 4 × 4 × 4 = 64."
+              }
+            ],
+            "reasoning": "4³ = 4 × 4 × 4 = 64."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Read a power as repeated multiplication",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "A positive whole-number power tells how many matching factors to multiply."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-square-roots",
+          "title": "Undo a square",
+          "moduleId": "math-preparation-basics",
+          "idea": "The square-root sign asks for a number, zero or above, whose square gives the input.",
+          "body": [
+            "Squaring multiplies a number by itself. Taking the square root reverses that step when the number is zero or above."
+          ],
+          "equation": "√36 = 6 because 6² = 36",
+          "equationGuide": {
+            "meaning": "Squaring multiplies a number by itself. Taking the square root reverses that step when the number is zero or above.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Find a square’s side",
+            "steps": [
+              "A square has an area of 36 square centimetres.",
+              "Its side is √36 = 6 centimetres, because 6 × 6 = 36."
+            ]
+          },
+          "terms": "Square root (√): The nonnegative number that squares to the input. Nonnegative: Zero or greater.",
+          "glossary": [
+            {
+              "term": "Square root (√)",
+              "definition": "The nonnegative number that squares to the input."
+            },
+            {
+              "term": "Nonnegative",
+              "definition": "Zero or greater."
+            }
+          ],
+          "limits": "This lesson uses real square roots of nonnegative inputs. An equation such as x² = 36 also has a negative solution; the symbol √36 itself names the nonnegative root.",
+          "focus": {
+            "idea": "The square-root sign asks for a number, zero or above, whose square gives the input.",
+            "explanation": "Squaring multiplies a number by itself. Taking the square root reverses that step when the number is zero or above.",
+            "equation": "√36 = 6 because 6² = 36",
+            "example": {
+              "title": "Find a square’s side",
+              "steps": [
+                "A square has an area of 36 square centimetres.",
+                "Its side is √36 = 6 centimetres, because 6 × 6 = 36."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Square root (√)",
+                "definition": "The nonnegative number that squares to the input."
+              },
+              {
+                "term": "Nonnegative",
+                "definition": "Zero or greater."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-powers"
+          ],
+          "check": {
+            "prompt": "What is √16?",
+            "options": [
+              "4",
+              "8",
+              "−4"
+            ],
+            "answer": 0,
+            "explanations": [
+              "Yes. 4 × 4 = 16, and 4 is nonnegative.",
+              "8 × 8 is 64.",
+              "The square-root symbol selects the nonnegative value."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "Find √49.",
+            "answer": "7 × 7 = 49, so √49 = 7."
+          },
+          "practice": {
+            "prompt": "Find √49.",
+            "parts": [
+              {
+                "label": "Square root",
+                "answer": 7,
+                "tolerance": 1e-08,
+                "unit": "unit-free",
+                "feedback": "7 × 7 = 49, so √49 = 7."
+              }
+            ],
+            "reasoning": "7 × 7 = 49, so √49 = 7."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Undo a square",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "The square-root sign asks for the nonnegative number whose square gives the input."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-reciprocals",
+          "title": "Find the number that multiplies to one",
+          "moduleId": "math-preparation-basics",
+          "idea": "A number’s reciprocal multiplies with it to make one.",
+          "body": [
+            "For a nonzero number, divide one by that number. This is useful when a rule asks you to divide by a quantity."
+          ],
+          "equation": "reciprocal of 4 = 1/4 = 0.25",
+          "equationGuide": {
+            "meaning": "For a nonzero number, divide one by that number. This is useful when a rule asks you to divide by a quantity.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Undo a factor of four",
+            "steps": [
+              "Start with the number 4. Its reciprocal is 1 ÷ 4 = 0.25.",
+              "Check it: 4 × 0.25 = 1."
+            ]
+          },
+          "terms": "Reciprocal: One divided by a nonzero number.",
+          "glossary": [
+            {
+              "term": "Reciprocal",
+              "definition": "One divided by a nonzero number."
+            }
+          ],
+          "limits": "Zero has no reciprocal. For a measured quantity, its reciprocal has the inverse unit, such as 1/s.",
+          "focus": {
+            "idea": "A number’s reciprocal multiplies with it to make one.",
+            "explanation": "For a nonzero number, divide one by that number. This is useful when a rule asks you to divide by a quantity.",
+            "equation": "reciprocal of 4 = 1/4 = 0.25",
+            "example": {
+              "title": "Undo a factor of four",
+              "steps": [
+                "Start with the number 4. Its reciprocal is 1 ÷ 4 = 0.25.",
+                "Check it: 4 × 0.25 = 1."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Reciprocal",
+                "definition": "One divided by a nonzero number."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-fractions",
+            "math/prep-decimals"
+          ],
+          "check": {
+            "prompt": "Which number is the reciprocal of 2?",
+            "options": [
+              "0.5",
+              "−2",
+              "2"
+            ],
+            "answer": 0,
+            "explanations": [
+              "Yes. 2 × 0.5 = 1.",
+              "Changing the sign does not undo multiplication.",
+              "2 × 2 = 4, not 1."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "Find the reciprocal of 0.2.",
+            "answer": "1 ÷ 0.2 = 5. Check: 0.2 × 5 = 1."
+          },
+          "practice": {
+            "prompt": "Find the reciprocal of 0.2.",
+            "parts": [
+              {
+                "label": "Reciprocal",
+                "answer": 5,
+                "tolerance": 1e-08,
+                "unit": "unit-free",
+                "feedback": "1 ÷ 0.2 = 5. Check: 0.2 × 5 = 1."
+              }
+            ],
+            "reasoning": "1 ÷ 0.2 = 5. Check: 0.2 × 5 = 1."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Find the number that multiplies to one",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "A number’s reciprocal multiplies with it to make one."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-substitution",
+          "title": "Put a known value in place of a letter",
+          "moduleId": "math-preparation-basics",
+          "idea": "Put a known value in place of its letter to use a rule.",
+          "body": [
+            "When a value is given, put it in place of its letter. Keep the operations in the rule, including brackets."
+          ],
+          "equation": "T = 2 × n; n = 3 → T = 2 × 3 = 6",
+          "equationGuide": {
+            "meaning": "When a value is given, put it in place of its letter. Keep the operations in the rule, including brackets.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Three tickets",
+            "steps": [
+              "Each ticket costs 2 coins. T is total cost and n is the number of tickets.",
+              "For 3 tickets, put 3 in place of n: T = 2 × 3.",
+              "The total cost is 6 coins."
+            ]
+          },
+          "terms": "Substitute: Put a given value in place of a letter. T: The total number of coins in this example. n: The number of tickets in this example.",
+          "glossary": [
+            {
+              "term": "Substitute",
+              "definition": "Put a given value in place of a letter."
+            },
+            {
+              "term": "T",
+              "definition": "The total number of coins in this example."
+            },
+            {
+              "term": "n",
+              "definition": "The number of tickets in this example."
+            }
+          ],
+          "limits": "Use values and units that fit the rule. A letter can mean different quantities in different lessons, so read its definition.",
+          "focus": {
+            "idea": "Put a known value in place of its letter to use a rule.",
+            "explanation": "When a value is given, put it in place of its letter. Keep the operations in the rule, including brackets.",
+            "equation": "T = 2 × n; n = 3 → T = 2 × 3 = 6",
+            "example": {
+              "title": "Three tickets",
+              "steps": [
+                "Each ticket costs 2 coins. T is total cost and n is the number of tickets.",
+                "For 3 tickets, put 3 in place of n: T = 2 × 3.",
+                "The total cost is 6 coins."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Substitute",
+                "definition": "Put a given value in place of a letter."
+              },
+              {
+                "term": "T",
+                "definition": "The total number of coins in this example."
+              },
+              {
+                "term": "n",
+                "definition": "The number of tickets in this example."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-brackets"
+          ],
+          "check": {
+            "prompt": "In y = 3 × x, use x = 2. What is y?",
+            "options": [
+              "5",
+              "6",
+              "32"
+            ],
+            "answer": 1,
+            "explanations": [
+              "The rule asks for multiplication.",
+              "Yes. 3 × 2 = 6.",
+              "Keep the multiplication sign when replacing x."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "Tickets cost 4 coins each. Use T = 4 × n with n = 5. Find T.",
+            "answer": "T = 4 × 5 = 20 coins."
+          },
+          "practice": {
+            "prompt": "Tickets cost 4 coins each. Use T = 4 × n with n = 5. Find T.",
+            "parts": [
+              {
+                "label": "Total cost",
+                "answer": 20,
+                "tolerance": 1e-08,
+                "unit": "coins",
+                "feedback": "T = 4 × 5 = 20 coins."
+              }
+            ],
+            "reasoning": "T = 4 × 5 = 20 coins."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Put a known value in place of a letter",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "A letter can stand for a value you know or want to find."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-functions",
+          "title": "Read a function as an input rule",
+          "moduleId": "math-preparation-basics",
+          "idea": "A function gives one output for each allowed input.",
+          "body": [
+            "The notation f(x) names the output of rule f for input x. Follow the rule to calculate that output."
+          ],
+          "equation": "f(x) = 2x + 1; f(3) = 2 × 3 + 1 = 7",
+          "equationGuide": {
+            "meaning": "The notation f(x) names the output of rule f for input x. Follow the rule to calculate that output.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Put three into the rule",
+            "steps": [
+              "The rule doubles the input, then adds 1.",
+              "For input 3, doubling gives 6. Adding 1 gives output 7."
+            ]
+          },
+          "terms": "Function: A rule assigning one output to each allowed input. Input: The value you put into the rule. Output: The value the rule gives back.",
+          "glossary": [
+            {
+              "term": "Function",
+              "definition": "A rule assigning one output to each allowed input."
+            },
+            {
+              "term": "Input",
+              "definition": "The value you put into the rule."
+            },
+            {
+              "term": "Output",
+              "definition": "The value the rule gives back."
+            }
+          ],
+          "limits": "Some rules allow only certain inputs. For example, a denominator must not be zero. The domain is the set of allowed inputs.",
+          "focus": {
+            "idea": "A function gives one output for each allowed input.",
+            "explanation": "The notation f(x) names the output of rule f for input x. Follow the rule to calculate that output.",
+            "equation": "f(x) = 2x + 1; f(3) = 2 × 3 + 1 = 7",
+            "example": {
+              "title": "Put three into the rule",
+              "steps": [
+                "The rule doubles the input, then adds 1.",
+                "For input 3, doubling gives 6. Adding 1 gives output 7."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Function",
+                "definition": "A rule assigning one output to each allowed input."
+              },
+              {
+                "term": "Input",
+                "definition": "The value you put into the rule."
+              },
+              {
+                "term": "Output",
+                "definition": "The value the rule gives back."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-substitution"
+          ],
+          "check": {
+            "prompt": "For f(x) = x + 4, what does f(2) ask you to do?",
+            "options": [
+              "Multiply f by 2",
+              "Put 2 in place of x",
+              "Add f to x"
+            ],
+            "answer": 1,
+            "explanations": [
+              "Here f names the rule.",
+              "Yes. The output is 2 + 4 = 6.",
+              "Use the stated input in the rule."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "For f(x) = 2x + 1, find f(5).",
+            "answer": "f(5) = 2 × 5 + 1 = 11."
+          },
+          "practice": {
+            "prompt": "For f(x) = 2x + 1, find f(5).",
+            "parts": [
+              {
+                "label": "Output",
+                "answer": 11,
+                "tolerance": 1e-08,
+                "unit": "unit-free",
+                "feedback": "f(5) = 2 × 5 + 1 = 11."
+              }
+            ],
+            "reasoning": "f(5) = 2 × 5 + 1 = 11."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Read a function as an input rule",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "A function gives one output for each allowed input."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-proportions",
+          "title": "Keep a fixed multiplier",
+          "moduleId": "math-preparation-basics",
+          "idea": "Two quantities are proportional when one is a fixed multiple of the other.",
+          "body": [
+            "If the multiplier stays fixed, doubling the input doubles the output. The relationship must pass through zero: no input gives no output."
+          ],
+          "equation": "cost = 3 × number of tickets",
+          "equationGuide": {
+            "meaning": "If the multiplier stays fixed, doubling the input doubles the output. The relationship must pass through zero: no input gives no output.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Buy twice as many tickets",
+            "steps": [
+              "Tickets cost 3 coins each. Three tickets cost 9 coins.",
+              "Buying 6 tickets doubles the number of tickets, so the cost doubles to 18 coins."
+            ]
+          },
+          "terms": "Proportional: Related by a fixed multiplier. Multiplier: The number used in a multiplication.",
+          "glossary": [
+            {
+              "term": "Proportional",
+              "definition": "Related by a fixed multiplier."
+            },
+            {
+              "term": "Multiplier",
+              "definition": "The number used in a multiplication."
+            }
+          ],
+          "limits": "The ticket rule assumes a fixed price with no extra fee or discount. A rule with an added fixed amount is not direct proportionality.",
+          "focus": {
+            "idea": "Two quantities are proportional when one is a fixed multiple of the other.",
+            "explanation": "If the multiplier stays fixed, doubling the input doubles the output. The relationship must pass through zero: no input gives no output.",
+            "equation": "cost = 3 × number of tickets",
+            "example": {
+              "title": "Buy twice as many tickets",
+              "steps": [
+                "Tickets cost 3 coins each. Three tickets cost 9 coins.",
+                "Buying 6 tickets doubles the number of tickets, so the cost doubles to 18 coins."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Proportional",
+                "definition": "Related by a fixed multiplier."
+              },
+              {
+                "term": "Multiplier",
+                "definition": "The number used in a multiplication."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-substitution"
+          ],
+          "check": {
+            "prompt": "If y = 4x, what happens to y when x doubles?",
+            "options": [
+              "It doubles",
+              "It increases by 4",
+              "It stays fixed"
+            ],
+            "answer": 0,
+            "explanations": [
+              "Yes. The same multiplier 4 still applies.",
+              "That would describe adding 1 to x.",
+              "The output changes with the input."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "At a fixed price of 4 coins each, what do 5 tickets cost?",
+            "answer": "4 × 5 = 20 coins, with no extra fee."
+          },
+          "practice": {
+            "prompt": "At a fixed price of 4 coins each, what do 5 tickets cost?",
+            "parts": [
+              {
+                "label": "Cost",
+                "answer": 20,
+                "tolerance": 1e-08,
+                "unit": "coins",
+                "feedback": "4 × 5 = 20 coins, with no extra fee."
+              }
+            ],
+            "reasoning": "4 × 5 = 20 coins, with no extra fee."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Keep a fixed multiplier",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "Two quantities are proportional when one is a fixed multiple of the other."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-exponentials",
+          "title": "Repeat the same multiplying step",
+          "moduleId": "math-preparation-basics",
+          "idea": "Exponential growth multiplies by the same factor each step.",
+          "body": [
+            "The extra amount gets bigger when the starting amount gets bigger. Count how many multiplying steps occur, then use that count as the exponent."
+          ],
+          "equation": "amount = 5 × 2³ = 40",
+          "equationGuide": {
+            "meaning": "The extra amount gets bigger when the starting amount gets bigger. Count how many multiplying steps occur, then use that count as the exponent.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Three rounds of doubling",
+            "steps": [
+              "A game starts with 5 counters and doubles them each round.",
+              "After 3 rounds, the amount is 5 × 2 × 2 × 2 = 40 counters."
+            ]
+          },
+          "terms": "Exponential growth: Growth using the same multiplier for each equal step. Factor: A number being multiplied.",
+          "glossary": [
+            {
+              "term": "Exponential growth",
+              "definition": "Growth using the same multiplier for each equal step."
+            },
+            {
+              "term": "Factor",
+              "definition": "A number being multiplied."
+            }
+          ],
+          "limits": "This example uses whole rounds with an exactly fixed factor. A real population cannot be assumed to double forever.",
+          "focus": {
+            "idea": "Exponential growth multiplies by the same factor each step.",
+            "explanation": "The extra amount gets bigger when the starting amount gets bigger. Count how many multiplying steps occur, then use that count as the exponent.",
+            "equation": "amount = 5 × 2³ = 40",
+            "example": {
+              "title": "Three rounds of doubling",
+              "steps": [
+                "A game starts with 5 counters and doubles them each round.",
+                "After 3 rounds, the amount is 5 × 2 × 2 × 2 = 40 counters."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Exponential growth",
+                "definition": "Growth using the same multiplier for each equal step."
+              },
+              {
+                "term": "Factor",
+                "definition": "A number being multiplied."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-powers"
+          ],
+          "check": {
+            "prompt": "Which rule describes repeated doubling?",
+            "options": [
+              "Add 2 each round",
+              "Multiply by 2 each round",
+              "Square the amount each round"
+            ],
+            "answer": 1,
+            "explanations": [
+              "Repeated addition gives a different growth rule.",
+              "Yes. Each round uses the same multiplier 2.",
+              "Squaring changes the multiplier when the amount changes."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "Start with 3 counters and double them for 4 rounds. How many counters result?",
+            "answer": "3 × 2⁴ = 3 × 16 = 48 counters."
+          },
+          "practice": {
+            "prompt": "Start with 3 counters and double them for 4 rounds. How many counters result?",
+            "parts": [
+              {
+                "label": "Counters",
+                "answer": 48,
+                "tolerance": 1e-08,
+                "unit": "counters",
+                "feedback": "3 × 2⁴ = 3 × 16 = 48 counters."
+              }
+            ],
+            "reasoning": "3 × 2⁴ = 3 × 16 = 48 counters."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Repeat the same multiplying step",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "Exponential growth multiplies by the same factor each step."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-logarithms",
+          "title": "Ask which power makes the number",
+          "moduleId": "math-preparation-basics",
+          "idea": "A logarithm asks which exponent produces a number.",
+          "body": [
+            "The small number beside log names the base. Ask which power of that base gives the number inside the brackets."
+          ],
+          "equation": "log₂(8) = 3 because 2³ = 8",
+          "equationGuide": {
+            "meaning": "The small number beside log names the base. Ask which power of that base gives the number inside the brackets.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Find the missing power",
+            "steps": [
+              "Ask: 2 raised to which power gives 8?",
+              "Since 2 × 2 × 2 = 8, the answer is 3. We write log₂(8) = 3."
+            ]
+          },
+          "terms": "Logarithm (log): The exponent needed for a chosen base to give a number. Base: The number raised to a power. e: A fixed mathematical number, about 2.718. ln: A logarithm with base e.",
+          "glossary": [
+            {
+              "term": "Logarithm (log)",
+              "definition": "The exponent needed for a chosen base to give a number."
+            },
+            {
+              "term": "Base",
+              "definition": "The number raised to a power."
+            },
+            {
+              "term": "e",
+              "definition": "A fixed mathematical number, about 2.718."
+            },
+            {
+              "term": "ln",
+              "definition": "A logarithm with base e."
+            }
+          ],
+          "limits": "A real logarithm needs a positive input and a positive base other than 1. Physics uses logarithms of unit-free ratios; first compare a measured quantity with a reference of the same unit.",
+          "focus": {
+            "idea": "A logarithm asks which exponent produces a number.",
+            "explanation": "The small number beside log names the base. Ask which power of that base gives the number inside the brackets.",
+            "equation": "log₂(8) = 3 because 2³ = 8",
+            "example": {
+              "title": "Find the missing power",
+              "steps": [
+                "Ask: 2 raised to which power gives 8?",
+                "Since 2 × 2 × 2 = 8, the answer is 3. We write log₂(8) = 3."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Logarithm (log)",
+                "definition": "The exponent needed for a chosen base to give a number."
+              },
+              {
+                "term": "Base",
+                "definition": "The number raised to a power."
+              },
+              {
+                "term": "e",
+                "definition": "A fixed mathematical number, about 2.718."
+              },
+              {
+                "term": "ln",
+                "definition": "A logarithm with base e."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-exponentials"
+          ],
+          "check": {
+            "prompt": "What is log₂(16)?",
+            "options": [
+              "2",
+              "4",
+              "8"
+            ],
+            "answer": 1,
+            "explanations": [
+              "2² gives 4. Count the factors needed to get 16.",
+              "Yes. 2⁴ = 16.",
+              "2⁸ is much larger than 16."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "Find log₁₀(1000).",
+            "answer": "10³ = 1000, so log₁₀(1000) = 3."
+          },
+          "practice": {
+            "prompt": "Find log₁₀(1000).",
+            "parts": [
+              {
+                "label": "Exponent",
+                "answer": 3,
+                "tolerance": 1e-08,
+                "unit": "unit-free",
+                "feedback": "10³ = 1000, so log₁₀(1000) = 3."
+              }
+            ],
+            "reasoning": "10³ = 1000, so log₁₀(1000) = 3."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Ask which power makes the number",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "A logarithm asks which exponent produces a number."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-subscripts",
+          "title": "Use small numbers as labels",
+          "moduleId": "math-preparation-basics",
+          "idea": "A subscript can tell you which entry or reading a symbol names.",
+          "body": [
+            "A subscript is written low beside a symbol. Read what its label means in the lesson. Here, 1 names the first reading and 2 names the second."
+          ],
+          "equation": "v₁ = 2 m/s; v₂ = 5 m/s",
+          "equationGuide": {
+            "meaning": "A subscript is written low beside a symbol. Read what its label means in the lesson. Here, 1 names the first reading and 2 names the second.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Two readings from one cart",
+            "steps": [
+              "A cart has speed 2 m/s at the first reading and 5 m/s at the second.",
+              "We write v₁ for the first speed and v₂ for the second speed."
+            ]
+          },
+          "terms": "Subscript: A small label written low beside a symbol. v₁ and v₂: The first and second speed readings in this example.",
+          "glossary": [
+            {
+              "term": "Subscript",
+              "definition": "A small label written low beside a symbol."
+            },
+            {
+              "term": "v₁ and v₂",
+              "definition": "The first and second speed readings in this example."
+            }
+          ],
+          "limits": "Subscripts may label times, directions, particles or other entries. Their meaning must be stated; they do not always indicate chronological order.",
+          "focus": {
+            "idea": "A subscript can tell you which entry or reading a symbol names.",
+            "explanation": "A subscript is written low beside a symbol. Read what its label means in the lesson. Here, 1 names the first reading and 2 names the second.",
+            "equation": "v₁ = 2 m/s; v₂ = 5 m/s",
+            "example": {
+              "title": "Two readings from one cart",
+              "steps": [
+                "A cart has speed 2 m/s at the first reading and 5 m/s at the second.",
+                "We write v₁ for the first speed and v₂ for the second speed."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Subscript",
+                "definition": "A small label written low beside a symbol."
+              },
+              {
+                "term": "v₁ and v₂",
+                "definition": "The first and second speed readings in this example."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-substitution"
+          ],
+          "check": {
+            "prompt": "If T₁ is the first temperature, what does the small 1 do?",
+            "options": [
+              "Labels the reading",
+              "Multiplies T by 1",
+              "Raises T to a power"
+            ],
+            "answer": 0,
+            "explanations": [
+              "Yes. Here it names the first reading.",
+              "The 1 is a label in this notation.",
+              "An exponent is raised; this subscript is a label."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "Two entries are a₁ = 4 and a₂ = 9. What value does a₂ name?",
+            "answer": "The subscript 2 selects the second entry, which is 9."
+          },
+          "practice": {
+            "prompt": "Two entries are a₁ = 4 and a₂ = 9. What value does a₂ name?",
+            "parts": [
+              {
+                "label": "Second entry",
+                "answer": 9,
+                "tolerance": 1e-08,
+                "unit": "unit-free",
+                "feedback": "The subscript 2 selects the second entry, which is 9."
+              }
+            ],
+            "reasoning": "The subscript 2 selects the second entry, which is 9."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Use small numbers as labels",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "A subscript can tell you which entry or reading a symbol names."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-sums",
+          "title": "Add the listed terms",
+          "moduleId": "math-preparation-basics",
+          "idea": "The sum sign tells you to add a sequence of terms.",
+          "body": [
+            "The symbol Σ means add. The lower and upper limits tell you where the counting label starts and ends. Include both endpoints in this finite sum."
+          ],
+          "equation": "Σ (n = 1 to 4) n = 1 + 2 + 3 + 4 = 10",
+          "equationGuide": {
+            "meaning": "The symbol Σ means add. The lower and upper limits tell you where the counting label starts and ends. Include both endpoints in this finite sum.",
+            "symbols": []
+          },
+          "example": {
+            "title": "Add four counting numbers",
+            "steps": [
+              "Let n take the values 1, 2, 3 and 4.",
+              "Add those terms: 1 + 2 + 3 + 4 = 10."
+            ]
+          },
+          "terms": "Σ (sum sign): An instruction to add the stated terms. Index: The label that moves through the allowed counting values.",
+          "glossary": [
+            {
+              "term": "Σ (sum sign)",
+              "definition": "An instruction to add the stated terms."
+            },
+            {
+              "term": "Index",
+              "definition": "The label that moves through the allowed counting values."
+            }
+          ],
+          "limits": "This lesson uses a finite sum. An infinite sum needs a separate check that the total approaches a finite value.",
+          "focus": {
+            "idea": "The sum sign tells you to add a sequence of terms.",
+            "explanation": "The symbol Σ means add. The lower and upper limits tell you where the counting label starts and ends. Include both endpoints in this finite sum.",
+            "equation": "Σ (n = 1 to 4) n = 1 + 2 + 3 + 4 = 10",
+            "example": {
+              "title": "Add four counting numbers",
+              "steps": [
+                "Let n take the values 1, 2, 3 and 4.",
+                "Add those terms: 1 + 2 + 3 + 4 = 10."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Σ (sum sign)",
+                "definition": "An instruction to add the stated terms."
+              },
+              {
+                "term": "Index",
+                "definition": "The label that moves through the allowed counting values."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-subscripts"
+          ],
+          "check": {
+            "prompt": "Which terms are included in Σ (n = 1 to 3) n?",
+            "options": [
+              "1, 2 and 3",
+              "0 and 3",
+              "Only 3"
+            ],
+            "answer": 0,
+            "explanations": [
+              "Yes. Use every whole-number index from 1 through 3.",
+              "Include all the stated indices, starting at 1.",
+              "The upper limit tells where to stop, not the only term to use."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "Add the terms in Σ (n = 1 to 3) n.",
+            "answer": "1 + 2 + 3 = 6."
+          },
+          "practice": {
+            "prompt": "Add the terms in Σ (n = 1 to 3) n.",
+            "parts": [
+              {
+                "label": "Sum",
+                "answer": 6,
+                "tolerance": 1e-08,
+                "unit": "unit-free",
+                "feedback": "1 + 2 + 3 = 6."
+              }
+            ],
+            "reasoning": "1 + 2 + 3 = 6."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Add the listed terms",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "The sum sign tells you to add a sequence of terms."
+              }
+            ]
+          }
+        },
+        {
+          "id": "prep-change",
+          "title": "Subtract the start from the finish",
+          "moduleId": "math-preparation-basics",
+          "idea": "A signed change is the final value minus the starting value.",
+          "body": [
+            "The symbol Δ, called delta, means change. A positive answer means an increase in the chosen quantity. A negative answer means a decrease."
+          ],
+          "equation": "Δx = final x − starting x = 7 m − 2 m = 5 m",
+          "equationGuide": {
+            "meaning": "The symbol Δ, called delta, means change. A positive answer means an increase in the chosen quantity. A negative answer means a decrease.",
+            "symbols": []
+          },
+          "example": {
+            "title": "A cart changes position",
+            "steps": [
+              "A cart starts at position 2 m and finishes at position 7 m on the same scale.",
+              "Its position change is 7 − 2 = 5 m."
+            ]
+          },
+          "terms": "Δ (delta): A symbol meaning change in this lesson. Signed change: A difference that keeps its positive or negative sign.",
+          "glossary": [
+            {
+              "term": "Δ (delta)",
+              "definition": "A symbol meaning change in this lesson."
+            },
+            {
+              "term": "Signed change",
+              "definition": "A difference that keeps its positive or negative sign."
+            }
+          ],
+          "limits": "Use the same reference and units for both values. Position change is not necessarily the total distance travelled.",
+          "focus": {
+            "idea": "A signed change is the final value minus the starting value.",
+            "explanation": "The symbol Δ, called delta, means change. A positive answer means an increase in the chosen quantity. A negative answer means a decrease.",
+            "equation": "Δx = final x − starting x = 7 m − 2 m = 5 m",
+            "example": {
+              "title": "A cart changes position",
+              "steps": [
+                "A cart starts at position 2 m and finishes at position 7 m on the same scale.",
+                "Its position change is 7 − 2 = 5 m."
+              ]
+            },
+            "terms": [
+              {
+                "term": "Δ (delta)",
+                "definition": "A symbol meaning change in this lesson."
+              },
+              {
+                "term": "Signed change",
+                "definition": "A difference that keeps its positive or negative sign."
+              }
+            ]
+          },
+          "prerequisiteIds": [
+            "math/prep-negative-numbers",
+            "math/prep-substitution"
+          ],
+          "check": {
+            "prompt": "A value goes from 9 to 4. Which calculation gives its change?",
+            "options": [
+              "9 − 4",
+              "4 − 9",
+              "9 + 4"
+            ],
+            "answer": 1,
+            "explanations": [
+              "Subtract the start from the finish, in that order.",
+              "Yes. The change is −5, showing a decrease.",
+              "Adding the readings does not find the change."
+            ]
+          },
+          "apply": {
+            "title": "Try the same idea with a new value",
+            "text": "A cart starts at position 8 m and finishes at 3 m. Find its position change.",
+            "answer": "Final minus start gives 3 − 8 = −5 m."
+          },
+          "practice": {
+            "prompt": "A cart starts at position 8 m and finishes at 3 m. Find its position change.",
+            "parts": [
+              {
+                "label": "Position change",
+                "answer": -5,
+                "tolerance": 1e-08,
+                "unit": "m",
+                "feedback": "Final minus start gives 3 − 8 = −5 m."
+              }
+            ],
+            "reasoning": "Final minus start gives 3 − 8 = −5 m."
+          },
+          "visual": {
+            "type": "concept",
+            "title": "Subtract the start from the finish",
+            "caption": "Read the relationship, then explain it in your own words.",
+            "items": [
+              {
+                "label": "One idea",
+                "value": "A signed change is the final value minus the starting value."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
