@@ -55,7 +55,10 @@
         "term": "²",
         "definition": "Multiply the quantity by itself."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "check.explanations.2": "Correct. Doubling r multiplies r² by four, so 0.60 N becomes 0.15 N."
+    }
   },
   "charge-in-matter": {
     "idea": "A neutral object can rearrange its charges while remaining neutral overall.",
@@ -78,7 +81,11 @@
         "term": "Polarization",
         "definition": "A relative shift or alignment of positive and negative charge distributions."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "example.steps.0": "A model object contains +6 nC and −6 nC; nC means 10⁻⁹ C.",
+      "example.steps.2": "Moving the negative part slightly relative to the positive part changes the distribution, but the total remains 0 nC if nothing leaves or enters."
+    }
   },
   "field-definition": {
     "idea": "Electric field tells the force per unit positive test charge at a place.",
@@ -135,6 +142,10 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
@@ -163,7 +174,14 @@
         "term": "²",
         "definition": "Multiply the quantity by itself."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.2": "For one source in this point-charge model, field strength falls as 1/r². An arrow twice as far away should therefore represent one quarter of the strength, not necessarily one quarter of a physical drawn length unless the scale is defined.",
+      "practice.prompt": "A positive point source gives 90 N/C rightward at a point 0.20 m to its right. Keep the source fixed.",
+      "practice.parts.0.label": "Field magnitude 0.40 m to its right",
+      "practice.parts.0.feedback": "The distance doubles, so 90/4=22.5 N/C.",
+      "practice.parts.1.label": "Field magnitude 0.60 m to its right"
+    }
   },
   "two-charge-field": {
     "idea": "Add electric-field directions as well as sizes before finding the total.",
@@ -186,7 +204,13 @@
         "term": "Superposition",
         "definition": "Adding separate field contributions while keeping their directions."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "example.steps.0": "Place +2 nC at x=−0.30 m and +2 nC at x=+0.30 m; observe at x=0. Use kₑ≈9.0×10⁹ N·m²/C².",
+      "check.explanations.1": "Correct. Add +200 and −400 N/C to get −200 N/C.",
+      "apply.text": "Why can adding 200 N/C and 400 N/C as unsigned sizes give the wrong answer here?",
+      "apply.answer": "Because the two contributions point opposite ways. Their directed sum has size 200 N/C, not 600 N/C. Units alone cannot replace the direction information."
+    }
   },
   "electric-dipole": {
     "idea": "A neutral charge pair can turn in a uniform field even with zero net force.",
@@ -216,6 +240,10 @@
       {
         "term": "Torque",
         "definition": "A turning effect."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
@@ -244,11 +272,15 @@
         "term": "Nanocoulomb",
         "definition": "One billionth of a coulomb."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "check.explanations.0": "Correct. The difference 1/0.60−1/0.90 is about 0.5556 m⁻¹; multiplying by 18 N·m/C gives 10 N/C.",
+      "equationGuide.symbols.1.description": "Both positive; the line runs from 0 to L and the observer is at −a."
+    }
   },
   "ring-axis-field": {
-    "idea": "On a uniformly charged ring's axis, sideways electric-field contributions cancel.",
-    "explanation": "Opposite parts of the ring produce equal opposite sideways parts. Their axial parts add. This symmetry works on the line through the centre perpendicular to the ring, not at every nearby point.",
+    "idea": "Imagine a charged ring with a straight stick through its centre, at right angles to the ring. On that line, the ring’s sideways electric pushes cancel in pairs.",
+    "explanation": "Charge is spread evenly around the ring. Pick two opposite spots on it. At a point on the stick, their electric fields point sideways by equal amounts in opposite directions. Their parts along the stick point the same way and add. That centre line is called the axis.",
     "example": {
       "title": "A point on the ring's axis",
       "steps": [
@@ -273,7 +305,11 @@
       },
       {
         "term": "³",
-        "definition": "Multiply the quantity by itself three times."
+        "definition": "Use three equal factors. For example, 2³ means 2 × 2 × 2 = 8."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
@@ -304,12 +340,16 @@
       {
         "term": "cos",
         "definition": "Cosine: the factor selecting how much of the field points along the chosen normal."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
   "gauss-law": {
-    "idea": "Total electric flux through a closed surface depends on its enclosed charge.",
-    "explanation": "A closed surface surrounds a region completely. Count outward flux as positive. Outside charges can alter local field values but contribute zero net flux through the whole surface; zero total flux does not mean zero field everywhere.",
+    "idea": "Imagine a closed bubble around some electric charges. Compare the electric field pointing out through its skin with the field pointing in.",
+    "explanation": "This net count, called electric flux, depends on the total charge inside. A charge outside the bubble can change the field at one spot, but its contributions across the whole closed surface cancel. A net count of zero can still include strong fields pointing both in and out.",
     "example": {
       "title": "An enclosing box",
       "steps": [
@@ -335,8 +375,8 @@
     ]
   },
   "gauss-sphere": {
-    "idea": "Spherical symmetry lets enclosed charge determine the electric field at a radius.",
-    "explanation": "For a uniform solid charged sphere, the enclosed fraction grows with radius cubed. The resulting interior field grows linearly from zero at the centre. This is not the charge distribution of a conducting sphere at equilibrium.",
+    "idea": "Inside a solid ball with charge spread evenly through it, the electric field gets stronger as you move outward from its centre.",
+    "explanation": "Imagine drawing a smaller ball around the same centre. Twice the radius encloses eight times as much charge, while the surface area grows fourfold. The field is therefore twice as strong. This example needs charge spread throughout the ball. In a conducting ball at rest, excess charge sits at the surface.",
     "example": {
       "title": "Inside a uniform sphere",
       "steps": [
@@ -361,9 +401,21 @@
       },
       {
         "term": "³",
-        "definition": "Multiply the quantity by itself three times."
+        "definition": "Use three equal factors. For example, 2³ means 2 × 2 × 2 = 8."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
+      },
+      {
+        "term": "Equilibrium",
+        "definition": "A condition where the effects that would change the system balance. For a hanging weight at rest, the support’s upward pull balances gravity."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "example.steps.2": "It points outward. For a thin shell with the same Q and R, the field at this interior radius would instead be 0 N/C.",
+      "equationGuide.symbols.2.description": "The outside rule uses r≥R; the inside rule uses 0≤r≤R."
+    }
   },
   "gauss-cylinder-sheet": {
     "idea": "Source shape changes how electric-field strength varies with distance.",
@@ -393,6 +445,10 @@
       {
         "term": "π",
         "definition": "A number about 3.1416; one full turn is 2π radians."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
@@ -429,9 +485,9 @@
     "example": {
       "title": "Adding two source potentials",
       "steps": [
-        "A +2-nanocoulomb source is 3 metres away and a −1-nanocoulomb source is 1 metre away.",
-        "Their potentials are +6 and −9 volts using rounded constants.",
-        "The total is −3 volts."
+        "One source has +2 nanocoulombs of charge and is 3 metres away. Another has −1 nanocoulomb and is 1 metre away.",
+        "A nanocoulomb is one billionth of a coulomb. It cancels the billion in the rounded electric constant. The two voltages are 9 × 2 ÷ 3 = +6 V and 9 × (−1) ÷ 1 = −9 V.",
+        "Add the signed values: +6 V + (−9 V) = −3 V."
       ]
     },
     "equation": "total potential = +6 V − 9 V = −3 V",
@@ -447,12 +503,16 @@
       {
         "term": "Nanocoulomb",
         "definition": "One billionth of a coulomb."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
   "field-from-potential": {
-    "idea": "Electric field points toward decreasing electric potential in electrostatics.",
-    "explanation": "Electrostatics describes charges and fields that do not change with time. In one direction, find the potential's local slope and reverse its sign. The field tells force direction for a positive probe; negative charges respond oppositely.",
+    "idea": "For a steady electric field, electric potential falls in the direction of the field.",
+    "explanation": "Electric potential is electric potential energy per unit charge. Imagine marking the voltage at points along a straight line. A steep change in voltage means a strong field along that line. A positive test charge feels a force toward lower voltage.",
     "example": {
       "title": "A curved potential",
       "steps": [
@@ -478,6 +538,14 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
+      },
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with an arrangement, such as the height of a weight above the floor."
       }
     ]
   },
@@ -505,12 +573,16 @@
       {
         "term": "Perpendicular",
         "definition": "At a right angle."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
       }
     ]
   },
   "conductor-equilibrium": {
-    "idea": "The electric field inside conducting material is zero in electrostatic equilibrium.",
-    "explanation": "A conductor lets charges move. If an internal field persisted, it would keep moving them, so their settled arrangement cancels the field inside the metal. A charged cavity and the surrounding metal are different regions.",
+    "idea": "Inside a piece of metal, charges settle when the electric field in the metal reaches zero.",
+    "explanation": "Metals have charges that can move. If an electric field pushes on them, they shift. Their new arrangement can cancel the field inside the metal. This settled condition is called electrostatic equilibrium. A hollow space inside the metal can still have a field if it contains a charge.",
     "example": {
       "title": "Metal held at seven volts",
       "steps": [
@@ -528,6 +600,14 @@
       {
         "term": "Electrostatic equilibrium",
         "definition": "A settled, unchanging charge arrangement."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
+      },
+      {
+        "term": "Equilibrium",
+        "definition": "A condition where the effects that would change the system balance. For a hanging weight at rest, the support’s upward pull balances gravity."
       }
     ]
   },
@@ -555,6 +635,10 @@
       {
         "term": "Linear response",
         "definition": "A response proportional to the applied change within the model."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
       }
     ]
   },
@@ -590,6 +674,18 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Capacitor",
+        "definition": "Two conductors separated by an insulating gap. They can hold opposite charges and store electrical energy."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
+      },
+      {
+        "term": "Proportional",
+        "definition": "Two quantities are proportional when multiplying one by a certain factor multiplies the other by that same factor."
       }
     ]
   },
@@ -617,6 +713,14 @@
       {
         "term": "Capacitance",
         "definition": "Charge magnitude stored per volt."
+      },
+      {
+        "term": "Capacitor",
+        "definition": "Two conductors separated by an insulating gap. They can hold opposite charges and store electrical energy."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
       }
     ]
   },
@@ -675,6 +779,14 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
+      },
+      {
+        "term": "Random",
+        "definition": "Individual outcomes can vary even when you repeat the same setup."
       }
     ]
   },
@@ -729,6 +841,18 @@
       {
         "term": "Ohm",
         "definition": "One volt per ampere."
+      },
+      {
+        "term": "Resistor",
+        "definition": "A circuit part that limits electric current and can turn electrical energy into heat."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
+      },
+      {
+        "term": "Proportional",
+        "definition": "Two quantities are proportional when multiplying one by a certain factor multiplies the other by that same factor."
       }
     ]
   },
@@ -760,6 +884,14 @@
       {
         "term": "Node",
         "definition": "An electrical connection point shared by components."
+      },
+      {
+        "term": "Resistor",
+        "definition": "A circuit part that limits electric current and can turn electrical energy into heat."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
       }
     ]
   },
@@ -787,6 +919,14 @@
       {
         "term": "I",
         "definition": "Current, measured in amperes."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
+      },
+      {
+        "term": "Resistor",
+        "definition": "A circuit part that limits electric current and can turn electrical energy into heat."
       }
     ]
   },
@@ -814,12 +954,24 @@
       {
         "term": "Terminal",
         "definition": "A component's electrical connection point."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
+      },
+      {
+        "term": "Circuit component",
+        "definition": "One part of a circuit, such as a battery, resistor or capacitor."
+      },
+      {
+        "term": "Resistor",
+        "definition": "A circuit part that limits electric current and can turn electrical energy into heat."
       }
     ]
   },
   "rc-charging": {
-    "idea": "A capacitor charges more slowly as its voltage approaches the source voltage.",
-    "explanation": "In an ideal resistor-capacitor circuit, the remaining voltage difference drives current through the resistor. As that difference shrinks, so does the charging current. Resistance times capacitance sets the time scale.",
+    "idea": "A capacitor charges quickly at first and more slowly as it fills.",
+    "explanation": "A capacitor stores separated electric charge. A resistor limits how fast charge flows to its plates. As the capacitor’s voltage gets closer to the source voltage, less voltage is left to drive current through the resistor. Its resistance and the capacitor’s capacitance set the charging time.",
     "example": {
       "title": "Charging from nine volts",
       "steps": [
@@ -841,6 +993,18 @@
       {
         "term": "Microfarad",
         "definition": "One millionth of a farad."
+      },
+      {
+        "term": "Capacitor",
+        "definition": "Two conductors separated by an insulating gap. They can hold opposite charges and store electrical energy."
+      },
+      {
+        "term": "Resistor",
+        "definition": "A circuit part that limits electric current and can turn electrical energy into heat."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
       }
     ]
   },
@@ -872,6 +1036,14 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Resistor",
+        "definition": "A circuit part that limits electric current and can turn electrical energy into heat."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
       }
     ]
   },
@@ -895,6 +1067,18 @@
       {
         "term": "Coulomb",
         "definition": "The unit of charge."
+      },
+      {
+        "term": "Resistor",
+        "definition": "A circuit part that limits electric current and can turn electrical energy into heat."
+      },
+      {
+        "term": "Capacitor",
+        "definition": "Two conductors separated by an insulating gap. They can hold opposite charges and store electrical energy."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
       }
     ]
   },
@@ -926,6 +1110,10 @@
       {
         "term": "Microcoulomb",
         "definition": "One millionth of a coulomb."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -953,6 +1141,18 @@
       {
         "term": "Tesla",
         "definition": "The magnetic-field unit."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
@@ -988,6 +1188,14 @@
       {
         "term": "Right-hand current rule",
         "definition": "Curl the fingers of your right hand with the current around the loop; your thumb points along its magnetic moment."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
@@ -1031,6 +1239,14 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
@@ -1062,6 +1278,10 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
@@ -1097,8 +1317,8 @@
     ]
   },
   "ampere-law": {
-    "idea": "For steady currents, magnetic circulation around a closed path depends on the current crossing its surface.",
-    "explanation": "Circulation adds the field's along-path contribution. Count crossing currents with signs set by a matching surface direction. This total alone does not give the field at every point without suitable symmetry.",
+    "idea": "Imagine walking around a closed loop and checking how much of the magnetic field points along your path.",
+    "explanation": "Add that along-path part for each small step. The total is called magnetic circulation. For steady currents, it depends on the net current passing through the loop. Currents crossing in opposite directions count with opposite signs. To find the field at one spot, you also need to know the shape of the setup.",
     "example": {
       "title": "Two crossing currents",
       "steps": [
@@ -1213,6 +1433,18 @@
       {
         "term": "Inductance",
         "definition": "A circuit's relation between current and linked magnetic flux."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
@@ -1240,6 +1472,10 @@
       {
         "term": "Weber",
         "definition": "The magnetic-flux unit."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
       }
     ]
   },
@@ -1267,6 +1503,14 @@
       {
         "term": "Tesla",
         "definition": "The magnetic-field unit."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
@@ -1310,6 +1554,14 @@
       {
         "term": "DC",
         "definition": "Direct current or voltage, with a fixed direction."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -1341,6 +1593,18 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
+      },
+      {
+        "term": "Resistor",
+        "definition": "A circuit part that limits electric current and can turn electrical energy into heat."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
@@ -1368,12 +1632,16 @@
       {
         "term": "Henry",
         "definition": "The inductance unit."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
       }
     ]
   },
   "lc-oscillation": {
-    "idea": "An ideal capacitor and inductor exchange stored energy back and forth.",
-    "explanation": "With no resistance or outside drive, capacitor charge and circuit current oscillate. Electric-field energy falls while magnetic-field energy rises, then the exchange reverses. Their sum stays constant.",
+    "idea": "Two circuit parts can pass energy back and forth. One stores it in an electric field, the other in a magnetic field.",
+    "explanation": "A capacitor stores separated electric charges. As they flow through a coil called an inductor, the coil builds a magnetic field. Later that field shrinks and the capacitor charges the other way. In this ideal circuit there is no resistance or outside push, so the total stored energy stays the same.",
     "example": {
       "title": "A quarter of one oscillation",
       "steps": [
@@ -1395,6 +1663,10 @@
       {
         "term": "Oscillate",
         "definition": "Change back and forth repeatedly."
+      },
+      {
+        "term": "Capacitor",
+        "definition": "Two conductors separated by an insulating gap. They can hold opposite charges and store electrical energy."
       }
     ]
   },
@@ -1422,12 +1694,24 @@
       {
         "term": "Peak",
         "definition": "The greatest size reached in a cycle."
+      },
+      {
+        "term": "Capacitor",
+        "definition": "Two conductors separated by an insulating gap. They can hold opposite charges and store electrical energy."
+      },
+      {
+        "term": "Resistor",
+        "definition": "A circuit part that limits electric current and can turn electrical energy into heat."
+      },
+      {
+        "term": "Capacitance",
+        "definition": "The amount of separated charge a capacitor stores for each volt across its conductors."
       }
     ]
   },
   "displacement-current": {
-    "idea": "A changing electric field contributes to magnetic circulation even without charge crossing a capacitor gap.",
-    "explanation": "This field-change term is called displacement current. It has current units, but does not mean electrons pass through an ideal insulating gap. Including it makes the magnetic-law result consistent for different surfaces spanning the same loop.",
+    "idea": "A charging capacitor creates a magnetic field even in the gap between its plates.",
+    "explanation": "A capacitor has two conductors separated by a gap. As charge builds up on the plates, the electric field in the gap changes. This change contributes to the magnetic field around a loop, even though electrons stay on their own side of the gap. We call this contribution displacement current.",
     "example": {
       "title": "A growing gap field",
       "steps": [
@@ -1449,6 +1733,18 @@
       {
         "term": "Vacuum permittivity",
         "definition": "The vacuum electric constant."
+      },
+      {
+        "term": "Capacitor",
+        "definition": "Two conductors separated by an insulating gap. They can hold opposite charges and store electrical energy."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from the starting position to the ending position, including direction."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
@@ -1480,6 +1776,10 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
@@ -1523,6 +1823,10 @@
       {
         "term": "Perpendicular",
         "definition": "Meeting at a right angle."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
@@ -1562,8 +1866,20 @@
       {
         "term": "Power",
         "definition": "Energy transferred per second."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "example.steps.2": "For a0.020 m² patch perpendicular to travel, average power is (0.531 W/m²)(0.020 m²)=0.01062 W. This relates power to area; it is not a human exposure or device-safety assessment.",
+      "apply.answer": "The displayed formula expects peak amplitude. A sinusoid’s RMS amplitude is peak divided by √2, so average intensity is ε₀cE_RMS² without the extra half. Mixing conventions would count the averaging factor twice."
+    }
   },
   "em-model-selection": {
     "idea": "Choose an electrical equation by what you need to find and the physical conditions.",
@@ -1589,6 +1905,14 @@
       {
         "term": "Geometry",
         "definition": "The shape, size, and arrangement of the setup."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   },
@@ -1620,12 +1944,20 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
+      },
+      {
+        "term": "Resistor",
+        "definition": "A circuit part that limits electric current and can turn electrical energy into heat."
       }
     ]
   },
   "em-assessment": {
-    "idea": "Heating by an induced current still needs an energy source.",
-    "explanation": "A changing magnetic field produces voltage around the fixed loop. With negligible inductance, resistance gives the current, and current squared times resistance gives heating power. The source changing the field supplies the transferred energy.",
+    "idea": "Changing the magnetic field through a wire loop can drive a current that warms the wire. The energy comes from whatever changes the field.",
+    "explanation": "Voltage is the push that drives charge around the loop. Here the wire’s resistance sets the current because the coil effect, called inductance, is small. For a steady current, square the current and multiply by resistance to find the energy turned into heat each second.",
     "example": {
       "title": "A field-driven loop",
       "steps": [
@@ -1651,7 +1983,18 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Voltage",
+        "definition": "A difference in electric potential. One volt means one joule of energy difference per coulomb of charge."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "example.steps.2": "Heating power is (0.0050 A)²(4.0 Ω)=1.0×10⁻⁴ W. Over 0.30 s, heat is 3.0×10⁻⁵ J; the external changing-field source participates in that energy transfer."
+    }
   }
 }

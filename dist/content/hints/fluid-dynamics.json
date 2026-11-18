@@ -1,0 +1,192 @@
+{
+  "velocity-field": [
+    null,
+    "Imagine measuring the speed of whatever passes one marked spot. Must you keep tagging the same drop?",
+    "Which quantity does each arrow at a position represent?"
+  ],
+  "volume-flow": [
+    "Compare the wall speed with the speed in the middle. Can just the wall represent the whole cross-section?",
+    null,
+    "Only a small part of the slice may reach the highest speed. How should slower parts be counted?"
+  ],
+  "mass-flow": [
+    "Write the mass crossing per second as density × volume per second. Which product must balance?",
+    "More density means more mass in each unit of volume. Why would that require motion to stop?",
+    null
+  ],
+  "viscous-shear": [
+    null,
+    "Look for the speed difference above or below the division sign in the shear rule.",
+    "Would a larger difference between neighboring layer speeds make them more alike?"
+  ],
+  "parcel-path": [
+    null,
+    "After a parcel leaves the starting spot, which reading from the velocity field applies?",
+    "Does the parcel instantly jump into the point with the fastest flow?"
+  ],
+  "local-change": [
+    "Imagine one sensor attached to a mark on the riverbank. Does it keep the same water molecule?",
+    null,
+    "To measure a change per second, must the two readings be taken at different times?"
+  ],
+  "advective-change": [
+    "A steady river can have a narrow fast section ahead of a wider slow section. What does a passing leaf experience?",
+    "Can the same quantity of water pass both a wide and a narrow section at different speeds?",
+    null
+  ],
+  "material-derivative": [
+    null,
+    "Check the units of pressure against the units of a change in velocity per time.",
+    "Imagine the parcel crossing into faster-moving water. Which change is missing from a fixed sensor’s reading?"
+  ],
+  "streamline-direction": [
+    "What directions would arrows painted along this curve need to follow?",
+    null,
+    "A streamline is drawn from a snapshot. What happens if tomorrow’s arrows differ?"
+  ],
+  "local-vorticity": [
+    "Compare two nearby arrows on opposite sides of a tiny paddle wheel. Would its spin depend on more than the bend in one path?",
+    "A wheel can travel straight while spinning. Which local differences could produce that spin?",
+    null
+  ],
+  "mass-storage": [
+    null,
+    "If a container still holds positive mass, can the amount nevertheless be getting smaller?",
+    "Try writing incoming per second minus outgoing per second. When does that difference have a minus sign?"
+  ],
+  "outward-mass-flux": [
+    "Imagine enlarging a doorway while the person keeps walking along the wall. How would they get through it?",
+    null,
+    "Separate motion along the patch from motion through its face."
+  ],
+  "local-mass-balance": [
+    "Compare the mass flowing out on the right with what flowed in on the left. Which is larger?",
+    "Can a region empty while all the departing mass is still accounted for somewhere else?",
+    null
+  ],
+  "parcel-density": [
+    null,
+    "Keep the same amount of material and change just the denominator in mass ÷ volume.",
+    "Is the parcel assumed incompressible here, or does its volume actually change?"
+  ],
+  "incompressible-flow": [
+    "Imagine carrying a sealed water balloon. Could its contents move without changing their total volume?",
+    null,
+    "Can a fixed volume fit in more than one shape, for instance a short wide shape and a long narrow one?"
+  ],
+  "no-slip": [
+    "Where is the no-slip rule applied, at every fluid point or at the surface it touches?",
+    "Distinguish a rule linking fluid speed to wall speed from a statement about resistance between fluid layers.",
+    null
+  ],
+  "shear-gradient": [
+    null,
+    "Keep the viscosity fixed and find the sign of the multiplier connecting shear to velocity slope.",
+    "If the slope were zero instead, what would the shear rule predict for the same fluid?"
+  ],
+  "kinematic-viscosity": [
+    "Kinematic viscosity is dynamic viscosity divided by density. Which of these quantities just changed?",
+    null,
+    "Is density in the numerator of that ratio, or below the line?"
+  ],
+  "viscous-spreading-time": [
+    "Expand the gap-squared factor into two lengths before doubling the gap.",
+    "At the same spreading rate, should momentum take longer or less time to travel farther?",
+    null
+  ],
+  "couette-profile": [
+    null,
+    "Which of the two plates is moving at the position y = h?",
+    "Substitute y = h into y/h before multiplying by the upper-plate speed."
+  ],
+  "pipe-profile": [
+    "The pressure gradient drives flow in the interior. What rule applies specifically at the stationary wall?",
+    null,
+    "Sketch the parabolic profile starting at the centre. Where do its sides meet the pipe?"
+  ],
+  "poiseuille-flow": [
+    "Mass need not be created to move more of it per second. How is the flow speed changing?",
+    "Which dimensions of the pipe did the question actually change?",
+    null
+  ],
+  "pressure-force-density": [
+    null,
+    "Draw the pressure pushes from the left and right faces of a tiny cube. How do their sizes compare?",
+    "What would select a preferred negative direction if every face had the same pressure?"
+  ],
+  "euler-fluid-equation": [
+    "Compare the units of speed divided by density with those of acceleration.",
+    null,
+    "If a parcel moves into water flowing at a different speed, will a fixed-location rate notice that part?"
+  ],
+  "hydrostatic-gradient": [
+    "Sketch the weight of a thin horizontal layer. Which side must give the larger supporting push?",
+    "A zero speed means no acceleration. Can two nonzero forces balance?",
+    null
+  ],
+  "bernoulli-streamline": [
+    null,
+    "Trace the Bernoulli rule along a single streamline. What lets you connect one streamline with another?",
+    "Check which assumption connects separate streamlines, rather than setting all fluid speeds to zero."
+  ],
+  "viscous-curvature": [
+    "A parcel with mass can have zero net force. What would balance the two viscous pulls?",
+    null,
+    "Compare the stresses acting on opposite faces. What determines their difference?"
+  ],
+  "navier-stokes-balance": [
+    "Imagine the same pipe with two different inlet speeds. What tells the equation which flow to describe?",
+    "Count the time, motion, viscosity and pressure terms. Which cannot be found from pressure alone?",
+    null
+  ],
+  "momentum-flow-balance": [
+    null,
+    "List every push acting on the fluid volume before separating out the part due to the wall.",
+    "Name the body receiving the computed force. How is the force on the wall related?"
+  ],
+  "reynolds-number": [
+    "A large ratio can have a small nonzero denominator. Does it require viscosity to vanish?",
+    null,
+    "Are a smooth inlet and a disturbed inlet necessarily equivalent at the same speed?"
+  ],
+  "matching-reynolds": [
+    "Could the same Reynolds number describe both a sphere and a thin flat plate?",
+    "Which effect sets the behavior of free-surface waves? Is it captured by a viscosity ratio alone?",
+    null
+  ],
+  "mach-number": [
+    null,
+    "Low Mach number compares flow speed with sound speed. Which part of that ratio constrains heating?",
+    "Does the ratio involving viscosity determine whether heating expands the liquid or gas?"
+  ],
+  "boundary-layer-scale": [
+    "In the thickness scale, which side of the fraction contains distance traveled along the wall?",
+    null,
+    "Does x occur alone or inside a square root?"
+  ],
+  "wall-flow-reversal": [
+    "Look at the direction of the wall shear just before and just after the measured point.",
+    "Could a zero velocity gradient produce zero shear while viscosity stays positive?",
+    null
+  ],
+  "drag-coefficient": [
+    null,
+    "Look at which flow conditions appear when you increase speed. Is drag always in the same regime?",
+    "Check the units of force divided by density × speed squared × area."
+  ],
+  "mean-and-fluctuation": [
+    "Can a regularly oscillating flow keep all its mass while changing its speed?",
+    null,
+    "Would a perfectly repeating, orderly signal also show departures from its average?"
+  ],
+  "fluctuation-size": [
+    "Try averaging deviations of +1 and −1, then do the same after squaring.",
+    "Which calculation changes a negative deviation to a positive contribution? Does the choice of units do that?",
+    null
+  ],
+  "reynolds-shear-stress": [
+    null,
+    "Averaging each of two fluctuations can give zero. Can the average of their product still carry information?",
+    "Check the units and physical origins of viscosity and a momentum flux caused by fluctuating speeds."
+  ]
+}

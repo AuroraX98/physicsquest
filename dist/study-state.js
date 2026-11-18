@@ -1,6 +1,6 @@
-import {findLessons} from './search.js';
-import {cleanReviews} from './review.js';
-import {validPreparationHash} from './preparation.js';
+import {findLessons} from './search.js?v=0.19.0';
+import {cleanReviews} from './review.js?v=0.19.0';
+import {validPreparationHash} from './preparation.js?v=0.19.0';
 export const PHASES=['understand','explore','check','apply'];
 export const lessonHash=(course,lesson,phase=0)=>`#learn/${course}/${lesson}/${PHASES[phase]??PHASES[0]}`;
 export function validLessonHash(hash,known){

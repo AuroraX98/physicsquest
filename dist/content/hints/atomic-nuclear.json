@@ -1,0 +1,282 @@
+{
+  "count-charge-and-isotopes": [
+    null,
+    "Check which particles are counted in the mass number A. Did either of the departing particles come from the nucleus?",
+    "What number identifies an element on the periodic table? Did losing electrons change that number?"
+  ],
+  "translate-an-energy-scale": [
+    "In the photon rule, energy times wavelength has a fixed value. Check whether that product would stay fixed.",
+    null,
+    "Try increasing both the energy and the wavelength. Would their product match the original one?"
+  ],
+  "read-a-spectral-gap": [
+    "Move both marks on an energy ladder up by ten units. What happens to the distance between the marks?",
+    "The two levels still have a gap. What would need to happen to that gap for the photon energy to vanish?",
+    null
+  ],
+  "binding-needs-a-reference": [
+    null,
+    "Think of the zero level as the top of a pit. Which starting level needs a bigger lift to get out?",
+    "Locate the new level relative to the zero-energy boundary. Is it above the edge of the pit yet?"
+  ],
+  "label-hydrogen-states": [
+    "Start the allowed orbital labels at zero and stop one step below n. Which choices appear on that list?",
+    null,
+    "Write the integer labels from zero through n minus one. Which proposed label falls outside your list?"
+  ],
+  "a-shell-is-not-an-orbit": [
+    "Picture a spherical shell shrinking toward a point. How does the area of the shell change as its radius shrinks?",
+    "The question asks about one thin shell at a particular radius. How does that differ from the volume of the whole atom?",
+    null
+  ],
+  "subtract-hydrogen-energies": [
+    null,
+    "Use the energy at each end of the transition. Does a larger level number alone tell you the size of the gap?",
+    "Plot the first three energies using the inverse square of n. Are the marks equally spaced?"
+  ],
+  "allowed-does-not-mean-certain": [
+    "A selection rule checks whether a transition can occur. What else would you need to predict its waiting time?",
+    null,
+    "Could two allowed pairs of states overlap by different amounts? What might that do to their transition rates?"
+  ],
+  "two-kinds-of-angular-momentum": [
+    "The length of an angular-momentum arrow and its vertical component have different allowed values. List the allowed m labels.",
+    "The symbol L describes orbital angular momentum. Which measurement would include the spin as well?",
+    null
+  ],
+  "couple-spin-to-orbital-motion": [
+    null,
+    "Find the smallest and largest j using the difference and the sum of l and s. How far apart are those bounds?",
+    "The positive and negative signs can label projections. Are you counting projections or total j values?"
+  ],
+  "split-levels-with-a-field": [
+    "Compare two products with the same factors except for the sign of one factor. What happens to the size of the product?",
+    null,
+    "Look for the signed quantity in the shift formula. Does fixing the magnetic field also fix that sign?"
+  ],
+  "resolve-smaller-structure": [
+    "Check what Z counts. Which smaller splitting can depend on a nuclear property even if Z stays fixed?",
+    "An electron can interact with the nucleus's magnetic moment. Which energy splitting would respond to that interaction?",
+    null
+  ],
+  "fill-states-not-locations": [
+    null,
+    "For each spatial orbital, draw a place for each of the possible spin directions. Then count all the places.",
+    "How many spin choices does one electron have per spatial orbital? Multiply that number by the number of orbitals."
+  ],
+  "screen-the-nuclear-pull": [
+    "Imagine moving closer to the nucleus than most of the screening charge. How much of the nuclear pull gets through?",
+    null,
+    "Screening describes where the electrons are. Did the number of protons physically change?"
+  ],
+  "use-filling-to-explain-trends": [
+    "Count positive and negative charges before and after the outer electron leaves. Do they still balance?",
+    "Mark the departing electron on a before-and-after sketch. Which particles stayed inside?",
+    null
+  ],
+  "an-average-field-misses-correlations": [
+    null,
+    "Which differences between energy levels are tested by that one line? What other states or properties could you measure?",
+    "Try picturing two approximate energies with the same error. How could their difference still match the measured line?"
+  ],
+  "light-can-drive-either-direction": [
+    "A population tells you how many atoms occupy each level. Does moving atoms between levels change their nuclei?",
+    null,
+    "The gap between the two energy levels stays fixed. What changes when more atoms occupy the upper level?"
+  ],
+  "lifetime-predicts-a-population-curve": [
+    "Use the survival factor for one mean lifetime and apply it twice. Is a mean lifetime the same as a half-life?",
+    "Sketch an exponentially falling curve. Does it reach the axis after two finite steps?",
+    null
+  ],
+  "a-line-has-a-shape": [
+    null,
+    "Check whether lifetime multiplies or divides the constant in the natural line-width rule.",
+    "Imagine observing the wave for a longer time. How would that affect how precisely its frequency is defined?"
+  ],
+  "gain-needs-a-supplied-energy-source": [
+    "Follow the light over one trip around the cavity. Where does energy lost at a mirror go?",
+    null,
+    "Start with a small light pulse and compare its strength after both amplification and loss on one round trip."
+  ],
+  "a-molecular-well-has-a-minimum": [
+    "Place a marble on a hilltop and give it a tiny nudge. Does the force bring it back?",
+    "Sketch both a valley and a hill. Which point is deep enough to hold a slightly disturbed marble?",
+    null
+  ],
+  "separate-fast-and-slow-motion": [
+    null,
+    "The separation of fast and slow motion relies on a clear separation of electronic energies. What changes near a crossing?",
+    "Two energy surfaces approaching each other concerns how motions affect one another. Did the nuclear charges change?"
+  ],
+  "read-rotational-and-vibrational-spacings": [
+    "Put J equal to one and two in the rotational energy formula. Are the two resulting energies equal?",
+    null,
+    "List the first three values of J times J plus one. Compare the steps between them."
+  ],
+  "zero-point-energy-reduces-dissociation-energy": [
+    "Mark the dissociation threshold and both starting levels on the same energy ladder. Which starting point is closer?",
+    "Keep the breakup threshold fixed and measure upward from each possible starting level. Is the distance the same?",
+    null
+  ],
+  "identify-a-nucleus": [
+    null,
+    "Which label counts only protons, and which includes both protons and neutrons?",
+    "Mark the extra neutron inside the nucleus. Which total includes that new particle?"
+  ],
+  "nuclei-grow-by-volume": [
+    "Sketch spheres holding different numbers of particles at the same density. Can both spheres keep the same radius?",
+    null,
+    "The particle count scales with volume. Which root converts a volume factor to a radius factor?"
+  ],
+  "mass-difference-stores-binding": [
+    "Write the free mass first and subtract the bound mass. What sign is possible for this hypothetical ordering?",
+    "Recall the conversion between mass and energy. What does multiplying a signed mass difference by that factor give?",
+    null
+  ],
+  "compare-binding-per-nucleon": [
+    null,
+    "An average is per nucleon. What total would you get by multiplying each average by its own nucleon count?",
+    "Compare the products of each binding per nucleon and its particle count. What would be required for equal totals?"
+  ],
+  "nuclear-attraction-is-short-ranged": [
+    "Compare a nearby pair of nucleons with a widely separated pair. Which force in this question depends on short distances?",
+    null,
+    "Sketch a small group and a large group. Would a particle near one edge be equally close to every other particle?"
+  ],
+  "balance-liquid-drop-contributions": [
+    "Find the sign in front of the electrical penalty in the binding expression. What happens when that term grows?",
+    "Keep every other term fixed and change only the penalty in the binding calculation. Which term could offset it?",
+    null
+  ],
+  "shell-gaps-matter-in-nuclei": [
+    null,
+    "Converting units rescales every energy. Would that single out one particular particle count for extra stability?",
+    "Think about filling a set of states up to a gap. What would it cost to put the next nucleon above the gap?"
+  ],
+  "spin-and-parity-test-a-model": [
+    "Parity describes what a wave does when you reverse the coordinates. What separate comparison tells you whether the state is bound?",
+    null,
+    "Look at what receives the minus sign under reflection. Is that quantity the energy or the wave amplitude?"
+  ],
+  "random-decays-smooth-average": [
+    "Picture a single nucleus before and after bringing a second independent sample nearby. Did its individual decay rule change?",
+    "Each original sample had some expected decays in a minute. How would combining their counts make those events disappear?",
+    null
+  ],
+  "half-life-is-not-mean-lifetime": [
+    null,
+    "Start with one whole sample and apply the same halving step three times. How do repeated halvings combine?",
+    "Try the same steps starting with eighty nuclei on average. Does the expected count ever reach zero in those steps?"
+  ],
+  "activity-is-a-rate": [
+    "Imagine splitting a sample into two equal parts and counting just one part. How many potential decays are you watching?",
+    null,
+    "Use activity as the number of nuclei times the individual decay rate. Which factor became smaller?"
+  ],
+  "a-daughter-can-also-decay": [
+    "Imagine water flowing into and out of a bucket at equal rates. What stays steady while water is still flowing?",
+    "Does balancing the arrival and removal of daughter nuclei change the properties of an individual daughter?",
+    null
+  ],
+  "alpha-decay-crosses-a-barrier": [
+    null,
+    "Subtracting particle labels identifies the daughter. Which information would give a probability per unit time?",
+    "Compare two nuclei with different barriers. Which feature could change how often an alpha particle gets through?"
+  ],
+  "beta-decay-shares-energy": [
+    "List the particles already present in beta-minus decay before proposing an extra charged particle. Does the proposed list balance charge?",
+    null,
+    "Trace the energy of every product, including the moving daughter. How much can you infer from the electron alone?"
+  ],
+  "gamma-emission-includes-recoil": [
+    "At fixed photon energy the recoil momentum is fixed. Where does the nuclear mass appear in kinetic energy at fixed momentum?",
+    "A photon of the same nonzero energy carries momentum away. What must the recoiling nucleus carry?",
+    null
+  ],
+  "conservation-filters-decay-stories": [
+    null,
+    "Write a separate energy budget after checking charge. What energy is available from a parent initially at rest?",
+    "Compare the total energy before and after. What could supply the extra product rest energy in this setup?"
+  ],
+  "charged-particles-leave-energy-behind": [
+    "A unit tells you how a quantity is measured. What evidence would show that its value stays constant as the particle slows?",
+    null,
+    "Compare the beginning and end of a particle's track. Why might energy loss per unit distance differ?"
+  ],
+  "attenuation-removes-unscattered-photons": [
+    "Which directions and kinds of photons did the narrow detector count? Compare that with the wider detector's tally.",
+    "Draw a photon changing direction on a collision. Could it still reach a detector covering a wider angle?",
+    null
+  ],
+  "separate-efficiency-and-background": [
+    null,
+    "Imagine sending the same number of events to a detector that now catches a smaller fraction. Which way would its count change?",
+    "Separate the events produced from those recorded. Which number does efficiency describe?"
+  ],
+  "count-uncertainty-survives-subtraction": [
+    "Imagine repeating both counts tomorrow. Would subtracting a background reading make the two random changes match?",
+    null,
+    "What range of counts might appear if you repeated just the background measurement several times?"
+  ],
+  "balance-reaction-labels": [
+    "Matching charge and nucleon counts is one check. Which quantities would you compare to tell whether energy is released?",
+    "Even if a neutron is captured, which measurements of the starting and ending particles give the energy balance?",
+    null
+  ],
+  "q-measures-rest-energy-change": [
+    null,
+    "Think of a reaction whose incoming particles carry kinetic energy. What could that energy help pay for?",
+    "A negative Q means the final rest energy costs extra. Trace where the extra energy could come from."
+  ],
+  "cross-section-turns-flux-into-rate": [
+    "Flux counts incoming particles. Did the number of particles already in the target change?",
+    null,
+    "Distinguish how many particles arrive from the chance of an interaction per target particle. Which did you change?"
+  ],
+  "threshold-needs-momentum-room": [
+    "Draw the incoming momentum arrow. Could all final particles be at rest in this laboratory frame?",
+    "At the threshold, the products still have to carry the initial momentum. What might this require in addition to their rest energy?",
+    null
+  ],
+  "rearrangement-can-release-binding-energy": [
+    null,
+    "Place the initial and final rest energies on a ladder. Which side must supply energy when the final level is higher?",
+    "Count rest energy alongside motion and radiation. What quantity must still balance across the rearrangement?"
+  ],
+  "a-chain-is-a-causal-sequence": [
+    "Releasing energy describes the first event. What observation would tell you whether a later event followed from it?",
+    null,
+    "A produced neutron has several possible outcomes. What would you need to know before predicting the next event?"
+  ],
+  "fusion-faces-electric-repulsion": [
+    "Draw the energy at the start, at close approach, and at the finish. Which comparison does positive Q describe?",
+    "Picture two positively charged particles approaching slowly. What could turn them away before they touch?",
+    null
+  ],
+  "stars-couple-nuclear-physics-to-transport": [
+    null,
+    "Imagine a warm object that keeps shining after its heater is turned down. What supplies the difference for a while?",
+    "Consider the hot gas inside the star. Which quantity in its energy budget can fall while light escapes?"
+  ],
+  "infer-an-original-spectral-ladder": [
+    "Shift all three levels up by the same amount. What happens to each possible difference between levels?",
+    null,
+    "List each pair of the three levels once and subtract their energies. Which gaps are actually available?"
+  ],
+  "fit-a-decay-record-cautiously": [
+    "Use a separate detection fraction for each time in the ratio of recorded counts. Do the two fractions cancel?",
+    "Compare a drop in true activity with a drop in detection efficiency. Which of them could lower the later count?",
+    null
+  ],
+  "balance-and-test-a-synthetic-reaction": [
+    null,
+    "Q compares energies. Which separate quantity would tell you how frequently the channel occurs?",
+    "The energy budget is defined before any detector sees the products. What instrument property sets the fraction recorded?"
+  ],
+  "compare-the-models": [
+    "Compare the size and pattern of the mismatch with the measurement uncertainty. Which input could you check independently?",
+    null,
+    "Could carrying more digits correct a wrong input value or a physical effect left out of the model?"
+  ]
+}

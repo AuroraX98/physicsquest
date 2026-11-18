@@ -64,7 +64,7 @@
                 "label": "Distance",
                 "unit": "m",
                 "answer": 18,
-                "tolerance": 0.00001,
+                "tolerance": 1e-05,
                 "feedback": "Multiply 6 m/s by 3 s. The result is 18 m."
               }
             ],
@@ -173,7 +173,7 @@
                 "label": "Travel time",
                 "unit": "s",
                 "answer": 6,
-                "tolerance": 0.00001,
+                "tolerance": 1e-05,
                 "feedback": "(24 m) ÷ (4 m/s) = 6 s."
               }
             ],
@@ -276,7 +276,7 @@
                 "label": "Probability of green",
                 "unit": "unit-free decimal",
                 "answer": 0.3,
-                "tolerance": 0.00001,
+                "tolerance": 1e-05,
                 "feedback": "Three of ten equally likely counters are green: 3 ÷ 10 = 0.3."
               }
             ],
@@ -385,7 +385,7 @@
                 "label": "Average density",
                 "unit": "g/cm³",
                 "answer": 2,
-                "tolerance": 0.00001,
+                "tolerance": 1e-05,
                 "feedback": "Divide 60 g by 30 cm³ to get 2 g/cm³."
               }
             ],
@@ -496,7 +496,7 @@
                 "label": "Added pressure",
                 "unit": "Pa",
                 "answer": 30000,
-                "tolerance": 0.00001,
+                "tolerance": 1e-05,
                 "feedback": "Multiply density 1000 by gravity 10 and depth 3."
               }
             ],
@@ -599,7 +599,7 @@
                 "label": "Buoyant force",
                 "unit": "N",
                 "answer": 30,
-                "tolerance": 0.00001,
+                "tolerance": 1e-05,
                 "feedback": "Use the displaced fluid volume: 1000 × 0.003 × 10 = 30 N."
               }
             ],
@@ -702,7 +702,7 @@
                 "label": "Average speed",
                 "unit": "m/s",
                 "answer": 3,
-                "tolerance": 0.00001,
+                "tolerance": 1e-05,
                 "feedback": "6 × 1.5 = 3 × speed, so speed is 3 m/s."
               }
             ],
@@ -821,7 +821,7 @@
                 "label": "Pressure drop",
                 "unit": "Pa",
                 "answer": 6000,
-                "tolerance": 0.00001,
+                "tolerance": 1e-05,
                 "feedback": "Square each speed before subtracting: ½ × 1000 × (4² − 2²) = 6000 Pa."
               }
             ],
@@ -855,6 +855,14 @@
               {
                 "term": "Streamline",
                 "definition": "A line that follows the direction of the flow at each point."
+              },
+              {
+                "term": "Friction",
+                "definition": "A contact force that opposes sliding between surfaces, or opposes their tendency to slide."
+              },
+              {
+                "term": "Assumption",
+                "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
               }
             ]
           },

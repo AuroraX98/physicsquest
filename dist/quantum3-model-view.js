@@ -1,4 +1,4 @@
-import {weakLevel,quarticTrial,elasticSP} from './quantum3.js';
+import {weakLevel,quarticTrial,elasticSP} from './quantum3.js?v=0.19.0';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const f=x=>x===0?'0':Math.abs(x)<.001||Math.abs(x)>=10000?x.toExponential(3):String(Number(x.toFixed(4)));
 const text=(x,y,s,anchor='middle',size=11)=>`<text x="${x}" y="${y}" text-anchor="${anchor}" font-size="${size}" fill="#52644f" font-family="system-ui,sans-serif">${esc(s)}</text>`;
@@ -10,12 +10,12 @@ function graph(series,{xmin,xmax,ymin,ymax,xlabel,ylabel,point}){
  for(let i=0;i<=4;i++){const x=xmin+(xmax-xmin)*i/4,y=ymin+(ymax-ymin)*i/4;s+=line(X(x),43,X(x),183)+line(57,Y(y),387,Y(y))+text(X(x),204,f(x))+text(49,Y(y)+4,f(y),'end',10);}
  for(const a of series)s+=`<polyline points="${a.points.map(([x,y])=>`${X(x)},${Y(y)}`).join(' ')}" fill="none" stroke="${a.color}" stroke-width="2.8" ${a.dot?'stroke-dasharray="2 4"':a.dash?'stroke-dasharray="6 4"':''}/>`;
  if(point)s+=`<circle cx="${X(point[0])}" cy="${Y(point[1])}" r="5" fill="#9b6f28" stroke="white" stroke-width="1.5"/>`;
- return s+text(222,230,xlabel)+text(57,23,ylabel,'start');
+ return s+text(222,230,xlabel)+text(57,31,ylabel,'start');
 }
 export const quantum3Configs={
  q3weak:[['gap','Reference energy gap',1,5,.5,2,'eV'],['coupling','Actual coupling magnitude',0,1,.05,.2,'eV']],
- q3trial:[['width','Trial width b / a',.3,1.8,.01,1,'']],
- q3scatter:[['waveNumber','Wave number k',.5,3,.25,2,'nm⁻¹'],['phase0','s-wave phase δ₀',-90,90,5,90,'°'],['phase1','p-wave phase δ₁',-90,90,5,45,'°'],['angle','Observation angle θ',0,180,5,60,'°']]
+ q3trial:[['width','Trial width b / a',.3,1.8,.001,.742,'']],
+ q3scatter:[['waveNumber','Wave number k',.5,3,.25,2,'nm⁻¹'],['phase0','s-wave phase δ₀',-90,90,5,90,'°'],['phase1','p-wave phase δ₁',-90,90,5,45,'°'],['angle','Observation angle θ',0,180,5,0,'°']]
 };
 export function renderQuantum3(type,p){
  if(type==='q3weak'){

@@ -92,12 +92,16 @@
       {
         "term": "√",
         "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      },
+      {
+        "term": "Square root",
+        "definition": "A square root answers “which number times itself gives this value?” The √ sign picks the zero or positive answer. For example, √9 = 3."
       }
     ]
   },
   "dot-cross": {
-    "idea": "Two vectors can be multiplied in ways that answer different questions.",
-    "explanation": "A vector has size and direction. The dot product measures how much two vectors point along each other. The cross product describes the area they span and its orientation; here we focus on that area.",
+    "idea": "Two arrows can tell us how much their directions agree or how much area they span.",
+    "explanation": "The dot product measures alignment. Two arrows at right angles give zero. The size of the cross product measures the area of the parallelogram the arrows form. Parallel arrows span no area, even if their dot product is large.",
     "example": {
       "title": "The area between two arrows",
       "steps": [
@@ -196,7 +200,7 @@
       },
       {
         "term": "³",
-        "definition": "Multiply the quantity by itself three times."
+        "definition": "Use three equal factors. For example, 2³ means 2 × 2 × 2 = 8."
       }
     ]
   },
@@ -235,7 +239,7 @@
       },
       {
         "term": "³",
-        "definition": "Multiply the quantity by itself three times."
+        "definition": "Use three equal factors. For example, 2³ means 2 × 2 × 2 = 8."
       }
     ]
   },
@@ -321,6 +325,10 @@
       {
         "term": "Displacement",
         "definition": "The change from starting position to finishing position."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -360,12 +368,20 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
+      },
+      {
+        "term": "Derivative",
+        "definition": "How fast one quantity changes as another changes, at a chosen point. Speed is the rate at which distance traveled changes with time."
       }
     ]
   },
   "definite-integrals": {
-    "idea": "A definite integral finds the accumulated change between two inputs.",
-    "explanation": "Find a rule whose derivative is the quantity being added. Evaluate that rule at the ending input and subtract its value at the starting input. The order controls the sign.",
+    "idea": "Imagine adding up the changing flow from a tap to find how much water came out. A definite integral adds up changes between a chosen start and end.",
+    "explanation": "The integral sign ∫ means to add tiny pieces. The numbers below and above it give the start and the end. One shortcut is to find a rule whose rate of change matches what you are adding. Put the end value into that rule, then subtract what you get at the start.",
     "example": {
       "title": "Adding the rate 2x",
       "steps": [
@@ -402,7 +418,15 @@
       },
       {
         "term": "³",
-        "definition": "Multiply the quantity by itself three times."
+        "definition": "Use three equal factors. For example, 2³ means 2 × 2 × 2 = 8."
+      },
+      {
+        "term": "Integral",
+        "definition": "A way of adding many small pieces to find a total. Adding small pieces of distance can give the length of a whole trip."
+      },
+      {
+        "term": "Derivative",
+        "definition": "How fast one quantity changes as another changes, at a chosen point. Speed is the rate at which distance traveled changes with time."
       }
     ]
   },
@@ -442,12 +466,16 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Integral",
+        "definition": "A way of adding many small pieces to find a total. Adding small pieces of distance can give the length of a whole trip."
       }
     ]
   },
   "integration-parts": {
-    "idea": "Integration by parts trades one difficult integral for another that may be simpler.",
-    "explanation": "Split the product into two parts. Differentiate one and integrate the other, using the product rule in reverse. Keep the endpoint terms when endpoints are given.",
+    "idea": "A rule for the rate of a product can also help us add up a product.",
+    "explanation": "An integral adds many small contributions. Suppose what you want to add contains two changing factors. Integration by parts shifts a derivative, or rate of change, from one factor to the other. Choose the factors so that this leaves an integral you know how to find.",
     "example": {
       "title": "Integrating x eˣ",
       "steps": [
@@ -485,6 +513,10 @@
       {
         "term": "x",
         "definition": "The input number."
+      },
+      {
+        "term": "Integral",
+        "definition": "A way of adding many small pieces to find a total. Adding small pieces of distance can give the length of a whole trip."
       }
     ]
   },
@@ -516,12 +548,16 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Derivative",
+        "definition": "How fast one quantity changes as another changes, at a chosen point. Speed is the rate at which distance traveled changes with time."
       }
     ]
   },
   "total-differential": {
-    "idea": "When several inputs change, add their separate contributions to the output's rate.",
-    "explanation": "Find how strongly the output responds to each input. Multiply each response by that input's time rate, then add. This gives the exact rate when the needed derivatives exist.",
+    "idea": "A rectangle can grow because its length changes, its width changes, or both.",
+    "explanation": "Look at one instant. A little more length adds a strip whose width is the current width. A little more width adds a strip whose length is the current length. Adding the two contributions gives the area’s rate of change. The same idea works for other quantities with several changing inputs.",
     "example": {
       "title": "A growing rectangle",
       "steps": [
@@ -629,6 +665,10 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
       }
     ]
   },
@@ -703,12 +743,16 @@
       {
         "term": "∫",
         "definition": "Add these contributions continuously along the path."
+      },
+      {
+        "term": "Integral",
+        "definition": "A way of adding many small pieces to find a total. Adding small pieces of distance can give the length of a whole trip."
       }
     ]
   },
   "flux": {
-    "idea": "Flux measures how much a field points through a surface.",
-    "explanation": "Count the surface area and the field's perpendicular part. For a flat sheet in a uniform field, multiply field size, area, and the appropriate direction factor. Flux need not describe a material flowing.",
+    "idea": "To measure a field’s passage through a sheet, the sheet’s tilt matters.",
+    "explanation": "Imagine wind crossing a window screen. Wind straight through it contributes most. Wind parallel to the screen gives zero. For a flat sheet in a uniform field, multiply the sheet’s area by the part of the field pointing straight through. This quantity is called flux.",
     "example": {
       "title": "A field through a sheet",
       "steps": [
@@ -749,12 +793,16 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
   "divergence": {
-    "idea": "Divergence measures a field's net outward contribution near one place.",
-    "explanation": "Imagine a tiny closed box. Compare what points outward through its sides with what points inward, then divide by its volume. This mathematical test also works for fields that are not flowing materials.",
+    "idea": "A field can point more strongly out of a small region than into it.",
+    "explanation": "Imagine a tiny closed box in a wind map. Add the outward flow through its faces and subtract the inward flow. Divide by the box’s volume and consider smaller boxes near the same point. The resulting number is divergence. Fields besides wind can be compared this way.",
     "example": {
       "title": "A simple outward field",
       "steps": [
@@ -788,8 +836,8 @@
     ]
   },
   "curl": {
-    "idea": "Curl measures a field's local tendency to circulate.",
-    "explanation": "Compare how nearby parts of the field change sideways. Curl gives both the amount of local circulation and its orientation. Curved-looking arrows alone do not measure it.",
+    "idea": "Curl measures local turning in a field of arrows.",
+    "explanation": "Imagine putting a tiny paddle wheel in water. Faster flow on one side can make it turn. Curl describes that local turning tendency and the direction of its axis. A stream can follow a curved path without making a tiny wheel spin.",
     "example": {
       "title": "A circulating field",
       "steps": [
@@ -901,6 +949,10 @@
       {
         "term": "| | (magnitude)",
         "definition": "The bars mean the distance from zero on the complex-number plane."
+      },
+      {
+        "term": "Complex number",
+        "definition": "A number with a real part and an imaginary part. For example, 3 + 2i uses i, whose square is −1."
       }
     ]
   },
@@ -936,8 +988,8 @@
     ]
   },
   "euler": {
-    "idea": "Euler's formula describes a point on a unit circle with one complex exponential.",
-    "explanation": "Cosine gives its horizontal part and sine its vertical part. Multiplying by e^(iθ) turns a number through angle θ without changing its size. This is a number-diagram rotation, not necessarily a physical motion.",
+    "idea": "One formula connects a turn around a circle with a complex number.",
+    "explanation": "On a circle of radius one, cosine gives the horizontal coordinate and sine gives the vertical coordinate. Use those as the real and imaginary parts of a complex number. Euler’s formula writes them together as e raised to i times the angle, with the angle measured in radians.",
     "example": {
       "title": "A quarter-turn",
       "steps": [
@@ -983,8 +1035,8 @@
     ]
   },
   "phasor-derivatives": {
-    "idea": "For a steady complex wave, taking a time derivative means multiplying by iω.",
-    "explanation": "Here ω is a fixed angular frequency, the phase change per second. This shortcut works for a constant-amplitude, single-frequency signal. A changing amplitude would contribute another term.",
+    "idea": "For one steady repeating wave, a shortcut gives its rate of change.",
+    "explanation": "A time derivative tells how quickly something changes. Here a complex number stores the size of a wave and its place in a cycle. Multiply it by iω to get the derivative. The symbol i has square −1. The symbol ω tells how fast the cycle advances. The shortcut assumes the wave keeps one frequency and a fixed amplitude.",
     "example": {
       "title": "Differentiating a position signal",
       "steps": [
@@ -1034,6 +1086,18 @@
       {
         "term": "d/dt",
         "definition": "Take the rate of change with time."
+      },
+      {
+        "term": "Complex number",
+        "definition": "A number with a real part and an imaginary part. For example, 3 + 2i uses i, whose square is −1."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -1170,6 +1234,10 @@
       {
         "term": "b",
         "definition": "The known output vector."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
       }
     ]
   },
@@ -1205,6 +1273,10 @@
       {
         "term": "Independent",
         "definition": "None of the building blocks can be made from the others."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
       }
     ]
   },
@@ -1244,12 +1316,24 @@
       {
         "term": "≠",
         "definition": "Not equal to."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
       }
     ]
   },
   "characteristic-equation": {
-    "idea": "Eigenvalues are the factors that allow a nonzero vector to keep its pattern.",
-    "explanation": "Subtract a trial factor λ from the matrix's diagonal. For the right factors, this new matrix sends some nonzero vector to zero. Its determinant, a test of invertibility, is then zero.",
+    "idea": "An eigenvalue is a number that scales a whole vector when a matrix acts on it.",
+    "explanation": "Call a possible multiplier λ. Subtract λ from each diagonal entry of the matrix. If the new matrix can turn a nonzero vector into zero, λ is an eigenvalue of the original matrix. Its determinant, a number we calculate from the entries of the new matrix, is then zero.",
     "example": {
       "title": "Finding two factors",
       "steps": [
@@ -1291,12 +1375,20 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
       }
     ]
   },
   "diagonalization": {
-    "idea": "Using eigenvectors as coordinates can turn a matrix into separate multiplying rules.",
-    "explanation": "If there are enough independent eigenvectors, they form a basis. In that basis the matrix is diagonal, so each coordinate is multiplied by its own eigenvalue. This is a coordinate change, not deleting unwanted entries.",
+    "idea": "A good choice of directions can turn one matrix rule into several simple multiplications.",
+    "explanation": "A matrix is a grid of numbers that acts on a list of coordinates. An eigenvector is a nonzero input that the matrix multiplies by one number, its eigenvalue. If enough independent eigenvectors span the space, use them as the coordinate directions. In those coordinates, each part simply gets its own multiplier.",
     "example": {
       "title": "Repeating a simple matrix action",
       "steps": [
@@ -1346,6 +1438,10 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
       }
     ]
   },
@@ -1385,6 +1481,14 @@
       {
         "term": "√",
         "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
@@ -1428,6 +1532,10 @@
       {
         "term": "√",
         "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
       }
     ]
   },
@@ -1471,6 +1579,14 @@
       {
         "term": "||u||",
         "definition": "The length of u."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
@@ -1518,6 +1634,14 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Proportional",
+        "definition": "Two quantities are proportional when multiplying one by a certain factor multiplies the other by that same factor."
+      },
+      {
+        "term": "Exponential",
+        "definition": "A function that changes by the same factor when its input changes by a fixed amount. For example, a signal that halves each second decays exponentially."
       }
     ]
   },
@@ -1541,6 +1665,14 @@
       {
         "term": "Half-life",
         "definition": "The time for a model amount to fall to half its starting value."
+      },
+      {
+        "term": "Exponential",
+        "definition": "A function that changes by the same factor when its input changes by a fixed amount. For example, a signal that halves each second decays exponentially."
+      },
+      {
+        "term": "Random",
+        "definition": "Individual outcomes can vary even when you repeat the same setup."
       }
     ]
   },
@@ -1592,6 +1724,14 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -1643,12 +1783,24 @@
       {
         "term": "√",
         "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from the starting position to the ending position, including direction."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
   "coupled-odes": {
-    "idea": "Connected oscillators can move in patterns that keep their relative proportions.",
-    "explanation": "Such a pattern is a normal mode. In a suitable linear motion equation, a restoring matrix maps the pattern to a multiple of itself. A positive multiplier gives the squared angular frequency.",
+    "idea": "Carts linked by springs can swing together in a repeatable pattern.",
+    "explanation": "In a normal mode, every cart repeats at the same frequency and their movements keep a fixed pattern. Try a pattern and calculate each cart’s acceleration from the forces. If the accelerations bring all the carts back in the same proportions, the pattern can keep its shape as it swings.",
     "example": {
       "title": "Moving together",
       "steps": [

@@ -49,7 +49,10 @@ def candidates(row):
   if re.fullmatch(TOKEN,label) and (len(label)<5 or '_' in label):
    result.append(dict(symbol=label,name=label,description=desc,unit=''))
   else:
-   aliases=re.findall(r'(?:,\s*| \()(['+LETTERS+r']{1,3}(?:_['+LETTERS+r'0-9]+|['+SUB+r']+)?)(?=\)|$)',label)
+   # A named quantity such as 'Pressure (p)' may supply an alias. The last
+   # argument of f(x,y) and the last item of a coordinate pair never do.
+   variable=r'(['+LETTERS+r']{1,3}(?:_['+LETTERS+r'0-9]+|['+SUB+r']+)?)'
+   aliases=re.findall(r'^[^(),]{3,}?(?:,\s*|\s+\()'+variable+r'\)?$',label)
    for alias in aliases:result.append(dict(symbol=alias,name=label,description=desc,unit=''))
  return result
 overpath=R/'equation-definitions.json'
@@ -83,7 +86,14 @@ for row in rows:
    if t in definitions: entries.append(definitions[t])
    else:
     alias=next((v for k,v in definitions.items() if canonical(k)==canonical(t)),None)
-    if alias:entries.append(dict(alias,symbol=t))
+    if alias:
+     # The dots change the quantity and its units. A rate cannot inherit the base unit.
+     marks=unicodedata.normalize('NFD',t)
+     if '̇' in marks or '̈' in marks:
+      base=unicodedata.normalize('NFC',marks.replace('̇','').replace('̈',''))
+      meaning=f'How quickly {base} changes with time.' if '̈' not in marks else f'How quickly the rate of change of {base} changes with time.'
+      entries.append(dict(symbol=t,name=t,description=meaning,unit=''))
+     else:entries.append(dict(alias,symbol=t))
     else:missing.append(t)
   keys[eq]=entries
   if missing:unknown.append(dict(key=key,equation=eq,missing=missing,terms=row['focus'].get('terms',[]),guide=row['lesson'].get('equationGuide',{}).get('symbols',[])))

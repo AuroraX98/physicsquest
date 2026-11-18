@@ -1,6 +1,6 @@
-import {esc} from './models.js?v=0.17.2';
-import {focusedLessonHTML} from './focused-lesson.js?v=0.17.2';
-import {reviewQueue,reviewDateLabel} from './review.js';
+import {esc} from './models.js?v=0.19.0';
+import {focusedLessonHTML} from './focused-lesson.js?v=0.19.0';
+import {reviewQueue,reviewDateLabel} from './review.js?v=0.19.0';
 
 export function reviewHTML({reviews,courses,plainCourses,selectedId,save,undo,notice}){
  const all=reviewQueue(reviews,undefined,true),due=reviewQueue(reviews);

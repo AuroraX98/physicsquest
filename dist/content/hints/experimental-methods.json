@@ -1,0 +1,127 @@
+{
+  "offset-correction": [
+    null,
+    "Imagine a scale that now reads zero when empty. Do its smallest markings let you weigh a grain exactly?",
+    "Round a reading on paper. Has anything about the scale itself changed?"
+  ],
+  "repeat-mean": [
+    "Picture a scale that adds the same extra gram each time. Where does that gram go when you average three readings?",
+    null,
+    "Imagine a hundred copies of exactly the same shifted reading. What is their average?"
+  ],
+  "mean-uncertainty": [
+    "Find the square root sign in the formula. What happens to the square root when its input grows fourfold?",
+    "Keep the spread fixed and increase only the number under the square root. What happens to the denominator?",
+    null
+  ],
+  "combine-uncertainties": [
+    null,
+    "Imagine the instrument reads a little high today. Would both readings shift together?",
+    "Write the same extra amount next to both readings. What happens to those extras when you add the readings?"
+  ],
+  "define-measurand": [
+    null,
+    "A cart speeds up. Would timing its whole trip give the same speed as timing just its last metre?",
+    "Two people use the same brand of timer at different parts of the trip. What should they agree to measure?"
+  ],
+  "controlled-difference": [
+    "How might the warmer water cool with the fan switched off?",
+    null,
+    "List everything that changed between the trials. Can you tell which change caused the difference?"
+  ],
+  "background-subtraction": [
+    "Imagine making two fresh measurements of the background. Would you always subtract exactly the same amount?",
+    "Compare a small positive result and a small negative one. Does the background measurement become more precise when the sign changes?",
+    null
+  ],
+  "sample-time-scale": [
+    null,
+    "Picture filming a slow thermometer many times a second. Can it show a temperature spike before it responds?",
+    "What information can the saved file contain if the sensor itself never followed the fast change?"
+  ],
+  "calibration-gain": [
+    "Try two positive inputs that are far apart. Can subtracting one fixed number change the gap between their readings?",
+    null,
+    "Think of a line on a graph. Which changes when you slide it down, its height or its slope?"
+  ],
+  "reference-uncertainty": [
+    "Every comparison uses the same ruler. Which error would every repeat inherit?",
+    "Imagine identical readings against a ruler whose marks are slightly too far apart. What might you still be unsure about?",
+    null
+  ],
+  "calibration-residual": [
+    null,
+    "Could a repeat measurement land a little above a perfectly straight calibration line?",
+    "Think of readings scattered on either side of a straight line. What pattern would several readings need to show?"
+  ],
+  "calibration-hysteresis": [
+    "Keep the units fixed. Compare reaching the same input from above and from below.",
+    null,
+    "Picture a spring easing back after a stretch. Which part of its recent history might affect the reading?"
+  ],
+  "sample-scatter": [
+    "Imagine four readings. Their count has a square root of two. What happens if you divide the spread by two?",
+    "Both quantities have the same unit. Which describes individual readings and which describes their mean?",
+    null
+  ],
+  "shared-bias": [
+    null,
+    "Picture a ruler missing its first centimetre. Would measuring the same way a hundred times change where its marks start?",
+    "Add the same offset to every number in a short list. Where does the offset appear in the mean?"
+  ],
+  "resolution-uncertainty": [
+    "A digital display shows just one decimal place. How many nearby values might round to the same display?",
+    null,
+    "Picture two true lengths that fall between the same marks. What would the instrument show?"
+  ],
+  "sensitivity-factor": [
+    "Imagine standing at the bottom of a curved bowl. What happens to the height if you move a small distance either way?",
+    "Look at the shape of the graph just around its flat point. What change might a straight-line estimate miss?",
+    null
+  ],
+  "correlated-inputs": [
+    null,
+    "Add the same small number to two readings, then subtract them. Track each copy of the extra number.",
+    "Try adding the two shifted readings on paper. What sign does each copy of the offset have in a sum?"
+  ],
+  "least-squares": [
+    "Find where the residual is squared. Does the slope of the fitted line change the sign of a square?",
+    null,
+    "Try squaring a positive gap and an equally large negative gap before adding them."
+  ],
+  "weighted-fit": [
+    "Which reading should count more, one with a tight uncertainty or one with a wide uncertainty?",
+    "Find the squared uncertainty in the denominator. What happens to that denominator when uncertainty doubles?",
+    null
+  ],
+  "reduced-chi-square": [
+    null,
+    "Could two different curves pass near all the measured points within their uncertainties?",
+    "More points can test a curve more closely. Can one number tell you whether every other possible curve fails?"
+  ],
+  "held-out-check": [
+    "Changing a label leaves the same measurements in place. Which ones has the tuning process already seen?",
+    null,
+    "If you changed the model after seeing these points, what fresh measurements could you use to test it?"
+  ],
+  "reproducible-record": [
+    "Imagine the correction rule changes later. Which numbers would you need to run the new correction?",
+    "Even a tiny change can matter in a later calculation. Where could you keep both versions?",
+    null
+  ],
+  "drift-check": [
+    null,
+    "Imagine the reading climbs at noon and returns by evening. What would just two endpoint checks show?",
+    "A digital display can also warm up and cool down. When would you check for a change during the run?"
+  ],
+  "expanded-uncertainty": [
+    "Change volts to millivolts on the same measurements. Would that change the chance of covering the true value?",
+    null,
+    "Think about the shape of the measurement errors. Which assumption links this multiplier to a coverage probability?"
+  ],
+  "report-resolution": [
+    "Try rounding a number and then multiplying it. How could a small rounding error grow in a later step?",
+    "Think about when a reader needs the final rounded value and when your next calculation still needs the extra digits.",
+    null
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "position": [
+    null,
+    "You found a change in position. Which coordinate did the cart start from?",
+    "Check the sign of the velocity before adding its change to the starting position."
+  ],
+  "instantaneous-velocity": [
+    null,
+    "A whole-trip average uses the distance since the start. What gives the slope at one instant?",
+    "Are you computing a place on the graph or its slope at that place?"
+  ],
+  "relative-velocity": [
+    "Subtract B’s signed velocity, including its minus sign.",
+    "Which object is the observer? Reversing the comparison reverses its direction.",
+    null
+  ],
+  "acceleration": [
+    "For one second, add the signed change in velocity to the starting velocity.",
+    "Does slowing a cart immediately reverse the direction it is rolling?",
+    null
+  ],
+  "derive-constant-a": [
+    "Mark the entire time interval under the velocity graph. What shape is the extra area?",
+    null,
+    "The acceleration is active throughout. How large is the extra velocity at the beginning?"
+  ],
+  "motion-constraints": [
+    null,
+    "At the turnaround velocity is zero. Is the return to the starting place the turnaround?",
+    "Which direction is the object moving on its return?"
+  ],
+  "variable-acceleration": [
+    "Add displacement from the starting velocity as well as from the growing acceleration.",
+    "Check which integral gives velocity and which gives position. What units did you obtain?",
+    null
+  ],
+  "projectiles": [
+    "At the top, which component is about to reverse direction?",
+    null,
+    "What still pulls the object downward at that instant?"
+  ],
+  "unequal-heights": [
+    "Which component of the initial velocity changed in this setup?",
+    null,
+    "Draw only the vertical motion before adding any horizontal distances."
+  ],
+  "angled-launch": [
+    null,
+    "Range involves sideways speed and flight time. Which ones change here?",
+    "Increasing speed can also change time in the air. Write both factors."
+  ],
+  "inertial-frames": [
+    "Which frame is slowing down, the road or the braking car?",
+    "In the ground frame, what would make the loose object lose its speed?",
+    null
+  ],
+  "net-force": [
+    null,
+    "Changing velocity needs a net force. What would slow the cart here?",
+    "Compare the current velocity with the acceleration implied by zero net force."
+  ],
+  "third-law": [
+    "Write the receiving object beside each of the two named forces.",
+    null,
+    "Besides equal size, what must happen to the roles of giver and receiver?"
+  ],
+  "choose-system": [
+    null,
+    "Draw a boundary around both carts. Does the connector cross that boundary?",
+    "Would drawing the same boundary depend on whether the carts were rolling?"
+  ],
+  "normal-tension": [
+    "Write a balance for all vertical forces, including the extra support.",
+    "Do the table and the upward pull act on the same side of the balance?",
+    null
+  ],
+  "inclines": [
+    "Sketch an almost level surface. How much of gravity points along it?",
+    null,
+    "On a level surface, which direction does most of gravity point?"
+  ],
+  "linked-bodies": [
+    null,
+    "What friction was actually specified for the rope?",
+    "Draw the two carts separately. Which cart does each pull accelerate?"
+  ],
+  "static-friction": [
+    null,
+    "The maximum static friction is a limit. Is the box about to slip or still at rest?",
+    "Which friction is being requested, the amount left before slipping or the amount acting now?"
+  ],
+  "kinetic-friction": [
+    "Which way is the floor of the belt sliding relative to the bottom of the box?",
+    "Does being at rest in the room rule out sliding against a moving belt?",
+    null
+  ],
+  "linear-drag": [
+    "Locate the mass in the time-scale rule m/b.",
+    null,
+    "Would a larger mass change its speed more or less readily under the same drag?"
+  ],
+  "terminal-speed": [
+    null,
+    "Is kinetic energy based on distance traveled or on speed?",
+    "Balanced forces are compatible with what kinds of velocity?"
+  ],
+  "radial-acceleration": [
+    "Look at how many factors of speed occur in the radial acceleration.",
+    "Speed is in the numerator of the circular-motion rule. How often does it appear?",
+    null
+  ],
+  "radial-force-budget": [
+    "Which belongs in the denominator, the radius or the speed?",
+    null,
+    "Write the product of the two speed factors before changing them."
+  ],
+  "nonuniform-circular": [
+    null,
+    "If velocity changes direction, which acceleration points inward?",
+    "Can the velocity arrow turn even when its length stays fixed?"
+  ],
+  "work-dot-product": [
+    "Draw the force component along the displacement before multiplying.",
+    "A negative work value needs a force pointing partly against travel. Check the angle.",
+    null
+  ],
+  "variable-force-work": [
+    "Compare the area under this changing force with a full rectangle at the peak force.",
+    null,
+    "Check both the height and width of the force graph over the new interval."
+  ],
+  "kinetic-energy": [
+    null,
+    "Write speed × speed in the kinetic-energy rule.",
+    "Does the kinetic-energy rule place speed in the numerator or denominator?"
+  ],
+  "power": [
+    "Average power asks for work done in one second. How many seconds share the work?",
+    "Check whether your units are joules per second or seconds per joule.",
+    null
+  ],
+  "conservative-force": [
+    "Would lifting the whole graph vertically reverse its slope?",
+    null,
+    "Compare the changes in potential between neighboring points before and after the shift."
+  ],
+  "energy-diagrams": [
+    null,
+    "At the top of a vertical toss, is the gravitational pull gone?",
+    "Force comes from the slope of the energy graph. Is the graph flat at that point?"
+  ],
+  "spring-gravity-potentials": [
+    "How many times does the extension occur in the spring-energy rule?",
+    null,
+    "A squared extension has what sign, whether a spring is squeezed or stretched?"
+  ],
+  "nonconservative-energy": [
+    "Give the drive and friction the signs of energy entering or leaving.",
+    "Does friction add mechanical energy to the system in this account?",
+    null
+  ],
+  "momentum-vector": [
+    null,
+    "When you square each velocity, what happens to the signs?",
+    "Momentum keeps direction. Which of the two bodies travels along the negative axis?"
+  ],
+  "impulse": [
+    "Is the force at its peak for the whole interval? Compare a triangle with a rectangle.",
+    null,
+    "Impulse is the area of the force–time graph. What time units should remain?"
+  ],
+  "isolated-momentum": [
+    "Did the system receive an outside impulse during the interval?",
+    "Impulse is a change. What did the system have before that change?",
+    null
+  ],
+  "centre-mass": [
+    null,
+    "Which point was the balance point before all the masses moved?",
+    "If you slide every mark on a ruler together, what happens to their relative spacing?"
+  ],
+  "collision-types": [
+    "Check whether the kinetic energy after the collision equals the amount before.",
+    null,
+    "Do the bodies move together afterward? That is an extra condition beyond losing some kinetic energy."
+  ],
+  "elastic-collisions": [
+    "If both carts share a velocity, does their total kinetic energy match its initial value?",
+    "Keep the original signs when checking total momentum before and after.",
+    null
+  ],
+  "two-d-collisions": [
+    null,
+    "Which incoming puck changed direction? Did the x component also change?",
+    "Give the second puck’s y velocity the sign specified in the new situation."
+  ],
+  "angular-kinematics": [
+    "You have a change in angular velocity. What was the initial reading?",
+    null,
+    "Carry the minus sign of the angular acceleration through the two seconds."
+  ],
+  "moment-inertia": [
+    "Each mass contributes mass × distance squared. How many distance factors change?",
+    "Masses are fixed, but did their distances from the axis stay fixed?",
+    null
+  ],
+  "parallel-axis": [
+    null,
+    "Use the new axis distance, then square it before multiplying by mass.",
+    "The parallel-axis rule starts with the inertia around the centre. Did you include it?"
+  ],
+  "rolling-energy": [
+    "As centre speed doubles, what happens to both the linear and rotational energy terms?",
+    null,
+    "Rolling without slipping ties turning rate to forward speed. What changed?"
+  ],
+  "torque-vector": [
+    "Follow the right-hand rule when the force points along negative y.",
+    null,
+    "Are the force and radius parallel or perpendicular?"
+  ],
+  "rotational-dynamics": [
+    null,
+    "Try the same turning push on a wheel with more rotational inertia. Compare how easily its spin changes.",
+    "Can a nonzero torque still turn a wheel with a finite, larger inertia?"
+  ],
+  "static-equilibrium": [
+    null,
+    "Add the two support forces and compare with the total downward load.",
+    "Are the left and right lever arms still the unequal lengths used in the previous example?"
+  ],
+  "angular-momentum": [
+    "Check the angle between position and momentum before assigning a direction.",
+    null,
+    "Angular momentum uses the perpendicular part of momentum. Does the velocity still have that part?"
+  ],
+  "angular-momentum-conservation": [
+    "Angular impulse counts torque over its whole duration. What changed in the duration?",
+    "Is the torque small or exactly absent? Consider how it accumulates over time.",
+    null
+  ],
+  "changing-inertia": [
+    null,
+    "Rewrite rotational energy using fixed angular momentum before changing inertia.",
+    "An unchanged angular momentum need not imply unchanged speed. Which other factor varies?"
+  ],
+  "inverse-square-gravity": [
+    "Look at the exponent on centre-to-centre distance in the force rule.",
+    null,
+    "Is separation in the numerator or denominator of gravitational force?"
+  ],
+  "gravitational-potential-escape": [
+    null,
+    "Does the radius ratio enter the escape speed itself or its square?",
+    "At a greater distance from the same source, would a larger escape speed make sense?"
+  ],
+  "circular-orbits": [
+    null,
+    "Period depends on both orbital length and speed. Have both been included?",
+    "A more distant circular orbit also has a different speed. Check that second change."
+  ],
+  "orbital-energy": [
+    null,
+    "With the same masses, locate the semimajor axis in the denominator of the energy formula.",
+    "Assign the sign for a bound orbit separately from the energy’s size."
+  ],
+  "model-selection": [
+    "An external horizontal impulse changes which conserved quantity for the chosen system?",
+    null,
+    "Can a force law include an external push even when an old conservation shortcut fails?"
+  ],
+  "mechanics-capstone": [
+    "Could the same energy compress a stiffer spring farther than before?",
+    null,
+    "Which variable is squared in the spring-energy rule?"
+  ],
+  "mechanics-assessment": [
+    null,
+    "Which outside action can change angular momentum even as the mass moves inward?",
+    "What work could the moving parts do during the rearrangement?"
+  ],
+  "fluid-density": [
+    null,
+    "Double both numerator and denominator in mass ÷ volume before comparing.",
+    "Did only the volume change, or did mass change with it?"
+  ],
+  "fluid-pressure-depth": [
+    "The pressure gain uses density, gravity and depth. Which factor carries kilograms per cubic metre?",
+    null,
+    "Does this question ask for the extra pressure below the surface or the whole pressure including the surface?"
+  ],
+  "fluid-buoyancy": [
+    "Draw both force arrows to the same scale. Which is longer?",
+    "For the forces to balance, what would have to be true about their sizes?",
+    null
+  ],
+  "fluid-continuity": [
+    null,
+    "Volume flow uses area × speed. Can both factors shrink and keep the same product?",
+    "With a smaller opening, would the old speed move the same volume per second?"
+  ],
+  "fluid-bernoulli": [
+    "Which energy term changes when only the heights are equal?",
+    null,
+    "Which choice actually supplies extra energy as the liquid travels?"
+  ]
+}

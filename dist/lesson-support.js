@@ -1,6 +1,6 @@
-import {esc} from './models.js?v=0.17.2';
-import {equationKeyHTML,lessonEquationKey} from './equation-help.js?v=0.17.2';
-import {sameText} from './lesson-content.js?v=0.17.2';
+import {esc} from './models.js?v=0.19.0';
+import {equationKeyHTML,lessonEquationKey} from './equation-help.js?v=0.19.0';
+import {sameText} from './lesson-content.js?v=0.19.0';
 export function equationHTML(lesson){const guide=lesson.equationGuide;return `<section class="focused-equation" aria-label="Equation"><p class="equation-label">Equation</p><pre class="equation"><code>${esc(lesson.equation)}</code></pre>${equationKeyHTML(lessonEquationKey(lesson,lesson.equation),lesson.equation,lesson.courseId)}</section>${guide?`<p class="equation-meaning">${esc(guide.meaning)}</p>`:''}<p class="terms">${esc(lesson.terms)}</p>`;}
 export function glossaryHTML(lesson,shownSymbols=[]){const terms=(lesson.glossary??[]).filter(g=>g.example||!shownSymbols.some(s=>sameText(g.definition,s.description)));if(!terms.length)return '';return `<details class="lesson-glossary"><summary>Glossary · plain meanings for ${terms.length} ${terms.length===1?'word':'words'}</summary><dl>${terms.map(g=>`<div><dt>${esc(g.term)}</dt><dd>${esc(g.definition)}${g.example?`<span class="glossary-example">${esc(g.example)}</span>`:''}</dd></div>`).join('')}</dl></details>`;}
 export function prerequisitesHTML(lesson,courseId,courses){const ids=lesson.prerequisiteIds??[];if(!ids.length)return '';return `<p class="lesson-preparation"><strong>Builds on:</strong> ${ids.map(id=>{const [c,l]=id.includes('/')?id.split('/'):[courseId,id];const target=courses.get(c)?.lessons.find(item=>item.id===l);return target?`<a href="#learn/${esc(c)}/${esc(l)}">${esc(target.title)}</a>`:esc(id);}).join(' · ')}. You can revisit these freely.</p>`;}

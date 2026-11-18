@@ -1,0 +1,47 @@
+{
+  "units": [
+    null,
+    "Picture a one-metre ruler. Would 75 cm reach its far end? Compare that with a cable seven and a half metres long.",
+    "One metre already contains 100 centimetres. When the counting unit gets bigger, should the same cable need more units or fewer?"
+  ],
+  "scale": [
+    "Write 10⁻³ and 10⁻⁵ as fractions with 1 on top. Which denominator makes the smaller piece?",
+    "The leading 2s match. What changes when the number of places in the denominator changes?",
+    null
+  ],
+  "relationships": [
+    "Imagine continuing for a second hour at the same speed. Does that extra hour add any distance?",
+    null,
+    "In distance = speed × time, which input changed? Is time a multiplier or a divisor?"
+  ],
+  "vectors": [
+    null,
+    "Draw the route to scale. Is the question asking for all the ground you covered or for the arrow from start to finish?",
+    "Mark your starting point before drawing the westward part. Where does that second arrow begin?"
+  ],
+  "graphs": [
+    "Read the unit beside the vertical axis. Does the height of this line show a place or a speed?",
+    "Choose two different times on the flat line. Do their positions give you any evidence of a changing speed?",
+    null
+  ],
+  "accumulation": [
+    "Try adding the change for each of the four seconds. Which operation does that repeat?",
+    null,
+    "Which way does the minus sign in the velocity say the cart is moving? Carry that direction into your answer."
+  ],
+  "uncertainty": [
+    null,
+    "Imagine every reading is made with the same misplaced ruler mark. Would repeating the reading put that mark in a new place?",
+    "More digits describe a reading more finely. What would actually move the instrument’s zero to the right place?"
+  ],
+  "models": [
+    "Which speed range already gave predictions that agreed with measurements?",
+    "Measurements let you test a prediction. Which part can be revised without changing what was observed?",
+    null
+  ],
+  "check-units": [
+    null,
+    "Write metres per second as m/s, then multiply by s. Which matching factors cancel?",
+    "Trace the length unit through (m/s) × s. What happens to the two time factors?"
+  ]
+}

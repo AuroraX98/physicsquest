@@ -1,0 +1,83 @@
+/* Small cards start with the entire picture in view. The checkbox opens a larger scale for reading labels. */
+.model-figure, .lesson-diagram {
+  container-type: inline-size;
+}
+.figure-zoom { display: none; }
+.model-figure .model-stage {
+  display: block;
+  padding: clamp(4px, 2.5%, 15px);
+  min-height: 0;
+}
+.model-figure .model-stage svg, .lesson-diagram .diagram-scroll svg {
+  width: 100%;
+  min-width: 0;
+  margin-inline: auto;
+}
+.model-figure .model-stage .model-readout {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(min(110px, 100%), 1fr));
+  gap: 10px 14px;
+  padding: 5px 8px 9px;
+  overflow-wrap: anywhere;
+}
+.model-figure .model-stage .model-readout b { line-height: 1.4; }
+.model-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 0 0 14px;
+}
+.model-actions button {
+  min-height: 44px;
+  margin: 0;
+}
+.model-play { background: var(--green); color: white; }
+.model-play:hover { background: var(--ink); }
+@container (max-width: 470px) {
+  .figure-zoom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    min-height: 38px;
+    margin: 0 0 5px;
+    color: var(--green);
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .figure-zoom input { inline-size: 17px; block-size: 17px; margin: 0; }
+  .figure-zoom:has(input:checked) + .diagram-scroll svg,
+  .figure-zoom:has(input:checked) + .model-stage svg {
+    min-width: 500px;
+    max-height: none;
+  }
+}
+
+.surface-views {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(145px,100%),1fr));
+  align-items: start;
+  gap: 10px;
+}
+.surface-model figure { margin: 0; min-width: 0; }
+.surface-model figcaption, .surface-model h4 {
+  font: 650 14px/1.5 system-ui,sans-serif;
+  margin: 0 0 6px;
+  color: #25463c;
+}
+.surface-views figcaption { text-align: center; }
+.surface-model .surface-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 3px 12px; font-size: 12px; line-height: 1.5; margin: 8px 0 12px; }
+.surface-legend span { display: inline-flex; align-items: center; gap: 4px; }
+.route-swatch { display: inline-block; width: 16px; border-top: 3px solid #185c50; }
+.arrow-swatch { color: #925214; font-size: 17px; }
+.surface-result { border-top: 1px solid #c6d7ca; padding-top: 11px; }
+.surface-result p { margin: 3px 0; line-height: 1.5; font-size: 14px; }
+.surface-arrows { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; max-width: 340px; margin: 6px auto 12px; }
+.surface-arrows span { color: #274a42; font-size: 13px; font-weight: 650; }
+.surface-arrows > div { min-width: 0; }
+.surface-model { width: 100%; padding: 4px; }
+.model-figure .model-stage .surface-views svg { max-height: 168px; }
+.figure-zoom:has(input:checked) + .model-stage:has(.surface-model) .surface-model { min-width: 500px; }
+.figure-zoom:has(input:checked) + .model-stage .surface-model svg { min-width: 0; }

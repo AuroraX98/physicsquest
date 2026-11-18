@@ -1,7 +1,7 @@
 {
   "ket-bra-bridge": {
-    "idea": "A bra and a ket let us calculate a quantum overlap.",
-    "explanation": "A ket lists amplitudes in a column. Its bra turns that column into a row and reverses the imaginary signs; multiplying bra by ket gives an overlap amplitude, whose squared size gives the projection chance.",
+    "idea": "Two lists of numbers can tell us how likely a quantum test is to give a particular result.",
+    "explanation": "Write the amplitudes of a state in a column. This is its ket. For the outcome you want to test, turn its normalized column into a row and change i to −i. This row is its bra. Multiply matching entries of the bra and the prepared ket, then add. Square the size of the sum to get the chance of that outcome.",
     "example": {
       "title": "Testing the first basis state",
       "steps": [
@@ -14,12 +14,16 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
       }
     ]
   },
   "state-coordinates": {
-    "idea": "Changing the order of basis labels does not change the prepared state.",
-    "explanation": "A basis is a set of reference states. Coordinate entries tell how much of each reference is present; reordering the references must reorder the entries too.",
+    "idea": "Changing the order of a list does not change what the list describes if the labels move with it.",
+    "explanation": "A basis is a set of reference states. Each number in the list belongs to one reference. For example, if the first number goes with “up”, it must still go with “up” when the list is reordered.",
     "example": {
       "title": "Reordering three labels",
       "steps": [
@@ -36,12 +40,16 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
       }
     ]
   },
   "outer-product-action": {
-    "idea": "An outer product is a rule that turns an input state into an output state.",
-    "explanation": "First find the input’s overlap with one reference. Then use that overlap to scale the other reference. Unlike an inner product, the result is a state vector rather than just a number.",
+    "idea": "One quantum rule can test how much of an input matches one state and turn that amount into another state.",
+    "explanation": "First compare the input wave with a chosen reference wave. Their overlap is a number with size and timing. Use that number to multiply a second reference wave. This rule is called an outer product. Its output is a wave, ready for the next calculation.",
     "example": {
       "title": "A map into the first direction",
       "steps": [
@@ -66,8 +74,8 @@
     ]
   },
   "unitary-basis-change": {
-    "idea": "Change the state coordinates and measurement matrix together.",
-    "explanation": "A basis change rewrites the same experiment. Transforming only one side would mix two descriptions and could give a wrong prediction. A unitary change preserves vector lengths and overlaps.",
+    "idea": "The same state can be written using different sets of reference directions.",
+    "explanation": "Imagine rotating the grid on a map. The coordinates change even though the place stays put. In a quantum calculation, change both the numbers for the state and the rule for reading the meter. A unitary change keeps wave lengths and overlaps the same.",
     "example": {
       "title": "The same energy in a new basis",
       "steps": [
@@ -92,12 +100,20 @@
       {
         "term": "diag(2,6)",
         "definition": "A matrix with diagonal entries 2 and 6 and zero elsewhere."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
+      },
+      {
+        "term": "Unitary",
+        "definition": "A reversible change that preserves state lengths and overlaps, so the total probability stays one."
       }
     ]
   },
   "adjoints-and-observables": {
-    "idea": "For a finite observable matrix, opposite entries must be complex conjugates.",
-    "explanation": "Conjugate means reversing the imaginary sign. Transpose means swapping rows and columns; doing both gives the adjoint. A full finite-space observable is Hermitian when that operation returns the original matrix.",
+    "idea": "A table that represents a measurable quantity must pass a simple matching test in this finite model.",
+    "explanation": "Reflect the entries across the diagonal from top left to bottom right. Change i to −i in each entry. If the resulting table matches the original, the matrix is called Hermitian. This ensures that its possible readings are real numbers.",
     "example": {
       "title": "Checking one energy matrix",
       "steps": [
@@ -122,12 +138,20 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
+      },
+      {
+        "term": "Hermitian",
+        "definition": "For a matrix, swapping its rows and columns and taking the complex conjugate of each entry gives the original matrix. Taking a conjugate changes i to −i."
       }
     ]
   },
   "spectral-projectors": {
-    "idea": "Separate a measurement into its possible outcome spaces.",
-    "explanation": "A projector keeps the part belonging to one outcome. Weight each projector by its outcome value to rebuild the observable; several state directions sharing a value belong to one outcome space.",
+    "idea": "A measurement rule can be built from its possible readings.",
+    "explanation": "Imagine a separate filter for each reading. The filter, called a projector, keeps the part of the state that would give that reading. Multiply each kept part by its reading and add the results. Different states with the same reading go through the same filter.",
     "example": {
       "title": "Two energy outcomes",
       "steps": [
@@ -150,18 +174,14 @@
         "definition": "Add the listed terms."
       },
       {
-        "term": "A",
-        "definition": "The observable matrix."
-      },
-      {
         "term": "E₀",
         "definition": "A positive reference energy."
       }
     ]
   },
   "degeneracy-and-compatible-set": {
-    "idea": "One measurement value may leave several possible states.",
-    "explanation": "This is degeneracy: different independent states share a value. A second compatible measurement can distinguish directions inside that space, but the first measurement alone cannot choose between them.",
+    "idea": "A single meter reading can fit more than one quantum state.",
+    "explanation": "For example, two different wave patterns could have the same energy. This sharing is called degeneracy. A second measurement can sometimes tell the states apart while preserving their first reading. Such a pair of measurements is called compatible.",
     "example": {
       "title": "An unresolved energy pair",
       "steps": [
@@ -190,8 +210,8 @@
     ]
   },
   "operator-functions": {
-    "idea": "Apply a function to an observable’s eigenvalues while keeping its outcome spaces.",
-    "explanation": "An operator function applies a chosen numerical rule to each allowed value while keeping its reference states. For time evolution, the rule gives each energy component a phase, leaving its energy probability unchanged.",
+    "idea": "Sometimes a new measurement rule simply changes the number assigned to each possible result.",
+    "explanation": "Imagine a meter that displays the square of its old reading. A state with a definite reading of 3 now has a definite reading of 9. A function of a measurement operator applies that number rule to its allowed values while keeping the same reference states.",
     "example": {
       "title": "Evolving two energies",
       "steps": [
@@ -224,12 +244,16 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Operator",
+        "definition": "A mathematical rule that acts on a state or function to give another state or function."
       }
     ]
   },
   "projector-probability": {
-    "idea": "A projection’s squared size gives that outcome’s chance.",
-    "explanation": "After the outcome is recorded, normalize the kept part. An impossible outcome has zero weight, so it has no conditioned state obtained by dividing by zero.",
+    "idea": "A projection keeps only the part of a state that matches a chosen outcome.",
+    "explanation": "Start with a state whose outcome chances add to one. Square the length of the kept part to get the chance of this outcome. If it happens, divide the kept part by its own length to describe the new state. A part with zero length means the outcome cannot occur.",
     "example": {
       "title": "Keeping two coordinates",
       "steps": [
@@ -252,18 +276,14 @@
         "definition": "Vector length."
       },
       {
-        "term": "p",
-        "definition": "The chosen outcome’s probability."
-      },
-      {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
       }
     ]
   },
   "degenerate-luders": {
-    "idea": "An ideal unresolved measurement preserves coherence within the chosen outcome space.",
-    "explanation": "The Lüders rule keeps the whole selected subspace. A finer instrument that distinguishes states inside it changes the preparation differently, even if its extra result is later forgotten.",
+    "idea": "A measurement can give one result for several distinct states.",
+    "explanation": "Suppose the meter shows the same reading for two possible states. An ideal measurement that only checks that reading keeps their whole combination, including how their waves line up. A more precise meter can tell them apart and change that combination. Erasing its extra reading afterward does not undo the change.",
     "example": {
       "title": "Keeping the zero-energy subspace",
       "steps": [
@@ -288,8 +308,8 @@
     ]
   },
   "sequential-filters": {
-    "idea": "The first filter changes the state used by the second.",
-    "explanation": "Calculate each later chance from the selected branch, not from the original input. Read operator products right to left because the rightmost operation acts first.",
+    "idea": "After a quantum filter gives a result, use the resulting state to predict the next test.",
+    "explanation": "Suppose you keep only trials that pass the first filter. Those kept trials are the input for filter two. In a written product AB, B acts first and A acts second. Reversing them can change the chances.",
     "example": {
       "title": "Two successful filters",
       "steps": [
@@ -301,8 +321,8 @@
     "terms": []
   },
   "complete-projective-measurement": {
-    "idea": "Forgetting a measurement result does not undo the measurement.",
-    "explanation": "Without its result, later predictions average over the possible output branches. Add branch probabilities, not amplitudes; the original phase relation may no longer be available.",
+    "idea": "Measuring a system and throwing away the reading can still affect its next measurement.",
+    "explanation": "Each possible reading leaves its own state. If the reading was lost, work out what each of these states would predict and average with the chances of the first readings. Treating the original wave as untouched can give the wrong answer.",
     "example": {
       "title": "An ignored basis measurement",
       "steps": [
@@ -319,8 +339,8 @@
     ]
   },
   "commutator-products": {
-    "idea": "Expanding an operator product must preserve the factor order.",
-    "explanation": "Matrices can be regrouped but cannot usually be swapped. The product commutator therefore has two ordered terms; dropping either one can change the answer.",
+    "idea": "When order matters, keep track of which of two rules acted first.",
+    "explanation": "The commutator measures the difference between applying B then A and applying A then B. With a product of rules, more than one change of order may contribute to that difference. Keep each term in its original order when doing the algebra.",
     "example": {
       "title": "A cancellation check",
       "steps": [
@@ -337,12 +357,16 @@
       {
         "term": "A, B, C",
         "definition": "Operators whose products are defined on the input."
+      },
+      {
+        "term": "Commutator",
+        "definition": "The difference between applying two rules in one order and in the opposite order. Zero means the orders give the same result on the states being considered."
       }
     ]
   },
   "covariance-uncertainty": {
-    "idea": "The relationship between two quantum spreads can strengthen their uncertainty bound.",
-    "explanation": "Subtract the averages to get deviations. Calculate the deviation product in both orders and average them; this gives the symmetrized covariance. Its contribution can matter even when the average order difference is zero.",
+    "idea": "Two readings can each have a spread and also tend to vary together.",
+    "explanation": "First subtract the average from each reading to measure its deviation. In a quantum calculation, multiplying the two deviation rules in opposite orders can give different answers. Average the two orders to get the covariance used here. It can strengthen the lower limit on the spreads.",
     "example": {
       "title": "Two matrices and one state",
       "steps": [
@@ -363,8 +387,8 @@
     ]
   },
   "translation-generator": {
-    "idea": "A positive translation moves the state’s position pattern positively.",
-    "explanation": "Evaluating the old function at x − a puts its old features at positions a farther along. This shifts the preparation in fixed coordinates; it need not be a symmetry of a fixed trap.",
+    "idea": "Sliding a whole wave pattern to the right moves each old feature the same distance.",
+    "explanation": "Suppose a peak was at position 2 and is shifted right by 3. At position 5 we should now use the old value at 2. That is why a rightward shift by a uses the old function at x − a. The coordinate grid stays put.",
     "example": {
       "title": "Moving a Gaussian",
       "steps": [
@@ -419,8 +443,8 @@
     ]
   },
   "spectral-time-evolution": {
-    "idea": "Each fixed energy adds a phase without changing its probability.",
-    "explanation": "For a time-independent Hamiltonian, evolve every energy component separately and then combine them. Their relative phases may change another measurement’s chances.",
+    "idea": "When the energy rule stays fixed, each energy part of a wave advances at its own steady rate.",
+    "explanation": "Separate the state into its definite-energy parts. The timing, or phase, of each part changes at a rate set by its energy. Put the parts back together before predicting a position or spin measurement. Their shares in an energy measurement stay fixed.",
     "example": {
       "title": "A quarter-turn phase",
       "steps": [
@@ -445,12 +469,20 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
       }
     ]
   },
   "heisenberg-picture": {
-    "idea": "Move time dependence into the measurement rule without changing the prediction.",
-    "explanation": "One description evolves the state; the other keeps the initial state and evolves the observable. They are two calculations for the same experiment, not two physical operations.",
+    "idea": "Two different bookkeeping choices give the same prediction for a changing quantum system.",
+    "explanation": "In one choice the state changes with time and the meter rule stays fixed. In the other, called the Heisenberg picture, keep the starting state and change the meter rule. Both describe what the same physical meter will read.",
     "example": {
       "title": "Two descriptions of one two-state experiment",
       "steps": [
@@ -479,12 +511,20 @@
       {
         "term": "†",
         "definition": "Conjugate transpose: swap rows and columns, then reverse imaginary signs."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
       }
     ]
   },
   "ordered-time-steps": {
-    "idea": "The order of two pulses can change the final state.",
-    "explanation": "Apply the earliest operation first, which places it on the right in the matrix product. If the operations do not commute, replacing them by an unordered average generally gives the wrong evolution.",
+    "idea": "Switching the order of two short pushes can change the final state.",
+    "explanation": "In a written product, the rightmost rule acts first. Put the first pulse there and the later one to its left. If reversing the pulses gives a different result, say that the rules do not commute. Replacing them with a single average can lose that difference.",
     "example": {
       "title": "A phase pulse followed by a mixing pulse",
       "steps": [
@@ -509,12 +549,20 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
+      },
+      {
+        "term": "Commute",
+        "definition": "To give the same result in either order. Two matrices commute when AB equals BA."
       }
     ]
   },
   "conserved-observables": {
-    "idea": "A conserved observable keeps its average for every allowed initial state.",
-    "explanation": "One unchanging average in a special state is not enough. For a fixed observable in a closed system, commuting with the Hamiltonian guarantees conservation; explicit time dependence needs checking too.",
+    "idea": "A quantity is conserved when its measured average stays fixed for every allowed starting state in this model.",
+    "explanation": "One lucky example with a fixed average is too little evidence. For a closed system, compare the time-independent measurement rule with its energy rule. If applying them in either order gives the same result, the quantity is conserved.",
     "example": {
       "title": "An accidentally constant average",
       "steps": [
@@ -547,12 +595,16 @@
       {
         "term": "t",
         "definition": "Elapsed time."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
       }
     ]
   },
   "spin-preparation": {
-    "idea": "The analyzer’s direction is part of a spin measurement.",
-    "explanation": "Spin is an intrinsic quantum property, not a tiny ball turning. A spin-half analyzer along one axis has two outcomes; the prepared amplitudes determine their chances.",
+    "idea": "A spin measurement needs a direction as well as a prepared particle.",
+    "explanation": "Spin is a built-in quantum property. For a spin-half particle a meter aimed along one axis has two possible readings. A differently aimed meter tests a different question. A state that always gives one answer along its first axis may have both answers possible along the next.",
     "example": {
       "title": "A z-axis spin test",
       "steps": [
@@ -569,12 +621,16 @@
       {
         "term": "ℏ",
         "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
       }
     ]
   },
   "pauli-matrices": {
-    "idea": "Three small matrices represent spin-half components.",
-    "explanation": "Each Pauli matrix has values +1 and −1 for its possible outcomes. Multiply by ℏ/2 to obtain physical spin; their order matters when different components act together.",
+    "idea": "Three small number tables help predict spin readings along three directions.",
+    "explanation": "The directions are x, y and z. Each table, called a Pauli matrix, has two possible result labels, +1 and −1. Multiply these labels by ℏ/2 to put them in units of angular momentum. Combining tables in a different order can change the result.",
     "example": {
       "title": "Checking the y matrix",
       "steps": [
@@ -599,12 +655,20 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
       }
     ]
   },
   "spin-direction-eigenstates": {
-    "idea": "Spin-half measurement chances use half the angle between analyzer axes.",
-    "explanation": "The physical analyzer still turns through the full stated angle. The half-angle enters the state amplitudes; squaring those amplitudes gives the outcome chances.",
+    "idea": "A spin meter turned to a new direction can give a new mix of outcomes.",
+    "explanation": "Measure the angle between the direction used to prepare the spin and the direction of the meter. For a spin-half particle, use half that angle in the wave formula. Then square the size of each result to get its chance. The physical meter turns by the full angle.",
     "example": {
       "title": "An analyzer 120° from z",
       "steps": [
@@ -617,12 +681,16 @@
       {
         "term": "θ",
         "definition": "Angle between the analyzer’s axis n and positive z."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
       }
     ]
   },
   "bloch-pure-state": {
-    "idea": "A Bloch arrow summarizes three averages for a two-state preparation.",
-    "explanation": "It is a diagram of predictions, not a physical arrow attached to a particle. Comparing it with an analyzer axis gives that analyzer’s positive-outcome chance.",
+    "idea": "One drawing can show the average spin results for three meter directions.",
+    "explanation": "Draw an arrow whose three coordinates are the averages along x, y and z. This is a Bloch arrow. It summarizes a state’s predictions. Point a meter along the arrow of a pure spin state and its positive outcome is certain.",
     "example": {
       "title": "A specified spin preparation",
       "steps": [
@@ -647,12 +715,20 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
       }
     ]
   },
   "spinor-rotation": {
-    "idea": "A full spin-half rotation changes the state vector’s sign.",
-    "explanation": "For an isolated state, a common minus sign leaves all probabilities unchanged. It matters as a relative phase only when compared coherently with another path that did not receive that rotation.",
+    "idea": "A full turn of a spin-half state adds a minus sign to its wave description.",
+    "explanation": "If this whole state is measured by itself, squaring its size removes the sign, so the chances stay the same. A comparison with another part of a wave that did not turn is different. Their minus sign is now relative and can change interference.",
     "example": {
       "title": "One full turn",
       "steps": [
@@ -669,12 +745,20 @@
       {
         "term": "I",
         "definition": "The identity operator, which leaves a vector unchanged."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
       }
     ]
   },
   "magnetic-precession": {
-    "idea": "The sign of a spin’s magnetic response decides its turning direction.",
-    "explanation": "In a uniform fixed field, the spin average turns around the field axis. Keep the signed response factor rather than replacing it with its positive size.",
+    "idea": "A spin’s average direction can circle a steady magnetic field.",
+    "explanation": "This turning is called precession. Think of successive measurements on many particles prepared the same way. Their average traces the turning pattern. The sign of the particle’s magnetic response tells which way round that average moves.",
     "example": {
       "title": "Turning from x to y",
       "steps": [
@@ -699,12 +783,16 @@
       {
         "term": "t",
         "definition": "Elapsed time."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
       }
     ]
   },
   "two-level-hamiltonian": {
-    "idea": "A common energy shift does not change the gap between two levels.",
-    "explanation": "Split a two-state energy matrix into a shared offset and a part that separates the levels. The offset adds only a common time phase; the remaining part sets the gap and energy states.",
+    "idea": "Adding the same energy to two levels leaves the distance between them unchanged.",
+    "explanation": "If two readings each rise by 3, subtracting them still gives the old gap. In a two-state energy table, take out the common shift first. It changes the same phase of both wave parts. The remaining entries decide the gap and the states with definite energies.",
     "example": {
       "title": "A two-level energy matrix",
       "steps": [
@@ -737,8 +825,8 @@
     ]
   },
   "coupled-state-oscillations": {
-    "idea": "A coupling can repeatedly transfer population between two reference states.",
-    "explanation": "Population means a measurement probability, not a particle count moving along a path. In the ideal resonant model, the two amplitudes exchange weight while total probability stays one.",
+    "idea": "A repeating drive can move the chance of detection from one state to another and back again.",
+    "explanation": "A coupling is a link that lets the two states affect each other. At resonance the drive matches the energy separation. The chance of each outcome can then rise and fall in turn, while their total stays one.",
     "example": {
       "title": "Half a transfer",
       "steps": [
@@ -759,8 +847,8 @@
     ]
   },
   "detuning-and-avoided-crossing": {
-    "idea": "An energy mismatch can prevent complete transfer between two coupled states.",
-    "explanation": "Detuning measures that mismatch as an angular frequency. The coupling and mismatch together set the oscillation rate; part of the probability can remain in the starting state even at maximum transfer.",
+    "idea": "A drive that misses the matching frequency may never transfer the whole chance into the other state.",
+    "explanation": "Detuning measures how far the drive is from the frequency matching the gap between energy levels. Both this mismatch and the link between the states affect the speed of the back-and-forth motion. The mismatch also sets a limit on how much can transfer.",
     "example": {
       "title": "A detuned pair",
       "steps": [
@@ -782,11 +870,14 @@
         "term": "ℏ",
         "definition": "Planck’s constant divided by 2π."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "example.steps.2": "The gap is 5ℏ per second ≈5.27286×10⁻³⁴ J. At Δ=0 with the same coupling it narrows to 4ℏ per second."
+    }
   },
   "rotating-frame-bridge": {
-    "idea": "Turning coordinates add their own term to the energy rule.",
-    "explanation": "A rotating description can make a circular drive look steady. Subtract the coordinate rotation rate from the system’s rate; leaving out that motion would change the predicted detuning.",
+    "idea": "Something spinning can look steady if you turn along with it.",
+    "explanation": "Watch a field rotating at 9 radians per second from coordinates turning the same way at 6. It appears to turn at 3. The same subtraction belongs in the energy rule when we describe a driven quantum system with turning coordinates.",
     "example": {
       "title": "A circular drive",
       "steps": [
@@ -811,8 +902,8 @@
     ]
   },
   "rabi-approximation": {
-    "idea": "A rapidly oscillating drive term can sometimes be neglected.",
-    "explanation": "Near resonance, weak coupling changes the state slowly while the omitted term swings rapidly. The rotating-wave approximation uses this separation of timescales; it is not exact or reliable for every duration.",
+    "idea": "A rapidly changing part of a drive may mostly cancel out over the time you watch.",
+    "explanation": "Near resonance, the drive nearly matches the frequency set by the energy gap. One contribution then builds up slowly while the other runs through many positive and negative parts. The rotating-wave approximation keeps the slow contribution when the link is weak and the timing supports this cancellation.",
     "example": {
       "title": "A weak resonant drive",
       "steps": [
@@ -829,12 +920,16 @@
       {
         "term": "π pulse",
         "definition": "A pulse intended to transfer the population completely in this approximation."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
   "coherent-number-expansion": {
-    "idea": "A coherent oscillator state includes many possible excitation counts.",
-    "explanation": "A coherent oscillator state contains amplitudes for every nonnegative excitation count. Its probabilities follow a Poisson distribution, set by one mean count; keeping only the first few possibilities omits a remaining tail.",
+    "idea": "A quantum oscillator can have a well-defined wave pattern but several possible energy readings.",
+    "explanation": "An oscillator has equally spaced energy steps. A coherent state gives particular chances for finding zero, one, two or more steps above the minimum. Their pattern, called a Poisson distribution, is set by the average number of steps. Include the chance of higher counts when adding the total.",
     "example": {
       "title": "Coherent amplitude one",
       "steps": [
@@ -875,8 +970,8 @@
     ]
   },
   "displacement-operator": {
-    "idea": "A displacement moves oscillator averages while preserving the ground-state spread.",
-    "explanation": "Applying the displacement map to the vacuum makes a coherent state. The map preserves total probability; it changes the mean position or momentum rather than merely relabeling them.",
+    "idea": "A quantum oscillator’s wave can be shifted without changing its width.",
+    "explanation": "Start with its lowest-energy state, sometimes called the vacuum. Here “vacuum” means zero added energy steps in this oscillator. A mathematical displacement changes its average position or momentum. Its spread stays equal to that of the starting state.",
     "example": {
       "title": "Displacing the vacuum",
       "steps": [
@@ -901,12 +996,16 @@
       {
         "term": "α",
         "definition": "The complex number specifying the displacement."
+      },
+      {
+        "term": "Coherent-state amplitude",
+        "definition": "A number that sets how far the oscillator is shifted from its lowest-energy state and the stage of its cycle. Its squared size gives the average number of excitations."
       }
     ]
   },
   "coherent-quadratures": {
-    "idea": "A coherent state can move its averages without increasing its widths.",
-    "explanation": "Quadratures are position and momentum measured in convenient dimensionless units. Each coherent-state variance stays at one half, even when their averages are not zero.",
+    "idea": "Changing a wave’s average location can leave its spread exactly as wide as before.",
+    "explanation": "For this oscillator, the two quadratures are position and momentum measured in chosen units that remove their unit labels. In a coherent state the average of either can shift. Its variance, the average squared distance from its mean, stays at one half in these units.",
     "example": {
       "title": "A displaced coherent state",
       "steps": [
@@ -939,8 +1038,8 @@
     ]
   },
   "coherent-evolution": {
-    "idea": "A free harmonic coherent state turns its amplitude without changing its size.",
-    "explanation": "Its phase-sensitive averages move while its widths and energy remain fixed. This is motion of predicted averages, not proof that each particle follows that curve.",
+    "idea": "A bell-shaped quantum wave can move back and forth while keeping its width.",
+    "explanation": "This is a coherent state of an ideal oscillator. A complex number tracks its average position and momentum. Its place around a circle changes as time passes, while its distance from the centre stays fixed. The motion describes averages for repeated measurements.",
     "example": {
       "title": "A quarter-cycle evolution",
       "steps": [
@@ -969,6 +1068,10 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Coherent-state amplitude",
+        "definition": "A number that sets how far the oscillator is shifted from its lowest-energy state and the stage of its cycle. Its squared size gives the average number of excitations."
       }
     ]
   },
@@ -991,12 +1094,16 @@
       {
         "term": "ℏω",
         "definition": "One oscillator energy spacing."
+      },
+      {
+        "term": "Coherent-state amplitude",
+        "definition": "A number that sets how far the oscillator is shifted from its lowest-energy state and the stage of its cycle. Its squared size gives the average number of excitations."
       }
     ]
   },
   "tensor-basis": {
-    "idea": "Two distinguishable systems need a list of joint labels.",
-    "explanation": "Pair every reference label of the first system with every label of the second. For a product preparation, multiply the corresponding local amplitudes; more general joint states need not split into two local lists.",
+    "idea": "For two systems, one label for each gives a label for the pair.",
+    "explanation": "If the first system can be 0 or 1 and so can the second, list 00, 01, 10 and 11. When the systems are independently prepared in pure states, multiply their individual wave amplitudes for each pair. A more general joint state need not come from two separate lists.",
     "example": {
       "title": "Two two-state systems",
       "steps": [
@@ -1013,12 +1120,16 @@
       {
         "term": "cᵢⱼ",
         "definition": "Their joint-label amplitude."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
       }
     ]
   },
   "local-operator-tensor": {
-    "idea": "A local operator acts on one partner’s label and leaves the other alone.",
-    "explanation": "The tensor product records which system an operation affects. Operations on different partners commute, even when those same operations would not commute on one partner.",
+    "idea": "A mathematical rule can change one member of a pair and leave the other member alone.",
+    "explanation": "A tensor product is a way to keep both labels together. A rule written as A ⊗ I acts on the first partner. The I means leave the second partner alone. Two rules that each act on a different partner give the same result in either order.",
     "example": {
       "title": "Swapping the first label",
       "steps": [
@@ -1039,12 +1150,19 @@
       {
         "term": "⊗",
         "definition": "Combines the two systems’ spaces or operations."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "equationGuide.symbols.1.description": "X flips the local 0/1 labels; Z gives signs +1 and −1."
+    }
   },
   "joint-measurements": {
-    "idea": "To ignore one partner, add over all its possible outcomes.",
-    "explanation": "This gives a marginal probability for the other partner. Selecting a recorded outcome instead gives a conditional question, which requires dividing by that selection’s nonzero probability.",
+    "idea": "There are two ways to ask about one partner in a pair. Did we keep every trial, or only some?",
+    "explanation": "To ignore the other partner’s reading, add the chances for all of its possible readings. To keep only trials with one particular reading, divide each matching joint chance by the chance of that reading. This requires a group with a nonzero chance of being selected.",
     "example": {
       "title": "Reading a joint table",
       "steps": [
@@ -1065,8 +1183,8 @@
     ]
   },
   "composite-hamiltonian": {
-    "idea": "An interaction can change joint phases and create entanglement.",
-    "explanation": "Entanglement means a pure joint state cannot be split into one state for each partner. Separate local evolution preserves product states, while an interaction can make them fail that split.",
+    "idea": "An interaction can make the state of a pair impossible to describe with two separate pure states.",
+    "explanation": "A rule acting independently on each partner preserves separate descriptions if they were separate at the start. A link between partners can change how the parts of their joint wave line up. If the resulting pure state cannot be split into separate states, it is entangled.",
     "example": {
       "title": "A phase interaction between two plus states",
       "steps": [
@@ -1100,11 +1218,15 @@
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.1": "An interaction can instead depend on both labels. Use H_int=g Z⊗Z, with real g an energy and Z=diag(1,−1). This diagonal Hamiltonian gives energy +g to 00 and 11, and −g to 01 and 10. Define θ=gt/ℏ. Starting with |+⟩⊗|+⟩, where |+⟩=(|0⟩+|1⟩)/√2, the evolved column is (e^(−iθ),e^(iθ),e^(iθ),e^(−iθ))ᵀ/2.",
+      "body.2": "A product column must satisfy c₀₀c₁₁=c₀₁c₁₀ because both sides multiply the same four local coefficients. At θ=π/4 the two sides are −i/4 and +i/4, so this preparation no longer factors. Interaction need not create entanglement at every time or for every input; at θ=π all four coefficients gain the same −1 phase and the original product returns. Define |−⟩=(|0⟩−|1⟩)/√2 to test other phase values by expanding a candidate product."
+    }
   },
   "density-from-preparations": {
-    "idea": "A density matrix combines predictions for randomly prepared states.",
-    "explanation": "Weight each prepared state’s matrix by its preparation chance, then add. Do not add the alternative preparations’ amplitudes first; that would describe a different, coherent preparation.",
+    "idea": "A table can combine predictions for several randomly chosen ways of preparing a particle.",
+    "explanation": "The table for one preparation is called a density matrix. If a coin chooses between two preparations, multiply each table by its chance of being chosen and add the tables. Adding their waves instead would describe a preparation with a definite connection between the waves.",
     "example": {
       "title": "Mixing zero and plus",
       "steps": [
@@ -1129,12 +1251,16 @@
       {
         "term": "Σ",
         "definition": "Add the listed contributions."
+      },
+      {
+        "term": "Density matrix",
+        "definition": "A table used to predict quantum measurement results. It can describe one prepared state or a random mixture of preparations."
       }
     ]
   },
   "trace-expectation": {
-    "idea": "Multiply the matrices before adding diagonal entries to find an average.",
-    "explanation": "Trace means the sum of a matrix’s diagonal entries. In the product of state and observable matrices, off-diagonal entries can contribute too; reading only the original diagonals can miss phase information.",
+    "idea": "A table of state information and a table for the meter together predict its average reading.",
+    "explanation": "First multiply the tables using the rules of matrix multiplication. Then add the entries down the main diagonal of the result. This diagonal sum is called the trace. Entries away from the diagonal in the original tables can affect the answer.",
     "example": {
       "title": "An energy expectation",
       "steps": [
@@ -1155,12 +1281,20 @@
       {
         "term": "meV",
         "definition": "One thousandth of an electronvolt."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
+      },
+      {
+        "term": "Observable",
+        "definition": "A quantity a measurement can test, such as position or energy. In these calculations a mathematical rule represents it."
       }
     ]
   },
   "density-positivity": {
-    "idea": "A valid state must give nonnegative probabilities in every direction.",
-    "explanation": "A Hermitian matrix with trace one is not automatically a state. Its eigenvalues must also be nonnegative; checking only its diagonal entries can miss an impossible negative prediction.",
+    "idea": "A table that describes a quantum state must give a chance of zero or greater for every possible measurement outcome.",
+    "explanation": "First check that the diagonal entries add to one and entries opposite each other across the diagonal are complex conjugates. A conjugate reverses the sign of the imaginary part. One more check matters. All the eigenvalues, or weights for independent states in that table, must be zero or positive.",
     "example": {
       "title": "A matrix that fails",
       "steps": [
@@ -1173,12 +1307,21 @@
       {
         "term": "Eigenvalue",
         "definition": "The multiplier for a direction left unchanged in shape by a matrix."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.1": "For a two-state system, write ρ=(I+r_x X+r_y Y+r_z Z)/2, where X,Y,Z are the Pauli matrices and r is a real three-component Bloch vector. With Y=[[0,−i],[i,0]], the matrix is [[1+r_z,r_x−ir_y],[r_x+ir_y,1−r_z]]/2. Its eigenvalues are (1+|r|)/2 and (1−|r|)/2. Validity therefore requires |r|≤1.",
+      "example.steps.0": "The Hermitian matrix Q=[[0.5,0.6],[0.6,0.5]] has trace 1 but eigenvalues 1.1 and −0.1. In the |−⟩ direction it would predict −0.1, so it is not a state.",
+      "check.explanations.0": "The length is √(0.64+0.36)=1. The eigenvalues are (1±1)/2."
+    }
   },
   "partial-trace": {
-    "idea": "A reduced state keeps all predictions for one partner alone.",
-    "explanation": "Add over the other partner’s matching labels in the joint matrix. This partial trace keeps local information, but it loses the joint correlations needed to predict both partners together.",
+    "idea": "A pair’s table of probabilities can be turned into a smaller table for just one partner.",
+    "explanation": "Add together entries with matching labels for the partner being ignored. This procedure is called the partial trace. The smaller table predicts every measurement on the remaining partner alone. To predict how both partners’ results match, keep the whole joint table.",
     "example": {
       "title": "Adding over the partner’s labels",
       "steps": [
@@ -1200,12 +1343,20 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.2": "As a concrete pure state, prepare |ψ⟩=√0.6|+⟩_A|0⟩_B+i√0.4|−⟩_A|1⟩_B. Its column is (√0.3,i√0.2,√0.3,−i√0.2). Form ρ_AB=|ψ⟩⟨ψ| first, then use the matching-index sum. Ignoring a partner’s results is a prediction rule, not a physical removal of that partner.",
+      "visual.caption": "Separate distinguishable-system pure family |ψ⟩=cosθ|00⟩+e^(iφ)sinθ|11⟩, with 0≤θ≤π/2. Controls compare joint preparations; they do not choose distant measurement outcomes. Angles are shown in degrees and converted to radians. Each local reduced state is diag(cos²θ,sin²θ), independent of the relative phase φ. Bars show joint x-basis probabilities in the stated order, with |±x⟩=(|0⟩±|1⟩)/√2; same-sign bars equal [1+sin(2θ)cosφ]/4 and opposite-sign bars equal [1−sin(2θ)cosφ]/4. Local purity is cos⁴θ+sin⁴θ. Probabilities, purity and Schmidt rank have no units. Phase can change correlations without changing either local state; changing θ changes the preparation weights themselves."
+    }
   },
   "purity-and-unrecorded-measurement": {
-    "idea": "Ignoring an outcome can turn a pure description into a mixture.",
-    "explanation": "Purity is one for a state described by a single normalized vector, and below one for a mixture. Ignoring a measurement result can remove phase information between outcomes; reversible closed-system evolution keeps purity fixed.",
+    "idea": "Losing a measurement result can leave a mixture of possible states.",
+    "explanation": "A pure state has one complete wave description. A mixture requires several possibilities with weights. For the normalized table here, a number called purity equals one for a pure state and is smaller for a mixture. Forgetting a result can lower it.",
     "example": {
       "title": "Ignoring a basis measurement",
       "steps": [
@@ -1227,11 +1378,15 @@
         "term": "|+⟩",
         "definition": "The normalized equal sum of |0⟩ and |1⟩."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.2": "For |+⟩, the density is [[0.5,0.5],[0.5,0.5]]. An ignored 0/1 measurement produces diag(0.5,0.5), whose purity is 0.5. If result 0 is actually recorded and selected, the conditioned state is |0⟩⟨0| with purity 1; that subensemble has probability 0.5. Ignoring and selecting are different operations.",
+      "example.steps.1": "Apply U=diag(1,i) to pure |+⟩. The state becomes (|0⟩+i|1⟩)/√2 and its density has off-diagonal entries −i/2 and +i/2. Its purity remains 1."
+    }
   },
   "product-or-entangled": {
-    "idea": "A pure pair is entangled when it cannot split into two local states.",
-    "explanation": "For two two-state systems, arrange the four amplitudes in a square. A zero determinant means they can factor; this test applies to a pure vector, not to an arbitrary mixed-state matrix.",
+    "idea": "A pure state of a pair is entangled if its numbers cannot be made from two separate lists.",
+    "explanation": "For two systems with two choices each, place the four wave amplitudes in a two-by-two table. Multiply the two diagonal entries and subtract the product of the other two. If that number, the determinant, is nonzero, the pure pair cannot split into independent states.",
     "example": {
       "title": "Testing four amplitudes",
       "steps": [
@@ -1248,12 +1403,24 @@
       {
         "term": "Entangled",
         "definition": "A pure joint state that cannot factor into one state per partner."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "example.steps.1": "Changing the coefficients to C=(1/√10)[[1,2],[2,1]] keeps the norm 1 but gives determinant (1−4)/10=−0.3. This pure state is entangled.",
+      "check.explanations.0": "Both diagonal coefficients are nonzero, giving determinant √0.09=0.3; normalization alone does not imply factorization."
+    }
   },
   "schmidt-decomposition": {
-    "idea": "A pure pair can be written as matched pairs of local reference states.",
-    "explanation": "The Schmidt form uses nonnegative weights and orthogonal states on each side. More than one positive weight means the pure state is entangled; a weight of zero is omitted.",
+    "idea": "A pure quantum pair can be described using matched pairs of reference states.",
+    "explanation": "Choose a special set of reference states for each partner and match the first with the first, the second with the second, and so on. This is the Schmidt form. If only one pair has nonzero weight, each partner has its own pure state. If several have weight, the pair is entangled.",
     "example": {
       "title": "Two matched pairs",
       "steps": [
@@ -1291,11 +1458,15 @@
         "term": "+ and −",
         "definition": "The equal plus and minus combinations of |0⟩ and |1⟩."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "example.steps.0": "Prepare |ψ⟩=√0.75|+0⟩+√0.25|−1⟩. In order 00,01,10,11 its column is (√3,1,√3,−1)ᵀ/(2√2).",
+      "example.steps.1": "The reduced matrix is ρ_A=[[0.5,0.25],[0.25,0.5]]. Its eigenvectors |+⟩ and |−⟩ have eigenvalues 0.75 and 0.25. Contracting with their bras and dividing by √0.75 or √0.25 returns B partners |0⟩ and |1⟩."
+    }
   },
   "two-spin-correlations": {
-    "idea": "Two spins can have a joint pattern even when each local average is zero.",
-    "explanation": "In the singlet preparation, each local result is random. Comparing the two results reveals a correlation determined by the angle between analyzer axes; this does not require predetermined classical arrows.",
+    "idea": "Two particles can each give random spin readings while their results form a definite pattern together.",
+    "explanation": "In a state called the singlet, the two spin-half particles have total spin zero. Aim both meters in the same direction and the two readings are opposite. Turn one meter, and the pattern of agreement changes with the angle.",
     "example": {
       "title": "Matching analyzer directions",
       "steps": [
@@ -1320,12 +1491,27 @@
       {
         "term": "·",
         "definition": "Dot product; for unit vectors it equals the cosine of their angle."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Random",
+        "definition": "Individual outcomes can vary even when you repeat the same setup."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.1": "For unit directions a and b, define A=a·σ and B=b·σ, where a·σ=a_xX+a_yY+a_zZ. Their outcomes are ±1; the physical spin outcomes are ±ℏ/2. Direct Pauli products in this state give ⟨σ_i⊗σ_j⟩=−δ_ij, where δ_ij is 1 for matching Cartesian directions and 0 otherwise. Expanding the two sums gives E(a,b)=⟨A⊗B⟩=−a·b.",
+      "body.2": "The projectors for outcome s=±1 along a are (I+s a·σ)/2. Expanding the pair of projectors gives P(s,t)=[1−st a·b]/4, since both local means vanish. Equal directions give only opposite results; perpendicular directions give all four outcomes equally often. These are joint statistics of this preparation, not predetermined classical arrows attached to each spin.",
+      "example.steps.1": "Choose axes separated by 30 degrees, θ=π/6. Then E=−√3/2≈−0.866025. Each same-sign pair has probability (1−√3/2)/4≈0.0334936.",
+      "example.steps.2": "The total same-sign probability is about 0.0669873; different signs total about 0.933013. Those totals add to 1. Physical spin-product expectation is −(√3/8)ℏ² for this angle.",
+      "equationGuide.symbols.2.description": "S_a=(ℏ/2)a·σ; the physical product has units (J·s)²."
+    }
   },
   "bell-chsh-bound": {
-    "idea": "CHSH tests a specific set of assumptions about local responses and shared information.",
-    "explanation": "The bound assumes each response depends only on its local setting and shared information, with setting-independent sampling. Certain quantum correlations exceed it; this does not create a faster-than-light message.",
+    "idea": "Comparing two distant sets of spin readings can test a rule about where their answers come from.",
+    "explanation": "Each meter can choose between two settings. The CHSH test combines four measures of how often the two readings agree. If each answer depends only on its own setting and shared earlier information, with independent setting choices and fair sampling, the combined size is at most 2. Some quantum states exceed 2.",
     "example": {
       "title": "The stated four analyzer settings",
       "steps": [
@@ -1347,11 +1533,18 @@
         "term": "S",
         "definition": "The CHSH combination."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.0": "Consider a shared variable λ with a normalized probability distribution independent of which measurement settings are chosen. In a deterministic local-response description, A(a,λ), A(a′,λ), B(b,λ), B(b′,λ) are each ±1. A’s response depends on its own setting and λ, not B’s chosen setting; B obeys the analogous condition. Local stochastic responses also obey the bound, by averaging deterministic responses or by using conditional means between −1 and 1.",
+      "body.1": "For one λ, form C=A(B+B′)+A′(B−B′). Since B and B′ are ±1, either B+B′ is ±2 and B−B′ is 0, or the reverse. Thus C is ±2. Averaging with the same setting-independent distribution gives |S|≤2, where S=E(a,b)+E(a,b′)+E(a′,b)−E(a′,b′). The four correlations must refer to the specified common preparation and sampling rule; setting-dependent or outcome-dependent discarded events cannot silently be treated as that same model.",
+      "body.2": "Quantum correlations of the preceding state give E=−a·b. Choose axes in the x-z plane with n(θ)=(sinθ,0,cosθ). Use a at 20°, a′ at 110°, b at 65° and b′ at −25°. A degree angle converts to radians by multiplying by π/180. The relative angles are −45°,45°,45°,135°, giving a quantum value whose magnitude exceeds 2. This rules out the stated combined local-response and setting-independence model for those ideal statistics; it is not a blanket refutation of every interpretation or a signalling protocol.",
+      "example.steps.0": "The four quantum correlations for the stated axes are −1/√2,−1/√2,−1/√2,+1/√2. Their signed combination is S=−2√2≈−2.828427.",
+      "example.steps.2": "For a contrasting set with all four axes equal, all four E values are −1 and S=−2. A quantum state need not violate this inequality for every choice of settings."
+    }
   },
   "local-no-signalling": {
-    "idea": "An unrecorded remote measurement does not change local statistics.",
-    "explanation": "A selected remote result can identify a different local subgroup. Without that result record, average over all remote outcomes; their weighted average restores the original local state.",
+    "idea": "Without the other observer’s results, one observer cannot see a change caused only by the distant observer choosing a measurement.",
+    "explanation": "The distant result can sort local readings into groups with different averages. But until the observers share their records, all the groups are mixed together. Their weighted average gives the same local predictions as before.",
     "example": {
       "title": "Ignoring a remote singlet result",
       "steps": [
@@ -1360,11 +1553,17 @@
       ]
     },
     "equation": "local state after ignored remote measurement = original local state",
-    "terms": []
+    "terms": [],
+    "lessonCopy": {
+      "example.steps.0": "For |Ψ⁻⟩, B obtains z-plus with probability 1/2. Given that result, A is |1⟩ and its Z mean is −1. B’s other result selects |0⟩ with Z mean +1.",
+      "example.steps.1": "Ignoring the record gives mean (1/2)(−1)+(1/2)(+1)=0 and P_A(0)=1/2. If B instead measures X, its plus result selects |−⟩ on A, whose Z mean is 0; the unconditioned A state is again I/2.",
+      "example.steps.2": "In the different pure state √0.8|00⟩+√0.2|11⟩, an ignored B measurement in the 0/1 basis leaves A’s probabilities 0.8 and 0.2 unchanged. Selecting B=1 has probability 0.2 and then A=1 with certainty.",
+      "equationGuide.symbols.2.description": "z-plus is |0⟩; x-plus is |+⟩. No outcome is assumed controllable by choosing the measurement basis."
+    }
   },
   "angular-ladder-spectrum": {
-    "idea": "An angular-momentum ladder changes one component label at a time.",
-    "explanation": "Raising increases m by one while keeping total label j fixed. The coefficient reaches zero at the highest label, so the ladder stops instead of producing an extra state.",
+    "idea": "Angular momentum along one chosen direction takes separate steps.",
+    "explanation": "The label j names the total angular momentum. The label m picks one allowed component along the chosen axis. A raising rule increases m by one while keeping j fixed. At the highest allowed m the rule gives zero, so no extra state appears.",
     "example": {
       "title": "Raising a spin-three-halves state",
       "steps": [
@@ -1389,8 +1588,15 @@
       {
         "term": "ℏ",
         "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "check.explanations.0": "The two factors are 1 and 4, not 1 and 2."
+    }
   },
   "spin-one-matrices": {
     "idea": "A definite spin-one component can leave another component uncertain.",
@@ -1407,12 +1613,28 @@
       {
         "term": "ℏ",
         "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "example.steps.0": "Multiply J_x by (1/2,1/√2,1/2)ᵀ. The result is ℏ times the same vector, verifying the +ℏ eigenvalue.",
+      "example.steps.2": "For the middle basis vector (0,1,0)ᵀ, J_x produces (ℏ/√2)(1,0,1)ᵀ. Its norm squared is ℏ², so this preparation has ⟨J_x²⟩=ℏ² and ⟨J_x⟩=0."
+    }
   },
   "orbital-rotation-action": {
-    "idea": "Rotating a spatial state moves its pattern without turning it into a path.",
-    "explanation": "Evaluate the old amplitude at the inverse-rotated position to move the pattern forward. This describes spatial rotation; intrinsic spin needs its additional rotation rule.",
+    "idea": "To turn a wave pattern, shift where you look up its old values.",
+    "explanation": "Imagine turning a drawing clockwise. To find the color at a new point, trace that point back counterclockwise on the old drawing. A rotated spatial wave is calculated the same way. A particle’s built-in spin needs its own rotation rule as well.",
     "example": {
       "title": "A quarter-turn of an orbital shape",
       "steps": [
@@ -1427,10 +1649,6 @@
         "definition": "Position vector."
       },
       {
-        "term": "R",
-        "definition": "The active spatial rotation."
-      },
-      {
         "term": "Y_x, Y_y",
         "definition": "Orthogonal orbital angular shapes oriented along x and y."
       },
@@ -1441,12 +1659,22 @@
       {
         "term": "R⁻¹",
         "definition": "The inverse rotation, undoing R."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.1": "For a small positive rotation α about z, R⁻¹ sends (x,y) to approximately (x+αy,y−αx). Expanding a smooth function gives ψ_rot≈ψ+α(y∂_x−x∂_y)ψ. This equals (I−iαL_z/ℏ)ψ for L_z=−iℏ(x∂_y−y∂_x). It checks both the generator and its sign.",
+      "example.steps.1": "For α=π/3, the angular state is (1/2)Y_x+(√3/2)Y_y. A projector onto Y_x has probability 1/4, and onto Y_y probability 3/4.",
+      "example.steps.2": "For a small α, the Y_y amplitude starts at approximately α while the Y_x amplitude changes only at second order. This agrees with the generator’s first derivative.",
+      "equationGuide.symbols.1.description": "α rotates about +z; θ is measured from +z, φ from +x toward +y."
+    }
   },
   "angular-rotation-matrices": {
-    "idea": "A finite rotation mixes component labels while keeping total angular momentum fixed.",
-    "explanation": "In a spin-one multiplet, rotation stays within its three-state space. Apply the rotation matrix to amplitudes first, then square to find the new component probabilities.",
+    "idea": "Turning a spin state changes the chances of meter readings along a fixed axis.",
+    "explanation": "For a spin-one particle there are three possible readings along that axis. A rotation mixes their wave amplitudes within the same three-state group. Add the amplitudes using the rotation table, then square their sizes to get the new chances.",
     "example": {
       "title": "A 90° spin-one rotation",
       "steps": [
@@ -1459,12 +1687,29 @@
       {
         "term": "ℏ",
         "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.0": "In the j=1 basis (m=+1,0,−1), use U_y(α)=exp(−iαJ_y/ℏ). Since J_y/ℏ has eigenvalues +1,0,−1, its exponential can be obtained from the three spectral projectors. Write c=cosα and s=sinα for compact entries.",
+      "body.1": "The resulting real matrix is [[(1+c)/2,−s/√2,(1−c)/2],[s/√2,c,−s/√2],[(1−c)/2,s/√2,(1+c)/2]]. It is orthogonal and therefore unitary. Its derivative at α=0 equals −iJ_y/ℏ, confirming the signs against the generator.",
+      "body.2": "Apply it to the highest-weight input (1,0,0)ᵀ. The output is ((1+c)/2,s/√2,(1−c)/2)ᵀ. The three J_z probabilities are the squares of those real coefficients. The J² value stays 2ℏ² because rotations remain inside the same j multiplet.",
+      "example.steps.0": "At α=π/2, the output is (1/2,1/√2,1/2)ᵀ, the earlier J_x=+ℏ state. The J_z probabilities are 1/4,1/2,1/4.",
+      "example.steps.1": "At α=π, the output is (0,0,1)ᵀ. The J_z value is certainly −ℏ, while J² is still 2ℏ².",
+      "example.steps.2": "For a small α, the middle amplitude is approximately α/√2, so its probability starts as α²/2. A first-order amplitude change can create a second-order probability change.",
+      "check.explanations.0": "The sine square is 3/4, but the amplitude also contains 1/√2."
+    }
   },
   "angular-expectation-spread": {
-    "idea": "Squaring a mean angular vector leaves out the fluctuations around it.",
-    "explanation": "The difference comes from fluctuations around the means. Adding squared averages loses those fluctuations, so it is not the same operation as averaging the squared components.",
+    "idea": "The average of squared readings can differ from the square of their average.",
+    "explanation": "For instance, +1 and −1 average to zero, but their squares both equal one. The same distinction matters for angular momentum. The difference measures the spread of the readings. Squaring only the averages would throw away that information.",
     "example": {
       "title": "A rotated spin-one state",
       "steps": [
@@ -1481,12 +1726,31 @@
       {
         "term": "ℏ",
         "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.2": "The mean-vector squared length is j²ℏ², while ⟨J²⟩=j(j+1)ℏ². Their difference equals the sum of component variances, jℏ². For x and y, the uncertainty product is σ_xσ_y=(jℏ²/2)|cosα|, equal to (ℏ/2)|⟨J_z⟩| for this prepared family.",
+      "example.steps.0": "Use j=1 and α=π/3. The mean components in units of ℏ are (√3/2,0,1/2). Their squared length is 1, while the J² eigenvalue in units of ℏ² is 2.",
+      "example.steps.1": "The variances in units of ℏ² are 1/8,1/2,3/8. They add to 1, exactly the difference between mean square and squared mean.",
+      "example.steps.2": "The x-y uncertainty product is √[(1/8)(1/2)]ℏ²=ℏ²/4. Its commutator lower bound is (ℏ/2)|ℏ/2|=ℏ²/4, so this state saturates that bound.",
+      "practice.parts.0.label": "Mean J_z in units of ℏ",
+      "practice.parts.1.label": "J_y variance in units of ℏ²",
+      "practice.parts.2.label": "J_x variance in units of ℏ²",
+      "practice.parts.3.label": "J² eigenvalue in units of ℏ²",
+      "practice.reasoning": "Contrast the squared mean-vector length 4ℏ² with the invariant 6ℏ² and account for their difference. Enter decimal or scientific-notation numbers, not fractions or expressions. Entry tolerances allow rounding; they are not measurement uncertainty."
+    }
   },
   "total-angular-operators": {
-    "idea": "Add angular operators before choosing the total angular labels.",
-    "explanation": "Squaring their sum produces a cross term that records correlations. The same individual angular momenta can therefore combine into different total values.",
+    "idea": "Two angular momenta combine differently depending on how their directions are linked.",
+    "explanation": "To find the possible totals, add the rules for the two angular momenta first, then square the sum. The extra term involves both together. It explains how two particles with the same individual spin sizes can still have different combined spin values.",
     "example": {
       "title": "Two spin-half partners",
       "steps": [
@@ -1507,12 +1771,23 @@
       {
         "term": "·",
         "definition": "Dot product: add products of matching components."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "example.steps.0": "For two spin-one-half factors, the product space has dimension 2×2=4. Allowed total j values are 1 and 0, contributing 3+1=4 coupled states.",
+      "example.steps.1": "For j₁=1 and j₂=1/2, allowed total j values are 3/2 and 1/2. Their dimensions 4+2 again equal the product dimension 3×2=6.",
+      "example.steps.2": "For two spin-one-half states with total j=1, the dot product eigenvalue is (ℏ²/2)[2−3/4−3/4]=ℏ²/4. For total j=0 it is −3ℏ²/4. The same individual spins permit different correlations.",
+      "check.explanations.0": "Unit steps from 1/2 to 3/2 give only 1/2 and 3/2.",
+      "apply.answer": "No. The cross term 2J₁·J₂ is generally nonzero and can differ between coupled sectors. For example, it distinguishes the singlet and triplet of two spin-one-half systems even though both individual squared spins are fixed."
+    }
   },
   "singlet-triplet": {
-    "idea": "Two spin-half systems can combine into a singlet or a triplet.",
-    "explanation": "The triplet has three total-spin states; the singlet has one. The plus or minus sign between the two opposite-spin amplitudes changes which total-spin state they form.",
+    "idea": "Two spin-half systems have one total-spin-zero state and three total-spin-one states.",
+    "explanation": "The one state is called the singlet. The three are called the triplet. When the two individual readings could be opposite, their wave contributions can combine with a plus or minus sign. That sign decides which group the combination belongs to.",
     "example": {
       "title": "An opposite-spin product",
       "steps": [
@@ -1529,12 +1804,28 @@
       {
         "term": "ℏ",
         "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.0": "Use |+⟩ and |−⟩ for each subsystem’s S_z=±ℏ/2 states. The ordered product basis is (|++⟩,|+−⟩,|−+⟩,|−−⟩). The highest total component M=1 has the unique state |++⟩; it belongs to total j=1.",
+      "body.1": "Applying the total lowering operator gives ℏ(|−+⟩+|+−⟩). Dividing by its norm √2ℏ produces |1,0⟩=(|+−⟩+|−+⟩)/√2. Lower once more to obtain |1,−1⟩=|−−⟩. These three j=1 states are the triplet.",
+      "body.2": "The remaining orthogonal state is |0,0⟩=(|+−⟩−|−+⟩)/√2. Both total raising and lowering annihilate it, and J_z also gives zero; therefore J² gives zero. This single j=0 state is the singlet.",
+      "example.steps.0": "The overlap between the two M=0 combinations is (1−1)/2=0, and each has norm one.",
+      "example.steps.1": "An initial product |+−⟩ equals (|1,0⟩+|0,0⟩)/√2. Measuring J² yields 2ℏ² or 0 with probability 1/2 each, while J_z is certainly zero.",
+      "equationGuide.symbols.0.description": "The first symbol labels subsystem 1 and the second subsystem 2. Each single-spin component is ±ℏ/2."
+    }
   },
   "unequal-angular-addition": {
-    "idea": "Adding different spins requires amplitudes with the correct relative signs.",
-    "explanation": "Build a combined state by lowering the highest component and normalizing. An orthogonal combination belongs to the other total-spin family; squaring the coefficients gives component-measurement chances.",
+    "idea": "Two different-sized spins can combine into more than one possible total spin.",
+    "explanation": "Start with the state that has the largest possible reading along your chosen axis. Lower its reading one step to build a combination in the same total-spin family. Another combination with zero overlap can belong to a different family. Keep the signs when forming each wave.",
     "example": {
       "title": "Combining spin one and spin half",
       "steps": [
@@ -1551,8 +1842,28 @@
       {
         "term": "Right-hand labels",
         "definition": "The first and second systems’ component labels."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.0": "Combine j₁=1 with j₂=1/2. Write |m₁,m₂⟩ for the product states and |j,M⟩ for coupled states, with fixed j₁,j₂ understood. The unique highest state is |3/2,3/2⟩=|1,+1/2⟩.",
+      "body.1": "The total lowering operator produces √2ℏ|0,+1/2⟩+ℏ|1,−1/2⟩. The coupled lowering coefficient is √3ℏ, so |3/2,1/2⟩=√(2/3)|0,+1/2⟩+√(1/3)|1,−1/2⟩.",
+      "body.2": "In this two-dimensional M=1/2 subspace, a normalized orthogonal vector is |1/2,1/2⟩=√(1/3)|0,+1/2⟩−√(2/3)|1,−1/2⟩. Raising it gives zero, verifying that it is the highest state of the j=1/2 multiplet. This choice fixes an overall phase convention for that multiplet.",
+      "example.steps.1": "The overlap of the two displayed coupled states is √2/3−√2/3=0. Their norms are each 2/3+1/3=1.",
+      "example.steps.2": "Raising the j=1/2 combination gives [√(1/3)√2−√(2/3)]ℏ|1,+1/2⟩=0. This checks the relative minus sign independently of the norm.",
+      "check.explanations.0": "Correct. Its overlap magnitude with the displayed j=1/2 state is √(2/3)."
+    }
   },
   "coupled-basis-measurements": {
     "idea": "A total-spin measurement can change later individual-spin chances.",
@@ -1565,11 +1876,29 @@
       ]
     },
     "equation": "joint chance = (2/3)(1/3) = 2/9",
-    "terms": []
+    "terms": [
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      }
+    ],
+    "lessonCopy": {
+      "body.0": "Use the j₁=1,j₂=1/2 pair and prepare the product |0,+1/2⟩. It expands as √(2/3)|3/2,1/2⟩+√(1/3)|1/2,1/2⟩. This equation describes one preparation in two bases; no measurement has happened yet.",
+      "body.1": "An ideal total-J² measurement selects one coupled multiplet. The j=3/2 outcome has probability 2/3. Conditioned on it, the state is |3/2,1/2⟩, which has product-basis weights 2/3 for |0,+1/2⟩ and 1/3 for |1,−1/2⟩.",
+      "body.2": "Therefore the joint probability of first selecting j=3/2 and then finding m₁=1 is (2/3)(1/3)=2/9. Without the intervening total-J² measurement, the initial product state had m₁=0 certainly. Conditioning changed the later preparation.",
+      "body.3": "The total component M remains 1/2 throughout these selected branches, but total j and individual m₁ are different observable labels. They cannot all be treated as fixed classical labels of the original state.",
+      "example.steps.0": "For initial |0,+1/2⟩, the two total-J² eigenvalues are (15/4)ℏ² and (3/4)ℏ² with probabilities 2/3 and 1/3.",
+      "check.explanations.2": "Correct. The first chance is 1/3 and the conditional m₁=0 chance is 1/3, giving 1/9.",
+      "equationGuide.symbols.0.description": "The fixed pair is j₁=1,j₂=1/2, and M=m₁+m₂. Component values include a factor ℏ."
+    }
   },
   "spin-orbit-energy": {
-    "idea": "An interaction between orbital motion and spin can split atomic energy levels.",
-    "explanation": "Use total angular momentum to evaluate the coupling. Its sign and size are supplied by the physical model; the angular calculation alone does not determine a real atom’s coupling strength.",
+    "idea": "The energy of an atom can depend on how spin and orbital motion line up.",
+    "explanation": "Spin is the electron’s built-in angular momentum. Its wave pattern around the nucleus has orbital angular momentum. Their interaction, called spin–orbit coupling, can split an energy level. How large the split is depends on the atom as well as the angular labels.",
     "example": {
       "title": "A specified positive coupling",
       "steps": [
@@ -1590,12 +1919,25 @@
       {
         "term": "Eⱼ",
         "definition": "The energy shift of the total-angular-momentum family j."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.0": "Consider H_int=λL·S/ℏ², where λ is a stated energy and L,S are orbital and spin angular operators. The factor ℏ² removes the angular units, leaving energy. This is a specified effective coupling; we are not deriving atomic fine structure here.",
+      "example.steps.1": "The two sectors have 4 and 2 M states. Their degeneracy-weighted mean shift is [4(λ/2)+2(−λ)]/6=0.",
+      "example.steps.2": "For λ=−0.020 eV, the two shifts become −0.010 and +0.020 eV. The ordering reverses, but the positive separation remains 0.030 eV.",
+      "practice.prompt": "Use l=1,s=1/2 and λ=+0.030 eV. Separately prepare the uncoupled product |m₁=1,m₂=−1/2⟩ for the same angular pair.",
+      "practice.parts.3.feedback": "The corresponding coupled overlap has magnitude √(2/3).",
+      "equationGuide.symbols.1.description": "Here l=1,s=1/2, so j=3/2 or 1/2. The s label is not seconds.",
+      "equationGuide.symbols.3.description": "Dividing L·S by ℏ² makes a dimensionless operator."
+    }
   },
   "exchange-postulate": {
-    "idea": "Identical-particle slot labels are bookkeeping, not permanent identity tags.",
-    "explanation": "Exchange swaps every position and internal label. In the ordinary three-dimensional framework here, complete boson states keep their sign and complete fermion states reverse it; this rule is a physical input.",
+    "idea": "Swapping the labels on two identical particles tells us about the shape of their shared wave.",
+    "explanation": "Swap all the labels, including position and spin. In three dimensions, the full wave for identical bosons keeps its sign. For identical fermions it changes sign. These names describe two kinds of particles. The labels help calculate outcomes without tracking two permanent identities.",
     "example": {
       "title": "Exchanging a symmetric pair",
       "steps": [
@@ -1612,12 +1954,21 @@
       {
         "term": "Ψ",
         "definition": "The complete two-particle state."
+      },
+      {
+        "term": "Orthogonal",
+        "definition": "Having zero overlap in the chosen way of comparing vectors or patterns. Ordinary arrows at right angles provide one example."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.2": "The labels 1 and 2 identify tensor slots in the calculation, not permanent observable tags attached to two identical particles. Different species, such as an electron and proton, can be distinguished by their physical type and need not be symmetrized as one species.",
+      "example.steps.0": "For two distinct orthogonal modes a,b, the normalized combination (|a,b⟩+|b,a⟩)/√2 is unchanged by exchange.",
+      "example.steps.1": "The normalized difference (|a,b⟩−|b,a⟩)/√2 changes sign under exchange. Its probability density remains nonnegative because probabilities use magnitude squares."
+    }
   },
   "symmetric-pair-normalization": {
-    "idea": "Overlapping one-particle states change a symmetric pair’s normalization.",
-    "explanation": "The swapped terms can overlap, adding cross terms to the norm. The usual √2 denominator works only when the one-particle states are orthogonal.",
+    "idea": "When two wave arrangements overlap, adding them can change the size by more than you might expect.",
+    "explanation": "Combine one arrangement with the arrangement formed by swapping the particles. If they overlap, their waves can reinforce. To make all chances add to one, divide by the size of the whole sum. The usual divisor √2 works when the two one-particle states have zero overlap.",
     "example": {
       "title": "Two overlapping states",
       "steps": [
@@ -1631,11 +1982,21 @@
         "term": "S",
         "definition": "The overlap ⟨u|v⟩ of the normalized one-particle states."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.0": "Let u and v be normalized one-particle states, with overlap S=⟨u|v⟩. The symmetric numerator is |u,v⟩+|v,u⟩. Its norm squared has two diagonal terms equal to one and two cross terms equal to |S|², so the total is 2(1+|S|²).",
+      "body.1": "The normalized boson pair is Ψ_+=(|u,v⟩+|v,u⟩)/√[2(1+|S|²)]. The familiar 1/√2 coefficient applies only when u and v are orthogonal. If they are identical, the numerator and denominator both contain the factor 2, leaving the normalized product |u,u⟩.",
+      "example.steps.0": "Use u=|0⟩ and v=0.6|0⟩+0.8|1⟩. Then S=0.6, and the normalizing denominator is √2.72≈1.64924.",
+      "example.steps.1": "The normalized numerator expanded in the ordered basis is 1.2|00⟩+0.8|01⟩+0.8|10⟩, divided by √2.72. The squared entries sum to (1.44+0.64+0.64)/2.72=1.",
+      "example.steps.2": "The probability that both detections occupy mode 0 is 1.44/2.72=9/17≈0.52941. The probability of one in each mode is 8/17; neither result comes from simply treating u,v as exclusive labels.",
+      "check.prompt": "Change v to (√3/2)|0⟩+(1/2)|1⟩ while keeping u=|0⟩. What is the denominator squared?",
+      "check.explanations.2": "That would require identical states with |S|²=1.",
+      "apply.answer": "No. The two cross terms are each |S|², which is real and nonnegative. A scalar phase affects amplitudes, but a norm is built with conjugation. Replacing |S|² by S² would be an error."
+    }
   },
   "fermion-determinant": {
-    "idea": "Two identical fermions cannot occupy the same complete one-particle state.",
-    "explanation": "The antisymmetric pair subtracts the swapped product. If both complete states are identical, the two terms cancel to zero, which cannot be normalized into a physical state.",
+    "idea": "Two identical fermions, such as two electrons, cannot share the same complete state.",
+    "explanation": "The joint wave contains two assignments of the particle labels, with a minus sign between them. If both particles have exactly the same state, those two terms are equal and cancel. The proposed arrangement has no allowed wave.",
     "example": {
       "title": "One fermion in each mode",
       "steps": [
@@ -1652,12 +2013,25 @@
       {
         "term": "Ψ₋",
         "definition": "The antisymmetric two-fermion state."
+      },
+      {
+        "term": "Orthogonal",
+        "definition": "Having zero overlap in the chosen way of comparing vectors or patterns. Ordinary arrows at right angles provide one example."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.2": "The word complete matters: a spatial orbital together with spin labels is a single-particle state. Two electrons may share a spatial orbital if their complete spin-orbital states are different. The normalization 1/√2 here assumes u and v are orthonormal.",
+      "body.3": "In a finite two-mode basis with u=|0⟩,v=|1⟩, the ordered coefficients are (0,1/√2,−1/√2,0). Physical occupation measurements always find one fermion in each of those modes; tensor-slot labels are not particle identity tags.",
+      "example.steps.0": "For u=|0⟩,v=|1⟩, the two nonzero ordered amplitudes have squared weights 1/2 each, giving total norm one.",
+      "example.steps.1": "Both correspond to the same physical occupation statement: one in each mode. The probabilities for two in mode 0 or two in mode 1 are zero.",
+      "check.prompt": "Use u=(|0⟩+|1⟩)/√2 and v=(|0⟩−|1⟩)/√2 instead. What is the probability of one occupation in each original 0/1 mode?",
+      "check.explanations.1": "Its two ordered entries each have weight 1/2, but together they give the one-in-each occupation probability 1.",
+      "equationGuide.symbols.2.description": "The 2×2 determinant is ad−bc; its columns are one-particle states."
+    }
   },
   "spin-spatial-symmetry": {
-    "idea": "The spatial and spin exchange signs must combine to the fermion minus sign.",
-    "explanation": "When a two-electron state factors into spatial and spin parts, multiply their exchange signs. Sharing the same spatial orbital requires the antisymmetric spin singlet in this factorized situation.",
+    "idea": "Two electrons in the same spatial state need a particular combined spin state.",
+    "explanation": "Swapping the labels of two electrons must change the sign of their full wave. If the spatial part stays the same, the spin part must supply the minus sign. For two electrons sharing one orbital, this selects the total-spin-zero pair called the singlet.",
     "example": {
       "title": "Two electrons in one orbital",
       "steps": [
@@ -1670,12 +2044,25 @@
       {
         "term": "Singlet",
         "definition": "The antisymmetric spin pair (|+−⟩ − |−+⟩)/√2."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.0": "If a two-electron state factors into a spatial part φ and a spin part χ, exchanging complete particles exchanges both factors. Their signs multiply. A symmetric spatial factor must therefore pair with an antisymmetric spin factor, and an antisymmetric spatial factor with a symmetric spin factor.",
+      "body.1": "The spin singlet χ_s=(|+−⟩−|−+⟩)/√2 is antisymmetric. The three triplet states are symmetric. For orthonormal spatial orbitals a,b, spatial sums/differencesφ_±=(|a,b⟩±|b,a⟩)/√2 have the indicated signs.",
+      "body.2": "When both electrons occupy the same spatial orbital a, the spatial product |a,a⟩ is symmetric. The allowed factorized spin state is then the singlet. An unantisymmetrized product |+−⟩ alone is not the required complete two-electron state.",
+      "example.steps.0": "For different orthonormal orbitals a,b, φ_+χ_s has complete exchange sign (+1)(−1)=−1 and is allowed for two electrons.",
+      "example.steps.1": "The spatial difference φ_- paired with the M=0 triplet has sign (−1)(+1)=−1 and is also allowed. Both singlet and this triplet have opposite individual z results, but their relative signs differ.",
+      "example.steps.2": "For the same spatial orbital a, the antisymmetric spatial difference is zero. The remaining normalized spatial product |a,a⟩ must pair with χ_s in this factorized setup.",
+      "equationGuide.symbols.2.description": "Their S_z outcomes are ±ℏ/2. Opposite z labels alone do not uniquely imply a singlet."
+    }
   },
   "occupation-and-filling": {
-    "idea": "Count particles in complete modes instead of giving identical particles names.",
-    "explanation": "An occupation list records how many particles use each mode. Fermions allow at most one per complete mode; for noninteracting particles, add the occupied mode energies.",
+    "idea": "A list of how many particles occupy each state can replace a list of individual names.",
+    "explanation": "Each entry gives the number in one complete wave pattern, including any spin label. Identical fermions can have only zero or one in each such state. For independent particles, add up the energies of the filled states.",
     "example": {
       "title": "Two spinless fermions",
       "steps": [
@@ -1701,11 +2088,22 @@
         "term": "Σ",
         "definition": "Add over the modes."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.0": "An occupation list (n₀,n₁,…) gives the number of particles in each orthonormal complete mode. Its entries sum to the fixed particle number N. Boson occupations can be 0,1,2,…; fermion occupations are 0 or 1 for each complete mode.",
+      "body.1": "For a noninteracting Hamiltonian with one-particle energies ε_j, the total energy is E=Σ_j n_jε_j. Interactions generally change this simple sum. A mode includes any spin label, so “one fermion per mode” is not automatically “one per spatial orbital.”",
+      "body.2": "With two spinless modes and N=2, bosons have three occupation lists:(2,0),(1,1),(0,2). Spinless fermions have only (1,1). Exchanging particle-slot names does not create a new occupation configuration.",
+      "example.steps.0": "Take two spinless modes with energies 1 eV and 3 eV and N=2. The three boson lists have energies 2,4 and 6 eV.",
+      "example.steps.1": "For spinless fermions, only one particle in each listed mode is allowed, giving 4 eV. Reordering two slot labels does not add a second physical configuration.",
+      "example.steps.2": "For electrons with two spin modes per spatial orbital and negligible interactions, the four complete modes have energies 1,1,3,3 eV. Two electrons can fill the two lowest complete modes for energy 2 eV; their shared spatial orbital pairs with the spin singlet.",
+      "check.prompt": "Use three spinless modes with energies 0, 2 and 5 eV and two noninteracting fermions. What is the lowest allowed total energy?",
+      "check.explanations.1": "Correct. Fill the distinct 0 and 2 eV modes.",
+      "check.explanations.2": "Filling the 5 eV mode is not needed for two particles."
+    }
   },
   "exchange-energy": {
-    "idea": "Exchange symmetry can change an interaction’s average energy.",
-    "explanation": "Expanding a symmetric or antisymmetric pair creates cross terms with opposite signs. These are averages for the stated fixed orbitals, not automatically exact interacting energies or a universal ordering.",
+    "idea": "Two ways of combining the same pair of orbitals can give different average interaction energies.",
+    "explanation": "An orbital is a possible spatial wave for one particle. Make a pair by adding the two assignments of the orbitals or by subtracting them. Where the assignments overlap, their contributions can reinforce or cancel. That changes the interaction average even when the same orbitals were used.",
     "example": {
       "title": "A specified pair of orbitals",
       "steps": [
@@ -1723,7 +2121,15 @@
         "term": "Exchange term",
         "definition": "The cross contribution between the direct and swapped products."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.1": "Expand the interaction expectation in φ_±=(u₁v₂±v₁u₂)/√2. The two direct terms each give J_d; the two cross terms give ±K_ex. For the stated exchange-symmetric real interaction K_ex is real, so ⟨W⟩_±=J_d±K_ex.",
+      "body.2": "If the one-body orbital energies are ε_u and ε_v, their sum is the same in these two chosen states. Thus the full energy expectations are ε_u+ε_v+J_d±K_ex. The symmetric spatial state pairs with a spin singlet, and the antisymmetric spatial state with a spin triplet for electrons.",
+      "example.steps.0": "Suppose the specified orbitals give ε_u+ε_v=1.40 eV, J_d=0.30 eV and K_ex=+0.02 eV.",
+      "practice.prompt": "Use two orthonormal spatial orbitals with one-body energy sum 0.80 eV, direct integral 0.25 eV and exchange integral +0.03 eV. Separately count two spinless fermions in three orthogonal complete modes.",
+      "practice.parts.3.feedback": "Choose occupied pairs 01,02 or 12; no duplicated complete mode.",
+      "equationGuide.symbols.2.description": "Star conjugates amplitudes. Orthogonality makes the pair normalization √2 valid."
+    }
   },
   "spin-sequence-capstone": {
     "idea": "Include every recorded selection when calculating a spin sequence.",
@@ -1736,11 +2142,38 @@
       ]
     },
     "equation": "joint success = (3/4)(1/2) = 3/8",
-    "terms": []
+    "terms": [
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
+      }
+    ],
+    "lessonCopy": {
+      "body.0": "Prepare |+z⟩=(1,0)ᵀ and apply an active y rotation U_y(θ)=exp(−iθσ_y/2). The output spinor is (cos(θ/2),sin(θ/2))ᵀ. These are amplitudes; the rotation angle is θ, while the spinor uses half-angles.",
+      "body.1": "Next record a successful +z projection and then a successful −x projection. The first probability is cos²(θ/2). Its conditioned state is +z, so the later −x probability is 1/2. The whole sequence has probability (1/2)cos²(θ/2).",
+      "body.2": "If there is no intermediate z measurement, the −x probability is instead |[cos(θ/2)−sin(θ/2)]/√2|²=(1−sinθ)/2. The two questions describe different physical procedures, not conflicting predictions.",
+      "example.steps.0": "Take θ=π/3. The rotated state is (√3/2,1/2)ᵀ. The +z selection probability is 3/4.",
+      "example.steps.1": "The later −x conditional probability is 1/2, giving joint probability 3/8=0.375.",
+      "example.steps.2": "Without the intermediate z measurement, the −x chance would be (1−√3/2)/2≈0.06699. If z is measured but unread, it is 1/2. These are three different experiments.",
+      "check.prompt": "Change θ to 2π/3 but keep the selected +z then −x sequence. What is its joint probability?",
+      "apply.text": "Which preparation should be used after a recorded successful +z filter?",
+      "apply.answer": "Use |+z⟩, not the earlier rotated superposition. Keeping the old state would ignore the specified conditioning. Conversely, do not apply a measurement update if no measurement actually happened.",
+      "practice.prompt": "Prepare +z, rotate by θ=π/2 about y, then compare the three procedures described in the lesson.",
+      "practice.parts.0.label": "Probability of the first +z filter",
+      "practice.parts.1.label": "Joint probability of selected +z then −x",
+      "practice.parts.1.feedback": "Multiply 1/2 by the conditional 1/2.",
+      "practice.parts.2.feedback": "The rotated state is +x, orthogonal to −x.",
+      "practice.parts.3.feedback": "Average 1/2 over the two z branches.",
+      "equationGuide.symbols.1.description": "Their physical component outcomes are ±ℏ/2. In z coordinates,|−x⟩=(1,−1)ᵀ/√2."
+    }
   },
   "two-level-capstone": {
-    "idea": "Separate the greatest possible transfer from the chosen observation time.",
-    "explanation": "Detuning sets how much transfer is possible; the time phase sets when the system reaches that bound. In a fixed closed two-state model, energy-state weights stay constant throughout.",
+    "idea": "The largest transfer a drive can cause and the transfer at this instant are different numbers.",
+    "explanation": "A mismatch between the drive and the gap between the two levels can limit how much chance moves to the second state. The drive duration tells where the back-and-forth transfer has reached. Include both effects before predicting the reading.",
     "example": {
       "title": "A detuned constant Hamiltonian",
       "steps": [
@@ -1774,11 +2207,22 @@
         "term": "P₁",
         "definition": "Chance of finding reference state one after starting in zero."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.0": "Use the time-independent Hamiltonian H=(Δ/2)σ_z+gσ_x in the ordered reference basis (|0⟩,|1⟩). Both Δ and the real coupling g are energies. Let d=√[(Δ/2)²+g²], so H²=d²I and the two energy eigenvalues are ±d.",
+      "body.1": "The exact evolution is U=cos(dt/ℏ)I−i sin(dt/ℏ)H/d for d>0. Starting in |0⟩ gives the transition probability P₁(t)=(g²/d²)sin²(dt/ℏ). A nonzero detuning reduces its maximum; changing the time phase controls where the oscillation is within that bound.",
+      "body.2": "The initial energy expectation is Δ/2, and its energy-eigenstate probabilities are [1±Δ/(2d)]/2. Those weights remain constant under this H even though the reference-basis populations change. Off-diagonal coherence contributes to the energy expectation in the reference basis.",
+      "example.steps.0": "Choose Δ=6 eV and g=4 eV. Then d=5 eV, the energy eigenvalues are ±5 eV, and the maximum reference-state transfer is 16/25=0.64.",
+      "example.steps.1": "At dt/ℏ=π/2, the state is (−0.6i,−0.8i)ᵀ and has norm one. Its |1⟩ probability is 0.64.",
+      "example.steps.2": "The energy probabilities remain 0.8 for +5 eV and 0.2 for −5 eV, with mean 3 eV. Calculating only the diagonal population contribution would miss the off-diagonal coherence term needed for that conserved mean.",
+      "check.explanations.2": "Detuning limits the maximum to 0.64 in this model.",
+      "practice.prompt": "Change to Δ=8 eV and g=3 eV, starting in |0⟩, and consider dt/ℏ=π/2.",
+      "practice.parts.3.feedback": "The initial |0⟩ expectation is Δ/2=4 eV."
+    }
   },
   "composite-exchange-capstone": {
-    "idea": "A pure joint state can still give a mixed local state.",
-    "explanation": "For distinguishable partners, the joint state can contain correlations unavailable to either partner alone. Summing over the other partner gives the local matrix; its purity need not equal the purity of the full pair.",
+    "idea": "Knowing a pair’s entire wave still need not give a separate wave for either partner.",
+    "explanation": "A pure pair can contain information about which readings occur together. To predict one partner’s results alone, add over all readings of the other. Its table can describe a mixture even though the complete pair has a single wave description.",
     "example": {
       "title": "A weighted entangled pair",
       "steps": [
@@ -1800,11 +2244,19 @@
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.0": "First consider two distinguishable spin-one-half systems A and B in ψ=√(3/4)|00⟩+i√(1/4)|11⟩. Tracing out B gives ρ_A=diag(3/4,1/4). Its purity is Tr(ρ_A²)=5/8, even though the joint state is pure.",
+      "body.1": "If B is measured in the plus/minus basis and the + result is recorded, that result has probability 1/2. The conditioned A state is √(3/4)|0⟩+i√(1/4)|1⟩, a pure state. If B’s result is ignored, averaging both branches restores the same ρ_A as before. Conditioning and unconditioned local statistics answer different questions.",
+      "example.steps.0": "The joint coefficient weights are 3/4 and 1/4. The local purity is (3/4)²+(1/4)²=10/16=5/8.",
+      "practice.parts.1.feedback": "Both orthogonal A terms gain the same 1/√2 amplitude factor.",
+      "practice.parts.2.feedback": "Square [√(2/3)+√(1/3)]/√2.",
+      "equationGuide.symbols.0.description": "Basis order is |00⟩,|01⟩,|10⟩,|11⟩. The first index belongs to A."
+    }
   },
   "quantum2-assessment": {
-    "idea": "Check a state’s validity before using it to predict an outcome.",
-    "explanation": "A density matrix needs unit trace, Hermitian symmetry and nonnegative eigenvalues. Then include its off-diagonal entries when the measurement is sensitive to phase.",
+    "idea": "Before using a table of numbers as a quantum state, check that it gives sensible probabilities.",
+    "explanation": "This table is called a density matrix. Its diagonal numbers must add to one. Opposite entries must match after reversing the sign of their imaginary parts. Its eigenvalues, the weights on its independent states, must all be zero or positive. Entries away from the diagonal can also affect the result of a measurement.",
     "example": {
       "title": "A mixed-state plus-y test",
       "steps": [
@@ -1829,7 +2281,23 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Density matrix",
+        "definition": "A table used to predict quantum measurement results. It can describe one prepared state or a random mixture of preparations."
+      },
+      {
+        "term": "Eigenvalue",
+        "definition": "The number that a matrix or other linear rule multiplies a matching eigenvector by."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "body.0": "For a finite density operator, first check ρ†=ρ, Trρ=1 and nonnegative eigenvalues. Trace one alone is not enough. The probability of a projective outcome P is Tr(ρP), and the expectation of an observable A is Tr(ρA). Their units differ if A is dimensional.",
+      "example.steps.0": "Use ρ=[[0.6,0.2i],[−0.2i,0.4]]. It is Hermitian with trace one and eigenvalues (1±√0.2)/2, both positive.",
+      "example.steps.2": "For the +y projector onto (1,i)ᵀ/√2, the probability is 0.30. The imaginary off-diagonal entries matter; keeping only the diagonal weights would incorrectly give 1/2.",
+      "check.prompt": "Is ρ=[[0.5,0.8],[0.8,0.5]] a valid density matrix?",
+      "practice.parts.0.feedback": "The plus projector gives (0.8+0.2+0.1+0.1)/2=0.6.",
+      "equationGuide.symbols.2.description": "σ_y=[[0,−i],[i,0]]. Physical spin components are ℏ/2 times these matrices."
+    }
   }
 }

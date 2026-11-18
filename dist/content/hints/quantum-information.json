@@ -1,0 +1,132 @@
+{
+  "qubit-amplitudes": [
+    null,
+    "Locate the squared bars in the probability rule. What do you do to the amplitude’s size?",
+    "Match the number 0.6 to its own outcome before using the amplitude for the other outcome."
+  ],
+  "x-gate": [
+    "Follow the arrow from the first input through X. Where does its amplitude go?",
+    null,
+    "Does a gate in the circuit produce a recorded measurement result at this step?"
+  ],
+  "relative-phase": [
+    "Write down each amplitude’s size before and after Z. What is squared in a direct measurement?",
+    "A minus sign on an amplitude affects its phase. What happens to that sign when you square its size?",
+    null
+  ],
+  "hadamard-interference": [
+    null,
+    "Compare the direct 0/1 chances of the two input states before any gate is used.",
+    "Where is the difference between the plus and minus states stored before the measurement?"
+  ],
+  "measurement-basis": [
+    null,
+    "Try describing the same arrow using two sets of directions. Do its projections have to stay the same?",
+    "Imagine turning the measuring device while leaving the prepared qubit alone. What physical comparison has changed?"
+  ],
+  "conditional-state": [
+    "Repeating a calculation after you know a result uses extra information. Did you have that information before the first measurement?",
+    null,
+    "Separate choosing the measurement from observing its first result. Which event does the update rule follow?"
+  ],
+  "density-mixture": [
+    "Imagine measuring both preparations in a second basis. Did the first comparison test every possible measurement?",
+    "Extra copies let you estimate a probability more accurately. Would they change how each qubit was prepared?",
+    null
+  ],
+  "qubit-purity": [
+    null,
+    "Imagine hiding one member of a pair. Which correlations can a measurement on the visible member still use?",
+    "Trace counts total probability. What other property of the local density matrix tests purity?"
+  ],
+  "product-state": [
+    "The two digits name two outcomes. Where would you find evidence that the outcomes are independent?",
+    null,
+    "Try a pair that always gives matching bits. Compare its joint outcomes with the chances for each bit by itself."
+  ],
+  "gate-order": [
+    "Place the input immediately to the right of ZH and add parentheses. Which gate touches the input first?",
+    "Imagine a wire passing through two gates in sequence. What does writing their product describe?",
+    null
+  ],
+  "inverse-circuit": [
+    null,
+    "The intended gates specify exactly what happened. What information might be missing about the environment?",
+    "Replace the neat symbols with the physical steps they describe. Which changes would those steps actually reverse?"
+  ],
+  "controlled-not": [
+    "Track both parts of a superposition through the gate. At what point, if any, is a classical result recorded?",
+    null,
+    "Follow the control wire to the output. Can you find a detector or result indicator in the circuit?"
+  ],
+  "bell-pair": [
+    "Imagine handing out two identical ordinary random bits. Which observed feature would this also reproduce?",
+    "Consider preparing two separate qubits both in state zero. How often would their outcomes agree?",
+    null
+  ],
+  "two-basis-correlations": [
+    null,
+    "Rewrite both halves in the X basis and combine amplitudes for the same pair. Do all pairs survive?",
+    "Check the state and the basis in the calculation. Which term in that calculation depends on the time labels?"
+  ],
+  "local-marginal": [
+    "With many pairs you can estimate the local counts more precisely. What would make those counts depend on the distant choice?",
+    null,
+    "Hide the distant partner’s results. What could the receiver read from the nearby outcomes alone?"
+  ],
+  "chsh-test": [
+    "A correlation compares two recorded outcomes. What data would a receiver have before comparing records with the distant side?",
+    "The bound on S concerns joint statistics. What separate statistic would have to change to carry a message?",
+    null
+  ],
+  "bit-flip-channel": [
+    null,
+    "Compare adding probabilities for hidden alternatives with adding amplitudes that can reinforce or cancel.",
+    "Making a flip rare changes how often it happens. Does it make a record of the random choice disappear coherently?"
+  ],
+  "phase-flip-channel": [
+    "Try applying the same phase flip a second time to the pure input. What happens to its relative sign?",
+    null,
+    "If the flip happens every time, how much uncertainty is there about which operation happened?"
+  ],
+  "amplitude-damping": [
+    "Account for the population of both the excited and lower states after the change.",
+    "Follow where the probability goes when every excitation decays. What is the sum over both final outcomes?",
+    null
+  ],
+  "kraus-normalization": [
+    null,
+    "Could two different descriptions produce the same final density matrix for every input?",
+    "Counting the operators tells you how this expression was written. Does it identify a physical record of each event?"
+  ],
+  "repetition-encoding": [
+    "Three copies of a bit label help compare those labels. Which measurement would notice a change of relative sign?",
+    null,
+    "Compare a change from 0 to 1 with a sign change between the two parts of a superposition. What do the code’s checks compare?"
+  ],
+  "error-syndrome": [
+    "Could you compare whether neighboring qubits match without learning the value of each one?",
+    "Before measuring, the encoded state is unknown. What happens to the other part of a superposition if you learn all three values?",
+    null
+  ],
+  "logical-error-rate": [
+    null,
+    "Think about the extra gates and checks needed to use the code. What new errors could those steps introduce?",
+    "Compare two devices with the same number of qubits but different error rates per gate."
+  ],
+  "phase-oracle": [
+    "Try squaring the size of a positive and a negative amplitude of equal size. What happens to the sign?",
+    null,
+    "The x labels here name the inputs of the oracle. What operation would let amplitudes interfere before reading those labels?"
+  ],
+  "deutsch-algorithm": [
+    "Count the bits in the readout, then compare that with two separate function values.",
+    "Two different constant functions can have different common values. Would both give the same constant-or-balanced result?",
+    null
+  ],
+  "grover-four": [
+    null,
+    "Picture the state turning by another fixed angle after reaching the marked answer. Where could the next turn take it?",
+    "The rotations happen before the final measurement. What controls whether another turn moves toward or past the target?"
+  ]
+}

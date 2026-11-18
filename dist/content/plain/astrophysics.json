@@ -1,7 +1,7 @@
 {
   "sky-angles": {
-    "idea": "Sky coordinates tell us which direction to look, rather than how far away something is.",
-    "explanation": "Right ascension and declination work like longitude and latitude on a sky map. Right ascension uses hours as angle labels: a whole circle is 24 hours. These hours do not measure travel time.",
+    "idea": "A sky map gives an object’s direction.",
+    "explanation": "Imagine the stars marked on a huge sphere around Earth. Declination measures the angle north or south of the sky’s equator. Right ascension measures how far around the equator to go from a chosen starting point. Its scale runs from 0 to 24 hours in one full turn. The same direction can lead to objects at very different distances.",
     "example": {
       "title": "Two sky-map hours",
       "steps": [
@@ -76,6 +76,10 @@
       {
         "term": "Noise",
         "definition": "Unwanted variation in a measurement."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -98,6 +102,14 @@
       {
         "term": "Kelvin (K)",
         "definition": "The temperature scale starting at absolute zero."
+      },
+      {
+        "term": "Kelvin",
+        "definition": "A unit of absolute temperature. Zero kelvin marks absolute zero. A change of one kelvin is the same size as a change of one degree Celsius."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -128,6 +140,10 @@
       {
         "term": "Nanometre",
         "definition": "One billionth of a metre."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -146,6 +162,10 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -164,6 +184,14 @@
       {
         "term": "Flux",
         "definition": "Light power received per square metre."
+      },
+      {
+        "term": "Spectrum",
+        "definition": "A display of how much of a signal lies at different wavelengths, frequencies or energies."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -190,8 +218,8 @@
     ]
   },
   "magnitudes": {
-    "idea": "Astronomers use smaller magnitude numbers for brighter objects.",
-    "explanation": "Magnitude is a brightness scale: a change of five magnitudes means a hundredfold change in received light. Absolute magnitude is the number an object would have at 10 parsecs. Comparing it with apparent magnitude can reveal distance when dust is accounted for.",
+    "idea": "On the magnitude scale, a smaller number means a brighter-looking star.",
+    "explanation": "Apparent magnitude describes how bright the star looks from Earth. A star five magnitudes lower sends us 100 times as much light per area. Absolute magnitude describes how bright that same star would look from a standard distance, about 33 light-years or 10 parsecs. Dust can dim the light along the way.",
     "example": {
       "title": "Moving a star ten times farther away",
       "steps": [
@@ -226,6 +254,10 @@
       {
         "term": "Calibrated",
         "definition": "Checked and adjusted using known measurements."
+      },
+      {
+        "term": "Luminosity",
+        "definition": "The energy a source sends out as light or other electromagnetic radiation each second."
       }
     ]
   },
@@ -248,6 +280,18 @@
       {
         "term": "Independent errors",
         "definition": "Errors that do not tend to change together."
+      },
+      {
+        "term": "Luminosity",
+        "definition": "The energy a source sends out as light or other electromagnetic radiation each second."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
+      },
+      {
+        "term": "Random",
+        "definition": "Individual outcomes can vary even when you repeat the same setup."
       }
     ]
   },
@@ -310,6 +354,10 @@
       {
         "term": "Radius",
         "definition": "The distance from the centre to the edge of a circle or sphere."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -358,8 +406,8 @@
     ]
   },
   "stellar-equation-state": {
-    "idea": "In a simple gas model, more particles or higher temperature means more pressure.",
-    "explanation": "Moving particles strike their surroundings and transfer momentum. The ideal-gas rule connects this pressure with temperature and particle count per volume. In stars, count free electrons as well as ions; radiation and tightly packed particles can need other pressure rules.",
+    "idea": "A hot gas pushes harder if its particles move faster or more of them crowd into the same space.",
+    "explanation": "Pressure is force per area. In a simple gas model, particles hand over momentum when they collide. At the same volume, raising the temperature or adding free particles increases the pressure. A hot star can contain separated electrons and ions, which both count. Light can also contribute pressure.",
     "example": {
       "title": "A simple hot gas",
       "steps": [
@@ -402,6 +450,10 @@
       {
         "term": "Conduction",
         "definition": "Energy transfer through nearby particles without bulk flow of the material."
+      },
+      {
+        "term": "Luminosity",
+        "definition": "The energy a source sends out as light or other electromagnetic radiation each second."
       }
     ]
   },
@@ -428,8 +480,8 @@
     ]
   },
   "mass-luminosity": {
-    "idea": "Some more massive stars shine so much faster that they use their fuel sooner.",
-    "explanation": "Main-sequence stars make energy by turning hydrogen into helium in their cores. Within a limited group, a mass–luminosity rule estimates how light output changes with mass. More fuel does not guarantee a longer life if it is used much faster.",
+    "idea": "Some massive stars have more fuel but use it up sooner.",
+    "explanation": "A star on the main sequence releases energy as hydrogen turns into helium in its core. For the group of stars in this example, adding mass raises the energy output faster than it raises the fuel supply. The comparison depends on the kind of star and its stage of life.",
     "example": {
       "title": "A supplied star rule",
       "steps": [
@@ -468,6 +520,10 @@
       {
         "term": "Effective temperature",
         "definition": "The temperature an ideal glowing surface would need to give out the same power per area."
+      },
+      {
+        "term": "Luminosity",
+        "definition": "The energy a source sends out as light or other electromagnetic radiation each second."
       }
     ]
   },
@@ -556,6 +612,10 @@
       {
         "term": "Effective temperature",
         "definition": "Temperature of an ideal surface with the same emitted power per area."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -626,8 +686,8 @@
     ]
   },
   "white-dwarf": {
-    "idea": "Adding mass can make a white dwarf smaller rather than larger.",
-    "explanation": "A white dwarf is a compact stellar remnant supported mainly by electron degeneracy pressure, the push that comes from packing electrons into allowed quantum states. More mass strengthens gravity and compresses it. A simple shrinking rule applies only away from the high-mass limit.",
+    "idea": "A white dwarf is the compact core left by a star. Adding mass can squeeze that core into a smaller space.",
+    "explanation": "Gravity pulls inward. Electrons resist being squeezed because the rules of quantum physics limit how many can share a state. This resistance is called electron degeneracy pressure. The simple size formula here applies away from the largest mass a white dwarf can support.",
     "example": {
       "title": "A heavier white dwarf model",
       "steps": [
@@ -644,6 +704,10 @@
       {
         "term": "Quantum state",
         "definition": "An allowed condition of a particle."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
@@ -662,6 +726,10 @@
       {
         "term": "Hertz (Hz)",
         "definition": "Repeats per second."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -688,6 +756,14 @@
       {
         "term": "Solar mass",
         "definition": "The mass of our Sun."
+      },
+      {
+        "term": "Spacetime",
+        "definition": "A way to describe places and times together. Each event has both a place and a time."
+      },
+      {
+        "term": "Electric charge",
+        "definition": "A property that comes in two signs, positive and negative. Like signs repel and opposite signs attract."
       }
     ]
   },
@@ -714,6 +790,10 @@
       {
         "term": "K",
         "definition": "Kelvin, the temperature unit starting from absolute zero."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
@@ -754,6 +834,14 @@
       {
         "term": "∝",
         "definition": "Changes in proportion to within this model."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
+      },
+      {
+        "term": "Square root",
+        "definition": "A square root answers “which number times itself gives this value?” The √ sign picks the zero or positive answer. For example, √9 = 3."
       }
     ]
   },
@@ -776,6 +864,14 @@
       {
         "term": "G",
         "definition": "Newton's gravitational constant."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
+      },
+      {
+        "term": "Random",
+        "definition": "Individual outcomes can vary even when you repeat the same setup."
       }
     ]
   },
@@ -874,6 +970,14 @@
       {
         "term": "z",
         "definition": "Redshift: the wavelength stretch factor minus one."
+      },
+      {
+        "term": "Redshift",
+        "definition": "A shift of light toward longer wavelengths. Different physical effects can produce it."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -930,12 +1034,20 @@
       {
         "term": "Ω_Λ",
         "definition": "Today's cosmological-constant share in this model."
+      },
+      {
+        "term": "Model component",
+        "definition": "One ingredient of a model. Here each component represents one contribution to the expansion rate."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
   "cosmic-distances": {
-    "idea": "For distant galaxies, distance inferred from brightness differs from distance inferred from apparent size.",
-    "explanation": "Cosmic expansion changes light's energy, arrival rate and path geometry. Luminosity distance is the distance label used in the brightness rule. Angular-diameter distance is the one used to connect an object's physical size with its apparent angle.",
+    "idea": "For a distant galaxy, its brightness and its apparent width give two different ways to label its distance.",
+    "explanation": "Brightness drops as light spreads, loses energy and arrives more slowly in an expanding universe. Luminosity distance is the distance that fits the brightness rule. Angular-diameter distance fits the rule linking a galaxy’s true width to the angle it covers on the sky. Name which you use.",
     "example": {
       "title": "Two distance labels for one source",
       "steps": [
@@ -952,6 +1064,14 @@
       {
         "term": "Megaparsec",
         "definition": "A million parsecs, about 3.26 million light-years."
+      },
+      {
+        "term": "Luminosity",
+        "definition": "The energy a source sends out as light or other electromagnetic radiation each second."
+      },
+      {
+        "term": "Redshift",
+        "definition": "A shift of light toward longer wavelengths. Different physical effects can produce it."
       }
     ]
   },
@@ -978,6 +1098,18 @@
       {
         "term": "Thermal spectrum",
         "definition": "The pattern of light wavelengths given off because of temperature."
+      },
+      {
+        "term": "Spectrum",
+        "definition": "A display of how much of a signal lies at different wavelengths, frequencies or energies."
+      },
+      {
+        "term": "Redshift",
+        "definition": "A shift of light toward longer wavelengths. Different physical effects can produce it."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -1036,6 +1168,10 @@
       {
         "term": "Combined uncertainty",
         "definition": "The estimated uncertainty in the difference, including relevant measurement and model errors."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
       }
     ]
   },
@@ -1072,6 +1208,10 @@
       {
         "term": "Emission",
         "definition": "The sending out of a particle or wave."
+      },
+      {
+        "term": "Electric charge",
+        "definition": "A property that comes in two signs, positive and negative. Like signs repel and opposite signs attract."
       }
     ]
   },
@@ -1102,8 +1242,8 @@
     ]
   },
   "dark-sector-evidence": {
-    "idea": "Evidence for extra gravitating matter does not by itself reveal what that matter is made of.",
-    "explanation": "Dark matter is the name for extra gravitating matter inferred from several observations in standard gravity models. Dark energy is a different idea used to describe accelerated cosmic expansion. Neither name is a discovered substance's complete explanation.",
+    "idea": "Gravity can reveal matter even when telescopes cannot see the matter itself.",
+    "explanation": "For example, stars in some galaxies move faster than the gravity of visible matter alone would predict. Dark matter is the name for the extra matter inferred from effects like this under standard gravity. Dark energy names a different puzzle, the speeding up of the universe’s expansion. The nature of both remains under study.",
     "example": {
       "title": "A missing-mass budget",
       "steps": [
@@ -1146,6 +1286,10 @@
       {
         "term": "Effective temperature",
         "definition": "Temperature of an ideal surface with the same emitted power per area."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -1172,8 +1316,8 @@
     ]
   },
   "competing-models": {
-    "idea": "Extra measurements help distinguish explanations that fit the same brightness reading.",
-    "explanation": "A faint source might be distant, weak or hidden by dust. A distance measurement or spectrum can test those possibilities differently. Compare predictions with uncertainty included, and account for how many adjustable choices each model used.",
+    "idea": "One brightness reading can fit several explanations. Another kind of measurement can help tell them apart.",
+    "explanation": "A faint star could be far away, could give off little light, or could be hidden by dust. Measure its distance or split its light into colors to get another clue. Compare how well each explanation fits the measurements, allowing for measurement uncertainty and how many numbers the model lets you adjust.",
     "example": {
       "title": "Comparing one model with two readings",
       "steps": [
@@ -1190,6 +1334,10 @@
       {
         "term": "Spectrum",
         "definition": "Light separated by wavelength."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
       }
     ]
   },
@@ -1212,6 +1360,14 @@
       {
         "term": "Absolute value",
         "definition": "The size of a number without its plus or minus sign."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   }

@@ -1,0 +1,242 @@
+{
+  "restoring-equilibrium": [
+    "Look for the square root in the spring-frequency rule before scaling the stiffness.",
+    null,
+    "Mass is fixed. Which other factor sets the spring’s returning acceleration?"
+  ],
+  "amplitude-phase": [
+    null,
+    "With the cycle time fixed, must the object cover more or less ground between the endpoints?",
+    "Compare two swings taking the same time but reaching different distances."
+  ],
+  "oscillator-initial-data": [
+    "A minus sign on velocity switches direction. Does it change the size of the largest swing?",
+    null,
+    "Check the squared starting position and squared starting velocity before adding."
+  ],
+  "small-pendulum": [
+    "Does a shorter pendulum swing faster or slower? Recheck the length factor in the period.",
+    "Length occurs inside a square root. What happens to that root?",
+    null
+  ],
+  "viscous-oscillator": [
+    null,
+    "Is the drag coefficient b above or below the fraction line in β = b/(2m)?",
+    "Keeping mass fixed does not freeze the drag. Which number changed?"
+  ],
+  "damping-regimes": [
+    "Compare b with twice the square root of mass × stiffness. On which side of that boundary is it?",
+    null,
+    "Critical damping needs equality, not just a large drag value. Compare the two numbers."
+  ],
+  "damping-energy": [
+    "Energy follows the square of the envelope. Apply the change to both amplitude factors.",
+    "If the swings die down, is there any source adding energy?",
+    null
+  ],
+  "driven-amplitude": [
+    "Locate the force amplitude in the numerator of the response rule.",
+    "The drive frequency stayed the same. Did the strength of the push stay the same?",
+    null
+  ],
+  "driven-phase": [
+    "At resonance, compare the timing of velocity with that of displacement. Do they peak together?",
+    null,
+    "The spring moves while the driver supplies energy. At which instants does velocity vanish?"
+  ],
+  "driven-power": [
+    null,
+    "The stronger drive changes both force and the resulting velocity amplitude. How does their product change?",
+    "Has the response speed stayed fixed in this linear model?"
+  ],
+  "resonance-width": [
+    "Find the width factor containing β in the weak-damping rule.",
+    "A smaller β means the system retains oscillations longer. Recheck which width describes the resonance.",
+    null
+  ],
+  "two-mass-equations": [
+    "Draw both carts before and after moving them. Did the distance between them change?",
+    null,
+    "The spring senses the relative positions of its ends. How far did each end move?"
+  ],
+  "symmetric-motions": [
+    "In which shared motion do the carts stretch the middle spring?",
+    "Try opposite cart displacements. Does the middle spring then supply a restoring force?",
+    null
+  ],
+  "mode-superposition": [
+    null,
+    "Add your predicted mode contributions to recover the measured starting positions. Do you get twice the displacement?",
+    "If only the together-moving pattern were present, where would the second cart start?"
+  ],
+  "mode-eigenproblem": [
+    "Hold the restoring force fixed. What does more mass do to acceleration?",
+    null,
+    "Does the natural frequency depend on stiffness alone or on stiffness divided by mass?"
+  ],
+  "modal-initial-data": [
+    null,
+    "Compare the signs of the two initial coordinates with the signs in the two mode patterns.",
+    "Can a nonzero starting displacement be represented with zero of every mode?"
+  ],
+  "mode-driving": [
+    "Dot the force vector with the mode whose carts move together. What happens to opposite terms?",
+    "Try the mode whose carts have opposite signs. Do its two force contributions cancel or reinforce?",
+    null
+  ],
+  "travelling-profile": [
+    "For a shape moving right, compare a fixed point with the shape just to its left a moment earlier.",
+    null,
+    "The wave’s horizontal travel speed and the string’s vertical velocity are different quantities. Which uses slope?"
+  ],
+  "string-wave-equation": [
+    null,
+    "Is mass per length above or below the fraction line in the wave-speed rule?",
+    "Does the square root apply before or after the mass ratio is used?"
+  ],
+  "wave-phase-power": [
+    "Count the factors of amplitude in the mean-power formula.",
+    "At the same frequency, do larger excursions leave the string’s moving parts with the same speeds?",
+    null
+  ],
+  "string-interface": [
+    null,
+    "Label the new incident side before subtracting the two string properties.",
+    "Check numerator and denominator after reversing sides. Can the stated reflection ratio have that size?"
+  ],
+  "standing-superposition": [
+    "A repeating wave has how many neighboring node intervals per full wavelength?",
+    null,
+    "A node-to-peak interval is different from a node-to-node interval. Which was requested?"
+  ],
+  "boundary-spectra": [
+    "Sketch the longest standing wave in a longer pipe. What happens to its wavelength?",
+    "Find frequency from speed divided by the wavelength that fits the new length.",
+    null
+  ],
+  "string-mode-expansion": [
+    null,
+    "Match the factor 2πx/L to the mode patterns before assigning the coefficient.",
+    "Does the starting profile contain two different sine patterns, or one?"
+  ],
+  "coherent-addition": [
+    "Draw two equal wave arrows separated by half a turn before combining them.",
+    null,
+    "Each amplitude is a length. Can adding two such arrows produce more than the sum of their lengths?"
+  ],
+  "path-phase": [
+    "Combine the supplied source phase with the phase gained through the path difference, using the convention in the example.",
+    "The path already adds a phase difference. Did you also include the source’s own phase?",
+    null
+  ],
+  "beat-envelope": [
+    null,
+    "Count how often the two waves catch up with one another, rather than the half-rate of an envelope’s signed cosine.",
+    "A mean pitch and the rate of loudness changes answer different questions."
+  ],
+  "fourier-coefficients": [
+    "Which multiple of a₀ appears as the constant part of this particular Fourier series?",
+    null,
+    "Try substituting your a₀ back into the series. Does it give the stated constant voltage?"
+  ],
+  "localized-packet": [
+    "At zero wave number, how does the area under the box change?",
+    "Its height stays fixed. What else enters the integral of a box?",
+    null
+  ],
+  "bandwidth-duration": [
+    null,
+    "The time width and frequency width have a fixed product for this pulse. Which way must the other width move?",
+    "Use the new time width in the formula rather than the old one."
+  ],
+  "longitudinal-sound": [
+    "At fixed stiffness, compare the acceleration of denser fluid under the same restoring pressure.",
+    null,
+    "Is density in the numerator or denominator beneath the square root?"
+  ],
+  "sound-intensity": [
+    "Intensity contains pressure squared. How many pressure factors are changing?",
+    "The medium sets one factor. Did the sound wave sending energy through it stay equally strong?",
+    null
+  ],
+  "sound-boundaries": [
+    null,
+    "List the allowed harmonics for a pipe closed at one end before picking the second one.",
+    "Does the second allowed mode of this pipe fit four quarter-waves?"
+  ],
+  "sound-doppler": [
+    "With the source at rest, which part of the Doppler rule changes for the moving listener?",
+    null,
+    "Does moving away make wave crests reach the listener more or less frequently?"
+  ],
+  "dispersion-relation": [
+    "The dispersion relation contains k squared. How many k factors triple?",
+    "Distinguish the numerical change in k from its ratio before scaling the square.",
+    null
+  ],
+  "phase-group-speed": [
+    null,
+    "Are you using the slope dω/dk needed for group speed, or ω/k for a crest?",
+    "Differentiate the dispersion rule once and use the new centre wave number once."
+  ],
+  "packet-spreading": [
+    "Does reversing the sign of D remove the spread already accumulated in the width formula?",
+    null,
+    "See how D enters the square inside the width expression. Can its sign cancel the initial width?"
+  ],
+  "cutoff-evanescence": [
+    "You have a ratio of wave amplitudes. What extra operation is requested?",
+    "Squaring a ratio and multiplying it by two are different operations. Which is used for this question?",
+    null
+  ],
+  "transverse-em-wave": [
+    "Check the number of electric-field factors in the energy carried by the wave.",
+    null,
+    "The wave speed stays fixed, but what happened to the energy in a given volume?"
+  ],
+  "polarization-states": [
+    "A circle needs two nonzero directions of oscillation. Which directions actually have amplitude?",
+    "Plot a point with y always zero while x varies. How many independent extents does it trace?",
+    null
+  ],
+  "polarizer-projection": [
+    null,
+    "The incident light includes many field directions. Does a single filter transmit all their components?",
+    "For a given axis, do all the incoming vibration directions lie across it?"
+  ],
+  "wavefront-refraction": [
+    "Draw a crest arriving head-on at the interface. Which side of the crest enters first?",
+    null,
+    "Look at Snell’s rule for a zero incoming angle before testing any critical-angle claim."
+  ],
+  "two-slit-interference": [
+    null,
+    "Is slit separation a multiplier or a divisor in the fringe-spacing rule?",
+    "Compare paths from the two slit centres when their spacing changes."
+  ],
+  "single-slit-diffraction": [
+    "For the first dark direction, use width × absolute sine = wavelength. Which factor must compensate?",
+    "If the slit gets wider, does the light from its two ends still travel the same path difference at the old angle?",
+    null
+  ],
+  "grating-resolution": [
+    null,
+    "Compare the smallest distinguishable wavelength gap with resolving power. Are they proportional or reciprocal?",
+    "The slit count enters the resolving-power formula even when the order does not change."
+  ],
+  "wave-model-selection": [
+    "Does bulk sound use string tension and mass per length, or pressure response and volume density?",
+    null,
+    "What material is disturbed in this setup? Does a vacuum contain that string?"
+  ],
+  "wave-capstone": [
+    "Tension enters the wave speed under a square root. Which quantities then set the string frequency?",
+    "The wavelength fitting the string is fixed. What happened to its wave speed?",
+    null
+  ],
+  "wave-assessment": [
+    null,
+    "Which part of this setup determines the path differences between parts of the slit?",
+    "Light also changes brightness after the filter turns. Does changing brightness change the dark angle set by slit width and wavelength?"
+  ]
+}

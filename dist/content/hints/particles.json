@@ -1,0 +1,202 @@
+{
+  "events-are-evidence-not-little-pictures": [
+    null,
+    "Imagine a neutral particle striking detector material and producing charged particles. What tracks could appear after that collision?",
+    "Electric charge controls some interactions. What other evidence could a detector gather when a neutral particle passes?"
+  ],
+  "keep-c-in-the-units": [
+    "Square the energy-momentum relation first, then check whether your answer gives energy or energy squared.",
+    null,
+    "Try the relation that includes momentum. Which term survives when the rest mass is zero?"
+  ],
+  "antiparticles-reverse-some-labels": [
+    "List the labels an antiparticle can reverse. What might distinguish two particles even when both have zero electric charge?",
+    "Compare mass and electric charge as separate properties. What could zero electric charge tell you about the sign of mass?",
+    null
+  ],
+  "a-resonance-is-short-lived": [
+    null,
+    "Imagine measuring the same known mass several times with a low-precision instrument. How tightly would the readings cluster?",
+    "The detector records the products after the decay. Which part of the observed spread can the instrument change?"
+  ],
+  "organize-quarks-and-leptons": [
+    "Check which force responds to color charge. Do charged leptons take part in that force?",
+    null,
+    "Compare what electric charge controls with what color charge controls. Which one labels a lepton?"
+  ],
+  "interactions-follow-a-gauge-framework": [
+    "The two choices describe the same physical setup. What should agree when both calculations reach the measured result?",
+    "Which physical signal would the detector record differently if only the calculation's labels changed?",
+    null
+  ],
+  "hadrons-are-composite": [
+    null,
+    "The letters count the quarks that set the proton's net labels. What interaction holds its constituents together?",
+    "Look at the force between quarks inside a proton. What carries that force there?"
+  ],
+  "separate-success-from-open-questions": [
+    "Compare two proposed alternatives against the measurements the old model already explains. Do they perform equally well?",
+    null,
+    "Pick one previously measured result. Did discovering an unanswered question change the measurement?"
+  ],
+  "an-invariant-survives-a-transformation": [
+    "Which frame allows total energy to equal rest energy for a massive particle? Check momentum in the other frame.",
+    "Write down what an invariant is meant to preserve, then compare what two observers measure.",
+    null
+  ],
+  "continuous-symmetry-links-to-conservation": [
+    null,
+    "Draw a boundary around the subsystem and follow energy entering across it. What would you include in a larger boundary?",
+    "Think of a ball gaining energy from a moving bat. What larger system could keep an energy balance?"
+  ],
+  "parity-and-charge-conjugation-differ": [
+    "Imagine reflecting the electron's path in a mirror. Which position or direction labels would you change?",
+    null,
+    "Compare reversing spatial coordinates with replacing a particle by its antiparticle. Which operation was actually performed?"
+  ],
+  "internal-labels-are-not-directions-in-the-room": [
+    "Consider changing the names of axes on a chart of internal states. What would have to move for the detector to turn?",
+    "Check what “color” labels for a quark. Would a compass or camera measure it as a direction in the room?",
+    null
+  ],
+  "conserve-the-whole-four-momentum": [
+    null,
+    "Draw equal arrows pointing the same way for the two momenta. How do those arrows add?",
+    "A photon has energy even with zero rest mass. Which momentum goes with a photon of that energy?"
+  ],
+  "two-body-decay-fixes-rest-frame-energies": [
+    "Compare a photon moving toward an observer with one moving away. How does a change of observer affect the measured frequency?",
+    null,
+    "Draw the two photon directions in the original rest frame. Are they equally aligned with the moving observer?"
+  ],
+  "reconstruct-invariant-mass": [
+    "Add the energy and also add the momentum vectors. Which combination of both gives invariant mass?",
+    "Does the energy of just one photon describe a two-photon system? Write out both total energy and total momentum.",
+    null
+  ],
+  "compare-collider-and-fixed-target-energy": [
+    null,
+    "Start with the beam particle at rest and then give it kinetic energy. What energy does it already have before speeding up?",
+    "If the beam particle slowed to a stop, what part of its energy would still be there?"
+  ],
+  "lifetime-and-width-are-reciprocal": [
+    "A laboratory clock times a moving particle. Which clock would measure the lifetime that enters the width relation?",
+    null,
+    "Compare the particle at rest with the same particle viewed by a passing observer. Which lifetime belongs to the particle itself?"
+  ],
+  "branching-fractions-divide-decay-possibilities": [
+    "Does the decay take place before or after its products reach the detector? Which step can efficiency affect?",
+    "Imagine the detector misses one first-channel event. Would that make the event turn into a different decay?",
+    null
+  ],
+  "cross-section-measures-process-likelihood": [
+    null,
+    "Think about counting only a particular collision outcome. How would that number be related to an actual particle diameter?",
+    "Compare a rare collision outcome with a common one. What happens if the rare class is added to the set you count?"
+  ],
+  "count-expected-events": [
+    "A prediction of signal counts and a claim of significance need different inputs. What spread or background must the second include?",
+    null,
+    "Efficiency is the fraction caught out of those produced. Does delivering more collisions change that fraction by itself?"
+  ],
+  "diagrams-organize-amplitudes": [
+    "Ask whether the detector could tell which diagram occurred. What rule combines alternatives that lead to the same measured outcome?",
+    "Try adding equal amplitudes with opposite signs before taking the square. Does the sign affect the result?",
+    null
+  ],
+  "a-small-coupling-supports-an-expansion": [
+    null,
+    "Seeing one small term gives you one comparison. What would bound the size of terms still uncalculated?",
+    "Suppose a later term has a larger coefficient. Does writing both corrections as percentages prevent that?"
+  ],
+  "weak-interactions-have-charged-and-neutral-channels": [
+    "Check which interactions a lepton can take part in. Which force is responsible for beta decay involving an electron?",
+    null,
+    "In the phrase “neutral current,” find what can be exchanged without transferring electric charge. Whose charge is being named?"
+  ],
+  "neutrino-flavor-can-oscillate": [
+    "Write the travel length over the energy before and after doubling both. Which number goes into the oscillation formula?",
+    "To make the probability vanish, the oscillation phase must meet a specific condition. How would its ratio change here?",
+    null
+  ],
+  "color-neutrality-is-a-quantum-property": [
+    null,
+    "List a proton's electric charge and then ask what color property allows it to exist as a hadron. Do those labels measure the same thing?",
+    "Add the electric charges of the quarks separately from combining their colors. Which sum gives the electric charge?"
+  ],
+  "add-hadron-quantum-numbers": [
+    "Write the baryon number for each member of the added pair. How does an antiquark's sign compare with a quark's?",
+    null,
+    "Check the signs before adding the two one-third contributions. Are you summing signed numbers or their sizes?"
+  ],
+  "strong-coupling-depends-on-scale": [
+    "Look at the distance scale where the coupling becomes small. Would the same argument apply as quarks are pulled farther apart?",
+    "List what a detector actually sees in a jet. Does the spray consist of one particle?",
+    null
+  ],
+  "jets-connect-partons-to-measured-hadrons": [
+    null,
+    "Sketch two nearby sprays of particles. What might a tight grouping rule and a loose one call them?",
+    "Keep the same detector readings and vary only how far apart two deposits may be before they form separate jets."
+  ],
+  "symmetry-restricts-mass-terms": [
+    "Apply the model's symmetry change to the proposed term. Does the calculation still describe the same physics?",
+    null,
+    "A coefficient sets the size of a term. What test determines whether the term's form belongs in the model?"
+  ],
+  "the-higgs-field-and-boson-differ": [
+    "Distinguish the background value of a field from an individual ripple in that field. Which is the Higgs boson?",
+    "Picture an electron far from a collider. How could you tell that it still has inertia?",
+    null
+  ],
+  "infer-higgs-properties-from-channels": [
+    null,
+    "List the steps between production and a recorded count. Which of those steps could differ between channels?",
+    "Look at what a branching fraction measures. Why would each channel need its own fraction?"
+  ],
+  "composite-mass-includes-interaction-energy": [
+    "Add the energy of the two particles while also adding their opposite momenta. What energy is present in the frame of zero total momentum?",
+    null,
+    "Construct the total energy and momentum before finding the mass of the pair. What information would adding individual masses discard?"
+  ],
+  "curvature-measures-transverse-momentum": [
+    "A bigger circle bends less sharply at the same field. Would a particle be easier or harder to turn that gently at greater momentum?",
+    "Keep the charge and field fixed in the track-radius formula. Which remaining measurement distinguishes two different momenta?",
+    null
+  ],
+  "missing-momentum-is-an-imbalance": [
+    null,
+    "Think of a known neutral particle that could escape the detector. What could an imperfect measurement also miss?",
+    "The missing-momentum arrow gives a magnitude and direction. What additional evidence would identify its cause?"
+  ],
+  "an-excess-needs-a-statistical-comparison": [
+    "Imagine a background prediction made from a limited sample. How much could counts vary on repetition?",
+    null,
+    "Compare five extra events on backgrounds of four and of ten thousand. Would five be equally surprising in both?"
+  ],
+  "systematics-can-move-many-measurements-together": [
+    "Picture collecting more lengths with the same miscalibrated ruler. Which uncertainty shrinks when readings are averaged?",
+    "Would repeating the measurement change a scale mark in the same direction each time, or produce a random counting fluctuation?",
+    null
+  ],
+  "reconstruct-a-synthetic-two-photon-event": [
+    null,
+    "Inspect the angle factor in the two-photon mass formula. What does it become when the photons point the same way?",
+    "Adding the photon energies gives total energy. What total momentum must also be included for parallel photons?"
+  ],
+  "audit-a-yield-estimate": [
+    "Try multiplying a familiar count by 0.2. Will the result grow or shrink?",
+    null,
+    "Trace which decay channel the given cross section already counts. How many times should the same selection enter?"
+  ],
+  "reject-a-process-for-a-stated-reason": [
+    "Write the charge next to each added particle and add those charges to the original total. Does visibility enter the sum?",
+    "Test charge and energy in separate columns. Can balancing one change the numbers in the other?",
+    null
+  ],
+  "know-where-the-bridge-ends": [
+    null,
+    "A mathematical model can predict what a detector should see. What comparison would turn that prediction into experimental evidence?",
+    "Think of two ideas that both mention the same open problem. What observation could favor one over the other?"
+  ]
+}

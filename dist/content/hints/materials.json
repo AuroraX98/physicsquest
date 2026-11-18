@@ -1,0 +1,282 @@
+{
+  "order-and-disorder": [
+    null,
+    "Think of rigid glass. How far would an atomic pattern need to repeat for you to call it a crystal?",
+    "Look beyond the nearest neighbors. What pattern would you need to find farther away?"
+  ],
+  "lattice-basis-cell": [
+    "Choose one group of beads and mark the blue bead's position within it before and after the move.",
+    null,
+    "Mark the start of each repeating group. Did moving a bead within every group add any starts?"
+  ],
+  "planes-and-spacing": [
+    "Use the plane-spacing formula for both sets. How many squared indices contribute in each case?",
+    "Locate the square root in the spacing formula. Does it multiply the cube edge or divide it?",
+    null
+  ],
+  "defects": [
+    null,
+    "Imagine drawing the borders between grains. Would counting missing atoms tell you where those borders are?",
+    "Two pieces of the same metal may have different grain sizes. How might a grain border affect a moving defect?"
+  ],
+  "periodic-wave-phase": [
+    "The given change describes the phase gap between neighbors. Which information would you need to infer a frequency?",
+    null,
+    "Sketch one wave, then shift a second copy by half a cycle. Where does its crest fall?"
+  ],
+  "reciprocal-lattice": [
+    "Over one real-space repeat, the phase advances one full turn. How much advance per meter is needed for a longer repeat?",
+    "Multiply the period by the size of the reciprocal vector. What must that product stay equal to?",
+    null
+  ],
+  "bragg-condition": [
+    null,
+    "Look at the label on the instrument. Is it showing the angle the formula uses or twice that angle?",
+    "Start with the displayed angle and work backward from the factor of two on its label."
+  ],
+  "diffraction-inference": [
+    "Hold wavelength fixed in the reflection condition. What else has to change when the sine changes?",
+    null,
+    "Try making both the spacing and the sine smaller. Would their product still match the same wavelength?"
+  ],
+  "bond-equilibrium": [
+    "Imagine shifting the whole energy graph up by five units. Where would its valley be?",
+    "Force depends on the slope. Trace the slope at the bottom of a smooth valley.",
+    null
+  ],
+  "bond-types": [
+    null,
+    "Picture electron density shared unevenly between two atoms. Which features might more than one bond label capture?",
+    "The label describes the behavior of the electrons. What would make the rules governing them change?"
+  ],
+  "stress-strain": [
+    "Draw the same load spread over one wire and a wire twice as thick in area. Compare force per unit area.",
+    null,
+    "Write small strain as stress divided by the material's modulus. Which way does stress change?"
+  ],
+  "elastic-limits": [
+    "Mark the original length on a ruler. Which part of the stretch is still there after the load is removed?",
+    "The modulus describes the slope while loading. Where on the unloading curve would you look for a permanent change?",
+    null
+  ],
+  "lattice-displacements": [
+    null,
+    "Mark both ends of a spring and shift each mark the same distance. How much did the spring stretch?",
+    "What sets spring force in this model, the motion of one mass or the change in distance between two neighbors?"
+  ],
+  "acoustic-optical": [
+    "“Optical” names a vibration pattern in this question. What is physically moving in that pattern?",
+    null,
+    "If every atom shifted together, what bond would stretch enough to drive an oscillation?"
+  ],
+  "phonon-occupation": [
+    "List the possible numbers of phonons in one measurement. Compare the average of those numbers with a chance between zero and one.",
+    "Try finding two different phonon counts whose average is three. What does the mean tell you about individual readings?",
+    null
+  ],
+  "lattice-heat-capacity": [
+    null,
+    "Think about the temperature range used to derive the cube law. Which vibrations become active as a solid warms?",
+    "Ask what is vibrating in the model behind the cube law. Does it count electrons moving through the solid?"
+  ],
+  "pauli-box": [
+    "Mark each occupied combination of energy level and spin before placing the next electron.",
+    null,
+    "Count the spin choices available to one electron in this box. Which of those choices are still empty at the lowest energy?"
+  ],
+  "density-of-states": [
+    "Count both how many states there are and how often a state is filled. Which factor did you leave out?",
+    "Imagine twice as many seats, each filled half as often. How would you estimate the number occupied?",
+    null
+  ],
+  "fermi-occupancy": [
+    null,
+    "An occupancy is a chance of finding the state filled. What range may a chance take?",
+    "One-half occurs when the energy equals the chemical potential. What happens to the exponential as energy rises?"
+  ],
+  "degenerate-gas": [
+    "Compare the actual temperature to the Fermi temperature. How close to zero must the ratio be to matter?",
+    null,
+    "The same 300 K can correspond to very different Fermi temperatures. Which comparison tests the approximation?"
+  ],
+  "bloch-form": [
+    "Try amplitudes of +0.5 and −0.5. Compare the results of multiplying each number by itself.",
+    "A cell translation can add a phase. What does a half-turn of phase do to a wave amplitude?",
+    null
+  ],
+  "nearly-free-gap": [
+    null,
+    "Start with two levels separated by the coupling. Move one above the center and the other below it by the larger amount.",
+    "Locate the midpoint and the distance between the two levels on a sketch. Which describes the gap?"
+  ],
+  "tight-binding": [
+    "Write down the highest and lowest band energies. Which term cancels when you take the difference?",
+    null,
+    "Try plugging a smaller hopping value into both band edges. Do the edges move apart or together?"
+  ],
+  "bandwidth-localization": [
+    "A narrow band gives a small spread in energy. What additional evidence would locate a wave on a single atom?",
+    "Compare the axes of a band plot with the coordinates of a picture of an atom. Which axis would measure position?",
+    null
+  ],
+  "filled-bands": [
+    null,
+    "Imagine electrons trying to move into nearby states. What besides the electron count might help or block that motion?",
+    "Draw equal contributions from states moving in opposite directions. What do their currents add to in a filled band?"
+  ],
+  "fermi-surface": [
+    "Check what the wave label k measures and which units it has. Would those units work for locating a surface atom?",
+    null,
+    "One surface is drawn in a wave-vector plot. What quantities set the boundary on that plot?"
+  ],
+  "group-effective-mass": [
+    "Group speed comes from the slope of the energy curve. Draw its tangent at the bottom.",
+    "Try estimating the slope just at the bottom of a parabola. What speed would that slope imply?",
+    null
+  ],
+  "drude-conductivity": [
+    null,
+    "Count both the number of carriers and their mobility in the conductivity product. What happened to the second factor?",
+    "Try two carriers with half the original mobility each. Compare their combined contribution with the original one."
+  ],
+  "intrinsic-carriers": [
+    "Trace the excited electron back to the place it occupied before absorbing energy. What changed there?",
+    null,
+    "Count the total charge in the sample before and after moving one electron between bands."
+  ],
+  "holes-charge": [
+    "Draw arrows for electron and hole motion in an electric field, then use each charge sign to find its current.",
+    "Equal counts can each be large. What would distinguish a balanced sample from an empty one?",
+    null
+  ],
+  "doping-chemical-potential": [
+    null,
+    "Draw a cool donor with its electron still attached. Would that electron move freely through the crystal?",
+    "Think about the energy needed to free a bound electron. How does cooling affect access to that energy?"
+  ],
+  "semiconductor-temperature": [
+    "Multiply the change in carrier count by the change in mobility. Can factors of four and one-half cancel completely?",
+    null,
+    "Mobility gives only one factor in conductivity. What happens to the other factor in this sample?"
+  ],
+  "drift-diffusion": [
+    "Sketch the currents caused by a density difference and by a field. How could the total vanish?",
+    "Imagine two equally busy flows passing in opposite directions. What would their net flow meter show?",
+    null
+  ],
+  "depletion-region": [
+    null,
+    "Balance the positive and negative charge on the two sides. Which side needs less width to supply the same charge?",
+    "Sketch equally wide slices at different doping levels. Would they contain the same amount of uncovered charge?"
+  ],
+  "diode-bias": [
+    "Substitute zero for the voltage. What is the exponential of zero?",
+    null,
+    "After evaluating the exponential at zero voltage, check the term subtracted inside the parentheses."
+  ],
+  "photovoltaic-limits": [
+    "Follow the energy from one absorbed photon. How much of it actually reaches the terminals as electrical work?",
+    "Imagine a photon carrying more energy than the gap. Where might its excess energy go?",
+    null
+  ],
+  "dielectric-polarization": [
+    null,
+    "Compare a slowly changing field with a rapidly reversing one. Can the same parts of the material follow both?",
+    "Picture a bound charge with inertia. How much could it move before a very fast field reverses?"
+  ],
+  "interband-absorption": [
+    "Check both energy and crystal momentum before and after absorption. Which is tricky when the band edges occur at different wave vectors?",
+    null,
+    "Sketch the two band edges at different wave vectors. What extra change would the electron need while crossing the gap?"
+  ],
+  "excitons": [
+    "The bound electron and hole are more stable together. Compare the energy needed to form that pair with the unbound pair.",
+    "Write the energy needed to create a free pair, then account for the binding gained when the two stay together.",
+    null
+  ],
+  "optical-evidence": [
+    null,
+    "Imagine running both models under a new temperature or field. What measurement would make their disagreement visible?",
+    "If a second model reproduces every point you have, what additional evidence could distinguish them?"
+  ],
+  "magnetic-moments": [
+    "Keep the direction fixed in the moment-field product. Which factor changes when the field is turned up?",
+    null,
+    "Look for a multiplication or a division by field strength in the energy expression."
+  ],
+  "para-diamagnetism": [
+    "Choose the field direction as positive. Which sign would multiplication need to produce a magnetization pointing the other way?",
+    "A zero response would give what magnetization when you turn the field on?",
+    null
+  ],
+  "exchange-order": [
+    null,
+    "Try the dot product for parallel spins and keep both the minus sign in the formula and the negative sign of J.",
+    "Compare the dot products for parallel and opposite spins. Which arrangement gives the lower energy for this sign of J?"
+  ],
+  "domains-hysteresis": [
+    "Sketch two neighboring regions magnetized in different directions. What would a meter covering both detect?",
+    null,
+    "Picture two equal arrows pointing in opposite directions. What does their average tell you about either arrow?"
+  ],
+  "superconducting-evidence": [
+    "Imagine a voltage smaller than the meter's smallest display step. What reading could it show?",
+    "A voltmeter measures an electrical signal. Which separate measurement would show how a sample responds to a field?",
+    null
+  ],
+  "cooper-pairs": [
+    null,
+    "Distinguish the direct electric force between two electrons from the response of the surrounding material.",
+    "Track the charge carried by two electrons before and after they form a pair. Where could any change in charge come from?"
+  ],
+  "gap-critical-scales": [
+    "What factor in the denominator converts a temperature into an energy for comparison?",
+    null,
+    "Check which assumptions about pairing led to the number 3.52. How could you test superconductivity separately?"
+  ],
+  "superconductor-limits": [
+    "Compare what the current does in a steady measurement and in an alternating one. What else could consume energy when it changes?",
+    "Trace the energy lost from the drive. Where could it end up in a sample that warms?",
+    null
+  ],
+  "order-parameters": [
+    null,
+    "Sketch two equally large regions with magnetization in opposite directions. What reading would a meter covering both give?",
+    "Imagine changing the domain pattern while keeping its average fixed. Which detail would the average miss?"
+  ],
+  "correlation": [
+    "Take paired measurements that are sometimes both positive and sometimes both negative. What are their products like?",
+    null,
+    "Compare averaging the products in each trial with multiplying the two averages afterward."
+  ],
+  "band-topology": [
+    "Find the condition that keeps the edge state protected. Does the new disturbance preserve that condition?",
+    "What would you need to know about this material and its symmetry before predicting conduction at an edge?",
+    null
+  ],
+  "many-body-prerequisites": [
+    null,
+    "Look at which interactions were simplified in the models you used. What could you actually test with one of them?",
+    "Compare an electron moving freely with one whose motion is strongly affected by its neighbors. Which assumptions change?"
+  ],
+  "band-occupancy-capstone": [
+    "Locate the added electrons on the band diagram. What nearby states are available to them?",
+    null,
+    "Look inside the partly filled band. Would every possible small change in energy cross the gap between bands?"
+  ],
+  "transport-capstone": [
+    "Write conductivity as the product involving density and mobility. Try halving both factors and checking the result.",
+    "Put the smaller density into the original product. Which factor can be adjusted to restore the same result?",
+    null
+  ],
+  "thermal-electronic-capstone": [
+    null,
+    "Write the temperature-dependent power for the lattice term. How does doubling temperature affect that power?",
+    "Read the exponent on the electronic term. What happens when you substitute twice the temperature?"
+  ],
+  "materials-assessment": [
+    "Picture samples with the same carrier density but different amounts of disorder. What could scatter carriers in one sample more often?",
+    null,
+    "What comparison would isolate spacing while holding the other changes from processing steady?"
+  ]
+}

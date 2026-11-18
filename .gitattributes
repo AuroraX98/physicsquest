@@ -1,0 +1,9 @@
+# Preserve the published course files byte-for-byte across Git checkout platforms.
+/dist/content/foundations.json text eol=lf
+/dist/content/math.json text eol=lf
+/dist/content/mechanics.json text eol=lf
+/dist/content/em.json text eol=lf
+/dist/content/waves.json text eol=lf
+/dist/content/quantum1.json text eol=lf
+/dist/content/quantum2.json text eol=lf
+/dist/content/quantum3.json text eol=lf

@@ -114,12 +114,16 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
   "motion-constraints": {
-    "idea": "Define the event before solving for its time.",
-    "explanation": "Stopping means velocity is zero. Reaching a place means position equals that place's coordinate. These conditions can occur at different times, and a position may be crossed more than once.",
+    "idea": "Decide what moment you are looking for before calculating a time.",
+    "explanation": "A cart stops for a moment when its velocity is zero. It reaches the finish line when its position equals the position of the line. Those questions can have different answers. A cart that turns around can even cross the same line twice.",
     "example": {
       "title": "A momentary stop",
       "steps": [
@@ -150,9 +154,9 @@
     "example": {
       "title": "Acceleration rising with time",
       "steps": [
-        "Start at 1 metre per second with a(t) = (2 m/s³)t.",
-        "Adding the acceleration from 0 to 2 seconds gives a 4-metre-per-second increase.",
-        "The final velocity is 1 + 4 = 5 metres per second."
+        "Start at 1 metre per second. Acceleration rises steadily from 0 to 4 metres per second squared in 2 seconds.",
+        "The area on the acceleration–time graph is a triangle: ½ × 2 s × 4 m/s² = 4 m/s of extra velocity.",
+        "Add that increase to the starting velocity: 1 + 4 = 5 metres per second."
       ]
     },
     "equation": "final velocity = initial velocity + accumulated acceleration",
@@ -167,7 +171,11 @@
       },
       {
         "term": "³",
-        "definition": "Multiply the quantity by itself three times."
+        "definition": "Use three equal factors. For example, 2³ means 2 × 2 × 2 = 8."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -191,8 +199,15 @@
       {
         "term": "Acceleration",
         "definition": "Rate of velocity change."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "visual.caption": "The object leaves a shelf 1.22625 m above the floor. Gravity pulls it down. Small dots mark equal time steps."
+    }
   },
   "unequal-heights": {
     "idea": "Find landing time from the actual landing height.",
@@ -245,6 +260,10 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   },
@@ -272,6 +291,10 @@
       {
         "term": "Acceleration",
         "definition": "Rate of velocity change."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -345,8 +368,8 @@
     ]
   },
   "normal-tension": {
-    "idea": "A supporting surface supplies only the push needed by the motion and other forces.",
-    "explanation": "The normal force is perpendicular to the surface. It need not equal the object's weight. For a box staying on a level table without vertical acceleration, upward and downward forces balance.",
+    "idea": "A table pushes up on a resting box. Another support can share that job.",
+    "explanation": "The table’s push acts at a right angle to the surface. It is called the normal force. If a rope helps lift the box while it still rests on the table, the table needs to push up less. Count all the vertical forces before setting them equal.",
     "example": {
       "title": "Helping support a box",
       "steps": [
@@ -368,6 +391,10 @@
       {
         "term": "Weight",
         "definition": "The gravitational force on an object."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
       }
     ]
   },
@@ -395,6 +422,10 @@
       {
         "term": "Sine",
         "definition": "A mathematical function that selects a component for a stated angle."
+      },
+      {
+        "term": "Slope",
+        "definition": "How much a graph rises or falls for each step to the right."
       }
     ]
   },
@@ -441,6 +472,10 @@
       {
         "term": "≤",
         "definition": "Less than or equal to."
+      },
+      {
+        "term": "Friction",
+        "definition": "A contact force that opposes sliding between surfaces, or opposes their tendency to slide."
       }
     ]
   },
@@ -472,6 +507,14 @@
       {
         "term": "Perpendicular",
         "definition": "Meeting at a right angle."
+      },
+      {
+        "term": "Friction",
+        "definition": "A contact force that opposes sliding between surfaces, or opposes their tendency to slide."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
@@ -503,6 +546,10 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -569,8 +616,8 @@
     ]
   },
   "radial-force-budget": {
-    "idea": "The real forces must supply the inward total required for circular motion.",
-    "explanation": "“Centripetal force” names this inward requirement, not a new force to add. Identify which actual forces point inward and add their components. If the total is wrong, the assumed circle will not occur.",
+    "idea": "An object following a circle needs a net force toward the centre.",
+    "explanation": "Look for the real inward pulls or pushes, such as tension in a rope or friction on a tire. After subtracting any outward forces, their total must provide the inward acceleration for that circle. Adding an extra “centripetal force” to the same real forces would count the turning twice.",
     "example": {
       "title": "A puck on a string",
       "steps": [
@@ -627,6 +674,10 @@
       {
         "term": "√",
         "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -654,6 +705,10 @@
       {
         "term": "Perpendicular",
         "definition": "At a right angle."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
       }
     ]
   },
@@ -677,6 +732,10 @@
       {
         "term": "Work",
         "definition": "Energy transferred by a force through displacement."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from the starting position to the ending position, including direction."
       }
     ]
   },
@@ -786,7 +845,10 @@
         "term": "²",
         "definition": "Multiply the quantity by itself."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "practice.parts.2.feedback": "F=−dU/dx=−(8 N/m)x, giving −8 N at 1 m."
+    }
   },
   "spring-gravity-potentials": {
     "idea": "A compressed spring can store positive energy just like a stretched spring.",
@@ -843,6 +905,10 @@
       {
         "term": "Potential energy",
         "definition": "Energy associated with configuration in an interaction."
+      },
+      {
+        "term": "Friction",
+        "definition": "A contact force that opposes sliding between surfaces, or opposes their tendency to slide."
       }
     ]
   },
@@ -901,6 +967,10 @@
       {
         "term": "Peak",
         "definition": "The largest value reached."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -928,6 +998,10 @@
       {
         "term": "System",
         "definition": "The objects chosen for study."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -1032,6 +1106,10 @@
       {
         "term": "Impulse",
         "definition": "Force accumulated over time."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -1062,6 +1140,10 @@
       {
         "term": "π",
         "definition": "A number about 3.1416."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -1120,6 +1202,10 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Rotational inertia",
+        "definition": "How hard it is to change the turning rate about a chosen axis. Moving mass farther from the axis generally increases its rotational inertia."
       }
     ]
   },
@@ -1147,6 +1233,10 @@
       {
         "term": "Moment of inertia",
         "definition": "A measure of mass distribution about an axis."
+      },
+      {
+        "term": "Rotational inertia",
+        "definition": "How hard it is to change the turning rate about a chosen axis. Moving mass farther from the axis generally increases its rotational inertia."
       }
     ]
   },
@@ -1201,6 +1291,14 @@
       {
         "term": "Angular acceleration",
         "definition": "Rate of change of angular velocity."
+      },
+      {
+        "term": "Rotational inertia",
+        "definition": "How hard it is to change the turning rate about a chosen axis. Moving mass farther from the axis generally increases its rotational inertia."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
       }
     ]
   },
@@ -1228,6 +1326,10 @@
       {
         "term": "Rigid",
         "definition": "Keeping the same shape in the model."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
       }
     ]
   },
@@ -1313,12 +1415,16 @@
       {
         "term": "Radial",
         "definition": "Toward or away from the turning axis."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
   "inverse-square-gravity": {
-    "idea": "Outside a spherical source, Newtonian gravity weakens with centre distance squared.",
-    "explanation": "Use distance from the source's centre, not height above its surface. Dividing the force by the small object's mass gives its acceleration. This model assumes weak-field classical gravity and the stated spherical source.",
+    "idea": "Twice as far from the centre of a spherical mass, gravity pulls one quarter as strongly.",
+    "explanation": "Measure both distances from the centre, and stay outside the sphere. If its mass is spread the same way in every direction, the pull depends on distance squared. Doubling the distance divides the pull by 2 × 2. This Newtonian model works when gravity is weak and speeds are well below light speed.",
     "example": {
       "title": "Gravity in an invented model",
       "steps": [
@@ -1344,8 +1450,8 @@
     ]
   },
   "gravitational-potential-escape": {
-    "idea": "The ideal escape threshold has just enough kinetic energy to balance negative gravitational potential energy.",
-    "explanation": "Choose potential energy zero at infinitely large separation. At the escape threshold, speed approaches zero as distance grows without bound. The model excludes drag, other bodies, further driving, and paths that hit the source.",
+    "idea": "Escape speed is the least starting speed needed to get arbitrarily far away without another push in this model.",
+    "explanation": "As an object climbs away from a spherical mass, its kinetic energy falls and its gravitational potential energy rises. At the escape threshold, its remaining speed approaches zero as the distance grows. Assume no drag, no extra engines, and no other gravitating bodies.",
     "example": {
       "title": "An escape-speed estimate",
       "steps": [
@@ -1410,8 +1516,23 @@
       {
         "term": "√",
         "definition": "Positive square root: the nonnegative number whose square gives the value inside."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
+      },
+      {
+        "term": "Square root",
+        "definition": "A square root answers “which number times itself gives this value?” The √ sign picks the zero or positive answer. For example, √9 = 3."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "check.explanations.0": "T is proportional to √(r³), so a radius factor 4 gives a period factor √64=8."
+    }
   },
   "orbital-energy": {
     "idea": "A circular gravitational orbit has negative total energy when potential is zero at infinity.",
@@ -1468,6 +1589,10 @@
       {
         "term": "Kinetic energy",
         "definition": "Energy of motion."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
       }
     ]
   },
@@ -1503,8 +1628,8 @@
     ]
   },
   "mechanics-assessment": {
-    "idea": "Recheck the governing balance whenever a rotor's physical conditions change.",
-    "explanation": "An outside torque changes angular momentum during the drive. After that torque is removed, balanced inward rearrangement can preserve axial angular momentum while increasing spin speed. Compare endpoints without relative radial motion and count the internal energy supplied.",
+    "idea": "A turning push can start a rotor spinning. Moving its mass inward can then make it spin faster.",
+    "explanation": "A rotor is an object that turns about an axis. A turning push, called torque, changes its angular momentum. Once the outside push ends, the rotor can keep that angular momentum while its mass moves inward. Pulling the mass inward takes work and can increase the energy of the spin.",
     "example": {
       "title": "Driving then rearranging one rotor",
       "steps": [

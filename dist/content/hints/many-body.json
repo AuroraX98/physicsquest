@@ -1,0 +1,127 @@
+{
+  "occupation-list": [
+    null,
+    "What do the positions in this list label before any numbers are written into them?",
+    "How would you count the total when both entries in the list contain particles?"
+  ],
+  "fermion-occupation": [
+    "A complete electron state includes more than its spatial pattern. Which remaining label can differ?",
+    null,
+    "List all the labels of both electrons before deciding whether their complete states coincide."
+  ],
+  "boson-creation": [
+    "Check whether multiplying a ket by a factor leaves it normalized. Can a probability exceed one?",
+    "Distinguish the coefficient written outside the ket from the occupation number written inside it.",
+    null
+  ],
+  "pair-interaction": [
+    null,
+    "List the pairs AB and BA. Did you find two distinct pairs or count the same pair twice?",
+    "Would counting pairs of marbles use any information about their electric charges?"
+  ],
+  "boson-removal": [
+    null,
+    "Compare the length of the normalized vacuum with the result of trying to remove a particle from an empty mode.",
+    "Is it the energy label or the occupation count that controls the removal rule?"
+  ],
+  "number-operator": [
+    "Imagine counting the particles in several snapshots. Would averaging your counts require breaking up a particle in any one snapshot?",
+    null,
+    "Try averaging two different whole-number readings. What numbers can an average take?"
+  ],
+  "boson-commutator": [
+    "Try adding and then removing a particle in an initially empty mode. Now try the opposite order.",
+    "The correction in the commutator is fixed. Does a larger occupation make a fixed correction exactly zero?",
+    null
+  ],
+  "fermion-sign": [
+    null,
+    "Find the squared size of an amplitude before and after multiplying the entire state by −1.",
+    "Does the distinction between a shared sign and a relative sign depend on the particle species?"
+  ],
+  "boson-hopping": [
+    "What does the hopping operator produce before a state is normalized or a transition probability is computed?",
+    null,
+    "Check the units and normalization of the whole calculation before treating one factor as a probability."
+  ],
+  "bose-hubbard": [
+    "Compare the average of a hopping operator with the result of actually applying it to the starting state.",
+    "Does choosing a real coefficient forbid an amplitude for a different occupation pattern?",
+    null
+  ],
+  "fermion-hubbard": [
+    null,
+    "List the full pair of labels for each electron, including spin.",
+    "The interaction energy changes a cost. Which part of Pauli’s rule depends on that cost?"
+  ],
+  "ising-bond": [
+    "Insert +1 or −1 for the two spins. Can their product vanish?",
+    null,
+    "Include the minus sign in the bond energy before comparing the two spin products."
+  ],
+  "mean-field-decoupling": [
+    "Expand the product with both deviations included. Under what condition would the term you omit vanish?",
+    "Averaging a product and multiplying two averages are different operations. Check the discarded correlation.",
+    null
+  ],
+  "neighbor-average-field": [
+    null,
+    "Check the units of h in the energy rule before substituting a magnetic-field reading.",
+    "Can changing a coupling’s sign convert tesla to units of energy?"
+  ],
+  "mean-field-consistency": [
+    "Could a zero solution sit at a maximum or minimum? Inspect what happens just to either side.",
+    null,
+    "Finding a self-consistent value is one test. What happens after a tiny perturbation?"
+  ],
+  "mean-field-transition": [
+    "Which neighbor-to-neighbor fluctuations did the approximation leave out of a one-dimensional chain?",
+    "Would adding more sites restore neglected local correlations automatically?",
+    null
+  ],
+  "occupation-variance": [
+    null,
+    "Compare a preparation always giving the mean with one giving values on both sides of it.",
+    "Can a distribution still be broad around a whole-number average?"
+  ],
+  "spin-variance": [
+    "Could opposite spin readings cancel in the mean at some other temperature too?",
+    null,
+    "Try equally common +1 and −1 readings and inspect the individual results before averaging."
+  ],
+  "collective-variance": [
+    "Write out the variance of a sum. Which extra term compares how the two quantities vary together?",
+    "The spread of one quantity and the correlation between two quantities are different terms. Which of them can have a sign?",
+    null
+  ],
+  "average-fluctuations": [
+    null,
+    "Imagine many sensors all picking up the very same fluctuation. Do they give independent readings?",
+    "A small or large mean describes the centre. What evidence would establish independent deviations?"
+  ],
+  "connected-correlation": [
+    "Can two ordinary, classically linked random outcomes each have zero mean?",
+    null,
+    "Consider two copies of the same random bit. Could their readings be linked without any quantum state?"
+  ],
+  "correlation-length": [
+    "Would a distribution with several length scales naturally fit one decay length?",
+    "Units tell you how to compare separation with a length scale. Do they choose the shape of the curve?",
+    null
+  ],
+  "static-structure-factor": [
+    null,
+    "A snapshot records spatial information. Which variable would be needed to distinguish two motions with the same snapshot?",
+    "Zero wave number selects a spatial pattern. Does it supply a time record?"
+  ],
+  "fluctuation-response": [
+    "Do operators in different orders give the same result just because the state is pure?",
+    null,
+    "What assumptions connected an equilibrium variance to a response in the derivation?"
+  ],
+  "linear-response": [
+    "Draw a time axis and put the disturbance after the reading. Which direction is allowed for cause and effect?",
+    "A weak disturbance changes the size of the response. Does its size alter the order of events?",
+    null
+  ]
+}

@@ -56,8 +56,8 @@
     ]
   },
   "planes-and-spacing": {
-    "idea": "Crystal planes describe a direction through the atomic pattern, not separate physical sheets.",
-    "explanation": "Miller indices label the plane orientation. For a cubic crystal, their spacing follows the supplied rule. Other crystal shapes need different formulas.",
+    "idea": "Imagine a three-dimensional grid of atoms. You can draw sets of equally spaced flat slices through the grid in different directions.",
+    "explanation": "The slices are imaginary crystal planes. Three whole numbers, called Miller indices, name their orientation. In a cubic crystal, square these numbers, add them and take the square root. Divide the cube’s edge length by that result to find the spacing for that set of planes.",
     "example": {
       "title": "Diagonal planes in a cube",
       "steps": [
@@ -130,6 +130,14 @@
       {
         "term": "Radian",
         "definition": "A unit of angle; 2π radians make one full turn."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
       }
     ]
   },
@@ -152,12 +160,16 @@
       {
         "term": "a",
         "definition": "Real-space repeat distance."
+      },
+      {
+        "term": "Reciprocal",
+        "definition": "One divided by a number other than zero. The reciprocal of 4 is ¼."
       }
     ]
   },
   "bragg-condition": {
-    "idea": "Crystal diffraction peaks can occur when extra travel distance equals whole wavelengths.",
-    "explanation": "For parallel planes, that extra distance is 2d sinθ. The angle θ is measured from the planes; instruments often report twice that angle. The atomic basis still determines whether a candidate peak appears.",
+    "idea": "Waves scattered by different layers of a crystal can line up and make a bright spot.",
+    "explanation": "A wavelength is the distance from one wave crest to the next. For the crests to line up, the extra distance travelled must be a whole number of wavelengths. The formula finds the angles where this can happen. Measure the angle from the layers. The arrangement of atoms can still cancel a spot.",
     "example": {
       "title": "One diffraction peak",
       "steps": [
@@ -182,6 +194,18 @@
       {
         "term": "θ",
         "definition": "Angle between ray and planes."
+      },
+      {
+        "term": "Diffraction",
+        "definition": "The spreading of a wave when it passes through an opening or around an edge."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -200,6 +224,14 @@
       {
         "term": "Indexed reflection",
         "definition": "A particular identified set of crystal planes producing a diffraction peak."
+      },
+      {
+        "term": "Diffraction",
+        "definition": "The spreading of a wave when it passes through an opening or around an edge."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -226,6 +258,14 @@
       {
         "term": "Restoring force",
         "definition": "A force pointing back toward the resting position."
+      },
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with an arrangement, such as the height of a weight above the floor."
+      },
+      {
+        "term": "Slope",
+        "definition": "How much a graph rises or falls for each step to the right."
       }
     ]
   },
@@ -278,6 +318,10 @@
       {
         "term": "Young's modulus",
         "definition": "The stiffness ratio for a specified small uniaxial stretch."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -312,6 +356,14 @@
       {
         "term": "Anisotropy",
         "definition": "Dependence on direction."
+      },
+      {
+        "term": "Proportional",
+        "definition": "Two quantities are proportional when multiplying one by a certain factor multiplies the other by that same factor."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   },
@@ -356,6 +408,14 @@
       {
         "term": "Optical branch",
         "definition": "A family that can retain nonzero frequency at long wavelength; the name does not guarantee visible-light interaction."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -416,6 +476,10 @@
       {
         "term": "μJ",
         "definition": "One millionth of a joule."
+      },
+      {
+        "term": "Proportional",
+        "definition": "Two quantities are proportional when multiplying one by a certain factor multiplies the other by that same factor."
       }
     ]
   },
@@ -494,6 +558,14 @@
       {
         "term": "f",
         "definition": "Average occupancy of one complete electron state."
+      },
+      {
+        "term": "Equilibrium",
+        "definition": "A condition where the effects that would change the system balance. For a hanging weight at rest, the support’s upward pull balances gravity."
+      },
+      {
+        "term": "Exponential",
+        "definition": "A function that changes by the same factor when its input changes by a fixed amount. For example, a signal that halves each second decays exponentially."
       }
     ]
   },
@@ -516,6 +588,10 @@
       {
         "term": "Fermi temperature (T_F)",
         "definition": "That energy divided by Boltzmann's constant."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -550,6 +626,14 @@
       {
         "term": "exp(ika)",
         "definition": "A factor describing the phase change over one cell."
+      },
+      {
+        "term": "Phase",
+        "definition": "A wave’s place in a repeating cycle. Two crests arriving together have matching phase."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
       }
     ]
   },
@@ -662,8 +746,8 @@
     ]
   },
   "fermi-surface": {
-    "idea": "The Fermi surface is a boundary in wave-vector space, not a metal's outer skin.",
-    "explanation": "A wave vector describes a wave's direction and the rate at which its cycle changes across space. At zero temperature, independent electrons fill states up to a boundary in this wave-vector map. That boundary is the Fermi surface, which need not look like the material's outside surface.",
+    "idea": "Make a map of the wave patterns electrons can occupy in a metal. At zero temperature there is a boundary between filled and empty patterns.",
+    "explanation": "Each point on this map describes a wave’s direction and how quickly it repeats across space. The point is called a wave vector. For independent electrons the boundary at the highest filled energy is the Fermi surface. It belongs to the map of wave patterns.",
     "example": {
       "title": "A free-electron model",
       "steps": [
@@ -718,6 +802,10 @@
       {
         "term": "d²E/dk²",
         "definition": "The curvature, or bending, of the energy curve."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
@@ -748,6 +836,14 @@
       {
         "term": "Mobility",
         "definition": "Drift speed per electric-field strength."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
@@ -790,8 +886,8 @@
     ]
   },
   "holes-charge": {
-    "idea": "A missing electron in a nearly full band can act like a positive carrier.",
-    "explanation": "Tracking the empty state is often easier than tracking all the remaining electrons. This hole has effective charge +e. It is not a new elementary positive particle inside the atom.",
+    "idea": "Imagine a row of occupied seats with one empty seat. As people move into the gap one by one, the gap moves the other way.",
+    "explanation": "Something similar happens when electrons move through a nearly full set of allowed states, called an energy band. The empty state is called a hole. Tracking its motion gives the same electric effect as a moving positive charge of size e.",
     "example": {
       "title": "Mobile-charge balance",
       "steps": [
@@ -868,6 +964,10 @@
       {
         "term": "σ",
         "definition": "Conductivity."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
       }
     ]
   },
@@ -894,6 +994,10 @@
       {
         "term": "Drift",
         "definition": "Average directed carrier motion caused by a field."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
@@ -920,6 +1024,10 @@
       {
         "term": "x_p,x_n",
         "definition": "The depletion widths on the two sides."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
@@ -958,6 +1066,10 @@
       {
         "term": "exp",
         "definition": "The exponential calculator function."
+      },
+      {
+        "term": "Exponential",
+        "definition": "A function that changes by the same factor when its input changes by a fixed amount. For example, a signal that halves each second decays exponentially."
       }
     ]
   },
@@ -980,6 +1092,10 @@
       {
         "term": "Recombination",
         "definition": "An electron filling a hole rather than being collected."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
@@ -1014,6 +1130,10 @@
       {
         "term": "E",
         "definition": "Electric-field strength."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
@@ -1040,12 +1160,16 @@
       {
         "term": "f",
         "definition": "Light frequency."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
   "excitons": {
-    "idea": "An excited electron and the hole it leaves can attract and form a bound pair.",
-    "explanation": "The pair is called an exciton. Its energy can lie below that of a separated electron and hole because attraction lowers the energy. The binding energy is what is needed to separate them.",
+    "idea": "When an electron gains energy, it can leave an empty place behind. The electron and the empty place can travel as a pair.",
+    "explanation": "The empty electron state is called a hole. It acts like a positive charge, so it attracts the negative electron. A bound pair is called an exciton. The extra energy needed to pull the two apart is the binding energy.",
     "example": {
       "title": "One bound pair",
       "steps": [
@@ -1114,10 +1238,10 @@
     ]
   },
   "para-diamagnetism": {
-    "idea": "Materials can respond magnetically along or against an applied field.",
-    "explanation": "Positive susceptibility describes a weak response along the field; negative susceptibility describes one against it. An ideal dilute set of independent permanent moments follows Curie's inverse-temperature rule only in its stated regime.",
+    "idea": "A material in a magnetic field can respond along the field or against it.",
+    "explanation": "Susceptibility measures how strongly the material responds. A small positive value means the response points along the field. A small negative value means it points the other way. For a dilute sample of independent tiny magnets, Curie’s rule predicts that doubling the absolute temperature halves its positive response.",
     "example": {
-      "title": "A Curie-regime sample",
+      "title": "Warming a sample of independent tiny magnets",
       "steps": [
         "Its susceptibility is 0.004 at 200 K.",
         "At 400 K, the same model predicts 0.002."
@@ -1136,6 +1260,10 @@
       {
         "term": "T",
         "definition": "Absolute temperature in kelvin."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
@@ -1192,8 +1320,8 @@
     ]
   },
   "superconducting-evidence": {
-    "idea": "Very low resistance alone is not enough to identify superconductivity.",
-    "explanation": "An instrument may report zero voltage when the voltage is merely too small to detect. Superconductivity also has a characteristic magnetic response, including expelling field in the appropriate Meissner state. Some superconductors allow magnetic vortices in other conditions, so the test must state its regime.",
+    "idea": "Two clues can help identify a superconductor. One concerns current, and the other concerns magnetism.",
+    "explanation": "If a voltage meter reads zero while current flows, a tiny resistance could still be too small to see. Scientists also test how the sample responds to a magnetic field. Under suitable conditions a superconductor pushes magnetic field out of its interior. This is the Meissner effect. The strength of the applied field matters.",
     "example": {
       "title": "An instrument limit",
       "steps": [
@@ -1214,12 +1342,16 @@
       {
         "term": "Resolution limit",
         "definition": "The smallest change an instrument can distinguish."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
   "cooper-pairs": {
-    "idea": "In conventional superconductors, many electrons join a coordinated state with linked pairs.",
-    "explanation": "Atomic vibrations can help produce an effective attraction between some electrons near the filling boundary. Their behavior becomes linked in Cooper pairs. These pairs can overlap across the material; they are not generally separate tiny molecules following classical orbits.",
+    "idea": "In some very cold materials, electrons move in a shared state that includes linked pairs.",
+    "explanation": "A metal’s atoms can vibrate. In a conventional superconductor, these vibrations can help link electrons near the highest occupied energy level. Two electrons linked this way form a Cooper pair. Their wave patterns can spread across many atoms and overlap other pairs.",
     "example": {
       "title": "A paired state spread across a metal",
       "steps": [
@@ -1292,6 +1424,10 @@
       {
         "term": "Excitation",
         "definition": "An added disturbance above the system's reference state."
+      },
+      {
+        "term": "Excitation spectrum",
+        "definition": "The possible energies of disturbances above the lowest-energy state, shown here for different directions."
       }
     ]
   },
@@ -1392,6 +1528,10 @@
       {
         "term": "Microjoule",
         "definition": "One millionth of a joule."
+      },
+      {
+        "term": "Kelvin",
+        "definition": "A unit of absolute temperature. Zero kelvin marks absolute zero. A change of one kelvin is the same size as a change of one degree Celsius."
       }
     ]
   },
@@ -1414,6 +1554,10 @@
       {
         "term": "Conductivity",
         "definition": "How strongly a material carries current in response to an electric field."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
       }
     ]
   },
@@ -1466,12 +1610,16 @@
       {
         "term": "T",
         "definition": "Kelvin temperature."
+      },
+      {
+        "term": "Heat capacity",
+        "definition": "The energy needed for a temperature rise of one kelvin under the stated conditions, with no change of phase."
       }
     ]
   },
   "materials-assessment": {
-    "idea": "Two changes occurring together do not prove one caused the other.",
-    "explanation": "A diffraction shift can suggest changed plane spacing. Lower conductivity at unchanged carrier density can suggest lower mobility in a one-carrier model. Processing can change several properties, so test alternatives before claiming a cause.",
+    "idea": "A treated crystal can scatter light differently and also carry less current. Those two changes alone do not tell you what caused them.",
+    "explanation": "A shifted scattering peak can mean the spacing between crystal planes changed. If the number of moving charges per volume stayed the same, lower conductivity can mean they move less easily. This second inference assumes one kind of charge carrier. Check other possible changes in the sample too.",
     "example": {
       "title": "One processed sample",
       "steps": [
@@ -1489,6 +1637,10 @@
       {
         "term": "Inference",
         "definition": "A conclusion drawn from evidence using stated assumptions."
+      },
+      {
+        "term": "Diffraction",
+        "definition": "The spreading of a wave when it passes through an opening or around an edge."
       }
     ]
   }

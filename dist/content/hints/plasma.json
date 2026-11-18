@@ -1,0 +1,157 @@
+{
+  "charge-balance": [
+    null,
+    "Try adding the charges of one electron and one ion before changing either particle.",
+    "What positive charge could nearly balance the electrons’ negative charge?"
+  ],
+  "shielding-scale": [
+    "Find the electron density in the shielding-length formula. What would changing the denominator do?",
+    null,
+    "If more mobile charges are available per unit volume, how far must the disturbance extend to gather them?"
+  ],
+  "plasma-oscillation": [
+    "What happens to the local electric field if electrons shift slightly away from the ions?",
+    "A displaced electron can oscillate only if some influence turns it back. What was separated?",
+    null
+  ],
+  "gyrofrequency": [
+    null,
+    "Check which side of charge × field ÷ mass contains B.",
+    "Mass and charge stayed fixed. Which part of the rule measures how strongly the field turns the motion?"
+  ],
+  "thermal-shielding": [
+    null,
+    "Is temperature inside or outside the square root in the shielding length?",
+    "With stronger random thermal motion, is the density disturbance confined more tightly or less tightly?"
+  ],
+  "boltzmann-response": [
+    "The question changed electric potential. Do you need to remove thermal energy to calculate electric potential energy?",
+    null,
+    "Use charge × potential and keep the electron’s own charge sign."
+  ],
+  "shielded-potential": [
+    "Write both factors of the shielded potential before replacing r with a new distance.",
+    "Check the units of the exponential and of the full quantity it multiplies.",
+    null
+  ],
+  "debye-particle-count": [
+    null,
+    "Does counting many particles within a sphere constrain their individual velocities?",
+    "Smoothing over many particles and setting every field reading to zero are different operations. Which did you perform?"
+  ],
+  "relative-charge-imbalance": [
+    "For equal positive and negative charge densities, what matters is their small difference. Does it require removing a species?",
+    null,
+    "Compare a small net charge density with a statement that every electric field vector must vanish."
+  ],
+  "gyroradius": [
+    "A magnetic force points across velocity. Which part of the velocity can it bend into a circle?",
+    "Can charge and speed be added with matching units? Separate the inputs in the radius rule.",
+    null
+  ],
+  "electric-magnetic-drift": [
+    null,
+    "Write the expression for the E × B drift. Is the charge sign present after simplifying?",
+    "Look at both the electric and magnetic forces. Is a zero average force enough to demand zero velocity?"
+  ],
+  "gradient-drift": [
+    "Which factor in the drift rule retains the signed charge?",
+    null,
+    "Changing an electron’s charge sign in a comparison changes which factor, mass or electric charge?"
+  ],
+  "magnetic-moment": [
+    "At each point compare the magnetic force direction with the velocity. Which component could do work?",
+    "Does reversing a perpendicular force give it a component along the motion?",
+    null
+  ],
+  "mirror-condition": [
+    null,
+    "Compare the strongest available field with the value needed to bring the parallel speed to zero.",
+    "What equation would change the charge? The mirror condition tracks an entirely different quantity."
+  ],
+  "species-continuity": [
+    "Could a new ion appear in a volume even if there is no bulk flow through its boundary?",
+    null,
+    "List the charged particles before and after ionizing a neutral atom."
+  ],
+  "species-momentum": [
+    "Consider particles rushing in opposite directions. Their mean drift can cancel while their impacts on a wall still add.",
+    "Do charged particles also have random velocities around a shared average?",
+    null
+  ],
+  "plasma-current": [
+    null,
+    "Write one signed current contribution for each species. Are their charge signs the same?",
+    "Compare the magnitudes as well as the signs when both populations move together in this model."
+  ],
+  "ideal-ohm": [
+    "Does failure of a simple fluid-field rule require particles to lose their charge?",
+    null,
+    "What physical terms were left out of the large-scale ideal conducting-fluid rule?"
+  ],
+  "magnetic-pressure": [
+    "Sketch a curved line under tension. Does the force depend only on how closely neighboring lines are packed?",
+    "Which part of the magnetic stress accounts for the direction of a field line?",
+    null
+  ],
+  "electron-restoring-motion": [
+    null,
+    "Does the mass actually change sign when an electron crosses its equilibrium position?",
+    "Check the sign relating acceleration to displacement in the equation for a spring."
+  ],
+  "warm-electron-wave": [
+    "Is random thermal motion already included when a warm-plasma model is used?",
+    null,
+    "A value of k identifies one wavelength. Does it establish that the model works at that wavelength?"
+  ],
+  "electromagnetic-cutoff": [
+    "If k squared is negative, what kind of wave number would give it when squared?",
+    "Try the spatial factor with an imaginary wave number. Does it still describe crests traveling without attenuation?",
+    null
+  ],
+  "ion-sound": [
+    null,
+    "Compare the mass densities of the particles that participate in the motion.",
+    "Could a sound-like disturbance travel if no massive particles responded at all?"
+  ],
+  "alfven-speed": [
+    "Is the speed set only by a universal constant or also by field and mass density?",
+    null,
+    "With more mass attached to the same magnetic restoring force, how does the response change?"
+  ],
+  "linear-growth": [
+    "What assumption about a disturbance’s size is built into a linear-growth calculation?",
+    "Correct units tell you how to compare growth and time. Do they tell what stops the growth?",
+    null
+  ],
+  "velocity-distribution": [
+    null,
+    "Read the units of the distribution. When you add its contributions across all speeds, would you get a probability or a particle count per unit volume?",
+    "Count particles across all speeds. Is a nonempty population compatible with your proposed integral?"
+  ],
+  "distribution-mean": [
+    "Try two identical particles moving equally fast in opposite directions. Does either particle need zero mass?",
+    null,
+    "Distinguish the signed average velocity from the average of the speeds."
+  ],
+  "kinetic-pressure": [
+    "Add the same velocity to every particle and to their mean. How does each particle’s difference from the mean change?",
+    "Which quantity is squared in the pressure expression? What sign does that square have?",
+    null
+  ],
+  "vlasov-following": [
+    null,
+    "Follow one moving point in position–velocity space, then compare it with a fixed spatial box. Are those the same observation?",
+    "Can existing trajectories carry particles into or out of a region?"
+  ],
+  "collision-length": [
+    "A long collision path challenges one particular local equilibrium assumption. What other descriptions or fluid closures might exist?",
+    null,
+    "If particles travel far before colliding, how often will they collide while crossing a short region?"
+  ],
+  "wave-particle-resonance": [
+    "Compare the number of particles just above and below the wave’s phase speed. Which way can net energy go?",
+    "Resonance concerns matching the wave’s speed. Is a direct collision required for that match?",
+    null
+  ]
+}

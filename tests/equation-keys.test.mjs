@@ -46,3 +46,25 @@ test('all equation-key content is escaped, including optional names and units',(
  const bad='<img src=x onerror=bad>';const html=equationKeyHTML([{symbol:bad,name:bad,description:bad,unit:bad}],bad);
  assert.ok(!html.includes('<img'));assert.ok(html.includes('&lt;img'));
 });
+
+// Identical letters and marks can represent different physics in nearby courses.
+test('equation keys keep orbital shape, particle charge and time derivatives distinct',()=>{
+ assert.match(get('advanced-mechanics','kepler-orbit-shape','e').description,/Eccentricity/);
+ assert.match(get('particles','curvature-measures-transverse-momentum','e').description,/Elementary charge/);
+ assert.match(get('atomic-nuclear','beta-decay-shares-energy','e').description,/electron/);
+ const dot=get('advanced-mechanics','spring-motion','q̇');
+ assert.match(dot.description,/changes with time/);
+ assert.notEqual(dot.description,get('advanced-mechanics','spring-motion','q').description);
+ assert.match(get('mechanics','variable-acceleration','s').description,/time inside the interval/);
+});
+test('only the marks in the specific expression get a reading',()=>{
+ const meaning=(formula,course)=>notationFor(formula,course).map(n=>n.description).join(' ');
+ assert.match(meaning('n_j ∈ {0,1}','quantum2'),/allowed values/);
+ assert.doesNotMatch(meaning('n_j ∈ {0,1}','quantum2'),/Anticommutator/i);
+ assert.match(meaning('{a,b†}','many-body'),/Anticommutator/);
+ assert.doesNotMatch(meaning('P[a,b]','quantum1'),/commutator/i);
+ assert.match(meaning('[A,B]=AB−BA','quantum1'),/commutator/);
+ assert.doesNotMatch(meaning('n → p + e⁻ + ν̄_e','atomic-nuclear'),/negative power/);
+ assert.match(meaning('2⁻³','math'),/negative power/);
+ assert.match(meaning('20% of 50','math'),/out of 100/);
+});

@@ -1,3 +1,40 @@
+// Earlier published records are kept for version checks. Apply the current
+// teaching copy once, so lessons, search, review and practice see the same text.
+function applyTeachingCopy(lesson, edits) {
+ const focus = lesson.focus;
+ if (edits.idea) {
+  for (const item of lesson.visual?.items ?? []) {
+   if (item.value === focus.idea) item.value = edits.idea;
+  }
+  lesson.idea = focus.idea = edits.idea;
+ }
+ if (edits.explanation) {
+  lesson.body = lesson.body.map(paragraph => paragraph === focus.explanation ? edits.explanation : paragraph);
+  if (lesson.equationGuide.meaning === focus.explanation) lesson.equationGuide.meaning = edits.explanation;
+  focus.explanation = edits.explanation;
+ }
+ if (edits.exampleSteps) {
+  for (const [index, step] of Object.entries(edits.exampleSteps)) {
+   lesson.example.steps[index] = focus.example.steps[index] = step;
+  }
+ }
+ if (edits.practicePrompt) lesson.practice.prompt = lesson.apply.text = edits.practicePrompt;
+ if (edits.detail) lesson.body[0] = edits.detail;
+ if (edits.limits) lesson.limits = edits.limits;
+ if (edits.checkPrompt) lesson.check.prompt = edits.checkPrompt;
+ if (edits.choices) lesson.check.options = edits.choices;
+ if (edits.feedback) lesson.check.explanations = edits.feedback;
+ if (edits.terms) {
+  // Several older lessons repeat the same glossary in both reading modes.
+  for (const list of [focus.terms, lesson.glossary]) {
+   for (const entry of list) {
+    if (Object.hasOwn(edits.terms, entry.term)) entry.definition = edits.terms[entry.term];
+   }
+  }
+  lesson.terms = lesson.glossary.map(entry => entry.term + ': ' + entry.definition).join(' ');
+ }
+}
+
 // Starter modules are separate from the original curriculum and its stable IDs.
 export function mergeAdvancedCourses(catalog,courses,data){
  const incoming=data.courses;
@@ -30,7 +67,15 @@ export function mergeAdvancedCourses(catalog,courses,data){
  }
  for(const c of incoming)for(const l of c.lessons)for(const key of l.prerequisiteIds??[])if(!known.has(key))throw Error('Unknown advanced prerequisite: '+key);
  for(const item of incoming){
-  const c=structuredClone(item),{lessons,modules,sources,...meta}=c;
+  const c=structuredClone(item),copy=data.teachingCopy?.[c.id];
+  if(copy) {
+   c.subtitle=copy.subtitle;
+   for(const lesson of c.lessons) {
+    const edits=copy.lessons[lesson.id];
+    if(edits) applyTeachingCopy(lesson,edits);
+   }
+  }
+  const {lessons,modules,sources,...meta}=c;
   courses.set(c.id,c);catalog.courses.push({...meta,availableModules:modules.length});catalog.sources.push(...sources);
  }
  catalog.definedTarget+=additions.length;

@@ -1,0 +1,352 @@
+{
+  "ket-bra-bridge": [
+    null,
+    "What range of numbers can be a probability? Check the size of the factor multiplying the state.",
+    "Track the factor once in the amplitude and again in its complex conjugate. What survives in their product?"
+  ],
+  "state-coordinates": [
+    "Which entry sits beside e₃? The largest coefficient belongs to a different label.",
+    null,
+    "You have read the size of the coefficient. What step turns that size into an outcome probability?"
+  ],
+  "outer-product-action": [
+    "A projector keeps the part already pointing its way. How much of the minus direction lies along plus?",
+    "Compare the input with the direction the filter keeps. Would the whole input pass that filter?",
+    null
+  ],
+  "unitary-basis-change": [
+    null,
+    "Which coordinates describe the new state? Be sure the state and the matrix use the same basis.",
+    "Look at the occupied entry of the old state. Is the first or second original direction selected?"
+  ],
+  "adjoints-and-observables": [
+    "Compare the entry above the diagonal with the complex conjugate of the entry below it.",
+    null,
+    "After swapping rows and columns, each diagonal value returns to its own place. Must those two values match each other?"
+  ],
+  "spectral-projectors": [
+    "The preparation has changed. Read the new coefficient on the state with the requested energy.",
+    "Match 4E₀ to its energy direction first. Which coefficient belongs to that direction?",
+    null
+  ],
+  "degeneracy-and-compatible-set": [
+    null,
+    "Apply A before and after swapping e₁ and e₂. Does A give those two directions different energy labels?",
+    "Imagine measuring A on either of the two swapped directions. Could the swap remain hidden from that measurement?"
+  ],
+  "operator-functions": [
+    "Write the second phase angle with the new θ before locating it on a circle.",
+    null,
+    "Check whether the second phase arrow has made a full turn at this θ."
+  ],
+  "projector-probability": [
+    "Mark every entry that survives the projector. Have you counted the squared size of each one?",
+    "What happens to the nonzero third entry when you apply a projector with a zero there?",
+    null
+  ],
+  "degenerate-luders": [
+    null,
+    "After the energy filter, keep the signs of the two surviving components. How do they combine in the plus direction?",
+    "Compare the surviving state’s relative sign with the sign required for the plus direction."
+  ],
+  "sequential-filters": [
+    "Which part of the ensemble reaches the first filter’s output? It still has another filter to pass.",
+    null,
+    "This number describes passing one step. How many particles got as far as that step?"
+  ],
+  "complete-projective-measurement": [
+    "Think about two perpendicular directions on a rotated grid. Can they still cover the same whole plane?",
+    "The minus sign belongs to an amplitude. What happens when you take its squared size?",
+    null
+  ],
+  "commutator-products": [
+    null,
+    "Write the two matrix products in order and simplify the adjacent pair of Zs. Which matrix remains?",
+    "Does X switch the sign picked out by Z? Try each product on the same starting column."
+  ],
+  "covariance-uncertainty": [
+    "List the possible Z readings for this specific state. How far is each allowed reading from their mean?",
+    null,
+    "A difference between two possible Z labels is not yet a variance. Which labels actually occur here?"
+  ],
+  "translation-generator": [
+    "The displacement is signed. On a number line, which way should you move from +1 when a is negative?",
+    "Start at the marked initial centre, rather than at zero, and count the signed steps.",
+    null
+  ],
+  "parity-operator": [
+    null,
+    "Does putting i beside one component change its probability weight? Compare the weights of the two parities.",
+    "An average parity uses both possible signs. Is the state made only of its even part?"
+  ],
+  "spectral-time-evolution": [
+    null,
+    "Sketch the two contributions to the plus output as arrows. After the phase change, do the arrows still point together?",
+    "A sure plus result would mean the state still matches the starting plus state. Did both energy components gain the same phase?"
+  ],
+  "heisenberg-picture": [
+    "Draw 2π/3 on a circle. Which side of the vertical axis contains the tip?",
+    "Both descriptions use the same preparation and measurement. What did one description move from the state to the operator?",
+    null
+  ],
+  "ordered-time-steps": [
+    "Write the two phase factors for one diagonal entry. Does swapping multiplication order require equal durations?",
+    null,
+    "Try multiplying two diagonal matrices entry by entry in reverse order. What could change?"
+  ],
+  "conserved-observables": [
+    null,
+    "Look for the t printed directly in A(t). Does the commutator account for that dependence?",
+    "What factor does the identity operation give on every normalized state?"
+  ],
+  "spin-preparation": [
+    "Read the coefficient beside +z before taking its squared size. Does that component have the whole state’s weight?",
+    "The second component includes i. Can it cancel the first component when the detector reads +z?",
+    null
+  ],
+  "pauli-matrices": [
+    "Apply the two diagonal entries of Z separately. Which input component is multiplied by a minus sign?",
+    null,
+    "Does Z reverse every component, or does it act differently on the two entries?"
+  ],
+  "spin-direction-eigenstates": [
+    null,
+    "For θ less than a right angle, the +n direction is closer to +z than −n is. Did you choose the matching projection?",
+    "Equal chances arise for a perpendicular measurement. What is the angle in this question?"
+  ],
+  "bloch-pure-state": [
+    "Which outcome does the positive y projection favour? The question asks for the opposite sign.",
+    "A zero probability would require exact alignment with +y. Check the length of the y component on its own.",
+    null
+  ],
+  "spinor-rotation": [
+    "Picture the +x arrow after a half-turn about z. What angle now separates it from the +x detector?",
+    null,
+    "A full turn would bring a direction back to its start. How much of a turn does π describe?"
+  ],
+  "magnetic-precession": [
+    null,
+    "Track the sign of the rotation angle in the time-evolution rule when γ changes sign.",
+    "A turn around the field keeps the spin’s component along that field fixed. Where did the spin start?"
+  ],
+  "two-level-hamiltonian": [
+    "Write the two levels as a common centre plus and minus the splitting term. What cancels when subtracting?",
+    "A single shifted level is not the distance between the levels. Find both endpoints first.",
+    null
+  ],
+  "coupled-state-oscillations": [
+    "Calculate the angle Ωt/2, then ask for the sine squared at that particular time.",
+    null,
+    "The transfer can peak before the time asked about. How much of the oscillation has elapsed?"
+  ],
+  "detuning-and-avoided-crossing": [
+    null,
+    "Look at where the sign of Δ enters the squared frequency. Could a probability ever become negative?",
+    "A detuned drive need not transfer the entire population. Check the factor in front of the oscillating term."
+  ],
+  "rotating-frame-bridge": [
+    "If two clocks rotate together, is the rate seen by one clock the sum or the difference?",
+    "Measure the drive relative to the natural rotation. What would a co-rotating observer see when their rates match?",
+    null
+  ],
+  "rabi-approximation": [
+    "This question asks for one instant, not the average over a cycle. Find the accumulated half-angle.",
+    null,
+    "Check the time of the first full transfer and compare it with the specified time."
+  ],
+  "coherent-number-expansion": [
+    null,
+    "The probability uses the size of α. Where would a minus sign come from after taking its size squared?",
+    "Imagine the tip of α turning from 1 to i on a circle. How far is it from zero afterward?"
+  ],
+  "displacement-operator": [
+    "Check the order of D and its adjoint on the two sides of a. Which order is used by the stated shift rule?",
+    "This operation shifts an amplitude. Does the rule use α itself or its squared size?",
+    null
+  ],
+  "coherent-quadratures": [
+    "Moving the centre of a wave packet is different from squeezing its width. Which change does this α describe?",
+    null,
+    "Which part of α controls the centre reading? Which quantities set the width of a coherent state?"
+  ],
+  "coherent-evolution": [
+    null,
+    "Draw the real-axis arrow for α₀, then turn it through π. Which way does its real part point?",
+    "When would that rotating arrow point entirely along the imaginary axis? Check the angle."
+  ],
+  "coherent-number-comparison": [
+    "Which preparation fixes the particle count exactly, the number state or the coherent state?",
+    "Compare the variance rule for a coherent state with the rule for its mean squared.",
+    null
+  ],
+  "tensor-basis": [
+    null,
+    "Pair each choice for A with every choice for B. Would adding the two counts list all possible pairs?",
+    "Start by listing the pairs for just one of A’s states. What about its other two states?"
+  ],
+  "local-operator-tensor": [
+    "Read the two symbols in X⊗I from left to right. Which one acts on B, the second digit?",
+    "This is an operation on a joint state. What kind of result would taking an overlap produce instead?",
+    null
+  ],
+  "joint-measurements": [
+    "Is any outcome on A being kept or discarded? Check whether the question asks for a conditional chance.",
+    null,
+    "List all pairs whose B entry is 1. Have you included each possible A entry?"
+  ],
+  "composite-hamiltonian": [
+    null,
+    "The interaction changes relative phases over time. Does it also remove three of the four basis amplitudes?",
+    "Time evolution here preserves the total probability. Could the proposed result still be normalized?"
+  ],
+  "density-from-preparations": [
+    "If the source sends a plus state, does a 0/1 detector always read 0?",
+    "Count detections from both ways the source prepares the system. Can the plus preparation contribute any zeros?",
+    null
+  ],
+  "trace-expectation": [
+    "Look at the weights for the two opposite readings of Z. Would their contributions cancel exactly?",
+    null,
+    "This is a mean, not a single positive reading. How should the negative readings enter?"
+  ],
+  "density-positivity": [
+    null,
+    "Draw a vector with these x and y components. Does validity depend on its length or on the number of nonzero entries?",
+    "Equal eigenvalues correspond to the centre of the Bloch ball. How far is the given point from that centre?"
+  ],
+  "partial-trace": [
+    "A plus-direction measurement uses both coordinate directions together. Have you included the entries off the diagonal?",
+    "Test the opposite, minus direction too. Would this reduced state assign it no weight at all?",
+    null
+  ],
+  "purity-and-unrecorded-measurement": [
+    "Which two weights are you squaring? Are the stated 0/1 outcomes equally likely?",
+    null,
+    "Were you told which result happened? Distinguish a selected result from a measurement whose result was forgotten."
+  ],
+  "product-or-entangled": [
+    null,
+    "Try to factor the two-by-two coefficient table. What must its determinant be if it comes from one product?",
+    "Normalization checks total probability. What separate test checks whether the pair can be split into two states?"
+  ],
+  "schmidt-decomposition": [
+    "Count the Schmidt weights that are actually nonzero, not the number of spaces on the list.",
+    "Would a state still have weight anywhere if one entry is exactly one?",
+    null
+  ],
+  "two-spin-correlations": [
+    "Certain agreement would require perfect positive correlation. What correlation goes with perpendicular axes here?",
+    null,
+    "Which angle gives certain opposite results in a singlet? Compare that angle with a right angle."
+  ],
+  "bell-chsh-bound": [
+    "Write all four terms with their signs before taking the absolute value. What sign belongs in front of the last correlation?",
+    null,
+    "Check whether the final positive correlation is added or subtracted before looking for cancellation."
+  ],
+  "local-no-signalling": [
+    "Did A learn which outcome B obtained? Which outcomes must still be included from A’s point of view?",
+    "Use this preparation’s local weights rather than the balanced weights of the earlier example.",
+    null
+  ],
+  "angular-ladder-spectrum": [
+    "In the raising formula, write both j(j+1) and m(m+1) under the square root before subtracting.",
+    "The highest allowed m tells you where raising stops. Does it alone give the factor on this rung?",
+    null
+  ],
+  "spin-one-matrices": [
+    null,
+    "A negative sign belongs to the central amplitude. What happens to that sign when finding a chance?",
+    "In the displayed order, which of the three entries labels the zero z-component?"
+  ],
+  "orbital-rotation-action": [
+    "Check whether you selected the original x direction or the perpendicular direction after rotation.",
+    null,
+    "Did you compute the projection amplitude or the probability made from it?"
+  ],
+  "angular-rotation-matrices": [
+    "Rotating a spin-one state distributes its weight among three possible z readings. Check the coefficient for the middle one.",
+    "Find the sine of this angle before squaring the middle entry. Where does its normalization factor enter?",
+    null
+  ],
+  "angular-expectation-spread": [
+    null,
+    "Knowing one component exactly does not settle the other directions. Which direction did the prepared spin rotate into?",
+    "Start with the sharp axis before rotation. Where does a quarter-turn take it?"
+  ],
+  "total-angular-operators": [
+    "Start at the smallest allowed total value and count up in whole steps. Does your proposed value appear?",
+    null,
+    "Compare the proposal with the sum of the two individual angular-momentum labels."
+  ],
+  "singlet-triplet": [
+    "The squared total angular momentum uses j(j+1). What j labels the triplet?",
+    "The label M gives one component. Does a zero component mean the whole angular momentum is zero?",
+    null
+  ],
+  "unequal-angular-addition": [
+    null,
+    "Look at the coefficient of the smaller total-j sector. Did you use the weight of the other sector?",
+    "Is the square root a state coefficient or a measurement probability?"
+  ],
+  "coupled-basis-measurements": [
+    "Passing the first measurement gets you only partway through the sequence. What fraction of those outcomes pass the next selection?",
+    "After keeping j=1/2, read the m₁=0 weight of that state, then account for how often it was prepared.",
+    null
+  ],
+  "spin-orbit-energy": [
+    "The upper level’s shift is only one end of the gap. Where is the other end?",
+    "Use each sector’s angular-momentum factor with λ before comparing the levels.",
+    null
+  ],
+  "exchange-postulate": [
+    null,
+    "An electron’s state includes more than its location. Which other label travels with it when the electrons are exchanged?",
+    "The two particle slots are labels in a calculation. Can different slot numbers change what properties belong to an electron?"
+  ],
+  "symmetric-pair-normalization": [
+    "Compute how much of v lies along u. Does the cross term vanish for these two choices?",
+    null,
+    "Check whether every component of v matches u. What overlap would identical states need?"
+  ],
+  "fermion-determinant": [
+    "Pauli exclusion concerns two identical full states. Are these plus and minus combinations actually the same state?",
+    "Does “one in each mode” distinguish which particle was written first? Count all ordered ways it can happen.",
+    null
+  ],
+  "spin-spatial-symmetry": [
+    null,
+    "Multiply the sign from the spatial part by the proposed spin sign. Does the product have the required fermion sign?",
+    "The rule applies after combining space and spin. What sign should the complete state acquire?"
+  ],
+  "occupation-and-filling": [
+    "Try filling the lowest mode with both fermions. How many are allowed in one full spinless mode?",
+    null,
+    "Order the three modes by energy. Must either particle skip an available lower mode?"
+  ],
+  "exchange-energy": [
+    "Write the one-body sum in both energy expressions. What happens to shared terms when you subtract?",
+    "Does the direct interaction have opposite signs in the two expressions, or the same sign?",
+    null
+  ],
+  "spin-sequence-capstone": [
+    null,
+    "This number may describe getting through the +z filter. What still has to happen at the −x filter?",
+    "Only spins that passed the first filter reach the second one. What fraction of the original group was that?"
+  ],
+  "two-level-capstone": [
+    "The maximum possible transfer is not the transfer at every time. Evaluate the oscillating part at the stated angle.",
+    null,
+    "Check both the size of the allowed oscillation and its phase at this particular moment."
+  ],
+  "composite-exchange-capstone": [
+    "After B’s selected result, is A described by two independent chances or by two amplitudes with a relative sign?",
+    "Write the new minus sign before taking the overlap with +y. Does the imaginary part help the other term or oppose it?",
+    null
+  ],
+  "quantum2-assessment": [
+    null,
+    "Try multiplying this real table by the column (1, −1). Does the result point along that column or turn it around?",
+    "Two numbers can add to one in many ways. Check each eigenvalue, the number by which the table scales a matching direction."
+  ]
+}

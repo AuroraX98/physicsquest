@@ -29790,5 +29790,904 @@
         "Research-level scattering calculations and experimental particle-physics analysis."
       ]
     }
-  ]
+  ],
+  "teachingCopy": {
+    "advanced-mechanics": {
+      "subtitle": "Predict how things move using energy. Start with a bead on a wire, then work up to swinging pendulums, spinning objects and orbits.",
+      "lessons": {
+        "choose-coordinate": {
+          "explanation": "Mark a zero on a straight wire and choose right as the positive direction. The bead’s position, q, is its distance from zero with a sign. A bead at +2 m is two metres to the right. A bead at −2 m is two metres to the left."
+        },
+        "stationary-action": {
+          "idea": "Compare a real path with a tiny change to that path. At the real path, the graph of action against the size of the change has a flat slope.",
+          "explanation": "Keep the start and finish positions and times fixed. Let ε (epsilon) say how much you bend the path between them. At ε = 0 the slope of the action graph is zero. Physicists call this stationary action. The action can still change with ε², the bend size squared.",
+          "practicePrompt": "Let ε measure a small bend in a path. The action is S = (7 + 2ε²) J·s. What number multiplies ε on its own, without a square?"
+        },
+        "spring-motion": {
+          "explanation": "Imagine sliding a cart right of its spring’s rest position. The spring pulls left. In m × a = −k × q, q is the signed distance from rest, m is mass, a is acceleration and k tells how stiff the spring is. The minus sign makes the acceleration point back toward rest on either side."
+        },
+        "lagrangian-partial": {
+          "idea": "A partial derivative measures how fast a result changes when just one input changes.",
+          "practicePrompt": "For a spring, the position part of L is −kq²/2. Keep velocity fixed. With k = 4 N/m and q = 2 m, find the position slope ∂L/∂q."
+        },
+        "generalized-momentum": {
+          "explanation": "Keep position fixed and ask how quickly the Lagrangian L changes as the coordinate’s speed changes. That slope is the momentum paired with the coordinate. For distance along a straight track it is mass times velocity, mv. For a pendulum angle it is angular momentum about the hinge, mℓ²θ̇."
+        },
+        "time-symmetry": {
+          "idea": "If the rule for L stays the same from one moment to the next, the energy calculated from it stays constant."
+        },
+        "hamilton-position": {
+          "idea": "The Hamiltonian gives a cart’s velocity through a slope. Change momentum while keeping position fixed to find that slope."
+        },
+        "hamilton-momentum": {
+          "idea": "To find how fast a cart’s momentum changes, look at how its energy changes along the track."
+        },
+        "small-oscillation-rate": {
+          "explanation": "Near a stable resting place, a small push makes the object swing back and forth like a mass on a spring. Divide stiffness K by mass m first. Then take the square root to get the angular frequency, ω, in radians per second. A stiffer spring swings faster. A heavier mass swings more slowly."
+        },
+        "constraint-rate": {
+          "explanation": "If the platform rises two metres in one second, the bead it carries rises the same two metres. Their heights stay equal at each instant, so their vertical velocities match too. A dot over a letter means its rate of change with time."
+        },
+        "constraint-multiplier": {
+          "idea": "A bead on a platform must follow the platform. One extra unknown lets the motion equation enforce that rule."
+        },
+        "radial-energy": {
+          "idea": "Subtract the energy tied up in the orbit’s position and turning motion to find how much energy is left for motion inward or outward.",
+          "explanation": "Keep angular momentum fixed. Subtract the effective potential, V_eff, from the total energy, E. What remains is the motion energy for moving toward or away from the centre. Multiply that energy by two, divide by mass, and take the square root to get radial speed. The speed alone does not say which way the object is moving.",
+          "exampleSteps": {
+            "0": "At this radius the mass is 2 kg, total energy is 7 J, and effective potential is 3 J."
+          },
+          "practicePrompt": "An object has mass 2 kg, total energy 13 J, and effective potential 4 J. How fast is it moving toward or away from the centre?"
+        },
+        "radial-turning-point": {
+          "practicePrompt": "At one radius the total energy and the effective potential are both 9 J. How much motion energy is left for moving inward or outward?",
+          "idea": "A planet can stop moving closer to its star and begin moving farther away while it still travels around the star."
+        },
+        "radial-oscillation-rate": {
+          "explanation": "Move a stable circular orbit slightly inward or outward. The distance from the centre can swing back and forth like a mass on a spring. To find its angular frequency, first divide radial stiffness K_r by mass, then take the square root. Going around the centre can have a different rate."
+        },
+        "kepler-orbit-shape": {
+          "explanation": "Measure the angle φ from the orbit’s closest point. In the distance rule, s sets the size and e sets the shape. The name for e is eccentricity. Zero gives a circle. Between zero and one gives a stretched circle called an ellipse. At one the path opens into a parabola. Above one it is a hyperbola."
+        },
+        "inertia-tensor": {
+          "explanation": "A spinning object’s mass can sit at different distances from each turning axis. For this calculation, a table with three rows and three columns describes that mass layout. This table is the inertia tensor, I. Multiply one row at a time by the three turning rates to find angular momentum in each direction.",
+          "practicePrompt": "The second row of I is (−1, 2, 0) kg·m². Multiply it by the three turning rates (3, 0, 0) rad/s and add the products. What is the y component of angular momentum?"
+        },
+        "principal-axes": {
+          "idea": "A spinning body has three special axes. Along each one, the turning rate gives angular momentum in that same direction.",
+          "explanation": "Spin the body about one of these axes. Its angular momentum points along that axis too. These directions, called principal axes, are at right angles to each other. In this set of directions, the inertia table has numbers only on its diagonal. Multiply each turning rate by the matching diagonal number."
+        },
+        "intermediate-axis": {
+          "idea": "A freely spinning object can wobble more and more when it spins around its middle axis.",
+          "explanation": "Rank the three principal axes by how hard it is to change the spin about each one. Start the body spinning with no outside twisting force. A small wobble stays small around the lowest or highest of three different values. Around the middle one it can grow and tip the body over."
+        },
+        "pendulum-separatrix": {
+          "idea": "There is a boundary between a pendulum that swings back and one that goes all the way around."
+        },
+        "canonical-pair": {
+          "idea": "You can change how you label position and momentum and still use Hamilton’s usual motion equations, if the two changes fit together."
+        },
+        "principal-action": {
+          "explanation": "Imagine a table of action values for possible endpoints of a motion. Hamilton’s principal function S is that table written as a rule. Keep the finish time fixed and move the endpoint a little. The slope of S with respect to that position gives the final momentum."
+        },
+        "recover-hj-trajectory": {
+          "idea": "The action rule can tell you where a free cart will be at any time."
+        },
+        "moving-constraint": {
+          "limits": "We choose how the platform moves and hold the bead against it. The rule limits allowed positions. A rule that limits only velocity may need a different method."
+        },
+        "sensitive-dependence": {
+          "limits": "This estimate works while the two starting paths are still close. Watch for growth over a long time. If you use a computer, check that a smaller time step gives the same growth rate. Even tiny errors in a starting measurement can limit how far ahead you can predict.",
+          "explanation": "Imagine starting two identical swings at almost the same angle and speed. If their motion is chaotic, a tiny difference can grow rapidly. Compare their angles and speeds at the same times, always using the same scales. A long-term growth measure is called a Lyapunov exponent. Separating for a short while is a clue but cannot by itself establish chaos."
+        },
+        "generating-function": {
+          "limits": "Change one input at a time when finding each slope. Near the position you study, you must be able to go from the new labels back to the old ones without guessing. Some generating functions fail that test.",
+          "idea": "One rule can connect both position and momentum in the old and new labels. Its two slopes give the two connections."
+        },
+        "lagrangian": {
+          "idea": "A moving cart has energy because it moves and can also store energy in a spring. Subtract the stored energy from the motion energy to get a number called the Lagrangian."
+        },
+        "action": {
+          "idea": "Two carts can reach the same finish by different paths. A quantity called action gives each possible path a number.",
+          "explanation": "At each instant, subtract stored energy from motion energy. This difference is the Lagrangian, L. If L stays constant, multiply it by the travel time to get the action, S. If L changes, imagine splitting the trip into short time steps. Multiply L by the length of each step and add the results. The exact version of this adding is called an integral."
+        },
+        "pendulum-kinetic": {
+          "idea": "A swinging weight has energy because it moves. Its rod length and how quickly it turns tell you its speed."
+        },
+        "pendulum-motion": {
+          "idea": "Let go of a swinging weight away from the bottom. Gravity changes its turning speed in the direction back down."
+        },
+        "cyclic-coordinate": {
+          "idea": "The position of a free cart along a level track makes no difference to its motion rule. Its momentum stays the same.",
+          "explanation": "Write a motion rule using L, the difference between motion energy and stored energy. Suppose moving the starting position leaves L unchanged when you keep the speed fixed. Such a position is called a cyclic coordinate. The momentum paired with it then stays constant. For a free cart, that momentum is its mass times its velocity."
+        },
+        "central-angular-momentum": {
+          "idea": "In an orbit, a pull straight toward the centre changes the motion without twisting the object about that centre."
+        },
+        "effective-potential": {
+          "idea": "An orbiting object can move around the centre and toward it at the same time. Some of its energy is already needed for going around."
+        },
+        "phase-point": {
+          "idea": "Two carts can pass the same spot in opposite directions. To tell their motions apart, keep two numbers together: position and momentum."
+        },
+        "hamiltonian": {
+          "idea": "For a cart on a fixed track, you can find total energy from where the cart is and how much momentum it has. This energy rule is its Hamiltonian."
+        },
+        "poisson-bracket": {
+          "idea": "A cart has a position and a momentum. A calculation called a Poisson bracket uses changes in both to help predict what the cart does next."
+        },
+        "equilibrium-position": {
+          "idea": "Place a cart at rest between two balanced pulls. With no overall push, it can stay there. This is an equilibrium position."
+        },
+        "local-stability": {
+          "idea": "A marble at the bottom of a bowl rolls back after a small nudge. A marble balanced on top of a hill rolls away.",
+          "explanation": "Draw stored energy against position. Near a bowl-shaped low point the graph bends upward. Its slope produces a force back toward the low point. Near a hill-shaped high point the force points away. The second derivative measures the bend. A positive value at a resting point means a gentle push brings it back toward that point. A zero value needs another check."
+        },
+        "same-direction-mode": {
+          "idea": "Connect two carts with a spring and move them together by the same distance. The spring between them keeps its length."
+        },
+        "opposite-direction-mode": {
+          "idea": "If two carts joined by a spring move apart, the spring stretches by the sum of their two movements."
+        },
+        "moving-origin": {
+          "idea": "Walk along a moving train. Your speed along the ground depends on your walk and on the train’s motion."
+        },
+        "accelerating-origin": {
+          "idea": "Watch a free cart from a platform that starts speeding up. The cart can appear to speed up the other way even when nothing pushes it."
+        },
+        "constraint-force": {
+          "idea": "A platform holding a bead must push harder than the bead’s weight to make it speed up upward."
+        },
+        "constraint-power": {
+          "idea": "A moving platform can give energy to the bead it supports. Power tells how much energy it gives each second."
+        },
+        "circular-orbit-radius": {
+          "idea": "In a circular orbit the distance to the centre stays fixed. Find where the energy rule allows that distance to stay steady."
+        },
+        "circular-orbit-stability": {
+          "idea": "Give a circular orbit a small inward nudge. In a stable orbit the motion tends to come back toward its original distance."
+        },
+        "orbit-energy-shape": {
+          "idea": "Some objects circle a star again and again. Others swing past once and escape. Their energy and turning motion help tell which path is possible."
+        },
+        "rigid-point-velocity": {
+          "idea": "On a spinning wheel, the rim and the hub turn together. A point near the rim travels farther in the same time."
+        },
+        "axis-inertia": {
+          "idea": "Move a weight farther out on a spinning bar. It takes a larger twist to change the bar’s turning speed by the same amount."
+        },
+        "rigid-rotation-energy": {
+          "idea": "A tumbling object can spin in more than one direction at once. Add the motion energy from its three main turning directions."
+        },
+        "euler-rigid-equation": {
+          "idea": "Imagine arrows painted on a tumbling box. They turn with the box, so measurements along those arrows can change even if no one pushes it."
+        },
+        "phase-flow-arrow": {
+          "idea": "Mark where a spring cart is and which way it is moving. An arrow on a graph can show how those two numbers start changing."
+        },
+        "pendulum-energy-contour": {
+          "idea": "A swing trades height for speed on the way down and speed for height on the way up. Without friction or a push, the total energy stays the same."
+        },
+        "driven-pendulum": {
+          "idea": "A motor can push a swing again and again. Each push can help the swing or slow it, depending on its timing."
+        },
+        "poincare-sampling": {
+          "idea": "Take a picture of a swing at exactly the same point in each push cycle. A pattern can stand out that was hard to see in continuous motion."
+        },
+        "transformed-hamiltonian": {
+          "idea": "You can give a free cart new position and momentum labels without changing its path. Rewrite its energy rule in those new labels."
+        },
+        "time-dependent-canonical": {
+          "idea": "Imagine measuring a cart from a moving train. Changing to the train’s position labels changes the velocity that the motion rule must predict."
+        },
+        "hamilton-jacobi-equation": {
+          "idea": "Give every possible finish position and time an action number. The rule connecting how that number changes in space and time can predict motion."
+        },
+        "separate-action-time": {
+          "idea": "If a motion rule does not change with time, you can sometimes split the action into a position part and a time part."
+        },
+        "nonlinear-force": {
+          "idea": "Stretch an ideal spring twice as far and it pulls twice as hard. A real force may grow faster or slower than this simple rule."
+        },
+        "pendulum-energy-barrier": {
+          "idea": "A pendulum needs enough energy to carry its weight over the top. Below that amount it swings back before it gets there."
+        }
+      }
+    },
+    "fluid-dynamics": {
+      "subtitle": "Follow a drop of water. Find out how liquids and gases move through pipes, slide past walls and carry momentum.",
+      "lessons": {
+        "viscous-shear": {
+          "explanation": "Slide the top of two wide plates sideways with liquid between them. Nearby layers of liquid slide at different speeds. The sideways force per unit area is called shear stress, τ. Divide the plates’ speed difference by the gap. Multiply by viscosity, μ, which measures how strongly this liquid resists that sliding."
+        },
+        "advective-change": {
+          "idea": "A drop can speed up as it moves downstream even when every fixed speed meter shows a steady reading."
+        },
+        "shear-gradient": {
+          "explanation": "Picture layers of liquid sliding past one another. If velocity changes more sharply from one layer to the next, more sideways force per unit area is needed. For a Newtonian fluid, doubling this velocity slope doubles that force per area. The multiplier, μ, is the fluid’s viscosity."
+        },
+        "kinematic-viscosity": {
+          "idea": "How fast a change in motion spreads between layers depends on both the liquid’s resistance to sliding and its density."
+        },
+        "pipe-profile": {
+          "idea": "In smooth, steady flow through a straight round pipe, fluid moves fastest down the middle and slows toward the wall."
+        },
+        "poiseuille-flow": {
+          "idea": "Under the right conditions, doubling a pipe’s radius lets sixteen times as much liquid pass each second."
+        },
+        "viscous-curvature": {
+          "idea": "If one layer pulls harder on a small piece of fluid than the layer on the other side, the piece speeds up or slows down."
+        },
+        "navier-stokes-balance": {
+          "idea": "Pressure, friction between layers, and gravity can each change a small piece of fluid’s motion.",
+          "detail": "These three contributions are forces divided by mass, just as in Newton’s rule. The symbol ∇² means add up the bends in the velocity pattern along each of the three directions. On the other side, you follow a moving parcel, so you must count both changes at a fixed place and changes from entering a different part of the flow."
+        },
+        "matching-reynolds": {
+          "practicePrompt": "Water moves at 2 m/s around a 3 m object. A smaller copy is 0.5 m long and uses the same water. To match the Reynolds number, keep speed times length the same. What speed should the copy use?",
+          "limits": "Match the shapes, the starting flow and the conditions at the walls. If gravity, changes in density or surface tension matter, they must match in strength relative to the flow too. A smaller model may not reproduce all these effects at once.",
+          "idea": "To test a smaller copy of a pipe, the water may need to move faster. This helps the flow in the copy behave like the full-size flow."
+        },
+        "boundary-layer-scale": {
+          "idea": "Water touching a still plate is still. A short distance from the plate, water can be rushing past."
+        },
+        "mean-and-fluctuation": {
+          "idea": "Split a flow reading into its average and the amount above or below that average."
+        },
+        "reynolds-shear-stress": {
+          "idea": "A swirling piece of fluid can carry forward motion sideways into the next layer."
+        },
+        "couette-profile": {
+          "limits": "The liquid moves in steady, orderly layers and keeps the same density and viscosity. It sticks to each plate at the surface. Look well away from the plate edges and assume that pressure stays the same along the flow.",
+          "idea": "Slide one plate past another with liquid trapped between them. Under steady, smooth conditions, the liquid halfway between moves at half the moving plate’s speed."
+        },
+        "material-derivative": {
+          "idea": "Follow a drop down a stream. Its speed can change because the flow changes with time or because the drop reaches faster water.",
+          "explanation": "A small piece of fluid that you follow is a parcel. First imagine standing on the bank and measuring how the water speed changes at one spot. Then add the change the parcel feels by moving to a different spot. Together they give the parcel’s acceleration in this straight flow. The name for a rate measured this way is the material derivative."
+        },
+        "local-vorticity": {
+          "idea": "Imagine a tiny paddle wheel floating in water. The way water turns it tells you something about the local spin, called vorticity."
+        },
+        "outward-mass-flux": {
+          "idea": "Water moving along the side of an imaginary box stays inside it. Only the part of its motion through the side carries water out or in."
+        },
+        "local-mass-balance": {
+          "idea": "Look at a short piece of pipe. If water is leaving faster by mass than it enters, less mass remains inside."
+        },
+        "parcel-density": {
+          "idea": "Follow a little pocket of fluid as it swells. The same mass now fills more space, so its density falls."
+        },
+        "incompressible-flow": {
+          "idea": "A little piece of incompressible fluid can change shape while keeping the same volume."
+        },
+        "viscous-spreading-time": {
+          "idea": "When a plate starts moving, the liquid touching it begins moving too. The motion takes time to reach layers farther from the plate."
+        },
+        "euler-fluid-equation": {
+          "idea": "Follow a little piece of water. When friction between layers is tiny, pressure differences and gravity tell you how it speeds up or slows down."
+        },
+        "hydrostatic-gradient": {
+          "idea": "Water deeper in a still tank has more water pressing down from above, so the pressure is higher."
+        },
+        "bernoulli-streamline": {
+          "idea": "Follow water along one path in a smooth, steady flow. Where it speeds up at the same height, its pressure can drop."
+        },
+        "momentum-flow-balance": {
+          "idea": "Water enters a pipe bend going one way and leaves going another. Changing its motion takes a force."
+        },
+        "reynolds-number": {
+          "idea": "A slow stream of thick syrup and a fast stream of water can behave differently. One number compares how strongly the flow carries motion with how strongly its layers resist sliding."
+        },
+        "wall-flow-reversal": {
+          "idea": "Near a wall, a thin layer of water can start moving backward even while water farther out keeps going forward."
+        },
+        "drag-coefficient": {
+          "idea": "Air or water pushes against a moving object. A number called the drag coefficient helps describe how strongly it does so for that shape and flow."
+        },
+        "fluctuation-size": {
+          "idea": "A flow can swing just as far above its average speed as below it. Square those changes before averaging so they do not cancel."
+        },
+        "mass-flow": {
+          "explanation": "Imagine a scale weighing all the water that crosses a slice of pipe in one second. That mass per second is the mass flow rate. Find the volume passing per second from the slice’s area and average forward speed. Then multiply by density, the mass in each unit of volume. If density doubles, half the volume can carry the same mass."
+        }
+      }
+    },
+    "plasma": {
+      "subtitle": "Follow charged particles in a gas. Study how they shield a charge, circle in a magnetic field and carry waves.",
+      "lessons": {
+        "shielding-scale": {
+          "idea": "Charged particles gather around an electric disturbance and weaken its reach. The Debye length measures roughly how far this shielding takes."
+        },
+        "thermal-shielding": {
+          "practicePrompt": "Keep the number of electrons per volume fixed. If electron temperature in kelvins rises ninefold, what happens to a shielding length that started at 2 mm?",
+          "idea": "Free electrons can gather around a charge and partly screen its pull. Hotter electrons move around more, so that cloud spreads farther at the same density."
+        },
+        "gyrofrequency": {
+          "idea": "A magnetic field bends a charged particle’s path when the particle moves across the field.",
+          "explanation": "Split the velocity into a part along the field and a part across it. The part along the field stays unchanged. The part across it keeps turning. Its angular rate is |q|B/m, where |q| is the size of the charge, B the field strength and m the mass. Doubling B doubles the turning rate."
+        },
+        "debye-particle-count": {
+          "practicePrompt": "A ball with radius equal to one Debye length contains about 10 electrons. Keep the electron density fixed and triple that radius. How many electrons fit in the larger ball?",
+          "idea": "Think of the space around a charge where particles help screen its pull. A smooth cloud is a better picture when many particles fit in that space."
+        },
+        "relative-charge-imbalance": {
+          "practicePrompt": "Equal volumes contain 2,002 positive ions and 2,000 electrons. What is the excess ion count as a percentage of the electron count?"
+        },
+        "magnetic-moment": {
+          "idea": "In a slowly changing magnetic field, sideways motion energy divided by field strength can stay nearly constant."
+        },
+        "mirror-condition": {
+          "idea": "A charged particle can turn back in a stronger magnetic field when its motion along the field slows to zero."
+        },
+        "species-continuity": {
+          "practicePrompt": "In a tiny region, seven more particles enter than leave per cubic metre each second. There are no sources or losses. What is the local density change per second, ∂n_s/∂t?",
+          "idea": "Count one kind of particle in a small region. If more electrons leave than enter and none are created, the electron count falls."
+        },
+        "ideal-ohm": {
+          "idea": "In a simple model of plasma as a perfectly conducting fluid, a charge moving with the fluid feels the electric and magnetic pushes balance."
+        },
+        "alfven-speed": {
+          "idea": "A bend in a plasma’s magnetic field can travel as a wave called an Alfvén wave.",
+          "practicePrompt": "An Alfvén wave travels at 12 km/s. Double the magnetic field strength and multiply the mass density by four. What is the new wave speed?"
+        },
+        "vlasov-following": {
+          "practicePrompt": "Follow one path through position and velocity in a collision-free plasma. At the start the distribution value f is 4. Its rate of change along that path is zero. What value does it have later?",
+          "idea": "Track a tiny group of paths by where particles are and how fast they move. Without collisions or sources, the distribution value stays fixed along each path."
+        },
+        "plasma-oscillation": {
+          "limits": "The electrons move only a little from balance. The ions barely move. This model leaves out strong collisions, magnetic fields and random thermal motion. If thermal motion matters, wavelength can affect the frequency too.",
+          "idea": "Pull a group of electrons slightly away from positive charges. They feel a pull back, can overshoot, and can swing back again."
+        },
+        "electromagnetic-cutoff": {
+          "limits": "The starting plasma is uniform. The wave oscillates too fast for the ions to move much. The calculation leaves out collisions, thermal motion and background magnetic fields. A background magnetic field can change which waves get through.",
+          "explanation": "In this model, electrons can swing back and forth at a natural rate called the electron plasma frequency. A light-like wave travelling through the gas needs a frequency above that rate. Below it, the wave’s field fades as you go farther inside. Physicists call this fading pattern evanescent. Here the gas is uniform, and the model ignores thermal motion, collisions and background magnetic fields."
+        },
+        "wave-particle-resonance": {
+          "limits": "This example uses a weak electric wave in a uniform plasma with no background magnetic field. Matching a particle’s speed to the wave helps identify which particles exchange energy. Finding how fast the wave fades or grows requires the full spread of particle velocities.",
+          "idea": "A particle moving beside a wave crest can feel its electric push in the same direction for longer than a particle rushing past the crest."
+        },
+        "boltzmann-response": {
+          "idea": "Place a weak positive electric disturbance in a plasma. Negatively charged electrons tend to gather there."
+        },
+        "plasma-current": {
+          "idea": "Positive and negative charges can balance in a gas and still make an electric current if they move differently."
+        },
+        "magnetic-pressure": {
+          "idea": "A magnetic field can help hold back a plasma. Double the field strength and its magnetic pressure becomes four times larger."
+        },
+        "electron-restoring-motion": {
+          "idea": "Move electrons aside while nearby positive ions stay put. The separated charges pull the electrons back."
+        },
+        "linear-growth": {
+          "idea": "Some small ripples double their size in equal time steps. Others shrink by the same fraction each step. A growth rate tells which happens."
+        },
+        "kinetic-pressure": {
+          "idea": "A whole gas can drift down a pipe while particles jostle in every direction. This jostling produces pressure even when the average drift is zero."
+        },
+        "charge-balance": {
+          "idea": "A gas with free electric charges can have almost no charge overall. Positive and negative charges can cancel when you add them up."
+        },
+        "gyroradius": {
+          "idea": "A charged particle can circle in a magnetic field. Moving faster across the field gives it a wider circle."
+        },
+        "gradient-drift": {
+          "idea": "A charged particle can circle more tightly on one side of its path than on the other. As it circles, the centre of the path shifts sideways."
+        },
+        "warm-electron-wave": {
+          "idea": "Electrons in a gas move at many different speeds. This random motion can change how quickly a wave repeats."
+        },
+        "ion-sound": {
+          "idea": "Ions are heavy particles with electric charge. In one kind of plasma wave they move back and forth, pushed by pressure from the much lighter electrons."
+        },
+        "velocity-distribution": {
+          "idea": "Imagine sorting particles into boxes by how fast they move and which way they go. The number in each box describes their spread of velocities."
+        },
+        "distribution-mean": {
+          "idea": "If most particles move right and only a few move left, the bigger group should count more when you find the average velocity."
+        },
+        "collision-length": {
+          "idea": "How far does a particle typically go before a collision changes its motion? Use how fast it travels and how often it collides to estimate that distance."
+        }
+      }
+    },
+    "general-relativity": {
+      "subtitle": "Use rulers, clocks and falling objects to explore how gravity changes the geometry of space and time.",
+      "lessons": {
+        "metric-distance": {
+          "idea": "A grid can label places without showing their true distance apart. A rule called a metric connects the grid to a ruler reading."
+        },
+        "metric-cross-term": {
+          "practicePrompt": "Use g_xx = 1, g_yy = 1 and g_xy = 0.5. The steps are dx = 2 m and dy = 1 m. Find the squared distance dl², including the mixed term 2g_xy dx dy.",
+          "idea": "On a grid whose directions meet at a slant, moving one step in each direction involves an extra term when you calculate the distance."
+        },
+        "polar-connection": {
+          "practicePrompt": "On a flat grid labelled by radius and angle, one turning correction is Γ^r_θθ = −r. What is its value at r = 4 m?",
+          "idea": "Walk around a circle on a flat floor. The direction called “out from the centre” turns as you walk, even though the floor is flat."
+        },
+        "scalar-curvature": {
+          "practicePrompt": "The four diagonal Ricci entries are (1, 2, 3, 4) m⁻². The time entry gets a minus sign and the three space entries get plus signs. What is their signed sum, R?",
+          "idea": "You can combine several measures of bending in spacetime into one number. Different bends can cancel in that number."
+        },
+        "proper-time-metric": {
+          "idea": "A clock adds up the time on its own path. The spacetime interval lets you calculate what it records."
+        },
+        "flat-interval": {
+          "explanation": "An event is something that happens at one place and time. To compare nearby events, multiply their time gap by the speed of light c so it has units of length. Square it and subtract it from the squared distance between the events. A negative answer means a slower-than-light traveller could pass through both events. This is called a timelike interval.",
+          "limits": "Use right-angled axes in flat spacetime and an observer moving without acceleration. In curved spacetime, a freely falling observer can use this simple form locally. Distant events generally need the full metric."
+        },
+        "riemann-comparison": {
+          "idea": "In curved space, carrying an arrow in two directions can give a different result if you reverse the order of the steps.",
+          "explanation": "Picture an arrow carried along the surface of a sphere. Take two tiny steps in different directions, then compare with taking those steps in reverse order. Use parallel transport, meaning you keep the arrow flat against the surface without swivelling it. A table called the Riemann tensor describes how the two results can differ. Its sign depends on which order you subtract."
+        },
+        "stress-energy": {
+          "idea": "Gravity depends on where energy is, how momentum flows, and how matter pushes or pulls.",
+          "practicePrompt": "A fluid at rest presses equally in every direction. Its pressure is 3 Pa. In axes measured by an observer at rest with the fluid, T^22 is the pressure in the second spatial direction. What is T^22?",
+          "limits": "Use a local observer at rest with the fluid and axes calibrated like ordinary rulers and clocks. The fluid pushes equally in every direction and carries no heat through that frame. Other forms of matter can need more entries in the table."
+        },
+        "local-conservation": {
+          "practicePrompt": "In a small lab, 4 joules of energy enter each second and 7 joules leave each second. What is the signed rate of change of the energy inside?",
+          "idea": "Watch energy enter and leave a tiny falling lab. To find what builds up inside, keep track of every contribution."
+        },
+        "wave-strain": {
+          "practicePrompt": "A 4 m arm lies along the direction stretched by a weak gravitational wave. The wave amplitude h_+ is 0.000002. Find the change in arm length, ΔL."
+        },
+        "cosmic-scale": {
+          "explanation": "Picture two distant galaxies moving with the overall expansion. Such points are called comoving. Keep their grid separation χ fixed. The scale factor a tells how much bigger or smaller the spacing is than at a reference time. Multiply a by χ to get the physical distance between them at the chosen time."
+        },
+        "friedmann-rate": {
+          "checkPrompt": "For a universe that is flat and has Λ = 0, does the simplified expansion rule include a nonzero cosmological constant?",
+          "idea": "Imagine measuring how quickly distant galaxies grow farther apart with the universe’s expansion. In a simple universe model, that rate depends on how much matter and energy fill each part of space."
+        },
+        "gravitational-redshift": {
+          "limits": "The source is held still outside a spherical black hole with no spin or charge. The receiver is held still very far away. The light travels freely. Motion of either observer can cause another shift in frequency.",
+          "idea": "Send a steady light signal upward from near a black hole. A distant receiver can count fewer wave crests each second than the sender measured."
+        },
+        "lower-an-index": {
+          "idea": "An arrow has numbers that describe it along chosen directions. There are two related ways to write those numbers, using upper or lower labels."
+        },
+        "parallel-transport": {
+          "explanation": "Imagine walking on a flat floor carrying an arrow without swivelling it. On a curved surface, follow the same idea in tiny steps: keep the arrow along the surface and avoid any extra turn within it. This is parallel transport. The numbers describing the arrow can still change because the local coordinate directions turn. The connection, Γ, gives that correction."
+        },
+        "transport-loop": {
+          "idea": "Walk a closed path on a globe while carrying an arrow along its surface. The arrow can return pointing a different way even though you never deliberately turned it sideways.",
+          "explanation": "Keep the arrow flat against the globe at every step and avoid turning it within the surface. This is called parallel transport. On a sphere, the size of the final turn around a small simple loop equals the patch of area inside the loop divided by the sphere’s radius squared. Measure the angle in radians."
+        },
+        "ricci-contraction": {
+          "idea": "Gravity can make a small cloud of falling test particles change size. Adding selected bending measurements gives a smaller table, called the Ricci tensor, that describes part of that effect."
+        },
+        "einstein-tensor": {
+          "idea": "Einstein needed a description of bending that could balance the energy and momentum in matter. One particular combination of curvature numbers does this."
+        },
+        "einstein-equation": {
+          "explanation": "Imagine listing what matter is doing in a tiny region. Is energy building up there? How hard is the matter pushing? A table called T records energy, momentum and stresses. Another table, G, describes part of how spacetime bends. Einstein’s equation links matching entries of these tables. It also allows an extra term with a constant called Λ."
+        },
+        "newtonian-limit": {
+          "idea": "For a slowly moving object in weak, slowly changing gravity, Einstein’s rule gives nearly the same fall that Newton’s rule predicts."
+        },
+        "schwarzschild-radius": {
+          "idea": "A black hole has a boundary beyond which light cannot escape to a distant observer. For a spherical black hole with no spin or charge, more mass means a larger boundary."
+        },
+        "cosmic-redshift": {
+          "idea": "Imagine a light wave crossing an expanding universe. The distance from one crest to the next grows while the wave travels."
+        },
+        "clock-time": {
+          "idea": "Carry a clock on a journey. The time it records along that journey is called its proper time."
+        },
+        "tidal-difference": {
+          "idea": "Drop two objects near each other. If gravity pulls one a little harder than the other, their distance apart can change as they fall."
+        },
+        "covariant-derivative": {
+          "idea": "An arrow can keep pointing straight while the marks on a curved grid turn beneath it. To measure what changed, account for the turning grid too."
+        },
+        "geodesic-equation": {
+          "idea": "Let a small object fall freely without a push. Its path through space and time is called a geodesic."
+        },
+        "tidal-curvature": {
+          "idea": "Drop two nearby objects side by side in a falling lab. Their paths can bend together or apart because gravity varies slightly across the lab."
+        }
+      }
+    },
+    "experimental-methods": {
+      "subtitle": "Use repeated readings to test a prediction. Learn how to correct a measuring tool, estimate uncertainty and report what you found.",
+      "lessons": {
+        "mean-uncertainty": {
+          "explanation": "Repeated readings can land a little above or below their average. Their sample standard deviation, s, measures this spread. If the conditions stay steady and one reading’s error does not influence the next, divide s by the square root of the number of readings. This estimates how much their average could vary from one set of readings to another.",
+          "practicePrompt": "Nine independent readings have a sample standard deviation of 6 mm. Estimate the uncertainty in their mean from this spread."
+        },
+        "combine-uncertainties": {
+          "idea": "To combine two independent uncertainties in a sum, square them, add the squares, and take the square root.",
+          "checkPrompt": "Two readings share the same uncertain offset from a measuring instrument. Can you combine their uncertainties as if the errors were independent?"
+        },
+        "calibration-hysteresis": {
+          "practicePrompt": "After lowering a load, a gauge reads 6.3 N. After raising it to that same load, it reads 6.1 N. Subtract the second reading from the first. What is the difference?"
+        },
+        "weighted-fit": {
+          "idea": "Give a more precise reading more influence when fitting a model to several readings."
+        },
+        "least-squares": {
+          "idea": "Fit a line by finding the one with the smallest total squared misses between the line and the readings."
+        },
+        "reduced-chi-square": {
+          "idea": "Compare how far a fitted model misses the readings with the uncertainty you expected in those readings.",
+          "practicePrompt": "Eight independent readings helped fit two numbers in a model. Its chi-square total χ² is 12. Divide that total by the number of readings minus the number of fitted values. What is the reduced chi-square?",
+          "limits": "The usual interpretation assumes independent errors with a bell-shaped spread and known uncertainty sizes. The fitted model must suit the data. If fitted values are limited by strict bounds or affect predictions in a strongly curved way, the usual interpretation may need adjustment.",
+          "explanation": "For each reading, subtract the model’s prediction to find its miss, called a residual. Divide each miss by the reading’s uncertainty, square the results, and add them. This sum is chi-square, χ². To find reduced chi-square, divide by the number of independent readings minus the number of values fitted. A result near one can make sense even though another model might also fit."
+        },
+        "expanded-uncertainty": {
+          "idea": "You can show a wider uncertainty range by multiplying the standard uncertainty by a number that you report alongside it.",
+          "limits": "Explain what shape you assume for the spread of results and how much data support that estimate. An interval designed to cover the true value in repeated experiments answers a different question from an interval giving a probability based on a model and the data already collected."
+        },
+        "report-resolution": {
+          "explanation": "Keep a few extra digits while calculating so early rounding will not shift the result. At the end, use the uncertainty to choose the last decimal place. For an uncertainty of 0.12 V, give the reading to hundredths of a volt too. State what the uncertainty means and how the measurement was made."
+        },
+        "sample-scatter": {
+          "detail": "Divide s by √n to estimate how much the mean would vary across repeated sets of n independent readings. Watch for drift, or for a high reading to be followed by another high reading more often than chance predicts. In either case, the readings may be less independent than this calculation assumes.",
+          "idea": "Repeat a measurement and the readings may spread out. The sample standard deviation describes how widely they spread around their average."
+        },
+        "background-subtraction": {
+          "idea": "A detector counts the signal you want plus other events. Measure those other events separately, then subtract their estimated rate."
+        },
+        "sample-time-scale": {
+          "idea": "Take a photo of a moving wheel only once a second and you can miss what it does between photos. Measurements have the same problem."
+        },
+        "calibration-gain": {
+          "idea": "A scale might start two grams too high and also exaggerate every extra gram. Check known weights to correct both problems."
+        },
+        "reference-uncertainty": {
+          "idea": "Even a weight used to check a scale has some uncertainty of its own. Include that uncertainty in the result."
+        },
+        "calibration-residual": {
+          "idea": "Compare an instrument’s reading with what its correction rule predicts. The difference left over is called a residual."
+        },
+        "correlated-inputs": {
+          "idea": "If two readings share a faulty reference, both can shift the same way. Allow for that link when combining their uncertainties."
+        },
+        "offset-correction": {
+          "idea": "If a scale always reads two grams too high, subtract two grams. The steady extra reading is an offset."
+        },
+        "sensitivity-factor": {
+          "idea": "A small error in one input can cause a larger error in the answer. The sensitivity factor tells you how strongly the answer changes near that input."
+        }
+      }
+    },
+    "quantum-information": {
+      "subtitle": "Start with a qubit, a quantum system with two basic measurement outcomes. Study how to change it, measure it and share information across several qubits.",
+      "lessons": {
+        "qubit-amplitudes": {
+          "idea": "A qubit can give one of two results in a chosen measurement. Two numbers help predict the chance of each result.",
+          "explanation": "Call the two possible results 0 and 1. For a pure state, write a number beside each label, as in a|0⟩ + b|1⟩. The numbers a and b are amplitudes. Take the size of each one and square it to get the chance of its result. The two chances add up to 1, meaning 100%.",
+          "practicePrompt": "The amplitude for measuring 1 is 0.5. What is the probability of getting 1?",
+          "terms": {
+            "Qubit": "A quantum system you can measure using two basic outcome labels, often called 0 and 1.",
+            "Amplitude": "A number attached to a possible result. Its squared size gives the probability of that result in the chosen measurement.",
+            "Pure state": "A state described by one set of amplitudes. Its measurement outcomes can still be uncertain."
+          }
+        },
+        "x-gate": {
+          "idea": "An X gate is an operation that swaps the two amplitudes of a qubit."
+        },
+        "relative-phase": {
+          "practicePrompt": "Start in |+⟩, with equal positive amplitudes for results 0 and 1. Z changes the sign of the amplitude for 1. If you now measure 0 or 1, what is the chance of getting 1?",
+          "idea": "Two different preparations of a qubit can give the same chances of 0 and 1. A plus or minus sign in the preparation can show up in a later test."
+        },
+        "conditional-state": {
+          "idea": "If an ideal measurement of a qubit gives 1, repeating that same measurement immediately gives 1 again."
+        },
+        "density-mixture": {
+          "idea": "If a source sometimes prepares 0 and sometimes prepares 1, a table can keep track of the chances."
+        },
+        "product-state": {
+          "idea": "For two independently prepared qubits, multiply the two amplitudes for a chosen pair of outcomes to get the amplitude for that pair."
+        },
+        "gate-order": {
+          "checkPrompt": "The two gates are written as ZH, acting on an input qubit. Which gate acts first?"
+        },
+        "inverse-circuit": {
+          "explanation": "Think of an ideal circuit as a list of steps. To get back to the start, undo the last step first, then work backwards. A gate called unitary has an operation that undoes it. X and H each undo themselves. A measurement that throws away its result can lose information, so this recipe cannot undo every measurement.",
+          "terms": {
+            "Unitary": "A reversible quantum operation that preserves state lengths and the overlaps between states."
+          }
+        },
+        "two-basis-correlations": {
+          "idea": "Two preparations can give the same results in one kind of measurement and different results when you change how you measure."
+        },
+        "local-marginal": {
+          "explanation": "Imagine two people each measuring one qubit from the same Bell pair. Look at just one person’s list. Over many pairs, 0 and 1 are equally likely. The distant person’s choice of measurement cannot send a message through that list. The two people can see their results are linked once they share their lists."
+        },
+        "chsh-test": {
+          "explanation": "Two people each choose between two measurement settings. For each pair of settings, multiply their +1 or −1 results and take the average. Call that average E. Add three such averages and subtract the fourth to get S. Models with shared instructions, independent setting choices and no signals between the two measuring sites give |S| at most 2. Some entangled states can exceed 2.",
+          "practicePrompt": "The averages for the four setting pairs are 0.5, 0.5, 0.5 and −0.5, in that order. Add the first three and subtract the fourth. What is S?",
+          "limits": "The bound of 2 assumes the local rules described above and independent setting choices. A real experiment must allow for limited data, missed detections, and possible signals between the two sites.",
+          "terms": {
+            "CHSH": "The initials of the four researchers who proposed this test. Each side chooses between two measurements, and the test compares the patterns in their paired results."
+          }
+        },
+        "kraus-normalization": {
+          "idea": "A qubit can undergo several possible changes when it meets its surroundings. A valid model must account for all the chances.",
+          "detail": "Different lists of Kraus operations can give exactly the same overall noise model. Without extra measurements, any one list need not describe the steps that physically happened. A valid model must still give sensible probabilities when the qubit is entangled with a second system that the noise leaves alone.",
+          "terms": {
+            "Kraus operators, K_j": "A list of mathematical operations. Combine their contributions to predict what a noise process does to a quantum state."
+          }
+        },
+        "error-syndrome": {
+          "idea": "Compare neighbouring qubits to find which one flipped, while keeping the stored quantum information intact in this model."
+        },
+        "phase-oracle": {
+          "idea": "A phase oracle is a rule that adds a minus sign to exactly the inputs marked by a function."
+        },
+        "deutsch-algorithm": {
+          "idea": "With one use of an ideal quantum operation, you can tell whether a rule gives the same or different answers for inputs 0 and 1."
+        },
+        "grover-four": {
+          "explanation": "Start with four choices, each with amplitude ½. Change the marked choice’s sign. Then find the mean (average) of the four amplitudes. Reflect each amplitude across that mean: twice the mean minus the old value. For one marked choice out of four, the marked amplitude becomes 1 and the others become 0. An ideal measurement now picks the marked choice every time."
+        },
+        "bit-flip-channel": {
+          "limits": "This model gives a single qubit the same stated chance of flipping on each trial. Real errors can be linked between qubits, depend on the prepared state, or involve other changes besides a flip.",
+          "terms": {
+            "Channel": "A rule for how a quantum state changes as it passes through a device or interacts with its surroundings."
+          },
+          "idea": "A noisy device can swap 0 and 1 by accident. Use the chance of that flip to predict the device’s output."
+        },
+        "measurement-basis": {
+          "terms": {
+            "Basis": "A set of state directions that the chosen measurement can tell apart. Every state in the space can be described using that set."
+          },
+          "idea": "How you set up a qubit measurement affects which results are possible and how often you get them.",
+          "explanation": "A basis is a set of outcomes that a measurement can tell apart. One qubit measurement distinguishes 0 from 1. Another distinguishes two states called plus and minus. To predict a result, compare the prepared state with the state for that result. The size of this match is called the overlap. Squaring it gives the probability."
+        },
+        "repetition-encoding": {
+          "terms": {
+            "Logical qubit": "One qubit’s worth of information stored across several physical qubits that work together."
+          },
+          "idea": "One qubit’s information can be spread across a group of three. If one flips by accident, a comparison within the group can reveal the error."
+        },
+        "hadamard-interference": {
+          "idea": "A qubit operation can make two contributions add together or cancel. A sign that was hidden then changes the measured result."
+        },
+        "qubit-purity": {
+          "idea": "A number called purity can tell whether a qubit has one pure state or is a mixture. It equals one for a pure state."
+        },
+        "controlled-not": {
+          "idea": "An operation on two qubits can use the first as a switch. For a definite 1 on that switch, the second qubit flips."
+        },
+        "bell-pair": {
+          "idea": "Prepare two qubits together and measure both as 0 or 1. One special pair always gives matching results, although each individual result is uncertain.",
+          "explanation": "Write |00⟩ for a pair that would give 0 on both of these measurements. Begin there. Apply the Hadamard operation H to the first qubit, then use that qubit to control a flip on the second. The finished pair has equal amplitudes for |00⟩ and |11⟩. This is one Bell state: it must be described as a pair, even when the qubits move far apart."
+        },
+        "phase-flip-channel": {
+          "idea": "An error can change a plus sign into a minus sign in a qubit’s description. This can spoil a later interference pattern even when the chances of 0 and 1 stay the same."
+        },
+        "logical-error-rate": {
+          "idea": "Imagine three qubits in a group that can correct one accidental flip. If two flip, a majority vote points to the wrong answer."
+        }
+      }
+    },
+    "many-body": {
+      "subtitle": "Track groups of particles by counting how many occupy each state. Explore what changes when the particles influence each other.",
+      "lessons": {
+        "fermion-occupation": {
+          "idea": "Electrons belong to a family called fermions. Two identical fermions cannot occupy exactly the same full state."
+        },
+        "boson-creation": {
+          "idea": "A rule called a creation operator adds one boson to the particle count for a chosen mode.",
+          "explanation": "A mode is one allowed pattern for a particle. Write |n⟩ when that pattern holds n bosons. Applying the rule a†, read “a dagger,” changes the count to n + 1. It also multiplies the new state by √(n + 1). Keep that factor in later calculations. It tells you neither a probability nor the number of particles added."
+        },
+        "boson-removal": {
+          "practicePrompt": "Start with nine bosons in one mode. After applying the removal rule a, what factor multiplies the state with eight bosons?",
+          "idea": "A boson is a particle that can share a state with others of its kind. The removal rule takes one out of that state and gives a number used in later calculations."
+        },
+        "number-operator": {
+          "idea": "Applying a removal rule and then an addition rule returns the original state multiplied by its particle count.",
+          "practicePrompt": "In repeated measurements the particle count is 0 one quarter of the time and 4 three quarters of the time. What is the average particle count?"
+        },
+        "fermion-sign": {
+          "idea": "For identical fermions, adding particles to two different modes in reverse order changes the sign in the calculation.",
+          "terms": {
+            "Anticommutator, {A,B}": "Do B then A. Also do A then B on the same starting state. Add the two results."
+          }
+        },
+        "bose-hubbard": {
+          "practicePrompt": "One site holds three bosons and the other holds one. Each pair on one site costs 2 energy units. For this fixed-count state the average hopping term is zero, and there are no site offsets. What is the average total energy?",
+          "idea": "Imagine particles able to hop between spots on a grid. The energy can depend both on hopping and on how many particles share a spot."
+        },
+        "ising-bond": {
+          "idea": "In this model each neighbouring pair has less energy when its two spin labels match, if the coupling is positive."
+        },
+        "mean-field-transition": {
+          "idea": "An average-based model predicts a temperature where the spins start to prefer a common direction."
+        },
+        "mean-field-decoupling": {
+          "checkPrompt": "If you drop the product of two changes from their averages, is the result always exactly equal to the original product?",
+          "limits": "Use quantities whose order in the product does not matter. The rule can miss important effects if neighbouring changes are strongly linked. This can happen in a chain or near a temperature where the material changes how it is ordered.",
+          "explanation": "Imagine two readings that each wander above and below their average. In their product, some terms contain just one change and one term contains both changes multiplied together. The mean-field estimate drops this last term. That can be useful when the changes are small or weakly linked. If they regularly rise together, the missing term can matter."
+        },
+        "neighbor-average-field": {
+          "idea": "Use an average neighbour to estimate how all the neighbouring spins affect one spin."
+        },
+        "connected-correlation": {
+          "idea": "Two quantities can have large averages and still change independently. Compare their changes around those averages to look for a link."
+        },
+        "collective-variance": {
+          "explanation": "Suppose two readings rise and fall together. Their total can swing more than it would if their errors were independent. Covariance measures how strongly the two changes go together, including their sign. For a sum, add the individual variances (squared spreads), then add twice the covariance for each pair.",
+          "detail": "Every pair contributes to the spread of the total. Suppose a fixed number of particles can move between two sites. If one site gains a particle, the other loses one. The count at each site can vary even while the sum never changes.",
+          "terms": {
+            "Covariance": "The average of two changes multiplied together, each measured from its own mean. It is positive when the changes tend to have the same sign."
+          }
+        },
+        "correlation-length": {
+          "idea": "A correlation length tells how far apart two places can be before the link between their changes fades substantially.",
+          "terms": {
+            "ξ": "The Greek letter xi. For the exponential decay in this lesson, two points one ξ apart have about 37% of the original correlation."
+          }
+        },
+        "static-structure-factor": {
+          "explanation": "Compare how quantities at different sites change together. At each wave number q, a rule adds those links with weights that pick out a pattern of that spacing. A peak in the result S(q) signals a strong repeating pattern. At q = 0 the wave weights all equal one. Add every entry in the table of links, then divide by the number of sites.",
+          "practicePrompt": "For two sites, the four entries in the table of links are 1, −0.5, −0.5 and 1. To find S(0), add all four entries and divide by the number of sites."
+        },
+        "linear-response": {
+          "feedback": [
+            "Causality fixes the time ordering.",
+            "Smallness does not reverse time ordering.",
+            "Yes. A change now can affect what happens later. The response to that change is zero before the change occurs."
+          ],
+          "detail": "For a changing field, the effect at time t can depend on earlier pushes. A response function gives each earlier push its weight. Pushes in the future have zero weight. In quantum theory a rule called the Kubo formula links these weights to how two measured quantities change together and to the order of their operations.",
+          "idea": "Give a system a small extra push. If you double that extra push, the change in its average reading can almost double too."
+        },
+        "occupation-list": {
+          "idea": "If particles are identical, you can describe a group by counting how many are in each allowed state, without naming individual particles."
+        },
+        "pair-interaction": {
+          "idea": "Suppose each pair of particles sharing one spot adds the same energy. Count each pair once to find the total."
+        },
+        "boson-commutator": {
+          "explanation": "Choose a mode, meaning one allowed pattern that holds n identical bosons. Add one then remove one. The two mathematical factors multiply to n + 1. Reverse the order and they multiply to n. Both orders return to the same count, but their factors differ by one. Subtracting the two orders is called taking their commutator."
+        },
+        "boson-hopping": {
+          "idea": "Picture two neighbouring sites where particles can sit. To describe a jump, take one particle out of the first site and add it to the second."
+        },
+        "fermion-hubbard": {
+          "idea": "Two electrons can share one site if their spin states differ. In the simple model here, sharing the site costs extra energy."
+        },
+        "occupation-variance": {
+          "idea": "Two groups can have the same average particle count but very different results from one measurement to the next."
+        },
+        "spin-variance": {
+          "idea": "Each spin reading in this model is either +1 or −1. If you always get the same reading, the spread is zero."
+        },
+        "average-fluctuations": {
+          "idea": "Averaging many independent guesses of the same kind usually makes the average steadier. The number of independent guesses tells you how much steadier."
+        },
+        "fluctuation-response": {
+          "idea": "Even before an outside magnetic field changes, a group of spins can fluctuate. In this model those changes help predict how strongly the group will respond."
+        },
+        "mean-field-consistency": {
+          "idea": "Guess the average spin of a group, then use it to predict the average. A consistent guess gives itself back."
+        }
+      }
+    },
+    "quantum-field-theory": {
+      "subtitle": "Start with a field value at each place. Follow its wave patterns to see how quantum theory counts particles and predicts interactions.",
+      "lessons": {
+        "field-values": {
+          "explanation": "Think of a temperature map. Each spot on the map has a number, and that number can change with time. A scalar field also gives one number at each place and time. Write φ(x, t), read “phi at x and t,” for that value. Quantum field theory starts with fields and uses quantum rules to describe their possible states."
+        },
+        "mode-energy": {
+          "idea": "One independent pattern of a free boson field gains energy in equal steps.",
+          "explanation": "Choose one pattern, called a mode. One extra packet of energy in it is one quantum. The number n counts these packets. The lowest energy is half a step above zero. Add n whole steps to it. If each step is ε, the total energy is (n + ½)ε. Its size ε comes from the mode’s angular frequency times the reduced Planck constant.",
+          "terms": {
+            "Quantum": "One packet of excitation of a mode. Adding one raises the energy by one step."
+          }
+        },
+        "above-vacuum": {
+          "idea": "A mode with no added particles still has a lowest energy. Count from that level to find the energy the added particles carry."
+        },
+        "field-action": {
+          "explanation": "Picture space divided into tiny boxes and time into tiny steps. The Lagrangian density ℒ tells you how much each box and time step contributes to the total action S. Add all the contributions. A stationary field history is one for which a tiny allowed change produces zero slope in the action at the original history."
+        },
+        "field-motion": {
+          "idea": "The shape of a free scalar field helps predict how it changes next. The rule is called the Klein–Gordon equation."
+        },
+        "field-momentum": {
+          "idea": "For the free field here, the momentum paired with the field value tells how fast that value changes with time."
+        },
+        "canonical-commutator": {
+          "explanation": "Choose one field pattern (a mode). Q is its amplitude and P is its paired momentum. In quantum theory they act as operations on a state. Apply P then Q, and subtract the result of applying Q then P. For the same mode in units with ℏ = 1, the difference is i times the original state. For two independent modes, it is zero.",
+          "feedback": [
+            "Yes. For two independent modes the operations can be done in either order with the same result, so their difference is zero.",
+            "The canonical relation is diagonal in independent modes.",
+            "Equal frequency does not make two independent labels identical."
+          ]
+        },
+        "mode-field-operator": {
+          "idea": "Build a quantum field by adding patterns. The amplitude of each pattern is a rule that acts on its quantum state."
+        },
+        "vacuum-mode-variance": {
+          "idea": "Measuring a vacuum mode repeatedly can give different amplitudes even though their average is zero.",
+          "detail": "This result is for one pattern of the field. When a calculation includes infinitely many patterns, even extremely short wavelengths can add to the spread. At a single exact point, the sum can grow without bound. Averaging the field over a small region is one way to pose a different, physically meaningful question."
+        },
+        "fock-normalization": {
+          "idea": "Each addition to a mode brings in a number as well as an extra particle. Divide out those numbers to give the final state unit size."
+        },
+        "tree-amplitude": {
+          "practicePrompt": "In this diagram one interaction contributes −iλ. The amplitude M is defined by iM = −iλ. If λ = 0.3, find M.",
+          "idea": "Draw four lines meeting at a dot to represent one simple interaction. The dot stands for one factor in a calculation."
+        },
+        "scalar-propagator": {
+          "exampleSteps": {
+            "0": "An internal line is labelled with p² = 10 GeV², and the mass gives m² = 4 GeV².",
+            "1": "Subtract to get 6 GeV². A real free particle would have p² − m² = 0. This internal line has a different value, called off shell."
+          },
+          "checkPrompt": "An internal line can have p² different from m². Must energy still balance at each meeting point in the diagram?",
+          "choices": [
+            "Yes, energy must still balance",
+            "No, any amount of energy may disappear",
+            "Only if the line is directly observed"
+          ],
+          "feedback": [
+            "Yes. At each meeting point, incoming and outgoing energy and momentum must balance.",
+            "The internal line can differ from a free particle’s mass rule. Energy must still balance where the lines meet.",
+            "Energy must balance at each meeting point, even though an internal line is part of the calculation and cannot be observed on its own."
+          ],
+          "detail": "At each meeting point, incoming and outgoing energy and momentum balance for this model. The line between points is a piece of the calculation. The small extra term iε tells the calculation how to approach values where the denominator would otherwise be zero.",
+          "terms": {
+            "ε": "An extremely small positive number in the formula. It tells you how to approach a point where the denominator would otherwise vanish."
+          },
+          "idea": "A line joining two dots in an interaction diagram tells you what to include in a calculation. It does not show a track recorded by a detector."
+        },
+        "amplitude-interference": {
+          "practicePrompt": "Two indistinguishable ways to get the same outcome have amplitudes 0.4 and −0.1. Add them, then square the size of the sum. What is the probability?",
+          "detail": "In scattering calculations, add diagrams for indistinguishable alternatives before taking the squared size. To turn that squared result into a scattering cross section, also include how much beam arrives and which outgoing motions are possible.",
+          "explanation": "Imagine two possible ways for a detector to register one result. If no record can tell the ways apart, each contributes a number called an amplitude. Add these numbers first. Then square the size of their sum to get the probability in this example. Opposite signs can cancel. If you have a mixture of distinct recorded alternatives, you can instead add their probabilities."
+        },
+        "cross-section-scaling": {
+          "idea": "For this simple scattering model, doubling a weak interaction strength makes scattering four times as likely under the same beam and target conditions.",
+          "practicePrompt": "Keep the beam energy, directions and other factors fixed. The weak interaction strength triples. By what factor does the leading-order cross section change?"
+        },
+        "momentum-cutoff": {
+          "practicePrompt": "Use I = ln(Λ/μ). If the ratio Λ/μ equals e³, what is I? The natural logarithm ln asks what power of e gives that ratio.",
+          "idea": "Some sums keep adding ever-larger momenta without stopping. Start by setting an upper limit so you can study how the answer depends on that limit."
+        },
+        "match-a-parameter": {
+          "practicePrompt": "A starting number plus a correction must match a measured value of 0.10. The correction is now 0.04. Find the starting number, called the bare parameter.",
+          "detail": "A counterterm is an extra piece of a calculation that adjusts a starting number to match a measurement. The chosen reference measurement sets a condition called a renormalization condition. Other measurements can then test the prediction away from that point.",
+          "terms": {
+            "Bare parameter": "The starting number in the calculation. Add the calculated correction to compare it with a measured quantity."
+          },
+          "idea": "A calculation needs a starting number. Choose it so that the calculated answer matches one trusted measurement, then test the rule on other measurements."
+        },
+        "effective-theory": {
+          "practicePrompt": "One small correction has size c₂(E/M)² compared with the main term. If c₂ = 1 and E/M = 0.2, estimate this fraction.",
+          "idea": "A small correction can matter less at low energies and grow when the energy rises. A rule works only in the range where its omitted corrections stay small enough."
+        },
+        "field-mode": {
+          "idea": "Picture a standing wave on a string. The pattern of high points and still points can keep its shape while its size changes. One such pattern is called a mode."
+        },
+        "natural-units": {
+          "idea": "You can choose units to make familiar numbers simpler. In physics, one convenient choice makes the speed of light equal to 1."
+        },
+        "scalar-lagrangian": {
+          "idea": "Imagine a field as a number written at every spot. The motion rule of a simple field depends on the numbers themselves, how they change with time, and how they differ from spot to spot.",
+          "explanation": "A field with only one number φ at each spot is called scalar. In this free-field model, three terms determine each small region’s contribution to action. Start with half the squared change rate in time. Subtract half the squared slope across space. Subtract a third term involving the field value and its mass. Their combination is called the Lagrangian density, ℒ."
+        },
+        "free-dispersion": {
+          "idea": "A wave in a free field cannot choose its spacing and its timing independently. Once you know its spacing and the field’s mass, you can find its frequency."
+        },
+        "create-quantum": {
+          "idea": "Picture one wave pattern with a known number of energy packets. An operation called creation raises that count by one."
+        },
+        "remove-quantum": {
+          "idea": "Try to remove an energy packet from an empty wave pattern. There is nothing to remove, so the calculation returns zero."
+        },
+        "mode-momentum": {
+          "idea": "Several particles moving one way can have their momentum partly cancelled by particles moving the other way. Add their momenta with direction signs."
+        },
+        "quartic-interaction": {
+          "idea": "Imagine doubling the value of a field at one spot. An energy cost based on its fourth power grows sixteen times larger.",
+          "explanation": "A scalar field gives one number φ at each place. A free field follows its motion rule without an added interaction. To model an interaction of the field with itself, give it an extra energy per volume proportional to φ × φ × φ × φ. This is called a quartic interaction. The factor λ (lambda) sets its strength. Here the extra energy per volume is λφ⁴/24."
+        },
+        "running-coupling": {
+          "idea": "When physicists quote the strength of a particle interaction, they also say what energy scale they used to define that number."
+        }
+      }
+    }
+  }
 }

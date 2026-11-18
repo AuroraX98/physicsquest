@@ -1,4 +1,4 @@
-import {spinProjection,twoLevel,densityPlane,entangledPair} from './quantum2.js';
+import {spinProjection,twoLevel,densityPlane,entangledPair} from './quantum2.js?v=0.19.0';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const num=x=>x!==0&&(Math.abs(x)<.001||Math.abs(x)>=1e5)?x.toExponential(3):Number(x.toFixed(3)).toLocaleString('en-US');
 const txt=(x,y,s,size=11)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#36533e" font-size="${size}" font-family="system-ui,sans-serif">${esc(s)}</text>`;
@@ -9,10 +9,10 @@ const svg=(s,label)=>`<svg viewBox="0 0 420 230" role="img" aria-label="${esc(la
 const read=items=>`<div class="model-readout">${items.map(([a,b])=>`<div>${esc(a)}<b>${esc(b)}</b></div>`).join('')}</div>`;
 const axes=(xmin,xmax,ymax,xlabel,ylabel)=>{const X=x=>50+340*(x-xmin)/(xmax-xmin),Y=y=>185-140*y/ymax;let s='';for(let i=0;i<=4;i++){const x=xmin+(xmax-xmin)*i/4,y=ymax*i/4;s+=line(X(x),45,X(x),185)+line(50,Y(y),390,Y(y))+txt(X(x),204,num(x),10)+txt(25,Y(y)+4,num(y),10);}s+=txt(220,226,xlabel)+txt(220,22,ylabel);return {X,Y,s};};
 export const quantum2Configs={
- q2spin:[['theta','Preparation polar angle',0,180,15,60,'°'],['phi','Preparation azimuth',-180,180,15,0,'°'],['axisTheta','Analyzer polar angle',0,180,15,90,'°'],['axisPhi','Analyzer azimuth',-180,180,15,0,'°']],
- q2levels:[['detuning','Detuning Δ / g',-4,4,.5,1,''],['time','Scaled time g t / ℏ',0,6,.05,1,'']],
+ q2spin:[['theta','Preparation angle from +z',0,180,15,0,'°'],['phi','Preparation azimuth',-180,180,15,0,'°'],['axisTheta','Measurement angle from +z',0,180,15,120,'°'],['axisPhi','Analyzer azimuth',-180,180,15,0,'°']],
+ q2levels:[['detuning','Energy mismatch Δ / g',-4,4,.5,1.5,''],['time','Time in units of ℏ / g',0,6,.001,1.257,'']],
  q2density:[['length','Bloch-coordinate length r',0,1,.1,.6,''],['angle','Angle from positive z toward x',0,360,15,60,'°']],
- q2pair:[['mixing','Preparation mixing angle',0,90,5,45,'°'],['phase','Preparation relative phase',-180,180,15,0,'°']]
+ q2pair:[['mixing','Mixing angle',0,90,.01,39.23,'°'],['phase','Relative phase',-180,180,15,90,'°']]
 };
 export function renderQuantum2(type,p){
  const rad=d=>d*Math.PI/180;
@@ -24,17 +24,18 @@ export function renderQuantum2(type,p){
  if(type==='q2levels'){
   const q=twoLevel(p.detuning,1,p.time),g=axes(0,6,1,'Scaled time g t / ℏ','Reference-state 1 probability');
   let s=g.s+poly(Array.from({length:601},(_,i)=>{const t=i/100;return[g.X(t),g.Y(twoLevel(p.detuning,1,t).probability1)];}));s+=dot(g.X(p.time),g.Y(q.probability1));
-  return svg(s,`Exact constant two-level Hamiltonian, initial reference state zero. Detuning over coupling ${num(p.detuning)}, scaled elapsed time ${num(p.time)}. State-one probability ${num(q.probability1)}, maximum transfer ${num(q.maximumTransfer)}. For the explicitly illustrative g=1 electronvolt and rounded hbar=6.582e-16 electronvolt seconds, elapsed time ${num(p.time*6.582e-16)} seconds. Mean energy remains ${num(q.meanEnergy)} electronvolts. The matrix is constant; no rotating-wave approximation or decay is used.`)+read([['P(reference state 1)',num(q.probability1)],['Maximum transfer',num(q.maximumTransfer)],['Mean energy (g = 1 eV)',num(q.meanEnergy)+' eV']]);
+  return svg(s,`Exact constant two-level Hamiltonian, initial reference state zero. Detuning over coupling ${num(p.detuning)}, scaled elapsed time ${num(p.time)}. State-one probability ${num(q.probability1)}, maximum transfer ${num(q.maximumTransfer)}. For the explicitly worked example g=4 electronvolts and rounded hbar=6.582e-16 electronvolt seconds, elapsed time ${num(p.time*6.582e-16/4)} seconds. Mean energy remains ${num(4*q.meanEnergy)} electronvolts. The matrix is constant; no rotating-wave approximation or decay is used.`)+read([['P(reference state 1)',num(q.probability1)],['Maximum transfer',num(q.maximumTransfer)],['Mean energy (g = 4 eV)',num(4*q.meanEnergy)+' eV']]);
  }
  if(type==='q2density'){
   const q=densityPlane(p.length,rad(p.angle)),X=x=>210+70*x,Y=z=>115-70*z;
-  let s=`<circle cx="210" cy="115" r="70" fill="#e7ebde" stroke="#9aae98"/>`+line(125,115,295,115)+line(210,30,210,200)+txt(310,119,'rₓ',12)+txt(223,31,'r_z',12)+txt(128,132,'−1',10)+txt(292,132,'1',10)+txt(195,48,'1',10)+txt(194,189,'−1',10)+txt(210,218,'Mathematical Bloch coordinates; r_y = 0')+dot(X(q.rx),Y(q.rz));
+  let s=`<circle cx="210" cy="115" r="70" fill="#e7ebde" stroke="#9aae98"/>`+line(125,115,295,115)+line(210,30,210,200)+txt(315,116,'x',12)+txt(223,31,'r_z',12)+txt(128,132,'−1',10)+txt(292,132,'1',10)+txt(195,48,'1',10)+txt(194,189,'−1',10)+txt(210,218,'Mathematical Bloch coordinates; r_y = 0')+dot(X(q.rx),Y(q.rz));
+  s+='<path d="M289 110l10 10m0-10l-10 10" stroke="#8d3928" stroke-width="2.5"/>'+txt(322,93,'Example',11);
   return svg(s,`Real-plane two-state density matrix, Bloch coordinates rx=${num(q.rx)}, ry=0, rz=${num(q.rz)}. The unit disk marks valid states, not a spatial region. Eigenvalues ${num(q.eigenvalues[0])} and ${num(q.eigenvalues[1])}, purity ${num(q.purity)}, plus-z probability ${num(q.plusZ)}. Equal horizontal and vertical mathematical scales. Centre is maximally mixed; boundary points are pure. Different ensemble decompositions can represent the same point.`)+read([['Density eigenvalues',q.eigenvalues.map(num).join(' / ')],['Purity Tr(ρ²)',num(q.purity)],['P(+z)',num(q.plusZ)]]);
  }
  if(type==='q2pair'){
-  const q=entangledPair(rad(p.mixing),rad(p.phase));let s=txt(220,22,'Joint x-basis outcome probabilities');const labels=['+x,+x','+x,−x','−x,+x','−x,−x'];
-  for(let i=0;i<=4;i++){const y=185-140*i/4;s+=line(50,y,390,y)+txt(28,y+4,num(.5*i/4),10);}q.jointXX.forEach((v,i)=>{const x=65+82*i,h=280*v;s+=`<rect x="${x}" y="${185-h}" width="48" height="${h}" rx="3" fill="#295e50"/>`+txt(x+24,205,labels[i],10);});s+=txt(220,227,'Two distinguishable systems; local z weight shown below');
-  return svg(s,`Pure pair cos(theta)|00> plus exp(i phi)sin(theta)|11>, theta=${num(p.mixing)} degrees, phi=${num(p.phase)} degrees. Joint x-basis probabilities in order plus-plus, plus-minus, minus-plus, minus-minus are ${q.jointXX.map(num).join(', ')}. Local zero-z probability ${num(q.weight0)} and local purity ${num(q.localPurity)}. Changing only relative phase changes correlations, not either reduced state. These controls compare global preparations, not outcomes chosen by a distant observer.`)+read([['Local P(0 along z)',num(q.weight0)],['Local purity',num(q.localPurity)],['Schmidt rank',String(q.schmidtRank)]]);
+  const q=entangledPair(rad(p.mixing),rad(p.phase));let s=txt(220,22,'Joint chances: first partner along z, second along x');const labels=['0,+x','0,−x','1,+x','1,−x'];
+  for(let i=0;i<=4;i++){const y=185-140*i/4;s+=line(50,y,390,y)+txt(28,y+4,num(.5*i/4),10);}q.jointXX.forEach((v,i)=>{const x=65+82*i,h=280*v;s+=`<rect x="${x}" y="${185-h}" width="48" height="${h}" rx="3" fill="#295e50"/>`+txt(x+24,205,labels[i],10);});s+=txt(220,227,'Each bar gives the chance of one pair of results');
+  return svg(s,`Pure pair cos(theta)|+0> plus exp(i phi)sin(theta)|−1>, theta=${num(p.mixing)} degrees, phi=${num(p.phase)} degrees. Joint probabilities in the order 0 plus, 0 minus, 1 plus, 1 minus are ${q.jointXX.map(num).join(', ')}. First partner's plus-x probability ${num(q.weight0)} and local purity ${num(q.localPurity)}. Changing only relative phase changes correlations, not either reduced state. These controls compare global preparations, not outcomes chosen by a distant observer.`)+read([['First partner alone (z-basis matrix)',`[[0.5, ${num(q.weight0-.5)}], [${num(q.weight0-.5)}, 0.5]]`],['First partner: chance of +x',num(q.weight0)],['Second partner: chance of 0',num(q.weight0)]]);
  }
  return null;
 }

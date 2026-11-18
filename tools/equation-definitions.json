@@ -1,7 +1,7 @@
 {
   "common": {
     "sin": "Sine: a rule that turns an angle into a number. In a right triangle, it is opposite side divided by longest side.",
-    "cos": "Cosine: a rule that turns an angle into a number. In a right triangle, it is the nearby side divided by longest side.",
+    "cos": "Cosine turns an angle into a number. For a sharp angle in a right triangle, divide the length of the adjacent leg by the length of the longest side. The adjacent leg touches that angle.",
     "tan": "Tangent: sine divided by cosine for the same angle.",
     "tanh": "Hyperbolic tangent: a calculator function whose answer stays between −1 and 1.",
     "exp": "The exponential rule: exp(x) means e raised to x, where e is about 2.718.",
@@ -879,7 +879,10 @@
     },
     "em/two-charge-field": {
       "N": "Newtons: a unit of force.",
-      "C": "Coulombs: a unit of electric charge."
+      "C": "Coulombs: a unit of electric charge.",
+      "E_total": "The electric field after adding the two fields with their directions.",
+      "E₁": "Field produced by the first source charge at the chosen point.",
+      "E₂": "Field produced by the second source charge at that same point."
     },
     "em/ring-axis-field": {
       "N": "Newtons: a unit of force.",
@@ -935,11 +938,16 @@
       "E": "The electric-field vector, giving its size and direction."
     },
     "waves/viscous-oscillator": {
-      "ω_dt": "ω_d × t: the damped angular frequency multiplied by elapsed time."
+      "ω_dt": "ω_d × t: the damped angular frequency multiplied by elapsed time.",
+      "ẍ": "Acceleration along x.",
+      "ẋ": "Velocity along x.",
+      "x": "Position measured from equilibrium."
     },
     "waves/mode-superposition": {
       "ω_st": "ω_s × t: the symmetric-mode angular frequency multiplied by time.",
-      "ω_at": "ω_a × t: the antisymmetric-mode angular frequency multiplied by time."
+      "ω_at": "ω_a × t: the antisymmetric-mode angular frequency multiplied by time.",
+      "x₁": "Position of cart 1 measured from its rest position.",
+      "x₂": "Position of cart 2 measured from its rest position."
     },
     "waves/standing-superposition": {
       "y": "The medium’s sideways displacement from its rest position.",
@@ -974,7 +982,11 @@
       "w_j": "The unnormalized weight of state j; divide by the sum of weights to get a probability."
     },
     "particles/curvature-measures-transverse-momentum": {
-      "m": "Metres: the unit used for the track radius inside R[m]."
+      "m": "Metres: the unit used for the track radius inside R[m].",
+      "e": "Elementary charge: the size of the charge on one proton. An electron carries the same size with a negative sign.",
+      "pT": "The part of momentum pointing across the magnetic field.",
+      "B": "Strength of the magnetic field in teslas.",
+      "R": "Radius of the curved track in metres."
     },
     "astrophysics/thermal-spectrum": {
       "m": "Metres: the length unit in the wavelength–temperature constant.",
@@ -1014,7 +1026,9 @@
       "j_ref": "Signed reflected probability flow; negative means flow toward decreasing x."
     },
     "quantum2/outer-product-action": {
-      "u_jv_k": "u_j × v_k: multiply component j of u by component k of v. The star on v_k then means take its complex conjugate."
+      "u_jv_k": "u_j × v_k: multiply component j of u by component k of v. The star on v_k then means take its complex conjugate.",
+      "u": "State that sets the output direction of this map.",
+      "v": "Reference state used to find how much of the input contributes to that output."
     },
     "quantum2/adjoints-and-observables": {
       "c†": "The state coefficient column c turned into a row, with each imaginary part’s sign reversed."
@@ -1061,7 +1075,9 @@
     },
     "quantum2/coherent-quadratures": {
       "x": "Physical position of the oscillator, found by scaling the unit-free X.",
-      "p": "Physical momentum of the oscillator, found by scaling the unit-free P."
+      "p": "Physical momentum of the oscillator, found by scaling the unit-free P.",
+      "X": "Position written in the chosen oscillator units.",
+      "P": "Momentum written in the chosen oscillator units."
     },
     "quantum2/density-from-preparations": {
       "c_n": "Component n of the pure state’s amplitude column; the star means complex conjugate."
@@ -1082,7 +1098,9 @@
       "C_ij": "Entry in row i and column j of the table of joint amplitudes."
     },
     "quantum2/two-spin-correlations": {
-      "P": "Joint probability for the two indicated measurement outcomes."
+      "P": "Joint probability for the two indicated measurement outcomes.",
+      "a": "Direction chosen for the first spin measurement, drawn as an arrow of length one.",
+      "b": "Direction chosen for the second spin measurement, drawn as an arrow of length one."
     },
     "quantum2/spin-one-matrices": {
       "J_z": "Spin-1 angular-momentum operator for the z direction.",
@@ -1113,7 +1131,11 @@
       "z": "Position along the direction of the applied electric field.",
       "E₁": "First-order contribution to the energy change; the preceding Δ marks the shift.",
       "E₂": "Second-order contribution to the energy change; the preceding Δ marks the shift.",
-      "α": "Polarizability, labeled pol: how strongly the energy changes when an electric field is applied."
+      "α": "Polarizability, labeled pol: how strongly the energy changes when an electric field is applied.",
+      "e": "Elementary charge: the size of the charge on one proton. An electron carries the same size with a negative sign.",
+      "ℰ": "Strength of the applied electric field.",
+      "v": "The coupling energy that links the two states in this example.",
+      "D": "The positive energy gap between the two states before the field is applied."
     },
     "quantum3/gauge-state-phase": {
       "A": "Magnetic vector potential: an auxiliary field whose curl gives the magnetic field.",
@@ -1152,7 +1174,13 @@
     },
     "quantum3/dipole-selection-tests": {
       "f": "Label of the final state.",
-      "i": "Inside |i⟩, i labels the initial state. In the exponential, multiplying the phase, i is the imaginary unit with i² = −1."
+      "i": "Inside |i⟩, i labels the initial state. In the exponential, multiplying the phase, i is the imaginary unit with i² = −1.",
+      "x": "Position along the chosen x direction.",
+      "ψ_f": "The wavefunction for the final state. The star takes its complex conjugate.",
+      "ψ_i": "The wavefunction for the starting state.",
+      "m_i": "Angular-momentum projection label for the starting state.",
+      "m_f": "Angular-momentum projection label for the final state.",
+      "φ": "Angle around the chosen axis, measured in radians."
     },
     "quantum3/kraus-channel-bridge": {
       "r": "A label counting the possible Kraus terms.",
@@ -1181,7 +1209,9 @@
       "U": "Time-evolution operator: the rule taking the initial state to its later state."
     },
     "advanced-mechanics/constraint": {
-      "R": "Fixed radius of the circle on which the object is constrained to move."
+      "R": "Fixed radius of the circle on which the object is constrained to move.",
+      "x": "Horizontal position measured from the centre.",
+      "y": "Vertical position measured from the centre."
     },
     "advanced-mechanics/moving-origin": {
       "a": "Position of the moving coordinate origin as a function of time."
@@ -1226,7 +1256,16 @@
     },
     "waves/mode-driving": {
       "q̇": "Rate of change of the chosen mode’s amplitude; the dot means change per time.",
-      "q̈": "Rate at which that amplitude’s rate is changing; two dots mean a second time derivative."
+      "q̈": "Rate at which that amplitude’s rate is changing; two dots mean a second time derivative.",
+      "q̈ⱼ": "How quickly the velocity in vibration pattern j changes.",
+      "q̇ⱼ": "Velocity in vibration pattern j.",
+      "qⱼ": "Displacement in vibration pattern j.",
+      "ωⱼ": "Natural angular frequency of vibration pattern j.",
+      "Fⱼ": "Part of the applied force that drives vibration pattern j.",
+      "F": "The forces applied to the two carts.",
+      "b": "Friction coefficient for each cart.",
+      "m₀": "Mass of one cart.",
+      "t": "Elapsed time."
     },
     "optics/system-capstone": {
       "dᵢ₁": "Image distance produced by lens 1.",
@@ -1345,7 +1384,13 @@
     "em/biot-savart": {
       "T": "Teslas: a unit of magnetic field strength.",
       "m": "Metres: a unit of distance.",
-      "A": "Amperes: a unit of electric current."
+      "A": "Amperes: a unit of electric current.",
+      "B": "The combined magnetic field at the observation point.",
+      "dB": "The small contribution to the magnetic field from one piece of wire.",
+      "I": "Current in the wire.",
+      "r": "Distance from the piece of wire to the point where the field is measured.",
+      "r̂": "A unit arrow pointing from the wire piece to the observation point.",
+      "dℓ": "A short piece of wire, pointing in the direction of conventional current."
     },
     "plasma/shielding-scale": {
       "e": "Elementary charge: the positive size of one proton’s charge. An electron has the opposite charge."
@@ -1435,6 +1480,143 @@
       "k": "Incoming wave number: how quickly its phase changes with distance.",
       "θ_half": "The angle where the scattering intensity has fallen to half its forward value.",
       "E_L": "Energy scale set by the particle mass and the potential width."
+    },
+    "math/partials": {
+      "x": "First input. Change x while keeping y fixed to find the rate with respect to x.",
+      "y": "Second input. Hold y still when finding the rate with respect to x.",
+      "f": "Output of the rule that uses the two inputs x and y."
+    },
+    "math/fields": {
+      "x": "Horizontal position where the field is measured.",
+      "y": "Vertical position where the field is measured."
+    },
+    "advanced-mechanics/phase-point": {
+      "p": "Momentum of the cart. Divide it by mass to find velocity."
+    },
+    "fluid-dynamics/velocity-field": {
+      "t": "Time at which the water is observed."
+    },
+    "fluid-dynamics/parcel-path": {
+      "t": "Time elapsed while following this bit of fluid."
+    },
+    "quantum-field-theory/field-values": {
+      "x": "Position where the field is observed.",
+      "t": "Time when the field is observed."
+    },
+    "materials/semiconductor-temperature": {
+      "n": "Number of mobile electrons per unit volume.",
+      "p": "Number of mobile holes per unit volume. A hole is a missing electron that acts like a positive charge."
+    },
+    "materials/planes-and-spacing": {
+      "h": "First whole-number label for the family of crystal planes.",
+      "k": "Second whole-number label for the family of crystal planes.",
+      "l": "Third whole-number label for the family of crystal planes."
+    },
+    "quantum2/spin-preparation": {
+      "a": "Amplitude for the positive z outcome. Square its size to get that outcome’s chance.",
+      "b": "Amplitude for the negative z outcome. Square its size to get that outcome’s chance."
+    },
+    "quantum2/local-operator-tensor": {
+      "A": "Operation on the first system.",
+      "B": "Operation on the second system."
+    },
+    "quantum2/fermion-determinant": {
+      "u": "One of the two distinct single-particle states.",
+      "v": "The other single-particle state. It has zero overlap with u in this example."
+    },
+    "advanced-mechanics/kepler-orbit-shape": {
+      "e": "Eccentricity: a number describing the orbit’s shape. A circle has e = 0. An ellipse that is not a circle has e between 0 and 1."
+    },
+    "atomic-nuclear/beta-decay-shares-energy": {
+      "e": "Here e⁻ is an electron. The raised minus sign marks its negative electric charge.",
+      "n": "A neutron. In this reaction it changes into a proton as two other particles are emitted.",
+      "p": "A proton, the positively charged particle on the right side."
+    },
+    "atomic-nuclear/half-life-is-not-mean-lifetime": {
+      "τ": "Mean lifetime: the average time before one nucleus decays.",
+      "λ": "Decay rate per nucleus. A larger rate means a shorter average wait."
+    },
+    "particles/weak-interactions-have-charged-and-neutral-channels": {
+      "e": "Here e⁻ is an electron. The raised minus sign marks its negative electric charge."
+    },
+    "mechanics/variable-acceleration": {
+      "v": "Velocity at the chosen time.",
+      "v₀": "The starting velocity at time zero.",
+      "a": "Acceleration at a chosen time. In the example it grows from zero to 4 m/s².",
+      "s": "A time inside the interval from 0 to t. The integral uses s to track each small time step."
+    },
+    "mechanics/mechanics-capstone": {
+      "m": "In F/m, m is the mass of the cart receiving the push. After a number such as 0.20, m means metres. N/m means newtons per metre.",
+      "M": "Mass of the second cart. It starts at rest."
+    },
+    "em/point-charge-potential": {
+      "V": "Electric potential, or potential energy per unit charge. The unit after a number such as 6 V is the volt.",
+      "Qᵢ": "Charge on source number i. Its sign determines the sign of its contribution.",
+      "rᵢ": "Distance from source number i to the point of interest.",
+      "U": "Potential energy of the added charge in the field of the fixed sources.",
+      "q": "Charge of the added particle. Multiplying by the potential gives its potential energy.",
+      "k": "Coulomb constant. This example uses the rounded value 9 billion N·m²/C²."
+    },
+    "em/charge-conservation": {
+      "Q_total": "Total charge in the chosen system.",
+      "Q₁": "Charge on the first part of the system.",
+      "Q₂": "Charge on the second part of the system."
+    },
+    "quantum1/interval-probability": {
+      "a": "Position at the left end of the interval.",
+      "b": "Position at the right end of the interval."
+    },
+    "waves/restoring-equilibrium": {
+      "ẍ": "Acceleration of the object along x, the change in its velocity each second.",
+      "x": "Displacement from the resting position.",
+      "k": "Spring stiffness: restoring force per metre of displacement.",
+      "m": "Mass of the oscillating object."
+    },
+    "waves/small-pendulum": {
+      "θ̈": "Angular acceleration: how the pendulum’s turning rate changes with time.",
+      "θ": "Angle of the pendulum from straight down.",
+      "g": "Strength of gravity near the pendulum.",
+      "ℓ": "Distance from the pivot to the swinging mass.",
+      "T₀": "Time for one small swing cycle, out and back."
+    },
+    "waves/driven-amplitude": {
+      "ẍ": "Acceleration along x.",
+      "ẋ": "Velocity along x.",
+      "x": "Displacement from the resting position."
+    },
+    "waves/two-mass-equations": {
+      "ẍ₁": "Acceleration of the first cart, with rightward taken as positive.",
+      "ẍ₂": "Acceleration of the second cart, using the same direction."
+    },
+    "optics/single-aperture": {
+      "θ₁": "Angle from straight ahead to the first dark band.",
+      "λ": "Wavelength of the incoming light.",
+      "a": "Width of the opening."
+    },
+    "optics/finite-double-slit": {
+      "d": "Distance between the centres of the two slits.",
+      "a": "Width of each slit.",
+      "λ": "Wavelength of the incoming light.",
+      "θ": "Angle from straight ahead to the point on the viewing screen.",
+      "α": "Phase angle set by the separation of the two slits.",
+      "β": "Phase angle set by the width of one slit."
+    },
+    "optics/snell-index": {
+      "n₁": "Refractive index of the material the light starts in.",
+      "n₂": "Refractive index of the material the light enters.",
+      "θ₁": "Angle of the incoming ray from the line perpendicular to the surface.",
+      "θ₂": "Angle of the transmitted ray from that same perpendicular line."
+    },
+    "astrophysics/distance-errors": {
+      "L": "Luminosity: total light power that the source gives off.",
+      "F": "Flux: light power received per unit area.",
+      "σ_d": "Uncertainty in the inferred distance.",
+      "σ_L": "Uncertainty in the source luminosity.",
+      "σ_F": "Uncertainty in the measured flux."
+    },
+    "foundations/vectors": {
+      "x": "The east–west part of the displacement.",
+      "y": "The north–south part of the displacement."
     }
   }
 }

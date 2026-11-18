@@ -1,0 +1,152 @@
+{
+  "metric-distance": [
+    null,
+    "Imagine marking the same flat floor in feet and then in metres. What changed about the floor itself?",
+    "If you know how much distance one grid step represents, what could you do with a ruler?"
+  ],
+  "clock-time": [
+    "A clock and a ruler can travel together. Which one records the quantity in the question?",
+    null,
+    "Could two people give an event different time labels while reading the same clock as it passes?"
+  ],
+  "local-free-fall": [
+    "Imagine dropping a scale and an object together. Why might the scale show no push during the fall?",
+    "Would one short fall tell you how two widely separated falling objects move?",
+    null
+  ],
+  "tidal-difference": [
+    null,
+    "Picture two drops falling toward the centre of a planet from slightly different places. Compare their directions.",
+    "If you relabel a map, what happens to the measured gap between the two falling objects?"
+  ],
+  "flat-interval": [
+    null,
+    "Set the three space steps to zero for a clock at rest. Which sign is in front of the remaining term?",
+    "Try two ticks of a clock at one place. Does the part containing the time difference vanish?"
+  ],
+  "metric-cross-term": [
+    "Write the two possible orders of an x step and a y step in the sum. Which objects do those labels refer to?",
+    null,
+    "Look for the repeated pair of terms. Do the pure x and pure y terms occur twice too?"
+  ],
+  "proper-time-metric": [
+    "Compare two clocks that leave together, follow different paths and meet again. What information does the path supply?",
+    "Whose clock is following the curved path in this problem? Could an ordinary clock travel alongside a light ray?",
+    null
+  ],
+  "lower-an-index": [
+    null,
+    "Try a table with a nonzero entry away from the diagonal. Which input components enter one row’s sum?",
+    "Taking an absolute value discards a sign. What operations does the metric table actually ask you to do?"
+  ],
+  "polar-connection": [
+    "Draw a flat sheet with a polar grid and pick a point away from its centre. What happens to its radial directions around a circle?",
+    null,
+    "Could the directions drawn on a curved grid change even on a flat sheet of paper?"
+  ],
+  "covariant-derivative": [
+    "A vector can genuinely change. Which part of the apparent change could come from the grid itself?",
+    "Compare correcting how directions are measured with measuring the motion of two nearby falling objects.",
+    null
+  ],
+  "parallel-transport": [
+    null,
+    "Carry an arrow pointing the same way across a flat polar grid. Do its projections onto the grid directions stay the same?",
+    "Keep the ruler units fixed while rotating the coordinate axes. What happens to the numbers describing one arrow?"
+  ],
+  "geodesic-equation": [
+    "Imagine describing a freely moving stone on a rotating grid. Would the choice of grid matter only for a light ray?",
+    null,
+    "Before inferring a push, ask whether the coordinate directions change along the path."
+  ],
+  "transport-loop": [
+    "Draw the starting and returning arrows from the same dot. Compare their lengths and then compare where their tips point.",
+    "Check the rule at each step on the loop. Could the local rule hold even if the final comparison is surprising?",
+    null
+  ],
+  "riemann-comparison": [
+    null,
+    "Setting the connection to zero at a point says something about that point’s grid. What does a tiny loop test beyond that?",
+    "If two freely falling objects change their separation, would relabeling the clock change that measurement?"
+  ],
+  "ricci-contraction": [
+    "Changing how smoothly a grid is drawn differs from adding entries of a table. Which operation made this smaller table?",
+    null,
+    "Can different entries add to zero even when the entries themselves are nonzero?"
+  ],
+  "scalar-curvature": [
+    "One number summarizes many curvature entries. Think of two nonzero numbers whose sum vanishes.",
+    "Check what signs can occur when the metric weights are included in the sum.",
+    null
+  ],
+  "tidal-curvature": [
+    null,
+    "Write the minus sign from the formula separately from the minus sign of K. What happens when you combine them?",
+    "Locate mass in the equation for relative acceleration. What physical quantity does ξ stand for?"
+  ],
+  "stress-energy": [
+    "Picture a fluid that presses on a wall in its own rest frame. Where is that pressure recorded?",
+    null,
+    "Think about riding past the fluid. Would you measure a flow crossing your patch of space?"
+  ],
+  "einstein-tensor": [
+    "Keep the stated scalar curvature and inspect the sign of the time entry of the metric. Which signs multiply?",
+    "Copy the minus sign first, then insert the signed value of the metric entry in parentheses.",
+    null
+  ],
+  "einstein-equation": [
+    null,
+    "Could the same total mass have two different arrangements or different motions? What does the equation use at each place?",
+    "Count labels on two different spacetime maps. What physical information would you still need about their contents?"
+  ],
+  "local-conservation": [
+    "Draw a small box with energy entering on one side and leaving on the other. What would a local balance count?",
+    null,
+    "Local bookkeeping compares nearby places. What would let different places and times share one global energy definition?"
+  ],
+  "newtonian-limit": [
+    "The shortcut assumes a small correction to the time entry. What should you check before using it near a horizon?",
+    "Would changing a symbol’s name change the size of the physical effect that was left out?",
+    null
+  ],
+  "schwarzschild-radius": [
+    null,
+    "Compare the star’s actual size with the radius you calculated. Which one tells you where its surface is?",
+    "Write the two radii in the same unit. Would their relative sizes change if you used kilometres?"
+  ],
+  "static-clock": [
+    "Think about a freely falling clock at that location and a clock trying to stay at one radius. Are they following the same path?",
+    null,
+    "As a hovering observer approaches the horizon, what happens to the support needed to keep that radius fixed?"
+  ],
+  "gravitational-redshift": [
+    "Imagine a light source moving toward a receiver even far from a strong gravitational field. What could change about the crests arriving?",
+    "Two observers can count wave crests per second. Which measured number would they compare?",
+    null
+  ],
+  "weak-light-bending": [
+    null,
+    "Find b in the bending formula. Is it a factor above the fraction line or below it?",
+    "Hold the mass fixed and move the light path farther away. Which part of the fraction now changes?"
+  ],
+  "wave-strain": [
+    "Sketch a ring of freely separated points before a plus wave passes. Which separations does the strain describe?",
+    null,
+    "Watch horizontal and vertical separations during the same part of the wave cycle. Compare the directions of their changes."
+  ],
+  "cosmic-scale": [
+    "The scale factor relates distances between objects following the large-scale expansion. What keeps the parts of an atom together?",
+    "Compare two tightly bound atoms made of different elements. Which shared property matters for this question?",
+    null
+  ],
+  "cosmic-redshift": [
+    null,
+    "Look back at the small-redshift assumption. Would increasing z preserve the reason the shortcut worked?",
+    "A formula can use matching units and still be approximate. What size of z was assumed?"
+  ],
+  "friedmann-rate": [
+    "Which symbol tells you whether the universe is expanding, and which symbol labels the cosmological constant?",
+    null,
+    "Write down the conditions printed beside this equation before interpreting H."
+  ]
+}

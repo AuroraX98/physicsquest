@@ -106,6 +106,10 @@
       {
         "term": "Average velocity",
         "definition": "Position change divided by elapsed time, including direction."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -121,11 +125,15 @@
       ]
     },
     "equation": "overall change = +6 m − 2 m = +4 m",
-    "terms": []
+    "terms": [],
+    "lessonCopy": {
+      "visual.title": "How the two parts of the trip add up",
+      "visual.caption": "Each rectangle shows one part of the trip. Add their signed areas to find the change in position."
+    }
   },
   "uncertainty": {
-    "idea": "A measurement is an estimate with a stated amount of uncertainty.",
-    "explanation": "Uncertainty describes how much doubt remains in a measurement. Compare it with the size of the estimate to see how large that doubt is in proportion. The method used to find the uncertainty still matters.",
+    "idea": "A measurement tells us our best estimate and how uncertain it is.",
+    "explanation": "A ruler might let you read a shelf length to the nearest centimetre. An uncertainty tells the reader how closely the method can pin down the length. Compare the uncertainty with the length to see how large it is as a share of the measurement.",
     "example": {
       "title": "Measuring a length",
       "steps": [

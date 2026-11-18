@@ -1,0 +1,242 @@
+{
+  "light-bands": [
+    null,
+    "At fixed wave speed, how far must one crest travel before the next crest passes the same point?",
+    "Which quantity does “in a vacuum” fix for light? Check that before changing its speed."
+  ],
+  "rays-wavefronts": [
+    "Draw two straight, tilted fronts. What direction would arrows perpendicular to both fronts have?",
+    null,
+    "Check the angle between the old ray and the newly tilted fronts."
+  ],
+  "ray-validity": [
+    "In wavelength ÷ opening width, which number is in the denominator?",
+    "Compare the opening size with a single wavelength. Is the opening still large enough to ignore spreading?",
+    null
+  ],
+  "intensity-area": [
+    null,
+    "Draw equal squares inside the original detector. How many are still collecting light?",
+    "Irradiance is power per area. What else do you need for total power?"
+  ],
+  "reflection-normal": [
+    "The normal is drawn at right angles to the mirror. From which line are you measuring?",
+    null,
+    "Sketch the incoming ray and its mirror image about the normal. Which angle would 50° describe?"
+  ],
+  "snell-index": [
+    "Draw a front arriving squarely at the boundary. Which side would enter the glass first?",
+    "Count crests arriving at a fixed point on the boundary each second. Does the boundary create extra crests?",
+    null
+  ],
+  "total-internal": [
+    null,
+    "Which material was the ray leaving in the worked critical-angle example?",
+    "Test a ray entering straight along the normal. What would prevent transmission at that angle?"
+  ],
+  "dispersion-colour": [
+    "In the refraction rule, do the two colors have the same index as well as the same incoming angle?",
+    null,
+    "For the same incoming ray, compare the angle that goes with a larger index in Snell’s rule."
+  ],
+  "real-virtual": [
+    "Trace a real light ray from the mirror to the location of the proposed screen.",
+    "The screen color changes what it reflects. What light actually reaches the back of the mirror?",
+    null
+  ],
+  "mirror-curvature": [
+    null,
+    "Put the focal length and the object distance into the mirror equation with their signs. What happens when you move the object term across the equals sign?",
+    "Sketch two reflected rays from a convex mirror. Do they head toward one another in front of it?"
+  ],
+  "thin-lens-signs": [
+    "Put the stated distances into 1/image distance = 1/f − 1/object distance before inverting.",
+    null,
+    "Is zero reciprocal distance the same as zero distance? Try the reciprocal of an increasingly large number."
+  ],
+  "magnification-sign": [
+    "Use the minus sign in m = −image distance/object distance together with the sign of the image distance.",
+    "Which distance goes in the numerator of the magnification rule?",
+    null
+  ],
+  "two-lens-trace": [
+    null,
+    "Draw the location the rays from lens 1 are heading toward. On which side of lens 2 is it?",
+    "Put a new zero at lens 2. What is the distance from that new zero to the first image?"
+  ],
+  "stops-pupils": [
+    "Which clue describes a loss of scene area, and which would describe a loss of colors?",
+    null,
+    "Trace rays from the centre and then the edge. Which group does this device mostly remove?"
+  ],
+  "camera-focus": [
+    "Even a perfectly focused point spreads when it passes through a tiny opening. What sets the width of that spot?",
+    "Try distinguishing the number of arriving photons from the width of the pattern each helps build.",
+    null
+  ],
+  "optical-instruments": [
+    null,
+    "In the angular magnification ratio, does the eyepiece focal length multiply or divide?",
+    "Write both focal lengths in the ratio. Which of the two has just changed?"
+  ],
+  "field-components": [
+    "Draw the old and new field arrows on a grid and compare their lengths.",
+    null,
+    "Keep the signed vertical coordinate when plotting the tip. Is it in the same quadrant?"
+  ],
+  "analyzer-angle": [
+    "After the middle filter, what is the polarization of light arriving at the last filter?",
+    "At each filter compare the incoming field with the angle of that filter. Does a nonzero part passing through require extra energy?",
+    null
+  ],
+  "circular-ellipse": [
+    null,
+    "Compare the farthest horizontal and vertical positions reached by the tip. A circle requires what relation?",
+    "At a quarter-cycle offset, do the horizontal and vertical parts reach their peaks simultaneously?"
+  ],
+  "wave-plate": [
+    "A wave plate adds a delay between two parts. How many nonzero input parts are present here?",
+    null,
+    "What two nonzero field components are required to trace a circle?"
+  ],
+  "field-not-intensity": [
+    "Compare the sizes of the two field amplitudes before combining them. Equal opposite signs alone are not enough.",
+    "For beams with a fixed phase difference, do you add their intensities or their signed field amplitudes first?",
+    null
+  ],
+  "optical-path": [
+    null,
+    "One whole wavelength spans one whole turn of phase. How much of a turn does this extra path cover?",
+    "Which quantity sets the timing of the crests, the endpoints alone or the optical distance traveled?"
+  ],
+  "two-slit-spacing": [
+    "Write fringe spacing as wavelength × screen distance ÷ slit separation. Which input changed?",
+    null,
+    "Compare the position of wavelength in the fringe-spacing rule with the position of slit separation."
+  ],
+  "coherence-visibility": [
+    "Write visibility as a difference divided by a sum. How does doubling both readings affect the denominator?",
+    "Track the factor of two in the numerator as well as in the denominator.",
+    null
+  ],
+  "michelson-double-path": [
+    null,
+    "Trace the beam from the splitter to the moving mirror and back. How many legs change length?",
+    "Does the mirror need to move a whole wavelength for the complete round trip to change by one wavelength?"
+  ],
+  "reflection-phase": [
+    "Separate the sign of a reflected field from the power carried by that field.",
+    null,
+    "How do you turn the signed amplitude reflection factor into a power fraction?"
+  ],
+  "thin-film-condition": [
+    "List the phase change on each reflection again. Which difference between beams controls reinforcement?",
+    "Two reflected waves still meet. Which part of their timing changed when the substrate changed?",
+    null
+  ],
+  "phase-ambiguity": [
+    null,
+    "Imagine a clock hand that has returned to its starting mark. Can you tell how many complete turns it made?",
+    "Can the phase sensor count whole cycles using only its starting and finishing readings?"
+  ],
+  "huygens-front": [
+    "Do the contributions from two points on an opening always arrive in step at the detector?",
+    null,
+    "Compare light at one dark direction with the total light that gets through the entire opening."
+  ],
+  "single-aperture": [
+    "In the small-angle rule, is slit width above or below the division sign?",
+    "Which width determines the path difference between light from opposite edges?",
+    null
+  ],
+  "finite-double-slit": [
+    null,
+    "Match slit width and slit separation to their different patterns. Which quantity changed in this setup?",
+    "The difference in travel distance from the two slit centres depends on which length?"
+  ],
+  "grating-orders": [
+    "Write the grating condition for the same groove spacing and the same angle. What product remains to compare?",
+    null,
+    "Include the order number when comparing the two wavelengths."
+  ],
+  "point-spread": [
+    "Moving a source shifts its spot. Does the aperture that shapes each individual spot change?",
+    "Did either source produce extra power, or did their spots just move closer?",
+    null
+  ],
+  "angular-resolution": [
+    null,
+    "Check the location of wavelength in the ratio wavelength ÷ aperture diameter.",
+    "With diameter fixed, compare the two wavelengths in the diffraction rule."
+  ],
+  "numerical-aperture": [
+    "Look at the two factors in NA = index × sine of the angle. Where would wavelength enter?",
+    null,
+    "How large can the sine factor become, even for a very wide collecting cone?"
+  ],
+  "sampling-contrast": [
+    "Try a pattern already blurred into one spot by the lens. What does a finer pixel grid sample?",
+    "If a good optical image lands between widely spaced pixels, what might finer spacing recover?",
+    null
+  ],
+  "spatial-frequency": [
+    null,
+    "Draw a stripe pattern three times wider with the same number of stripes. How many stripes fit per centimetre?",
+    "The question counts stripes per unit length in an image. Does it count light cycles per second?"
+  ],
+  "far-field-transform": [
+    "Pick a direction where two parts used to reinforce. Would a changed phase at one part matter there?",
+    null,
+    "What information is lost when a complex field is replaced by its squared size?"
+  ],
+  "frequency-filter": [
+    "Which quantity is the filter transferring in each case, the field or the intensity?",
+    "Two beams can have the same brightness and different timing. Which of those features matters in coherent imaging?",
+    null
+  ],
+  "near-far": [
+    null,
+    "Write the Fresnel number as a squared width divided by wavelength times distance. Where does distance occur?",
+    "Mark all three quantities in the Fresnel number before holding any of them fixed."
+  ],
+  "absorption-law": [
+    "What power arrives at the second slab after the first slab?",
+    null,
+    "The second slab removes half of what reaches it. Is that the same amount the first slab removed?"
+  ],
+  "guided-modes": [
+    "The index check gives a range. What must the wave also do at the guide’s edges?",
+    "Compare a narrow guide with a wide guide. Which boundary distances have changed?",
+    null
+  ],
+  "detector-shot-noise": [
+    null,
+    "For counting noise, compare the square root of the count with the count itself. They grow at different rates.",
+    "The exposure now produces four times as many events. Which changes faster, the count or its square root?"
+  ],
+  "photon-energy": [
+    "The medium and frequency still match the old beam. What in the wavelength rule has changed?",
+    null,
+    "Use energy per photon = Planck’s constant × frequency. Then account for the extra energy arriving each second."
+  ],
+  "choose-optical-model": [
+    "Two equal-power beams can meet crest to crest or crest to trough. What distinguishes those situations?",
+    "A lens can aim the beams at a place. What makes them cancel once they get there?",
+    null
+  ],
+  "system-capstone": [
+    null,
+    "Draw the two lenses on one distance axis and mark the zero used for each image distance.",
+    "Changing image orientation changes its sign of magnification. Does that move the distance origin?"
+  ],
+  "aperture-wavelength": [
+    "Treat collection and diffraction separately. Where does diameter appear in the angular rule?",
+    null,
+    "Sketch a circle three times wider. How many equal squares fit compared with the original area?"
+  ],
+  "optics-assessment": [
+    "Moving the detector does not reshape the lens. What changed in the detector’s position relative to the image?",
+    "Is the light’s frequency changing, or is the detector sampling a different slice of the converging beam?",
+    null
+  ]
+}

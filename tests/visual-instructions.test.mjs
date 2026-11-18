@@ -2,14 +2,17 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {hasInteractiveModel} from '../dist/models.js';
 import fs from 'node:fs';
+import {explorationPrompt} from '../dist/lesson-flow.js';
 test('static summaries never promise nonexistent controls',()=>{
  assert.equal(hasInteractiveModel({type:'concept'}),false);
  assert.equal(hasInteractiveModel({type:'radian'}),true);
  assert.equal(hasInteractiveModel({type:'unknown'}),false);
  assert.equal(hasInteractiveModel(null),false);
- const app=fs.readFileSync(new URL('../dist/app.js',import.meta.url),'utf8');
- assert.ok(app.includes("hasInteractiveModel(l.visual)?"));
- assert.ok(app.includes('This is a visual summary, not a live simulation.'));
+ const still=explorationPrompt({type:'concept'});
+ assert.match(still,/picture stays still/);
+ assert.doesNotMatch(still,/play|slider|control/i);
+ assert.match(explorationPrompt({type:'radian'}),/change one control/);
+ assert.match(explorationPrompt({type:'relativity/light-clock'}),/press Play/);
 });
 test('completed field courses attach their seven bounded models after required bridges',()=>{
  const catalog=JSON.parse(fs.readFileSync(new URL('../dist/content/catalog.json',import.meta.url)));

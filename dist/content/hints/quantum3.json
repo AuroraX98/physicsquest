@@ -1,0 +1,422 @@
+{
+  "perturbation-parameter": [
+    null,
+    "Set the new gap beside the fixed coupling. If the bottom of a fraction gets smaller, which way does the fraction move?",
+    "Compare 0.20 eV with 0.40 eV directly. Are these numbers close together or hundreds of times apart?"
+  ],
+  "first-energy-shift": [
+    "Use the diagonal correction belonging to the second state. Does its sign raise or lower that state’s energy?",
+    null,
+    "Are you reporting just the adjustment, or the starting energy with that adjustment included?"
+  ],
+  "first-state-shift": [
+    "Track the sign of the coupling in the numerator while keeping the same signed energy difference below it.",
+    "The question asks for a component of the state. Which signs can that component have before you turn it into a probability?",
+    null
+  ],
+  "second-energy-shift": [
+    null,
+    "Squaring 0.6 is only the numerator. What energy gap should divide it?",
+    "Write the reference energy first in the denominator. Is the other level above or below it?"
+  ],
+  "perturbation-normalization": [
+    "The extra state component grows with λ. Does the excess in its squared length grow the same way?",
+    null,
+    "Compare the new λ with the previous one before squaring the size of the correction."
+  ],
+  "perturbation-error-check": [
+    "Look at the units of the requested error ratio. Would a difficulty defining that ratio make the physical energy blow up?",
+    "To compute a relative error, what actual shift would you divide by when the coupling is turned off?",
+    null
+  ],
+  "project-perturbation": [
+    null,
+    "The projected perturbation still carries the small multiplier λ. Did you include it on both shifts?",
+    "Keep the two shifts, but check which common starting energy those shifts now sit on."
+  ],
+  "diagonalize-degenerate-block": [
+    "Have you found the movement of one level from the middle or the whole distance between the two levels?",
+    null,
+    "First calculate the separation in the perturbation itself. What factor converts it into the small energy change?"
+  ],
+  "near-degenerate-block": [
+    "A gap is the distance from the lower level to the upper level. Could a distance carry a minus sign?",
+    "Draw two levels on opposite sides of the old centre. Is the size of one shift the full separation?",
+    null
+  ],
+  "symmetry-and-splitting": [
+    null,
+    "Which order of the energy calculation does the even–odd cancellation test? Would it also test later orders?",
+    "At second order, other states can enter the calculation. Does the same-state parity test check those contributions?"
+  ],
+  "variational-bound": [
+    "Try a mixture of a low energy and a higher one. Which side of the lowest energy does the average land on?",
+    null,
+    "Look at the weight on the excited level. Under what condition would an average equal the lowest level exactly?"
+  ],
+  "gaussian-trial-energy": [
+    "The trial width has changed. Recalculate both the motion-energy and potential-energy terms with the new width.",
+    "The potential is quartic, meaning a fourth power. Count all the factors of the width in that term.",
+    null
+  ],
+  "minimize-trial-width": [
+    null,
+    "The best width in scaled units stays put. Which energy scale must multiply the optimized ratio to express it in eV?",
+    "Check the signs of the two contributions for this confining quartic potential. Can a positive scale reverse either sign?"
+  ],
+  "ritz-subspace": [
+    "Could you still use the old winning trial function inside the larger set?",
+    null,
+    "Adding one choice gives the search more room. Does it guarantee that the true ground-state shape is in that room?"
+  ],
+  "orthogonal-excited-trial": [
+    "Cross out the states to which the trial is exactly orthogonal. Which energy labels can still contribute?",
+    "Check whether the level carrying 2 eV was among the two directions ruled out.",
+    null
+  ],
+  "wkb-local-wave-number": [
+    null,
+    "The wave number contains the square root of the allowed kinetic energy. Apply the scale change before taking that root.",
+    "A larger allowed kinetic energy gives more momentum. How is wave number related to momentum?"
+  ],
+  "wkb-slow-variation": [
+    "The coordinate ξ tells you where to evaluate the rule. Which local slope and wave number go into the ratio there?",
+    null,
+    "Check whether you used the wave number and its slope at the new point or at the old point."
+  ],
+  "wkb-amplitude-current": [
+    "If particles pass faster, how should their local density change to keep the same flow of probability?",
+    "The density and the wave amplitude are different. Which one must be squared to get the other?",
+    null
+  ],
+  "wkb-forbidden-action": [
+    null,
+    "Is this exponential the change in wave amplitude or in its squared size?",
+    "The number κL belongs inside an exponential. What kind of ratio should you expect for a decaying wave?"
+  ],
+  "simple-turning-point": [
+    "Look for the turning-point slope in the denominator. Will a steeper potential widen or narrow the turning region?",
+    null,
+    "Which root appears in the turning length? Find the number whose cube gives the change in slope."
+  ],
+  "wkb-two-turning-quantization": [
+    "Look at the turning-point allowance in the level-counting rule. Does it use n alone?",
+    "Check the shift added to n. Do the end corrections add a whole level or a fraction of one?",
+    null
+  ],
+  "wkb-tunnelling-validity": [
+    null,
+    "Recheck the condition that the wave fades substantially across the barrier. Does it still hold near the top?",
+    "The energy approaches the positive barrier from below. Which difference is shrinking, and did the barrier itself change sign?"
+  ],
+  "relativistic-kinetic-expansion": [
+    null,
+    "Compare the relativistic kinetic energy with its leading low-speed estimate. What sign does their first difference have?",
+    "The leading kinetic term uses x². Which higher power appears in the correction?"
+  ],
+  "coulomb-moment-bridge": [
+    "Imagine stretching every radius by the same factor. Does an inverse cube keep the same value at a stretched point?",
+    null,
+    "Write the inverse cube as three inverse lengths. How many factors change when the length scale doubles?"
+  ],
+  "atomic-spin-orbit": [
+    "That result belongs to a particular way of combining spin and orbital motion. Insert the new j into j(j+1) first.",
+    "Which orbital label belongs to a p state? Check whether orbital angular momentum actually vanishes in this example.",
+    null
+  ],
+  "contact-darwin-shift": [
+    "A contact term samples the density at the nucleus. Do the supplied 1s and 2p wave shapes have the same value there?",
+    "The sharply localized term samples the wave’s density at one point. What value does the 2p density have at that point?",
+    null
+  ],
+  "hydrogen-fine-structure": [
+    null,
+    "This value comes from the contact correction alone. Which kinetic correction still has to be added?",
+    "Your result includes the kinetic adjustment. Does the 1s state have any density at the nucleus for the contact term to sample?"
+  ],
+  "weak-zeeman": [
+    "Zero and a negative projection have different meanings. Where does the signed mⱼ enter the shift?",
+    "Compare the new signed projection with the previous one before reusing its shift.",
+    null
+  ],
+  "strong-zeeman": [
+    "Use the sign rule printed for the electron and insert both signed projections. Have you added an extra sign?",
+    null,
+    "Check whether the orbital and spin contributions point in opposite directions or the same direction this time."
+  ],
+  "zeeman-crossover": [
+    null,
+    "Turning off the field removes one term. Does it also remove the spin–orbit coupling that can split the two states?",
+    "A level’s height above a chosen zero is not its distance from another level. Locate both levels before subtracting."
+  ],
+  "quadratic-stark-parity": [
+    "Look at the energy difference for a lower state mixing with a higher one. What sign does that denominator have?",
+    null,
+    "The effect is second order in the field. How often does the field factor appear in the shift?"
+  ],
+  "linear-stark-subspace": [
+    null,
+    "Mark the pair’s two energies on opposite sides of the original value. Did you stop at the distance from the centre?",
+    "The field strength changed. Which factor in the splitting expression must be updated before finding the distance?"
+  ],
+  "minimal-coupling": [
+    null,
+    "First subtract qA from p, then square the whole result. What goes missing if you square the terms separately?",
+    "Write the new negative value of qA in parentheses. What does subtracting it do to the momentum difference?"
+  ],
+  "gauge-state-phase": [
+    "Changing this description changes the state phase as well as the potential. Have you accounted for the phase in the momentum calculation?",
+    "Follow the change in the vector potential too. Which combination of state momentum and potential is physically measured?",
+    null
+  ],
+  "flux-loop-phase": [
+    null,
+    "Which output is being counted? Check the sign in front of the cosine for that particular output.",
+    "Express the applied flux as a fraction of a full phase period. Have the two paths returned to equal phase?"
+  ],
+  "landau-oscillator-map": [
+    null,
+    "Locate the lowest planar level relative to one spacing. Do you start half a spacing or a whole spacing up?",
+    "When the level number is zero, is the oscillator energy also zero? Keep that starting offset as you climb."
+  ],
+  "instantaneous-eigenstates": [
+    "The overlap follows the signed rate of the changing angle. Which direction is the angle changing now?",
+    "Check the units after squaring an angular rate. Does the derivative overlap require a rate or a squared rate?",
+    null
+  ],
+  "adiabatic-gap-criterion": [
+    null,
+    "Check the exponent on the energy gap in the denominator. How many factors change when the gap halves?",
+    "A small gap makes nearby levels harder to keep apart. Should the warning ratio grow or shrink?"
+  ],
+  "dynamic-geometric-phase": [
+    null,
+    "Track the sign in the phase factor used for time evolution before multiplying rate by time.",
+    "Which part of the phase comes from the energy even when the geometric contribution is absent?"
+  ],
+  "adiabatic-spin-check": [
+    "Even if the sine term reaches its largest value, what multiplier sets the maximum transition probability?",
+    null,
+    "Use both updated rates when finding the combined rate in the denominator."
+  ],
+  "berry-spin-loop": [
+    "Calculate the solid angle of the loop using the new cosine. Has the enclosed cap kept its old size?",
+    "Check both the chosen spin state and the direction around the loop. Together they set the sign of its phase.",
+    null
+  ],
+  "born-oppenheimer-factor": [
+    "Check the sign of the repulsion term between the nuclei. Which way would repulsion move the energy?",
+    "Does the electronic energy in this convention already include the separate nuclear repulsion?",
+    null
+  ],
+  "nuclear-effective-surface": [
+    null,
+    "A stiffer potential makes the nuclei vibrate faster. Which way should the level spacing move?",
+    "The vibration frequency contains stiffness under a square root. Do the spacing and stiffness grow by the same factor?"
+  ],
+  "nonadiabatic-boundaries": [
+    null,
+    "Which part of the warning ratio still changes when you keep the speed and overlap fixed?",
+    "Write the gap above or below the fraction bar. Which way should the mixing risk move as levels get farther apart?"
+  ],
+  "interaction-picture": [
+    null,
+    "Multiply the angular rate by the new time before reading the phase on a unit circle.",
+    "How many radians are needed to return to the positive real axis? Compare that with ωt here."
+  ],
+  "first-transition-amplitude": [
+    "Use the shorter pulse duration, then distinguish the resulting amplitude from its squared size.",
+    null,
+    "Pulse duration scales the amplitude. How does halving it affect a probability built from that amplitude?"
+  ],
+  "finite-rectangular-pulse": [
+    "Use the smooth limit of sin(x)/x when x approaches zero. Do all the nearby contributions cancel on resonance?",
+    "The coupling appears in the amplitude before you take a square. How many factors of coupling appear in the probability?",
+    null
+  ],
+  "harmonic-drive-terms": [
+    null,
+    "Use the same positive transition frequency for both terms. One term subtracts the drive and the other adds it.",
+    "The two starting frequencies are inputs. Which two combinations arise when the oscillating factors are multiplied?"
+  ],
+  "dipole-selection-tests": [
+    "The radial factor is only one piece. What happens to the angular phase as you go all the way around in φ?",
+    null,
+    "Imagine adding phase arrows around a complete turn. Do they line up or point in different directions?"
+  ],
+  "weak-versus-rabi": [
+    "The pulse area goes into an amplitude first. What different operations turn the weak and exact amplitudes into chances?",
+    "A probability cannot use more than the whole input population. Check where the sine enters the exact rule.",
+    null
+  ],
+  "density-of-final-states": [
+    null,
+    "Look at the power of E in the density of states. Does it use the energy or its square root?",
+    "At higher energy in this three-dimensional model, does the shell of possible final momenta have more room or less?"
+  ],
+  "long-time-pulse-window": [
+    "Compare the level spacing with the energy width selected by a 100-second pulse. A failed approximation need not mean zero events.",
+    null,
+    "Check both ends of the time window. Can the estimated transferred probability still be small at such a long time?"
+  ],
+  "golden-rule-rate": [
+    "Which factor in the rate is squared, the transition amplitude or the number of final states per energy?",
+    "If more final states fit into the same energy interval, how many destinations can contribute to the total rate?",
+    null
+  ],
+  "threshold-phase-space": [
+    null,
+    "How does the square root of the excess energy change when the energy itself drops to a quarter?",
+    "The energy moved closer to threshold. Would this open more final states or fewer?"
+  ],
+  "rate-and-survival-limits": [
+    "This is the leading short-time loss. Is it proportional to t or to t squared?",
+    null,
+    "First compare the two times, then apply the square in the loss formula to that scale change."
+  ],
+  "electric-dipole-regime": [
+    "Wave number counts cycles of phase per distance. Do shorter wavelengths fit more or fewer cycles in the same distance?",
+    "The system size a is fixed. Which other factor in ka still depends on the wavelength?",
+    null
+  ],
+  "spontaneous-emission-input": [
+    null,
+    "A lifetime is the time scale in the exponential, not necessarily the time to lose half. Insert one lifetime into its exponent.",
+    "An exponential curve approaches zero gradually. What is the value of its exponent after just one lifetime?"
+  ],
+  "stimulated-balance-inversion": [
+    "With the spontaneous rate set to zero, can the upward stimulated process still move population into the excited state?",
+    null,
+    "If every atom were excited, what would the downward stimulated process do next?"
+  ],
+  "environment-dephasing": [
+    "At θ=0, how distinguishable are the two states left in the environment? Can it record which branch occurred?",
+    "For a two-state system, compare this proposed purity with the smallest purity allowed by a normalized state.",
+    null
+  ],
+  "kraus-channel-bridge": [
+    null,
+    "If a flip happens every time, is its phase effect random from run to run or the same every time?",
+    "With no flips at all, what mechanism would erase the original link between the two amplitudes?"
+  ],
+  "amplitude-damping-channel": [
+    "Check whether you used the square root that belongs to a surviving amplitude. The question asks for population.",
+    null,
+    "The given p counts decays. Which part of the starting population is the question asking you to count?"
+  ],
+  "markovian-decay-example": [
+    "Which time does the reciprocal of γ₁ give? Check the factor relating that rate to the loss of coherence.",
+    "Setting the extra dephasing rate to zero removes one contribution. Can energy relaxation still weaken coherence?",
+    null
+  ],
+  "incident-flux-counts": [
+    "Twice as many incoming particles cross the same target area each second. Should the expected count rise or fall?",
+    "Which factors stayed fixed in the rate rule, and which incoming-beam factor changed?",
+    null
+  ],
+  "outgoing-scattering-amplitude": [
+    null,
+    "To get an angular area from an amplitude, multiply by its complex conjugate. What sign can an area have?",
+    "Does a detector count an imaginary area? Check whether you left the result in amplitude form."
+  ],
+  "solid-angle-cross-section": [
+    "This is the area per unit solid angle. How much solid angle is there in all directions together?",
+    null,
+    "What constant angular area applies at every direction? Multiply it by the solid angle of the full sphere."
+  ],
+  "outgoing-green-response": [
+    "Check the sign of the exponent for an outgoing, rather than incoming, wave. Which way does its phase arrow turn?",
+    "On a circle, what fraction of a turn is π/2? Does it reach the negative real axis?",
+    null
+  ],
+  "scattering-integral-equation": [
+    null,
+    "This question asks about one term in the amplitude sum. At which later step would its size be squared?",
+    "Can a change in one sampled term determine the sign of a whole measured area? Keep track of which quantity was changed."
+  ],
+  "packets-and-elastic-regime": [
+    "Each energy group contains only half the incoming flow. How much of each individual cross section should count?",
+    null,
+    "Recompute the weights for this beam rather than keeping the fractions from the earlier example."
+  ],
+  "legendre-radial-bridge": [
+    "Set u to zero in the entire P₂ expression. Is there any term that does not contain u?",
+    "Check the subscript on the polynomial. Which polynomial stays at one for all directions?",
+    null
+  ],
+  "elastic-phase-shifts": [
+    null,
+    "Use twice the phase shift as the angle of the S arrow. How much of a turn is that?",
+    "An elastic S factor lies on the unit circle. Does this proposed real number have unit length?"
+  ],
+  "partial-wave-amplitude": [
+    "Doubling k changes the amplitude through its 1/k factor. The detector responds to which power of that amplitude?",
+    null,
+    "The phase inputs stayed fixed. Which factor outside their sum changed with k?"
+  ],
+  "partial-total-cross-section": [
+    "Which scale factor outside the partial-wave sum contains the new wave number?",
+    "Cross section measures area. Does the prefactor contain one inverse wave number or two?",
+    null
+  ],
+  "optical-theorem": [
+    null,
+    "Check the imaginary part of the forward amplitude when every phase shift is zero. What does the theorem use?",
+    "Could an elastic scattering area carry a negative sign? Inspect the squared sine terms as well."
+  ],
+  "s-wave-scattering-length": [
+    "Substitute tan(π) into the full bracket in the scattering-length rule. Is there a constant left in the bracket?",
+    null,
+    "Near which angles does tangent blow up? Locate π relative to those points."
+  ],
+  "partial-wave-resonance": [
+    "The factor is given as a fraction of its peak. Could it exceed its own peak?",
+    "Compare the new distance from the resonance with the half-width. Which power of that distance enters the denominator?",
+    null
+  ],
+  "identical-particle-scattering": [
+    null,
+    "Only part of the preparation is in the singlet state. Did you weight its contribution by that fraction?",
+    "Which spin group can contribute in this s-wave example? Match its event area to its own preparation fraction."
+  ],
+  "first-born-fourier": [
+    "The first-order amplitude uses the signed potential once. What happens to its integral if the potential reverses sign?",
+    null,
+    "The question asks about an amplitude. At what step would you form a nonnegative probability or area?"
+  ],
+  "central-born-integral": [
+    "The momentum-transfer rule uses half the scattering angle inside a sine. What is that half-angle?",
+    "The largest transfer occurs for a wave going straight back. Is a right-angle deflection that case?",
+    null
+  ],
+  "gaussian-born-example": [
+    null,
+    "Did you find the amplitude ratio or the angular area ratio? Which one requires the extra square?",
+    "Insert the entire squared product (qa)² in the exponential before converting from amplitude to area."
+  ],
+  "screened-potential-example": [
+    "At zero transfer, what power of the screening parameter remains in the denominator?",
+    null,
+    "A larger screening parameter shortens the interaction’s reach. Should the forward amplitude become larger or smaller?"
+  ],
+  "born-error-and-unitarity": [
+    "An approximation can omit terms needed to check conservation at its next order. Which orders are you comparing?",
+    "Does removing the imaginary part of a first-order amplitude remove the squared size of its real part?",
+    null
+  ],
+  "static-approximation-capstone": [
+    null,
+    "Compare the coupling with the gap, then ask whether the two nearby levels can really be treated as separate.",
+    "A coupling in eV needs something to compare it with. How big is it relative to the gap of this pair?"
+  ],
+  "driven-open-capstone": [
+    "What range of values can a transfer probability have? Compare the estimate with the entire starting population.",
+    null,
+    "Clipping changes the number, but does it repair the missing oscillation at longer times? Check the assumption behind the estimate."
+  ],
+  "quantum3-assessment": [
+    "The two hits came from the same collision. What does the stated counting convention call one event?",
+    "The detectors already paired the two hits into coincidences. Would dividing again count the pairing twice?",
+    null
+  ]
+}

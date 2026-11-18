@@ -4,24 +4,27 @@ Learn physics one small idea at a time.
 
 **[Open PhysicsQuest](https://physicsquest.aurorax.chatgpt.site)** — no download needed.
 
-Each lesson explains one idea in plain words and shows one example. Equations explain what their letters and signs mean. Pictures help you see what is happening. Some lessons let you move a slider and see what changes.
+Each lesson starts with one idea and a worked example. When a formula appears, you can look up what its letters and signs mean. Tap a word with a dotted underline to see its meaning.
 
 ## What you can learn
 
-- **1,083 lessons in 23 courses**, from measurements and motion to quantum physics and advanced topics.
-- **209 example pictures** and **43 lessons with interactive models**.
-- Short questions and number practice to check your understanding.
-- Preparation paths to help you learn the basics you need first.
+- Work through 1,083 lessons in 23 courses. Start with measuring a shelf, then explore motion, light, atoms and more.
+- Explore 209 example pictures. In 53 lessons you can change an interactive model. In 21 of those lessons you can play, pause or move through an animation.
+- Try a question in every lesson. Each wrong choice gives you a hint. Try again or open the full answer when you are ready.
+- Practise calculations in 843 short number exercises. Each one offers a hint and a worked answer.
+- Follow a preparation path if you want help with the maths or physics a course uses.
 
-On a wide screen, pictures sit beside the explanation. On a phone, they sit below it. Extra details stay tucked away until you open them.
+## Try three lessons
+
+Measure a shelf, follow a moving belt and carry an arrow around a globe. Explain what happens in your own words, then change one number and make a prediction. You can download your notes. [Open the three-lesson tryout](https://physicsquest.aurorax.chatgpt.site/#try).
 
 ## Your progress
 
-Saving is optional. When you turn it on, your progress and notes stay in your browser. You can export a backup. They do not automatically move between devices.
+Saving is optional. Turn it on to keep your lesson progress and writing in this browser. Export a backup to move them to another device. The three-lesson tryout has its own download button for notes.
 
-## Latest update: 0.17.2
+## Latest update · 0.19.0
 
-Clearer lessons, better picture layouts, and less repetition. Explore appears when it adds a useful model or diagram. **288 automated tests pass.** See the [release notes](docs/RELEASE-0.17.2.md).
+Every wrong choice now gives a hint for the answer you picked. Ten new animations follow the same numbers as the lesson examples. Try watching the light clock or comparing the arrow’s direction before and after its trip around the globe. [Read the release notes](docs/RELEASE-0.19.0.md).
 
 ## Run it on your computer
 

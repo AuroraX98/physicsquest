@@ -7,8 +7,8 @@ export function pointField1D(charge,sourceX,observerX){
  if(dx===0)throw new RangeError('Point-source field is undefined at its source');
  return COULOMB_K*charge*Math.sign(dx)/(dx*dx);
 }
-export function twoSourceField(qLeft,qRight,x){
- finite(qLeft,qRight,x);const left=pointField1D(qLeft,-.5,x),right=pointField1D(qRight,.5,x);
+export function twoSourceField(qLeft,qRight,x,sourceDistance=.5){
+ finite(qLeft,qRight,x);const left=pointField1D(qLeft,-sourceDistance,x),right=pointField1D(qRight,sourceDistance,x);
  return {left,right,total:left+right};
 }
 export function rcState(resistance,capacitance,voltage,time,mode='charge'){

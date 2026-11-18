@@ -1,0 +1,282 @@
+{
+  "charge-conservation": [
+    "What sign does a single added electron carry?",
+    null,
+    "Count incoming charge, even if the object had no overall charge to start with."
+  ],
+  "coulomb-force": [
+    "Does Coulomb force use separation or separation squared?",
+    "Which side of the fraction contains the distance between the charges?",
+    null
+  ],
+  "charge-in-matter": [
+    null,
+    "Did positive charge enter the object, or did existing charges shift within it?",
+    "Draw a boundary around the whole insulator. Did any additional electrons cross it?"
+  ],
+  "field-definition": [
+    "Which charge produces the field, and which charge is only testing it?",
+    null,
+    "Does changing the probe remove the charged source?"
+  ],
+  "point-charge-field": [
+    "Compare the old and new distances before using the inverse-square rule.",
+    "At a point left of a positive source, which way is away from that source?",
+    null
+  ],
+  "field-diagrams": [
+    null,
+    "Does a field arrow tell you the current velocity or the force on a positive probe?",
+    "Changing the sign of a charge changes its acceleration. Does that instantly rotate its velocity?"
+  ],
+  "two-charge-field": [
+    "Sketch each source’s field at the midpoint. Which source is now stronger?",
+    null,
+    "Cancellation at equal distances requires a second equality. Does it still hold?"
+  ],
+  "electric-dipole": [
+    "Use the angle between the dipole and the field in the turning rule. At which angle is sine largest?",
+    "Compare the forces on equal opposite charges in a uniform field before adding them.",
+    null
+  ],
+  "continuous-charge": [
+    null,
+    "The nearest point has moved. Is the original field value still appropriate?",
+    "As every charge element becomes farther away, should its contribution grow?"
+  ],
+  "ring-axis-field": [
+    "Moving across the ring changes which side you occupy. Recheck the direction away from positive charge.",
+    null,
+    "Which components cancel around the ring and which component is shared?"
+  ],
+  "electric-flux": [
+    "Draw the arrow straight out of the patch. How much of the field points along it?",
+    "A negative flux needs a component pointing into the patch. Is there one?",
+    null
+  ],
+  "gauss-law": [
+    null,
+    "Imagine field arrows going in one side and out the other. What does counting both sides test?",
+    "Give entering and leaving field arrows opposite signs before adding."
+  ],
+  "gauss-sphere": [
+    "Inside the sphere, which part of the charge is actually enclosed by the new radius?",
+    null,
+    "An inverse-square point-source rule uses fixed enclosed charge. Is that true here?"
+  ],
+  "gauss-cylinder-sheet": [
+    "Sketch a wide patch of an ideal sheet. Does the field spread like the field of a line?",
+    "Which ideal source gives an inverse-square field, and does this source have that shape?",
+    null
+  ],
+  "potential-difference": [
+    "Keep both minus signs in charge × voltage change.",
+    null,
+    "Check that the small charge in coulombs was used as a multiplier."
+  ],
+  "point-charge-potential": [
+    "With the distances now equal, do these two source charges have opposite and equal sizes?",
+    "Keep each source’s sign when adding its contribution to potential.",
+    null
+  ],
+  "field-from-potential": [
+    null,
+    "Does the electric field point up or down the potential slope?",
+    "The slope divides voltage change by a distance change. What units result?"
+  ],
+  "equipotential-surfaces": [
+    "Do these endpoints have the same voltage on the example’s map?",
+    null,
+    "Compare work done by the field with the change in potential energy of the positive charge."
+  ],
+  "conductor-equilibrium": [
+    "Is the hollow space filled with conducting material, or can a field from the charge exist there?",
+    "What permits charges to rearrange until they stop feeling an internal force?",
+    null
+  ],
+  "capacitance-geometry": [
+    null,
+    "Area appears in the numerator. Where does the changed gap appear?",
+    "Track the increased plate area as well as the increased separation."
+  ],
+  "capacitor-energy-combinations": [
+    "Which energy formula keeps charge fixed, and where does capacitance occur in it?",
+    "Keeping charge fixed does not keep voltage fixed. What does Q/C predict?",
+    null
+  ],
+  "dielectric-response": [
+    "While the source stays attached, does it hold charge fixed or voltage fixed?",
+    null,
+    "Check how inserting the material changes capacitance before using Q = CV."
+  ],
+  "current-definition": [
+    null,
+    "What sign should be attached to negative charge crossing in the chosen positive direction?",
+    "Current is charge per time. What units come from multiplying by seconds?"
+  ],
+  "current-density-drift": [
+    "At the same current density, how much material crosses a larger cut?",
+    "Is current a count over the whole cut or a count per unit area?",
+    null
+  ],
+  "charge-continuity": [
+    "Draw one entering arrow and two outgoing arrows. Which terms belong on the same side of the balance?",
+    null,
+    "If the second outlet carried nothing, where would the excess entering charge go?"
+  ],
+  "ohmic-resistance": [
+    null,
+    "In length ÷ area, how does a smaller denominator affect the result?",
+    "Did just the length change, or did a second change affect resistance too?"
+  ],
+  "resistor-networks": [
+    "Which connections survive when the parallel branch is removed?",
+    null,
+    "The remaining resistors carry the same current. How are their voltage drops combined?"
+  ],
+  "kirchhoff-loops": [
+    "Keep the initially guessed sign when simplifying 11 V minus 13 V.",
+    "Find the net source voltage first, then divide by the total resistance.",
+    null
+  ],
+  "circuit-power": [
+    "A larger voltage changes the current too. Count both changes in power = voltage × current.",
+    null,
+    "For fixed resistance, power contains how many factors of voltage?"
+  ],
+  "rc-charging": [
+    "Which part stores charge and which limits how quickly charge flows?",
+    "When current finally falls to zero, is there any voltage drop across the resistor?",
+    null
+  ],
+  "rc-discharging": [
+    null,
+    "At each equal time interval, a fraction of what is left decays. Must the value reach zero after just two steps?",
+    "After one time constant, use the remaining fraction as the starting point for the next."
+  ],
+  "rc-energy": [
+    "Charging heat in this model depends on voltage squared. Is the new voltage the old one?",
+    null,
+    "Apply the new source voltage to both factors in the energy rule."
+  ],
+  "lorentz-force": [
+    "Is the new charge zero or merely the opposite sign?",
+    "Does multiplying the same force direction by a negative charge change its direction?",
+    null
+  ],
+  "charged-circular-motion": [
+    null,
+    "Compare momentum before and after rather than increasing the magnetic field.",
+    "Which input to radius = mass × speed ÷ magnetic force factor has changed?"
+  ],
+  "wire-loop-torque": [
+    "Use the component set by the angle rather than the maximum possible torque.",
+    null,
+    "Which angle would give zero turning effect? Compare it with the stated angle."
+  ],
+  "biot-savart": [
+    "Check the distance exponent for a short piece of current.",
+    "Even when the angle stays fixed, which other geometric input changes?",
+    null
+  ],
+  "straight-wire-field": [
+    null,
+    "Use the right-hand rule separately for each wire at the specified point.",
+    "Would moving the observation point nearer one wire leave both magnitudes equal?"
+  ],
+  "loop-axis-field": [
+    "Check whether the loop’s centre field grows or shrinks with radius.",
+    null,
+    "Use the centre formula before changing radius. Which radius factors have already cancelled there?"
+  ],
+  "ampere-law": [
+    "The integral around one loop adds contributions. What can that sum tell you about individual points?",
+    "Assign signs according to the two current directions before adding the magnitudes.",
+    null
+  ],
+  "solenoid-field": [
+    null,
+    "At fixed total turns, how does spreading the winding change turns per unit length?",
+    "The solenoid formula uses turns per length. Did the length stay fixed?"
+  ],
+  "toroid-field": [
+    "Reversing a current changes its sign. Did you make its size any bigger?",
+    null,
+    "The current still has its old size. What determines its direction around the ring?"
+  ],
+  "faraday-flux": [
+    "Find final field minus initial field, then include the minus sign from Faraday’s law.",
+    "Is induced voltage set by the sign of the field or by how the flux changes?",
+    null
+  ],
+  "lenz-energy": [
+    "What would help preserve a field that is getting weaker?",
+    null,
+    "Mark the flux at two nearby times. Does steady decrease count as a change?"
+  ],
+  "motional-emf": [
+    null,
+    "A moving bar changes the loop area per second. Which input controls that rate?",
+    "With resistance fixed, compare how induced voltage depends on bar speed."
+  ],
+  "mutual-inductance-transformer": [
+    "Compare the voltage ratio first, then keep input and output powers balanced.",
+    null,
+    "Could both current and voltage keep their old values if the turns ratio changed the voltage?"
+  ],
+  "self-inductance-energy": [
+    "Write current × current in the coil-energy expression.",
+    "Is current in the numerator or denominator of the coil-energy formula?",
+    null
+  ],
+  "rl-switching": [
+    null,
+    "Which side of the time-constant fraction contains the resistance?",
+    "Has the ratio changed even though the inductance has not?"
+  ],
+  "lc-oscillation": [
+    "Where else can the energy of an LC circuit be stored?",
+    null,
+    "Compare the energy expressions for opposite signed charges of the same size."
+  ],
+  "driven-rlc": [
+    "At resonance, which part of the opposition to current is left?",
+    "Write peak current using that remaining opposition before changing resistance.",
+    null
+  ],
+  "displacement-current": [
+    null,
+    "Which term counts moving charges, and which term counts a changing electric field?",
+    "What part of the magnetic rule involves a resistor, and what part involves changing flux?"
+  ],
+  "maxwell-map": [
+    "Equal inward and outward contributions can give a zero local sum. Must every arrow vanish?",
+    null,
+    "Imagine a curved field with as much entering a tiny region as leaving. Does it need to be uniform?"
+  ],
+  "em-wave-speed": [
+    "Keep the vacuum wave speed fixed and compare the product of frequency and wavelength.",
+    "How many wave crests must now pass each second, while traveling at the same speed?",
+    null
+  ],
+  "field-energy-flow": [
+    null,
+    "Intensity depends on the square of the electric field size. Count both factors.",
+    "Would a stronger wave carry away less energy per square metre per second?"
+  ],
+  "em-model-selection": [
+    "The loop closes, but is its magnetic environment steady?",
+    null,
+    "Which matters to Faraday’s law, being round or the rate of change of enclosed flux?"
+  ],
+  "em-capstone": [
+    "What happens to both voltage factors in capacitor energy when voltage is halved?",
+    "Is the capacitor losing or gaining charge during the discharge?",
+    null
+  ],
+  "em-assessment": [
+    null,
+    "Holding the voltage fixed differs from holding current fixed. What happens to I in V/R?",
+    "Which variable besides resistance changes in I²R?"
+  ]
+}

@@ -1,4 +1,4 @@
-import {detailEdits} from './detail-edits.js?v=0.17.2';
+import {detailEdits} from './detail-edits.js?v=0.19.0';
 
 // Compare literal teaching text, never fuzzy-match scientific claims or numbers.
 export const textKey = text => String(text ?? '').normalize('NFC').replace(/\s+/g, ' ').trim().replace(/[.!?]+$/, '');

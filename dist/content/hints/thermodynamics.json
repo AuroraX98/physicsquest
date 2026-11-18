@@ -1,0 +1,282 @@
+{
+  "thermal-contact": [
+    null,
+    "Could a whole cool block store more energy than a tiny hot bead? Look at which way energy first moves when they touch.",
+    "Picture a bead dropped into a huge tank of water. Which body's temperature would change more?"
+  ],
+  "kelvin-differences": [
+    "Try moving both thermometer readings to a scale whose zero means absolute zero.",
+    null,
+    "A ratio compares two readings by division. Which two absolute readings would you divide?"
+  ],
+  "heat-internal-energy": [
+    "Trace the energy from the hand turning the stirrer into the liquid.",
+    "Imagine how your arm feels after stirring thick syrup. Where did the energy for that effort go?",
+    null
+  ],
+  "state-equilibrium": [
+    null,
+    "A gas can absorb heat on the way out and release heat on the way back. Which quantity depends only on its final state?",
+    "Picture a piston moving out and back under different pressures. What does returning to the same state guarantee?"
+  ],
+  "pressure-area": [
+    "Pressure tells you the push on each square centimeter. Sketch how many squares receive that push.",
+    null,
+    "Compare the push on one square centimeter with the total push on the whole piston."
+  ],
+  "moles-particles": [
+    "Imagine two bags with equal numbers of marbles, with heavier marbles in one bag. Would a scale give equal readings?",
+    "Try squeezing one of the samples. Which measurement still counts the molecules inside?",
+    null
+  ],
+  "ideal-gas-law": [
+    null,
+    "At fixed volume, picture warmer particles hitting the same wall harder. Which way would the pressure change?",
+    "A sealed container keeps its particles. What changes about their impacts when the gas warms?"
+  ],
+  "ideal-gas-limits": [
+    "Compare the measurement with the assumptions in the gas model. Which could you check experimentally?",
+    null,
+    "Look at the temperature that went into the formula. When does the formula require an absolute reading?"
+  ],
+  "random-motion": [
+    "Follow just one particle for a second. How far does it travel in that time?",
+    "Add the distances traveled in one second. Can motion to the left cancel any of that distance?",
+    null
+  ],
+  "wall-momentum": [
+    null,
+    "Count all the pushes on the wall in one second. What changes when the gap between hits is shorter?",
+    "Compare the total impulse in a second with one hit and with two identical hits."
+  ],
+  "kinetic-temperature": [
+    "Compare a heavy and a light particle with the same kinetic energy. How would mass affect their speeds?",
+    null,
+    "Picture a single gas at one temperature. Could its particles collide at a range of speeds?"
+  ],
+  "speed-averages": [
+    "Start by squaring the speed of each particle. Does a change of direction change that square?",
+    "Nine is a squared speed. What does the final word in “root mean square” ask you to do?",
+    null
+  ],
+  "internal-versus-bulk": [
+    null,
+    "Imagine riding inside the accelerating box. Did the random motion that a thermometer senses change?",
+    "Separate the motion of the whole box from motion measured by someone inside it."
+  ],
+  "expansion-work": [
+    "Draw the gas force on the piston and the direction the piston moves during compression.",
+    null,
+    "A weight pushes the piston inward through a distance. What does that tell you about energy transfer?"
+  ],
+  "external-reversible": [
+    "Run the rubbing piston backward in your mind. What happens to the energy that warmed its sides?",
+    "A thermometer records the rubbing. Could recording the temperature undo the rubbing?",
+    null
+  ],
+  "heat-capacity": [
+    null,
+    "Picture warming two identical cups separately. Add the heat needed for each cup.",
+    "Try treating the extra mass as a second identical sample. What would warm it?"
+  ],
+  "first-law": [
+    "Draw an arrow showing where the 60 joules go. Is the system giving them away or receiving them?",
+    null,
+    "Insulation blocks heat transfer. Trace the other transfer named in the question."
+  ],
+  "path-state": [
+    "Write the balance as energy gained equals heat in minus work delivered. Hold the left side fixed.",
+    "Use the same heat input on both paths and subtract their different amounts of work. Would the gains match?",
+    null
+  ],
+  "constant-volume": [
+    null,
+    "A rigid wall keeps the volume fixed. Follow the heater wires across that wall.",
+    "Ask what drives energy through a wire connected to a power supply."
+  ],
+  "constant-pressure": [
+    "Trace the heat entering the gas. One portion stays inside and another pushes the piston. How do those portions combine?",
+    null,
+    "The 50 joules count only energy stored. Where did the energy to move the piston come from?"
+  ],
+  "cp-cv-assumptions": [
+    "Compare a single atom with a molecule that can also rotate or vibrate. How might each store energy?",
+    "Changing a thermometer scale leaves a molecule's possible motions unchanged. Which motions can absorb energy?",
+    null
+  ],
+  "isothermal-work": [
+    null,
+    "Draw the gas pushing outward while the piston moves inward. Then use the fixed temperature to balance energy.",
+    "Fixed temperature keeps an ideal gas's internal energy steady. Can two energy transfers balance each other?"
+  ],
+  "adiabatic-change": [
+    "Ask what could take energy away when the wall is insulated and the space ahead is empty.",
+    null,
+    "Picture a gas rushing into empty space. Could you reverse each tiny step by nudging the pressure?"
+  ],
+  "steady-conduction": [
+    "Spread the same temperature drop across a longer distance. Does the temperature change more or less per centimeter?",
+    "Compare a thin and a thick layer of the same insulation between the same temperatures.",
+    null
+  ],
+  "thermal-resistance": [
+    null,
+    "Imagine adding a second layer of insulation to the first. Which way should heat flow change?",
+    "The end temperatures are fixed. Is the total resistance between them also fixed?"
+  ],
+  "empirical-convection": [
+    "Think about a breeze over warm skin. What changed in the air against the surface?",
+    null,
+    "Compare still air with fast-moving air at the same temperature. Would they carry heat away equally well?"
+  ],
+  "radiative-balance": [
+    "Find the radiation coming back from the surroundings. Which body's temperature sets that part?",
+    "Check how the radiation emitted by the object depends on its absolute temperature.",
+    null
+  ],
+  "lumped-gray-limits": [
+    null,
+    "A thermometer at the center and one at the edge give different readings. Which would represent the whole sample?",
+    "Can a final thermometer reading tell you how hot the center and surface each were earlier?"
+  ],
+  "reversible-comparison": [
+    "Imagine heat rushing between objects at very different temperatures. Could you reverse that transfer with a tiny change?",
+    null,
+    "Two paths can have the same endpoints. Which kind of path does the heat-over-temperature calculation assume?"
+  ],
+  "entropy-heat": [
+    "Write the entropy change as heat divided by absolute temperature. Which number is now larger in the denominator?",
+    "Compare 600 divided by each temperature. Does knowing the heat alone give the result?",
+    null
+  ],
+  "entropy-production": [
+    null,
+    "An isolated system must pass two checks. After balancing energy, check the allowed direction of entropy change.",
+    "Compare the units of entropy and energy. Which quantity does the proposed change describe?"
+  ],
+  "system-surroundings": [
+    "Compare the entropy one reservoir loses with what the other gains as their temperatures become nearly equal.",
+    null,
+    "Write a heat-over-temperature term for each reservoir. What else besides heat appears?"
+  ],
+  "engine-energy": [
+    "Draw the energy in and work out as arrows. How could the longer outgoing arrow be supplied?",
+    "After a full cycle, how much extra stored energy does the engine have available to spend?",
+    null
+  ],
+  "carnot-bound": [
+    null,
+    "Work out the largest possible fraction from the two reservoir temperatures before judging the claim.",
+    "Which scale measures both temperatures from absolute zero for the efficiency ratio?"
+  ],
+  "refrigerator-cop": [
+    "Trace heat from the food to the room. Which energy transfer does the refrigerator's performance number count?",
+    null,
+    "Write the units for heat moved and for work supplied. What happens to those units when you divide?"
+  ],
+  "energy-usefulness": [
+    "Imagine warm water cooling all the way to room temperature. What change in the setup limits the engine?",
+    "Compare one joule in a warm cup with one joule in a hot cup. What physical difference matters to the engine?",
+    null
+  ],
+  "micro-macro": [
+    null,
+    "Reading the labels on switches gives information. Would reading them change their positions?",
+    "Count the physical switches before and after learning their labels. What became more precise?"
+  ],
+  "count-arrangements": [
+    "Label the switches A through D. Can choosing A as the one up be distinguished from choosing B?",
+    null,
+    "List only arrangements with one switch up. Which choices would count the same arrangement twice?"
+  ],
+  "boltzmann-entropy": [
+    "Start with the entropy for each count. How do you subtract one logarithm from another?",
+    "Which operation on the two counts corresponds to subtracting their logarithms?",
+    null
+  ],
+  "fluctuations": [
+    null,
+    "A fourfold change applies directly to the variance. What extra operation takes you to standard deviation?",
+    "Imagine repeating a coin experiment with many more flips. Would the spread in the total count stay fixed?"
+  ],
+  "reservoir-model": [
+    "Picture the small system exchanging energy with its surroundings while its average stays steady.",
+    null,
+    "List the possible energy readings first. What would make one particular outcome appear more often?"
+  ],
+  "positive-temperature-domain": [
+    "Look at the denominator when the absolute temperature reaches zero. Is that division defined?",
+    "What temperature scale does the formula require, and what would changing the unit do to its physical meaning?",
+    null
+  ],
+  "boltzmann-weights": [
+    null,
+    "Compare the weight of one state with the total weight. Where does the common multiplier appear?",
+    "Add the normalized weights after shifting the reference. What does the denominator count?"
+  ],
+  "partition-function": [
+    "Give the two upper states separate labels. Which outcomes would count as finding the upper energy?",
+    null,
+    "Imagine tallying upper-energy readings when there are multiple ways to get that reading."
+  ],
+  "mean-energy-capacity": [
+    "Make a list of repeated readings. What happens to the average when the excited reading appears more often?",
+    "List the two possible readings before and after changing their chances. Which part of the list changed?",
+    null
+  ],
+  "phase-latent-heat": [
+    null,
+    "Imagine marking the melted and solid portions in two colors. Which portion used energy to change form?",
+    "Watch ice as it melts. What can added energy change while the thermometer stays steady?"
+  ],
+  "free-energy": [
+    "Write the two terms in the free energy. Could a state with more possible arrangements have an advantage?",
+    null,
+    "Changing the scale on a thermometer leaves the sample unchanged. What other property enters the free energy?"
+  ],
+  "chemical-potential": [
+    "Imagine two regions of very different sizes. Must matching their particle counts stop exchange?",
+    "Imagine moving one particle across the boundary. Which change would tell you whether the move is favored?",
+    null
+  ],
+  "mean-occupation": [
+    null,
+    "Consider several distinct states together. Which restriction applies to this one specified state?",
+    "List the possible whole-number counts for this state. Where can their weighted average fall?"
+  ],
+  "quantum-distribution-domains": [
+    "List possible particle counts in one state. Could their average fall below all of them?",
+    null,
+    "Check which particles the given formula describes. What input caused its output to become unphysical?"
+  ],
+  "classical-quantum-map": [
+    "Compare the size of 1 with 1.1. Would dropping 1 make only a tiny change?",
+    "Try both adding 1 to 1.1 and subtracting 1. Are those close enough to treat alike?",
+    null
+  ],
+  "third-law": [
+    null,
+    "Imagine halving a distance again and again. Does a statement about the limit tell you the last finite step?",
+    "The stated result counts possible lowest-energy states. What does that tell you about the steps a refrigerator can take?"
+  ],
+  "choose-boundary": [
+    "Draw the system boundary around the kettle and follow a bit of steam through it.",
+    null,
+    "Would a scale notice the escaping steam? What else travels with that mass?"
+  ],
+  "combine-thermal": [
+    "Track what passes through the leak. Does it change how a thermometer is calibrated?",
+    "Try balancing energy while counting the gas that leaves. What assumption about the contents needs updating?",
+    null
+  ],
+  "cycle-audit": [
+    null,
+    "Check the energy subtraction, then calculate the best possible efficiency at the two stated temperatures.",
+    "Compute the fraction that becomes work and compare it with the limit set by the reservoirs."
+  ],
+  "thermal-assessment": [
+    "Try a slightly larger heat capacity with the same heater reading. Would the predicted temperature rise shift?",
+    null,
+    "Keep the digits on the display and vary the heat capacity within its uncertainty. What changes?"
+  ]
+}

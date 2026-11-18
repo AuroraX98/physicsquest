@@ -1,0 +1,332 @@
+{
+  "radians": [
+    "One radian uses an arc as long as the radius. How many radius-lengths fit in this arc?",
+    null,
+    "Use the ratio of two lengths. Have you divided the arc length by the radius yet?"
+  ],
+  "trigonometry": [
+    null,
+    "Project the downward arrow onto the horizontal axis. Does its tip move right at all?",
+    "Which sign on the vertical axis means downward in the diagram?"
+  ],
+  "signed-components": [
+    "Check the sign of the horizontal part first. Which side of the origin does it reach?",
+    "Draw just the vertical part from the origin. Which way does a negative y point?",
+    null
+  ],
+  "dot-cross": [
+    "How much of the force points in the direction of the displacement?",
+    null,
+    "Pair x with x and y with y. Which force component is paired with a zero?"
+  ],
+  "derivatives": [
+    "Does x² give the height of the graph or its slope?",
+    "Use the power rule before substituting the requested x.",
+    null
+  ],
+  "power-rule": [
+    null,
+    "When you differentiate x², what factor comes down from the exponent?",
+    "How fast does the constant 8 change as x varies?"
+  ],
+  "product-rule": [
+    "Expand the two brackets first and differentiate each resulting term.",
+    "If x changes, do both factors change or just the first?",
+    null
+  ],
+  "chain-rule": [
+    "After rewriting the square as 25x², which part of the expression still changes with x?",
+    null,
+    "Differentiate the inside 5x as well as the outside square."
+  ],
+  "elementary-derivatives": [
+    null,
+    "Which trigonometric function describes the slope of cosine?",
+    "What factor comes from the inside angle when x changes?"
+  ],
+  "integrals": [
+    "Multiply the units litre/minute by minutes. Which unit cancels?",
+    null,
+    "Make a row for each minute and add the litres from the four rows."
+  ],
+  "antiderivatives": [
+    "Differentiate this proposed answer to see whether it returns to the question’s rate.",
+    "Check the coefficient produced when the exponent comes down during differentiation.",
+    null
+  ],
+  "definite-integrals": [
+    "Do these limits describe no interval, or the original interval traveled backward?",
+    null,
+    "Draw a direction arrow from each lower limit to its upper limit and compare them."
+  ],
+  "substitution": [
+    null,
+    "If x increases by a little, compare the new value of 3x + 1 with the old value.",
+    "Are you finding the value of u, or how much it changes when x changes?"
+  ],
+  "integration-parts": [
+    "Differentiate your proposed v. What is the sign of the resulting cosine?",
+    "Taking an integral must undo a derivative. Which function has a cosine slope?",
+    null
+  ],
+  "partials": [
+    null,
+    "Which input is allowed to move? The partial derivative is being taken along x.",
+    "Separate the function’s value from its rate when only x changes."
+  ],
+  "total-differential": [
+    "Does the y term also contribute while y is changing?",
+    null,
+    "Keep the negative sign on the y rate when adding its contribution."
+  ],
+  "gradient": [
+    null,
+    "Take a small step along positive x and dot it with the gradient. Is that a zero first-order change?",
+    "Walking downhill still changes the height. Which directions are sideways to the gradient?"
+  ],
+  "linearization": [
+    "For a small step, multiply its size by the slope at the starting point before adding it to the height.",
+    "What is the slope of x² at the starting point? Do not assume a slope of one.",
+    null
+  ],
+  "fields": [
+    "Does the map trace one moving parcel through time, or give an arrow at each place at one time?",
+    "What information about the air would a single number at each place omit?",
+    null
+  ],
+  "line-integrals": [
+    "Which part of this upward force points backward along the horizontal path?",
+    null,
+    "In the work rule, which force component points along the displacement?"
+  ],
+  "flux": [
+    null,
+    "Look at the role of area in flux = perpendicular field × area. Does it divide or multiply?",
+    "Put two copies of the original patch next to each other. What contributions should be counted?"
+  ],
+  "divergence": [
+    "Draw arrows on opposite sides of a tiny box. How much enters compared with how much leaves?",
+    "Uniform arrows can point outward on one face. What happens at the opposite face?",
+    null
+  ],
+  "curl": [
+    "Write the z-curl as the x-change of the y component minus the y-change of the x component. Which term has the minus sign?",
+    null,
+    "Compute both derivatives before subtracting. Are they the same signed number?"
+  ],
+  "complex": [
+    null,
+    "For squared size, multiply a complex number by its conjugate. What happens to the imaginary sign?",
+    "Are you giving the length of the arrow or its squared length?"
+  ],
+  "complex-phase": [
+    "Draw both directed imaginary arrows before adding their lengths.",
+    "Check which axis both terms lie on. Is there any real part to add?",
+    null
+  ],
+  "complex-division": [
+    "Multiply your proposed answer by i. Do you recover the numerator?",
+    null,
+    "Try multiplying i by itself. Which sign does that produce?"
+  ],
+  "euler": [
+    "How large a turn is π radians? Compare it with a quarter turn.",
+    "A unit complex factor rotates the number. What does multiplication by a unit-size factor do to its length?",
+    null
+  ],
+  "phasor-derivatives": [
+    null,
+    "Keep the factor i each time you differentiate. What is i squared?",
+    "Two derivatives apply the factor twice in succession. Do successive factors add or multiply?"
+  ],
+  "real-oscillations": [
+    "Expand i(cos θ + i sin θ). What does the product of two i’s contribute?",
+    "After multiplying out, pick the term without an i. Which part changed axes?",
+    null
+  ],
+  "matrices": [
+    "Read the second row separately from the first. Which multiplier does it use for y?",
+    null,
+    "Apply the first row to the first coordinate first. Which coordinate has the factor 2?"
+  ],
+  "matrix-products": [
+    "Can A act on a result before that result has been computed?",
+    null,
+    "Rewrite the expression with parentheses around the operation touching v."
+  ],
+  "linear-systems": [
+    null,
+    "Multiply the two entries on each diagonal. What do you get when you subtract the second product from the first?",
+    "One row is twice the other. What does that tell you about the independent directions?"
+  ],
+  "basis-change": [
+    "Hold a physical arrow steady while turning the axes. Would its horizontal and vertical readings stay fixed?",
+    "What happens to a ruler reading when its reference direction turns? Apply that idea to entries of an operator.",
+    null
+  ],
+  "eigenvectors": [
+    null,
+    "Apply the displayed matrix to the vector and compare its output with the input.",
+    "Check each coordinate of the output. Are both multiplied by the same factor?"
+  ],
+  "characteristic-equation": [
+    "The product of the two diagonal entries is the determinant. Is the question asking for that product?",
+    null,
+    "Try the matrix on the two coordinate directions. Which factor does each direction get?"
+  ],
+  "diagonalization": [
+    null,
+    "Write three applications one after another. Do their scaling factors add or multiply?",
+    "How many times does the mapping act in A cubed?"
+  ],
+  "inner-products": [
+    "Take the complex conjugate of the first factor before multiplying.",
+    "An inner product of a vector with itself gives a real squared length. What sign must it have?",
+    null
+  ],
+  "normalization": [
+    "The squared length and length are different. Which must become one after scaling?",
+    "Does subtracting the same amount from both coordinates keep the vector’s original direction?",
+    null
+  ],
+  "projections": [
+    "The arrow u reads one particular component. Is the question asking for the whole length of v?",
+    null,
+    "Which direction does (0,1) select?"
+  ],
+  "odes": [
+    "The initial value is stated to be unchanged. Which part of the rate rule contains k?",
+    null,
+    "Check the sign in the rate of change before changing k’s size."
+  ],
+  "exponential-decay": [
+    null,
+    "Count complete half-life intervals and halve the amount once per interval.",
+    "Make one mark for every four seconds until you reach twelve. Has each interval been used?"
+  ],
+  "oscillator-ode": [
+    "The sine term’s initial velocity includes a factor of angular frequency. Which operation undoes that multiplication?",
+    "B multiplies a sine in the position equation. What units must its coefficient have?",
+    null
+  ],
+  "driven-ode": [
+    "At the matching frequency, focus on what becomes small in the steady-amplitude denominator.",
+    null,
+    "Keep the drive nonzero while shrinking the damping. Which part of the ratio actually approaches zero?"
+  ],
+  "coupled-odes": [
+    null,
+    "Calculate the first row times (1,−1), keeping both minus signs.",
+    "Compare the sign of the first row’s result with the sign of the input’s first coordinate."
+  ],
+  "fourier": [
+    "Is this ordinary frequency in cycles per second, or angular frequency in radians per second?",
+    null,
+    "Period is time per cycle. Which operation gives cycles per time?"
+  ],
+  "fourier-transform": [
+    "At zero wave number, which area under the widened box enters the transform?",
+    "Check the normalization factor supplied for this particular Fourier transform.",
+    null
+  ],
+  "probability": [
+    "Use area = height × width. What area must a normalized density have?",
+    "A density multiplied by metres should give a unit-free chance. What units does that require?",
+    null
+  ],
+  "toolkit-capstone": [
+    "Compare the starting and ending positions. Is maximum distance from equilibrium the requested change?",
+    null,
+    "Track signed changes around the whole cycle. Which parts of the journey count with opposite signs?"
+  ],
+  "balance-equation": [
+    "At this speed, how many equal 3-metre stretches make the trip?",
+    null,
+    "Subtracting a speed from a length mixes units. Which operation leaves seconds?"
+  ],
+  "chance-fractions": [
+    "Count the counters of the requested color before counting all the counters.",
+    "Do the two colors have equal numbers of counters?",
+    null
+  ],
+  "prep-fractions": [
+    null,
+    "Which number counts the pieces kept, and which counts every piece of the original ribbon?",
+    "Were the two kept pieces already among the five?"
+  ],
+  "prep-decimals": [
+    null,
+    "Label the first two places to the right of the decimal point. Which place holds the only nonzero digit?",
+    "Write one hundredth as a decimal, then count how many of those reach 0.07."
+  ],
+  "prep-negative-numbers": [
+    "On a number line, which way do you step when adding a positive number?",
+    null,
+    "Start below zero before you count the three steps."
+  ],
+  "prep-percent": [
+    "Percent means out of a hundred. How would you write the share as a fraction?",
+    "Half of a whole is how many parts of a hundred? Compare that with the stated percentage.",
+    null
+  ],
+  "prep-brackets": [
+    "Which two numbers are enclosed together by the brackets?",
+    null,
+    "Find both numbers inside the same pair of brackets before using the number outside."
+  ],
+  "prep-powers": [
+    "A power repeats a factor. Which operation joins repeated factors?",
+    "The raised 3 counts how many factors to use. What is the value of each factor?",
+    null
+  ],
+  "prep-square-roots": [
+    null,
+    "Check your proposed number by multiplying it by itself.",
+    "Both signs can produce the same square. Which sign does the √ symbol request?"
+  ],
+  "prep-reciprocals": [
+    null,
+    "The reciprocal times the original number must give one. Test the product using your choice.",
+    "Multiply your chosen number by the starting value. Is the product one?"
+  ],
+  "prep-substitution": [
+    "Keep the multiplication sign that was already in the rule when you replace the letter.",
+    null,
+    "Writing digits next to each other makes a new numeral. What operation did the rule specify?"
+  ],
+  "prep-functions": [
+    "Find the expression to the right of the equals sign. Where does its input appear?",
+    null,
+    "The letter f names the rule. Which letter is the slot for the input?"
+  ],
+  "prep-proportions": [
+    null,
+    "Try x = 3 and then x = 6. Compare the two changes in y.",
+    "If the input changes but its multiplier stays fixed, what happens to their product?"
+  ],
+  "prep-exponentials": [
+    "Try the rule over three rounds starting from 3. Compare the new value with the previous one each time.",
+    null,
+    "Start at 3 so squaring and doubling do different things. Which result is twice the old one?"
+  ],
+  "prep-logarithms": [
+    "Use 2 as the base and count how many factors of 2 give 16.",
+    null,
+    "A logarithm asks for an exponent. Is dividing the target by the base enough to find one?"
+  ],
+  "prep-subscripts": [
+    null,
+    "Would taking a second reading mean multiplying its temperature by 2? Look at the positions of the labels.",
+    "Look at the position of the small digit. Where would a power be written?"
+  ],
+  "prep-sums": [
+    null,
+    "Start from the stated lower limit and visit each integer in order.",
+    "Is the upper limit the only term, or the point where adding ends?"
+  ],
+  "prep-change": [
+    "Which value came last? Put the two readings in their time order before subtracting.",
+    null,
+    "To measure how far a reading changed, should the old reading be counted again or removed?"
+  ]
+}

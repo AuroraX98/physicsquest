@@ -22,6 +22,10 @@
       {
         "term": "Electric and magnetic fields",
         "definition": "Descriptions of electric and magnetic effects at each point."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
@@ -62,6 +66,14 @@
       {
         "term": "Diffraction",
         "definition": "Wave spreading caused by an opening or edge."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -128,6 +140,10 @@
       {
         "term": "sin",
         "definition": "Sine, an angle function used to compare the directions here."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -150,12 +166,16 @@
       {
         "term": "Normal",
         "definition": "A line at right angles to the surface."
+      },
+      {
+        "term": "Refractive index",
+        "definition": "For light at a chosen frequency, its speed in empty space divided by its phase speed in the material."
       }
     ]
   },
   "dispersion-colour": {
-    "idea": "A material can bend different colours by different amounts.",
-    "explanation": "Dispersion means refractive index depends on frequency. A prism separates existing frequencies; it does not make new ones. Use the index for the particular colour being studied.",
+    "idea": "A prism can spread white light into colours because different colours bend by different amounts.",
+    "explanation": "The refractive index tells how much slower light’s wave crests travel in a material than in empty space. When that index depends on colour, the effect is called dispersion. Crossing into the material keeps the light’s frequency, or cycles per second, the same. Its wavelength changes.",
     "example": {
       "title": "One colour in glass",
       "steps": [
@@ -168,6 +188,18 @@
       {
         "term": "Dispersion",
         "definition": "Change of refractive index with frequency."
+      },
+      {
+        "term": "Refractive index",
+        "definition": "For light at a chosen frequency, its speed in empty space divided by its phase speed in the material."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -284,6 +316,10 @@
       {
         "term": "Entrance pupil",
         "definition": "The aperture stop as seen through the optics in front of it."
+      },
+      {
+        "term": "Aperture",
+        "definition": "An opening that lets light or other waves through. Its size can affect brightness and sharpness."
       }
     ]
   },
@@ -350,6 +386,14 @@
       {
         "term": "V/m",
         "definition": "Volts per metre, a unit of electric-field strength."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
@@ -376,6 +420,14 @@
       {
         "term": "cos",
         "definition": "Cosine, an angle function; cos(60°) is ½."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
@@ -394,6 +446,18 @@
       {
         "term": "Circular polarization",
         "definition": "A field whose tip rotates in a circle at a fixed position."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
@@ -416,12 +480,20 @@
       {
         "term": "Polarization",
         "definition": "The pattern traced by the electric-field arrow at one place."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
   "field-not-intensity": {
-    "idea": "For coherent light, add the fields before calculating the intensity.",
-    "explanation": "Coherent beams keep a steady relative phase. Their fields can reinforce or cancel at a point. Bright and dim parts redistribute energy; a bright fringe does not create extra energy.",
+    "idea": "Two beams can make one spot brighter or dimmer when their light waves meet.",
+    "explanation": "A light wave has a changing electric field. If two waves keep a steady timing relationship, they are coherent. At one spot their fields can strengthen or cancel each other. First add the fields, then square the size of the result to find how bright that spot is. Energy spreads differently across the pattern.",
     "example": {
       "title": "Two matching beams",
       "steps": [
@@ -438,6 +510,14 @@
       {
         "term": "Phase",
         "definition": "The stage reached in a repeating cycle."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -460,6 +540,10 @@
       {
         "term": "Optical path length",
         "definition": "A distance weighted by refractive index to count phase change."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -478,6 +562,10 @@
       {
         "term": "Fringe",
         "definition": "A bright or dark stripe produced by interference."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -496,6 +584,14 @@
       {
         "term": "Visibility",
         "definition": "The brightness difference divided by the brightness sum for the brightest and darkest stripes."
+      },
+      {
+        "term": "Phase",
+        "definition": "A wave’s place in a repeating cycle. Two crests arriving together have matching phase."
+      },
+      {
+        "term": "Interference",
+        "definition": "Overlapping waves can make a stronger or weaker signal depending on how their peaks and troughs line up."
       }
     ]
   },
@@ -514,6 +610,10 @@
       {
         "term": "Michelson interferometer",
         "definition": "A device that compares light traveling out and back along two arms."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -532,6 +632,14 @@
       {
         "term": "Phase reversal",
         "definition": "A half-cycle shift that changes the field's sign."
+      },
+      {
+        "term": "Phase",
+        "definition": "A wave’s place in a repeating cycle. Two crests arriving together have matching phase."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -550,6 +658,10 @@
       {
         "term": "Constructive interference",
         "definition": "Reinforcement when waves arrive with matching phase."
+      },
+      {
+        "term": "Phase",
+        "definition": "A wave’s place in a repeating cycle. Two crests arriving together have matching phase."
       }
     ]
   },
@@ -568,6 +680,14 @@
       {
         "term": "Fringe order (k)",
         "definition": "The whole number of wavelength steps in a path difference."
+      },
+      {
+        "term": "Phase",
+        "definition": "A wave’s place in a repeating cycle. Two crests arriving together have matching phase."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -604,6 +724,10 @@
       {
         "term": "Far field",
         "definition": "A region where the wave pattern can be described mainly by observation angle."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -622,6 +746,10 @@
       {
         "term": "Envelope",
         "definition": "The broader pattern that controls the brightness of finer fringes."
+      },
+      {
+        "term": "Interference",
+        "definition": "Overlapping waves can make a stronger or weaker signal depending on how their peaks and troughs line up."
       }
     ]
   },
@@ -644,6 +772,10 @@
       {
         "term": "Order (m)",
         "definition": "The whole-number path difference measured in wavelengths."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -670,12 +802,16 @@
       {
         "term": "Incoherent",
         "definition": "Having no stable relative wave-cycle relationship during the observation."
+      },
+      {
+        "term": "Aperture",
+        "definition": "An opening that lets light or other waves through. Its size can affect brightness and sharpness."
       }
     ]
   },
   "angular-resolution": {
-    "idea": "A larger clear aperture can distinguish smaller angular separations.",
-    "explanation": "Diffraction gives each point source a spread-out pattern. The Rayleigh criterion compares one pattern's bright centre with the other's first dark ring. It is a stated criterion, not a universal limit on all inference.",
+    "idea": "A wider telescope opening can help you see two closely spaced stars as two separate spots.",
+    "explanation": "Even a point of light makes a small bright patch with faint rings around it. The spreading is called diffraction. For a clear circular opening, the Rayleigh rule asks whether one bright centre falls at the other spot’s first dark ring. It gives a useful guide to when the spots can be told apart.",
     "example": {
       "title": "A circular telescope opening",
       "steps": [
@@ -692,6 +828,10 @@
       {
         "term": "Diffraction",
         "definition": "Wave spreading caused by an aperture or edge."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -718,6 +858,14 @@
       {
         "term": "δr",
         "definition": "The stated sideways detail-separation scale."
+      },
+      {
+        "term": "Refractive index",
+        "definition": "For light at a chosen frequency, its speed in empty space divided by its phase speed in the material."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -788,12 +936,24 @@
       {
         "term": "Far field",
         "definition": "The distant region where this angle-based diffraction approximation applies."
+      },
+      {
+        "term": "Diffraction",
+        "definition": "The spreading of a wave when it passes through an opening or around an edge."
+      },
+      {
+        "term": "Aperture",
+        "definition": "An opening that lets light or other waves through. Its size can affect brightness and sharpness."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
   "frequency-filter": {
-    "idea": "An aperture limits which image patterns can pass through an optical system.",
-    "explanation": "Fine image stripes need more repetitions per millimetre, called higher spatial frequencies. An aperture can remove some of these patterns. The cutoff differs for coordinated light waves and independent light contributions, so identify which model applies before calculating.",
+    "idea": "Two wide stripes can stay easy to see in an image while two very narrow stripes blur together. The opening that lets light through helps set that limit.",
+    "explanation": "That opening is the aperture. A fine stripe pattern has more repeats per millimetre, so it has a higher spatial frequency. The aperture can block the light needed to reproduce fine detail. The cutoff formula here is for coherent light, whose waves keep a steady timing relationship.",
     "example": {
       "title": "One ideal pupil",
       "steps": [
@@ -818,6 +978,14 @@
       {
         "term": "NA",
         "definition": "Numerical aperture, describing the lens's collection cone and surrounding material."
+      },
+      {
+        "term": "Aperture",
+        "definition": "An opening that lets light or other waves through. Its size can affect brightness and sharpness."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -836,6 +1004,18 @@
       {
         "term": "Fresnel number",
         "definition": "A dimensionless comparison of aperture size with propagation spreading."
+      },
+      {
+        "term": "Aperture",
+        "definition": "An opening that lets light or other waves through. Its size can affect brightness and sharpness."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -854,6 +1034,14 @@
       {
         "term": "Absorption coefficient (α)",
         "definition": "The constant fractional intensity-loss rate per distance in this model."
+      },
+      {
+        "term": "Irradiance",
+        "definition": "Light power arriving per unit area. For example, 2 watts on each square metre gives 2 W/m²."
+      },
+      {
+        "term": "Exponential",
+        "definition": "A function that changes by the same factor when its input changes by a fixed amount. For example, a signal that halves each second decays exponentially."
       }
     ]
   },
@@ -880,6 +1068,10 @@
       {
         "term": "Effective index",
         "definition": "Empty-space light speed divided by the pattern's forward phase speed."
+      },
+      {
+        "term": "Phase",
+        "definition": "A wave’s place in a repeating cycle. Two crests arriving together have matching phase."
       }
     ]
   },
@@ -898,6 +1090,10 @@
       {
         "term": "Responsivity (R)",
         "definition": "Detector current per watt of received optical power."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -954,6 +1150,10 @@
       {
         "term": "Counting fluctuations",
         "definition": "Random variation in the number of detected events."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
@@ -991,12 +1191,24 @@
       {
         "term": "Rayleigh angle",
         "definition": "A conventional diffraction-based separation scale for two incoherent point images."
+      },
+      {
+        "term": "Aperture",
+        "definition": "An opening that lets light or other waves through. Its size can affect brightness and sharpness."
+      },
+      {
+        "term": "Diffraction",
+        "definition": "The spreading of a wave when it passes through an opening or around an edge."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
   "optics-assessment": {
-    "idea": "Check image position, blur and detected signal as separate parts of one prediction.",
-    "explanation": "Knowing where an image forms does not tell you how much power reaches it. Use the supplied aperture, wavelength and received power for their own calculations, keeping each model's assumptions.",
+    "idea": "A lens can focus an image in the right place and still give you a dim or blurry picture.",
+    "explanation": "Check three things separately. The lens and object distance set the image position. The opening and the spacing of the light waves help set the blur. The light power that reaches the detector sets how much signal you can collect.",
     "example": {
       "title": "One lens and detector",
       "steps": [
@@ -1014,6 +1226,18 @@
       {
         "term": "Rayleigh angle",
         "definition": "A stated diffraction-based separation scale."
+      },
+      {
+        "term": "Aperture",
+        "definition": "An opening that lets light or other waves through. Its size can affect brightness and sharpness."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   }

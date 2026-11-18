@@ -22,6 +22,10 @@
       {
         "term": "Newton",
         "definition": "The force that gives a 1-kilogram mass an acceleration of 1 metre per second squared."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from the starting position to the ending position, including direction."
       }
     ]
   },
@@ -78,6 +82,10 @@
       {
         "term": "√",
         "definition": "The positive number that gives the value inside when multiplied by itself."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -134,6 +142,14 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
+      },
+      {
+        "term": "Proportional",
+        "definition": "Two quantities are proportional when multiplying one by a certain factor multiplies the other by that same factor."
       }
     ]
   },
@@ -164,6 +180,10 @@
       {
         "term": "Critical damping",
         "definition": "The boundary between repeated free swings and non-oscillating free motion in this spring-and-drag model."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -194,6 +214,14 @@
       {
         "term": "watt",
         "definition": "One joule per second."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
+      },
+      {
+        "term": "Proportional",
+        "definition": "Two quantities are proportional when multiplying one by a certain factor multiplies the other by that same factor."
       }
     ]
   },
@@ -246,6 +274,14 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Phase",
+        "definition": "A wave’s place in a repeating cycle. Two crests arriving together have matching phase."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -354,6 +390,10 @@
       {
         "term": "√",
         "definition": "Positive square root: the number that multiplies by itself to give the value inside."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -376,12 +416,16 @@
       {
         "term": "(x₁, x₂)",
         "definition": "The positions of cart 1 and cart 2, measured from rest."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from the starting position to the ending position, including direction."
       }
     ]
   },
   "mode-eigenproblem": {
-    "idea": "A normal mode bends the force pattern back into the same motion pattern.",
-    "explanation": "For a normal mode, the returning forces match the parts' displacement pattern, with opposite direction. Testing this match finds the mode's frequency. A matrix is a table of numbers used to combine the displacements and calculate those forces.",
+    "idea": "Two linked carts can repeat a motion if both accelerate back in the right proportions.",
+    "explanation": "Start by suggesting how far each cart is from rest. Use the forces and each cart’s mass to find its acceleration. If the accelerations oppose the original displacements in matching proportions, that pattern can swing at one frequency. This repeating pattern is called a normal mode.",
     "example": {
       "title": "Testing an equal-cart pattern",
       "steps": [
@@ -402,12 +446,24 @@
       {
         "term": "Normal mode",
         "definition": "A shared motion pattern with one frequency and fixed relative sizes."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from the starting position to the ending position, including direction."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
   "modal-initial-data": {
-    "idea": "Starting positions tell how much of each normal mode is present.",
-    "explanation": "A mode is a shared motion pattern with one frequency. To find its share, measure how much the starting shape points along that pattern. For equal masses and mode directions of length one, this is a dot product: multiply matching coordinates, then add.",
+    "idea": "The starting shape of a set of carts tells how much of each simple swinging pattern it contains.",
+    "explanation": "A normal mode is one shared pattern with one frequency. For equal masses and unit-length mode vectors, multiply each starting displacement by its matching mode entry and add. You also need the starting velocities to predict the full motion.",
     "example": {
       "title": "Splitting a starting displacement",
       "steps": [
@@ -440,6 +496,10 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -470,6 +530,14 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   },
@@ -501,6 +569,10 @@
       {
         "term": "√",
         "definition": "Positive square root: the number that multiplies by itself to give the value inside."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
       }
     ]
   },
@@ -519,6 +591,10 @@
       {
         "term": "hertz",
         "definition": "One cycle per second."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -545,6 +621,10 @@
       {
         "term": "transmitted",
         "definition": "Continuing past the join."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from the starting position to the ending position, including direction."
       }
     ]
   },
@@ -563,6 +643,14 @@
       {
         "term": "amplitude",
         "definition": "Largest displacement from the resting position."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from the starting position to the ending position, including direction."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -585,6 +673,10 @@
       {
         "term": "wavelength",
         "definition": "Distance between repeating points of a travelling wave, such as neighbouring crests."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -607,6 +699,14 @@
       {
         "term": "second mode",
         "definition": "The next pattern, with two opposite arches and a fixed zero at the middle."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from the starting position to the ending position, including direction."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -637,6 +737,18 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Coherent",
+        "definition": "For the waves being compared, their relative timing or phase stays predictable."
+      },
+      {
+        "term": "Phase",
+        "definition": "A wave’s place in a repeating cycle. Two crests arriving together have matching phase."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from the starting position to the ending position, including direction."
       }
     ]
   },
@@ -707,6 +819,10 @@
       {
         "term": "Averaging",
         "definition": "Adding values and dividing by how many values you used; a continuous average uses an integral."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -741,12 +857,16 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
   "bandwidth-duration": {
-    "idea": "A narrower smooth pulse needs a wider spread of wavelengths or frequencies.",
-    "explanation": "A Gaussian pulse has a smooth bell shape. Making it narrower requires more differently sized waves to cancel outside the centre. For a Gaussian with no extra changing phase across it, the width of its squared amplitude and its wave-number spread obey the stated rule.",
+    "idea": "To make a wave that is bunched into a short pulse, combine waves with different spacings.",
+    "explanation": "Their high points line up near the centre and mostly cancel farther away. A tighter bunch needs a wider mix of wave numbers, which describe how quickly the waves repeat across distance. The exact half in this formula applies to the stated bell-shaped pulse with no extra phase variation.",
     "example": {
       "title": "A narrow Gaussian pulse",
       "steps": [
@@ -767,6 +887,10 @@
       {
         "term": "phase",
         "definition": "Place within a repeating cycle."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -797,6 +921,10 @@
       {
         "term": "√",
         "definition": "Positive square root."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
       }
     ]
   },
@@ -853,6 +981,10 @@
       {
         "term": "hertz",
         "definition": "One cycle per second."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -905,6 +1037,18 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Angular frequency",
+        "definition": "How quickly a cycle advances, measured in radians per second. One whole turn is 2π radians."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
+      },
+      {
+        "term": "Proportional",
+        "definition": "Two quantities are proportional when multiplying one by a certain factor multiplies the other by that same factor."
       }
     ]
   },
@@ -935,6 +1079,14 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Phase",
+        "definition": "A wave’s place in a repeating cycle. Two crests arriving together have matching phase."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -985,6 +1137,18 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -1031,6 +1195,10 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -1091,12 +1259,20 @@
       {
         "term": "volt per metre",
         "definition": "A unit of electric field."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
   "polarizer-projection": {
-    "idea": "A polarizer passes the part of a light wave aligned with its allowed direction.",
-    "explanation": "For light already polarized along a line, an ideal polarizer keeps the electric-field component along its transmission axis. Intensity depends on the square of that component, so turning the polarizer changes transmitted intensity. Real devices also have losses beyond this ideal rule.",
+    "idea": "Turning a polarizer can change how much light gets through it.",
+    "explanation": "A polarizer lets through one direction of a light wave’s electric field. For light already vibrating along one line, line it up with the filter to let the most through. Turn the filter a quarter turn and an ideal filter blocks it. At other angles, square the size of the field that gets through to predict the intensity.",
     "example": {
       "title": "A polarizer turned sixty degrees",
       "steps": [
@@ -1125,12 +1301,16 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
   "wavefront-refraction": {
-    "idea": "A wave changes direction at a boundary when its speed changes.",
-    "explanation": "The boundary must join the wave patterns with matching timing. This keeps the frequency unchanged while wavelength and direction can change. Snell's law links the two angles, measured from the normal: a line perpendicular to the surface. The rule here assumes transparent uniform materials.",
+    "idea": "A wave that enters a new material at an angle can bend when its speed changes.",
+    "explanation": "For light entering glass straight along the normal, the line at right angles to the surface, the direction stays the same. At a slant, one part of a wavefront reaches the new material first and the front can turn. At a steady boundary, the frequency stays fixed while the wavelength changes.",
     "example": {
       "title": "Light entering glass",
       "steps": [
@@ -1151,6 +1331,18 @@
       {
         "term": "sin",
         "definition": "Sine: a right-triangle ratio, opposite side divided by hypotenuse."
+      },
+      {
+        "term": "Refractive index",
+        "definition": "For light at a chosen frequency, its speed in empty space divided by its phase speed in the material."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -1181,6 +1373,10 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Interference",
+        "definition": "Overlapping waves can make a stronger or weaker signal depending on how their peaks and troughs line up."
       }
     ]
   },
@@ -1211,6 +1407,14 @@
       {
         "term": "Far field",
         "definition": "A distant-screen situation in which rays from different parts of the slit can be treated as nearly parallel at each viewing direction."
+      },
+      {
+        "term": "Diffraction",
+        "definition": "The spreading of a wave when it passes through an opening or around an edge."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
@@ -1237,6 +1441,14 @@
       {
         "term": "≈",
         "definition": "Approximately equal to; real instruments can perform worse."
+      },
+      {
+        "term": "Diffraction",
+        "definition": "The spreading of a wave when it passes through an opening or around an edge."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -1267,6 +1479,18 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Displacement",
+        "definition": "The change from the starting position to the ending position, including direction."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   },
@@ -1297,6 +1521,14 @@
       {
         "term": "Natural frequency",
         "definition": "The frequency of the chosen free-standing pattern without damping or forcing."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
@@ -1331,6 +1563,10 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   }

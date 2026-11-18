@@ -1,0 +1,202 @@
+{
+  "events-frames": [
+    null,
+    "Trace the light backward from each camera. Were both trips equally long?",
+    "An event has one place and one time. Were both flashes at one place?"
+  ],
+  "synchronize": [
+    "Compare the old and new midpoint between the departure and return clock readings.",
+    null,
+    "Does the full extra time belong to just one leg of this immediate round trip?"
+  ],
+  "light-speed": [
+    "Test ordinary speed addition against the vacuum light-speed rule for inertial observers.",
+    "Changing which way a lamp moves changes some measurements. Which speed do inertial observers assign to vacuum light?",
+    null
+  ],
+  "galilean-limit": [
+    null,
+    "Could a different sign alone make the measured light speed agree for both forward and backward rays?",
+    "Relate clock readings as well as distance readings between the two frames."
+  ],
+  "proper-time": [
+    "Find which clock travels between the two events. Should its reading be obtained by multiplying or dividing the lab time by γ?",
+    null,
+    "Were both events at one place in the laboratory? Identify the clock measuring proper time."
+  ],
+  "light-clock": [
+    "Draw both the rest-frame and lab light paths with the new mirror spacing.",
+    "What quantity sets γ? Did doubling the spacing change that quantity?",
+    null
+  ],
+  "length-contraction": [
+    null,
+    "Where is the front of the object by the time you record the back?",
+    "Does a sharp image guarantee that the endpoint events happened at the same lab time?"
+  ],
+  "simultaneity": [
+    "Was the spatial separation removed, or was only the direction of the frame velocity reversed?",
+    null,
+    "Find the term containing one factor of frame velocity. Which sign changes when v reverses?"
+  ],
+  "gamma-domain": [
+    "The sign identifies direction. Which part of the speed, its sign or size, is limited for an ordinary moving frame?",
+    "What transformation do you get between two frames with no relative motion?",
+    null
+  ],
+  "boost-event": [
+    null,
+    "The object is the origin of S′. How would a ruler attached to S′ label that location?",
+    "An origin stays at one position over many different clock readings. Which coordinate describes position?"
+  ],
+  "inverse-boost": [
+    "Compare the value of squared speed for motion toward the left and toward the right.",
+    null,
+    "Is the factor γ determined by a particular clock reading or by relative speed?"
+  ],
+  "velocity-addition": [
+    "Keep the denominator in the relativistic velocity-addition rule as well as the numerator.",
+    "Check whether the light was emitted forward or backward, then use the full transformation.",
+    null
+  ],
+  "spacetime-diagram": [
+    null,
+    "Did stretching a drawing change the measured times of the actual events?",
+    "Compare the graph’s scale labels with the numbers they represent."
+  ],
+  "interval": [
+    "Check the sign between time and space terms in the interval used in this lesson.",
+    null,
+    "Try changing frames for a moving clock. Would its time and space separations each be fixed?"
+  ],
+  "separation-types": [
+    "Does making a frame move closer to light speed change the sign of the interval?",
+    "A change of units rescales numbers. Could that turn a possible light signal into an impossible one?",
+    null
+  ],
+  "causal-order": [
+    null,
+    "Compare events joined by a possible signal with two spacelike-separated events.",
+    "Can a change of observer make a signal arrive before it leaves, if that signal travels within the light cone?"
+  ],
+  "piecewise-proper-time": [
+    "Does reversing direction change the ratio of speed to light speed in magnitude?",
+    null,
+    "Does a clock run backward when a traveler turns and goes another way?"
+  ],
+  "twin-comparison": [
+    "Would an ideal clock on the same complete path give the same comparison?",
+    "Look at the two paths, including who turns around. Do you need an absolute frame to tell the paths apart?",
+    null
+  ],
+  "relativistic-doppler": [
+    null,
+    "During approach, do successive crests have farther or less far to go before meeting the detector?",
+    "The Doppler factor uses both wavefront arrival and clock effects. Is γ alone that factor?"
+  ],
+  "local-inertial": [
+    "Frame acceleration can change size without changing its direction. Check what is held fixed.",
+    null,
+    "Write proper acceleration = γ³ × lab acceleration and solve for the quantity requested."
+  ],
+  "relativistic-momentum": [
+    "Write the mass as well as the speed in p = γmv. Which factor changed?",
+    "Does γ depend on mass or speed? Count the changing mass factors.",
+    null
+  ],
+  "rest-kinetic-energy": [
+    null,
+    "At rest, what energy does a nonzero mass still carry?",
+    "Separate the energy of motion from the energy associated with mass."
+  ],
+  "energy-momentum-invariant": [
+    "Check which sign in the energy–momentum relation leaves rest energy squared.",
+    null,
+    "Does the relation involve a difference of the quantities or of their squares?"
+  ],
+  "photon-momentum": [
+    "A photon has no rest mass. Does a beam of light still transfer momentum to a surface?",
+    "What happens to E = hf when f changes, and how is photon momentum linked to E?",
+    null
+  ],
+  "four-momentum": [
+    null,
+    "Turning light around changes its momentum arrow. Does it turn a positive frequency negative?",
+    "Try two identical head-on photons. Are their energies being added as arrows or as amounts?"
+  ],
+  "com-frame": [
+    "Check whether two equal momentum arrows pointing in the same direction already add to zero.",
+    null,
+    "What speeds can an ordinary inertial frame have relative to the laboratory?"
+  ],
+  "inelastic-mass": [
+    "Did the remaining object keep the energy carried away by the photons?",
+    "What determines the remaining mass once both the incoming energy and outgoing radiation are counted?",
+    null
+  ],
+  "threshold-energy": [
+    null,
+    "Draw the incoming and outgoing momentum arrows in addition to the energy totals.",
+    "Can photons of different frequencies have different energies? Which conservation test still needs doing?"
+  ],
+  "charge-current-frames": [
+    "Current density includes direction. Which way would the charge go past a ruler attached to the moving observer?",
+    null,
+    "Changing your viewpoint changes which way charges move past you. Does it change the charge on each particle?"
+  ],
+  "field-mixing": [
+    "Which part of the field transformation is already present before changing the sign of the boost?",
+    "Look for factors of signed velocity in each transformed component, rather than reversing every arrow.",
+    null
+  ],
+  "four-vectors": [
+    null,
+    "Check what connects the readings when the observer is changed. Is counting entries enough?",
+    "Compare the meaning of an unchanged physical vector with the numbers used to describe it."
+  ],
+  "covariant-laws": [
+    "Do conservation laws apply only to the laboratory, or can another inertial observer perform a before-and-after check?",
+    null,
+    "Must both observers agree on the numbers, or can each find that their own before and after totals agree?"
+  ],
+  "equivalence": [
+    "Which force keeps the spacecraft’s orbit turning around Earth?",
+    "Imagine the astronaut and spacecraft falling side by side. What would a scale between them read?",
+    null
+  ],
+  "weak-gravity-clocks": [
+    null,
+    "Compare the labels assigned to the higher and lower clocks before and after swapping them.",
+    "Did any clock start moving in the changed setup, or did the sign of a height difference change?"
+  ],
+  "geodesics": [
+    "Ask how gravity acts on a freely falling object even when it feels no push from a surface.",
+    null,
+    "Compare a line drawn on a map with what a small accelerometer measures on board."
+  ],
+  "gravity-limits": [
+    "Could an accelerating rocket pass through a region with no tidal gravity?",
+    "Compare a small laboratory in free fall with predictions across a wide range of heights.",
+    null
+  ],
+  "frame-event-capstone": [
+    null,
+    "Does the traveler’s own clock visit the return signal’s arrival at the starting point?",
+    "Which two events mark the actual start and end of the traveler’s journey?"
+  ],
+  "clock-signal-capstone": [
+    "Trace the light trip separately from the slower outward trip. Do both speeds change?",
+    null,
+    "The outward distance stayed fixed. Which input to distance ÷ spacecraft speed changed?"
+  ],
+  "collision-capstone": [
+    "Compare the initial total energy with the proposed rest energy, then do a separate momentum check.",
+    "Can an object at rest carry a nonzero total momentum?",
+    null
+  ],
+  "relativity-next-tools": [
+    null,
+    "What assumptions about gravity and height are needed for this short formula?",
+    "Distinguish tiny local measurements from comparing far-apart clocks in a strong field."
+  ]
+}

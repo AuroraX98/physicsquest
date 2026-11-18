@@ -1,0 +1,362 @@
+{
+  "photon-energy-threshold": [
+    "Does brighter light give each photon more energy, or send more photons each second?",
+    null,
+    "The frequency was already high enough to free an electron. Which condition for escape has changed?"
+  ],
+  "photon-momentum-scattering": [
+    "That change would use the largest possible scattering angle. What is the cosine at 60°?",
+    "Multiply the Compton scale by the angle factor. Is that factor one for this angle?",
+    null
+  ],
+  "matter-wavelength": [
+    null,
+    "How does momentum grow with energy when kinetic energy contains momentum squared?",
+    "Compare a slow particle with a faster one of the same mass. Which has the more closely spaced wave crests?"
+  ],
+  "single-event-interference": [
+    "Imagine repeating 100 coin tosses several times. Would every batch have exactly the same count?",
+    null,
+    "A single batch can vary. What quantity becomes more predictable across many batches?"
+  ],
+  "complex-amplitudes": [
+    null,
+    "The question asks for a real size squared. Have you still got an imaginary part in your answer?",
+    "Square the sizes of the real and imaginary parts separately. Can either squared size erase the other?"
+  ],
+  "born-discrete": [
+    "Can a chance fall below zero? Take the size of the coefficient before squaring.",
+    "Check whether you have squared the coefficient’s size or only taken its size.",
+    null
+  ],
+  "continuous-density": [
+    null,
+    "The given 4 is measured per metre. What length of interval should it apply to?",
+    "The interval width tells you how much space you cover. What density fills that space?"
+  ],
+  "global-relative-phase": [
+    "Sketch the two contributions as arrows at right angles. Do they point the same way?",
+    "For total cancellation the two arrows would need to point opposite ways. What angle separates them here?",
+    null
+  ],
+  "normalize-one-d": [
+    "The total chance depends on amplitude squared times length. Which of those quantities did you scale?",
+    null,
+    "If the region gets wider and the height grows too, what happens to the total area under the density?"
+  ],
+  "interval-probability": [
+    "Compare equal distances from opposite walls. Does the squared wave height change when you flip the well?",
+    null,
+    "Compare a quarter near the wall with one near the centre. Does this density have the same height everywhere?"
+  ],
+  "gaussian-state": [
+    "A wider bell curve still has to enclose the same total area. Could it also get taller?",
+    "If its width doubles while its peak stays fixed, what would happen to the area?",
+    null
+  ],
+  "wavefunction-inner-product": [
+    "Swapping the two states takes the complex conjugate. Which part of a complex number changes sign?",
+    null,
+    "Is the question asking for a reversed overlap or for the probability made by squaring its size?"
+  ],
+  "basis-coefficients": [
+    "After discarding one result, the remaining weights no longer add to one. What should you divide each by?",
+    null,
+    "You found the total weight kept. What fraction of that total belongs to the first component?"
+  ],
+  "two-state-interference": [
+    "The interference term may vanish. What do the two separate wave patterns still contribute?",
+    null,
+    "Does removing the interference term give any reason for the right half to become empty?"
+  ],
+  "coherent-versus-mixture": [
+    "Could a random mixture give the same counts in this one measurement? Think about a second measurement setting.",
+    null,
+    "Adding to one checks total chance. Does it test whether two amplitudes have a steady relative phase?"
+  ],
+  "projective-update": [
+    "Use the state just after the recorded result. Is that the same preparation as before the first measurement?",
+    null,
+    "What intervening change would turn this freshly measured state into the opposite state?"
+  ],
+  "schrodinger-one-d": [
+    "In the motion rule, does the potential multiply the wave or divide it?",
+    null,
+    "Check what comes out of the motion rule. Does it describe a change with time or a chance of detection?"
+  ],
+  "hamiltonian-action": [
+    "Test the ratio at more than one position. What must be true for a single energy to describe the whole wave?",
+    "Try asking what a smooth curve’s second derivative looks like. Must it be a constant times that same curve?",
+    null
+  ],
+  "separate-time": [
+    null,
+    "Take the size squared of a number whose angle keeps turning. What information disappears?",
+    "Can an energy state pick up a changing phase without changing its density?"
+  ],
+  "evolve-superposition": [
+    "Subtract the shifted energies. What happened to the gap that controls their timing difference?",
+    null,
+    "Check the units of the requested quantity. Does shifting an energy turn a measurement chance into energy?"
+  ],
+  "probability-current": [
+    "At the left boundary, a negative current points out of the interval. Which way does positive current point at the right boundary?",
+    "Draw an arrow at each end. Are these two flows opposed as gains and losses, or do they both remove probability?",
+    null
+  ],
+  "position-momentum-actions": [
+    null,
+    "Look at how the momentum rule acts on a wave with the opposite wave number. Does it involve k or its square?",
+    "Which operator acted on the wave? Changing k cannot change what quantity that operator measures."
+  ],
+  "operator-domains": [
+    "A check on one pair concerns just those two functions. What other allowed inputs would a proof need to cover?",
+    null,
+    "Try a real function that fails a wall condition. Does being real make the boundary rule disappear?"
+  ],
+  "expectation-variance": [
+    null,
+    "Measure the distance from each possible energy to the mean. Did you use that distance or the mean itself?",
+    "Weight each result by its chance before adding. Would two different possible results have zero spread?"
+  ],
+  "commutator-action": [
+    "Write the two products in each difference. What changes when you reverse the subtraction?",
+    "Try two operations whose order matters. Would swapping the names make the difference disappear?",
+    null
+  ],
+  "ehrenfest-motion": [
+    null,
+    "For a force proportional to position, compare averaging kx with multiplying the average position by k.",
+    "Try two equally likely positions on either side of the mean. Must a measurement return the mean for the averaging rule to work?"
+  ],
+  "position-momentum-spread": [
+    "Which measurement tells you how momentum values are spread out? Do the position bins contain those readings?",
+    null,
+    "A balanced set can average to zero even when its values are far apart. How would you find its spread?"
+  ],
+  "gaussian-momentum": [
+    null,
+    "A narrower wave in position needs more different momentum waves to build it. Which way should the momentum width change?",
+    "Could a single, exactly known momentum build a narrow bump at one place?"
+  ],
+  "robertson-bound": [
+    "Imagine being told a length is at least zero. Which positive lengths would that instruction rule out?",
+    "The zero is a lower limit on a product. What does that limit tell you about the actual spread of either state?",
+    null
+  ],
+  "uncertainty-interpretation": [
+    null,
+    "Distinguish the width of repeated results for the prepared state from the smallest detail the detector can resolve.",
+    "Which quantities in this relation describe a spread? Where would an energy balance enter the detector comparison?"
+  ],
+  "spatial-curvature": [
+    null,
+    "Work out κ times the distance actually travelled before doubling the exponent for density.",
+    "A negative exponent can make a positive ratio small. Is the exponent itself the requested ratio?"
+  ],
+  "boundary-matching": [
+    "Can two wave values have the same size but opposite signs? Would matching their sizes settle that difference?",
+    "Check the slope condition on both sides of an ordinary finite step. What sort of boundary would allow a different rule?",
+    null
+  ],
+  "parity-bound-states": [
+    null,
+    "Take the size squared before comparing the two sides. Can a density carry a minus sign?",
+    "An odd wave must vanish at the centre. Must its value vanish at every distance from the centre too?"
+  ],
+  "shooting-check": [
+    "You changed the calculation step, not the physical well. Which source of uncertainty did that test probe?",
+    null,
+    "A bracket narrows a root of the computed curve. How accurately was that curve itself calculated?"
+  ],
+  "infinite-well-spectrum": [
+    "The energy rule contains the level number squared. Compare the two squared numbers.",
+    null,
+    "How many half-waves fit across the well in each state? Would they both bend equally sharply?"
+  ],
+  "well-normalization-probability": [
+    "Is a quarter of the width also a quarter of the area under a curve that vanishes at the wall?",
+    "Sketch the central half and the edge quarter. Which region contains the high part of the ground-state curve?",
+    null
+  ],
+  "well-means-spreads": [
+    null,
+    "The typical momentum size grows with the level number. What happens to that growth factor when you square the momentum?",
+    "Opposite momenta can cancel in a mean. What happens to their signs before you average their squares?"
+  ],
+  "well-superposition-time": [
+    "Check how much relative phase builds up over τ. Does that bring the original pattern back or interchange the two halves?",
+    null,
+    "Look at the state one full repeating interval later. What would have to cancel across the entire left half?"
+  ],
+  "periodic-ring": [
+    "Does one full phase turn around the ring correspond to zero momentum or a moving wave?",
+    "A negative turn reverses the current. Does reversing direction also remove kinetic energy?",
+    null
+  ],
+  "finite-well-regions": [
+    null,
+    "Find the difference V₀ − E as the bound energy rises. The decay length contains its square root in the denominator.",
+    "Does the tail length depend only on the width of the well, or also on how close the energy is to the top?"
+  ],
+  "finite-well-matching": [
+    "Zoom in on the tangent curve at π/2. Does it cross the axis or break into two pieces?",
+    null,
+    "Making an interval wider can include more breaks. What must hold everywhere between its endpoints?"
+  ],
+  "finite-well-roots": [
+    "Check the allowed range of z before rounding. On which side of the bound-state limit is this value?",
+    "More digits describe the solver’s output. Which physical condition must the number also pass?",
+    null
+  ],
+  "finite-well-tail-probability": [
+    null,
+    "Reflect the probability density about the centre. What area accompanies the tail on the right?",
+    "A normalization factor rescales a whole wave. Can multiplying by one number turn an even shape into an odd one?"
+  ],
+  "flux-coefficients": [
+    "First decide whether 0.60 is the size of a wave or a fraction of the incoming flow. Which one requires a square?",
+    null,
+    "The left and right wave numbers match. Where would a factor of two come from in the flow ratio?"
+  ],
+  "step-above": [
+    "Draw the potential on both sides after the height is removed. Is there still a boundary that can reflect the wave?",
+    "Splitting a beam equally needs a physical cause. What change would the incoming wave encounter here?",
+    null
+  ],
+  "step-below": [
+    null,
+    "A tail can have nonzero height without carrying a stream forward. What does its phase do as you go deeper?",
+    "Density measures how much is present. Which additional quantity tells whether it is flowing?"
+  ],
+  "barrier-below": [
+    "Shrink the width, holding height fixed. Over how much distance can the barrier hinder the wave in that limit?",
+    null,
+    "What range is allowed for a transmission probability when there is no gain or loss?"
+  ],
+  "barrier-above": [
+    "Check both numerator and denominator near the threshold. Does inserting zero tell you how their ratio approaches the boundary?",
+    "A mathematical expression can need a limit even though the physical probability stays bounded. What happens just to either side?",
+    null
+  ],
+  "scattering-packets": [
+    null,
+    "As the packet reaches the barrier, which outgoing part does the letter T label?",
+    "Sketch one incident packet splitting into two. What total probability budget do the two pieces share?"
+  ],
+  "oscillator-scales": [
+    "With frequency fixed, look for mass under the square root. Is it in the numerator or the denominator?",
+    null,
+    "Which term in the oscillator’s length scale contains mass even if the frequency never changes?"
+  ],
+  "oscillator-ground": [
+    "Check where frequency appears in the ground-state energy, above or below a fraction bar.",
+    "The ground state is the lowest level. Does changing the level spacing leave that lowest energy fixed?",
+    null
+  ],
+  "oscillator-excited": [
+    null,
+    "Reflect the wave, then square its size. Can the sign of a wave survive that step?",
+    "Where is the node of this first excited wave? Is the point in the question at that node?"
+  ],
+  "oscillator-ladders": [
+    "Is there a rung below the lowest allowed oscillator level? Examine the factor multiplying the proposed new state.",
+    null,
+    "Insert the lowest level number into the lowering factor. Does the result still have a state of size one?"
+  ],
+  "oscillator-observables": [
+    "A mean summarizes many trials. Which energies could this particular measurement actually display?",
+    "Real coefficients still give probabilities. Do they remove either allowed energy from the state?",
+    null
+  ],
+  "momentum-representation": [
+    null,
+    "Draw pairs of momenta equally far to either side of p₀. Around which value do their offsets cancel?",
+    "Check the units. Is a density height measured in the same units as momentum?"
+  ],
+  "free-gaussian-evolution": [
+    "Imagine a dot cloud spreading to the left and right equally. What happens to its centre?",
+    null,
+    "Can the total area under a curve stay fixed while the curve widens and its peak falls?"
+  ],
+  "classical-correspondence": [
+    "Look for the first nonzero correction in the small-τ expansion. Which power of τ comes first?",
+    "Before substituting, check the size of τ². How large could half of that small number be?",
+    null
+  ],
+  "spherical-coordinate-bridge": [
+    null,
+    "The angular patch widens in two directions as radius grows. Which two lengths should scale with radius?",
+    "Keep the angles fixed and picture the same patch farther from the centre. Does its physical area stay fixed?"
+  ],
+  "three-d-probability": [
+    "The chance follows the volume of a smaller ball. Which power of its radius gives that volume?",
+    null,
+    "Radius squared describes an area. How many spatial directions does this probability fill?"
+  ],
+  "orbital-lz": [
+    "This is one signed component of angular momentum. Which formula uses m directly rather than an angular-momentum square?",
+    "What would zero angular momentum along z require of the signed number m?",
+    null
+  ],
+  "orbital-joint-states": [
+    null,
+    "Compare the size of m with ℓ. Can this projection exceed that limit?",
+    "Write the allowed values as whole steps starting at −ℓ. Does this number land on one?"
+  ],
+  "central-radial-equation": [
+    "Check what the angular integral of this Y already equals. Would another sphere-area factor count it twice?",
+    null,
+    "Radius measures distance from the centre. Which of these proposed integration ranges includes nonexistent radial distances?"
+  ],
+  "radial-boundaries": [
+    "The regular radial wave R starts as r to the power ℓ. What extra factor makes u from R?",
+    "Near the centre, should the regular solution stay well behaved or blow up?",
+    null
+  ],
+  "hydrogen-reduced-mass": [
+    null,
+    "Write the inverse reduced mass as the sum of the two inverse masses. How large can its reciprocal become?",
+    "As the nucleus gets very heavy, which inverse-mass term still remains?"
+  ],
+  "hydrogen-ground": [
+    "The radial density includes shell area and the squared wave amplitude. Have you substituted the radius in both factors?",
+    null,
+    "Normalization applies to the area under the whole density. What determines the height at just one radius?"
+  ],
+  "hydrogen-spectrum": [
+    "Test the upper limit for ℓ at the specified n before checking m.",
+    "Compare the absolute size of the proposed m with its ℓ.",
+    null
+  ],
+  "hydrogen-nodes": [
+    null,
+    "The angular wave amplitude follows a cosine. Does the question ask for that amplitude or for the density?",
+    "How many times should you square the angular-amplitude ratio to get the density ratio?"
+  ],
+  "hydrogen-transition-energy": [
+    "Distinguish the change in the atom’s energy from the energy carried away by the photon.",
+    null,
+    "Use the two specified levels. Is this the gap between them or the energy scale for a different process?"
+  ],
+  "quantum1-model-choice": [
+    "Convert wave amplitude to probability flow on each side. Besides the size squared, what motion factor enters?",
+    "A larger wave height can accompany slower flow. Could the same incoming energy still balance?",
+    null
+  ],
+  "quantum1-bound-capstone": [
+    null,
+    "Track each energy component over a quarter period. Does its arrow turn, change length, or do both?",
+    "Could an energy component disappear just because its phase arrow has turned?"
+  ],
+  "quantum1-scattering-capstone": [
+    "What happens to the wave number on the far side as the incoming energy barely clears the step?",
+    null,
+    "In this lossless problem, what total must the reflected and transmitted fractions share?"
+  ],
+  "quantum1-assessment": [
+    "Try measuring angular momentum along two different directions. Do the two operations have interchangeable order?",
+    "The sign gives a direction along z. What information does that sign supply about a measurement along x or y?",
+    null
+  ]
+}

@@ -36,6 +36,10 @@
       {
         "term": "Kelvin (K)",
         "definition": "The temperature unit measured from absolute zero."
+      },
+      {
+        "term": "Kelvin",
+        "definition": "A unit of absolute temperature. Zero kelvin marks absolute zero. A change of one kelvin is the same size as a change of one degree Celsius."
       }
     ]
   },
@@ -98,6 +102,10 @@
       {
         "term": "Pascal (Pa)",
         "definition": "One newton of force per square metre."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
@@ -125,8 +133,9 @@
     "example": {
       "title": "One mole in a container",
       "steps": [
-        "Put 1 mol of ideal gas at 300 K in 0.025 m³.",
-        "Using R ≈ 8.31446 J/(mol K), its pressure is about 99774 Pa."
+        "Put 1 mole of ideal gas at 300 kelvin in a container of volume 0.025 cubic metres.",
+        "Multiply amount × gas constant × temperature: 1 × 8.31446 × 300 = 2,494.338 joules.",
+        "Divide by volume: 2,494.338 ÷ 0.025 ≈ 99,774 pascals. A pascal is a unit of pressure."
       ]
     },
     "equation": "pV = nRT",
@@ -138,6 +147,10 @@
       {
         "term": "Absolute pressure",
         "definition": "Pressure measured relative to a vacuum."
+      },
+      {
+        "term": "Kelvin",
+        "definition": "A unit of absolute temperature. Zero kelvin marks absolute zero. A change of one kelvin is the same size as a change of one degree Celsius."
       }
     ]
   },
@@ -156,6 +169,10 @@
       {
         "term": "Z",
         "definition": "The measured pressure-volume product divided by its ideal-gas prediction."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -200,6 +217,10 @@
       {
         "term": "Impulse",
         "definition": "Force added over the time it acts; it equals a momentum change."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -240,6 +261,10 @@
       {
         "term": "Root-mean-square",
         "definition": "The square root of the average of squared values."
+      },
+      {
+        "term": "Square root",
+        "definition": "A square root answers “which number times itself gives this value?” The √ sign picks the zero or positive answer. For example, √9 = 3."
       }
     ]
   },
@@ -406,6 +431,10 @@
       {
         "term": "Molar heat capacity",
         "definition": "Heat capacity per mole for a stated process."
+      },
+      {
+        "term": "Heat capacity",
+        "definition": "The energy needed for a temperature rise of one kelvin under the stated conditions, with no change of phase."
       }
     ]
   },
@@ -432,6 +461,10 @@
       {
         "term": "ln",
         "definition": "Natural logarithm, a calculator function that turns multiplication into addition; ln(2) is about 0.693."
+      },
+      {
+        "term": "Logarithm",
+        "definition": "The power needed to reach a number from a chosen base. The base-10 logarithm of 100 is 2 because 10² = 100."
       }
     ]
   },
@@ -450,6 +483,14 @@
       {
         "term": "Adiabatic",
         "definition": "Having no heat transfer across the chosen boundary."
+      },
+      {
+        "term": "Heat capacity",
+        "definition": "The energy needed for a temperature rise of one kelvin under the stated conditions, with no change of phase."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   },
@@ -530,6 +571,10 @@
       {
         "term": "Net",
         "definition": "The overall result after opposite contributions are combined."
+      },
+      {
+        "term": "Kelvin",
+        "definition": "A unit of absolute temperature. Zero kelvin marks absolute zero. A change of one kelvin is the same size as a change of one degree Celsius."
       }
     ]
   },
@@ -560,6 +605,14 @@
       {
         "term": "exp",
         "definition": "The exponential calculator function; exp(−1) is about 0.368."
+      },
+      {
+        "term": "Heat capacity",
+        "definition": "The energy needed for a temperature rise of one kelvin under the stated conditions, with no change of phase."
+      },
+      {
+        "term": "Exponential",
+        "definition": "A function that changes by the same factor when its input changes by a fixed amount. For example, a signal that halves each second decays exponentially."
       }
     ]
   },
@@ -598,8 +651,8 @@
     ]
   },
   "entropy-heat": {
-    "idea": "The same reversible heat input adds more entropy at a lower positive temperature.",
-    "explanation": "Entropy measures the spread of possible tiny arrangements of particles and energy. In a reversible transfer, one that could ideally be undone without leaving changes elsewhere, divide incoming heat by temperature to find the added entropy. Use kelvin, and keep the temperature fixed for this simple quotient.",
+    "idea": "For the same small heat input, a colder system can gain more entropy than a warmer one.",
+    "explanation": "Entropy is linked to how many ways energy and particles can be arranged. In an ideal heat transfer that can be undone without a lasting change elsewhere, the entropy gain is the incoming heat divided by the absolute temperature. Use kelvin. For a large heat input the same division works only if the temperature stays constant.",
     "example": {
       "title": "A reversible heat input",
       "steps": [
@@ -620,6 +673,10 @@
       {
         "term": "T",
         "definition": "The fixed positive temperature in kelvin."
+      },
+      {
+        "term": "Kelvin",
+        "definition": "A unit of absolute temperature. Zero kelvin marks absolute zero. A change of one kelvin is the same size as a change of one degree Celsius."
       }
     ]
   },
@@ -642,6 +699,10 @@
       {
         "term": "Isolated system",
         "definition": "A system exchanging neither matter nor energy with its surroundings."
+      },
+      {
+        "term": "Friction",
+        "definition": "A contact force that opposes sliding between surfaces, or opposes their tendency to slide."
       }
     ]
   },
@@ -704,6 +765,14 @@
       {
         "term": "Reversible",
         "definition": "Ideally undoable without a net change elsewhere."
+      },
+      {
+        "term": "Kelvin",
+        "definition": "A unit of absolute temperature. Zero kelvin marks absolute zero. A change of one kelvin is the same size as a change of one degree Celsius."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -784,8 +853,8 @@
     ]
   },
   "boltzmann-entropy": {
-    "idea": "More equally likely tiny arrangements give a larger statistical entropy.",
-    "explanation": "Entropy assigns a number to the spread of possible particle arrangements. Joining independent systems multiplies their arrangement counts, but their entropies add. A logarithm converts the multiplied counts into a sum; unequal chances need a different rule.",
+    "idea": "The same overall state can hide many different arrangements of tiny particles. Entropy helps count those possibilities.",
+    "explanation": "Here the arrangements are equally likely. If one box has two possibilities and another independent box has three, together they have six. The formula uses a logarithm, a way of turning multiplication of counts into addition of entropies. Other probability patterns need a different calculation.",
     "example": {
       "title": "Four allowed arrangements",
       "steps": [
@@ -810,6 +879,10 @@
       {
         "term": "ln",
         "definition": "Natural logarithm, a calculator function that turns multiplication into addition; ln(1) is 0."
+      },
+      {
+        "term": "Logarithm",
+        "definition": "The power needed to reach a number from a chosen base. The base-10 logarithm of 100 is 2 because 10² = 100."
       }
     ]
   },
@@ -828,6 +901,10 @@
       {
         "term": "Standard deviation",
         "definition": "A measure of how widely values spread around their average."
+      },
+      {
+        "term": "Square root",
+        "definition": "A square root answers “which number times itself gives this value?” The √ sign picks the zero or positive answer. For example, √9 = 3."
       }
     ]
   },
@@ -846,6 +923,10 @@
       {
         "term": "Thermal reservoir",
         "definition": "A body large enough to exchange heat without appreciably changing temperature."
+      },
+      {
+        "term": "Equilibrium",
+        "definition": "A condition where the effects that would change the system balance. For a hanging weight at rest, the support’s upward pull balances gravity."
       }
     ]
   },
@@ -876,6 +957,14 @@
       {
         "term": "x",
         "definition": "The resulting ratio, with no units."
+      },
+      {
+        "term": "Kelvin",
+        "definition": "A unit of absolute temperature. Zero kelvin marks absolute zero. A change of one kelvin is the same size as a change of one degree Celsius."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -978,8 +1067,8 @@
     ]
   },
   "chemical-potential": {
-    "idea": "Chemical potential tells how free energy changes when a little matter is added.",
-    "explanation": "For one species at fixed temperature and pressure, multiply added particle count by chemical potential to estimate the Gibbs-energy change. This is only a small-change estimate when chemical potential stays nearly constant.",
+    "idea": "Imagine adding a few particles to a mixture while its temperature and pressure stay fixed. How much does the mixture’s free energy change?",
+    "explanation": "The energy measure for this question is called Gibbs free energy. Its change per added particle of one kind is called that kind’s chemical potential. Multiply the chemical potential by the number added. This estimate works over a small change when the value per particle stays nearly the same.",
     "example": {
       "title": "Adding particles",
       "steps": [
@@ -1094,6 +1183,10 @@
       {
         "term": "exp",
         "definition": "The exponential calculator function."
+      },
+      {
+        "term": "Exponential",
+        "definition": "A function that changes by the same factor when its input changes by a fixed amount. For example, a signal that halves each second decays exponentially."
       }
     ]
   },
@@ -1168,6 +1261,14 @@
       {
         "term": "Heat capacity",
         "definition": "Energy needed for a one-kelvin rise under stated conditions."
+      },
+      {
+        "term": "Kelvin",
+        "definition": "A unit of absolute temperature. Zero kelvin marks absolute zero. A change of one kelvin is the same size as a change of one degree Celsius."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -1194,8 +1295,8 @@
     ]
   },
   "thermal-assessment": {
-    "idea": "A prediction should include the uncertainty that comes from its inputs.",
-    "explanation": "For a fixed heat capacity and no work, a heat range becomes a temperature range. Extra calculator digits cannot remove that input uncertainty. Check that no phase change or uncounted loss breaks the model.",
+    "idea": "If you only know a range for how much heat went in, you usually get a range for the temperature rise too.",
+    "explanation": "Heat capacity tells how much energy raises the object’s temperature by one degree. Divide each end of the heat range by that capacity. This assumes the capacity stays fixed, the object does no work, and there is no uncounted loss or change such as melting.",
     "example": {
       "title": "Heating with an input range",
       "steps": [
@@ -1208,6 +1309,14 @@
       {
         "term": "Uncertainty range",
         "definition": "A stated interval of plausible values, not automatically a statistical confidence interval."
+      },
+      {
+        "term": "Heat capacity",
+        "definition": "The energy needed for a temperature rise of one kelvin under the stated conditions, with no change of phase."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
       }
     ]
   }

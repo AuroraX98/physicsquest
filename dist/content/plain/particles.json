@@ -1,12 +1,12 @@
 {
   "events-are-evidence-not-little-pictures": {
-    "idea": "Detectors record interactions, not photographs of tiny classical balls.",
-    "explanation": "An event groups measurements from one collision or decay. Physicists infer particles by testing which models explain tracks, timing and energy deposits across many events. One signal rarely reveals every property.",
+    "idea": "A detector gives clues about a particle by recording what happens as it passes.",
+    "explanation": "One event is the set of readings from one collision or decay. A detector can record a trail of hits, their times and the energy left behind. Scientists compare these clues with predictions for different particles. Many events help them test the explanation.",
     "example": {
       "title": "One curved track",
       "steps": [
-        "A charged track bends in a known magnetic field.",
-        "Its curvature helps estimate momentum, but does not by itself identify the particle."
+        "In a known magnetic field, the trail of hits from one charged particle bends.",
+        "How sharply the trail bends helps estimate the particle’s momentum if its charge is known. The bend alone cannot tell which kind of particle made it."
       ]
     },
     "equation": "",
@@ -18,12 +18,16 @@
       {
         "term": "Momentum",
         "definition": "A directed quantity describing motion and used in conservation laws."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
   "keep-c-in-the-units": {
-    "idea": "Particle energy, momentum and mass need different units even when their numbers look similar.",
-    "explanation": "GeV measures energy; GeV/c measures momentum; GeV/c² measures mass. Setting c = 1 is a unit shortcut, not a claim that these quantities are identical. Restore c when the units require it.",
+    "idea": "Energy, momentum and mass each have their own units.",
+    "explanation": "Particle physicists use the gigaelectronvolt (GeV) for energy. The letter c stands for the speed of light in empty space. Dividing GeV by c gives a unit for momentum. Dividing GeV by c twice gives a unit for mass. Some calculations choose units in which c has the value 1.",
     "example": {
       "title": "A particle's total energy",
       "steps": [
@@ -66,6 +70,10 @@
       {
         "term": "e",
         "definition": "The positive elementary charge."
+      },
+      {
+        "term": "Electric charge",
+        "definition": "A property that comes in two signs, positive and negative. Like signs repel and opposite signs attract."
       }
     ]
   },
@@ -140,6 +148,10 @@
       {
         "term": "Electric potential",
         "definition": "Electric potential energy per unit charge."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
@@ -188,6 +200,10 @@
       {
         "term": "Dark matter",
         "definition": "Extra gravitating matter inferred from astronomical observations, whose microscopic identity is not established by this test."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
       }
     ]
   },
@@ -214,8 +230,8 @@
     ]
   },
   "continuous-symmetry-links-to-conservation": {
-    "idea": "A symmetry of the full dynamics can explain why a quantity is conserved.",
-    "explanation": "A symmetry means a change in description leaves the full physical rules unchanged. When shifting the starting time preserves those rules, energy conservation follows under the relevant assumptions. A smaller part can still gain energy from the rest of the system.",
+    "idea": "Imagine starting the same experiment a little later. If the rules stay exactly the same however much you shift the start time, that tells you something about energy.",
+    "explanation": "A change that leaves the rules unchanged is a symmetry. For an isolated system with this continuous time symmetry, total energy is conserved. Energy can move between parts of the system while the total stays fixed.",
     "example": {
       "title": "A battery heats a resistor",
       "steps": [
@@ -232,6 +248,10 @@
       {
         "term": "Conserved",
         "definition": "Having an unchanged total for the complete system."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   },
@@ -276,6 +296,10 @@
       {
         "term": "Matrix",
         "definition": "A table of numbers used to combine or change components."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
       }
     ]
   },
@@ -294,6 +318,14 @@
       {
         "term": "Four-momentum",
         "definition": "The combined relativistic description of energy and three momentum components."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
@@ -334,6 +366,14 @@
       {
         "term": "Invariant mass",
         "definition": "The rest-frame energy of the whole system divided by c squared."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
@@ -456,12 +496,16 @@
       {
         "term": "fb",
         "definition": "A femtobarn, a cross-section area unit."
+      },
+      {
+        "term": "Cross section",
+        "definition": "An effective area that measures how likely a particular interaction is under the stated conditions."
       }
     ]
   },
   "diagrams-organize-amplitudes": {
-    "idea": "Particle diagrams organize contributions to a calculation, not observed travel paths.",
-    "explanation": "Contributions to the same quantum outcome can interfere. Add their amplitudes before finding the probability. An internal diagram line is not an ordinary detected particle with a measured trajectory.",
+    "idea": "A particle diagram helps organize a calculation about a possible outcome. Its lines tell you which contribution to calculate.",
+    "explanation": "Each contribution gives an amplitude, a number that can combine with the others in a way that strengthens or weakens the result. Add amplitudes for the same outcome before calculating its chance. A line inside the diagram represents part of that calculation. A detector records the particles that actually arrive.",
     "example": {
       "title": "Two toy contributions",
       "steps": [
@@ -534,6 +578,10 @@
       {
         "term": "Neutral current",
         "definition": "A weak channel associated with Z exchange."
+      },
+      {
+        "term": "Electric charge",
+        "definition": "A property that comes in two signs, positive and negative. Like signs repel and opposite signs attract."
       }
     ]
   },
@@ -560,6 +608,10 @@
       {
         "term": "sin",
         "definition": "Sine, an angle function; sin(90°) and sin(π/2) are both 1."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
       }
     ]
   },
@@ -582,12 +634,16 @@
       {
         "term": "e",
         "definition": "The positive elementary charge."
+      },
+      {
+        "term": "Electric charge",
+        "definition": "A property that comes in two signs, positive and negative. Like signs repel and opposite signs attract."
       }
     ]
   },
   "add-hadron-quantum-numbers": {
-    "idea": "Baryon number and electric charge must be counted separately.",
-    "explanation": "A quark has baryon number one third and an antiquark minus one third. Adding these labels classifies common hadrons. Zero baryon number does not require zero electric charge.",
+    "idea": "A proton and a neutron have different electric charge, but both have a baryon number of one. These are two different things to count.",
+    "explanation": "Protons and neutrons belong to a family of particles built from quarks, called hadrons. To find baryon number, count each quark as one third and each antiquark as minus one third. Use the particles’ electric charges in a separate sum to find total charge.",
     "example": {
       "title": "An up–antidown meson",
       "steps": [
@@ -604,6 +660,10 @@
       {
         "term": "Meson",
         "definition": "A hadron with a quark-antiquark valence assignment in the ordinary model."
+      },
+      {
+        "term": "Electric charge",
+        "definition": "A property that comes in two signs, positive and negative. Like signs repel and opposite signs attract."
       }
     ]
   },
@@ -678,8 +738,8 @@
     ]
   },
   "the-higgs-field-and-boson-differ": {
-    "idea": "The Higgs field's background is different from one detected Higgs boson.",
-    "explanation": "A field describes a quantity throughout space. The Higgs field can have a nonzero background value even in its lowest-energy condition. A Higgs boson is one added quantum disturbance of that field; losing the disturbance does not remove the background.",
+    "idea": "A Higgs boson is a disturbance in the Higgs field.",
+    "explanation": "A field assigns a value to every place. The Higgs field has a background value even in its lowest-energy state. A collision can put energy into the field and create a Higgs boson. When the boson decays into other particles, the background field is still there.",
     "example": {
       "title": "One Higgs boson decays",
       "steps": [
@@ -762,6 +822,14 @@
       {
         "term": "Tesla (T)",
         "definition": "The magnetic-field unit."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
@@ -780,6 +848,10 @@
       {
         "term": "Transverse",
         "definition": "Perpendicular to the beam direction in this event measurement."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
       }
     ]
   },
@@ -802,6 +874,10 @@
       {
         "term": "p-value",
         "definition": "Under the stated model, the probability of an outcome at least as incompatible by the chosen test."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
       }
     ]
   },
@@ -824,6 +900,18 @@
       {
         "term": "Correlated uncertainty",
         "definition": "Uncertainty that links changes in more than one measurement."
+      },
+      {
+        "term": "Random",
+        "definition": "Individual outcomes can vary even when you repeat the same setup."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -846,6 +934,10 @@
       {
         "term": "Invariant mass",
         "definition": "The combined system's rest-frame energy divided by c squared."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
@@ -872,6 +964,10 @@
       {
         "term": "ε",
         "definition": "Selection efficiency."
+      },
+      {
+        "term": "Cross section",
+        "definition": "An effective area that measures how likely a particular interaction is under the stated conditions."
       }
     ]
   },
@@ -916,6 +1012,10 @@
       {
         "term": "Compatible",
         "definition": "Not clearly in disagreement at the stated uncertainty level."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
       }
     ]
   }

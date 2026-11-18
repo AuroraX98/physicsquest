@@ -1,0 +1,282 @@
+{
+  "sky-angles": [
+    null,
+    "Hold one finger in front of a distant tree. Can two things in the same direction be far apart?",
+    "Imagine a bright distant star lined up with a dim nearby one. What information does direction alone give?"
+  ],
+  "distance-units": [
+    "Picture light leaving the star and crossing the gap to Earth. Which event starts that travel time?",
+    null,
+    "What quantity do you get when you multiply the speed of light by a time?"
+  ],
+  "flux-luminosity": [
+    "Imagine collecting light on the same patch of ground as the star gets brighter. Does the patch receive more light or less?",
+    "In the flux formula, which quantity is squared? Check whether that quantity changed here.",
+    null
+  ],
+  "selection-uncertainty": [
+    null,
+    "Imagine a faint star just below the survey's brightness cut. Where would it show up in the catalog?",
+    "Point the telescope at a distant star too faint for it to detect. What would an empty reading really tell you?"
+  ],
+  "thermal-spectrum": [
+    "In the peak-wavelength rule, check which quantity multiplies temperature to give a constant.",
+    null,
+    "Imagine raising the temperature while leaving the peak unchanged. Would their product still satisfy the peak rule?"
+  ],
+  "spectral-lines": [
+    "What must an atom's electrons be doing to make the particular line you looked for?",
+    "A spectral line comes from changes in an atom's electrons. What can affect those electrons while leaving its nucleus intact?",
+    null
+  ],
+  "doppler-motion": [
+    null,
+    "Sketch the wave crests in front of a source moving toward you. Which direction of motion crowds them together?",
+    "Compare the measured wavelength with its rest value. Would zero motion shift the line in this model?"
+  ],
+  "reddening-degeneracy": [
+    "Dust can dim some wavelengths more than others. Would that move the center of every identified line by one common factor?",
+    null,
+    "What could you learn from the positions of the lines alone, before comparing the strength of different colors?"
+  ],
+  "parallax-distance": [
+    "Look at your thumb with one eye and then the other. Does a farther thumb appear to jump more or less?",
+    "The observing baseline stays fixed. How would the apparent shift compare for two different distances?",
+    null
+  ],
+  "magnitudes": [
+    null,
+    "Check which way the magnitude scale runs. Then recall that equal steps on it multiply flux.",
+    "Equal fluxes in the same band would give what difference in apparent magnitude?"
+  ],
+  "standardizable-sources": [
+    "Imagine timing two kinds of repeating stars. What measurements would show whether they follow the same brightness rule?",
+    null,
+    "A period measures timing. What could dust still do to the brightness that reaches your detector?"
+  ],
+  "distance-errors": [
+    "Picture a ruler whose zero mark is misplaced. Would repeating many measurements with that ruler fix the shift?",
+    "Try adding the same zero-point shift to every logarithmic brightness reading. What happens to their average?",
+    null
+  ],
+  "kepler-mass": [
+    null,
+    "Kepler's relation connects period squared to orbit size cubed. Which root will recover the period?",
+    "Picture a wider circular orbit around the same mass. How do both the distance to travel and the orbital speed change?"
+  ],
+  "binary-centre": [
+    "Draw the common center of mass between two equal weights. Where does brightness enter that balance?",
+    null,
+    "Place two equal masses on either side of their shared center. Which one would sit exactly at the center?"
+  ],
+  "transit-rv": [
+    "Transit depth compares blocked areas. What operation turns an area ratio into a radius ratio?",
+    "Picture a larger dark disk passing in front of the same star. Would it hide a larger or smaller fraction?",
+    null
+  ],
+  "inclination-limits": [
+    null,
+    "Draw a circle on a sheet facing you. Which part of a planet's motion along that circle points toward your eye?",
+    "A line-of-sight speed is one part of the orbital speed. How large can one part of a finite speed be?"
+  ],
+  "hydrostatic-support": [
+    "Draw the pressure forces on opposite faces of a small patch of the shell. Which way does each arrow point?",
+    null,
+    "Heat can affect the pressure on both sides. What difference in the pushes would support the shell?"
+  ],
+  "stellar-equation-state": [
+    "At the same temperature, compare the number of particles hitting a wall before and after ionization.",
+    "Picture the freed electrons and ions moving through the gas. Could they still strike its walls?",
+    null
+  ],
+  "stellar-energy": [
+    null,
+    "Count the same outward-moving energy as it passes through two larger and larger spheres. Is any new energy added between them?",
+    "An inverse-square rule describes what reaches each square meter. What would you measure by adding up the entire shell?"
+  ],
+  "stellar-transport": [
+    "What would start an overturning flow if photons already carry the energy through a stable layer?",
+    null,
+    "Think about sunlight warming your skin. What can photons deliver?"
+  ],
+  "mass-luminosity": [
+    "Write the mass ratio as a factor raised to the exponent in the question. How many factors of three are required?",
+    "Check whether the supplied luminosity rule uses a square or a cube before multiplying.",
+    null
+  ],
+  "hr-diagram": [
+    null,
+    "Halve the temperature in the fourth-power term. How much more surface area would restore the same luminosity?",
+    "If each patch of a cooler star emits less, would matching the total luminosity require more or less surface?"
+  ],
+  "cluster-ages": [
+    "Compare the time low-mass and high-mass stars spend using their main fuel. Which group leaves the sequence first?",
+    null,
+    "Imagine taking snapshots of one cluster as it ages. What happens to stars that have exhausted their main fuel?"
+  ],
+  "stellar-inference": [
+    "If each square meter of a hotter surface shines more brightly, how much surface is needed for the same total light?",
+    "Keep the radius fixed for a moment and raise the temperature. Would the total emitted power stay fixed?",
+    null
+  ],
+  "fusion-fuel": [
+    null,
+    "Think of a fuel tank twice as big feeding a lamp that uses energy four times as fast. How long will it last?",
+    "Lifetime divides the available energy by the rate of use. Which direction does a larger rate push the result?"
+  ],
+  "late-burning": [
+    "The color comes from the surface. Sketch the core separately and ask whether both layers have to expand together.",
+    null,
+    "Compare the energy of a red photon with zero. What stellar layer controls the color seen from outside?"
+  ],
+  "remnant-pathways": [
+    "Imagine two equally massive stars, one in a close pair. What could its companion change while the star evolves?",
+    "Draw a boundary around a star shedding a wind. Where can some of its original mass go?",
+    null
+  ],
+  "initial-conditions": [
+    null,
+    "Two stars can have the same mass and different mixtures of elements. How might that change the passage of light?",
+    "Find what the symbol Z labels in a star's composition. Which material property does it describe?"
+  ],
+  "degenerate-support": [
+    "Compare an ordinary warm gas with crowded electrons in a white dwarf. What makes pressure in each case?",
+    null,
+    "Follow what happens when many cold electrons try to occupy the same quantum state. Which rule limits them?"
+  ],
+  "white-dwarf": [
+    "Check the speed assumed for the electrons when the simple radius rule was derived. Does that assumption hold at the limit?",
+    "Changing distance units leaves the star the same. Which physical assumption might break down as mass rises?",
+    null
+  ],
+  "pulsar-clock": [
+    null,
+    "Count how many pulses fit in one minute if the gap between successive pulses grows.",
+    "Choose two different pulse periods and take one divided by each. Are the resulting frequencies equal?"
+  ],
+  "black-hole-horizon": [
+    "A horizon marks a boundary in space. What material around that boundary can actually get hot and shine?",
+    null,
+    "Trace the route a detected photon must take to reach us. Could its starting point lie beyond the point of no return?"
+  ],
+  "interstellar-phases": [
+    "Use pressure as a product of number density and temperature. What would happen if both factors rose tenfold?",
+    "Picture the same number of particles striking the walls harder as they heat up. Would that keep pressure fixed?",
+    null
+  ],
+  "gas-cooling": [
+    null,
+    "Check the sign of the net energy flow first. Is the gas actually losing heat in this case?",
+    "Look at the numerator and denominator separately. Which one changed sign when heating became stronger?"
+  ],
+  "cloud-collapse": [
+    "The estimate follows a cloud pulled inward by gravity. What might gas pressure or nearby young stars do to that motion?",
+    null,
+    "Compare a dense knot and a thin patch in one real cloud. Would a uniform-sphere estimate describe both identically?"
+  ],
+  "virial-estimate": [
+    "Check the power on velocity dispersion in the expression for the virial parameter.",
+    "Find the velocity term in the fraction. Does faster random motion strengthen the motion side or the gravity side?",
+    null
+  ],
+  "galaxy-mass-profile": [
+    null,
+    "In the circular-orbit relation, check what power of orbital speed sets the required inward pull.",
+    "Imagine a faster orbit at the same radius. Would holding it on that path need a weaker or a stronger gravitational pull?"
+  ],
+  "rotation-unseen-mass": [
+    "What does an orbit measure about a gravitational pull? Which extra observation would identify what produced it?",
+    null,
+    "List all the mass inside the orbit, including gas. Which part of that list does orbital speed distinguish on its own?"
+  ],
+  "galaxy-evolution": [
+    "Imagine a few very bright young stars among many dim older ones. Compare the light share with the mass share.",
+    "Which conversion would you need to turn the amount of blue light into a mass?",
+    null
+  ],
+  "accretion-energy": [
+    null,
+    "Picture two equal amounts of infalling matter. Which one can shine more if a smaller fraction of its energy escapes as light?",
+    "Write luminosity as the available power times the fraction converted to radiation. Which factor changed?"
+  ],
+  "scale-redshift": [
+    "Redshift measures the fractional increase relative to the emitted wavelength. What do you add back to get the full wavelength?",
+    null,
+    "Try starting with a one-meter wave and increasing its length by one whole original wavelength."
+  ],
+  "local-hubble": [
+    "Think about two nearby galaxies pulling on each other. What local motion could add to the motion from expansion?",
+    "Compare the motion of one nearby galaxy with the average motion of galaxies at many distances.",
+    null
+  ],
+  "expansion-content": [
+    null,
+    "Draw a cube carried along with the expansion. If it contains the same matter but grows bigger, what happens to density?",
+    "Double the length, width, and height of a box holding fixed mass. In the density fraction, where does the new volume go?"
+  ],
+  "cosmic-distances": [
+    "List what is measured to infer luminosity distance. Would timing a photon measure those same things?",
+    null,
+    "Two lengths can both be given in megaparsecs. What measurement defines the particular length being reported?"
+  ],
+  "background-spectrum": [
+    "As space expands, sketch two successive wave crests moving farther apart. What does that do to a thermal spectrum's peak?",
+    "Follow a light wave as its wavelength stretches. What happens to the energy each photon carries?",
+    null
+  ],
+  "recombination": [
+    null,
+    "Imagine crossing a space with twice as many scattering targets per cubic meter. How far can a photon typically travel between hits?",
+    "Find the particles that scatter photons in the formula. Would changing a name change their number?"
+  ],
+  "primordial-elements": [
+    "For a nuclear collision to build a heavier nucleus, what temperature, density and time does it need?",
+    null,
+    "Think about the heavier elements made in stars today. Which conditions in the early universe changed too quickly?"
+  ],
+  "cosmic-model-tests": [
+    "Could another model with adjustable settings match the same observation? What would distinguish their predictions?",
+    "Imagine two measurements with different error bars. How should those widths affect how you judge the fit?",
+    null
+  ],
+  "gravitational-waves": [
+    null,
+    "Sound needs particles to bump into one another. What does a gravitational-wave detector measure changing between its mirrors?",
+    "Picture detectors far apart with empty space between them and the source. What property of space can change along the way?"
+  ],
+  "particle-messengers": [
+    "To infer speed from arrival time and distance, which time would you need at the source?",
+    null,
+    "Two messengers can leave different regions of an exploding star. What would establish when each one was released?"
+  ],
+  "lensing-mass": [
+    "A dark object still has mass. What could happen to light from a bright galaxy behind it?",
+    "Look at an image of a background galaxy. Which change in its shape or position could reveal a foreground mass?",
+    null
+  ],
+  "dark-sector-evidence": [
+    null,
+    "Match the observations separately. Which concerns orbital gravity, and which concerns the history of expansion?",
+    "Compare a galaxy's rotation with the rate at which cosmic expansion changes. Which observation is the term describing?"
+  ],
+  "synthetic-star": [
+    "Imagine a dust screen blocking half the light. Which flux would be entered into the dust-free calculation?",
+    null,
+    "Hold the distance fixed and calculate luminosity with a lower measured flux. Would the product stay the same?"
+  ],
+  "timescale-comparison": [
+    "Write the two rules next to each other. Which one involves the cube of the orbital radius?",
+    "A light ray has farther to go when the radius grows. What happens to its travel time even at fixed light speed?",
+    null
+  ],
+  "competing-models": [
+    null,
+    "Imagine one calibration shift moving every data point together. Would squaring each individual error capture that shared pattern?",
+    "After choosing the model, ask how far the measured points could shift together within their calibration uncertainty."
+  ],
+  "further-prerequisites": [
+    "Imagine refining a model that leaves out an important force. What would smaller computational steps tell you about that omission?",
+    null,
+    "Which points on the plot come from the calculation, and what independent measurements could you compare them with?"
+  ]
+}

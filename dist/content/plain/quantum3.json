@@ -1,7 +1,7 @@
 {
   "perturbation-parameter": {
-    "idea": "A change is small only compared with the relevant energy gaps.",
-    "explanation": "Perturbation theory starts from a solved model and estimates a weak change. Compare the actual coupling with the gap; a small-looking number alone does not establish a safe approximation.",
+    "idea": "A weak change can be estimated from a problem we already know how to solve.",
+    "explanation": "Start with two energy levels. Their gap is the difference between their energies. A new interaction can link the levels. Compare the strength of that link with the gap. When the link is much smaller, a first estimate based on the old levels can work well.",
     "example": {
       "title": "A weak two-level coupling",
       "steps": [
@@ -14,12 +14,16 @@
       {
         "term": "Perturbation",
         "definition": "A change added to a reference model."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
   "first-energy-shift": {
-    "idea": "The first energy shift is the added energy averaged in the old state.",
-    "explanation": "For a level separated from the others, the first correction uses the original state. Multiply the correction coefficient by the change parameter; the coefficient is not already the full shift.",
+    "idea": "We can estimate how far a small change moves an energy level before solving the whole problem again.",
+    "explanation": "Keep the old state for a first calculation. Use it to find the average extra energy from the change. This shortcut applies to a level clearly separated from the others. Doubling a weak change doubles this first estimate.",
     "example": {
       "title": "A small diagonal change",
       "steps": [
@@ -31,8 +35,8 @@
     "terms": []
   },
   "first-state-shift": {
-    "idea": "A weak coupling mixes a little of another state into the old one.",
-    "explanation": "The mixing amplitude is the coupling divided by the signed energy gap. A negative amplitude is allowed; its squared size, not its sign, contributes to probability.",
+    "idea": "A weak link between two energy states can give each a little of the other state’s wave pattern.",
+    "explanation": "Divide the strength of the link by the difference between the old energies. This estimates the amount mixed into the original wave. Its sign tells how the patterns combine. To get a chance, square its size.",
     "example": {
       "title": "A small admixture",
       "steps": [
@@ -45,12 +49,20 @@
       {
         "term": "|0⟩ and |1⟩",
         "definition": "The two normalized reference energy states."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
       }
     ]
   },
   "second-energy-shift": {
-    "idea": "Mixing with other states also changes energy at second order.",
-    "explanation": "Each contribution uses the coupling’s squared size divided by the signed gap. For a separated lowest state, every higher-state gap has the same negative sign, so these second-order terms lower its energy.",
+    "idea": "A nearby level can change the energy of a state even when the simplest estimate misses the change.",
+    "explanation": "The link between states enters this next correction twice, so doubling a weak link makes the correction four times as large. Divide the squared link by the signed energy difference. For the lowest level, all the other levels lie above it, and these corrections push its energy down.",
     "example": {
       "title": "Two higher-state contributions",
       "steps": [
@@ -71,6 +83,10 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Ground state",
+        "definition": "A state with the lowest allowed energy."
       }
     ]
   },
@@ -89,6 +105,18 @@
       {
         "term": "|0⟩ and |1⟩",
         "definition": "The two orthogonal normalized reference states."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
@@ -103,11 +131,16 @@
       ]
     },
     "equation": "absolute error = |approximate result − exact result|",
-    "terms": []
+    "terms": [
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
+      }
+    ]
   },
   "project-perturbation": {
-    "idea": "Treat tied energy states together before using a weak-change formula.",
-    "explanation": "A zero gap cannot go in a denominator. Keep the whole tied space and find which combinations the added energy rule acts on simply; outside separated states can enter later corrections.",
+    "idea": "When two states start at exactly the same energy, calculate their response to a change together.",
+    "explanation": "The usual shortcut divides by the difference between the two energies. Here that difference is zero. Instead, write down how the new interaction connects the tied states. Find the combinations that have definite energies after the change.",
     "example": {
       "title": "Splitting a tied pair",
       "steps": [
@@ -128,8 +161,8 @@
     ]
   },
   "diagonalize-degenerate-block": {
-    "idea": "Keep complex phases when finding the correct combinations of tied states.",
-    "explanation": "Some coupling entries carry a phase, represented here by the imaginary number i. Keep those phases when finding the new energy combinations; replacing each entry by its positive size changes the model and can pick the wrong states.",
+    "idea": "When two waves combine, their timing matters as much as their sizes.",
+    "explanation": "Suppose two states have the same energy until a new interaction links them. Its entries can include i, the number whose square is −1. That part records how the waves line up. Replacing it with its size discards information and can predict the wrong combination of states.",
     "example": {
       "title": "A complex two-state block",
       "steps": [
@@ -158,12 +191,20 @@
       {
         "term": "i",
         "definition": "The imaginary unit, with i² = −1."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
+      },
+      {
+        "term": "Eigenvalue",
+        "definition": "The number that a matrix or other linear rule multiplies a matching eigenvector by."
       }
     ]
   },
   "near-degenerate-block": {
-    "idea": "If coupling rivals a small gap, solve the pair together.",
-    "explanation": "Keeping the small block exact avoids dividing through a poorly separated gap. Still check coupling to omitted states; solving the block exactly does not prove the whole physical model exact.",
+    "idea": "Two levels with almost the same energy can mix strongly even when their link is small.",
+    "explanation": "Compare the link with the gap, the difference between their energies. If they are similar in size, calculate both levels together. Check any levels you left out before trusting the result.",
     "example": {
       "title": "A close pair",
       "steps": [
@@ -192,8 +233,8 @@
     ]
   },
   "symmetry-and-splitting": {
-    "idea": "A symmetry can stop mixing without keeping energies tied.",
-    "explanation": "An even perturbation cannot mix an even state with an odd state. It can still shift their energies by different amounts; symmetry must be checked for the particular claim being made.",
+    "idea": "Two waves can keep their separate shapes while their energies shift by different amounts.",
+    "explanation": "Flip the position coordinate, like reflecting a drawing in a mirror. An even wave keeps the same value and an odd wave changes sign. A change that stays the same under this reflection cannot mix the two shapes. It can still move their energy levels apart.",
     "example": {
       "title": "No mixing, but a split",
       "steps": [
@@ -228,8 +269,8 @@
     ]
   },
   "gaussian-trial-energy": {
-    "idea": "A trial width balances the costs of confinement and potential energy.",
-    "explanation": "In the quartic trap, a narrow Gaussian has high kinetic energy, while a broad one samples more of the steep potential. Add both costs before judging which width is better.",
+    "idea": "A wave squeezed into a narrow space pays one energy cost. A broad wave can pay another.",
+    "explanation": "Try a bell-shaped wave in a trap whose potential energy rises steeply away from the centre. A narrow wave has a larger spread of momentum and more kinetic energy. A broad wave reaches the costly outer parts of the trap. Add both energies to compare widths.",
     "example": {
       "title": "A Gaussian with scaled width one",
       "steps": [
@@ -254,6 +295,18 @@
       {
         "term": "Quartic trap",
         "definition": "A potential energy growing as position to the fourth power."
+      },
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with an arrangement, such as the height of a weight above the floor."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy an object has because it is moving."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -272,6 +325,10 @@
       {
         "term": "E_s",
         "definition": "The fixed energy scale of this quartic-trap model."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -294,12 +351,16 @@
       {
         "term": "Eigenvalue",
         "definition": "The multiplier for a state whose shape the energy matrix preserves."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
       }
     ]
   },
   "orthogonal-excited-trial": {
-    "idea": "An excited-state bound must exclude the lower exact states.",
-    "explanation": "A trial state with zero overlap with all lower exact energy states has no weight at their energies. Without that restriction, an apparently good low average might come from unwanted ground-state weight.",
+    "idea": "To estimate an excited level, first rule out all the lower levels.",
+    "explanation": "An excited level has energy above the lowest level. A trial wave can contain a mixture of levels. Any lower level in the mix can pull its average down. Require zero overlap with every lower exact state before using the average as an upper limit for the level you want.",
     "example": {
       "title": "Bounding the first excited energy",
       "steps": [
@@ -308,11 +369,16 @@
       ]
     },
     "equation": "trial energy ≥ target energy when all lower-state overlaps are zero",
-    "terms": []
+    "terms": [
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      }
+    ]
   },
   "wkb-local-wave-number": {
-    "idea": "A slowly changing potential gives a locally changing wavelength.",
-    "explanation": "WKB approximates the wave by adding its local phase changes. It works away from turning points only when the wave number changes slowly enough; a local wavelength alone does not prove that condition.",
+    "idea": "A wave moving through a gently changing region can have a different wavelength at each place.",
+    "explanation": "Wavelength is the distance spanned by one cycle. The WKB method breaks the path into small pieces and counts how far the cycle advances in each. This works when the wavelength changes little over one cycle and the particle stays away from a turning point.",
     "example": {
       "title": "One point in an allowed region",
       "steps": [
@@ -329,12 +395,20 @@
       {
         "term": "WKB",
         "definition": "An approximation for waves in slowly varying regions."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy an object has because it is moving."
       }
     ]
   },
   "wkb-slow-variation": {
-    "idea": "Check how much the wave number changes before trusting WKB.",
-    "explanation": "A small local change ratio supports the slow-variation approximation. Near a turning point, the wave number reaches zero and this ratio can become large, warning that a different local solution is needed.",
+    "idea": "A wave shortcut works best when its spacing barely changes over one cycle.",
+    "explanation": "Wave number measures how quickly a wave passes through a cycle as you move along it. The WKB method treats each short piece like a wave with nearly fixed wave number. Near a turning point the wave number approaches zero, and this test can fail.",
     "example": {
       "title": "Near the turn in a linear potential",
       "steps": [
@@ -355,12 +429,16 @@
       {
         "term": "Scaled position",
         "definition": "Position divided by the model’s length scale."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
   "wkb-amplitude-current": {
-    "idea": "A slower wave needs more density to carry the same flow.",
-    "explanation": "For one leading WKB traveling branch, current is speed times density. If momentum decreases while current remains constant, the amplitude must increase; this rule fails at ordinary turning points.",
+    "idea": "A slower wave needs more probability packed into each metre to carry the same flow.",
+    "explanation": "Think of cars moving through a gate. If they slow down, they must be closer together for just as many to pass each minute. In one traveling wave the same arithmetic connects speed, probability density and flow. This WKB shortcut breaks down at the point where classical motion would turn around.",
     "example": {
       "title": "Keeping one branch’s flow fixed",
       "steps": [
@@ -395,12 +473,16 @@
       {
         "term": "e",
         "definition": "The number about 2.718 used for exponential change."
+      },
+      {
+        "term": "Probability density",
+        "definition": "Chance per small interval or region. Add the density over a region to find the chance of detecting the particle there."
       }
     ]
   },
   "simple-turning-point": {
-    "idea": "A smooth turning point needs a wave description that stays finite.",
-    "explanation": "At a turning point, potential energy equals total energy. Ordinary WKB breaks down there; an Airy function joins an oscillating wave on one side to a decaying wave on the other when the local slope is nonzero.",
+    "idea": "A wave needs special care near the place where a classical particle would turn back.",
+    "explanation": "At this turning point the potential energy reaches the particle’s total energy. A shortcut for slowly changing waves gives an unreasonable size near that point. For a smooth crossing with a nonzero slope, a shape called an Airy function joins the waves on the two sides while staying finite.",
     "example": {
       "title": "Measuring distance from the turn",
       "steps": [
@@ -413,12 +495,24 @@
       {
         "term": "Airy function",
         "definition": "A wave shape that solves the equation near a smooth, sloping turning point."
+      },
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with an arrangement, such as the height of a weight above the floor."
+      },
+      {
+        "term": "Slope",
+        "definition": "How much a graph rises or falls for each step to the right."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
   "wkb-two-turning-quantization": {
-    "idea": "Two smooth turning points allow only certain standing-wave energies.",
-    "explanation": "The wave must fit between the turns and join decaying tails outside. The turning points supply phase shifts, giving a half-step in the WKB rule; this is different from two infinitely hard walls.",
+    "idea": "A wave trapped between two smooth turning points fits only at certain energies.",
+    "explanation": "A turning point is where the total energy meets the potential energy. Inside, the wave repeats. Outside, it fades. The smooth turn at each end changes the timing of its cycles. Counting these shifts explains the half-step in the WKB energy rule.",
     "example": {
       "title": "A harmonic trap level",
       "steps": [
@@ -439,8 +533,8 @@
     ]
   },
   "wkb-tunnelling-validity": {
-    "idea": "A thick, smooth barrier can make transmission exponentially small.",
-    "explanation": "The leading WKB estimate adds the decay across the whole barrier. It requires well-separated turning points and strong decay; near the barrier top, its small transmission estimate can lose accuracy.",
+    "idea": "A particle has a small chance of passing through some barriers even when its energy is below the barrier top.",
+    "explanation": "The wave fades as it extends across a barrier. The WKB estimate adds up this fading over many small pieces to predict how much gets through. It works best when the wave fades strongly and the two turning points are well separated.",
     "example": {
       "title": "A smooth parabolic barrier",
       "steps": [
@@ -491,8 +585,8 @@
     ]
   },
   "coulomb-moment-bridge": {
-    "idea": "Radial averages must count the space in each spherical shell.",
-    "explanation": "The radial wave amplitude alone does not give the chance in a shell. Multiply its squared size by the radius squared before averaging; otherwise the weight near the center is wrong.",
+    "idea": "To find an average distance from the nucleus, count the space around it in thin shells.",
+    "explanation": "A shell twice as far from the centre has four times as much area. For equally thin shells, that means four times as much space. Along with the squared size of the radial wave, count this radius-squared factor to find each shell’s share.",
     "example": {
       "title": "An inverse-cube average for a 2p state",
       "steps": [
@@ -521,8 +615,8 @@
     ]
   },
   "atomic-spin-orbit": {
-    "idea": "An electron’s spin and orbital motion can shift atomic energy together.",
-    "explanation": "In the supplied effective model, the shift combines a radial average with a spin–orbit alignment factor. Use this radial formula for nonzero orbital angular momentum; it does not handle an s state by multiplying zero by a divergent average.",
+    "idea": "An electron’s built-in spin and its motion around the nucleus can shift its energy together.",
+    "explanation": "Spin is a quantum property measured along an axis. The electron wave around a nucleus also carries angular momentum. How the two combine helps set the energy shift. This formula assumes nonzero orbital angular momentum. A state with zero orbital angular momentum needs separate treatment.",
     "example": {
       "title": "The 2p, j = 3/2 level",
       "steps": [
@@ -551,8 +645,8 @@
     ]
   },
   "contact-darwin-shift": {
-    "idea": "A contact correction depends on the wave’s density at the nucleus.",
-    "explanation": "A mathematical delta function samples the value at one point when integrated. In this effective point-nucleus model, that makes the correction depend on the electron’s probability density at the center, not the chance of hitting a finite target.",
+    "idea": "One small correction to an atom’s energy depends on the electron wave right at the nucleus.",
+    "explanation": "In this calculation the nucleus is treated as a point. A mathematical tool called a delta function selects the probability density exactly there when we add over space. Density is chance per small volume. It can have a value at the centre even though a single point occupies zero volume.",
     "example": {
       "title": "The 1s contact correction",
       "steps": [
@@ -573,12 +667,16 @@
       {
         "term": "meV",
         "definition": "One thousandth of an electronvolt."
+      },
+      {
+        "term": "Probability density",
+        "definition": "Chance per small interval or region. Add the density over a region to find the chance of detecting the particle there."
       }
     ]
   },
   "hydrogen-fine-structure": {
-    "idea": "Fine structure combines several small corrections to the same energy level.",
-    "explanation": "Add the kinetic, spin–orbit and contact contributions using one consistent model. Their total can leave some levels tied; this leading fixed-nucleus model does not include the Lamb shift or all real-atom corrections.",
+    "idea": "Some hydrogen energy levels split into closely spaced levels when we include small effects.",
+    "explanation": "One change refines the energy of motion. Another links an electron’s spin to its motion around the nucleus. A third depends on its wave at the nucleus. Add the changes for the same state. Some energies still match in this model, which holds the nucleus fixed.",
     "example": {
       "title": "Adding the 2s corrections",
       "steps": [
@@ -599,12 +697,16 @@
       {
         "term": "Lamb shift",
         "definition": "An additional small atomic energy shift beyond this model."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
       }
     ]
   },
   "weak-zeeman": {
-    "idea": "A weak magnetic field shifts levels while spin and orbital motion stay linked.",
-    "explanation": "Weak means small compared with the existing spin–orbit splitting. The field response then depends on the total angular momentum and its component along the field; it is not set by field strength alone.",
+    "idea": "A weak magnetic field can split energy readings that matched without the field.",
+    "explanation": "An electron has its own spin, and its wave can also carry angular momentum around the nucleus. In this lesson the link between the two is stronger than the magnetic change. Treat them as one combined quantity, then find its component along the field.",
     "example": {
       "title": "One 2p magnetic level",
       "steps": [
@@ -633,12 +735,24 @@
       {
         "term": "j",
         "definition": "Total angular-momentum label."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
   "strong-zeeman": {
-    "idea": "A sufficiently strong magnetic field makes separate orbital and spin components useful.",
-    "explanation": "Here the magnetic splitting dominates the spin–orbit coupling. The field must still be small enough for the assumed atomic model to work; “strong” does not mean arbitrarily large.",
+    "idea": "A stronger magnetic field can make two separate spin and orbital labels more useful than a single combined label.",
+    "explanation": "A field changes the energies associated with the electron’s spin and its motion around the nucleus. If this energy change is much larger than the link between spin and motion, count their along-field contributions separately. The model still has an upper limit on the field it can describe.",
     "example": {
       "title": "Cancellation of the leading magnetic shift",
       "steps": [
@@ -659,12 +773,24 @@
       {
         "term": "m_l and m_s",
         "definition": "The numbered orbital and spin components along the field."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
   "zeeman-crossover": {
-    "idea": "Between weak and strong fields, solve the coupled states together.",
-    "explanation": "Neither limiting label is fully reliable when the magnetic and spin–orbit energies compete. A small matrix keeps the mixing and finds the energies without forcing either limiting formula.",
+    "idea": "When two effects are close in strength, dropping either can predict the wrong atomic energies.",
+    "explanation": "One effect links electron spin to its motion around the nucleus. The other comes from an applied magnetic field. Put the possible states and the links between them into one small table of numbers. Solving that table keeps both effects.",
     "example": {
       "title": "A two-state crossover model",
       "steps": [
@@ -681,12 +807,20 @@
       {
         "term": "Microelectronvolt",
         "definition": "One millionth of an electronvolt."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
       }
     ]
   },
   "quadratic-stark-parity": {
-    "idea": "A level can shift in an electric field even when its first shift is zero.",
-    "explanation": "A state with definite reflection symmetry has zero average position at the center. The field can still mix it with an opposite-symmetry state, producing a second-order energy shift.",
+    "idea": "Doubling a weak electric field can make a level’s energy shift about four times as much.",
+    "explanation": "For this symmetric state, opposite sides balance, so the change directly proportional to the field is zero. The field can still mix in a state with a different reflection pattern. The next change depends on the field strength squared.",
     "example": {
       "title": "Mixing with one higher state",
       "steps": [
@@ -703,12 +837,16 @@
       {
         "term": "Second order",
         "definition": "Proportional to the square of the small field strength."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
   "linear-stark-subspace": {
-    "idea": "Tied opposite-symmetry states can split directly with electric-field strength.",
-    "explanation": "The field mixes the tied states into new combinations. Because the original energy gap is zero, solve that pair together; dividing by the zero gap would give a meaningless answer.",
+    "idea": "An electric field can split two tied energy levels as soon as the field is turned on.",
+    "explanation": "The two states start at the same energy but have different wave patterns under reflection. The field can mix them into two new combinations. Solve for the two together. A shortcut that divides by their starting energy gap would divide by zero.",
     "example": {
       "title": "An ideal hydrogen n = 2 pair",
       "steps": [
@@ -725,12 +863,16 @@
       {
         "term": "n",
         "definition": "Hydrogen’s main energy-level number."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
       }
     ]
   },
   "minimal-coupling": {
-    "idea": "In a magnetic field, the momentum label need not equal motion-related momentum.",
-    "explanation": "The wave’s derivative gives canonical momentum. Subtract charge times the vector potential to get kinetic momentum, the quantity linked to motion; the potential and wave must be used consistently.",
+    "idea": "In a magnetic field, two different quantities can carry the name momentum.",
+    "explanation": "One, called canonical momentum, comes from how the wave changes with position. The other, called kinetic momentum, is linked to actual motion. To find it, subtract the charge times a field-related quantity called the vector potential from the canonical momentum.",
     "example": {
       "title": "A constant vector potential",
       "steps": [
@@ -755,12 +897,23 @@
       {
         "term": "p₀",
         "definition": "A positive reference momentum."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "check.explanations.0": "π=5p₀ gives 25E₀, then add 2E₀."
+    }
   },
   "gauge-state-phase": {
-    "idea": "Changing the potentials also requires a matching change to the wave’s phase.",
-    "explanation": "Different potential descriptions can represent the same electric and magnetic fields. Change the wave consistently, and predictions such as kinetic momentum stay the same; changing only the potential can change the physical problem.",
+    "idea": "Different sets of numbers can describe the same electric and magnetic fields.",
+    "explanation": "One choice of these numbers is called a gauge. If you change the choice, adjust the phase of the wave too. Phase tells how wave parts line up. Use both changes together, and quantities you can measure, such as momentum related to motion, still agree.",
     "example": {
       "title": "The same motion in two descriptions",
       "steps": [
@@ -777,12 +930,20 @@
       {
         "term": "Gauge change",
         "definition": "A coordinated change of potentials and wave phase that preserves physical predictions."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
   "flux-loop-phase": {
-    "idea": "Magnetic flux can change interference even when the paths avoid the magnetic field.",
-    "explanation": "Two coherent path amplitudes meet with a phase difference set partly by the enclosed flux. Adding those amplitudes changes the detector probability; this does not assign a definite hidden path to each particle.",
+    "idea": "A magnetic field enclosed by two paths can shift where their waves reinforce or cancel.",
+    "explanation": "Imagine two possible routes around a region containing magnetic field. Magnetic flux measures the field passing through the enclosed surface. It can change which part of one wave cycle meets which part of the other. Recombining the routes can then change the detector’s chance of a hit.",
     "example": {
       "title": "A quarter flux unit",
       "steps": [
@@ -807,12 +968,23 @@
       {
         "term": "Coherent",
         "definition": "Having a stable relative phase so amplitudes can interfere."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "check.explanations.1": "The output uses (1+cosϕ)/2, not (1−cosϕ)/2."
+    }
   },
   "landau-oscillator-map": {
-    "idea": "A uniform magnetic field gives evenly spaced orbital energy levels.",
-    "explanation": "For a spinless particle moving in a plane, the wave equation becomes a harmonic-oscillator problem. The orbit-center label changes where the wave sits, while the ideal bulk energies depend on the field’s size.",
+    "idea": "A charged particle moving in a plane can have evenly spaced energies in a uniform magnetic field.",
+    "explanation": "Here we leave out spin. The equation for motion across the magnetic field has the same form as one for a quantum spring. Its levels make equal energy steps. Different labels can place the wave in different parts of the plane while keeping the same energy.",
     "example": {
       "title": "A 6 meV level spacing",
       "steps": [
@@ -829,12 +1001,27 @@
       {
         "term": "meV",
         "definition": "One thousandth of an electronvolt."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "example.steps.0": "Choose a model whose spacing ℏωc=6 meV. The first three planar energies are 3,9 and 15 meV.",
+      "check.prompt": "With spacing 8 meV, what is the n=2 planar energy?",
+      "check.explanations.0": "Multiply 8 by 2+1/2.",
+      "practice.parts.2.label": "n=3 energy with spacing 4 meV",
+      "practice.parts.2.feedback": "Use (n+1/2) times the spacing."
+    }
   },
   "instantaneous-eigenstates": {
-    "idea": "A changing set of reference states can mix the coefficients describing a wave.",
-    "explanation": "Energy states can change direction as the Hamiltonian changes. When tracking the wave in that moving basis, include the basis motion as well as energy-driven phase changes; ignoring it can miss transitions.",
+    "idea": "If your measuring directions turn while you measure, their turning must enter the calculation.",
+    "explanation": "At each instant, the energy rule picks out wave patterns with definite energies. Those patterns can change as the rule changes. A wave described using these moving reference patterns can acquire new shares of each. Count both the changing references and the wave’s own change.",
     "example": {
       "title": "A rotating two-state basis",
       "steps": [
@@ -851,12 +1038,20 @@
       {
         "term": "Hamiltonian",
         "definition": "The energy rule that controls quantum evolution."
+      },
+      {
+        "term": "Component",
+        "definition": "One part of a quantity after you choose directions or reference patterns. A displacement may have an eastward part and a northward part."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
       }
     ]
   },
   "adiabatic-gap-criterion": {
-    "idea": "Slow following is easier when the changing energy levels stay well separated.",
-    "explanation": "Compare how fast the reference states move with how quickly the energy gap builds phase. A small ratio is a useful local check, but the gaps and motion must be checked throughout the process.",
+    "idea": "A state can follow a slowly changing energy level when other nearby levels stay far enough away.",
+    "explanation": "The energy gap is the difference between two possible energies. Compare how quickly the reference patterns change with how quickly this gap changes their relative timing. A small ratio supports following one level. Check it all along the path because the smallest gap may come later.",
     "example": {
       "title": "A slowly rotating spin model",
       "steps": [
@@ -877,12 +1072,16 @@
       {
         "term": "Adiabatic following",
         "definition": "Staying close to the corresponding changing energy state."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
   "dynamic-geometric-phase": {
-    "idea": "A slowly followed state gains phase from both its energy and its changing shape.",
-    "explanation": "The energy supplies the dynamical phase. Following the changing state supplies a geometric contribution; its displayed value depends on the chosen phase convention, so predictions must include the endpoint state consistently.",
+    "idea": "A quantum wave’s place in its cycle can change for two reasons during a slow journey.",
+    "explanation": "Energy advances the cycle as time passes. A changing reference state can add a second shift that depends on the path taken. This is called geometric phase. Compare the end wave with the starting reference consistently when predicting a measurable difference.",
     "example": {
       "title": "One smooth segment",
       "steps": [
@@ -899,8 +1098,8 @@
     ]
   },
   "adiabatic-spin-check": {
-    "idea": "An exactly solved model can test how well a state follows a rotating field.",
-    "explanation": "In this closed two-state model, failure to follow means finding the other instantaneous energy state. Its probability stays bounded, so the exact solution can test the slow-following approximation without treating spin as a little traveling arrow.",
+    "idea": "How often would a spin fail to follow a slowly turning magnetic field?",
+    "explanation": "Start with the spin in one of the two states selected by the field. At the end, measure along the new field direction. Getting the other energy state counts as failure to follow. The exact chance in this small model checks the shortcut that assumes perfect following.",
     "example": {
       "title": "Checking a rotating field",
       "steps": [
@@ -917,12 +1116,20 @@
       {
         "term": "ℏ",
         "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
   "berry-spin-loop": {
-    "idea": "A closed loop of field directions can leave a measurable relative phase.",
-    "explanation": "For a slowly followed positive spin eigenstate, the geometric phase is minus half the loop’s area on a unit sphere. A common phase alone is invisible; compare with a reference branch to detect a phase difference.",
+    "idea": "Returning a magnetic field to its original direction can leave a change in a wave’s timing.",
+    "explanation": "Trace the field direction as a point moving on a sphere of radius one. Here the spin stays in its positive state while the point makes a slow loop. The geometric phase is minus half the loop’s signed area. Compare this wave with a reference wave to detect the change.",
     "example": {
       "title": "A cone with a 60° opening angle",
       "steps": [
@@ -939,12 +1146,20 @@
       {
         "term": "Positive eigenstate",
         "definition": "The state with positive energy for the stated two-state Hamiltonian."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
+      },
+      {
+        "term": "Eigenstate",
+        "definition": "A state that gives one definite result for the chosen ideal measurement."
       }
     ]
   },
   "born-oppenheimer-factor": {
-    "idea": "Slow nuclear motion often lets us solve the electron problem at fixed nuclear positions.",
-    "explanation": "At each nuclear position, find the electronic energy first. Use it to help describe the nuclei’s motion; the electron state still changes with nuclear position, and a small electronic energy gap can spoil this separation.",
+    "idea": "Electrons in a molecule often adjust much faster than its nuclei move.",
+    "explanation": "A nucleus is a heavy centre of an atom. For each arrangement of nuclei, first hold them still and calculate an electron energy. Follow how this energy changes from place to place to estimate the nuclear motion. If two electron energies get close, the one-state shortcut can fail.",
     "example": {
       "title": "Building one point on a molecular energy surface",
       "steps": [
@@ -961,8 +1176,8 @@
     ]
   },
   "nuclear-effective-surface": {
-    "idea": "Near a stable molecular shape, nuclei can vibrate like a small spring system.",
-    "explanation": "A smooth energy minimum is approximately a bowl. Its curvature supplies the restoring strength, and the nuclear mass sets the vibration frequency; this local model does not describe the entire molecule coming apart.",
+    "idea": "The atoms of a molecule can vibrate like weights connected by a spring.",
+    "explanation": "Near a stable arrangement, moving the nuclei a little raises the energy. A steeper, more curved energy bowl makes a stronger restoring force. That stiffness and the masses set the vibration rate for small movements. Pulling the molecule apart goes beyond the spring model.",
     "example": {
       "title": "A small vibration near the minimum",
       "steps": [
@@ -975,12 +1190,19 @@
       {
         "term": "Curvature",
         "definition": "How sharply the potential energy bends upward near its minimum."
+      },
+      {
+        "term": "Angular frequency",
+        "definition": "How quickly a cycle advances, measured in radians per second. One whole turn is 2π radians."
       }
-    ]
+    ],
+    "lessonCopy": {
+      "check.explanations.0": "Frequency and spacing scale as √K."
+    }
   },
   "nonadiabatic-boundaries": {
-    "idea": "Nuclear motion can mix electronic states when their shapes change rapidly.",
-    "explanation": "Moving nuclei do not only move along one energy surface: they can couple different surfaces. Compare the motion-induced coupling with the electronic gap; heavy nuclei alone do not guarantee that mixing is small.",
+    "idea": "Moving a molecule’s nuclei can change which energy an electron will have when measured.",
+    "explanation": "The nuclei are the heavy centres of the atoms. As they move, the electron wave patterns can change and mix. The energy gap is the difference between two possible electron energies. Compare the strength of the mixing with that gap. When the gap is small, following just one pattern can give a poor prediction.",
     "example": {
       "title": "A local electronic mixing check",
       "steps": [
@@ -993,12 +1215,16 @@
       {
         "term": "Energy surface",
         "definition": "Electronic energy viewed as a function of nuclear position."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
   "interaction-picture": {
-    "idea": "A change of mathematical viewpoint can remove familiar evolution from the state equation.",
-    "explanation": "The interaction picture tracks the known reference evolution separately. States and measured quantities must both change description, so their predictions stay the same; this is an exact coordinate change before any approximation.",
+    "idea": "A calculation can be easier if you first take out a change you already know how to predict.",
+    "explanation": "For example, a wave may already change its timing even before a new interaction starts. The interaction picture builds that known motion into the reference used for the calculation. Adjust both the state and the measurement rule to keep the same predictions.",
     "example": {
       "title": "A changing off-diagonal coupling",
       "steps": [
@@ -1031,12 +1257,20 @@
       {
         "term": "exp(iωt)",
         "definition": "A complex phase factor with angle ωt."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
   "first-transition-amplitude": {
-    "idea": "For a weak short interaction, add the small transition amplitudes across time.",
-    "explanation": "Each moment contributes an amplitude with its own phase. Add those contributions before squaring; this first-order estimate neglects repeated transitions, so the total probability of leaving the initial state must stay small.",
+    "idea": "A brief, weak interaction can give a quantum system a small chance to change states.",
+    "explanation": "Each moment adds a little wave contribution with its own timing. Add these contributions first, and then square the size to get a chance. The first estimate leaves out repeated jumps between states, so use it while leaving the starting state is still unlikely.",
     "example": {
       "title": "A short equal-energy coupling",
       "steps": [
@@ -1053,12 +1287,16 @@
       {
         "term": "i",
         "definition": "The imaginary unit; multiplying by i changes phase, not size."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
       }
     ]
   },
   "finite-rectangular-pulse": {
-    "idea": "A finite pulse allows contributions at different times to reinforce or cancel.",
-    "explanation": "For a constant interaction switched on for a fixed time, the energy-gap phase keeps turning. A longer pulse produces a narrower central response, but the first-order formula still requires a small total transition probability.",
+    "idea": "A pulse switched on for a short time can affect a wider range of energies than a long pulse.",
+    "explanation": "A pulse is an interaction that lasts for a set time. Contributions from different moments can reinforce or cancel as their wave cycles advance. In the weak model here, a longer pulse makes the central response narrower in energy. The total chance of transfer must still be small.",
     "example": {
       "title": "A two-second pulse away from equal energies",
       "steps": [
@@ -1091,12 +1329,16 @@
       {
         "term": "sinc(x)",
         "definition": "sin(x)/x, defined as 1 at x = 0."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
   "harmonic-drive-terms": {
-    "idea": "A cosine drive contributes two rotating terms to the transition amplitude.",
-    "explanation": "One term can turn slowly near resonance, while the other usually turns quickly. Add both amplitudes before squaring; dropping the fast term needs a reason based on the frequency, coupling and pulse duration.",
+    "idea": "A steadily repeating push can be described by two mathematical waves turning in opposite directions.",
+    "explanation": "Near resonance, the drive repeats close to the rate set by the energy difference. One wave then lines up for many cycles, while the other quickly changes its alignment. Add both before finding a probability unless their speeds and the pulse duration justify leaving the fast one out.",
     "example": {
       "title": "A particular resonant pulse",
       "steps": [
@@ -1121,12 +1363,20 @@
       {
         "term": "i",
         "definition": "The imaginary unit."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
+      },
+      {
+        "term": "Frequency",
+        "definition": "For a repeating signal, the number of cycles per second. Five cycles each second is 5 hertz."
       }
     ]
   },
   "dipole-selection-tests": {
-    "idea": "Symmetry can make a position-driven transition vanish before detailed calculation.",
-    "explanation": "If the position factor makes the overlap odd under reflection, positive and negative sides cancel. Passing a symmetry test only means “not forbidden by this test”; the remaining radial and angular factors still matter.",
+    "idea": "Symmetry can rule out some light-driven changes in an atom before you do the full calculation.",
+    "explanation": "Compare the left and right sides of the wave overlap that couples the two states to light. If reflecting position reverses its sign, the two sides cancel when added. If they do not cancel by this test, other parts of the calculation still decide the chance.",
     "example": {
       "title": "Combining one radial and angular factor",
       "steps": [
@@ -1169,6 +1419,10 @@
       {
         "term": "ℏ",
         "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
@@ -1187,12 +1441,16 @@
       {
         "term": "Density of states",
         "definition": "Number of available states per small energy interval."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
   "long-time-pulse-window": {
-    "idea": "A rate approximation needs time to resolve the energy range without resolving individual levels.",
-    "explanation": "The pulse should last longer than the broad spectral response time, yet shorter than the time that reveals separate final levels. It must also transfer only a small probability; a long pulse alone does not establish a constant rate.",
+    "idea": "To estimate a steady rate, a pulse must last long enough to average over many suitable levels.",
+    "explanation": "A very short pulse spreads its effect over a broad energy range. A very long one can pick out separate levels. Between those limits, the levels can act like a smooth group. The simple rate also assumes only a small chance of leaving the starting state.",
     "example": {
       "title": "Checking a one-second pulse",
       "steps": [
@@ -1209,8 +1467,8 @@
     ]
   },
   "golden-rule-rate": {
-    "idea": "Weak coupling to many nearby final states can produce an approximately constant transfer rate.",
-    "explanation": "The rate grows with the coupling’s squared size and the number of available states per energy. Use matching state normalization and a valid intermediate time window; an isolated two-state system does not automatically follow this rule.",
+    "idea": "A quantum system can change state at a nearly steady rate when many final energies lie close together.",
+    "explanation": "Two things matter: how strongly the starting state links to each final state, and how many of those states fit in a small energy interval. More choices can raise the rate. This weak-link estimate works over a limited time and does not generally apply to just two isolated states.",
     "example": {
       "title": "A small continuum transition",
       "steps": [
@@ -1231,8 +1489,8 @@
     ]
   },
   "threshold-phase-space": {
-    "idea": "A final channel opens only when enough energy is available.",
-    "explanation": "For the stated free three-dimensional channel, the number of final states grows as the square root of excess energy. The rate shares that growth only if the coupling stays nonzero and nearly constant; very near the edge, finite pulse width also matters.",
+    "idea": "Sometimes an outcome becomes possible only after the energy passes a minimum.",
+    "explanation": "Think of the minimum as the threshold. In this model a free particle can move in three directions. Just above the threshold, the number of available states per energy grows like the square root of the extra energy. The rate follows this growth only if the link to those states changes little.",
     "example": {
       "title": "Raising the excess energy",
       "steps": [
@@ -1245,12 +1503,20 @@
       {
         "term": "Excess energy",
         "definition": "Energy above the minimum needed to open this final channel."
+      },
+      {
+        "term": "Square root",
+        "definition": "A square root answers “which number times itself gives this value?” The √ sign picks the zero or positive answer. For example, √9 = 3."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   },
   "rate-and-survival-limits": {
-    "idea": "Very early quantum loss need not follow a constant-rate decay law.",
-    "explanation": "For a state with finite energy spread, the first survival loss grows with time squared. An exponential rate model may work later, but it cannot replace that exact short-time behavior at every time.",
+    "idea": "Immediately after a state is prepared, the chance of leaving it need not grow at a steady rate.",
+    "explanation": "Survival means finding the system still in its starting state. If its spread of possible energies is finite, the initial chance of leaving grows with time squared. Doubling a very short time makes this chance about four times as large.",
     "example": {
       "title": "A very short observation",
       "steps": [
@@ -1271,8 +1537,8 @@
     ]
   },
   "electric-dipole-regime": {
-    "idea": "A light wave can look nearly uniform across a very small atom or molecule.",
-    "explanation": "Compare the system’s size with how far the light phase changes. A small ratio supports a uniform-field dipole model, but does not guarantee weak excitation; a uniform field can still drive a large change over time.",
+    "idea": "Light can push on a small atom almost uniformly even though the field changes across a whole wavelength.",
+    "explanation": "A wavelength is one cycle measured in space. If the atom occupies only a tiny part of that cycle, its parts experience nearly the same electric field at a given time. This dipole approximation simplifies the pattern in space. A long or strong exposure can still cause a large change.",
     "example": {
       "title": "A small system in visible light",
       "steps": [
@@ -1285,12 +1551,16 @@
       {
         "term": "Dipole model",
         "definition": "An interaction model using charge times position and a nearly uniform electric field."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
   "spontaneous-emission-input": {
-    "idea": "A supplied decay rate predicts average emission counts, not each photon’s time.",
-    "explanation": "In this model, each excitation has the same constant chance per unit time to decay. The population falls exponentially when there is no pumping or competing channel; the model accepts the decay rate as input rather than deriving it.",
+    "idea": "A decay rate predicts the average number of photons emitted by a group of atoms.",
+    "explanation": "A photon is one packet of light. In this model, each atom that still has extra energy has the same chance per second of giving it up as light. The number of atoms left with extra energy shrinks by the same fraction over equal times. That rule describes the group average. It does not give an exact emission time for one atom.",
     "example": {
       "title": "Five hundred independent excitations",
       "steps": [
@@ -1307,12 +1577,16 @@
       {
         "term": "Nanosecond",
         "definition": "One billionth of a second."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
   "stimulated-balance-inversion": {
-    "idea": "Equal upward and downward stimulated rates cannot steadily put most atoms in the upper level.",
-    "explanation": "As the upper population grows, downward stimulated flow grows too. Adding spontaneous decay lowers the balance further; this closed two-level population model reaches at most half excited, unlike a different one-way pumping scheme.",
+    "idea": "If light drives two energy levels equally well in both directions, it cannot steadily keep most atoms in the upper one in this model.",
+    "explanation": "Light can lift a low-energy atom or bring a high-energy atom down. As more atoms reach the upper level, more can come down. Equal numbers balance these two flows. Atoms that fall on their own shift the balance toward the lower level.",
     "example": {
       "title": "Balancing two-level flows",
       "steps": [
@@ -1337,8 +1611,8 @@
     ]
   },
   "environment-dephasing": {
-    "idea": "An unobserved environment can reduce interference without changing local populations.",
-    "explanation": "The environment can carry different records of the two system states. Ignoring those records reduces the off-diagonal entries that support interference, even while the whole system-plus-environment state remains pure.",
+    "idea": "The surroundings can blur a quantum interference pattern without changing how often its two basic outcomes occur.",
+    "explanation": "Different parts of a wave can leave different traces in the surroundings. If we ignore those traces, the parts no longer combine as strongly in our predictions. The separate outcome chances can stay the same even while their interference fades.",
     "example": {
       "title": "A partial environmental record",
       "steps": [
@@ -1359,12 +1633,24 @@
       {
         "term": "Pure state",
         "definition": "A state described by one normalized quantum vector."
+      },
+      {
+        "term": "Interference",
+        "definition": "Wave contributions can strengthen or cancel when they meet. Quantum amplitudes can do this, too."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
+      },
+      {
+        "term": "Matrix",
+        "definition": "A grid of numbers. In these calculations it can act as a rule that turns one list of numbers into another."
       }
     ]
   },
   "kraus-channel-bridge": {
-    "idea": "A valid quantum channel must also work when its input is part of a larger system.",
-    "explanation": "Kraus matrices describe allowed state changes whose combined action preserves total probability. This construction stays valid on one part of an entangled pair; checking just one single-system output would not prove that general property.",
+    "idea": "A rule for changing one quantum system must still make sense when that system is paired with another.",
+    "explanation": "A quantum channel is a rule that changes the table of predicted measurement results. Kraus matrices list possible changes whose combined action keeps the total chance at one. This construction also works when the two partners have linked quantum states.",
     "example": {
       "title": "A random phase flip",
       "steps": [
@@ -1385,12 +1671,16 @@
       {
         "term": "Coherence",
         "definition": "State entries that carry relative-phase information."
+      },
+      {
+        "term": "Superposition",
+        "definition": "One quantum state formed by combining reference states with amplitudes. The parts can strengthen or cancel in a measurement."
       }
     ]
   },
   "amplitude-damping-channel": {
-    "idea": "Decay transfers excited population into the ground state while reducing coherence.",
-    "explanation": "Add both decay and no-decay contributions to describe an unobserved outcome. Simply shrinking a state vector and renormalizing it would describe a different operation and lose the population transferred to the ground level.",
+    "idea": "When a quantum system loses energy, it becomes more likely to be found in its lowest-energy state.",
+    "explanation": "The chance of finding the higher energy is its excited-state population. If the outcome of a decay is unobserved, include both possibilities: the system decayed or it did not. The ground-state chance grows, and the link between the two wave amplitudes weakens. Shrinking the excited part alone would leave out the decay outcome.",
     "example": {
       "title": "A 36% decay chance",
       "steps": [
@@ -1407,12 +1697,16 @@
       {
         "term": "Coherence",
         "definition": "An off-diagonal entry carrying relative-phase information."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
       }
     ]
   },
   "markovian-decay-example": {
-    "idea": "Population loss and extra phase noise both shorten the lifetime of coherence.",
-    "explanation": "In this constant-rate memoryless model, losing excited population already reduces coherence. Additional phase noise makes it fade faster, giving a coherence time no longer than twice the population-decay time.",
+    "idea": "Losing energy and losing the timing between wave parts are two different changes.",
+    "explanation": "Coherence measures how well wave parts keep the relation needed to interfere. Losing excited states already weakens it. Random timing changes weaken it more. In this constant-rate model, coherence cannot last longer than twice the characteristic time for the excited population to fall.",
     "example": {
       "title": "Two decay times",
       "steps": [
@@ -1441,12 +1735,16 @@
       {
         "term": "ns",
         "definition": "Nanosecond, one billionth of a second."
+      },
+      {
+        "term": "Coherence",
+        "definition": "A definite relation between quantum wave parts that lets the parts interfere in suitable measurements."
       }
     ]
   },
   "incident-flux-counts": {
-    "idea": "A scattering rate combines beam flux, target count and cross section.",
-    "explanation": "Flux counts particles crossing an area each second. Cross section tells how strongly one target scatters that beam; the simple product assumes a thin sample of independent targets that barely weakens the beam.",
+    "idea": "To estimate how many particles scatter each second, count the incoming particles and the targets they can hit.",
+    "explanation": "Flux is the number of particles arriving each second on each square metre. Cross section acts like an effective area for one target. Multiply the flux by that area and the number of targets. This simple count works for a thin sample in which very few particles scatter twice or get removed from the beam.",
     "example": {
       "title": "A dilute target sample",
       "steps": [
@@ -1463,8 +1761,8 @@
     ]
   },
   "outgoing-scattering-amplitude": {
-    "idea": "The squared scattering amplitude gives an area per direction, not a probability by itself.",
-    "explanation": "Far from a short-range scatterer, an outgoing spherical wave spreads over a growing sphere. Its density falls as distance squared, while the collecting area grows by the same factor, leaving a distance-independent cross section.",
+    "idea": "A scattering amplitude tells how strongly a particle wave spreads in one chosen direction.",
+    "explanation": "Picture a small detector facing the source. Twice as far away, the same patch of directions covers four times as much area. The scattered wave’s probability density falls to one quarter. These changes balance. Squaring the amplitude’s size gives the effective scattering area per unit of solid angle, a measure of the patch of directions.",
     "example": {
       "title": "One isotropic amplitude",
       "steps": [
@@ -1489,12 +1787,24 @@
       {
         "term": "i",
         "definition": "The imaginary unit."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
+      },
+      {
+        "term": "Scattering amplitude",
+        "definition": "A number for the wave scattered in a chosen direction. In this convention, squaring its size gives the cross section per unit solid angle, an effective area per patch of direction."
+      },
+      {
+        "term": "Cross section",
+        "definition": "An effective area that measures how likely a particular interaction is under the stated conditions."
       }
     ]
   },
   "solid-angle-cross-section": {
-    "idea": "Add scattering over patches of direction with their proper angular sizes.",
-    "explanation": "Equal steps in polar angle do not cover equal areas on a sphere. Include the sine factor when integrating, and multiply one sampled value by the full sphere only when the distribution is the same in every direction.",
+    "idea": "Some patches on a sphere cover more directions than others.",
+    "explanation": "Draw latitude bands of the same width on a globe. A band near a pole covers less area than one at the equator. Count that area difference when adding scattered particles over directions. A solid angle measures the size of such a patch as seen from the centre.",
     "example": {
       "title": "Integrating one angular distribution",
       "steps": [
@@ -1523,12 +1833,16 @@
       {
         "term": "Solid angle",
         "definition": "A patch of directions measured by its area on a unit sphere."
+      },
+      {
+        "term": "Integral",
+        "definition": "A way of adding many small pieces to find a total. Adding small pieces of distance can give the length of a whole trip."
       }
     ]
   },
   "outgoing-green-response": {
-    "idea": "A Green function describes the outgoing wave response to a point source.",
-    "explanation": "This response lets us build a scattered wave by adding contributions from many source points. Its singular value at the source must be handled through integration; it is not an ordinary infinite number to plug into arithmetic.",
+    "idea": "Knowing the wave sent out by one tiny source helps us predict the wave from a whole region.",
+    "explanation": "The rule for one ideal point source is called a Green function. Use that rule at many source locations and add their contributions. At the source point the ideal expression becomes unbounded, so use it within the sum over space rather than as an ordinary measured number.",
     "example": {
       "title": "One point away from the source",
       "steps": [
@@ -1561,8 +1875,8 @@
     ]
   },
   "scattering-integral-equation": {
-    "idea": "The scattered wave depends on the wave inside the potential itself.",
-    "explanation": "The integral equation adds the outgoing response from every part of the interaction region. The unknown wave appears inside that sum too, so merely writing the equation does not solve it; replacing the interior wave by a guess introduces an approximation.",
+    "idea": "To find a scattered wave, we need to know what the wave does inside the region where it feels a force.",
+    "explanation": "Each part of that region contributes an outward-going wave. Their total depends on the wave inside, which is itself affected by scattering. A first guess can make the calculation easier. Its accuracy depends on how much that guess misses.",
     "example": {
       "title": "One sampled source cell",
       "steps": [
@@ -1579,6 +1893,14 @@
       {
         "term": "Kernel",
         "definition": "The response rule linking a source point to an observation point."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
+      },
+      {
+        "term": "Integral",
+        "definition": "A way of adding many small pieces to find a total. Adding small pieces of distance can give the length of a whole trip."
       }
     ]
   },
@@ -1605,12 +1927,20 @@
       {
         "term": "ℏ",
         "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
+      },
+      {
+        "term": "Scattering amplitude",
+        "definition": "A number for the wave scattered in a chosen direction. In this convention, squaring its size gives the cross section per unit solid angle, an effective area per patch of direction."
       }
     ]
   },
   "legendre-radial-bridge": {
-    "idea": "Different angular patterns can have zero overlap when averaged over every direction.",
-    "explanation": "Legendre polynomials separate the angular pieces of central-potential scattering. Their orthogonality means cross terms disappear after the correct full-angle integration, even though the patterns can interfere in one chosen direction.",
+    "idea": "Two different wave patterns can overlap in one direction yet cancel in a sum over all directions.",
+    "explanation": "Imagine combining a pattern that stays the same with one that changes from negative to positive. In the overlap sum, equal positive and negative contributions cancel. This is called orthogonality. The angular patterns used here are called Legendre polynomials. The cancellation applies when the calculation includes all directions.",
     "example": {
       "title": "The first two angular patterns",
       "steps": [
@@ -1631,12 +1961,16 @@
       {
         "term": "∫",
         "definition": "Add the contributions continuously across the stated interval."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
       }
     ]
   },
   "elastic-phase-shifts": {
-    "idea": "Elastic scattering can change a wave’s phase without losing its incoming flux.",
-    "explanation": "For a real short-range central potential with one open channel, outgoing and incoming radial waves have equal flow. Their relative phase still changes the scattering pattern, so unchanged total flow does not mean no scattering.",
+    "idea": "A collision can keep the wave’s energy the same but change where its cycle starts.",
+    "explanation": "This kind of collision is called elastic. Compare a wave that felt the force with one that traveled freely. Their peaks can end up shifted even though the incoming and outgoing flows balance. Each angular wave pattern can have its own shift.",
     "example": {
       "title": "A phase shift of 30°",
       "steps": [
@@ -1661,12 +1995,16 @@
       {
         "term": "exp(iα)",
         "definition": "A unit-size complex number with phase angle α."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
       }
     ]
   },
   "partial-wave-amplitude": {
-    "idea": "Add angular-channel amplitudes before squaring for a chosen direction.",
-    "explanation": "Different angular waves can reinforce or cancel at the same detector. Their interference disappears from some full-angle integrals, but it must stay in a directional prediction; omitted channels also need justification.",
+    "idea": "Different wave patterns can arrive together at one detector and strengthen or cancel each other.",
+    "explanation": "A partial wave is one part of the full wave with a particular pattern across directions. Each contributes a number with both size and timing. For one detector direction, add those numbers before squaring. Leaving out a large part changes the answer.",
     "example": {
       "title": "Adding s and p waves forward",
       "steps": [
@@ -1687,12 +2025,16 @@
       {
         "term": "Steradian",
         "definition": "The unit for a patch of directions."
+      },
+      {
+        "term": "Amplitude",
+        "definition": "A number used to combine quantum possibilities. For a single normalized reference state, square the size of its amplitude to get the chance of that outcome. For position, this gives a density that you add over a region."
       }
     ]
   },
   "partial-total-cross-section": {
-    "idea": "After full-angle integration, elastic partial-wave cross sections add.",
-    "explanation": "Orthogonality removes interference between different angular channels from the full-sphere total. Each channel has its own maximum, but this does not impose one fixed maximum on an unrestricted sum of all channels.",
+    "idea": "To find the total scattering, count outgoing particles in every direction.",
+    "explanation": "Different angular wave patterns can interfere in one direction. But when all directions are included, the positive and negative overlap between distinct patterns cancels. Their separate scattering areas then add. A limit on one pattern’s contribution does not limit how many patterns there may be.",
     "example": {
       "title": "Adding two integrated channels",
       "steps": [
@@ -1705,12 +2047,16 @@
       {
         "term": "s and p",
         "definition": "Orbital angular channels with labels 0 and 1."
+      },
+      {
+        "term": "Cross section",
+        "definition": "An effective area that measures how likely a particular interaction is under the stated conditions."
       }
     ]
   },
   "optical-theorem": {
-    "idea": "Forward interference keeps the total scattering calculation consistent with conserved flow.",
-    "explanation": "For the stated purely elastic short-range model, the imaginary part of the forward amplitude determines the total cross section. This links the angular scattering pattern with the incoming beam’s interference, including the forward direction.",
+    "idea": "The wave scattered straight ahead gives a clue to how much of the incoming beam scatters in all directions.",
+    "explanation": "In the forward direction, the incoming and scattered waves overlap. Their interference accounts for the change in the forward beam. Here particles keep their energy and none are absorbed. The optical theorem connects the total scattering to the imaginary part of the forward amplitude, the number multiplying i.",
     "example": {
       "title": "Checking an isotropic s wave",
       "steps": [
@@ -1731,12 +2077,24 @@
       {
         "term": "s wave",
         "definition": "The orbital angular channel with label zero."
+      },
+      {
+        "term": "Interference",
+        "definition": "Wave contributions can strengthen or cancel when they meet. Quantum amplitudes can do this, too."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
+      },
+      {
+        "term": "Scattering amplitude",
+        "definition": "A number for the wave scattered in a chosen direction. In this convention, squaring its size gives the cross section per unit solid angle, an effective area per patch of direction."
       }
     ]
   },
   "s-wave-scattering-length": {
-    "idea": "Scattering length summarizes a short-range interaction at very low energy.",
-    "explanation": "It marks where the outside zero-energy radial wave would reach zero if extended. It can be negative or much larger than the potential’s size; neither makes it a literal radius or a negative area.",
+    "idea": "A slow particle’s scattered wave can be summarized by a distance called the scattering length.",
+    "explanation": "Beyond the short reach of the force, extend the nearly zero-energy radial wave’s straight-line form backward. The point where that line would meet zero gives the scattering length. This constructed distance can be negative even though a measured area is always zero or positive.",
     "example": {
       "title": "An attractive spherical well",
       "steps": [
@@ -1757,12 +2115,16 @@
       {
         "term": "q",
         "definition": "The interior zero-energy wave number multiplied by the radius."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
       }
     ]
   },
   "partial-wave-resonance": {
-    "idea": "A narrow resonance makes one angular channel scatter strongly near one energy.",
-    "explanation": "In the stated isolated elastic model, the phase-dependent peak has a width set by Γ. Treating the cross-section shape as the same simple peak also assumes the wave number changes little across that energy window.",
+    "idea": "A small change in incoming energy can make one wave pattern scatter much more strongly.",
+    "explanation": "A narrow peak in the response is called a resonance. Its width tells us the energy range over which the effect is strong. Here one isolated peak dominates and particles keep their energy. To use the same peak shape for scattering area, the incoming wave spacing must also barely change across it.",
     "example": {
       "title": "A narrow s-wave resonance",
       "steps": [
@@ -1783,12 +2145,16 @@
       {
         "term": "s wave",
         "definition": "The orbital angular channel with label zero."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
   "identical-particle-scattering": {
-    "idea": "Indistinguishable collision alternatives must be combined before counting pair events.",
-    "explanation": "Add direct and exchanged amplitudes with the sign required by the spatial symmetry. An outgoing pair occupies opposite directions, so integrate one hemisphere, or halve the full-sphere result, to avoid counting each pair twice.",
+    "idea": "When two outgoing particles are identical, counting their two hits as separate collisions doubles the answer.",
+    "explanation": "Swapping which particle went to which detector does not label a new event. Combine the two wave alternatives with the sign required for the prepared state. Then count each opposite pair of directions once, for example by summing over one half of the sphere.",
     "example": {
       "title": "Identical spinless bosons in an s wave",
       "steps": [
@@ -1809,12 +2175,20 @@
       {
         "term": "i",
         "definition": "The imaginary unit."
+      },
+      {
+        "term": "Scattering amplitude",
+        "definition": "A number for the wave scattered in a chosen direction. In this convention, squaring its size gives the cross section per unit solid angle, an effective area per patch of direction."
+      },
+      {
+        "term": "Cross section",
+        "definition": "An effective area that measures how likely a particular interaction is under the stated conditions."
       }
     ]
   },
   "first-born-fourier": {
-    "idea": "The first Born approximation replaces the unknown interior wave with the incoming wave.",
-    "explanation": "This makes scattering computable from the potential’s spatial pattern. It is useful only when that replacement causes little distortion; a small-looking potential number alone does not establish accuracy.",
+    "idea": "A first estimate of scattering uses the undisturbed incoming wave inside the region where the force acts.",
+    "explanation": "This is the first Born approximation. Add the small contributions from different parts of that region, including how their wave cycles line up. If the interaction strongly changes the wave there, the original wave is a poor starting guess.",
     "example": {
       "title": "A weak spherical barrier forward",
       "steps": [
@@ -1831,12 +2205,24 @@
       {
         "term": "Steradian",
         "definition": "The unit for a patch of directions."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
+      },
+      {
+        "term": "Scattering amplitude",
+        "definition": "A number for the wave scattered in a chosen direction. In this convention, squaring its size gives the cross section per unit solid angle, an effective area per patch of direction."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
   "central-born-integral": {
-    "idea": "Scattering angle determines momentum transfer in an elastic collision.",
-    "explanation": "Incoming and outgoing momentum have equal size in this model. Subtracting their vectors gives a transfer that is zero forward and larger at wider angles; the central-potential integral uses that transfer to combine source phases.",
+    "idea": "A beam that turns through a larger angle changes its momentum more, even if its speed stays the same.",
+    "explanation": "Momentum includes direction. Imagine two arrows of equal length, one for the incoming motion and one for the outgoing motion. With their tails together, the distance between their tips gives the size of the momentum change. Straight ahead gives zero change.",
     "example": {
       "title": "A 60° scattering angle",
       "steps": [
@@ -1861,12 +2247,16 @@
       {
         "term": "ℏ",
         "definition": "Planck’s constant divided by 2π."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
       }
     ]
   },
   "gaussian-born-example": {
-    "idea": "A smooth Gaussian potential gives a smoothly fading angular scattering pattern.",
-    "explanation": "In the first Born model, source phases cancel more at larger momentum transfer. The amplitude decreases exponentially, and squaring it makes the cross section decrease with twice the exponent.",
+    "idea": "A smooth force pattern can make a beam scatter most strongly near its original direction.",
+    "explanation": "The potential in this example is shaped like a bell. The first Born estimate uses the incoming wave to add the effect of each part of the bell. At larger angles the wave contributions cancel more. Their combined size falls, and the area for scattering falls with its square.",
     "example": {
       "title": "At transfer qa = 2",
       "steps": [
@@ -1887,12 +2277,20 @@
       {
         "term": "exp(x)",
         "definition": "e raised to x, with e about 2.718."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
+      },
+      {
+        "term": "Cross section",
+        "definition": "An effective area that measures how likely a particular interaction is under the stated conditions."
       }
     ]
   },
   "screened-potential-example": {
-    "idea": "Screening cuts off a potential’s long-distance tail and changes its forward scattering.",
-    "explanation": "A finite screening length keeps the stated potential short range. Removing that cutoff is not a harmless substitution: the forward amplitude can diverge and the short-range scattering assumptions need to change.",
+    "idea": "If the force has a shorter reach, a beam scatters differently, even straight ahead.",
+    "explanation": "In this model the interaction fades rapidly beyond a distance called the screening length. That fade keeps the predicted wave scattered straight ahead finite. Extending the interaction farther and farther can make this prediction grow without a limit. A long-range interaction needs a different treatment.",
     "example": {
       "title": "One finite screening scale",
       "steps": [
@@ -1913,12 +2311,20 @@
       {
         "term": "Screening",
         "definition": "Reduction of an interaction’s effect over long distances."
+      },
+      {
+        "term": "Scattering amplitude",
+        "definition": "A number for the wave scattered in a chosen direction. In this convention, squaring its size gives the cross section per unit solid angle, an effective area per patch of direction."
+      },
+      {
+        "term": "Cross section",
+        "definition": "An effective area that measures how likely a particular interaction is under the stated conditions."
       }
     ]
   },
   "born-error-and-unitarity": {
-    "idea": "Test a Born estimate against an exact result where one is available.",
-    "explanation": "Compare like quantities in the same energy regime. Also keep approximation orders consistent: a first-order real forward amplitude lacks the second-order imaginary part needed to match its nonzero squared scattering area.",
+    "idea": "We can test a scattering shortcut by comparing its prediction with an exact answer for the same beam and target.",
+    "explanation": "The Born shortcut starts with the wave the beam would have if the target did not disturb it. Try it on a weak interaction whose full solution is known. Subtract the two predictions and compare that difference with the size of the exact answer. A wave effect left out by the shortcut can matter when checking that all particles are accounted for.",
     "example": {
       "title": "A weak attractive well",
       "steps": [
@@ -1931,12 +2337,16 @@
       {
         "term": "Born estimate",
         "definition": "The result from replacing the interior wave by the incoming wave."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
       }
     ]
   },
   "static-approximation-capstone": {
-    "idea": "Choose an approximation by checking the size that makes it reliable.",
-    "explanation": "For a separated two-level pair, compare coupling with the gap before estimating the shift. Then check the estimate against the exact small matrix; the agreement measures this case, not every possible potential.",
+    "idea": "A shortcut needs a small comparison number. Find that number before trusting the answer.",
+    "explanation": "For two separated energy levels, divide the strength of their link by the gap between their energies. A small result supports estimating the shift from the original levels. Compare that estimate with the exact two-level answer to see how well it worked here.",
     "example": {
       "title": "Checking one weak coupling",
       "steps": [
@@ -1949,16 +2359,20 @@
       {
         "term": "Diagonalization",
         "definition": "Finding the states on which the energy matrix acts by simple multiplication."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
   "driven-open-capstone": {
-    "idea": "Match the evolution formula to the physical model before calculating a probability.",
-    "explanation": "A closed driven pair can transfer probability back and forth, so a weak estimate applies only near the start. A constant loss rate describes a different model and cannot simply be substituted for this coherent motion.",
+    "idea": "A system that can switch back and forth needs a different rule from one that can only lose energy to its surroundings.",
+    "explanation": "In the first case, the drive can move probability into one state and back out again. A shortcut that only counts the first small transfer works briefly. In the second case a constant loss rate can describe decay. First identify which experiment the numbers describe.",
     "example": {
       "title": "Testing a short closed-system drive",
       "steps": [
-        "The rotation rate is 2 radians per second and the time is 0.20 seconds, giving angle 0.20.",
+        "The drive rate is 2 radians per second and it acts for 0.20 seconds. The formula uses half of rate × time, so the angle inside the sine is 2 × 0.20 ÷ 2 = 0.20 radians.",
         "The exact transfer is sin²(0.20), about 0.03947. Its weak estimate, 0.04000, is close for this duration."
       ]
     },
@@ -1979,8 +2393,8 @@
     ]
   },
   "quantum3-assessment": {
-    "idea": "Check an elastic scattering result by calculating its total area two ways.",
-    "explanation": "The integrated angular-channel sum and the forward interference rule should agree for this complete elastic model. Disagreement calls for checking omitted channels, boundaries and normalization before claiming a new physical effect.",
+    "idea": "To check whether every scattered particle was counted, find the total scattering in two ways.",
+    "explanation": "First add what goes out in all directions. Then use the change in the wave moving straight ahead, where the incoming and scattered waves meet. For this model no particle disappears or changes its internal energy. The two totals should agree if every contribution was counted correctly.",
     "example": {
       "title": "One s-plus-p conservation check",
       "steps": [
@@ -1997,6 +2411,14 @@
       {
         "term": "s and p",
         "definition": "Orbital angular channels with labels 0 and 1."
+      },
+      {
+        "term": "Scattering",
+        "definition": "A change in motion, direction or wave pattern after an interaction. A detector can record how much goes in each direction."
+      },
+      {
+        "term": "Scattering amplitude",
+        "definition": "A number for the wave scattered in a chosen direction. In this convention, squaring its size gives the cross section per unit solid angle, an effective area per patch of direction."
       }
     ]
   }

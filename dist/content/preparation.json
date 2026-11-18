@@ -12,19 +12,19 @@
       "steps": [
         {
           "key": "math/prep-fractions",
-          "why": "Read a share of a whole."
+          "why": "Read a fraction such as ¾ as three of four equal parts."
         },
         {
           "key": "math/prep-decimals",
-          "why": "Read small amounts."
+          "why": "Read decimals such as 0.5, halfway between zero and one."
         },
         {
           "key": "math/prep-negative-numbers",
-          "why": "Work with numbers below zero."
+          "why": "Use a minus sign for values below zero, such as −3 °C."
         },
         {
           "key": "math/prep-brackets",
-          "why": "Group a calculation."
+          "why": "Use brackets to show which part of a calculation comes first."
         },
         {
           "key": "math/prep-powers",
@@ -51,23 +51,23 @@
       "steps": [
         {
           "key": "math/prep-fractions",
-          "why": "Read a share of a whole."
+          "why": "Read a fraction such as ¾ as three of four equal parts."
         },
         {
           "key": "math/prep-decimals",
-          "why": "Read small amounts."
+          "why": "Read decimals such as 0.5, halfway between zero and one."
         },
         {
           "key": "math/prep-negative-numbers",
-          "why": "Work with numbers below zero."
+          "why": "Use a minus sign for values below zero, such as −3 °C."
         },
         {
           "key": "math/prep-percent",
-          "why": "Read a share out of a hundred."
+          "why": "Read a percentage as a share of 100."
         },
         {
           "key": "math/prep-brackets",
-          "why": "Group a calculation."
+          "why": "Use brackets to show which part of a calculation comes first."
         },
         {
           "key": "math/prep-powers",
@@ -75,7 +75,7 @@
         },
         {
           "key": "math/prep-square-roots",
-          "why": "Undo squaring for a nonnegative value."
+          "why": "Find a square root. For example, 3 is the square root of 9 because 3 × 3 = 9."
         },
         {
           "key": "math/prep-reciprocals",
@@ -87,11 +87,11 @@
         },
         {
           "key": "math/prep-functions",
-          "why": "Read an input and its output."
+          "why": "Use a rule to turn an input number into an output number."
         },
         {
           "key": "math/prep-proportions",
-          "why": "Scale two amounts together."
+          "why": "See how one amount changes when you double the other."
         },
         {
           "key": "math/prep-exponentials",
@@ -103,11 +103,11 @@
         },
         {
           "key": "math/prep-subscripts",
-          "why": "Tell labeled values apart."
+          "why": "Use a small label below a letter to tell two readings apart."
         },
         {
           "key": "math/prep-sums",
-          "why": "Read a short instruction to add terms."
+          "why": "Read the sum sign as an instruction to add a list of numbers."
         },
         {
           "key": "math/prep-change",
@@ -208,7 +208,7 @@
         },
         {
           "key": "math/dot-cross",
-          "why": "Compare directions in products."
+          "why": "Compare two arrows to see how much one points along or across the other."
         },
         {
           "key": "math/fields",
@@ -220,7 +220,7 @@
         },
         {
           "key": "math/gradient",
-          "why": "Connect a change in space to a direction."
+          "why": "Find the direction in which a quantity rises fastest."
         },
         {
           "key": "math/integrals",
@@ -228,7 +228,7 @@
         },
         {
           "key": "math/complex",
-          "why": "Meet the number tool used for oscillating circuits."
+          "why": "Use a two-part number to keep track of a signal’s size and timing."
         },
         {
           "key": "math/odes",
@@ -365,7 +365,7 @@
       "kind": "course",
       "track": "physics",
       "title": "Light & optics",
-      "why": "Review wave timing, direction and addition before studying light.",
+      "why": "Follow a wave crest, compare directions, and see what happens where two waves meet.",
       "requiredCourses": [
         "math",
         "em",
@@ -394,7 +394,7 @@
         },
         {
           "key": "waves/path-phase",
-          "why": "Connect extra distance to phase."
+          "why": "See how extra travel can make one wave crest arrive later than another."
         },
         {
           "key": "waves/coherent-addition",
@@ -455,7 +455,7 @@
         },
         {
           "key": "mechanics/inertial-frames",
-          "why": "Recognize a non-accelerating frame."
+          "why": "Describe motion from an observer who moves at steady speed in a straight line."
         },
         {
           "key": "mechanics/isolated-momentum",
@@ -537,7 +537,7 @@
       "kind": "course",
       "track": "physics",
       "title": "Particle physics",
-      "why": "Review quantum outcomes and energy-momentum accounting before studying particles.",
+      "why": "Practise predicting measurement results and keeping track of total energy and momentum in a particle reaction.",
       "requiredCourses": [
         "math",
         "quantum2",
@@ -642,7 +642,7 @@
         },
         {
           "key": "em/dielectric-response",
-          "why": "Review how matter responds to an electric field."
+          "why": "See how an electric field can shift positive and negative charge in a material."
         }
       ],
       "remainingTools": [],
@@ -734,7 +734,7 @@
         },
         {
           "key": "math/complex-phase",
-          "why": "Read the angle of a complex number."
+          "why": "Treat a complex number as an arrow and find the angle it makes."
         },
         {
           "key": "math/derivatives",
@@ -790,7 +790,7 @@
       "kind": "course",
       "track": "quantum",
       "title": "Quantum II",
-      "why": "Review quantum states and matrix tools before working with more general measurements and combined systems.",
+      "why": "Review how numbers in a table describe a change to a quantum state. Then use those tables to study measurements and pairs of systems.",
       "requiredCourses": [
         "math",
         "quantum1"
@@ -798,7 +798,7 @@
       "steps": [
         {
           "key": "math/complex",
-          "why": "Review complex components."
+          "why": "Read the real and imaginary parts of a complex number."
         },
         {
           "key": "math/matrix-products",
@@ -822,11 +822,11 @@
         },
         {
           "key": "math/integrals",
-          "why": "Add a continuous probability density."
+          "why": "Add up probability across a range of possible results."
         },
         {
           "key": "quantum1/complex-amplitudes",
-          "why": "Review amplitudes."
+          "why": "Use a quantum amplitude to find the chance of a measurement result."
         },
         {
           "key": "quantum1/global-relative-phase",
@@ -842,7 +842,7 @@
         },
         {
           "key": "quantum1/expectation-variance",
-          "why": "Read an average and its spread."
+          "why": "Find a typical measurement result and how widely the results vary."
         },
         {
           "key": "quantum1/evolve-superposition",
@@ -858,7 +858,7 @@
       "kind": "course",
       "track": "quantum",
       "title": "Quantum III",
-      "why": "Review operators, combined states and approximation tools before the final quantum course.",
+      "why": "Practise rules that change quantum states, describe two systems together, and estimate what a small change will do.",
       "requiredCourses": [
         "math",
         "quantum2"
@@ -870,7 +870,7 @@
         },
         {
           "key": "math/integration-parts",
-          "why": "Move a derivative inside an integral."
+          "why": "Use integration by parts to move a derivative from one factor of a product to the other."
         },
         {
           "key": "math/fourier-transform",
@@ -878,7 +878,7 @@
         },
         {
           "key": "math/odes",
-          "why": "Review change equations."
+          "why": "Read a rule that gives a rate of change."
         },
         {
           "key": "quantum2/spectral-projectors",
@@ -922,7 +922,7 @@
       "kind": "specialization",
       "track": "physics",
       "title": "Advanced analytical mechanics",
-      "why": "Prepare to describe motion using energy, chosen coordinates and action.",
+      "why": "Start with a position and an energy. These tools will help you compare different paths an object could take.",
       "requiredCourses": [
         "math",
         "mechanics",
@@ -939,11 +939,11 @@
         },
         {
           "key": "math/odes",
-          "why": "Read a rule for evolving motion."
+          "why": "Use a rule for how motion changes from one instant to the next."
         },
         {
           "key": "math/eigenvectors",
-          "why": "Find independent modes."
+          "why": "Find patterns of motion that can vibrate on their own."
         },
         {
           "key": "mechanics/motion-constraints",
@@ -1022,11 +1022,11 @@
         },
         {
           "key": "math/divergence",
-          "why": "Read local spreading of a field."
+          "why": "Check whether more flow leaves a tiny region than enters it."
         },
         {
           "key": "math/curl",
-          "why": "Read local turning of a field."
+          "why": "Imagine a tiny paddle wheel to see which way the flow would turn it."
         },
         {
           "key": "thermodynamics/first-law",
@@ -1071,11 +1071,11 @@
         },
         {
           "key": "math/divergence",
-          "why": "Read local spreading."
+          "why": "Check whether the flow spreads out from a place."
         },
         {
           "key": "math/curl",
-          "why": "Read local turning."
+          "why": "Check whether the flow turns a tiny paddle wheel at that place."
         },
         {
           "key": "math/fourier-transform",
@@ -1126,7 +1126,7 @@
       "kind": "specialization",
       "track": "physics",
       "title": "General relativity",
-      "why": "Prepare to study gravity through the geometry of space and time.",
+      "why": "Review how observers use clocks and rulers. You will use those tools to study gravity and free fall.",
       "requiredCourses": [
         "math",
         "mechanics",
@@ -1174,7 +1174,7 @@
       "remainingTools": [
         "Tensor calculus: track quantities as coordinates change.",
         "Differential geometry: measure distances and curvature.",
-        "Action principles, Green functions and numerical differential equations."
+        "Learn how to compare paths using action, calculate a response to a small source, and work out motion in many small time steps."
       ],
       "nextTopics": [
         "Use a metric to measure spacetime separation.",
@@ -1219,7 +1219,7 @@
         },
         {
           "key": "math/probability",
-          "why": "Describe expected variation."
+          "why": "Estimate how much readings may vary by chance."
         },
         {
           "key": "math/linearization",
@@ -1227,7 +1227,7 @@
         },
         {
           "key": "optics/detector-shot-noise",
-          "why": "Review counting noise."
+          "why": "See why repeated counts can vary even when the light level is steady."
         },
         {
           "key": "atomic-nuclear/separate-efficiency-and-background",
@@ -1311,7 +1311,7 @@
         },
         {
           "key": "quantum2/local-no-signalling",
-          "why": "Keep correlation distinct from sending information."
+          "why": "See why linked measurement results alone cannot send a message."
         }
       ],
       "remainingTools": [
@@ -1337,7 +1337,7 @@
       "kind": "specialization",
       "track": "quantum",
       "title": "Advanced many-body physics",
-      "why": "Prepare to study many interacting quantum particles.",
+      "why": "Practise counting particles in different states and predicting how the particles affect each other.",
       "requiredCourses": [
         "math",
         "quantum2",
@@ -1368,7 +1368,7 @@
         },
         {
           "key": "thermodynamics/chemical-potential",
-          "why": "Track the cost of adding a particle."
+          "why": "Find how adding one particle changes a system’s energy or free energy under the stated conditions."
         },
         {
           "key": "materials/bloch-form",
@@ -1380,12 +1380,12 @@
         },
         {
           "key": "materials/many-body-prerequisites",
-          "why": "Identify where the materials bridge ends."
+          "why": "Check which ideas about solids you already know and which come next."
         }
       ],
       "remainingTools": [
         "Second quantization: use operators that add or remove particles.",
-        "Statistical ensembles and response theory.",
+        "Compare many possible preparations of a system and predict how its average behaviour changes after a small push.",
         "Path integrals and Green functions: new ways to track quantum changes."
       ],
       "nextTopics": [
@@ -1407,7 +1407,7 @@
       "kind": "specialization",
       "track": "quantum",
       "title": "Quantum field theory",
-      "why": "Prepare to connect quantum theory, relativity and fields.",
+      "why": "Review how fields change across space and how to keep track of energy and momentum in fast-moving particles.",
       "requiredCourses": [
         "math",
         "em",
@@ -1423,7 +1423,7 @@
         },
         {
           "key": "math/odes",
-          "why": "Review time evolution."
+          "why": "Use a rate of change to describe how a system develops over time."
         },
         {
           "key": "em/maxwell-map",
@@ -1456,8 +1456,8 @@
       ],
       "remainingTools": [
         "Classical action and Noether theorem: connect symmetries and conserved quantities.",
-        "Distributions, contour integration and advanced scattering theory.",
-        "Relativistic quantum theory and group representations."
+        "Learn to work with sharply concentrated sources, calculate along paths in the complex-number plane, and describe how particles scatter.",
+        "Combine quantum rules with relativity and describe how a quantum state changes under a rotation or a change of observer."
       ],
       "nextTopics": [
         "Describe a classical field with an action.",

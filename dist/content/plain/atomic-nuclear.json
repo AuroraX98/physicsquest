@@ -30,6 +30,10 @@
       {
         "term": "e",
         "definition": "The positive elementary charge."
+      },
+      {
+        "term": "Electric charge",
+        "definition": "A property that comes in two signs, positive and negative. Like signs repel and opposite signs attract."
       }
     ]
   },
@@ -48,6 +52,18 @@
       {
         "term": "Electronvolt (eV)",
         "definition": "An energy unit equal to 1.602176634 × 10⁻¹⁹ joule."
+      },
+      {
+        "term": "Electronvolt",
+        "definition": "A small unit of energy. An electron gains one electronvolt of kinetic energy when a one-volt difference accelerates it in empty space."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
+      },
+      {
+        "term": "Wavelength",
+        "definition": "The distance along a wave from one point to the matching point in the next cycle, such as crest to crest."
       }
     ]
   },
@@ -66,6 +82,10 @@
       {
         "term": "Energy level",
         "definition": "An allowed energy of the system."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
@@ -158,6 +178,10 @@
       {
         "term": "Z",
         "definition": "Nuclear proton count."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
@@ -184,6 +208,10 @@
       {
         "term": "Electric dipole",
         "definition": "The separation pattern of positive and negative charge that couples to light here."
+      },
+      {
+        "term": "Orbital label",
+        "definition": "The number ℓ that labels how an electron’s wave pattern varies with direction around the nucleus."
       }
     ]
   },
@@ -282,6 +310,10 @@
       {
         "term": "Tesla (T)",
         "definition": "A unit of magnetic-field strength."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
       }
     ]
   },
@@ -330,6 +362,10 @@
       {
         "term": "Complete state",
         "definition": "A state with both its spatial and spin information specified."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
       }
     ]
   },
@@ -348,6 +384,10 @@
       {
         "term": "Screening",
         "definition": "The partial reduction of nuclear attraction caused by other electrons."
+      },
+      {
+        "term": "Orbital",
+        "definition": "In an atom, a one-electron state with a particular wave pattern. It describes possible measurements rather than a little track around the nucleus."
       }
     ]
   },
@@ -366,12 +406,16 @@
       {
         "term": "Configuration",
         "definition": "A record of occupied electron-state families."
+      },
+      {
+        "term": "Orbital",
+        "definition": "In an atom, a one-electron state with a particular wave pattern. It describes possible measurements rather than a little track around the nucleus."
       }
     ]
   },
   "an-average-field-misses-correlations": {
-    "idea": "An average electron environment misses some coordinated electron behavior.",
-    "explanation": "Electrons respond to each other, so treating each as independent is an approximation. Correlation means dependence beyond that chosen reference. Better calculations can raise or lower a predicted gap.",
+    "idea": "Treating each electron as moving on its own can miss how electrons affect each other.",
+    "explanation": "Electrons repel one another. Knowing where one is found can change where another is likely to be found. An average-field model smooths out some of this detail. Adding the missing links, called correlations, can change the predicted gap between energy levels in either direction.",
     "example": {
       "title": "Correcting an energy gap",
       "steps": [
@@ -392,8 +436,8 @@
     ]
   },
   "light-can-drive-either-direction": {
-    "idea": "Resonant light can make atoms absorb energy or return energy to the light.",
-    "explanation": "Light matching an energy gap can raise a lower-state atom or make an upper-state atom emit more light. The second process is stimulated emission. If the two levels contain equal numbers of sublevels, their atom counts decide which effect wins in this simple rate model.",
+    "idea": "Light with the right energy can lift an atom to a higher energy level. It can also prompt an atom already at the higher level to give light back.",
+    "explanation": "The light must match the energy gap between the levels. The upward step is absorption. The downward step triggered by the incoming light is stimulated emission. In this simple model the levels have equal numbers of sublevels, so the numbers of atoms at the two levels decide which effect is stronger.",
     "example": {
       "title": "Thirty upper and seventy lower atoms",
       "steps": [
@@ -428,12 +472,16 @@
       {
         "term": "Mean lifetime (τ)",
         "definition": "The average waiting time across many decay events."
+      },
+      {
+        "term": "Random",
+        "definition": "Individual outcomes can vary even when you repeat the same setup."
       }
     ]
   },
   "a-line-has-a-shape": {
-    "idea": "A finite excited-state lifetime gives a natural width to its spectral line.",
-    "explanation": "A spectral line is not infinitely sharp. Atomic motion, collisions and the instrument can add broadening, so measured width is not always a direct lifetime measurement. The simple formula assumes a much narrower lower level.",
+    "idea": "Light from many atoms making the same energy change can span a small range of frequencies.",
+    "explanation": "The bright band on a spectrum is called a spectral line. The shorter the average life of the upper energy state, the wider its natural line can be. Atomic motion, collisions and the instrument can also widen the observed line, so width alone need not tell us the lifetime.",
     "example": {
       "title": "A short-lived upper state",
       "steps": [
@@ -506,8 +554,8 @@
     ]
   },
   "separate-fast-and-slow-motion": {
-    "idea": "Molecular models often solve fast electron motion before slower nuclear motion.",
-    "explanation": "Nuclei are much heavier than electrons. We can first hold nuclei at chosen positions and calculate electron energy, then use the resulting energy curve for nuclear motion. This approximation can fail where electronic states strongly mix.",
+    "idea": "The heavy centres of atoms usually move more slowly than a molecule’s electrons adjust.",
+    "explanation": "First hold the nuclei fixed and calculate an electron energy. Repeat with the nuclei a little closer together or farther apart. The resulting energy curve helps predict how the nuclei move. The shortcut can fail when different electron states mix strongly as the nuclei move.",
     "example": {
       "title": "One point on a model bond curve",
       "steps": [
@@ -520,6 +568,10 @@
       {
         "term": "Effective energy curve",
         "definition": "The calculated energy versus nuclear position used in the simplified motion model."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
@@ -568,6 +620,10 @@
       {
         "term": "Dissociation",
         "definition": "Separating a molecule into specified fragments."
+      },
+      {
+        "term": "Ground state",
+        "definition": "A state with the lowest allowed energy."
       }
     ]
   },
@@ -752,6 +808,10 @@
       {
         "term": "Odd parity",
         "definition": "The pattern reverses its sign."
+      },
+      {
+        "term": "Spin",
+        "definition": "A built-in form of quantum angular momentum with specific possible readings. Even a particle modeled as a point can have spin."
       }
     ]
   },
@@ -774,6 +834,10 @@
       {
         "term": "Half-life",
         "definition": "Time for survival probability to fall to one half."
+      },
+      {
+        "term": "Random",
+        "definition": "Individual outcomes can vary even when you repeat the same setup."
       }
     ]
   },
@@ -796,6 +860,10 @@
       {
         "term": "ln(2)",
         "definition": "The fixed number about 0.693 used in exponential half-life calculations."
+      },
+      {
+        "term": "Exponential",
+        "definition": "A function that changes by the same factor when its input changes by a fixed amount. For example, a signal that halves each second decays exponentially."
       }
     ]
   },
@@ -822,8 +890,8 @@
     ]
   },
   "a-daughter-can-also-decay": {
-    "idea": "A daughter population changes through both production and its own decay.",
-    "explanation": "Parent decays add daughter nuclei while daughter decays remove them. Subtract the outgoing rate from the incoming rate. The daughter's population need not follow one simple falling exponential.",
+    "idea": "The new nucleus made in a decay can itself be unstable.",
+    "explanation": "The original nucleus is the parent and the new one is the daughter. A group of parents can keep adding daughters as some of the daughters decay away. To find the change in the number of daughters per second, subtract the removal rate from the creation rate.",
     "example": {
       "title": "A daughter population grows",
       "steps": [
@@ -836,6 +904,10 @@
       {
         "term": "Daughter",
         "definition": "The nucleus produced by a parent decay."
+      },
+      {
+        "term": "Exponential",
+        "definition": "A function that changes by the same factor when its input changes by a fixed amount. For example, a signal that halves each second decays exponentially."
       }
     ]
   },
@@ -892,8 +964,8 @@
     ]
   },
   "gamma-emission-includes-recoil": {
-    "idea": "A free nucleus recoils when it emits a gamma photon.",
-    "explanation": "The nuclear proton and neutron counts do not change. Some excitation energy becomes recoil energy, so the photon carries slightly less than the full level gap.",
+    "idea": "When a free atomic nucleus sends out a packet of high-energy light, the nucleus moves back a little.",
+    "explanation": "The packet is a gamma photon. The backward motion is called recoil and uses some of the energy released. The photon therefore carries slightly less than the full difference between the two nuclear energy levels. The proton and neutron counts stay the same.",
     "example": {
       "title": "A 1 MeV photon",
       "steps": [
@@ -910,6 +982,10 @@
       {
         "term": "Recoil",
         "definition": "Motion that balances the emitted photon's momentum."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
@@ -950,6 +1026,10 @@
       {
         "term": "Ionization",
         "definition": "Removing an electron from an atom or molecule."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
@@ -972,6 +1052,14 @@
       {
         "term": "μ",
         "definition": "The interaction-loss coefficient per distance."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
+      },
+      {
+        "term": "Exponential",
+        "definition": "A function that changes by the same factor when its input changes by a fixed amount. For example, a signal that halves each second decays exponentially."
       }
     ]
   },
@@ -994,12 +1082,16 @@
       {
         "term": "Background",
         "definition": "Events not caused by the signal of interest."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
       }
     ]
   },
   "count-uncertainty-survives-subtraction": {
-    "idea": "Subtracting background does not subtract its uncertainty.",
-    "explanation": "Two independently counted samples both vary randomly. Subtracting their counts removes an estimated background, but the variations remain. For equal observation times and ordinary independent counting, add the counts before taking the square root to estimate the net uncertainty; very small counts need fuller methods.",
+    "idea": "Subtracting background counts removes their average contribution but leaves uncertainty in the result.",
+    "explanation": "Measure once with the source present and once for the same time with only background. Both counts can jump around by chance. For ordinary independent counts, subtract the background count for the signal estimate. To estimate its standard uncertainty, add the two counts and take the square root. Very small counts need a more careful method.",
     "example": {
       "title": "Two count measurements",
       "steps": [
@@ -1020,6 +1112,14 @@
       {
         "term": "σ_net",
         "definition": "Estimated standard uncertainty, a typical size of random variation in the difference."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
+      },
+      {
+        "term": "Square root",
+        "definition": "A square root answers “which number times itself gives this value?” The √ sign picks the zero or positive answer. For example, √9 = 3."
       }
     ]
   },
@@ -1046,8 +1146,8 @@
     ]
   },
   "q-measures-rest-energy-change": {
-    "idea": "The Q value tells how much rest energy is released or required by a reaction.",
-    "explanation": "Subtract final rest energy from initial rest energy. Positive Q means the difference can appear in other energy forms. Incoming kinetic energy must be included separately, and momentum controls how energy is shared.",
+    "idea": "The particle masses before and after a reaction tell us whether rest energy is released or is needed.",
+    "explanation": "Rest energy is the energy that a mass has even when it is at rest. Subtract the final rest energies from the starting ones. This difference is called Q. A positive Q leaves energy for motion or radiation. Incoming motion energy and momentum still matter when working out the final readings.",
     "example": {
       "title": "One supplied mass difference",
       "steps": [
@@ -1064,6 +1164,10 @@
       {
         "term": "u",
         "definition": "The unified atomic mass unit."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy an object has because it is moving."
       }
     ]
   },
@@ -1170,6 +1274,10 @@
       {
         "term": "Tunnelling",
         "definition": "Quantum transmission through a classically blocking barrier."
+      },
+      {
+        "term": "Potential energy",
+        "definition": "Energy associated with an arrangement, such as the height of a weight above the floor."
       }
     ]
   },
@@ -1192,8 +1300,8 @@
     ]
   },
   "infer-an-original-spectral-ladder": {
-    "idea": "Several spectral gaps can constrain a possible set of energy levels.",
-    "explanation": "A large gap should equal the sum of smaller gaps through the same intermediate state. Agreement supports the proposed ladder but does not uniquely identify the atom or every transition.",
+    "idea": "Several colors of light can give clues to the spacing of an atom’s energy levels.",
+    "explanation": "Each measured photon energy is a difference between two levels. Try arranging levels so their gaps match the measurements. One gap alone does not label both ends unambiguously. Check whether the other lines fit the same arrangement and whether the proposed changes are allowed.",
     "example": {
       "title": "A synthetic spectrum",
       "steps": [
@@ -1210,8 +1318,8 @@
     ]
   },
   "fit-a-decay-record-cautiously": {
-    "idea": "Decay rates at two times can estimate a half-life under specific assumptions.",
-    "explanation": "Subtract compatible background first. If efficiency is unchanged and one exponential species dominates, the rate ratio gives a decay estimate. Two points alone cannot establish that the model fits well.",
+    "idea": "Two counts taken at different times can help estimate how quickly a sample decays.",
+    "explanation": "A half-life is the time needed for half of a large group of unstable nuclei to decay, on average. First subtract the background counts in matching time intervals. If one kind of decay dominates and the detector works the same way both times, compare the two rates. More observations are needed to test that assumption.",
     "example": {
       "title": "A rate halves in ten seconds",
       "steps": [
@@ -1228,6 +1336,14 @@
       {
         "term": "Half-life",
         "definition": "Time for the expected surviving population to halve."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
+      },
+      {
+        "term": "Uncertainty",
+        "definition": "How precisely a measurement or estimate is known. A value written with ± needs an explanation of what its range means."
       }
     ]
   },
@@ -1250,6 +1366,10 @@
       {
         "term": "u",
         "definition": "The unified atomic mass unit."
+      },
+      {
+        "term": "Isotope",
+        "definition": "A version of an element with a particular number of neutrons. Isotopes of one element have the same number of protons."
       }
     ]
   },
@@ -1268,6 +1388,10 @@
       {
         "term": "Model",
         "definition": "A simplified description used to answer a specified question."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   }

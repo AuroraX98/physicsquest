@@ -84,6 +84,10 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Assumption",
+        "definition": "Something you take as true for a calculation, such as assuming that a cart’s speed stays steady."
       }
     ]
   },
@@ -200,8 +204,8 @@
     ]
   },
   "gamma-domain": {
-    "idea": "The Lorentz factor grows as a frame's speed gets closer to light speed.",
-    "explanation": "This factor tells how strongly space and time measurements change between steadily moving frames. It equals one when their relative speed is zero. It grows without limit as speed approaches c, so special relativity has no ordinary rest frame moving with light.",
+    "idea": "Two observers moving past each other can measure different times and distances. The Lorentz factor tells how large the change can be in the formulas.",
+    "explanation": "The factor is one if the observers are at rest relative to each other. As their relative speed approaches light speed, the factor grows without limit. The formula applies to observers moving more slowly than light.",
     "example": {
       "title": "Finding the factor at high speed",
       "steps": [
@@ -222,12 +226,16 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Square root",
+        "definition": "A square root answers “which number times itself gives this value?” The √ sign picks the zero or positive answer. For example, √9 = 3."
       }
     ]
   },
   "boost-event": {
-    "idea": "Changing reference frames changes an event's time and position together.",
-    "explanation": "A Lorentz boost converts between frames moving steadily relative to each other. Both labels must be converted, or the answer mixes two frames. For the formulas here, the frames' origins meet when both clocks read zero, and the new frame moves along positive x.",
+    "idea": "A flash has both a place and a time. An observer on a passing train and an observer on the platform can give the same flash different place and time labels.",
+    "explanation": "A reference frame is a system of rulers and clocks. A Lorentz boost changes both labels from one steadily moving frame to another. Here the two frames pass their zero marks when both clocks there read zero, and the new frame moves in the direction called positive x.",
     "example": {
       "title": "Relabelling one event",
       "steps": [
@@ -298,6 +306,10 @@
       {
         "term": "prime (′)",
         "definition": "Marks the moving frame's labels."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -332,6 +344,10 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
       }
     ]
   },
@@ -354,6 +370,14 @@
       {
         "term": "t",
         "definition": "Time coordinate; ct converts it to distance units."
+      },
+      {
+        "term": "Spacetime",
+        "definition": "A way to describe places and times together. Each event has both a place and a time."
+      },
+      {
+        "term": "Ratio",
+        "definition": "One amount divided by another. Three red counters for every two blue gives a red-to-blue ratio of 3/2."
       }
     ]
   },
@@ -376,6 +400,10 @@
       {
         "term": "inertial frame",
         "definition": "A frame where an unforced object moves at constant velocity."
+      },
+      {
+        "term": "Spacetime",
+        "definition": "A way to describe places and times together. Each event has both a place and a time."
       }
     ]
   },
@@ -485,6 +513,10 @@
       {
         "term": "time dilation",
         "definition": "The difference between a moving clock's elapsed time and the coordinate-time interval in another frame."
+      },
+      {
+        "term": "Redshift",
+        "definition": "A shift of light toward longer wavelengths. Different physical effects can produce it."
       }
     ]
   },
@@ -506,7 +538,15 @@
       },
       {
         "term": "³",
-        "definition": "Multiply a quantity by itself three times."
+        "definition": "Use three equal factors. For example, 2³ means 2 × 2 × 2 = 8."
+      },
+      {
+        "term": "Velocity",
+        "definition": "Speed together with the direction of motion."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
       }
     ]
   },
@@ -551,6 +591,10 @@
       {
         "term": "²",
         "definition": "Multiply a quantity by itself."
+      },
+      {
+        "term": "Kinetic energy",
+        "definition": "Energy an object has because it is moving."
       }
     ]
   },
@@ -581,6 +625,10 @@
       {
         "term": "kinetic energy",
         "definition": "Energy above rest energy due to motion in the chosen frame."
+      },
+      {
+        "term": "Square root",
+        "definition": "A square root answers “which number times itself gives this value?” The √ sign picks the zero or positive answer. For example, √9 = 3."
       }
     ]
   },
@@ -615,6 +663,14 @@
       {
         "term": "²",
         "definition": "Multiply the quantity by itself."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
+      },
+      {
+        "term": "Inertial frame",
+        "definition": "A viewpoint in which an object with no net force moves at a steady speed in a straight line or stays at rest."
       }
     ]
   },
@@ -641,6 +697,10 @@
       {
         "term": "isolated",
         "definition": "No energy or momentum enters or leaves the chosen system."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
@@ -663,6 +723,10 @@
       {
         "term": "inertial frame",
         "definition": "A frame where an unforced object moves at constant velocity."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
@@ -711,6 +775,10 @@
       {
         "term": "rest energy",
         "definition": "The energy associated with mass in the system's rest frame."
+      },
+      {
+        "term": "Photon",
+        "definition": "One packet of electromagnetic radiation. Visible light and radio waves can both be described in photons."
       }
     ]
   },
@@ -771,6 +839,18 @@
       {
         "term": "10⁻⁷",
         "definition": "One ten-millionth."
+      },
+      {
+        "term": "Electric field",
+        "definition": "A rule for the force per unit positive charge at a place. Its direction is the way a small positive test charge would be pushed."
+      },
+      {
+        "term": "Magnetic field",
+        "definition": "A field that can turn a compass and push sideways on a moving electric charge."
+      },
+      {
+        "term": "Perpendicular",
+        "definition": "At a right angle, like two sides that meet at the corner of a square."
       }
     ]
   },
@@ -817,6 +897,10 @@
       {
         "term": "Component",
         "definition": "One entry of the set, such as one momentum direction."
+      },
+      {
+        "term": "Vector",
+        "definition": "A list of components that can be added and scaled together. A familiar example is a displacement arrow with length and direction."
       }
     ]
   },
@@ -895,6 +979,10 @@
       {
         "term": "≈",
         "definition": "Approximately equal to."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   },
@@ -955,6 +1043,14 @@
       {
         "term": "Curvature",
         "definition": "A property of spacetime geometry that can make nearby free-fall paths approach or separate."
+      },
+      {
+        "term": "Acceleration",
+        "definition": "How fast velocity changes. An object turning a corner accelerates even when its speed stays the same."
+      },
+      {
+        "term": "Spacetime",
+        "definition": "A way to describe places and times together. Each event has both a place and a time."
       }
     ]
   },
@@ -985,8 +1081,8 @@
     ]
   },
   "clock-signal-capstone": {
-    "idea": "Receiving a travel report takes longer than the journey because the report also needs travel time.",
-    "explanation": "Keep three events separate: departure, arrival at the detector, and reception of the return light signal. The origin clock measures departure to reception. The journey and signal-travel intervals add in the laboratory frame, with the detector and origin fixed in that frame.",
+    "idea": "A report sent back from a journey needs time to reach its starting point.",
+    "explanation": "Picture a clock at the starting point and a detector farther away. A traveler sets off, reaches the detector, and sends a flash back. The starting clock stops when the flash arrives. It records both the outward trip and the time light takes to come back.",
     "example": {
       "title": "Waiting for the return flash",
       "steps": [
@@ -1063,6 +1159,14 @@
       {
         "term": "Special relativity",
         "definition": "The theory relating space, time, energy, and momentum in flat spacetime."
+      },
+      {
+        "term": "Spacetime",
+        "definition": "A way to describe places and times together. Each event has both a place and a time."
+      },
+      {
+        "term": "Approximation",
+        "definition": "A result close enough to use when the stated conditions hold. For example, treating a nearly flat road as level can simplify a short-trip calculation."
       }
     ]
   }

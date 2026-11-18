@@ -678,6 +678,10 @@
               {
                 "term": "Nonnegative",
                 "definition": "Zero or greater."
+              },
+              {
+                "term": "Square root",
+                "definition": "A square root answers “which number times itself gives this value?” The √ sign picks the zero or positive answer. For example, √9 = 3."
               }
             ]
           },
@@ -860,8 +864,8 @@
           ],
           "limits": "Use values and units that fit the rule. A letter can mean different quantities in different lessons, so read its definition.",
           "focus": {
-            "idea": "Put a known value in place of its letter to use a rule.",
-            "explanation": "When a value is given, put it in place of its letter. Keep the operations in the rule, including brackets.",
+            "idea": "A letter in a rule can stand for a number.",
+            "explanation": "If one ticket costs two coins, the total cost depends on how many tickets you buy. Put that number in place of the letter in the rule. Then do the calculation.",
             "equation": "T = 2 × n; n = 3 → T = 2 × 3 = 6",
             "example": {
               "title": "Three tickets",
@@ -1194,6 +1198,10 @@
               {
                 "term": "Factor",
                 "definition": "A number being multiplied."
+              },
+              {
+                "term": "Exponential",
+                "definition": "A function that changes by the same factor when its input changes by a fixed amount. For example, a signal that halves each second decays exponentially."
               }
             ]
           },
@@ -1311,6 +1319,14 @@
               {
                 "term": "ln",
                 "definition": "A logarithm with base e."
+              },
+              {
+                "term": "Logarithm",
+                "definition": "The power needed to reach a number from a chosen base. The base-10 logarithm of 100 is 2 because 10² = 100."
+              },
+              {
+                "term": "Exponent",
+                "definition": "The raised number in a power. In 2³, the 3 means use three factors of 2, giving 2 × 2 × 2."
               }
             ]
           },

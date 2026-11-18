@@ -1,0 +1,317 @@
+{
+  "choose-coordinate": [
+    null,
+    "Imagine sliding the bead without changing what it is made of. Which quantity changes?",
+    "Which symbol tells where to draw the bead, before you compute what is pushing on it?"
+  ],
+  "constraint": [
+    "If the bead stays on the same circular wire, what distance from the centre stays fixed?",
+    null,
+    "Mark two different points on the wire. Must neither coordinate move between them?"
+  ],
+  "lagrangian": [
+    "Write out the definition of L before replacing V with T.",
+    "Compare the operation between T and V in energy with the operation in the Lagrangian.",
+    null
+  ],
+  "action": [
+    null,
+    "Two trips can end at the same place after following different paths. Which trip values enter the time integral?",
+    "Would two objects with the same mass but different paths necessarily have the same L at each moment?"
+  ],
+  "stationary-action": [
+    "What is varied in stationary action, the speed of the object or the path in the calculation?",
+    null,
+    "At the top of a smooth hill the first change in height can vanish. What does that tell you about the word “stationary”?"
+  ],
+  "spring-motion": [
+    "When the cart is to the positive side of rest, which way is the spring stretched?",
+    "Is the spring at its rest length at the stated position?",
+    null
+  ],
+  "pendulum-speed": [
+    null,
+    "Can a pendulum swing clockwise as well as counterclockwise?",
+    "What does the sign on an angular rate tell you about the rod rather than its length?"
+  ],
+  "pendulum-kinetic": [
+    "A reversed velocity still has a size. Check which quantity is squared in kinetic energy.",
+    null,
+    "Try squaring a negative angular rate. What happens to its minus sign?"
+  ],
+  "pendulum-potential": [
+    "Compare the bob’s height at the bottom with its height after a small lift.",
+    "Potential energy depends on a chosen reference height. Where was the reference placed?",
+    null
+  ],
+  "lagrangian-partial": [
+    null,
+    "A held-fixed quantity can have many values. Is the partial derivative asking you to erase q̇?",
+    "In this partial derivative, position and velocity are treated as separate inputs. Which input do you vary?"
+  ],
+  "pendulum-motion": [
+    "Would increasing mass change which side of equilibrium gravity pulls toward?",
+    null,
+    "Check whether mass appears on both sides of the ideal pendulum equation before scaling the acceleration."
+  ],
+  "generalized-momentum": [
+    "Inspect the mass factor in the kinetic energy before differentiating with respect to angular velocity.",
+    "Compare the units of length change and angle change. Which coordinate is conjugate to this momentum?",
+    null
+  ],
+  "cyclic-coordinate": [
+    null,
+    "Check separately for the coordinate and its time rate. Which absence defines a cyclic coordinate?",
+    "A constant momentum and a zero momentum are different conditions. Which is needed here?"
+  ],
+  "time-symmetry": [
+    "Signs of coordinates and explicit appearances of the clock time are different clues. Look for t in the rule.",
+    null,
+    "Could a formula use the same rule at noon and at 1 even if its input q had moved?"
+  ],
+  "central-angular-momentum": [
+    "Imagine a skater pulling their arms inward. Which two factors in angular momentum would you track as the skater spins?",
+    "Conserving a quantity means keeping its value. Does that restrict the value to zero?",
+    null
+  ],
+  "effective-potential": [
+    null,
+    "Which energy was already present before the angular motion was removed from the radial equation?",
+    "Write the effective potential as a sum. What happened to the original potential term?"
+  ],
+  "phase-point": [
+    "What does the second axis on the phase-space diagram measure?",
+    null,
+    "On the same vertical line of a phase diagram, mark momentum pointing each way. Are those marks on the same point?"
+  ],
+  "hamiltonian": [
+    "Is momentum used with its sign or squared in this particular energy term?",
+    "Did the size of the momentum actually become zero when you reversed its direction?",
+    null
+  ],
+  "hamilton-position": [
+    null,
+    "The lower part of the partial-derivative symbol tells which input you vary. Which one is left?",
+    "Does holding a variable fixed require its value to be zero?"
+  ],
+  "hamilton-momentum": [
+    "A displaced spring still pulls on the cart. What changes its momentum?",
+    null,
+    "On the positive side of rest, which way would the spring pull a released cart?"
+  ],
+  "poisson-bracket": [
+    "Write the two products of derivatives and then swap f and g. Which product comes first now?",
+    "Try functions other than the basic coordinate pair. Is there a reason every bracket should have the same number?",
+    null
+  ],
+  "equilibrium-position": [
+    null,
+    "Sketch a hilltop with a horizontal tangent. What happens after a small nudge?",
+    "Would shifting the potential graph vertically alter the restoring force nearby?"
+  ],
+  "local-stability": [
+    "Compare the shapes of q⁴ and −q⁴ very near zero. What do their slopes and curvatures there have in common?",
+    null,
+    "Can a flat-topped hill and a flat-bottomed valley share the result of this curvature test?"
+  ],
+  "small-oscillation-rate": [
+    "Look at where the mass sits in the square root for the oscillation rate.",
+    "Try putting the same spring under a heavier load. Which input to the frequency rule changed?",
+    null
+  ],
+  "same-direction-mode": [
+    null,
+    "Mark both endpoints of the middle spring before and after the carts move. What distance does it sense?",
+    "Would a spring of ordinary stiffness stretch if both ends move equally in the same direction?"
+  ],
+  "opposite-direction-mode": [
+    "Draw the ends of the middle spring during opposite cart motion. Does their separation stay fixed?",
+    null,
+    "A stiffer middle spring gives what change in restoring pull for the same extension?"
+  ],
+  "moving-constraint": [
+    null,
+    "Picture a bead on a rail being raised by a lift. Can a position rule follow the rail?",
+    "A constraint specifies positions. Which position in this setup is set by the support?"
+  ],
+  "constraint-rate": [
+    "Draw the bead’s height today and just later as the support rises. What slope do those two records share?",
+    null,
+    "Does following the support demand one constant speed, or matching its speed at each instant?"
+  ],
+  "moving-origin": [
+    "Which marker was used as the zero for q? Could that zero roll past someone on the ground?",
+    "Would changing a cart’s mass change the speed of the marker you measure from?",
+    null
+  ],
+  "accelerating-origin": [
+    null,
+    "Compare what a ground observer and an accelerating marker would record for the same cart.",
+    "Did moving the reference marker add or remove any material from the cart?"
+  ],
+  "constraint-multiplier": [
+    "What equation comes from varying the multiplier rather than varying the bead position?",
+    null,
+    "The term multiplied by λ contains which rule about allowed positions?"
+  ],
+  "constraint-force": [
+    "Sketch forces on the body and ask what net force could produce upward acceleration.",
+    "Does an upward-moving support switch off the downward gravitational force?",
+    null
+  ],
+  "constraint-power": [
+    null,
+    "Energy transfer depends on force and displacement. Which way does the contact point move?",
+    "Could the support lift the object while gravity is still present?"
+  ],
+  "radial-energy": [
+    "Is there any change to the mass in the radial energy balance?",
+    null,
+    "Check which part of the energy equation is proportional to the radial speed squared. Can that part be negative?"
+  ],
+  "radial-turning-point": [
+    "The word radial names just one direction. What about motion around the centre?",
+    "Does a momentarily unchanging radius require a vanishing rate of turn?",
+    null
+  ],
+  "circular-orbit-radius": [
+    null,
+    "If an object has a radial velocity at the proposed circular radius, where will it be an instant later?",
+    "A circular orbit itself turns about the origin. Does turning require zero angular momentum?"
+  ],
+  "circular-orbit-stability": [
+    "A zero quadratic term leaves the next terms unknown. Could the graph bend up farther away?",
+    null,
+    "Sketch two flat points that curve in opposite ways beyond the centre. Would this test separate them?"
+  ],
+  "radial-oscillation-rate": [
+    "One rate describes motion around the centre. What restores a small radial displacement?",
+    "Compare two differently shaped potentials at the same mass. Must their restoring slopes agree?",
+    null
+  ],
+  "kepler-orbit-shape": [
+    null,
+    "In the orbit formula, what value of e would remove the angle-dependent part of the radius?",
+    "Choose two angles in the formula. What condition would give the same radius for both?"
+  ],
+  "orbit-energy-shape": [
+    "What sign of energy describes a closed, bound orbit for this potential and reference?",
+    null,
+    "For a circle, inspect its energy relative to a body at rest infinitely far away."
+  ],
+  "rigid-point-velocity": [
+    "Mark two dots on a rigid wheel. Which travels a longer arc in one turn?",
+    "For points on the same rotating object, which geometry enters speed = angular speed × distance?",
+    null
+  ],
+  "axis-inertia": [
+    null,
+    "Check the exponent on distance in one mass’s inertia contribution.",
+    "The mass stays the same. Is the length of the lever arm also fixed?"
+  ],
+  "inertia-tensor": [
+    "Try a diagonal inertia table with different positive entries and a rotation along two axes. What happens to the component ratio?",
+    null,
+    "A single vector direction is preserved by a matrix only for special directions. Which axes have that property here?"
+  ],
+  "principal-axes": [
+    "Changing coordinate axes does not remove material. What changes in the table that represents it?",
+    "The object can still be spinning in the new coordinates. Which couplings between different axes become simpler?",
+    null
+  ],
+  "rigid-rotation-energy": [
+    null,
+    "Check whether the energy contains ω₂ or its square in these axes.",
+    "Replacing a component with its opposite does not add a second copy. Recalculate just its term."
+  ],
+  "euler-rigid-equation": [
+    "An unchanged vector in space can have changing readings on turning axes. Which axes are being used?",
+    null,
+    "A reference frame attached to the rotating body also turns. What links its three component equations?"
+  ],
+  "intermediate-axis": [
+    "Compare an exact spin with one given a tiny off-axis push. Which one is the stability test about?",
+    "Does growing away from one axis mean losing all rotational motion?",
+    null
+  ],
+  "nonlinear-force": [
+    null,
+    "Write q³ as three q factors. How many of them double?",
+    "If the original q and coefficient are both nonzero, does doubling q remove that term?"
+  ],
+  "phase-flow-arrow": [
+    "Position alone does not set the momentum rate. What slope or force matters there?",
+    null,
+    "Release a spring from rest away from equilibrium. What happens immediately after that zero-velocity instant?"
+  ],
+  "pendulum-energy-contour": [
+    "Which energy labels the original contour? Is it still the energy of the state later?",
+    "Does friction supply mechanical energy or take some away?",
+    null
+  ],
+  "pendulum-energy-barrier": [
+    null,
+    "Is the energy high enough to pass the highest point, or only to turn back below it?",
+    "Check whether energy above the barrier can leave any kinetic energy at the top."
+  ],
+  "pendulum-separatrix": [
+    "Near the upright position, does the small-angle period around the bottom still apply?",
+    null,
+    "As the speed shrinks toward zero, what happens to the time required to cover each last part of the ascent?"
+  ],
+  "driven-pendulum": [
+    "Could a gentle repeating drive produce a matching repeating response?",
+    "Damping is one input. What do the observed motion and other parameters show?",
+    null
+  ],
+  "poincare-sampling": [
+    null,
+    "Could an ordinary motion repeat on two alternating sample points?",
+    "Does sampling at the same drive phase answer the same question as sampling at random times?"
+  ],
+  "sensitive-dependence": [
+    "A deterministic rule can still amplify tiny differences. What does this short record establish?",
+    null,
+    "A single unstable balance point can push nearby paths apart briefly. How would a longer test help?"
+  ],
+  "canonical-pair": [
+    "For a basic canonical pair, the coordinate and momentum scale factors must multiply to one. Test your factors.",
+    "If every old momentum were mapped to zero, could you recover the original state?",
+    null
+  ],
+  "transformed-hamiltonian": [
+    null,
+    "Was the rule for any physical push changed, or only its coordinates?",
+    "Check whether the parameter representing the material in the cart was changed at all."
+  ],
+  "generating-function": [
+    "Look for the rate of change of F₂ rather than its value. Which independent input is the old position?",
+    null,
+    "There are two derivatives. The derivative with respect to new momentum gives which new variable?"
+  ],
+  "time-dependent-canonical": [
+    "Which part changes with time even if the old coordinates are held fixed?",
+    "Could a time-dependent adjustment to the energy rule let the usual Hamilton equations remain valid?",
+    null
+  ],
+  "principal-action": [
+    null,
+    "Try substituting a candidate S into the equation for this particular system. What must cancel?",
+    "Is its value alone enough, or do its derivatives with respect to position and time enter?"
+  ],
+  "hamilton-jacobi-equation": [
+    "Which change in S turns an action into momentum dimensionally?",
+    null,
+    "Compare the units of action divided by time with action divided by distance."
+  ],
+  "separate-action-time": [
+    "Can a massive particle have an energy rule with no directly written t?",
+    "A potential can vary with position. Is that the same as containing t directly?",
+    null
+  ],
+  "recover-hj-trajectory": [
+    null,
+    "Set the clock to the specified initial time in the solution and inspect the coordinate.",
+    "Check the units of Q in the free-cart position formula."
+  ]
+}

@@ -1680,7 +1680,7 @@
         ]
       },
       "check": {
-        "prompt": "At the next instant Eᵧ changes from +4 to −4 while Eₓ stays+3. What remains the same?",
+        "prompt": "At the next instant Eᵧ changes from +4 to −4 while Eₓ stays +3. What remains the same?",
         "options": [
           "Neither magnitude nor direction",
           "Field magnitude, but not direction",
@@ -1880,9 +1880,9 @@
       "example": {
         "title": "Work through one case",
         "steps": [
-          "At phase ωt=0, the field is(A,0).",
-          "At phase π/2, the field is(0,A).",
-          "At phase π, it is(−A,0): these points lie on a circle of radius A."
+          "At phase ωt=0, the field is (A,0).",
+          "At phase π/2, the field is (0,A).",
+          "At phase π, it is (−A,0): these points lie on a circle of radius A."
         ]
       },
       "check": {
@@ -2213,7 +2213,7 @@
         "title": "Work through one case",
         "steps": [
           "Two routes differ by a2.0 μm slab replacing air with index 1.50 material.",
-          "Extra optical path is(1.50−1.00)×2.0=1.0 μm.",
+          "Extra optical path is (1.50−1.00)×2.0=1.0 μm.",
           "At λ₀=0.50 μm, that is two cycles or 4π radians."
         ]
       },
@@ -2663,7 +2663,7 @@
       },
       "apply": {
         "title": "Explain your prediction",
-        "text": "Why is “every reflection addsπ” not a safe thin-film rule?",
+        "text": "Why is “every reflection adds π” not a safe thin-film rule?",
         "answer": "The phase depends on the interface and conditions. At normal incidence a higher-to-lower-index reflection has no sign reversal in this model; total internal reflection and oblique polarization cases need more detailed phases."
       },
       "limits": "Normal incidence, lossless nonmagnetic positive-index media. Oblique Fresnel coefficients depend on polarization.",
@@ -2769,9 +2769,9 @@
         ],
         "answer": 2,
         "explanations": [
-          "Not quite. Removing the relativeπ shift changes the required propagation phase by π.",
-          "Not quite. Removing the relativeπ shift changes the required propagation phase by π.",
-          "Correct. Removing the relativeπ shift changes the required propagation phase by π."
+          "Not quite. Removing the relative π shift changes the required propagation phase by π.",
+          "Not quite. Removing the relative π shift changes the required propagation phase by π.",
+          "Correct. Removing the relative π shift changes the required propagation phase by π."
         ]
       },
       "apply": {
@@ -2964,9 +2964,9 @@
       "example": {
         "title": "Work through one case",
         "steps": [
-          "Suppose two equal patch contributions at one instant are+2 and −2 V/m.",
+          "Suppose two equal patch contributions at one instant are +2 and −2 V/m.",
           "Their sum is 0 V/m, though each contribution is nonzero.",
-          "At another observation point their phases can agree, producing+4 V/m instead."
+          "At another observation point their phases can agree, producing +4 V/m instead."
         ]
       },
       "check": {
@@ -3087,7 +3087,7 @@
         "text": "If λ/a is greater than 1, why is arcsin(λ/a) not a valid physical answer?",
         "answer": "A real propagating angle has sine between −1 and 1. The stated first minimum does not exist in the accessible angular range under this model; the formula is not permission to invent a complex viewing angle."
       },
-      "limits": "Uniform slit, scalar far field, negligible polarization effects. The small-angle approximation requiresλ/a much smaller than 1.",
+      "limits": "Uniform slit, scalar far field, negligible polarization effects. The small-angle approximation requires λ/a much smaller than 1.",
       "visual": {
         "type": "concept",
         "title": "Follow the physical story",
@@ -3125,7 +3125,7 @@
             "label": "Small-angle first-minimum angle",
             "answer": 0.003,
             "unit": "rad",
-            "tolerance": 0.000001,
+            "tolerance": 1e-06,
             "feedback": "600×10⁻⁹/(0.20×10⁻³)=0.003 rad."
           }
         ],
@@ -3190,9 +3190,9 @@
         ],
         "answer": 0,
         "explanations": [
-          "Correct. Separation entersα; width entersβ. They control different angular scales.",
-          "Not quite. Separation entersα; width entersβ. They control different angular scales.",
-          "Not quite. Separation entersα; width entersβ. They control different angular scales."
+          "Correct. Separation enters α; width enters β. They control different angular scales.",
+          "Not quite. Separation enters α; width enters β. They control different angular scales.",
+          "Not quite. Separation enters α; width enters β. They control different angular scales."
         ]
       },
       "apply": {
@@ -3273,7 +3273,7 @@
             "symbol": "λ, Δλ",
             "name": "Wavelength and resolvable wavelength separation",
             "unit": "m",
-            "description": "Delta is a small separation nearλ."
+            "description": "Delta is a small separation near λ."
           },
           {
             "symbol": "R, N",
@@ -3405,7 +3405,7 @@
         "steps": [
           "Two incoherent points each deliver 1 μW into equal shifted PSFs.",
           "At a chosen pixel their PSF values are 2×10⁶ and 1×10⁶ per m².",
-          "Their irradiances add to(1×10⁻⁶)(3×10⁶)=3 W/m² at that pixel."
+          "Their irradiances add to (1×10⁻⁶)(3×10⁶)=3 W/m² at that pixel."
         ]
       },
       "check": {
@@ -3564,9 +3564,9 @@
         "parts": [
           {
             "label": "Rayleigh angle",
-            "answer": 0.0000061,
+            "answer": 6.1e-06,
             "unit": "rad",
-            "tolerance": 1e-8,
+            "tolerance": 1e-08,
             "feedback": "1.22×600×10⁻⁹/0.12=6.10×10⁻⁶ rad."
           }
         ],
@@ -3734,7 +3734,7 @@
       "example": {
         "title": "Work through one case",
         "steps": [
-          "A sensor pitch is 5 μm, givingfs=200000 samples/m.",
+          "A sensor pitch is 5 μm, giving fs=200000 samples/m.",
           "The ideal Nyquist boundary is 100000 cycles/m, or 100 cycles/mm.",
           "A 50 cycles/mm image pattern has four samples per cycle; optical contrast and noise still matter."
         ]
@@ -4212,7 +4212,7 @@
             "label": "Fresnel number",
             "answer": 0.04,
             "unit": "no unit",
-            "tolerance": 0.00001,
+            "tolerance": 1e-05,
             "feedback": "(0.20×10⁻³)²/(500×10⁻⁹×2)=0.04."
           }
         ],
@@ -4326,7 +4326,7 @@
             "label": "Transmission fraction",
             "answer": 0.30119421191220214,
             "unit": "no unit",
-            "tolerance": 0.00001,
+            "tolerance": 1e-05,
             "feedback": "exp(−3×0.40)=exp(−1.2)≈0.301194."
           }
         ],
@@ -4849,7 +4849,7 @@
         "steps": [
           "Lens 1: dᵢ₁=10×30/(30−10)=15 cm.",
           "Lens 2: dₒ₂=27−15=12 cm, then dᵢ₂=8×12/(12−8)=24 cm.",
-          "Final position is 27+24=51 cm after lens 1, and total magnification is(−15/30)(−24/12)=+1."
+          "Final position is 27+24=51 cm after lens 1, and total magnification is (−15/30)(−24/12)=+1."
         ]
       },
       "check": {
@@ -5030,7 +5030,7 @@
             "label": "New Poisson relative standard deviation",
             "answer": 0.008333333333333333,
             "unit": "no unit",
-            "tolerance": 0.00001,
+            "tolerance": 1e-05,
             "feedback": "Count becomes 14400; fractional spread is 1/√14400=1/120≈0.008333."
           }
         ],

@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {rows} from '../tools/equation-inventory.mjs';
+import {motionModels,motionVisualFor} from '../dist/motion-models.js';
 import {lessonPhases,resolveLessonPhase,neighboringPhase,hasDistinctExploration} from '../dist/lesson-flow.js';
 import {newParagraphs,additionalLessonContent,sameText} from '../dist/lesson-content.js';
 import {detailEdits} from '../dist/detail-edits.js';
@@ -10,7 +11,8 @@ import {validLessonHash,cleanStudy} from '../dist/study-state.js';
 
 test('every lesson has a reachable forward and backward path without a repeated Explore page',()=>{
   let models=0;
-  for(const {key,lesson} of rows){
+  for(const {key,course,lesson:original} of rows){
+    const lesson={...original,visual:motionVisualFor(course,original)};
     const phases=lessonPhases(lesson);if(hasDistinctExploration(lesson))models++;
     assert.equal(phases[0],0,key);assert.equal(phases.at(-1),3,key);
     for(let i=0;i<phases.length;i++){
@@ -19,7 +21,8 @@ test('every lesson has a reachable forward and backward path without a repeated 
     }
     assert.equal(resolveLessonPhase(lesson,1),hasDistinctExploration(lesson)?1:0,key);
   }
-  assert.equal(models,45);assert.equal(rows.length-models,1038);
+  assert.equal(models,45+Object.keys(motionModels).length);
+  assert.equal(rows.length,1083);
 });
 
 test('old Explore bookmarks and stored learner work remain valid when the displayed step is resolved',()=>{

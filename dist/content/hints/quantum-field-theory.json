@@ -1,0 +1,137 @@
+{
+  "field-values": [
+    null,
+    "Pick two different places at the same time. How many readings could you ask the field to give you?",
+    "Imagine drawing a different number at each spot on a map. Would it still be a map?"
+  ],
+  "field-mode": [
+    "Freeze the clock. Which part of the expression could you still change by moving to another place?",
+    null,
+    "Find the input in q(t). Where would you put a position on the right side?"
+  ],
+  "mode-energy": [
+    "Write the energy for two neighboring counts and subtract. What happens to the half in both expressions?",
+    "Try the gaps between three successive counts. What in the formula would make one gap bigger than another?",
+    null
+  ],
+  "above-vacuum": [
+    null,
+    "Turn the count of excitations down to zero. Which rule still describes the field?",
+    "Compare the lowest level with a level below it. Does this model offer a lower step to release energy into?"
+  ],
+  "natural-units": [
+    null,
+    "Try measuring time in the distance light travels. Would changing the ruler and clock units stop light from moving?",
+    "Think about what the number one is replacing here. Is that choice about the available units or the material surrounding the light?"
+  ],
+  "field-action": [
+    "Metres and seconds name units. Could knowing a unit tell you whether a graph bends up or down?",
+    null,
+    "Picture a hilltop and a valley bottom. How steep is the slope at the very centre of each?"
+  ],
+  "scalar-lagrangian": [
+    "Check the signs of the spatial and mass terms before using the expression as stored energy.",
+    "Distance and height can share a unit while measuring different things. What role does ℒ play in this calculation?",
+    null
+  ],
+  "field-motion": [
+    null,
+    "A motion rule can admit several possible preparations. What information would select one of them?",
+    "Changing the mass changes one term in the motion rule. Where is the preparation of the field specified?"
+  ],
+  "field-momentum": [
+    "Read the definition of π on the left before setting a spatial change to zero. Which rate is used here?",
+    null,
+    "Could the number in this equation change as the field changes? Compare that with the number for the circumference of a circle."
+  ],
+  "free-dispersion": [
+    "Insert a chosen wave number and mass on the right. What freedom is left on the other side?",
+    "What condition must the wave pattern satisfy before you interpret one of its excitations as a particle?",
+    null
+  ],
+  "canonical-commutator": [
+    null,
+    "Find the two mode labels on the small delta symbol. What does it check about those labels?",
+    "Imagine two different patterns that repeat equally fast. Would that give them the same mode label?"
+  ],
+  "mode-field-operator": [
+    "An average can be zero even when readings vary. What would you need to predict that spread?",
+    null,
+    "Follow what Q does when applied to a state. How does that compare with looking up an ordinary number on a map?"
+  ],
+  "vacuum-mode-variance": [
+    "The example includes one wave pattern. How many patterns can contribute to a field reading at a place?",
+    "Check what Q names in the calculation. Would reusing a letter guarantee that two measurements are identical?",
+    null
+  ],
+  "create-quantum": [
+    null,
+    "Try a starting count for which the square-root factor exceeds one. What range is possible for a probability?",
+    "Change n on both sides and ask what the factor multiplies. Does its role change at the first occupied level?"
+  ],
+  "remove-quantum": [
+    "Compare the zero result from applying the removal rule to an empty mode with energy leaving a real system.",
+    null,
+    "Follow the other parts of the interacting system. Where else could the energy of an absorbed excitation appear?"
+  ],
+  "fock-normalization": [
+    "Apply the creation rule twice and keep both square-root factors. What size does the resulting state have?",
+    "A starting state can have length one. Does every operation you apply keep that length?",
+    null
+  ],
+  "mode-momentum": [
+    null,
+    "Reverse the direction of a moving particle. Which quantity needs a sign to show that direction?",
+    "Put opposite momentum directions into the massless energy rule. Does the energy use the signed component or its size?"
+  ],
+  "quartic-interaction": [
+    "In the interaction term, which factor sets its strength even before a particular wave pattern is picked?",
+    null,
+    "Look up the role of λ in this particular equation. What does doubling it do to the interaction term?"
+  ],
+  "tree-amplitude": [
+    "Which quantity can have a minus sign before you take its size squared?",
+    "Change the sign of λ and compare the size squared before and after. What does the sign alone tell you?",
+    null
+  ],
+  "scalar-propagator": [
+    null,
+    "Add the incoming and outgoing energies at one meeting point. Which rule does that comparison test?",
+    "The internal line is part of a calculation. Where are energy and momentum matched between connected pieces?"
+  ],
+  "amplitude-interference": [
+    "Try two real contributions of the same size with opposite signs. Does the order of adding and squaring matter?",
+    null,
+    "Compare squaring a sum with summing two squares. Which calculation keeps the effect of the contributions reinforcing each other?"
+  ],
+  "cross-section-scaling": [
+    "Suppose you know a quantity doubled. What else would you need to give its new value in square metres?",
+    "A ratio can be a pure number. Where would the units of an absolute scattering area come from?",
+    null
+  ],
+  "momentum-cutoff": [
+    null,
+    "Repeat the calculation with a different upper bound. What would show whether a physical prediction depends on that choice?",
+    "Look at the upper bound inside the logarithm. Does simply choosing a large value test independence?"
+  ],
+  "match-a-parameter": [
+    "Compare reproducing a point used to set the parameter with predicting a different measurement. Which is an independent check?",
+    null,
+    "Could two different curves pass through the same measured point?"
+  ],
+  "running-coupling": [
+    "Keep the experimental setup fixed and change the reference scale used in the calculation. What else must be recalculated?",
+    "If one part varies with scale, what do the other parts of the full prediction do?",
+    null
+  ],
+  "effective-theory": [
+    null,
+    "Look for the word “illustrative” beside the formula. Which assumption set the power in this particular estimate?",
+    "A small energy ratio makes higher powers smaller. Does that tell you which power the physical rules allow first?"
+  ],
+  "perturbation-check": [
+    "Compare the sign of one term with the size of many later terms. Which controls what happens far down the series?",
+    null,
+    "Could a later term grow even if the first correction was small? What additional pattern would you need to check?"
+  ]
+}
